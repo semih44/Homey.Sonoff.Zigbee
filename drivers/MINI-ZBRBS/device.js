@@ -26,11 +26,22 @@ class SonoffMINIZBRBS extends SonoffBase {
     }
 
     async onSettings({ oldSettings, newSettings, changedKeys }) {
-        await this.writeAttributes(SonoffCluster, newSettings, changedKeys);
+        if (changedKeys.includes('switch_mode')) {
+            const rawValue = parseInt(newSettings.switch_mode, 10);
+            await this.writeAttribute(SonoffCluster, 'switch_mode', rawValue);
+        }
+
+        const otherKeys = changedKeys.filter(key => key !== 'switch_mode');
+        if (otherKeys.length > 0) {
+            await this.writeAttributes(SonoffCluster, newSettings, otherKeys);
+        }
     }
 
     async checkAttributes() {
-        this.readAttribute(SonoffCluster, ['network_led', 'turbo_mode'], (data) => {
+        this.readAttribute(SonoffCluster, ['network_led', 'turbo_mode', 'switch_mode'], (data) => {
+            if (data.switch_mode !== undefined) {
+                data.switch_mode = String(data.switch_mode);
+            }
             this.setSettings(data).catch(this.error);
         });
     }

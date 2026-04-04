@@ -1,18 +1,61 @@
 [
   {
+    "id": "turbo_mode",
+    "type": "checkbox",
+    "value": false,
+    "label": {
+      "en": "Turbo Mode"
+    },
+    "hint": {
+      "en": "Improves Zigbee range for distant devices."
+    }
+  },
+  {
     "id": "network_led",
     "type": "checkbox",
+    "value": true,
     "label": {
       "en": "Network LED"
     },
-    "value": true
+    "hint": {
+      "en": "Show network status LED."
+    }
   },
   {
-    "id": "turbo_mode",
-    "type": "checkbox",
+    "id": "switch_mode",
+    "type": "dropdown",
     "label": {
-      "en": "Turbo Mode (extended range)"
+      "en": "External Trigger Mode"
     },
-    "value": false
+    "hint": {
+      "en": "Physical switch connection type."
+    },
+    "value": "0",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Edge"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Pulse"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "Following (off)"
+        }
+      },
+      {
+        "id": "130",
+        "label": {
+          "en": "Following (on)"
+        }
+      }
+    ]
   }
 ]
