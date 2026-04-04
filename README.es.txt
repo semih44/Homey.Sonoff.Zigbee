@@ -1,15 +1,33 @@
 Sonoff Zigbee
 
-La App de Homey añadirá soporte para dispositivos Sonoff.
+La app de Homey añade soporte para dispositivos Sonoff Zigbee.
 
-Dispositivos soportados:
--Sonoff SNZB-01  (Botón cuadrado)
--Sonoff SNZB-01P (Botón redondo)
--Sonoff SNZB-02  (Termómetro cuadrado)
--Sonoff SNZB-02D (Termómetro con pantalla)
--Sonoff SNZB-02P (Termómetro redondo)
--Sonoff SNZB-03 (Detector de movimiento)
--Sonoff SNZB-04  (Contacto de puerta/ventana)
--Sonoff SNZB-06P  (Detector de presencia)
+Dispositivos compatibles:
 
-Pronto se añadirán más dispositivos.
+Sensores y botones:
+- Sonoff SNZB-01  (Botón cuadrado)
+- Sonoff SNZB-01P (Botón redondo)
+- Sonoff SNZB-02  (Sensor de temperatura y humedad cuadrado)
+- Sonoff SNZB-02D (Sensor de temperatura y humedad con pantalla)
+- Sonoff SNZB-02P (Sensor de temperatura y humedad redondo)
+- Sonoff SNZB-03  (Detector de movimiento)
+- Sonoff SNZB-03P (Detector de movimiento con sensor de luz)
+- Sonoff SNZB-04  (Sensor de puerta/ventana)
+- Sonoff SNZB-04P (Sensor de puerta/ventana)
+- Sonoff SNZB-05P (Detector de fuga de agua)
+- Sonoff SNZB-06P (Detector de presencia)
+- Sonoff TRVZB   (Válvula termostática)
+
+Interruptores:
+- Sonoff ZBMINI    (Módulo de interruptor empotrado)
+- Sonoff ZBMINI-L  (Módulo de interruptor empotrado, sin neutro)
+- Sonoff ZBMINI-L2 (Módulo de interruptor empotrado, sin neutro)
+- Sonoff ZBMINI-R2 (Módulo de interruptor empotrado con funciones avanzadas)
+- Sonoff BASICZBR3 (Interruptor inteligente)
+
+Persianas y cortinas:
+- Sonoff ZBCurtain  (Controlador de motor para cortinas/persianas)
+- Sonoff MINI-ZBRBS (Módulo de persiana con calibración de motor)
+
+RF:
+- Dispositivos Sonoff RF/TX (envío y recepción en 433 MHz)

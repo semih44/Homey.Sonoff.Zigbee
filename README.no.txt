@@ -1,15 +1,33 @@
 Sonoff Zigbee
 
-Homey-appen legger til støtte for Sonoff-enheter.
+Homey-appen legger til støtte for Sonoff Zigbee-enheter.
 
 Støttede enheter:
--Sonoff SNZB-01 (Firkantet knapp)
--Sonoff SNZB-01P (Rund knapp)
--Sonoff SNZB-02 (Firkantet termometer)
--Sonoff SNZB-02D (Termometer med display)
--Sonoff SNZB-02P (Rundt termometer)
--Sonoff SNZB-03 (Bevegelsessensor)
--Sonoff SNZB-04 (Dør/vindu kontakt)
--Sonoff SNZB-06P (Tilstedeværelsesdetektor)
 
-Flere enheter vil bli lagt til snart.
+Sensorer og knapper:
+- Sonoff SNZB-01  (Firkantet knapp)
+- Sonoff SNZB-01P (Rund knapp)
+- Sonoff SNZB-02  (Firkantet temperatur- og fuktighetssensor)
+- Sonoff SNZB-02D (Temperatur- og fuktighetssensor med display)
+- Sonoff SNZB-02P (Rund temperatur- og fuktighetssensor)
+- Sonoff SNZB-03  (Bevegelsesdetektor)
+- Sonoff SNZB-03P (Bevegelsesdetektor med lysregistrering)
+- Sonoff SNZB-04  (Dør-/vinduskontakt)
+- Sonoff SNZB-04P (Dør-/vinduskontakt)
+- Sonoff SNZB-05P (Vannlekkasjedetektor)
+- Sonoff SNZB-06P (Tilstedeværelsesdetektor)
+- Sonoff TRVZB   (Termostatventil)
+
+Brytere:
+- Sonoff ZBMINI    (Innbygget brytermodul)
+- Sonoff ZBMINI-L  (Innbygget brytermodul, uten nøytral)
+- Sonoff ZBMINI-L2 (Innbygget brytermodul, uten nøytral)
+- Sonoff ZBMINI-R2 (Innbygget brytermodul med avanserte funksjoner)
+- Sonoff BASICZBR3 (Smart bryter)
+
+Rullegardiner og persienner:
+- Sonoff ZBCurtain  (Motorstyring for gardiner/persienner)
+- Sonoff MINI-ZBRBS (Rullegardinmodul med motorkalibrering)
+
+RF:
+- Sonoff RF/TX-enheter (433 MHz sending og mottak)
