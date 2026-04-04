@@ -1,4 +1,11 @@
 {
+  "scripts": {
+    "lint": "eslint drivers/ lib/ app.js",
+    "lint:fix": "eslint --fix drivers/ lib/ app.js"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1"
+  },
   "dependencies": {
     "homey-rfdriver": "^3.3.2",
     "homey-zigbeedriver": "^1.6.2",

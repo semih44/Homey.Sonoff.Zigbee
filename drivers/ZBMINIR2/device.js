@@ -1,13 +1,8 @@
 'use strict';
 
-const { ZigBeeDevice } = require("homey-zigbeedriver");
-
-const SonoffOnOffCluster = require("../../lib/SonoffOnOffCluster");
-const { Cluster, CLUSTER, BoundCluster } = require('zigbee-clusters');
-Cluster.addCluster(SonoffOnOffCluster);
+const { CLUSTER, BoundCluster } = require('zigbee-clusters');
 
 const SonoffCluster = require("../../lib/SonoffCluster");
-Cluster.addCluster(SonoffCluster);
 
 const SonoffBase = require('../sonoffbase');
 
@@ -63,7 +58,7 @@ class SonoffZBMINIR2 extends SonoffBase {
      */
     async onNodeInit({ zclNode }) {
         
-        super.onNodeInit({zclNode});
+        await super.onNodeInit({zclNode});
 
         if (this.hasCapability('onoff')) {
             this.registerCapability('onoff', CLUSTER.ON_OFF);
@@ -227,14 +222,14 @@ class SonoffZBMINIR2 extends SonoffBase {
         }
 
         // Handle TurboMode separately - convert boolean to int16 before writing
-        if (changedKeys.includes('TurboMode')) {
+        if (changedKeys.includes('turbo_mode')) {
             try {
-                const rawValue = this._formatTurboMode(newSettings.TurboMode);
-                this.log(`Writing TurboMode: ${newSettings.TurboMode} → raw value: 0x${rawValue.toString(16)} (${rawValue})`);
+                const rawValue = this._formatTurboMode(newSettings.turbo_mode);
+                this.log(`Writing TurboMode: ${newSettings.turbo_mode} → raw value: 0x${rawValue.toString(16)} (${rawValue})`);
                 
-                await this.writeAttribute(SonoffCluster, 'TurboMode', rawValue);
+                await this.writeAttribute(SonoffCluster, 'turbo_mode', rawValue);
                 
-                this.log(`TurboMode updated successfully to ${newSettings.TurboMode}`);
+                this.log(`TurboMode updated successfully to ${newSettings.turbo_mode}`);
             } catch (error) {
                 this.error(`Error updating TurboMode:`, error);
                 throw new Error(`Failed to update Turbo Mode: ${error.message}`);
@@ -259,7 +254,7 @@ class SonoffZBMINIR2 extends SonoffBase {
         // Handle other SonoffCluster attributes
         const otherSonoffKeys = changedKeys.filter(key =>
             SonoffCluster.ZBMINIR2_ATTRIBUTES.includes(key) &&
-            key !== 'TurboMode' &&
+            key !== 'turbo_mode' &&
             key !== 'switch_mode'
         );
         
@@ -420,12 +415,12 @@ class SonoffZBMINIR2 extends SonoffBase {
             const settingsData = { ...data };
             
             // Convert TurboMode from int16 to boolean
-            if (settingsData.TurboMode !== undefined) {
-                const rawValue = settingsData.TurboMode;
+            if (settingsData.turbo_mode !== undefined) {
+                const rawValue = settingsData.turbo_mode;
                 const boolValue = this._parseTurboMode(rawValue);
                 
                 this.log(`TurboMode from device: raw=0x${rawValue.toString(16)} (${rawValue}) → boolean=${boolValue}`);
-                settingsData.TurboMode = boolValue;
+                settingsData.turbo_mode = boolValue;
             }
 
             // Convert switch_mode from uint8 to string

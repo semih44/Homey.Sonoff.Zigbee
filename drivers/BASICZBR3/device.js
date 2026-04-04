@@ -1,28 +1,22 @@
 'use strict';
 
-const { ZigBeeDevice } = require("homey-zigbeedriver");
+const SonoffBase = require('../sonoffbase');
 const { CLUSTER } = require('zigbee-clusters');
 
-class SonoffBASICZBR3 extends ZigBeeDevice {
+class SonoffBASICZBR3 extends SonoffBase {
 
-  /**
-   * onNodeInit is called when the device is initialized.
-   */
-  async onNodeInit({ zclNode }) {
-    this.log('Device initialized');
-    this.printNode();
+    async onNodeInit({ zclNode }) {
+        await super.onNodeInit({ zclNode });
 
-    if (this.hasCapability('onoff')) {
-      this.registerCapability('onoff', CLUSTER.ON_OFF);
+        if (this.hasCapability('onoff')) {
+            this.registerCapability('onoff', CLUSTER.ON_OFF);
+        }
     }
-  }
 
-  /**
-   * onDeleted is called when the user deleted the device.
-   */
-  async onDeleted() {
-    this.log("smartswitch removed");
-  }
+    async onDeleted() {
+        this.log('smartswitch removed');
+        await super.onDeleted();
+    }
 
 }
 

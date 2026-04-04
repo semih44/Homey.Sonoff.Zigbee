@@ -24,7 +24,7 @@ module.exports = class MyRFDevice extends RFDevice {
     const signal = await this.driver.getRFSignal();
     const currentDeviceData = await this.getData();
     const commandDeviceData = signal.constructor.commandToDeviceData(command);
-    return currentDeviceData.code==commandDeviceData.code;
+    return currentDeviceData.code === commandDeviceData.code;
   }
 
 }

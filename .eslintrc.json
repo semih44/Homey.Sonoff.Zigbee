@@ -1,0 +1,16 @@
+{
+  "env": {
+    "node": true,
+    "es2020": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2022
+  },
+  "rules": {
+    "no-unused-vars": ["warn", { "args": "none", "caughtErrors": "none" }],
+    "no-undef": "error",
+    "no-unreachable": "error",
+    "eqeqeq": ["warn", "always"],
+    "no-var": "warn"
+  }
+}

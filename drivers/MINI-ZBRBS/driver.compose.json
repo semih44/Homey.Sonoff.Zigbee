@@ -1,0 +1,41 @@
+{
+  "id": "SonoffMINIZBRBS",
+  "name": {
+    "en": "MINI-ZBRBS Roller Shutter",
+    "de": "MINI-ZBRBS Rollladenmodul"
+  },
+  "class": "blinds",
+  "capabilities": [
+    "windowcoverings_state",
+    "windowcoverings_set"
+  ],
+  "zigbee": {
+    "manufacturerName": [
+      "SONOFF"
+    ],
+    "productId": [
+      "MINI-ZBRBS"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0,
+          3,
+          4,
+          5,
+          7,
+          258,
+          64529
+        ],
+        "bindings": []
+      }
+    },
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learn.svg",
+      "instruction": {
+        "en": "Press the reset button for 5 seconds until the LED blinks."
+      }
+    }
+  },
+  "$extends": ["defaults"]
+}

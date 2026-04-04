@@ -1,13 +1,9 @@
 'use strict';
 
-const Homey = require('homey');
 const SonoffBase = require('../sonoffbase');
-//const { ZigBeeDevice } = require('homey-zigbeedriver');
 const { Cluster, ZCLDataTypes, ZCLDataType, CLUSTER, BoundCluster, ThermostatCluster } = require('zigbee-clusters');
 const { ZCLStandardHeader } = require('zigbee-clusters/lib/zclFrames');
 const SonoffCluster = require("../../lib/SonoffCluster");
-
-Cluster.addCluster(SonoffCluster);
 
 
 const Settings_Attributes = [
@@ -74,11 +70,14 @@ class SonoffTimeBoundCluster extends BoundCluster {
 	}
 	async handleFrame(frame, meta, rawFrame) {
 		this.frame = frame;
-		return await super.handleFrame(frame, meta, rawFrame);
-		this.frame = null;
+		try {
+			return await super.handleFrame(frame, meta, rawFrame);
+		} finally {
+			this.frame = null;
+		}
 	}
 	async readAttributes({ attributes }) {
-		var result = await super.readAttributes({ attributes });
+		const result = await super.readAttributes({ attributes });
 		const resp = new ZCLStandardHeader();
 		resp.frameControl.directionToClient = true;
 		resp.frameControl.disableDefaultResponse = true;
@@ -110,7 +109,7 @@ class SonoffTRVZB extends SonoffBase {
 
 	async onNodeInit({ zclNode }) {
 
-		super.onNodeInit({ zclNode }, {noAttribCheck:false});
+		await super.onNodeInit({ zclNode }, {noAttribCheck:false});
 
 		if (!this.hasCapability('onoff')) { //Add onoff capability if not already added
 			await this.addCapability('onoff');
@@ -212,14 +211,14 @@ class SonoffTRVZB extends SonoffBase {
 
 		zclNode.endpoints[1].clusters[CLUSTER.THERMOSTAT.NAME]
 			.on('attr.localTemperatureCalibration', (value) => {
-				this.setSettings(o).catch(this.error);
+				this.setSettings({ localTemperatureCalibration: value }).catch(this.error);
 		});
 
 		Settings_Attributes.forEach( (attr) => {
 			zclNode.endpoints[1].clusters[SonoffCluster.NAME]
             .on('attr.' + attr, (value) => {
-				var o = {}
-				o[attr]=value;
+				const o = {};
+				o[attr] = value;
 				this.setSettings(o).catch(this.error);
 			});
 		});
@@ -232,7 +231,7 @@ class SonoffTRVZB extends SonoffBase {
 
 	async setSettings(settings) {
 		Object.entries(settings).forEach(([key, value]) => {
-			if (key=="localTemperatureCalibration") {
+			if (key === "localTemperatureCalibration") {
 				settings[key] = value / 100;
 			} else if (key.includes("temperature")) {  //Accept t/Temperature
 				settings[key] = value / 100;

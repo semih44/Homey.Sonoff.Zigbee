@@ -1,6 +1,6 @@
 'use strict';
 
-const TempHumiditySensor = require('../temphumidutysensor');
+const TempHumiditySensor = require('../temphumiditysensor');
 
 class SonoffSNZB02 extends TempHumiditySensor {
 }

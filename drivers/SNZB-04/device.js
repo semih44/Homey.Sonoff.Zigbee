@@ -1,13 +1,12 @@
 'use strict';
 
 const SonoffBase = require('../sonoffbase');
-const { CLUSTER } = require('zigbee-clusters');
 
 class SonoffSNZB04 extends SonoffBase {
 
     async onNodeInit({zclNode}) {
 
-		super.onNodeInit({zclNode});
+		await super.onNodeInit({zclNode});
 
 		// Listen for ZoneStatusChangeNotification
 		zclNode.endpoints[1].clusters.iasZone.onZoneStatusChangeNotification = data => {

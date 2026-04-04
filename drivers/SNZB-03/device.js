@@ -7,7 +7,7 @@ class SonoffSNZB03 extends SonoffBase {
 
     async onNodeInit({zclNode}) {
 
-		super.onNodeInit({zclNode});
+		await super.onNodeInit({zclNode});
 
 		//Fix upgrade from 1.0.14 
 		if (this.hasCapability('alarm_contact') === true) {

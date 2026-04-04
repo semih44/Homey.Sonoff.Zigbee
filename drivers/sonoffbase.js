@@ -1,6 +1,5 @@
 'use strict';
 
-const Homey = require('homey');
 const { ZigBeeDevice } = require('homey-zigbeedriver');
 const { debug, CLUSTER } = require('zigbee-clusters');
 
@@ -24,7 +23,7 @@ class SonoffBase extends ZigBeeDevice {
         }
         this.printNode();
 
-        if (options.noAttribCheck != true) {
+        if (options.noAttribCheck !== true) {
             if ("powerConfiguration" in zclNode.endpoints[1].clusters) {
                 this._originalHandleFrame = this.node.handleFrame;
                 this._handleFrameWrapper = this._onHandleFrame.bind(this);
