@@ -57,5 +57,70 @@
         }
       }
     ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Motor Calibration"
+    },
+    "children": [
+      {
+        "id": "motor_calibration_action",
+        "type": "dropdown",
+        "label": {
+          "en": "Calibration Action"
+        },
+        "hint": {
+          "en": "Start or clear motor travel calibration. The motor needs calibration to accurately report position."
+        },
+        "value": "0",
+        "values": [
+          {
+            "id": "0",
+            "label": {
+              "en": "No action"
+            }
+          },
+          {
+            "id": "2",
+            "label": {
+              "en": "Start automatic calibration"
+            }
+          },
+          {
+            "id": "3",
+            "label": {
+              "en": "Start manual calibration"
+            }
+          },
+          {
+            "id": "7",
+            "label": {
+              "en": "Manual: set fully opened"
+            }
+          },
+          {
+            "id": "8",
+            "label": {
+              "en": "Manual: set fully closed"
+            }
+          },
+          {
+            "id": "4",
+            "label": {
+              "en": "Clear calibration"
+            }
+          }
+        ]
+      },
+      {
+        "id": "motor_calibration_status",
+        "type": "label",
+        "label": {
+          "en": "Calibration Status"
+        },
+        "value": "Unknown"
+      }
+    ]
   }
 ]
