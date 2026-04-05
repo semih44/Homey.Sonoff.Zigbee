@@ -4,10 +4,32 @@
     "type": "checkbox",
     "value": false,
     "label": {
-      "en": "Turbo Mode"
+      "en": "Turbo Mode",
+      "sv": "Turboläge",
+      "nl": "Turbomodus",
+      "da": "Turbotilstand",
+      "de": "Turbomodus",
+      "es": "Modo turbo",
+      "fr": "Mode turbo",
+      "it": "Modalità turbo",
+      "no": "Turbomodus",
+      "pl": "Tryb turbo",
+      "ru": "Турборежим",
+      "ko": "터보 모드"
     },
     "hint": {
-      "en": "Improves Zigbee range for distant devices."
+      "en": "Improves Zigbee range for distant devices.",
+      "sv": "Förbättrar Zigbee-räckvidden för avlägsna enheter.",
+      "nl": "Verbetert het Zigbee-bereik voor apparaten op afstand.",
+      "da": "Forbedrer Zigbee-rækkevidden for fjerne enheder.",
+      "de": "Verbessert die Zigbee-Reichweite für entfernte Geräte.",
+      "es": "Mejora el alcance Zigbee para dispositivos distantes.",
+      "fr": "Améliore la portée Zigbee pour les appareils distants.",
+      "it": "Migliora la portata Zigbee per dispositivi distanti.",
+      "no": "Forbedrer Zigbee-rekkevidden for fjerne enheter.",
+      "pl": "Poprawia zasięg Zigbee dla odległych urządzeń.",
+      "ru": "Улучшает радиус действия Zigbee для удалённых устройств.",
+      "ko": "원거리 기기의 Zigbee 범위를 개선합니다."
     }
   },
   {
@@ -15,45 +37,166 @@
     "type": "checkbox",
     "value": true,
     "label": {
-      "en": "Network LED"
+      "en": "Network LED",
+      "sv": "Nätverks-LED",
+      "nl": "Netwerk-LED",
+      "da": "Netværks-LED",
+      "de": "Netzwerk-LED",
+      "es": "LED de red",
+      "fr": "LED réseau",
+      "it": "LED di rete",
+      "no": "Nettverks-LED",
+      "pl": "Dioda sieciowa",
+      "ru": "Сетевой светодиод",
+      "ko": "네트워크 LED"
     },
     "hint": {
-      "en": "Show network status LED."
+      "en": "Show network status LED.",
+      "sv": "Visa nätverksstatuslysdiod.",
+      "nl": "Toon netwerk-LED.",
+      "da": "Vis netværksstatus-LED.",
+      "de": "Netzwerkstatus-LED anzeigen.",
+      "es": "Mostrar LED de estado de red.",
+      "fr": "Afficher la LED d'état du réseau.",
+      "it": "Mostra il LED di stato della rete.",
+      "no": "Vis nettverksstatus-LED.",
+      "pl": "Pokaż diodę stanu sieci.",
+      "ru": "Показать светодиод состояния сети.",
+      "ko": "네트워크 상태 LED를 표시합니다."
+    }
+  },
+  {
+    "id": "invert_cover",
+    "type": "checkbox",
+    "value": false,
+    "label": {
+      "en": "Invert Direction",
+      "sv": "Invertera riktning",
+      "nl": "Richting omkeren",
+      "da": "Invertér retning",
+      "de": "Richtung invertieren",
+      "es": "Invertir dirección",
+      "fr": "Inverser la direction",
+      "it": "Inverti direzione",
+      "no": "Inverter retning",
+      "pl": "Odwróć kierunek",
+      "ru": "Инвертировать направление",
+      "ko": "방향 반전"
+    },
+    "hint": {
+      "en": "Swap open/close direction without rewiring.",
+      "sv": "Byt öppna/stäng-riktning utan omkoppling.",
+      "nl": "Wissel open/dicht-richting zonder herbedrading.",
+      "da": "Skift åbn/luk-retning uden omkobling.",
+      "de": "Auf/Zu-Richtung tauschen ohne Umverkabelung.",
+      "es": "Intercambiar dirección abrir/cerrar sin recablear.",
+      "fr": "Inverser la direction ouverture/fermeture sans recâblage.",
+      "it": "Scambiare la direzione apri/chiudi senza ricablaggio.",
+      "no": "Bytt åpne/lukke-retning uten omkobling.",
+      "pl": "Zamień kierunek otwierania/zamykania bez ponownego okablowania.",
+      "ru": "Поменять направление открытия/закрытия без переподключения.",
+      "ko": "재배선 없이 열기/닫기 방향을 전환합니다."
     }
   },
   {
     "id": "switch_mode",
     "type": "dropdown",
     "label": {
-      "en": "External Trigger Mode"
+      "en": "External Trigger Mode",
+      "sv": "Externt triggerläge",
+      "nl": "Externe triggermodus",
+      "da": "Ekstern udløsningstilstand",
+      "de": "Externer Auslösemodus",
+      "es": "Modo de activación externo",
+      "fr": "Mode de déclenchement externe",
+      "it": "Modalità trigger esterno",
+      "no": "Ekstern utløsermodus",
+      "pl": "Zewnętrzny tryb wyzwalania",
+      "ru": "Режим внешнего триггера",
+      "ko": "외부 트리거 모드"
     },
     "hint": {
-      "en": "Physical switch connection type."
+      "en": "Physical switch connection type.",
+      "sv": "Fysisk typ av strömbrytaranslutning.",
+      "nl": "Type fysieke schakelaaraansluiting.",
+      "da": "Fysisk kontaktforbindelsestype.",
+      "de": "Physischer Schalter-Anschlusstyp.",
+      "es": "Tipo de conexión del interruptor físico.",
+      "fr": "Type de connexion de l'interrupteur physique.",
+      "it": "Tipo di connessione dell'interruttore fisico.",
+      "no": "Fysisk brytertilkoblingstype.",
+      "pl": "Typ podłączenia fizycznego przełącznika.",
+      "ru": "Тип подключения физического переключателя.",
+      "ko": "물리적 스위치 연결 유형."
     },
     "value": "0",
     "values": [
       {
         "id": "0",
         "label": {
-          "en": "Edge"
+          "en": "Edge",
+          "sv": "Kant",
+          "nl": "Flank",
+          "da": "Kant",
+          "de": "Flanke",
+          "es": "Flanco",
+          "fr": "Front",
+          "it": "Fronte",
+          "no": "Kant",
+          "pl": "Zbocze",
+          "ru": "Фронт",
+          "ko": "에지"
         }
       },
       {
         "id": "1",
         "label": {
-          "en": "Pulse"
+          "en": "Pulse",
+          "sv": "Puls",
+          "nl": "Puls",
+          "da": "Puls",
+          "de": "Impuls",
+          "es": "Pulso",
+          "fr": "Impulsion",
+          "it": "Impulso",
+          "no": "Puls",
+          "pl": "Impuls",
+          "ru": "Импульс",
+          "ko": "펄스"
         }
       },
       {
         "id": "2",
         "label": {
-          "en": "Following (off)"
+          "en": "Following (off)",
+          "sv": "Följande (av)",
+          "nl": "Volgend (uit)",
+          "da": "Følgende (fra)",
+          "de": "Folgend (aus)",
+          "es": "Seguimiento (apagado)",
+          "fr": "Suivi (éteint)",
+          "it": "Seguente (spento)",
+          "no": "Følgende (av)",
+          "pl": "Podążający (wył.)",
+          "ru": "Следящий (выкл.)",
+          "ko": "추종 (꺼짐)"
         }
       },
       {
         "id": "130",
         "label": {
-          "en": "Following (on)"
+          "en": "Following (on)",
+          "sv": "Följande (på)",
+          "nl": "Volgend (aan)",
+          "da": "Følgende (til)",
+          "de": "Folgend (ein)",
+          "es": "Seguimiento (encendido)",
+          "fr": "Suivi (allumé)",
+          "it": "Seguente (acceso)",
+          "no": "Følgende (på)",
+          "pl": "Podążający (wł.)",
+          "ru": "Следящий (вкл.)",
+          "ko": "추종 (켜짐)"
         }
       }
     ]
@@ -61,54 +204,153 @@
   {
     "type": "group",
     "label": {
-      "en": "Motor Calibration"
+      "en": "Motor Calibration",
+      "sv": "Motorkalibrering",
+      "nl": "Motorkalibratie",
+      "da": "Motorkalibrering",
+      "de": "Motorkalibrierung",
+      "es": "Calibración del motor",
+      "fr": "Calibration du moteur",
+      "it": "Calibrazione motore",
+      "no": "Motorkalibrering",
+      "pl": "Kalibracja silnika",
+      "ru": "Калибровка мотора",
+      "ko": "모터 캘리브레이션"
     },
     "children": [
       {
         "id": "motor_calibration_action",
         "type": "dropdown",
         "label": {
-          "en": "Calibration Action"
+          "en": "Calibration Action",
+          "sv": "Kalibreringsåtgärd",
+          "nl": "Kalibratieactie",
+          "da": "Kalibreringshandling",
+          "de": "Kalibrierungsaktion",
+          "es": "Acción de calibración",
+          "fr": "Action de calibration",
+          "it": "Azione di calibrazione",
+          "no": "Kalibreringshandling",
+          "pl": "Akcja kalibracji",
+          "ru": "Действие калибровки",
+          "ko": "캘리브레이션 동작"
         },
         "hint": {
-          "en": "Start or clear motor travel calibration. The motor needs calibration to accurately report position."
+          "en": "Start or clear motor travel calibration. The motor needs calibration to accurately report position.",
+          "sv": "Starta eller rensa motorslagkalibrering. Motorn behöver kalibreras för att korrekt rapportera position.",
+          "nl": "Start of wis motorslagkalibratie. De motor heeft kalibratie nodig om de positie nauwkeurig te rapporteren.",
+          "da": "Start eller ryd motorslagkalibrering. Motoren skal kalibreres for at rapportere position korrekt.",
+          "de": "Motorweg-Kalibrierung starten oder löschen. Der Motor muss kalibriert werden, um die Position korrekt zu melden.",
+          "es": "Iniciar o borrar la calibración del recorrido del motor. El motor necesita calibración para informar con precisión la posición.",
+          "fr": "Démarrer ou effacer la calibration de course du moteur. Le moteur doit être calibré pour rapporter la position avec précision.",
+          "it": "Avviare o cancellare la calibrazione della corsa del motore. Il motore necessita di calibrazione per riportare accuratamente la posizione.",
+          "no": "Start eller slett motorslagkalibrering. Motoren trenger kalibrering for å rapportere posisjon nøyaktig.",
+          "pl": "Rozpocznij lub wyczyść kalibrację skoku silnika. Silnik wymaga kalibracji, aby dokładnie raportować pozycję.",
+          "ru": "Запустить или сбросить калибровку хода мотора. Мотору необходима калибровка для точного определения положения.",
+          "ko": "모터 이동 캘리브레이션을 시작하거나 초기화합니다. 정확한 위치 보고를 위해 모터 캘리브레이션이 필요합니다."
         },
         "value": "0",
         "values": [
           {
             "id": "0",
             "label": {
-              "en": "No action"
+              "en": "No action",
+              "sv": "Ingen åtgärd",
+              "nl": "Geen actie",
+              "da": "Ingen handling",
+              "de": "Keine Aktion",
+              "es": "Sin acción",
+              "fr": "Aucune action",
+              "it": "Nessuna azione",
+              "no": "Ingen handling",
+              "pl": "Brak akcji",
+              "ru": "Нет действия",
+              "ko": "동작 없음"
             }
           },
           {
             "id": "2",
             "label": {
-              "en": "Start automatic calibration"
+              "en": "Start automatic calibration",
+              "sv": "Starta automatisk kalibrering",
+              "nl": "Start automatische kalibratie",
+              "da": "Start automatisk kalibrering",
+              "de": "Automatische Kalibrierung starten",
+              "es": "Iniciar calibración automática",
+              "fr": "Démarrer la calibration automatique",
+              "it": "Avviare calibrazione automatica",
+              "no": "Start automatisk kalibrering",
+              "pl": "Rozpocznij automatyczną kalibrację",
+              "ru": "Запустить автоматическую калибровку",
+              "ko": "자동 캘리브레이션 시작"
             }
           },
           {
             "id": "3",
             "label": {
-              "en": "Start manual calibration"
+              "en": "Start manual calibration",
+              "sv": "Starta manuell kalibrering",
+              "nl": "Start handmatige kalibratie",
+              "da": "Start manuel kalibrering",
+              "de": "Manuelle Kalibrierung starten",
+              "es": "Iniciar calibración manual",
+              "fr": "Démarrer la calibration manuelle",
+              "it": "Avviare calibrazione manuale",
+              "no": "Start manuell kalibrering",
+              "pl": "Rozpocznij ręczną kalibrację",
+              "ru": "Запустить ручную калибровку",
+              "ko": "수동 캘리브레이션 시작"
             }
           },
           {
             "id": "7",
             "label": {
-              "en": "Manual: set fully opened"
+              "en": "Manual: set fully opened",
+              "sv": "Manuell: ställ in helt öppen",
+              "nl": "Handmatig: volledig geopend instellen",
+              "da": "Manuel: indstil helt åben",
+              "de": "Manuell: vollständig geöffnet setzen",
+              "es": "Manual: establecer completamente abierto",
+              "fr": "Manuel : définir complètement ouvert",
+              "it": "Manuale: impostare completamente aperto",
+              "no": "Manuell: sett helt åpen",
+              "pl": "Ręcznie: ustaw jako całkowicie otwarte",
+              "ru": "Вручную: установить полностью открыто",
+              "ko": "수동: 완전 열림 설정"
             }
           },
           {
             "id": "8",
             "label": {
-              "en": "Manual: set fully closed"
+              "en": "Manual: set fully closed",
+              "sv": "Manuell: ställ in helt stängd",
+              "nl": "Handmatig: volledig gesloten instellen",
+              "da": "Manuel: indstil helt lukket",
+              "de": "Manuell: vollständig geschlossen setzen",
+              "es": "Manual: establecer completamente cerrado",
+              "fr": "Manuel : définir complètement fermé",
+              "it": "Manuale: impostare completamente chiuso",
+              "no": "Manuell: sett helt lukket",
+              "pl": "Ręcznie: ustaw jako całkowicie zamknięte",
+              "ru": "Вручную: установить полностью закрыто",
+              "ko": "수동: 완전 닫힘 설정"
             }
           },
           {
             "id": "4",
             "label": {
-              "en": "Clear calibration"
+              "en": "Clear calibration",
+              "sv": "Rensa kalibrering",
+              "nl": "Kalibratie wissen",
+              "da": "Ryd kalibrering",
+              "de": "Kalibrierung löschen",
+              "es": "Borrar calibración",
+              "fr": "Effacer la calibration",
+              "it": "Cancellare calibrazione",
+              "no": "Slett kalibrering",
+              "pl": "Wyczyść kalibrację",
+              "ru": "Сбросить калибровку",
+              "ko": "캘리브레이션 초기화"
             }
           }
         ]
@@ -117,7 +359,18 @@
         "id": "motor_calibration_status",
         "type": "label",
         "label": {
-          "en": "Calibration Status"
+          "en": "Calibration Status",
+          "sv": "Kalibreringsstatus",
+          "nl": "Kalibratiestatus",
+          "da": "Kalibreringsstatus",
+          "de": "Kalibrierungsstatus",
+          "es": "Estado de calibración",
+          "fr": "État de calibration",
+          "it": "Stato di calibrazione",
+          "no": "Kalibreringsstatus",
+          "pl": "Status kalibracji",
+          "ru": "Статус калибровки",
+          "ko": "캘리브레이션 상태"
         },
         "value": "Unknown"
       }
