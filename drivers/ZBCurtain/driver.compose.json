@@ -1,8 +1,18 @@
 {
   "id": "SonoffZBCurtain",
   "name": {
-    "en": "ZBCurtain SCurtainwitch",
-    "sv": "ZBCurtain Gardin"
+    "en": "ZBCurtain Curtain",
+    "sv": "ZBCurtain Gardin",
+    "nl": "ZBCurtain Gordijn",
+    "da": "ZBCurtain Gardin",
+    "de": "ZBCurtain Vorhang",
+    "es": "ZBCurtain Cortina",
+    "fr": "ZBCurtain Rideau",
+    "it": "ZBCurtain Tenda",
+    "no": "ZBCurtain Gardin",
+    "pl": "ZBCurtain Zasłona",
+    "ru": "ZBCurtain Штора",
+    "ko": "ZBCurtain 커튼"
   },
   "class": "curtain",
   "capabilities": [
@@ -42,7 +52,18 @@
     "learnmode": {
       "image": "{{driverAssetsPath}}/learn.svg",
       "instruction": {
-        "en": "Press the button on side for aprox. 10 seconds until the LED blinks rapidly."
+        "en": "Press the button on the side for approx. 10 seconds until the LED blinks rapidly.",
+        "sv": "Tryck på knappen på sidan i cirka 10 sekunder tills lysdioden blinkar snabbt.",
+        "nl": "Druk op de knop aan de zijkant gedurende ca. 10 seconden totdat de LED snel knippert.",
+        "da": "Tryk på knappen på siden i ca. 10 sekunder, indtil LED'en blinker hurtigt.",
+        "de": "Drücken Sie die Taste an der Seite ca. 10 Sekunden lang, bis die LED schnell blinkt.",
+        "es": "Presione el botón en el lateral durante aprox. 10 segundos hasta que el LED parpadee rápidamente.",
+        "fr": "Appuyez sur le bouton sur le côté pendant environ 10 secondes jusqu'à ce que la LED clignote rapidement.",
+        "it": "Premere il pulsante sul lato per circa 10 secondi fino a quando il LED lampeggia rapidamente.",
+        "no": "Trykk på knappen på siden i ca. 10 sekunder til LED-en blinker raskt.",
+        "pl": "Naciśnij przycisk z boku przez ok. 10 sekund, aż dioda LED zacznie szybko migać.",
+        "ru": "Нажмите кнопку на боковой стороне примерно на 10 секунд, пока светодиод не начнет быстро мигать.",
+        "ko": "LED가 빠르게 깜박일 때까지 측면의 버튼을 약 10초 동안 누르세요."
       }
     }
   },

@@ -1,6 +1,17 @@
 {
   "name": {
-    "en": "Switch (Basic ZBR3)"
+    "en": "Switch (Basic ZBR3)",
+    "sv": "Strömbrytare (Basic ZBR3)",
+    "nl": "Schakelaar (Basic ZBR3)",
+    "da": "Kontakt (Basic ZBR3)",
+    "de": "Schalter (Basic ZBR3)",
+    "es": "Interruptor (Basic ZBR3)",
+    "fr": "Interrupteur (Basic ZBR3)",
+    "it": "Interruttore (Basic ZBR3)",
+    "no": "Bryter (Basic ZBR3)",
+    "pl": "Przełącznik (Basic ZBR3)",
+    "ru": "Выключатель (Basic ZBR3)",
+    "ko": "스위치 (Basic ZBR3)"
   },
   "class": "socket",
   "capabilities": [
@@ -19,8 +30,6 @@
     "large": "{{driverAssetsPath}}/images/large.png",
     "small": "{{driverAssetsPath}}/images/small.png"
   },
- 
- 
   "zigbee": {
     "manufacturerName": "SONOFF",
     "productId": [
@@ -43,7 +52,18 @@
     "learnmode": {
       "image": "{{driverAssetsPath}}/learn.svg",
       "instruction": {
-        "en": "Push the button for aprox 8 seconds until the LED blinks rapidly."
+        "en": "Push the button for approx. 8 seconds until the LED blinks rapidly.",
+        "sv": "Tryck på knappen i cirka 8 sekunder tills lysdioden blinkar snabbt.",
+        "nl": "Druk op de knop gedurende ca. 8 seconden totdat de LED snel knippert.",
+        "da": "Tryk på knappen i ca. 8 sekunder, indtil LED'en blinker hurtigt.",
+        "de": "Drücken Sie die Taste ca. 8 Sekunden lang, bis die LED schnell blinkt.",
+        "es": "Presione el botón durante aprox. 8 segundos hasta que el LED parpadee rápidamente.",
+        "fr": "Appuyez sur le bouton pendant environ 8 secondes jusqu'à ce que la LED clignote rapidement.",
+        "it": "Premere il pulsante per circa 8 secondi fino a quando il LED lampeggia rapidamente.",
+        "no": "Trykk på knappen i ca. 8 sekunder til LED-en blinker raskt.",
+        "pl": "Naciśnij przycisk przez ok. 8 sekund, aż dioda LED zacznie szybko migać.",
+        "ru": "Нажмите кнопку примерно на 8 секунд, пока светодиод не начнет быстро мигать.",
+        "ko": "LED가 빠르게 깜박일 때까지 약 8초 동안 버튼을 누르세요."
       }
     }
   }

@@ -2,8 +2,18 @@
   "id": "SonoffRF",
   "connectivity": ["rf433"],
   "name": {
-    "en": "RF-button",
-    "sv": "RF-knapp"
+    "en": "RF Button",
+    "sv": "RF-knapp",
+    "nl": "RF-knop",
+    "da": "RF-knap",
+    "de": "RF-Taste",
+    "es": "Botón RF",
+    "fr": "Bouton RF",
+    "it": "Pulsante RF",
+    "no": "RF-knapp",
+    "pl": "Przycisk RF",
+    "ru": "RF кнопка",
+    "ko": "RF 버튼"
   },
   "class": "button",
   "capabilities": [
@@ -23,13 +33,46 @@
       },
       "options": {
         "title": {
-          "en": "Create a RF button"
+          "en": "Create a RF button",
+          "sv": "Skapa en RF-knapp",
+          "nl": "Maak een RF-knop aan",
+          "da": "Opret en RF-knap",
+          "de": "RF-Taste erstellen",
+          "es": "Crear un botón RF",
+          "fr": "Créer un bouton RF",
+          "it": "Crea un pulsante RF",
+          "no": "Opprett en RF-knapp",
+          "pl": "Utwórz przycisk RF",
+          "ru": "Создать RF кнопку",
+          "ko": "RF 버튼 만들기"
         },
         "instruction": {
-          "en": "Set your device in lerning mode and then click next button below."
+          "en": "Set your device in learning mode and then click the next button below.",
+          "sv": "Sätt din enhet i inlärningsläge och klicka sedan på nästa-knappen nedan.",
+          "nl": "Zet uw apparaat in de leermodus en klik vervolgens op de knop hieronder.",
+          "da": "Sæt din enhed i indlæringstilstand og klik derefter på næste-knappen nedenfor.",
+          "de": "Versetzen Sie Ihr Gerät in den Lernmodus und klicken Sie dann auf die Schaltfläche unten.",
+          "es": "Ponga su dispositivo en modo de aprendizaje y luego haga clic en el botón siguiente.",
+          "fr": "Mettez votre appareil en mode d'apprentissage puis cliquez sur le bouton suivant.",
+          "it": "Impostare il dispositivo in modalità di apprendimento e quindi fare clic sul pulsante successivo.",
+          "no": "Sett enheten i innlæringsmodus og klikk deretter på neste-knappen nedenfor.",
+          "pl": "Ustaw urządzenie w trybie uczenia, a następnie kliknij przycisk dalej poniżej.",
+          "ru": "Переведите устройство в режим обучения и нажмите кнопку далее.",
+          "ko": "장치를 학습 모드로 설정한 다음 아래의 다음 버튼을 클릭하세요."
         },
         "copyFromRemote": {
-          "en": "Copy from Remote"
+          "en": "Copy from Remote",
+          "sv": "Kopiera från fjärrkontroll",
+          "nl": "Kopieer van afstandsbediening",
+          "da": "Kopier fra fjernbetjening",
+          "de": "Von Fernbedienung kopieren",
+          "es": "Copiar del mando a distancia",
+          "fr": "Copier depuis la télécommande",
+          "it": "Copia dal telecomando",
+          "no": "Kopier fra fjernkontroll",
+          "pl": "Kopiuj z pilota",
+          "ru": "Копировать с пульта",
+          "ko": "리모컨에서 복사"
         }
       }
     },
@@ -37,7 +80,18 @@
       "id": "rf_transmitter_learn",
       "options": {
         "instruction": {
-          "en": "Press any button on your remote."
+          "en": "Press any button on your remote.",
+          "sv": "Tryck på valfri knapp på din fjärrkontroll.",
+          "nl": "Druk op een willekeurige knop op uw afstandsbediening.",
+          "da": "Tryk på en vilkårlig knap på din fjernbetjening.",
+          "de": "Drücken Sie eine beliebige Taste auf Ihrer Fernbedienung.",
+          "es": "Presione cualquier botón en su mando a distancia.",
+          "fr": "Appuyez sur n'importe quel bouton de votre télécommande.",
+          "it": "Premere un pulsante qualsiasi sul telecomando.",
+          "no": "Trykk på en hvilken som helst knapp på fjernkontrollen din.",
+          "pl": "Naciśnij dowolny przycisk na pilocie.",
+          "ru": "Нажмите любую кнопку на пульте.",
+          "ko": "리모컨의 아무 버튼이나 누르세요."
         }
       },
       "navigation": {
@@ -51,7 +105,18 @@
       },
       "options": {
         "instruction": {
-          "en": "Did the device turn off and on?"
+          "en": "Did the device turn off and on?",
+          "sv": "Stängdes enheten av och på?",
+          "nl": "Is het apparaat uit- en ingeschakeld?",
+          "da": "Slukkede og tændte enheden?",
+          "de": "Hat sich das Gerät aus- und wieder eingeschaltet?",
+          "es": "¿El dispositivo se apagó y encendió?",
+          "fr": "L'appareil s'est-il éteint puis rallumé ?",
+          "it": "Il dispositivo si è spento e riacceso?",
+          "no": "Ble enheten slått av og på?",
+          "pl": "Czy urządzenie się wyłączyło i włączyło?",
+          "ru": "Устройство выключилось и включилось?",
+          "ko": "장치가 꺼졌다가 켜졌나요?"
         }
       }
     }

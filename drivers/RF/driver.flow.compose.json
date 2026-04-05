@@ -2,8 +2,19 @@
   "triggers": [
     {
       "id": "on_receive",
-      "title": { 
-          "en": "Receive RF" 
+      "title": {
+        "en": "Receive RF",
+        "sv": "Ta emot RF",
+        "nl": "RF ontvangen",
+        "da": "Modtag RF",
+        "de": "RF empfangen",
+        "es": "Recibir RF",
+        "fr": "Recevoir RF",
+        "it": "Ricevi RF",
+        "no": "Motta RF",
+        "pl": "Odbierz RF",
+        "ru": "Получить RF",
+        "ko": "RF 수신"
       }
     }
   ]

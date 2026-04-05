@@ -1,7 +1,18 @@
 {
   "id": "SonoffTRVZB",
   "name": {
-    "en": "Termostat TRVZB"
+    "en": "Thermostat TRVZB",
+    "sv": "Termostat TRVZB",
+    "nl": "Thermostaat TRVZB",
+    "da": "Termostat TRVZB",
+    "de": "Thermostat TRVZB",
+    "es": "Termostato TRVZB",
+    "fr": "Thermostat TRVZB",
+    "it": "Termostato TRVZB",
+    "no": "Termostat TRVZB",
+    "pl": "Termostat TRVZB",
+    "ru": "Термостат TRVZB",
+    "ko": "온도조절기 TRVZB"
   },
   "class": "sensor",
   "capabilities": [
@@ -39,7 +50,18 @@
     "learnmode": {
       "image": "{{driverAssetsPath}}/learn.svg",
       "instruction": {
-        "en": "Turn the temp to off and press the button for 5 seconds until the signal-symbol start blink."
+        "en": "Turn the temperature to off and press the button for 5 seconds until the signal symbol starts blinking.",
+        "sv": "Ställ temperaturen på av och tryck på knappen i 5 sekunder tills signalsymbolen börjar blinka.",
+        "nl": "Zet de temperatuur op uit en druk op de knop gedurende 5 seconden totdat het signaalsymbool begint te knipperen.",
+        "da": "Drej temperaturen til fra og tryk på knappen i 5 sekunder, indtil signalsymbolet begynder at blinke.",
+        "de": "Drehen Sie die Temperatur auf Aus und drücken Sie die Taste 5 Sekunden lang, bis das Signalsymbol zu blinken beginnt.",
+        "es": "Gire la temperatura a apagado y presione el botón durante 5 segundos hasta que el símbolo de señal comience a parpadear.",
+        "fr": "Tournez la température sur arrêt et appuyez sur le bouton pendant 5 secondes jusqu'à ce que le symbole de signal commence à clignoter.",
+        "it": "Impostare la temperatura su spento e premere il pulsante per 5 secondi fino a quando il simbolo del segnale inizia a lampeggiare.",
+        "no": "Drei temperaturen til av og trykk på knappen i 5 sekunder til signalsymbolet begynner å blinke.",
+        "pl": "Ustaw temperaturę na wyłączone i naciśnij przycisk przez 5 sekund, aż symbol sygnału zacznie migać.",
+        "ru": "Установите температуру на выкл. и нажмите кнопку на 5 секунд, пока символ сигнала не начнет мигать.",
+        "ko": "온도를 끄기로 돌리고 신호 기호가 깜박이기 시작할 때까지 5초 동안 버튼을 누르세요."
       }
     }
   },

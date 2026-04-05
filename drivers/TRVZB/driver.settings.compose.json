@@ -2,17 +2,50 @@
   {
     "type": "group",
     "label": {
-      "en": "Settings"
+      "en": "Settings",
+      "sv": "Inställningar",
+      "nl": "Instellingen",
+      "da": "Indstillinger",
+      "de": "Einstellungen",
+      "es": "Ajustes",
+      "fr": "Paramètres",
+      "it": "Impostazioni",
+      "no": "Innstillinger",
+      "pl": "Ustawienia",
+      "ru": "Настройки",
+      "ko": "설정"
     },
     "children": [
       {
         "id": "localTemperatureCalibration",
         "type": "number",
         "label": {
-          "en": "Local Temperature Calibration"
+          "en": "Temperature calibration",
+          "sv": "Temperaturkalibrering",
+          "nl": "Temperatuurkalibratie",
+          "da": "Temperaturkalibrering",
+          "de": "Temperaturkalibrierung",
+          "es": "Calibración de temperatura",
+          "fr": "Calibration de température",
+          "it": "Calibrazione temperatura",
+          "no": "Temperaturkalibrering",
+          "pl": "Kalibracja temperatury",
+          "ru": "Калибровка температуры",
+          "ko": "온도 보정"
         },
         "hint": {
-          "en": "Adjust the local temperature calibration."
+          "en": "Adjust the local temperature calibration.",
+          "sv": "Justera den lokala temperaturkalibreringen.",
+          "nl": "Pas de lokale temperatuurkalibratie aan.",
+          "da": "Juster den lokale temperaturkalibrering.",
+          "de": "Lokale Temperaturkalibrierung anpassen.",
+          "es": "Ajustar la calibración de temperatura local.",
+          "fr": "Ajuster la calibration de température locale.",
+          "it": "Regolare la calibrazione della temperatura locale.",
+          "no": "Juster den lokale temperaturkalibreringen.",
+          "pl": "Dostosuj lokalną kalibrację temperatury.",
+          "ru": "Настройте локальную калибровку температуры.",
+          "ko": "로컬 온도 보정을 조정하세요."
         },
         "min": -7,
         "max": 7,
@@ -23,21 +56,54 @@
         "id": "child_lock",
         "type": "checkbox",
         "label": {
-          "en": "Child lock"
-        }    
+          "en": "Child lock",
+          "sv": "Barnlås",
+          "nl": "Kinderslot",
+          "da": "Børnelås",
+          "de": "Kindersicherung",
+          "es": "Bloqueo infantil",
+          "fr": "Verrouillage enfant",
+          "it": "Blocco bambini",
+          "no": "Barnelås",
+          "pl": "Blokada rodzicielska",
+          "ru": "Защита от детей",
+          "ko": "어린이 잠금"
+        }
       },
       {
         "id": "open_window",
         "type": "checkbox",
         "label": {
-          "en": "Open window detection"
-        }    
+          "en": "Open window detection",
+          "sv": "Detektering av öppet fönster",
+          "nl": "Detectie open raam",
+          "da": "Registrering af åbent vindue",
+          "de": "Erkennung offenes Fenster",
+          "es": "Detección de ventana abierta",
+          "fr": "Détection fenêtre ouverte",
+          "it": "Rilevamento finestra aperta",
+          "no": "Registrering av åpent vindu",
+          "pl": "Wykrywanie otwartego okna",
+          "ru": "Обнаружение открытого окна",
+          "ko": "열린 창문 감지"
+        }
       },
       {
         "id": "frost_protection_temperature",
         "type": "number",
         "label": {
-          "en": "Frost protection temperature"
+          "en": "Frost protection temperature",
+          "sv": "Frostskyddstemperatur",
+          "nl": "Vorstbeschermingstemperatuur",
+          "da": "Frostbeskyttelsestemperatur",
+          "de": "Frostschutztemperatur",
+          "es": "Temperatura de protección contra heladas",
+          "fr": "Température de protection contre le gel",
+          "it": "Temperatura di protezione antigelo",
+          "no": "Frostbeskyttelsestemperatur",
+          "pl": "Temperatura ochrony przed mrozem",
+          "ru": "Температура защиты от замерзания",
+          "ko": "동파 방지 온도"
         },
         "attr": {
           "min": 4,

@@ -2,7 +2,17 @@
   "id": "SonoffMINIZBRBS",
   "name": {
     "en": "MINI-ZBRBS Roller Shutter",
-    "de": "MINI-ZBRBS Rollladenmodul"
+    "sv": "MINI-ZBRBS Rullgardinmodul",
+    "nl": "MINI-ZBRBS Rolluikmodule",
+    "da": "MINI-ZBRBS Rullegardinmodul",
+    "de": "MINI-ZBRBS Rollladenmodul",
+    "es": "MINI-ZBRBS Persiana",
+    "fr": "MINI-ZBRBS Volet roulant",
+    "it": "MINI-ZBRBS Tapparella",
+    "no": "MINI-ZBRBS Rullegardinmodul",
+    "pl": "MINI-ZBRBS Moduł rolety",
+    "ru": "MINI-ZBRBS Модуль рольставни",
+    "ko": "MINI-ZBRBS 롤러 셔터"
   },
   "class": "blinds",
   "capabilities": [
@@ -33,7 +43,18 @@
     "learnmode": {
       "image": "{{driverAssetsPath}}/learn.svg",
       "instruction": {
-        "en": "Press the reset button for 5 seconds until the LED blinks."
+        "en": "Press the reset button for 5 seconds until the LED blinks.",
+        "sv": "Tryck på återställningsknappen i 5 sekunder tills lysdioden blinkar.",
+        "nl": "Druk op de resetknop gedurende 5 seconden totdat de LED knippert.",
+        "da": "Tryk på nulstillingsknappen i 5 sekunder, indtil LED'en blinker.",
+        "de": "Drücken Sie die Reset-Taste 5 Sekunden lang, bis die LED blinkt.",
+        "es": "Presione el botón de reinicio durante 5 segundos hasta que el LED parpadee.",
+        "fr": "Appuyez sur le bouton de réinitialisation pendant 5 secondes jusqu'à ce que la LED clignote.",
+        "it": "Premere il pulsante di ripristino per 5 secondi fino a quando il LED lampeggia.",
+        "no": "Trykk på tilbakestillingsknappen i 5 sekunder til LED-en blinker.",
+        "pl": "Naciśnij przycisk resetowania przez 5 sekund, aż dioda LED zacznie migać.",
+        "ru": "Нажмите кнопку сброса на 5 секунд, пока светодиод не начнет мигать.",
+        "ko": "LED가 깜박일 때까지 리셋 버튼을 5초 동안 누르세요."
       }
     }
   },

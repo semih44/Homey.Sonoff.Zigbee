@@ -2,7 +2,17 @@
   "id": "SonoffZBMINIL",
   "name": {
     "en": "ZBMINI-L Switch",
-    "sv": "ZBMINI-L Strömbrytare"
+    "sv": "ZBMINI-L Strömbrytare",
+    "nl": "ZBMINI-L Schakelaar",
+    "da": "ZBMINI-L Kontakt",
+    "de": "ZBMINI-L Schalter",
+    "es": "ZBMINI-L Interruptor",
+    "fr": "ZBMINI-L Interrupteur",
+    "it": "ZBMINI-L Interruttore",
+    "no": "ZBMINI-L Bryter",
+    "pl": "ZBMINI-L Przełącznik",
+    "ru": "ZBMINI-L Выключатель",
+    "ko": "ZBMINI-L 스위치"
   },
   "class": "socket",
   "capabilities": [
@@ -30,7 +40,18 @@
     "learnmode": {
       "image": "{{driverAssetsPath}}/learn.svg",
       "instruction": {
-        "en": "Press the button on the top for aprox. 10 seconds until the green LED blinks rapidly."
+        "en": "Press the button on the top for approx. 10 seconds until the green LED blinks rapidly.",
+        "sv": "Tryck på knappen på ovansidan i cirka 10 sekunder tills den gröna lysdioden blinkar snabbt.",
+        "nl": "Druk op de knop bovenop gedurende ca. 10 seconden totdat de groene LED snel knippert.",
+        "da": "Tryk på knappen på toppen i ca. 10 sekunder, indtil den grønne LED blinker hurtigt.",
+        "de": "Drücken Sie die Taste oben ca. 10 Sekunden lang, bis die grüne LED schnell blinkt.",
+        "es": "Presione el botón en la parte superior durante aprox. 10 segundos hasta que el LED verde parpadee rápidamente.",
+        "fr": "Appuyez sur le bouton en haut pendant environ 10 secondes jusqu'à ce que la LED verte clignote rapidement.",
+        "it": "Premere il pulsante in alto per circa 10 secondi fino a quando il LED verde lampeggia rapidamente.",
+        "no": "Trykk på knappen på toppen i ca. 10 sekunder til den grønne LED-en blinker raskt.",
+        "pl": "Naciśnij przycisk na górze przez ok. 10 sekund, aż zielona dioda LED zacznie szybko migać.",
+        "ru": "Нажмите кнопку сверху примерно на 10 секунд, пока зеленый светодиод не начнет быстро мигать.",
+        "ko": "녹색 LED가 빠르게 깜박일 때까지 상단의 버튼을 약 10초 동안 누르세요."
       }
     }
   },

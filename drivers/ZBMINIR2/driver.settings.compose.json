@@ -4,10 +4,32 @@
     "type": "checkbox",
     "value": false,
     "label": {
-      "en": "Turbo Mode"
+      "en": "Turbo Mode",
+      "sv": "Turboläge",
+      "nl": "Turbomodus",
+      "da": "Turbotilstand",
+      "de": "Turbomodus",
+      "es": "Modo turbo",
+      "fr": "Mode turbo",
+      "it": "Modalità turbo",
+      "no": "Turbomodus",
+      "pl": "Tryb turbo",
+      "ru": "Турборежим",
+      "ko": "터보 모드"
     },
     "hint": {
-      "en": "Improves Zigbee range for distant devices."
+      "en": "Improves Zigbee range for distant devices.",
+      "sv": "Förbättrar Zigbee-räckvidd för avlägsna enheter.",
+      "nl": "Verbetert het Zigbee-bereik voor apparaten op afstand.",
+      "da": "Forbedrer Zigbee-rækkevidden for fjerne enheder.",
+      "de": "Verbessert die Zigbee-Reichweite für entfernte Geräte.",
+      "es": "Mejora el alcance Zigbee para dispositivos lejanos.",
+      "fr": "Améliore la portée Zigbee pour les appareils éloignés.",
+      "it": "Migliora la portata Zigbee per dispositivi distanti.",
+      "no": "Forbedrer Zigbee-rekkevidden for enheter langt unna.",
+      "pl": "Poprawia zasięg Zigbee dla odległych urządzeń.",
+      "ru": "Увеличивает радиус действия Zigbee для удалённых устройств.",
+      "ko": "먼 장치에 대한 Zigbee 범위를 개선합니다."
     }
   },
   {
@@ -15,51 +37,150 @@
     "type": "checkbox",
     "value": true,
     "label": {
-      "en": "Network LED"
+      "en": "Network LED",
+      "sv": "Nätverks-LED",
+      "nl": "Netwerk-LED",
+      "da": "Netværks-LED",
+      "de": "Netzwerk-LED",
+      "es": "LED de red",
+      "fr": "LED réseau",
+      "it": "LED di rete",
+      "no": "Nettverks-LED",
+      "pl": "Dioda sieci",
+      "ru": "Индикатор сети",
+      "ko": "네트워크 LED"
     },
     "hint": {
-      "en": "Show network status LED."
+      "en": "Show network status LED.",
+      "sv": "Visa nätverksstatus-LED.",
+      "nl": "Toon netwerk status-LED.",
+      "da": "Vis netværksstatus-LED.",
+      "de": "Netzwerkstatus-LED anzeigen.",
+      "es": "Mostrar LED de estado de red.",
+      "fr": "Afficher la LED d'état du réseau.",
+      "it": "Mostra il LED di stato della rete.",
+      "no": "Vis nettverksstatus-LED.",
+      "pl": "Pokaż diodę stanu sieci.",
+      "ru": "Показывать индикатор состояния сети.",
+      "ko": "네트워크 상태 LED를 표시합니다."
     }
   },
   {
     "type": "group",
     "label": {
-      "en": "Switch Configuration"
+      "en": "Switch Configuration",
+      "sv": "Brytarkonfiguration",
+      "nl": "Schakelaarconfiguratie",
+      "da": "Kontaktkonfiguration",
+      "de": "Schalterkonfiguration",
+      "es": "Configuración del interruptor",
+      "fr": "Configuration de l'interrupteur",
+      "it": "Configurazione interruttore",
+      "no": "Bryterkonfigurasjon",
+      "pl": "Konfiguracja przełącznika",
+      "ru": "Настройка выключателя",
+      "ko": "스위치 구성"
     },
     "children": [
       {
         "id": "switch_mode",
         "type": "dropdown",
         "label": {
-          "en": "Switch Type"
+          "en": "Switch Type",
+          "sv": "Brytartyp",
+          "nl": "Schakelaartype",
+          "da": "Kontakttype",
+          "de": "Schaltertyp",
+          "es": "Tipo de interruptor",
+          "fr": "Type d'interrupteur",
+          "it": "Tipo di interruttore",
+          "no": "Brytertype",
+          "pl": "Typ przełącznika",
+          "ru": "Тип выключателя",
+          "ko": "스위치 유형"
         },
         "hint": {
-          "en": "Physical switch connection type."
+          "en": "Physical switch connection type.",
+          "sv": "Fysisk brytaranslutningstyp.",
+          "nl": "Type fysieke schakelaaraansluiting.",
+          "da": "Fysisk kontaktforbindelsestype.",
+          "de": "Physischer Schalter-Anschlusstyp.",
+          "es": "Tipo de conexión del interruptor físico.",
+          "fr": "Type de connexion de l'interrupteur physique.",
+          "it": "Tipo di connessione dell'interruttore fisico.",
+          "no": "Fysisk brytertilkoblingstype.",
+          "pl": "Typ podłączenia fizycznego przełącznika.",
+          "ru": "Тип подключения физического выключателя.",
+          "ko": "물리적 스위치 연결 유형."
         },
         "value": "0",
         "values": [
           {
             "id": "0",
             "label": {
-              "en": "Toggle"
+              "en": "Toggle",
+              "sv": "Växla",
+              "nl": "Schakelaar",
+              "da": "Skift",
+              "de": "Wechselschalter",
+              "es": "Conmutador",
+              "fr": "Bascule",
+              "it": "Commutatore",
+              "no": "Veksle",
+              "pl": "Przełącznik",
+              "ru": "Переключатель",
+              "ko": "토글"
             }
           },
           {
             "id": "1",
             "label": {
-              "en": "Momentary"
+              "en": "Momentary",
+              "sv": "Momentan",
+              "nl": "Pulsdrukker",
+              "da": "Momentan",
+              "de": "Taster",
+              "es": "Momentáneo",
+              "fr": "Momentané",
+              "it": "Momentaneo",
+              "no": "Momentan",
+              "pl": "Chwilowy",
+              "ru": "Кнопочный",
+              "ko": "순간"
             }
           },
           {
             "id": "2",
             "label": {
-              "en": "Follow"
+              "en": "Follow",
+              "sv": "Följ",
+              "nl": "Volg",
+              "da": "Følg",
+              "de": "Nachführung",
+              "es": "Seguir",
+              "fr": "Suivre",
+              "it": "Segui",
+              "no": "Følg",
+              "pl": "Podążaj",
+              "ru": "Следование",
+              "ko": "추종"
             }
           },
           {
             "id": "130",
             "label": {
-              "en": "Follow (inverted)"
+              "en": "Follow (inverted)",
+              "sv": "Följ (inverterad)",
+              "nl": "Volg (omgekeerd)",
+              "da": "Følg (inverteret)",
+              "de": "Nachführung (invertiert)",
+              "es": "Seguir (invertido)",
+              "fr": "Suivre (inversé)",
+              "it": "Segui (invertito)",
+              "no": "Følg (invertert)",
+              "pl": "Podążaj (odwrócony)",
+              "ru": "Следование (инвертировано)",
+              "ko": "추종 (반전)"
             }
           }
         ]
@@ -69,10 +190,32 @@
         "type": "checkbox",
         "value": false,
         "label": {
-          "en": "Detach Relay"
+          "en": "Detach Relay",
+          "sv": "Koppla loss relä",
+          "nl": "Relais loskoppelen",
+          "da": "Frakobl relæ",
+          "de": "Relais entkoppeln",
+          "es": "Desacoplar relé",
+          "fr": "Détacher le relais",
+          "it": "Scollega relè",
+          "no": "Koble fra relé",
+          "pl": "Odłącz przekaźnik",
+          "ru": "Отключить реле",
+          "ko": "릴레이 분리"
         },
         "hint": {
-          "en": "Switch triggers scenes only. Relay stays unchanged."
+          "en": "Switch triggers scenes only. Relay stays unchanged.",
+          "sv": "Brytaren utlöser bara scener. Reläet förblir oförändrat.",
+          "nl": "Schakelaar activeert alleen scenes. Relais blijft ongewijzigd.",
+          "da": "Kontakten udløser kun scener. Relæet forbliver uændret.",
+          "de": "Schalter löst nur Szenen aus. Relais bleibt unverändert.",
+          "es": "El interruptor solo activa escenas. El relé permanece sin cambios.",
+          "fr": "L'interrupteur déclenche uniquement des scènes. Le relais reste inchangé.",
+          "it": "L'interruttore attiva solo scene. Il relè resta invariato.",
+          "no": "Bryteren utløser bare scener. Reléet forblir uendret.",
+          "pl": "Przełącznik uruchamia tylko sceny. Przekaźnik pozostaje bez zmian.",
+          "ru": "Выключатель запускает только сцены. Реле остаётся без изменений.",
+          "ko": "스위치는 씬만 실행합니다. 릴레이는 변경되지 않습니다."
         }
       }
     ]
@@ -80,42 +223,119 @@
   {
     "type": "group",
     "label": {
-      "en": "Power-on Behavior"
+      "en": "Power-on Behavior",
+      "sv": "Beteende vid strömåterkomst",
+      "nl": "Gedrag bij inschakelen",
+      "da": "Opførsel ved tænding",
+      "de": "Einschaltverhalten",
+      "es": "Comportamiento al encender",
+      "fr": "Comportement à la mise sous tension",
+      "it": "Comportamento all'accensione",
+      "no": "Oppførsel ved strømtilkobling",
+      "pl": "Zachowanie po włączeniu",
+      "ru": "Поведение при включении",
+      "ko": "전원 켜기 동작"
     },
     "children": [
       {
         "id": "power_on_behavior",
         "type": "dropdown",
         "label": {
-          "en": "Power-on State"
+          "en": "Power-on State",
+          "sv": "Tillstånd vid strömåterkomst",
+          "nl": "Status bij inschakelen",
+          "da": "Tilstand ved tænding",
+          "de": "Zustand beim Einschalten",
+          "es": "Estado al encender",
+          "fr": "État à la mise sous tension",
+          "it": "Stato all'accensione",
+          "no": "Tilstand ved strømtilkobling",
+          "pl": "Stan po włączeniu",
+          "ru": "Состояние при включении",
+          "ko": "전원 켜기 상태"
         },
         "hint": {
-          "en": "Relay state after power restore."
+          "en": "Relay state after power restore.",
+          "sv": "Relätillstånd efter strömåterkomst.",
+          "nl": "Relaisstatus na stroomherstel.",
+          "da": "Relætilstand efter strømgendannelse.",
+          "de": "Relaiszustand nach Stromwiederkehr.",
+          "es": "Estado del relé después de restaurar la energía.",
+          "fr": "État du relais après rétablissement de l'alimentation.",
+          "it": "Stato del relè dopo il ripristino dell'alimentazione.",
+          "no": "Relétilstand etter strømgjenoppretting.",
+          "pl": "Stan przekaźnika po przywróceniu zasilania.",
+          "ru": "Состояние реле после восстановления питания.",
+          "ko": "전원 복구 후 릴레이 상태."
         },
         "value": "off",
         "values": [
           {
             "id": "on",
             "label": {
-              "en": "Turn On"
+              "en": "Turn On",
+              "sv": "Slå på",
+              "nl": "Inschakelen",
+              "da": "Tænd",
+              "de": "Einschalten",
+              "es": "Encender",
+              "fr": "Allumer",
+              "it": "Accendi",
+              "no": "Slå på",
+              "pl": "Włącz",
+              "ru": "Включить",
+              "ko": "켜기"
             }
           },
           {
             "id": "off",
             "label": {
-              "en": "Turn Off"
+              "en": "Turn Off",
+              "sv": "Stäng av",
+              "nl": "Uitschakelen",
+              "da": "Sluk",
+              "de": "Ausschalten",
+              "es": "Apagar",
+              "fr": "Éteindre",
+              "it": "Spegni",
+              "no": "Slå av",
+              "pl": "Wyłącz",
+              "ru": "Выключить",
+              "ko": "끄기"
             }
           },
           {
             "id": "toggle",
             "label": {
-              "en": "Toggle"
+              "en": "Toggle",
+              "sv": "Växla",
+              "nl": "Schakelen",
+              "da": "Skift",
+              "de": "Umschalten",
+              "es": "Conmutar",
+              "fr": "Basculer",
+              "it": "Commuta",
+              "no": "Veksle",
+              "pl": "Przełącz",
+              "ru": "Переключить",
+              "ko": "토글"
             }
           },
           {
             "id": "last_state",
             "label": {
-              "en": "Last State"
+              "en": "Last State",
+              "sv": "Senaste tillstånd",
+              "nl": "Laatste status",
+              "da": "Sidste tilstand",
+              "de": "Letzter Zustand",
+              "es": "Último estado",
+              "fr": "Dernier état",
+              "it": "Ultimo stato",
+              "no": "Siste tilstand",
+              "pl": "Ostatni stan",
+              "ru": "Последнее состояние",
+              "ko": "마지막 상태"
             }
           }
         ]
@@ -125,20 +345,64 @@
         "type": "checkbox",
         "value": false,
         "label": {
-          "en": "Power-on Delay"
+          "en": "Power-on Delay",
+          "sv": "Fördröjning vid strömåterkomst",
+          "nl": "Inschakelvertraging",
+          "da": "Tændingsforsinkelse",
+          "de": "Einschaltverzögerung",
+          "es": "Retardo al encender",
+          "fr": "Délai de mise sous tension",
+          "it": "Ritardo all'accensione",
+          "no": "Forsinkelse ved strømtilkobling",
+          "pl": "Opóźnienie włączenia",
+          "ru": "Задержка при включении",
+          "ko": "전원 켜기 지연"
         },
         "hint": {
-          "en": "Delay relay after power restore."
+          "en": "Delay relay after power restore.",
+          "sv": "Fördröj reläet efter strömåterkomst.",
+          "nl": "Relais vertragen na stroomherstel.",
+          "da": "Forsink relæet efter strømgendannelse.",
+          "de": "Relais nach Stromwiederkehr verzögern.",
+          "es": "Retardar el relé después de restaurar la energía.",
+          "fr": "Retarder le relais après rétablissement de l'alimentation.",
+          "it": "Ritarda il relè dopo il ripristino dell'alimentazione.",
+          "no": "Forsink reléet etter strømgjenoppretting.",
+          "pl": "Opóźnij przekaźnik po przywróceniu zasilania.",
+          "ru": "Задержка реле после восстановления питания.",
+          "ko": "전원 복구 후 릴레이를 지연합니다."
         }
       },
       {
         "id": "power_on_delay_time",
         "type": "number",
         "label": {
-          "en": "Delay (s)"
+          "en": "Delay (s)",
+          "sv": "Fördröjning (s)",
+          "nl": "Vertraging (s)",
+          "da": "Forsinkelse (s)",
+          "de": "Verzögerung (s)",
+          "es": "Retardo (s)",
+          "fr": "Délai (s)",
+          "it": "Ritardo (s)",
+          "no": "Forsinkelse (s)",
+          "pl": "Opóźnienie (s)",
+          "ru": "Задержка (с)",
+          "ko": "지연 (초)"
         },
         "hint": {
-          "en": "Wait time before relay switches (0.5-3599.5s)."
+          "en": "Wait time before relay switches (0.5-3599.5s).",
+          "sv": "Väntetid innan reläet kopplar (0,5-3599,5s).",
+          "nl": "Wachttijd voordat het relais schakelt (0,5-3599,5s).",
+          "da": "Ventetid før relæet skifter (0,5-3599,5s).",
+          "de": "Wartezeit bis das Relais schaltet (0,5-3599,5s).",
+          "es": "Tiempo de espera antes de que el relé conmute (0,5-3599,5s).",
+          "fr": "Temps d'attente avant commutation du relais (0,5-3599,5s).",
+          "it": "Tempo di attesa prima della commutazione del relè (0,5-3599,5s).",
+          "no": "Ventetid før reléet kobler (0,5-3599,5s).",
+          "pl": "Czas oczekiwania przed przełączeniem przekaźnika (0,5-3599,5s).",
+          "ru": "Время ожидания перед переключением реле (0,5-3599,5 с).",
+          "ko": "릴레이가 전환되기 전 대기 시간 (0.5-3599.5초)."
         },
         "value": 2,
         "min": 0.5,
@@ -150,7 +414,18 @@
   {
     "type": "group",
     "label": {
-      "en": "Inching"
+      "en": "Inching",
+      "sv": "Inching",
+      "nl": "Inching",
+      "da": "Inching",
+      "de": "Inching",
+      "es": "Inching",
+      "fr": "Inching",
+      "it": "Inching",
+      "no": "Inching",
+      "pl": "Inching",
+      "ru": "Инчинг",
+      "ko": "인칭"
     },
     "children": [
       {
@@ -158,20 +433,64 @@
         "type": "checkbox",
         "value": false,
         "label": {
-          "en": "Enable Inching"
+          "en": "Enable Inching",
+          "sv": "Aktivera inching",
+          "nl": "Inching inschakelen",
+          "da": "Aktivér inching",
+          "de": "Inching aktivieren",
+          "es": "Activar inching",
+          "fr": "Activer l'inching",
+          "it": "Attiva inching",
+          "no": "Aktiver inching",
+          "pl": "Włącz inching",
+          "ru": "Включить инчинг",
+          "ko": "인칭 활성화"
         },
         "hint": {
-          "en": "Auto-switch relay after set time."
+          "en": "Auto-switch relay after set time.",
+          "sv": "Växla reläet automatiskt efter inställd tid.",
+          "nl": "Relais automatisch schakelen na ingestelde tijd.",
+          "da": "Skift relæ automatisk efter indstillet tid.",
+          "de": "Relais nach eingestellter Zeit automatisch umschalten.",
+          "es": "Conmutar el relé automáticamente después del tiempo establecido.",
+          "fr": "Commutation automatique du relais après le temps défini.",
+          "it": "Commutazione automatica del relè dopo il tempo impostato.",
+          "no": "Automatisk veksling av relé etter innstilt tid.",
+          "pl": "Automatyczne przełączenie przekaźnika po ustawionym czasie.",
+          "ru": "Автоматическое переключение реле через заданное время.",
+          "ko": "설정된 시간 후 릴레이를 자동 전환합니다."
         }
       },
       {
         "id": "inching_time",
         "type": "number",
         "label": {
-          "en": "Duration (s)"
+          "en": "Duration (s)",
+          "sv": "Varaktighet (s)",
+          "nl": "Duur (s)",
+          "da": "Varighed (s)",
+          "de": "Dauer (s)",
+          "es": "Duración (s)",
+          "fr": "Durée (s)",
+          "it": "Durata (s)",
+          "no": "Varighet (s)",
+          "pl": "Czas trwania (s)",
+          "ru": "Длительность (с)",
+          "ko": "지속 시간 (초)"
         },
         "hint": {
-          "en": "Time before auto-switch (0.5-3599.5s)."
+          "en": "Time before auto-switch (0.5-3599.5s).",
+          "sv": "Tid innan automatisk växling (0,5-3599,5s).",
+          "nl": "Tijd voor automatisch schakelen (0,5-3599,5s).",
+          "da": "Tid før automatisk skift (0,5-3599,5s).",
+          "de": "Zeit bis zur automatischen Umschaltung (0,5-3599,5s).",
+          "es": "Tiempo antes de la conmutación automática (0,5-3599,5s).",
+          "fr": "Temps avant commutation automatique (0,5-3599,5s).",
+          "it": "Tempo prima della commutazione automatica (0,5-3599,5s).",
+          "no": "Tid før automatisk veksling (0,5-3599,5s).",
+          "pl": "Czas przed automatycznym przełączeniem (0,5-3599,5s).",
+          "ru": "Время до автоматического переключения (0,5-3599,5 с).",
+          "ko": "자동 전환 전 시간 (0.5-3599.5초)."
         },
         "value": 1,
         "min": 0.5,
@@ -182,10 +501,32 @@
         "id": "inching_mode",
         "type": "dropdown",
         "label": {
-          "en": "Inching Mode"
+          "en": "Inching Mode",
+          "sv": "Inching-läge",
+          "nl": "Inching-modus",
+          "da": "Inching-tilstand",
+          "de": "Inching-Modus",
+          "es": "Modo inching",
+          "fr": "Mode inching",
+          "it": "Modalità inching",
+          "no": "Inching-modus",
+          "pl": "Tryb inching",
+          "ru": "Режим инчинга",
+          "ko": "인칭 모드"
         },
         "hint": {
-          "en": "Auto switch order."
+          "en": "Auto switch order.",
+          "sv": "Automatisk växlingsordning.",
+          "nl": "Automatische schakelrichting.",
+          "da": "Automatisk skifterækkefølge.",
+          "de": "Automatische Schaltreihenfolge.",
+          "es": "Orden de conmutación automática.",
+          "fr": "Ordre de commutation automatique.",
+          "it": "Ordine di commutazione automatica.",
+          "no": "Automatisk vekslingsrekkefølge.",
+          "pl": "Kolejność automatycznego przełączania.",
+          "ru": "Порядок автоматического переключения.",
+          "ko": "자동 전환 순서."
         },
         "value": "on",
         "values": [

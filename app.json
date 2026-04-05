@@ -101,7 +101,18 @@
       {
         "id": "on_receive",
         "title": {
-          "en": "Receive RF"
+          "en": "Receive RF",
+          "sv": "Ta emot RF",
+          "nl": "RF ontvangen",
+          "da": "Modtag RF",
+          "de": "RF empfangen",
+          "es": "Recibir RF",
+          "fr": "Recevoir RF",
+          "it": "Ricevi RF",
+          "no": "Motta RF",
+          "pl": "Odbierz RF",
+          "ru": "Получить RF",
+          "ko": "RF 수신"
         },
         "args": [
           {
@@ -310,7 +321,18 @@
   "drivers": [
     {
       "name": {
-        "en": "Switch (Basic ZBR3)"
+        "en": "Switch (Basic ZBR3)",
+        "sv": "Strömbrytare (Basic ZBR3)",
+        "nl": "Schakelaar (Basic ZBR3)",
+        "da": "Kontakt (Basic ZBR3)",
+        "de": "Schalter (Basic ZBR3)",
+        "es": "Interruptor (Basic ZBR3)",
+        "fr": "Interrupteur (Basic ZBR3)",
+        "it": "Interruttore (Basic ZBR3)",
+        "no": "Bryter (Basic ZBR3)",
+        "pl": "Przełącznik (Basic ZBR3)",
+        "ru": "Выключатель (Basic ZBR3)",
+        "ko": "스위치 (Basic ZBR3)"
       },
       "class": "socket",
       "capabilities": [
@@ -356,7 +378,18 @@
         "learnmode": {
           "image": "/drivers/BASICZBR3/assets/learn.svg",
           "instruction": {
-            "en": "Push the button for aprox 8 seconds until the LED blinks rapidly."
+            "en": "Push the button for approx. 8 seconds until the LED blinks rapidly.",
+            "sv": "Tryck på knappen i cirka 8 sekunder tills lysdioden blinkar snabbt.",
+            "nl": "Druk op de knop gedurende ca. 8 seconden totdat de LED snel knippert.",
+            "da": "Tryk på knappen i ca. 8 sekunder, indtil LED'en blinker hurtigt.",
+            "de": "Drücken Sie die Taste ca. 8 Sekunden lang, bis die LED schnell blinkt.",
+            "es": "Presione el botón durante aprox. 8 segundos hasta que el LED parpadee rápidamente.",
+            "fr": "Appuyez sur le bouton pendant environ 8 secondes jusqu'à ce que la LED clignote rapidement.",
+            "it": "Premere il pulsante per circa 8 secondi fino a quando il LED lampeggia rapidamente.",
+            "no": "Trykk på knappen i ca. 8 sekunder til LED-en blinker raskt.",
+            "pl": "Naciśnij przycisk przez ok. 8 sekund, aż dioda LED zacznie szybko migać.",
+            "ru": "Нажмите кнопку примерно на 8 секунд, пока светодиод не начнет быстро мигать.",
+            "ko": "LED가 빠르게 깜박일 때까지 약 8초 동안 버튼을 누르세요."
           }
         }
       },
@@ -378,7 +411,17 @@
       "id": "MINI-ZBRBS",
       "name": {
         "en": "MINI-ZBRBS Roller Shutter",
-        "de": "MINI-ZBRBS Rollladenmodul"
+        "sv": "MINI-ZBRBS Rullgardinmodul",
+        "nl": "MINI-ZBRBS Rolluikmodule",
+        "da": "MINI-ZBRBS Rullegardinmodul",
+        "de": "MINI-ZBRBS Rollladenmodul",
+        "es": "MINI-ZBRBS Persiana",
+        "fr": "MINI-ZBRBS Volet roulant",
+        "it": "MINI-ZBRBS Tapparella",
+        "no": "MINI-ZBRBS Rullegardinmodul",
+        "pl": "MINI-ZBRBS Moduł rolety",
+        "ru": "MINI-ZBRBS Модуль рольставни",
+        "ko": "MINI-ZBRBS 롤러 셔터"
       },
       "class": "blinds",
       "capabilities": [
@@ -409,7 +452,18 @@
         "learnmode": {
           "image": "/drivers/MINI-ZBRBS/assets/learn.svg",
           "instruction": {
-            "en": "Press the reset button for 5 seconds until the LED blinks."
+            "en": "Press the reset button for 5 seconds until the LED blinks.",
+            "sv": "Tryck på återställningsknappen i 5 sekunder tills lysdioden blinkar.",
+            "nl": "Druk op de resetknop gedurende 5 seconden totdat de LED knippert.",
+            "da": "Tryk på nulstillingsknappen i 5 sekunder, indtil LED'en blinker.",
+            "de": "Drücken Sie die Reset-Taste 5 Sekunden lang, bis die LED blinkt.",
+            "es": "Presione el botón de reinicio durante 5 segundos hasta que el LED parpadee.",
+            "fr": "Appuyez sur le bouton de réinitialisation pendant 5 secondes jusqu'à ce que la LED clignote.",
+            "it": "Premere il pulsante di ripristino per 5 secondi fino a quando il LED lampeggia.",
+            "no": "Trykk på tilbakestillingsknappen i 5 sekunder til LED-en blinker.",
+            "pl": "Naciśnij przycisk resetowania przez 5 sekund, aż dioda LED zacznie migać.",
+            "ru": "Нажмите кнопку сброса на 5 секунд, пока светодиод не начнет мигать.",
+            "ko": "LED가 깜박일 때까지 리셋 버튼을 5초 동안 누르세요."
           }
         }
       },
@@ -419,10 +473,32 @@
           "type": "checkbox",
           "value": false,
           "label": {
-            "en": "Turbo Mode"
+            "en": "Turbo Mode",
+            "sv": "Turboläge",
+            "nl": "Turbomodus",
+            "da": "Turbotilstand",
+            "de": "Turbomodus",
+            "es": "Modo turbo",
+            "fr": "Mode turbo",
+            "it": "Modalità turbo",
+            "no": "Turbomodus",
+            "pl": "Tryb turbo",
+            "ru": "Турборежим",
+            "ko": "터보 모드"
           },
           "hint": {
-            "en": "Improves Zigbee range for distant devices."
+            "en": "Improves Zigbee range for distant devices.",
+            "sv": "Förbättrar Zigbee-räckvidden för avlägsna enheter.",
+            "nl": "Verbetert het Zigbee-bereik voor apparaten op afstand.",
+            "da": "Forbedrer Zigbee-rækkevidden for fjerne enheder.",
+            "de": "Verbessert die Zigbee-Reichweite für entfernte Geräte.",
+            "es": "Mejora el alcance Zigbee para dispositivos distantes.",
+            "fr": "Améliore la portée Zigbee pour les appareils distants.",
+            "it": "Migliora la portata Zigbee per dispositivi distanti.",
+            "no": "Forbedrer Zigbee-rekkevidden for fjerne enheter.",
+            "pl": "Poprawia zasięg Zigbee dla odległych urządzeń.",
+            "ru": "Улучшает радиус действия Zigbee для удалённых устройств.",
+            "ko": "원거리 기기의 Zigbee 범위를 개선합니다."
           }
         },
         {
@@ -430,45 +506,166 @@
           "type": "checkbox",
           "value": true,
           "label": {
-            "en": "Network LED"
+            "en": "Network LED",
+            "sv": "Nätverks-LED",
+            "nl": "Netwerk-LED",
+            "da": "Netværks-LED",
+            "de": "Netzwerk-LED",
+            "es": "LED de red",
+            "fr": "LED réseau",
+            "it": "LED di rete",
+            "no": "Nettverks-LED",
+            "pl": "Dioda sieciowa",
+            "ru": "Сетевой светодиод",
+            "ko": "네트워크 LED"
           },
           "hint": {
-            "en": "Show network status LED."
+            "en": "Show network status LED.",
+            "sv": "Visa nätverksstatuslysdiod.",
+            "nl": "Toon netwerk-LED.",
+            "da": "Vis netværksstatus-LED.",
+            "de": "Netzwerkstatus-LED anzeigen.",
+            "es": "Mostrar LED de estado de red.",
+            "fr": "Afficher la LED d'état du réseau.",
+            "it": "Mostra il LED di stato della rete.",
+            "no": "Vis nettverksstatus-LED.",
+            "pl": "Pokaż diodę stanu sieci.",
+            "ru": "Показать светодиод состояния сети.",
+            "ko": "네트워크 상태 LED를 표시합니다."
+          }
+        },
+        {
+          "id": "invert_cover",
+          "type": "checkbox",
+          "value": false,
+          "label": {
+            "en": "Invert Direction",
+            "sv": "Invertera riktning",
+            "nl": "Richting omkeren",
+            "da": "Invertér retning",
+            "de": "Richtung invertieren",
+            "es": "Invertir dirección",
+            "fr": "Inverser la direction",
+            "it": "Inverti direzione",
+            "no": "Inverter retning",
+            "pl": "Odwróć kierunek",
+            "ru": "Инвертировать направление",
+            "ko": "방향 반전"
+          },
+          "hint": {
+            "en": "Swap open/close direction without rewiring.",
+            "sv": "Byt öppna/stäng-riktning utan omkoppling.",
+            "nl": "Wissel open/dicht-richting zonder herbedrading.",
+            "da": "Skift åbn/luk-retning uden omkobling.",
+            "de": "Auf/Zu-Richtung tauschen ohne Umverkabelung.",
+            "es": "Intercambiar dirección abrir/cerrar sin recablear.",
+            "fr": "Inverser la direction ouverture/fermeture sans recâblage.",
+            "it": "Scambiare la direzione apri/chiudi senza ricablaggio.",
+            "no": "Bytt åpne/lukke-retning uten omkobling.",
+            "pl": "Zamień kierunek otwierania/zamykania bez ponownego okablowania.",
+            "ru": "Поменять направление открытия/закрытия без переподключения.",
+            "ko": "재배선 없이 열기/닫기 방향을 전환합니다."
           }
         },
         {
           "id": "switch_mode",
           "type": "dropdown",
           "label": {
-            "en": "External Trigger Mode"
+            "en": "External Trigger Mode",
+            "sv": "Externt triggerläge",
+            "nl": "Externe triggermodus",
+            "da": "Ekstern udløsningstilstand",
+            "de": "Externer Auslösemodus",
+            "es": "Modo de activación externo",
+            "fr": "Mode de déclenchement externe",
+            "it": "Modalità trigger esterno",
+            "no": "Ekstern utløsermodus",
+            "pl": "Zewnętrzny tryb wyzwalania",
+            "ru": "Режим внешнего триггера",
+            "ko": "외부 트리거 모드"
           },
           "hint": {
-            "en": "Physical switch connection type."
+            "en": "Physical switch connection type.",
+            "sv": "Fysisk typ av strömbrytaranslutning.",
+            "nl": "Type fysieke schakelaaraansluiting.",
+            "da": "Fysisk kontaktforbindelsestype.",
+            "de": "Physischer Schalter-Anschlusstyp.",
+            "es": "Tipo de conexión del interruptor físico.",
+            "fr": "Type de connexion de l'interrupteur physique.",
+            "it": "Tipo di connessione dell'interruttore fisico.",
+            "no": "Fysisk brytertilkoblingstype.",
+            "pl": "Typ podłączenia fizycznego przełącznika.",
+            "ru": "Тип подключения физического переключателя.",
+            "ko": "물리적 스위치 연결 유형."
           },
           "value": "0",
           "values": [
             {
               "id": "0",
               "label": {
-                "en": "Edge"
+                "en": "Edge",
+                "sv": "Kant",
+                "nl": "Flank",
+                "da": "Kant",
+                "de": "Flanke",
+                "es": "Flanco",
+                "fr": "Front",
+                "it": "Fronte",
+                "no": "Kant",
+                "pl": "Zbocze",
+                "ru": "Фронт",
+                "ko": "에지"
               }
             },
             {
               "id": "1",
               "label": {
-                "en": "Pulse"
+                "en": "Pulse",
+                "sv": "Puls",
+                "nl": "Puls",
+                "da": "Puls",
+                "de": "Impuls",
+                "es": "Pulso",
+                "fr": "Impulsion",
+                "it": "Impulso",
+                "no": "Puls",
+                "pl": "Impuls",
+                "ru": "Импульс",
+                "ko": "펄스"
               }
             },
             {
               "id": "2",
               "label": {
-                "en": "Following (off)"
+                "en": "Following (off)",
+                "sv": "Följande (av)",
+                "nl": "Volgend (uit)",
+                "da": "Følgende (fra)",
+                "de": "Folgend (aus)",
+                "es": "Seguimiento (apagado)",
+                "fr": "Suivi (éteint)",
+                "it": "Seguente (spento)",
+                "no": "Følgende (av)",
+                "pl": "Podążający (wył.)",
+                "ru": "Следящий (выкл.)",
+                "ko": "추종 (꺼짐)"
               }
             },
             {
               "id": "130",
               "label": {
-                "en": "Following (on)"
+                "en": "Following (on)",
+                "sv": "Följande (på)",
+                "nl": "Volgend (aan)",
+                "da": "Følgende (til)",
+                "de": "Folgend (ein)",
+                "es": "Seguimiento (encendido)",
+                "fr": "Suivi (allumé)",
+                "it": "Seguente (acceso)",
+                "no": "Følgende (på)",
+                "pl": "Podążający (wł.)",
+                "ru": "Следящий (вкл.)",
+                "ko": "추종 (켜짐)"
               }
             }
           ]
@@ -476,54 +673,153 @@
         {
           "type": "group",
           "label": {
-            "en": "Motor Calibration"
+            "en": "Motor Calibration",
+            "sv": "Motorkalibrering",
+            "nl": "Motorkalibratie",
+            "da": "Motorkalibrering",
+            "de": "Motorkalibrierung",
+            "es": "Calibración del motor",
+            "fr": "Calibration du moteur",
+            "it": "Calibrazione motore",
+            "no": "Motorkalibrering",
+            "pl": "Kalibracja silnika",
+            "ru": "Калибровка мотора",
+            "ko": "모터 캘리브레이션"
           },
           "children": [
             {
               "id": "motor_calibration_action",
               "type": "dropdown",
               "label": {
-                "en": "Calibration Action"
+                "en": "Calibration Action",
+                "sv": "Kalibreringsåtgärd",
+                "nl": "Kalibratieactie",
+                "da": "Kalibreringshandling",
+                "de": "Kalibrierungsaktion",
+                "es": "Acción de calibración",
+                "fr": "Action de calibration",
+                "it": "Azione di calibrazione",
+                "no": "Kalibreringshandling",
+                "pl": "Akcja kalibracji",
+                "ru": "Действие калибровки",
+                "ko": "캘리브레이션 동작"
               },
               "hint": {
-                "en": "Start or clear motor travel calibration. The motor needs calibration to accurately report position."
+                "en": "Start or clear motor travel calibration. The motor needs calibration to accurately report position.",
+                "sv": "Starta eller rensa motorslagkalibrering. Motorn behöver kalibreras för att korrekt rapportera position.",
+                "nl": "Start of wis motorslagkalibratie. De motor heeft kalibratie nodig om de positie nauwkeurig te rapporteren.",
+                "da": "Start eller ryd motorslagkalibrering. Motoren skal kalibreres for at rapportere position korrekt.",
+                "de": "Motorweg-Kalibrierung starten oder löschen. Der Motor muss kalibriert werden, um die Position korrekt zu melden.",
+                "es": "Iniciar o borrar la calibración del recorrido del motor. El motor necesita calibración para informar con precisión la posición.",
+                "fr": "Démarrer ou effacer la calibration de course du moteur. Le moteur doit être calibré pour rapporter la position avec précision.",
+                "it": "Avviare o cancellare la calibrazione della corsa del motore. Il motore necessita di calibrazione per riportare accuratamente la posizione.",
+                "no": "Start eller slett motorslagkalibrering. Motoren trenger kalibrering for å rapportere posisjon nøyaktig.",
+                "pl": "Rozpocznij lub wyczyść kalibrację skoku silnika. Silnik wymaga kalibracji, aby dokładnie raportować pozycję.",
+                "ru": "Запустить или сбросить калибровку хода мотора. Мотору необходима калибровка для точного определения положения.",
+                "ko": "모터 이동 캘리브레이션을 시작하거나 초기화합니다. 정확한 위치 보고를 위해 모터 캘리브레이션이 필요합니다."
               },
               "value": "0",
               "values": [
                 {
                   "id": "0",
                   "label": {
-                    "en": "No action"
+                    "en": "No action",
+                    "sv": "Ingen åtgärd",
+                    "nl": "Geen actie",
+                    "da": "Ingen handling",
+                    "de": "Keine Aktion",
+                    "es": "Sin acción",
+                    "fr": "Aucune action",
+                    "it": "Nessuna azione",
+                    "no": "Ingen handling",
+                    "pl": "Brak akcji",
+                    "ru": "Нет действия",
+                    "ko": "동작 없음"
                   }
                 },
                 {
                   "id": "2",
                   "label": {
-                    "en": "Start automatic calibration"
+                    "en": "Start automatic calibration",
+                    "sv": "Starta automatisk kalibrering",
+                    "nl": "Start automatische kalibratie",
+                    "da": "Start automatisk kalibrering",
+                    "de": "Automatische Kalibrierung starten",
+                    "es": "Iniciar calibración automática",
+                    "fr": "Démarrer la calibration automatique",
+                    "it": "Avviare calibrazione automatica",
+                    "no": "Start automatisk kalibrering",
+                    "pl": "Rozpocznij automatyczną kalibrację",
+                    "ru": "Запустить автоматическую калибровку",
+                    "ko": "자동 캘리브레이션 시작"
                   }
                 },
                 {
                   "id": "3",
                   "label": {
-                    "en": "Start manual calibration"
+                    "en": "Start manual calibration",
+                    "sv": "Starta manuell kalibrering",
+                    "nl": "Start handmatige kalibratie",
+                    "da": "Start manuel kalibrering",
+                    "de": "Manuelle Kalibrierung starten",
+                    "es": "Iniciar calibración manual",
+                    "fr": "Démarrer la calibration manuelle",
+                    "it": "Avviare calibrazione manuale",
+                    "no": "Start manuell kalibrering",
+                    "pl": "Rozpocznij ręczną kalibrację",
+                    "ru": "Запустить ручную калибровку",
+                    "ko": "수동 캘리브레이션 시작"
                   }
                 },
                 {
                   "id": "7",
                   "label": {
-                    "en": "Manual: set fully opened"
+                    "en": "Manual: set fully opened",
+                    "sv": "Manuell: ställ in helt öppen",
+                    "nl": "Handmatig: volledig geopend instellen",
+                    "da": "Manuel: indstil helt åben",
+                    "de": "Manuell: vollständig geöffnet setzen",
+                    "es": "Manual: establecer completamente abierto",
+                    "fr": "Manuel : définir complètement ouvert",
+                    "it": "Manuale: impostare completamente aperto",
+                    "no": "Manuell: sett helt åpen",
+                    "pl": "Ręcznie: ustaw jako całkowicie otwarte",
+                    "ru": "Вручную: установить полностью открыто",
+                    "ko": "수동: 완전 열림 설정"
                   }
                 },
                 {
                   "id": "8",
                   "label": {
-                    "en": "Manual: set fully closed"
+                    "en": "Manual: set fully closed",
+                    "sv": "Manuell: ställ in helt stängd",
+                    "nl": "Handmatig: volledig gesloten instellen",
+                    "da": "Manuel: indstil helt lukket",
+                    "de": "Manuell: vollständig geschlossen setzen",
+                    "es": "Manual: establecer completamente cerrado",
+                    "fr": "Manuel : définir complètement fermé",
+                    "it": "Manuale: impostare completamente chiuso",
+                    "no": "Manuell: sett helt lukket",
+                    "pl": "Ręcznie: ustaw jako całkowicie zamknięte",
+                    "ru": "Вручную: установить полностью закрыто",
+                    "ko": "수동: 완전 닫힘 설정"
                   }
                 },
                 {
                   "id": "4",
                   "label": {
-                    "en": "Clear calibration"
+                    "en": "Clear calibration",
+                    "sv": "Rensa kalibrering",
+                    "nl": "Kalibratie wissen",
+                    "da": "Ryd kalibrering",
+                    "de": "Kalibrierung löschen",
+                    "es": "Borrar calibración",
+                    "fr": "Effacer la calibration",
+                    "it": "Cancellare calibrazione",
+                    "no": "Slett kalibrering",
+                    "pl": "Wyczyść kalibrację",
+                    "ru": "Сбросить калибровку",
+                    "ko": "캘리브레이션 초기화"
                   }
                 }
               ]
@@ -532,7 +828,18 @@
               "id": "motor_calibration_status",
               "type": "label",
               "label": {
-                "en": "Calibration Status"
+                "en": "Calibration Status",
+                "sv": "Kalibreringsstatus",
+                "nl": "Kalibratiestatus",
+                "da": "Kalibreringsstatus",
+                "de": "Kalibrierungsstatus",
+                "es": "Estado de calibración",
+                "fr": "État de calibration",
+                "it": "Stato di calibrazione",
+                "no": "Kalibreringsstatus",
+                "pl": "Status kalibracji",
+                "ru": "Статус калибровки",
+                "ko": "캘리브레이션 상태"
               },
               "value": "Unknown"
             }
@@ -554,8 +861,18 @@
       },
       "id": "RF",
       "name": {
-        "en": "RF-button",
-        "sv": "RF-knapp"
+        "en": "RF Button",
+        "sv": "RF-knapp",
+        "nl": "RF-knop",
+        "da": "RF-knap",
+        "de": "RF-Taste",
+        "es": "Botón RF",
+        "fr": "Bouton RF",
+        "it": "Pulsante RF",
+        "no": "RF-knapp",
+        "pl": "Przycisk RF",
+        "ru": "RF кнопка",
+        "ko": "RF 버튼"
       },
       "class": "button",
       "capabilities": [
@@ -573,13 +890,46 @@
           },
           "options": {
             "title": {
-              "en": "Create a RF button"
+              "en": "Create a RF button",
+              "sv": "Skapa en RF-knapp",
+              "nl": "Maak een RF-knop aan",
+              "da": "Opret en RF-knap",
+              "de": "RF-Taste erstellen",
+              "es": "Crear un botón RF",
+              "fr": "Créer un bouton RF",
+              "it": "Crea un pulsante RF",
+              "no": "Opprett en RF-knapp",
+              "pl": "Utwórz przycisk RF",
+              "ru": "Создать RF кнопку",
+              "ko": "RF 버튼 만들기"
             },
             "instruction": {
-              "en": "Set your device in lerning mode and then click next button below."
+              "en": "Set your device in learning mode and then click the next button below.",
+              "sv": "Sätt din enhet i inlärningsläge och klicka sedan på nästa-knappen nedan.",
+              "nl": "Zet uw apparaat in de leermodus en klik vervolgens op de knop hieronder.",
+              "da": "Sæt din enhed i indlæringstilstand og klik derefter på næste-knappen nedenfor.",
+              "de": "Versetzen Sie Ihr Gerät in den Lernmodus und klicken Sie dann auf die Schaltfläche unten.",
+              "es": "Ponga su dispositivo en modo de aprendizaje y luego haga clic en el botón siguiente.",
+              "fr": "Mettez votre appareil en mode d'apprentissage puis cliquez sur le bouton suivant.",
+              "it": "Impostare il dispositivo in modalità di apprendimento e quindi fare clic sul pulsante successivo.",
+              "no": "Sett enheten i innlæringsmodus og klikk deretter på neste-knappen nedenfor.",
+              "pl": "Ustaw urządzenie w trybie uczenia, a następnie kliknij przycisk dalej poniżej.",
+              "ru": "Переведите устройство в режим обучения и нажмите кнопку далее.",
+              "ko": "장치를 학습 모드로 설정한 다음 아래의 다음 버튼을 클릭하세요."
             },
             "copyFromRemote": {
-              "en": "Copy from Remote"
+              "en": "Copy from Remote",
+              "sv": "Kopiera från fjärrkontroll",
+              "nl": "Kopieer van afstandsbediening",
+              "da": "Kopier fra fjernbetjening",
+              "de": "Von Fernbedienung kopieren",
+              "es": "Copiar del mando a distancia",
+              "fr": "Copier depuis la télécommande",
+              "it": "Copia dal telecomando",
+              "no": "Kopier fra fjernkontroll",
+              "pl": "Kopiuj z pilota",
+              "ru": "Копировать с пульта",
+              "ko": "리모컨에서 복사"
             }
           }
         },
@@ -587,7 +937,18 @@
           "id": "rf_transmitter_learn",
           "options": {
             "instruction": {
-              "en": "Press any button on your remote."
+              "en": "Press any button on your remote.",
+              "sv": "Tryck på valfri knapp på din fjärrkontroll.",
+              "nl": "Druk op een willekeurige knop op uw afstandsbediening.",
+              "da": "Tryk på en vilkårlig knap på din fjernbetjening.",
+              "de": "Drücken Sie eine beliebige Taste auf Ihrer Fernbedienung.",
+              "es": "Presione cualquier botón en su mando a distancia.",
+              "fr": "Appuyez sur n'importe quel bouton de votre télécommande.",
+              "it": "Premere un pulsante qualsiasi sul telecomando.",
+              "no": "Trykk på en hvilken som helst knapp på fjernkontrollen din.",
+              "pl": "Naciśnij dowolny przycisk na pilocie.",
+              "ru": "Нажмите любую кнопку на пульте.",
+              "ko": "리모컨의 아무 버튼이나 누르세요."
             }
           },
           "navigation": {
@@ -601,7 +962,18 @@
           },
           "options": {
             "instruction": {
-              "en": "Did the device turn off and on?"
+              "en": "Did the device turn off and on?",
+              "sv": "Stängdes enheten av och på?",
+              "nl": "Is het apparaat uit- en ingeschakeld?",
+              "da": "Slukkede og tændte enheden?",
+              "de": "Hat sich das Gerät aus- und wieder eingeschaltet?",
+              "es": "¿El dispositivo se apagó y encendió?",
+              "fr": "L'appareil s'est-il éteint puis rallumé ?",
+              "it": "Il dispositivo si è spento e riacceso?",
+              "no": "Ble enheten slått av og på?",
+              "pl": "Czy urządzenie się wyłączyło i włączyło?",
+              "ru": "Устройство выключилось и включилось?",
+              "ko": "장치가 꺼졌다가 켜졌나요?"
             }
           }
         }
@@ -1323,7 +1695,7 @@
       },
       "id": "SNZB-02P",
       "name": {
-        "en": "Termometer SNZB-02P",
+        "en": "Thermometer SNZB-02P",
         "nl": "Thermometer SNZB-02P",
         "da": "Termometer SNZB-02P",
         "de": "Thermometer SNZB-02P",
@@ -1716,8 +2088,18 @@
         "learnmode": {
           "image": "/drivers/SNZB-03P/assets/learn.svg",
           "instruction": {
-            "en": "Press button for aprox 10 seconds until the red LED blinks rapidly.",
-            "sv": "Tryck på knappen i cirka 10 sekunder tills den röda lysdioden blinkar snabbt."
+            "en": "Press button for approx. 10 seconds until the red LED blinks rapidly.",
+            "sv": "Tryck på knappen i cirka 10 sekunder tills den röda lysdioden blinkar snabbt.",
+            "nl": "Druk op de knop gedurende ca. 10 seconden totdat de rode LED snel knippert.",
+            "da": "Tryk på knappen i ca. 10 sekunder, indtil den røde LED blinker hurtigt.",
+            "de": "Drücken Sie die Taste ca. 10 Sekunden lang, bis die rote LED schnell blinkt.",
+            "es": "Presione el botón durante aprox. 10 segundos hasta que el LED rojo parpadee rápidamente.",
+            "fr": "Appuyez sur le bouton pendant environ 10 secondes jusqu'à ce que la LED rouge clignote rapidement.",
+            "it": "Premere il pulsante per circa 10 secondi fino a quando il LED rosso lampeggia rapidamente.",
+            "no": "Trykk på knappen i ca. 10 sekunder til den røde LED-en blinker raskt.",
+            "pl": "Naciśnij przycisk przez ok. 10 sekund, aż czerwona dioda LED zacznie szybko migać.",
+            "ru": "Нажмите кнопку примерно на 10 секунд, пока красный светодиод не начнет быстро мигать.",
+            "ko": "빨간색 LED가 빠르게 깜박일 때까지 약 10초 동안 버튼을 누르세요."
           }
         }
       },
@@ -1818,7 +2200,7 @@
                 {
                   "id": "3",
                   "label": {
-                    "en": "Hight",
+                    "en": "High",
                     "nl": "Hoog",
                     "da": "Høj",
                     "de": "Hoch",
@@ -1968,7 +2350,18 @@
         "learnmode": {
           "image": "/drivers/SNZB-04P/assets/learn.svg",
           "instruction": {
-            "en": "Press button for aprox 10 seconds until the red LED start blinking."
+            "en": "Press button for approx. 10 seconds until the red LED starts blinking.",
+            "sv": "Tryck på knappen i cirka 10 sekunder tills den röda lysdioden börjar blinka.",
+            "nl": "Druk op de knop gedurende ca. 10 seconden totdat de rode LED begint te knipperen.",
+            "da": "Tryk på knappen i ca. 10 sekunder, indtil den røde LED begynder at blinke.",
+            "de": "Drücken Sie die Taste ca. 10 Sekunden lang, bis die rote LED zu blinken beginnt.",
+            "es": "Presione el botón durante aprox. 10 segundos hasta que el LED rojo comience a parpadear.",
+            "fr": "Appuyez sur le bouton pendant environ 10 secondes jusqu'à ce que la LED rouge commence à clignoter.",
+            "it": "Premere il pulsante per circa 10 secondi fino a quando il LED rosso inizia a lampeggiare.",
+            "no": "Trykk på knappen i ca. 10 sekunder til den røde LED-en begynner å blinke.",
+            "pl": "Naciśnij przycisk przez ok. 10 sekund, aż czerwona dioda LED zacznie migać.",
+            "ru": "Нажмите кнопку примерно на 10 секунд, пока красный светодиод не начнет мигать.",
+            "ko": "빨간색 LED가 깜박이기 시작할 때까지 약 10초 동안 버튼을 누르세요."
           }
         }
       }
@@ -1987,7 +2380,18 @@
       },
       "id": "SNZB-05P",
       "name": {
-        "en": "Flood/rain Sensor SNZB-05P"
+        "en": "Water Leak Sensor SNZB-05P",
+        "sv": "Vattenläckagesensor SNZB-05P",
+        "nl": "Waterlekkagesensor SNZB-05P",
+        "da": "Vandlækagesensor SNZB-05P",
+        "de": "Wassermelder SNZB-05P",
+        "es": "Sensor de fuga de agua SNZB-05P",
+        "fr": "Détecteur de fuite d'eau SNZB-05P",
+        "it": "Sensore di perdite d'acqua SNZB-05P",
+        "no": "Vannlekkasjesensor SNZB-05P",
+        "pl": "Czujnik wycieku wody SNZB-05P",
+        "ru": "Датчик утечки воды SNZB-05P",
+        "ko": "누수 감지 센서 SNZB-05P"
       },
       "class": "sensor",
       "capabilities": [
@@ -2018,7 +2422,18 @@
         "learnmode": {
           "image": "/drivers/SNZB-05P/assets/learn.svg",
           "instruction": {
-            "en": "Press button inside device for aprox 10 seconds until the red LED start blinking."
+            "en": "Press button inside device for approx. 10 seconds until the red LED starts blinking.",
+            "sv": "Tryck på knappen inuti enheten i cirka 10 sekunder tills den röda lysdioden börjar blinka.",
+            "nl": "Druk op de knop binnenin het apparaat gedurende ca. 10 seconden totdat de rode LED begint te knipperen.",
+            "da": "Tryk på knappen inde i enheden i ca. 10 sekunder, indtil den røde LED begynder at blinke.",
+            "de": "Drücken Sie die Taste im Gerät ca. 10 Sekunden lang, bis die rote LED zu blinken beginnt.",
+            "es": "Presione el botón dentro del dispositivo durante aprox. 10 segundos hasta que el LED rojo comience a parpadear.",
+            "fr": "Appuyez sur le bouton à l'intérieur de l'appareil pendant environ 10 secondes jusqu'à ce que la LED rouge commence à clignoter.",
+            "it": "Premere il pulsante all'interno del dispositivo per circa 10 secondi fino a quando il LED rosso inizia a lampeggiare.",
+            "no": "Trykk på knappen inne i enheten i ca. 10 sekunder til den røde LED-en begynner å blinke.",
+            "pl": "Naciśnij przycisk wewnątrz urządzenia przez ok. 10 sekund, aż czerwona dioda LED zacznie migać.",
+            "ru": "Нажмите кнопку внутри устройства примерно на 10 секунд, пока красный светодиод не начнет мигать.",
+            "ko": "빨간색 LED가 깜박이기 시작할 때까지 장치 내부의 버튼을 약 10초 동안 누르세요."
           }
         }
       }
@@ -2224,7 +2639,18 @@
       },
       "id": "TRVZB",
       "name": {
-        "en": "Termostat TRVZB"
+        "en": "Thermostat TRVZB",
+        "sv": "Termostat TRVZB",
+        "nl": "Thermostaat TRVZB",
+        "da": "Termostat TRVZB",
+        "de": "Thermostat TRVZB",
+        "es": "Termostato TRVZB",
+        "fr": "Thermostat TRVZB",
+        "it": "Termostato TRVZB",
+        "no": "Termostat TRVZB",
+        "pl": "Termostat TRVZB",
+        "ru": "Термостат TRVZB",
+        "ko": "온도조절기 TRVZB"
       },
       "class": "sensor",
       "capabilities": [
@@ -2264,7 +2690,18 @@
         "learnmode": {
           "image": "/drivers/TRVZB/assets/learn.svg",
           "instruction": {
-            "en": "Turn the temp to off and press the button for 5 seconds until the signal-symbol start blink."
+            "en": "Turn the temperature to off and press the button for 5 seconds until the signal symbol starts blinking.",
+            "sv": "Ställ temperaturen på av och tryck på knappen i 5 sekunder tills signalsymbolen börjar blinka.",
+            "nl": "Zet de temperatuur op uit en druk op de knop gedurende 5 seconden totdat het signaalsymbool begint te knipperen.",
+            "da": "Drej temperaturen til fra og tryk på knappen i 5 sekunder, indtil signalsymbolet begynder at blinke.",
+            "de": "Drehen Sie die Temperatur auf Aus und drücken Sie die Taste 5 Sekunden lang, bis das Signalsymbol zu blinken beginnt.",
+            "es": "Gire la temperatura a apagado y presione el botón durante 5 segundos hasta que el símbolo de señal comience a parpadear.",
+            "fr": "Tournez la température sur arrêt et appuyez sur le bouton pendant 5 secondes jusqu'à ce que le symbole de signal commence à clignoter.",
+            "it": "Impostare la temperatura su spento e premere il pulsante per 5 secondi fino a quando il simbolo del segnale inizia a lampeggiare.",
+            "no": "Drei temperaturen til av og trykk på knappen i 5 sekunder til signalsymbolet begynner å blinke.",
+            "pl": "Ustaw temperaturę na wyłączone i naciśnij przycisk przez 5 sekund, aż symbol sygnału zacznie migać.",
+            "ru": "Установите температуру на выкл. и нажмите кнопку на 5 секунд, пока символ сигнала не начнет мигать.",
+            "ko": "온도를 끄기로 돌리고 신호 기호가 깜박이기 시작할 때까지 5초 동안 버튼을 누르세요."
           }
         }
       },
@@ -2272,17 +2709,50 @@
         {
           "type": "group",
           "label": {
-            "en": "Settings"
+            "en": "Settings",
+            "sv": "Inställningar",
+            "nl": "Instellingen",
+            "da": "Indstillinger",
+            "de": "Einstellungen",
+            "es": "Ajustes",
+            "fr": "Paramètres",
+            "it": "Impostazioni",
+            "no": "Innstillinger",
+            "pl": "Ustawienia",
+            "ru": "Настройки",
+            "ko": "설정"
           },
           "children": [
             {
               "id": "localTemperatureCalibration",
               "type": "number",
               "label": {
-                "en": "Local Temperature Calibration"
+                "en": "Temperature calibration",
+                "sv": "Temperaturkalibrering",
+                "nl": "Temperatuurkalibratie",
+                "da": "Temperaturkalibrering",
+                "de": "Temperaturkalibrierung",
+                "es": "Calibración de temperatura",
+                "fr": "Calibration de température",
+                "it": "Calibrazione temperatura",
+                "no": "Temperaturkalibrering",
+                "pl": "Kalibracja temperatury",
+                "ru": "Калибровка температуры",
+                "ko": "온도 보정"
               },
               "hint": {
-                "en": "Adjust the local temperature calibration."
+                "en": "Adjust the local temperature calibration.",
+                "sv": "Justera den lokala temperaturkalibreringen.",
+                "nl": "Pas de lokale temperatuurkalibratie aan.",
+                "da": "Juster den lokale temperaturkalibrering.",
+                "de": "Lokale Temperaturkalibrierung anpassen.",
+                "es": "Ajustar la calibración de temperatura local.",
+                "fr": "Ajuster la calibration de température locale.",
+                "it": "Regolare la calibrazione della temperatura locale.",
+                "no": "Juster den lokale temperaturkalibreringen.",
+                "pl": "Dostosuj lokalną kalibrację temperatury.",
+                "ru": "Настройте локальную калибровку температуры.",
+                "ko": "로컬 온도 보정을 조정하세요."
               },
               "min": -7,
               "max": 7,
@@ -2293,21 +2763,54 @@
               "id": "child_lock",
               "type": "checkbox",
               "label": {
-                "en": "Child lock"
+                "en": "Child lock",
+                "sv": "Barnlås",
+                "nl": "Kinderslot",
+                "da": "Børnelås",
+                "de": "Kindersicherung",
+                "es": "Bloqueo infantil",
+                "fr": "Verrouillage enfant",
+                "it": "Blocco bambini",
+                "no": "Barnelås",
+                "pl": "Blokada rodzicielska",
+                "ru": "Защита от детей",
+                "ko": "어린이 잠금"
               }
             },
             {
               "id": "open_window",
               "type": "checkbox",
               "label": {
-                "en": "Open window detection"
+                "en": "Open window detection",
+                "sv": "Detektering av öppet fönster",
+                "nl": "Detectie open raam",
+                "da": "Registrering af åbent vindue",
+                "de": "Erkennung offenes Fenster",
+                "es": "Detección de ventana abierta",
+                "fr": "Détection fenêtre ouverte",
+                "it": "Rilevamento finestra aperta",
+                "no": "Registrering av åpent vindu",
+                "pl": "Wykrywanie otwartego okna",
+                "ru": "Обнаружение открытого окна",
+                "ko": "열린 창문 감지"
               }
             },
             {
               "id": "frost_protection_temperature",
               "type": "number",
               "label": {
-                "en": "Frost protection temperature"
+                "en": "Frost protection temperature",
+                "sv": "Frostskyddstemperatur",
+                "nl": "Vorstbeschermingstemperatuur",
+                "da": "Frostbeskyttelsestemperatur",
+                "de": "Frostschutztemperatur",
+                "es": "Temperatura de protección contra heladas",
+                "fr": "Température de protection contre le gel",
+                "it": "Temperatura di protezione antigelo",
+                "no": "Frostbeskyttelsestemperatur",
+                "pl": "Temperatura ochrony przed mrozem",
+                "ru": "Температура защиты от замерзания",
+                "ko": "동파 방지 온도"
               },
               "attr": {
                 "min": 4,
@@ -2333,8 +2836,18 @@
       },
       "id": "ZBCurtain",
       "name": {
-        "en": "ZBCurtain SCurtainwitch",
-        "sv": "ZBCurtain Gardin"
+        "en": "ZBCurtain Curtain",
+        "sv": "ZBCurtain Gardin",
+        "nl": "ZBCurtain Gordijn",
+        "da": "ZBCurtain Gardin",
+        "de": "ZBCurtain Vorhang",
+        "es": "ZBCurtain Cortina",
+        "fr": "ZBCurtain Rideau",
+        "it": "ZBCurtain Tenda",
+        "no": "ZBCurtain Gardin",
+        "pl": "ZBCurtain Zasłona",
+        "ru": "ZBCurtain Штора",
+        "ko": "ZBCurtain 커튼"
       },
       "class": "curtain",
       "capabilities": [
@@ -2373,7 +2886,18 @@
         "learnmode": {
           "image": "/drivers/ZBCurtain/assets/learn.svg",
           "instruction": {
-            "en": "Press the button on side for aprox. 10 seconds until the LED blinks rapidly."
+            "en": "Press the button on the side for approx. 10 seconds until the LED blinks rapidly.",
+            "sv": "Tryck på knappen på sidan i cirka 10 sekunder tills lysdioden blinkar snabbt.",
+            "nl": "Druk op de knop aan de zijkant gedurende ca. 10 seconden totdat de LED snel knippert.",
+            "da": "Tryk på knappen på siden i ca. 10 sekunder, indtil LED'en blinker hurtigt.",
+            "de": "Drücken Sie die Taste an der Seite ca. 10 Sekunden lang, bis die LED schnell blinkt.",
+            "es": "Presione el botón en el lateral durante aprox. 10 segundos hasta que el LED parpadee rápidamente.",
+            "fr": "Appuyez sur le bouton sur le côté pendant environ 10 secondes jusqu'à ce que la LED clignote rapidement.",
+            "it": "Premere il pulsante sul lato per circa 10 secondi fino a quando il LED lampeggia rapidamente.",
+            "no": "Trykk på knappen på siden i ca. 10 sekunder til LED-en blinker raskt.",
+            "pl": "Naciśnij przycisk z boku przez ok. 10 sekund, aż dioda LED zacznie szybko migać.",
+            "ru": "Нажмите кнопку на боковой стороне примерно на 10 секунд, пока светодиод не начнет быстро мигать.",
+            "ko": "LED가 빠르게 깜박일 때까지 측면의 버튼을 약 10초 동안 누르세요."
           }
         }
       },
@@ -2393,7 +2917,18 @@
       },
       "id": "ZBMINI",
       "name": {
-        "en": "ZBMINI Switch"
+        "en": "ZBMINI Switch",
+        "sv": "ZBMINI Strömbrytare",
+        "nl": "ZBMINI Schakelaar",
+        "da": "ZBMINI Kontakt",
+        "de": "ZBMINI Schalter",
+        "es": "ZBMINI Interruptor",
+        "fr": "ZBMINI Interrupteur",
+        "it": "ZBMINI Interruttore",
+        "no": "ZBMINI Bryter",
+        "pl": "ZBMINI Przełącznik",
+        "ru": "ZBMINI Выключатель",
+        "ko": "ZBMINI 스위치"
       },
       "class": "socket",
       "capabilities": [
@@ -2418,7 +2953,18 @@
         "learnmode": {
           "image": "/drivers/ZBMINI/assets/learn.svg",
           "instruction": {
-            "en": "Press the button on the top for approx. 10 seconds until the green LED blinks rapidly."
+            "en": "Press the button on the top for approx. 10 seconds until the green LED blinks rapidly.",
+            "sv": "Tryck på knappen på ovansidan i cirka 10 sekunder tills den gröna lysdioden blinkar snabbt.",
+            "nl": "Druk op de knop bovenop gedurende ca. 10 seconden totdat de groene LED snel knippert.",
+            "da": "Tryk på knappen på toppen i ca. 10 sekunder, indtil den grønne LED blinker hurtigt.",
+            "de": "Drücken Sie die Taste oben ca. 10 Sekunden lang, bis die grüne LED schnell blinkt.",
+            "es": "Presione el botón en la parte superior durante aprox. 10 segundos hasta que el LED verde parpadee rápidamente.",
+            "fr": "Appuyez sur le bouton en haut pendant environ 10 secondes jusqu'à ce que la LED verte clignote rapidement.",
+            "it": "Premere il pulsante in alto per circa 10 secondi fino a quando il LED verde lampeggia rapidamente.",
+            "no": "Trykk på knappen på toppen i ca. 10 sekunder til den grønne LED-en blinker raskt.",
+            "pl": "Naciśnij przycisk na górze przez ok. 10 sekund, aż zielona dioda LED zacznie szybko migać.",
+            "ru": "Нажмите кнопку сверху примерно на 10 секунд, пока зеленый светодиод не начнет быстро мигать.",
+            "ko": "녹색 LED가 빠르게 깜박일 때까지 상단의 버튼을 약 10초 동안 누르세요."
           }
         }
       }
@@ -2438,7 +2984,17 @@
       "id": "ZBMINIL",
       "name": {
         "en": "ZBMINI-L Switch",
-        "sv": "ZBMINI-L Strömbrytare"
+        "sv": "ZBMINI-L Strömbrytare",
+        "nl": "ZBMINI-L Schakelaar",
+        "da": "ZBMINI-L Kontakt",
+        "de": "ZBMINI-L Schalter",
+        "es": "ZBMINI-L Interruptor",
+        "fr": "ZBMINI-L Interrupteur",
+        "it": "ZBMINI-L Interruttore",
+        "no": "ZBMINI-L Bryter",
+        "pl": "ZBMINI-L Przełącznik",
+        "ru": "ZBMINI-L Выключатель",
+        "ko": "ZBMINI-L 스위치"
       },
       "class": "socket",
       "capabilities": [
@@ -2465,7 +3021,18 @@
         "learnmode": {
           "image": "/drivers/ZBMINIL/assets/learn.svg",
           "instruction": {
-            "en": "Press the button on the top for aprox. 10 seconds until the green LED blinks rapidly."
+            "en": "Press the button on the top for approx. 10 seconds until the green LED blinks rapidly.",
+            "sv": "Tryck på knappen på ovansidan i cirka 10 sekunder tills den gröna lysdioden blinkar snabbt.",
+            "nl": "Druk op de knop bovenop gedurende ca. 10 seconden totdat de groene LED snel knippert.",
+            "da": "Tryk på knappen på toppen i ca. 10 sekunder, indtil den grønne LED blinker hurtigt.",
+            "de": "Drücken Sie die Taste oben ca. 10 Sekunden lang, bis die grüne LED schnell blinkt.",
+            "es": "Presione el botón en la parte superior durante aprox. 10 segundos hasta que el LED verde parpadee rápidamente.",
+            "fr": "Appuyez sur le bouton en haut pendant environ 10 secondes jusqu'à ce que la LED verte clignote rapidement.",
+            "it": "Premere il pulsante in alto per circa 10 secondi fino a quando il LED verde lampeggia rapidamente.",
+            "no": "Trykk på knappen på toppen i ca. 10 sekunder til den grønne LED-en blinker raskt.",
+            "pl": "Naciśnij przycisk na górze przez ok. 10 sekund, aż zielona dioda LED zacznie szybko migać.",
+            "ru": "Нажмите кнопку сверху примерно на 10 секунд, пока зеленый светодиод не начнет быстро мигать.",
+            "ko": "녹색 LED가 빠르게 깜박일 때까지 상단의 버튼을 약 10초 동안 누르세요."
           }
         }
       },
@@ -2474,26 +3041,70 @@
           "id": "power_on_behavior",
           "type": "dropdown",
           "label": {
-            "en": "Power-on behavior"
+            "en": "Power-on behavior",
+            "sv": "Beteende vid strömåterkomst",
+            "nl": "Gedrag bij inschakelen",
+            "da": "Opførsel ved tænding",
+            "de": "Einschaltverhalten",
+            "es": "Comportamiento al encender",
+            "fr": "Comportement à la mise sous tension",
+            "it": "Comportamento all'accensione",
+            "no": "Oppførsel ved strømtilkobling",
+            "pl": "Zachowanie po włączeniu",
+            "ru": "Поведение при включении",
+            "ko": "전원 켜기 동작"
           },
           "value": "off",
           "values": [
             {
               "id": "off",
               "label": {
-                "en": "Off"
+                "en": "Off",
+                "sv": "Av",
+                "nl": "Uit",
+                "da": "Fra",
+                "de": "Aus",
+                "es": "Apagado",
+                "fr": "Éteint",
+                "it": "Spento",
+                "no": "Av",
+                "pl": "Wyłączony",
+                "ru": "Выкл.",
+                "ko": "끄기"
               }
             },
             {
               "id": "on",
               "label": {
-                "en": "On"
+                "en": "On",
+                "sv": "På",
+                "nl": "Aan",
+                "da": "Til",
+                "de": "Ein",
+                "es": "Encendido",
+                "fr": "Allumé",
+                "it": "Acceso",
+                "no": "På",
+                "pl": "Włączony",
+                "ru": "Вкл.",
+                "ko": "켜기"
               }
             },
             {
               "id": "last_state",
               "label": {
-                "en": "Last state"
+                "en": "Last state",
+                "sv": "Senaste tillstånd",
+                "nl": "Laatste status",
+                "da": "Sidste tilstand",
+                "de": "Letzter Zustand",
+                "es": "Último estado",
+                "fr": "Dernier état",
+                "it": "Ultimo stato",
+                "no": "Siste tilstand",
+                "pl": "Ostatni stan",
+                "ru": "Последнее состояние",
+                "ko": "마지막 상태"
               }
             }
           ]
@@ -2515,7 +3126,17 @@
       "id": "ZBMINIL2",
       "name": {
         "en": "ZBMINI-L2 Switch",
-        "sv": "ZBMINI-L2 Strömbrytare"
+        "sv": "ZBMINI-L2 Strömbrytare",
+        "nl": "ZBMINI-L2 Schakelaar",
+        "da": "ZBMINI-L2 Kontakt",
+        "de": "ZBMINI-L2 Schalter",
+        "es": "ZBMINI-L2 Interruptor",
+        "fr": "ZBMINI-L2 Interrupteur",
+        "it": "ZBMINI-L2 Interruttore",
+        "no": "ZBMINI-L2 Bryter",
+        "pl": "ZBMINI-L2 Przełącznik",
+        "ru": "ZBMINI-L2 Выключатель",
+        "ko": "ZBMINI-L2 스위치"
       },
       "class": "socket",
       "capabilities": [
@@ -2542,7 +3163,18 @@
         "learnmode": {
           "image": "/drivers/ZBMINIL2/assets/learn.svg",
           "instruction": {
-            "en": "Press the button on the top for aprox. 10 seconds until the green LED blinks rapidly."
+            "en": "Press the button on the top for approx. 10 seconds until the green LED blinks rapidly.",
+            "sv": "Tryck på knappen på ovansidan i cirka 10 sekunder tills den gröna lysdioden blinkar snabbt.",
+            "nl": "Druk op de knop bovenop gedurende ca. 10 seconden totdat de groene LED snel knippert.",
+            "da": "Tryk på knappen på toppen i ca. 10 sekunder, indtil den grønne LED blinker hurtigt.",
+            "de": "Drücken Sie die Taste oben ca. 10 Sekunden lang, bis die grüne LED schnell blinkt.",
+            "es": "Presione el botón en la parte superior durante aprox. 10 segundos hasta que el LED verde parpadee rápidamente.",
+            "fr": "Appuyez sur le bouton en haut pendant environ 10 secondes jusqu'à ce que la LED verte clignote rapidement.",
+            "it": "Premere il pulsante in alto per circa 10 secondi fino a quando il LED verde lampeggia rapidamente.",
+            "no": "Trykk på knappen på toppen i ca. 10 sekunder til den grønne LED-en blinker raskt.",
+            "pl": "Naciśnij przycisk na górze przez ok. 10 sekund, aż zielona dioda LED zacznie szybko migać.",
+            "ru": "Нажмите кнопку сверху примерно на 10 секунд, пока зеленый светодиод не начнет быстро мигать.",
+            "ko": "녹색 LED가 빠르게 깜박일 때까지 상단의 버튼을 약 10초 동안 누르세요."
           }
         }
       },
@@ -2551,26 +3183,70 @@
           "id": "power_on_behavior",
           "type": "dropdown",
           "label": {
-            "en": "Power-on behavior"
+            "en": "Power-on behavior",
+            "sv": "Beteende vid strömåterkomst",
+            "nl": "Gedrag bij inschakelen",
+            "da": "Opførsel ved tænding",
+            "de": "Einschaltverhalten",
+            "es": "Comportamiento al encender",
+            "fr": "Comportement à la mise sous tension",
+            "it": "Comportamento all'accensione",
+            "no": "Oppførsel ved strømtilkobling",
+            "pl": "Zachowanie po włączeniu",
+            "ru": "Поведение при включении",
+            "ko": "전원 켜기 동작"
           },
           "value": "off",
           "values": [
             {
               "id": "off",
               "label": {
-                "en": "Off"
+                "en": "Off",
+                "sv": "Av",
+                "nl": "Uit",
+                "da": "Fra",
+                "de": "Aus",
+                "es": "Apagado",
+                "fr": "Éteint",
+                "it": "Spento",
+                "no": "Av",
+                "pl": "Wyłączony",
+                "ru": "Выкл.",
+                "ko": "끄기"
               }
             },
             {
               "id": "on",
               "label": {
-                "en": "On"
+                "en": "On",
+                "sv": "På",
+                "nl": "Aan",
+                "da": "Til",
+                "de": "Ein",
+                "es": "Encendido",
+                "fr": "Allumé",
+                "it": "Acceso",
+                "no": "På",
+                "pl": "Włączony",
+                "ru": "Вкл.",
+                "ko": "켜기"
               }
             },
             {
               "id": "last_state",
               "label": {
-                "en": "Last state"
+                "en": "Last state",
+                "sv": "Senaste tillstånd",
+                "nl": "Laatste status",
+                "da": "Sidste tilstand",
+                "de": "Letzter Zustand",
+                "es": "Último estado",
+                "fr": "Dernier état",
+                "it": "Ultimo stato",
+                "no": "Siste tilstand",
+                "pl": "Ostatni stan",
+                "ru": "Последнее состояние",
+                "ko": "마지막 상태"
               }
             }
           ]
@@ -2592,7 +3268,17 @@
       "id": "ZBMINIR2",
       "name": {
         "en": "ZBMINI-R2 Switch",
-        "sv": "ZBMINI-R2 Strömbrytare"
+        "sv": "ZBMINI-R2 Strömbrytare",
+        "nl": "ZBMINI-R2 Schakelaar",
+        "da": "ZBMINI-R2 Kontakt",
+        "de": "ZBMINI-R2 Schalter",
+        "es": "ZBMINI-R2 Interruptor",
+        "fr": "ZBMINI-R2 Interrupteur",
+        "it": "ZBMINI-R2 Interruttore",
+        "no": "ZBMINI-R2 Bryter",
+        "pl": "ZBMINI-R2 Przełącznik",
+        "ru": "ZBMINI-R2 Выключатель",
+        "ko": "ZBMINI-R2 스위치"
       },
       "class": "socket",
       "capabilities": [
@@ -2620,7 +3306,18 @@
         "learnmode": {
           "image": "/drivers/ZBMINIR2/assets/learn.svg",
           "instruction": {
-            "en": "Press the button on the top for aprox. 10 seconds until the green LED blinks rapidly."
+            "en": "Press the button on the top for approx. 10 seconds until the green LED blinks rapidly.",
+            "sv": "Tryck på knappen på ovansidan i cirka 10 sekunder tills den gröna lysdioden blinkar snabbt.",
+            "nl": "Druk op de knop bovenop gedurende ca. 10 seconden totdat de groene LED snel knippert.",
+            "da": "Tryk på knappen på toppen i ca. 10 sekunder, indtil den grønne LED blinker hurtigt.",
+            "de": "Drücken Sie die Taste oben ca. 10 Sekunden lang, bis die grüne LED schnell blinkt.",
+            "es": "Presione el botón en la parte superior durante aprox. 10 segundos hasta que el LED verde parpadee rápidamente.",
+            "fr": "Appuyez sur le bouton en haut pendant environ 10 secondes jusqu'à ce que la LED verte clignote rapidement.",
+            "it": "Premere il pulsante in alto per circa 10 secondi fino a quando il LED verde lampeggia rapidamente.",
+            "no": "Trykk på knappen på toppen i ca. 10 sekunder til den grønne LED-en blinker raskt.",
+            "pl": "Naciśnij przycisk na górze przez ok. 10 sekund, aż zielona dioda LED zacznie szybko migać.",
+            "ru": "Нажмите кнопку сверху примерно на 10 секунд, пока зеленый светодиод не начнет быстро мигать.",
+            "ko": "녹색 LED가 빠르게 깜박일 때까지 상단의 버튼을 약 10초 동안 누르세요."
           }
         }
       },
@@ -2630,10 +3327,32 @@
           "type": "checkbox",
           "value": false,
           "label": {
-            "en": "Turbo Mode"
+            "en": "Turbo Mode",
+            "sv": "Turboläge",
+            "nl": "Turbomodus",
+            "da": "Turbotilstand",
+            "de": "Turbomodus",
+            "es": "Modo turbo",
+            "fr": "Mode turbo",
+            "it": "Modalità turbo",
+            "no": "Turbomodus",
+            "pl": "Tryb turbo",
+            "ru": "Турборежим",
+            "ko": "터보 모드"
           },
           "hint": {
-            "en": "Improves Zigbee range for distant devices."
+            "en": "Improves Zigbee range for distant devices.",
+            "sv": "Förbättrar Zigbee-räckvidd för avlägsna enheter.",
+            "nl": "Verbetert het Zigbee-bereik voor apparaten op afstand.",
+            "da": "Forbedrer Zigbee-rækkevidden for fjerne enheder.",
+            "de": "Verbessert die Zigbee-Reichweite für entfernte Geräte.",
+            "es": "Mejora el alcance Zigbee para dispositivos lejanos.",
+            "fr": "Améliore la portée Zigbee pour les appareils éloignés.",
+            "it": "Migliora la portata Zigbee per dispositivi distanti.",
+            "no": "Forbedrer Zigbee-rekkevidden for enheter langt unna.",
+            "pl": "Poprawia zasięg Zigbee dla odległych urządzeń.",
+            "ru": "Увеличивает радиус действия Zigbee для удалённых устройств.",
+            "ko": "먼 장치에 대한 Zigbee 범위를 개선합니다."
           }
         },
         {
@@ -2641,51 +3360,150 @@
           "type": "checkbox",
           "value": true,
           "label": {
-            "en": "Network LED"
+            "en": "Network LED",
+            "sv": "Nätverks-LED",
+            "nl": "Netwerk-LED",
+            "da": "Netværks-LED",
+            "de": "Netzwerk-LED",
+            "es": "LED de red",
+            "fr": "LED réseau",
+            "it": "LED di rete",
+            "no": "Nettverks-LED",
+            "pl": "Dioda sieci",
+            "ru": "Индикатор сети",
+            "ko": "네트워크 LED"
           },
           "hint": {
-            "en": "Show network status LED."
+            "en": "Show network status LED.",
+            "sv": "Visa nätverksstatus-LED.",
+            "nl": "Toon netwerk status-LED.",
+            "da": "Vis netværksstatus-LED.",
+            "de": "Netzwerkstatus-LED anzeigen.",
+            "es": "Mostrar LED de estado de red.",
+            "fr": "Afficher la LED d'état du réseau.",
+            "it": "Mostra il LED di stato della rete.",
+            "no": "Vis nettverksstatus-LED.",
+            "pl": "Pokaż diodę stanu sieci.",
+            "ru": "Показывать индикатор состояния сети.",
+            "ko": "네트워크 상태 LED를 표시합니다."
           }
         },
         {
           "type": "group",
           "label": {
-            "en": "Switch Configuration"
+            "en": "Switch Configuration",
+            "sv": "Brytarkonfiguration",
+            "nl": "Schakelaarconfiguratie",
+            "da": "Kontaktkonfiguration",
+            "de": "Schalterkonfiguration",
+            "es": "Configuración del interruptor",
+            "fr": "Configuration de l'interrupteur",
+            "it": "Configurazione interruttore",
+            "no": "Bryterkonfigurasjon",
+            "pl": "Konfiguracja przełącznika",
+            "ru": "Настройка выключателя",
+            "ko": "스위치 구성"
           },
           "children": [
             {
               "id": "switch_mode",
               "type": "dropdown",
               "label": {
-                "en": "Switch Type"
+                "en": "Switch Type",
+                "sv": "Brytartyp",
+                "nl": "Schakelaartype",
+                "da": "Kontakttype",
+                "de": "Schaltertyp",
+                "es": "Tipo de interruptor",
+                "fr": "Type d'interrupteur",
+                "it": "Tipo di interruttore",
+                "no": "Brytertype",
+                "pl": "Typ przełącznika",
+                "ru": "Тип выключателя",
+                "ko": "스위치 유형"
               },
               "hint": {
-                "en": "Physical switch connection type."
+                "en": "Physical switch connection type.",
+                "sv": "Fysisk brytaranslutningstyp.",
+                "nl": "Type fysieke schakelaaraansluiting.",
+                "da": "Fysisk kontaktforbindelsestype.",
+                "de": "Physischer Schalter-Anschlusstyp.",
+                "es": "Tipo de conexión del interruptor físico.",
+                "fr": "Type de connexion de l'interrupteur physique.",
+                "it": "Tipo di connessione dell'interruttore fisico.",
+                "no": "Fysisk brytertilkoblingstype.",
+                "pl": "Typ podłączenia fizycznego przełącznika.",
+                "ru": "Тип подключения физического выключателя.",
+                "ko": "물리적 스위치 연결 유형."
               },
               "value": "0",
               "values": [
                 {
                   "id": "0",
                   "label": {
-                    "en": "Toggle"
+                    "en": "Toggle",
+                    "sv": "Växla",
+                    "nl": "Schakelaar",
+                    "da": "Skift",
+                    "de": "Wechselschalter",
+                    "es": "Conmutador",
+                    "fr": "Bascule",
+                    "it": "Commutatore",
+                    "no": "Veksle",
+                    "pl": "Przełącznik",
+                    "ru": "Переключатель",
+                    "ko": "토글"
                   }
                 },
                 {
                   "id": "1",
                   "label": {
-                    "en": "Momentary"
+                    "en": "Momentary",
+                    "sv": "Momentan",
+                    "nl": "Pulsdrukker",
+                    "da": "Momentan",
+                    "de": "Taster",
+                    "es": "Momentáneo",
+                    "fr": "Momentané",
+                    "it": "Momentaneo",
+                    "no": "Momentan",
+                    "pl": "Chwilowy",
+                    "ru": "Кнопочный",
+                    "ko": "순간"
                   }
                 },
                 {
                   "id": "2",
                   "label": {
-                    "en": "Follow"
+                    "en": "Follow",
+                    "sv": "Följ",
+                    "nl": "Volg",
+                    "da": "Følg",
+                    "de": "Nachführung",
+                    "es": "Seguir",
+                    "fr": "Suivre",
+                    "it": "Segui",
+                    "no": "Følg",
+                    "pl": "Podążaj",
+                    "ru": "Следование",
+                    "ko": "추종"
                   }
                 },
                 {
                   "id": "130",
                   "label": {
-                    "en": "Follow (inverted)"
+                    "en": "Follow (inverted)",
+                    "sv": "Följ (inverterad)",
+                    "nl": "Volg (omgekeerd)",
+                    "da": "Følg (inverteret)",
+                    "de": "Nachführung (invertiert)",
+                    "es": "Seguir (invertido)",
+                    "fr": "Suivre (inversé)",
+                    "it": "Segui (invertito)",
+                    "no": "Følg (invertert)",
+                    "pl": "Podążaj (odwrócony)",
+                    "ru": "Следование (инвертировано)",
+                    "ko": "추종 (반전)"
                   }
                 }
               ]
@@ -2695,10 +3513,32 @@
               "type": "checkbox",
               "value": false,
               "label": {
-                "en": "Detach Relay"
+                "en": "Detach Relay",
+                "sv": "Koppla loss relä",
+                "nl": "Relais loskoppelen",
+                "da": "Frakobl relæ",
+                "de": "Relais entkoppeln",
+                "es": "Desacoplar relé",
+                "fr": "Détacher le relais",
+                "it": "Scollega relè",
+                "no": "Koble fra relé",
+                "pl": "Odłącz przekaźnik",
+                "ru": "Отключить реле",
+                "ko": "릴레이 분리"
               },
               "hint": {
-                "en": "Switch triggers scenes only. Relay stays unchanged."
+                "en": "Switch triggers scenes only. Relay stays unchanged.",
+                "sv": "Brytaren utlöser bara scener. Reläet förblir oförändrat.",
+                "nl": "Schakelaar activeert alleen scenes. Relais blijft ongewijzigd.",
+                "da": "Kontakten udløser kun scener. Relæet forbliver uændret.",
+                "de": "Schalter löst nur Szenen aus. Relais bleibt unverändert.",
+                "es": "El interruptor solo activa escenas. El relé permanece sin cambios.",
+                "fr": "L'interrupteur déclenche uniquement des scènes. Le relais reste inchangé.",
+                "it": "L'interruttore attiva solo scene. Il relè resta invariato.",
+                "no": "Bryteren utløser bare scener. Reléet forblir uendret.",
+                "pl": "Przełącznik uruchamia tylko sceny. Przekaźnik pozostaje bez zmian.",
+                "ru": "Выключатель запускает только сцены. Реле остаётся без изменений.",
+                "ko": "스위치는 씬만 실행합니다. 릴레이는 변경되지 않습니다."
               }
             }
           ]
@@ -2706,42 +3546,119 @@
         {
           "type": "group",
           "label": {
-            "en": "Power-on Behavior"
+            "en": "Power-on Behavior",
+            "sv": "Beteende vid strömåterkomst",
+            "nl": "Gedrag bij inschakelen",
+            "da": "Opførsel ved tænding",
+            "de": "Einschaltverhalten",
+            "es": "Comportamiento al encender",
+            "fr": "Comportement à la mise sous tension",
+            "it": "Comportamento all'accensione",
+            "no": "Oppførsel ved strømtilkobling",
+            "pl": "Zachowanie po włączeniu",
+            "ru": "Поведение при включении",
+            "ko": "전원 켜기 동작"
           },
           "children": [
             {
               "id": "power_on_behavior",
               "type": "dropdown",
               "label": {
-                "en": "Power-on State"
+                "en": "Power-on State",
+                "sv": "Tillstånd vid strömåterkomst",
+                "nl": "Status bij inschakelen",
+                "da": "Tilstand ved tænding",
+                "de": "Zustand beim Einschalten",
+                "es": "Estado al encender",
+                "fr": "État à la mise sous tension",
+                "it": "Stato all'accensione",
+                "no": "Tilstand ved strømtilkobling",
+                "pl": "Stan po włączeniu",
+                "ru": "Состояние при включении",
+                "ko": "전원 켜기 상태"
               },
               "hint": {
-                "en": "Relay state after power restore."
+                "en": "Relay state after power restore.",
+                "sv": "Relätillstånd efter strömåterkomst.",
+                "nl": "Relaisstatus na stroomherstel.",
+                "da": "Relætilstand efter strømgendannelse.",
+                "de": "Relaiszustand nach Stromwiederkehr.",
+                "es": "Estado del relé después de restaurar la energía.",
+                "fr": "État du relais après rétablissement de l'alimentation.",
+                "it": "Stato del relè dopo il ripristino dell'alimentazione.",
+                "no": "Relétilstand etter strømgjenoppretting.",
+                "pl": "Stan przekaźnika po przywróceniu zasilania.",
+                "ru": "Состояние реле после восстановления питания.",
+                "ko": "전원 복구 후 릴레이 상태."
               },
               "value": "off",
               "values": [
                 {
                   "id": "on",
                   "label": {
-                    "en": "Turn On"
+                    "en": "Turn On",
+                    "sv": "Slå på",
+                    "nl": "Inschakelen",
+                    "da": "Tænd",
+                    "de": "Einschalten",
+                    "es": "Encender",
+                    "fr": "Allumer",
+                    "it": "Accendi",
+                    "no": "Slå på",
+                    "pl": "Włącz",
+                    "ru": "Включить",
+                    "ko": "켜기"
                   }
                 },
                 {
                   "id": "off",
                   "label": {
-                    "en": "Turn Off"
+                    "en": "Turn Off",
+                    "sv": "Stäng av",
+                    "nl": "Uitschakelen",
+                    "da": "Sluk",
+                    "de": "Ausschalten",
+                    "es": "Apagar",
+                    "fr": "Éteindre",
+                    "it": "Spegni",
+                    "no": "Slå av",
+                    "pl": "Wyłącz",
+                    "ru": "Выключить",
+                    "ko": "끄기"
                   }
                 },
                 {
                   "id": "toggle",
                   "label": {
-                    "en": "Toggle"
+                    "en": "Toggle",
+                    "sv": "Växla",
+                    "nl": "Schakelen",
+                    "da": "Skift",
+                    "de": "Umschalten",
+                    "es": "Conmutar",
+                    "fr": "Basculer",
+                    "it": "Commuta",
+                    "no": "Veksle",
+                    "pl": "Przełącz",
+                    "ru": "Переключить",
+                    "ko": "토글"
                   }
                 },
                 {
                   "id": "last_state",
                   "label": {
-                    "en": "Last State"
+                    "en": "Last State",
+                    "sv": "Senaste tillstånd",
+                    "nl": "Laatste status",
+                    "da": "Sidste tilstand",
+                    "de": "Letzter Zustand",
+                    "es": "Último estado",
+                    "fr": "Dernier état",
+                    "it": "Ultimo stato",
+                    "no": "Siste tilstand",
+                    "pl": "Ostatni stan",
+                    "ru": "Последнее состояние",
+                    "ko": "마지막 상태"
                   }
                 }
               ]
@@ -2751,20 +3668,64 @@
               "type": "checkbox",
               "value": false,
               "label": {
-                "en": "Power-on Delay"
+                "en": "Power-on Delay",
+                "sv": "Fördröjning vid strömåterkomst",
+                "nl": "Inschakelvertraging",
+                "da": "Tændingsforsinkelse",
+                "de": "Einschaltverzögerung",
+                "es": "Retardo al encender",
+                "fr": "Délai de mise sous tension",
+                "it": "Ritardo all'accensione",
+                "no": "Forsinkelse ved strømtilkobling",
+                "pl": "Opóźnienie włączenia",
+                "ru": "Задержка при включении",
+                "ko": "전원 켜기 지연"
               },
               "hint": {
-                "en": "Delay relay after power restore."
+                "en": "Delay relay after power restore.",
+                "sv": "Fördröj reläet efter strömåterkomst.",
+                "nl": "Relais vertragen na stroomherstel.",
+                "da": "Forsink relæet efter strømgendannelse.",
+                "de": "Relais nach Stromwiederkehr verzögern.",
+                "es": "Retardar el relé después de restaurar la energía.",
+                "fr": "Retarder le relais après rétablissement de l'alimentation.",
+                "it": "Ritarda il relè dopo il ripristino dell'alimentazione.",
+                "no": "Forsink reléet etter strømgjenoppretting.",
+                "pl": "Opóźnij przekaźnik po przywróceniu zasilania.",
+                "ru": "Задержка реле после восстановления питания.",
+                "ko": "전원 복구 후 릴레이를 지연합니다."
               }
             },
             {
               "id": "power_on_delay_time",
               "type": "number",
               "label": {
-                "en": "Delay (s)"
+                "en": "Delay (s)",
+                "sv": "Fördröjning (s)",
+                "nl": "Vertraging (s)",
+                "da": "Forsinkelse (s)",
+                "de": "Verzögerung (s)",
+                "es": "Retardo (s)",
+                "fr": "Délai (s)",
+                "it": "Ritardo (s)",
+                "no": "Forsinkelse (s)",
+                "pl": "Opóźnienie (s)",
+                "ru": "Задержка (с)",
+                "ko": "지연 (초)"
               },
               "hint": {
-                "en": "Wait time before relay switches (0.5-3599.5s)."
+                "en": "Wait time before relay switches (0.5-3599.5s).",
+                "sv": "Väntetid innan reläet kopplar (0,5-3599,5s).",
+                "nl": "Wachttijd voordat het relais schakelt (0,5-3599,5s).",
+                "da": "Ventetid før relæet skifter (0,5-3599,5s).",
+                "de": "Wartezeit bis das Relais schaltet (0,5-3599,5s).",
+                "es": "Tiempo de espera antes de que el relé conmute (0,5-3599,5s).",
+                "fr": "Temps d'attente avant commutation du relais (0,5-3599,5s).",
+                "it": "Tempo di attesa prima della commutazione del relè (0,5-3599,5s).",
+                "no": "Ventetid før reléet kobler (0,5-3599,5s).",
+                "pl": "Czas oczekiwania przed przełączeniem przekaźnika (0,5-3599,5s).",
+                "ru": "Время ожидания перед переключением реле (0,5-3599,5 с).",
+                "ko": "릴레이가 전환되기 전 대기 시간 (0.5-3599.5초)."
               },
               "value": 2,
               "min": 0.5,
@@ -2776,7 +3737,18 @@
         {
           "type": "group",
           "label": {
-            "en": "Inching"
+            "en": "Inching",
+            "sv": "Inching",
+            "nl": "Inching",
+            "da": "Inching",
+            "de": "Inching",
+            "es": "Inching",
+            "fr": "Inching",
+            "it": "Inching",
+            "no": "Inching",
+            "pl": "Inching",
+            "ru": "Инчинг",
+            "ko": "인칭"
           },
           "children": [
             {
@@ -2784,20 +3756,64 @@
               "type": "checkbox",
               "value": false,
               "label": {
-                "en": "Enable Inching"
+                "en": "Enable Inching",
+                "sv": "Aktivera inching",
+                "nl": "Inching inschakelen",
+                "da": "Aktivér inching",
+                "de": "Inching aktivieren",
+                "es": "Activar inching",
+                "fr": "Activer l'inching",
+                "it": "Attiva inching",
+                "no": "Aktiver inching",
+                "pl": "Włącz inching",
+                "ru": "Включить инчинг",
+                "ko": "인칭 활성화"
               },
               "hint": {
-                "en": "Auto-switch relay after set time."
+                "en": "Auto-switch relay after set time.",
+                "sv": "Växla reläet automatiskt efter inställd tid.",
+                "nl": "Relais automatisch schakelen na ingestelde tijd.",
+                "da": "Skift relæ automatisk efter indstillet tid.",
+                "de": "Relais nach eingestellter Zeit automatisch umschalten.",
+                "es": "Conmutar el relé automáticamente después del tiempo establecido.",
+                "fr": "Commutation automatique du relais après le temps défini.",
+                "it": "Commutazione automatica del relè dopo il tempo impostato.",
+                "no": "Automatisk veksling av relé etter innstilt tid.",
+                "pl": "Automatyczne przełączenie przekaźnika po ustawionym czasie.",
+                "ru": "Автоматическое переключение реле через заданное время.",
+                "ko": "설정된 시간 후 릴레이를 자동 전환합니다."
               }
             },
             {
               "id": "inching_time",
               "type": "number",
               "label": {
-                "en": "Duration (s)"
+                "en": "Duration (s)",
+                "sv": "Varaktighet (s)",
+                "nl": "Duur (s)",
+                "da": "Varighed (s)",
+                "de": "Dauer (s)",
+                "es": "Duración (s)",
+                "fr": "Durée (s)",
+                "it": "Durata (s)",
+                "no": "Varighet (s)",
+                "pl": "Czas trwania (s)",
+                "ru": "Длительность (с)",
+                "ko": "지속 시간 (초)"
               },
               "hint": {
-                "en": "Time before auto-switch (0.5-3599.5s)."
+                "en": "Time before auto-switch (0.5-3599.5s).",
+                "sv": "Tid innan automatisk växling (0,5-3599,5s).",
+                "nl": "Tijd voor automatisch schakelen (0,5-3599,5s).",
+                "da": "Tid før automatisk skift (0,5-3599,5s).",
+                "de": "Zeit bis zur automatischen Umschaltung (0,5-3599,5s).",
+                "es": "Tiempo antes de la conmutación automática (0,5-3599,5s).",
+                "fr": "Temps avant commutation automatique (0,5-3599,5s).",
+                "it": "Tempo prima della commutazione automatica (0,5-3599,5s).",
+                "no": "Tid før automatisk veksling (0,5-3599,5s).",
+                "pl": "Czas przed automatycznym przełączeniem (0,5-3599,5s).",
+                "ru": "Время до автоматического переключения (0,5-3599,5 с).",
+                "ko": "자동 전환 전 시간 (0.5-3599.5초)."
               },
               "value": 1,
               "min": 0.5,
@@ -2808,10 +3824,32 @@
               "id": "inching_mode",
               "type": "dropdown",
               "label": {
-                "en": "Inching Mode"
+                "en": "Inching Mode",
+                "sv": "Inching-läge",
+                "nl": "Inching-modus",
+                "da": "Inching-tilstand",
+                "de": "Inching-Modus",
+                "es": "Modo inching",
+                "fr": "Mode inching",
+                "it": "Modalità inching",
+                "no": "Inching-modus",
+                "pl": "Tryb inching",
+                "ru": "Режим инчинга",
+                "ko": "인칭 모드"
               },
               "hint": {
-                "en": "Auto switch order."
+                "en": "Auto switch order.",
+                "sv": "Automatisk växlingsordning.",
+                "nl": "Automatische schakelrichting.",
+                "da": "Automatisk skifterækkefølge.",
+                "de": "Automatische Schaltreihenfolge.",
+                "es": "Orden de conmutación automática.",
+                "fr": "Ordre de commutation automatique.",
+                "it": "Ordine di commutazione automatica.",
+                "no": "Automatisk vekslingsrekkefølge.",
+                "pl": "Kolejność automatycznego przełączania.",
+                "ru": "Порядок автоматического переключения.",
+                "ko": "자동 전환 순서."
               },
               "value": "on",
               "values": [

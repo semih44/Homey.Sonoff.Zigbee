@@ -1,7 +1,18 @@
 {
   "id": "SonoffSNZB05P",
   "name": {
-    "en": "Flood/rain Sensor SNZB-05P"
+    "en": "Water Leak Sensor SNZB-05P",
+    "sv": "Vattenläckagesensor SNZB-05P",
+    "nl": "Waterlekkagesensor SNZB-05P",
+    "da": "Vandlækagesensor SNZB-05P",
+    "de": "Wassermelder SNZB-05P",
+    "es": "Sensor de fuga de agua SNZB-05P",
+    "fr": "Détecteur de fuite d'eau SNZB-05P",
+    "it": "Sensore di perdite d'acqua SNZB-05P",
+    "no": "Vannlekkasjesensor SNZB-05P",
+    "pl": "Czujnik wycieku wody SNZB-05P",
+    "ru": "Датчик утечки воды SNZB-05P",
+    "ko": "누수 감지 센서 SNZB-05P"
   },
   "class": "sensor",
   "capabilities": [
@@ -32,7 +43,18 @@
     "learnmode": {
       "image": "{{driverAssetsPath}}/learn.svg",
       "instruction": {
-        "en": "Press button inside device for aprox 10 seconds until the red LED start blinking."
+        "en": "Press button inside device for approx. 10 seconds until the red LED starts blinking.",
+        "sv": "Tryck på knappen inuti enheten i cirka 10 sekunder tills den röda lysdioden börjar blinka.",
+        "nl": "Druk op de knop binnenin het apparaat gedurende ca. 10 seconden totdat de rode LED begint te knipperen.",
+        "da": "Tryk på knappen inde i enheden i ca. 10 sekunder, indtil den røde LED begynder at blinke.",
+        "de": "Drücken Sie die Taste im Gerät ca. 10 Sekunden lang, bis die rote LED zu blinken beginnt.",
+        "es": "Presione el botón dentro del dispositivo durante aprox. 10 segundos hasta que el LED rojo comience a parpadear.",
+        "fr": "Appuyez sur le bouton à l'intérieur de l'appareil pendant environ 10 secondes jusqu'à ce que la LED rouge commence à clignoter.",
+        "it": "Premere il pulsante all'interno del dispositivo per circa 10 secondi fino a quando il LED rosso inizia a lampeggiare.",
+        "no": "Trykk på knappen inne i enheten i ca. 10 sekunder til den røde LED-en begynner å blinke.",
+        "pl": "Naciśnij przycisk wewnątrz urządzenia przez ok. 10 sekund, aż czerwona dioda LED zacznie migać.",
+        "ru": "Нажмите кнопку внутри устройства примерно на 10 секунд, пока красный светодиод не начнет мигать.",
+        "ko": "빨간색 LED가 깜박이기 시작할 때까지 장치 내부의 버튼을 약 10초 동안 누르세요."
       }
     }
   },
