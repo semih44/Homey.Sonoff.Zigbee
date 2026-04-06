@@ -988,6 +988,148 @@
         "zigbee"
       ],
       "images": {
+        "large": "/drivers/S31ZB/assets/images/large.png",
+        "small": "/drivers/S31ZB/assets/images/small.png"
+      },
+      "id": "S31ZB",
+      "name": {
+        "en": "S31ZB Smart Plug",
+        "sv": "S31ZB Smartkontakt",
+        "nl": "S31ZB Slimme stekker",
+        "da": "S31ZB Smart stik",
+        "de": "S31ZB Smarte Steckdose",
+        "es": "S31ZB Enchufe inteligente",
+        "fr": "S31ZB Prise intelligente",
+        "it": "S31ZB Presa intelligente",
+        "no": "S31ZB Smartkontakt",
+        "pl": "S31ZB Inteligentna wtyczka",
+        "ru": "S31ZB Умная розетка",
+        "ko": "S31ZB 스마트 플러그"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "zigbee": {
+        "manufacturerName": [
+          "SONOFF"
+        ],
+        "productId": [
+          "S31ZB"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              3,
+              4,
+              5,
+              6
+            ],
+            "bindings": [
+              6
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/S31ZB/assets/learn.svg",
+          "instruction": {
+            "en": "Press and hold the reset button for 5 seconds until the LED starts flashing.",
+            "sv": "Tryck och håll återställningsknappen i 5 sekunder tills lysdioden börjar blinka.",
+            "nl": "Houd de resetknop 5 seconden ingedrukt totdat de LED begint te knipperen.",
+            "da": "Tryk og hold nulstillingsknappen i 5 sekunder, indtil LED'en begynder at blinke.",
+            "de": "Halten Sie die Reset-Taste 5 Sekunden lang gedrückt, bis die LED zu blinken beginnt.",
+            "es": "Mantenga presionado el botón de reinicio durante 5 segundos hasta que el LED comience a parpadear.",
+            "fr": "Appuyez et maintenez le bouton de réinitialisation pendant 5 secondes jusqu'à ce que la LED commence à clignoter.",
+            "it": "Tenere premuto il pulsante di reset per 5 secondi fino a quando il LED inizia a lampeggiare.",
+            "no": "Trykk og hold tilbakestillingsknappen i 5 sekunder til LED-en begynner å blinke.",
+            "pl": "Naciśnij i przytrzymaj przycisk resetowania przez 5 sekund, aż dioda LED zacznie migać.",
+            "ru": "Нажмите и удерживайте кнопку сброса 5 секунд, пока светодиод не начнёт мигать.",
+            "ko": "LED가 깜박이기 시작할 때까지 리셋 버튼을 5초 동안 길게 누르세요."
+          }
+        }
+      }
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "large": "/drivers/S40ZBTPB/assets/images/large.png",
+        "small": "/drivers/S40ZBTPB/assets/images/small.png"
+      },
+      "id": "S40ZBTPB",
+      "name": {
+        "en": "S40ZBTPB 15A Smart Plug",
+        "sv": "S40ZBTPB 15A Smartkontakt",
+        "nl": "S40ZBTPB 15A Slimme stekker",
+        "da": "S40ZBTPB 15A Smart stik",
+        "de": "S40ZBTPB 15A Smarte Steckdose",
+        "es": "S40ZBTPB Enchufe inteligente 15A",
+        "fr": "S40ZBTPB Prise intelligente 15A",
+        "it": "S40ZBTPB Presa intelligente 15A",
+        "no": "S40ZBTPB 15A Smartkontakt",
+        "pl": "S40ZBTPB 15A Inteligentna wtyczka",
+        "ru": "S40ZBTPB Умная розетка 15A",
+        "ko": "S40ZBTPB 15A 스마트 플러그"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "zigbee": {
+        "manufacturerName": [
+          "SONOFF"
+        ],
+        "productId": [
+          "S40ZBTPB"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              3,
+              4,
+              5,
+              6
+            ],
+            "bindings": [
+              6
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/S40ZBTPB/assets/learn.svg",
+          "instruction": {
+            "en": "Press and hold the reset button for 5 seconds until the LED starts flashing.",
+            "sv": "Tryck och håll återställningsknappen i 5 sekunder tills lysdioden börjar blinka.",
+            "nl": "Houd de resetknop 5 seconden ingedrukt totdat de LED begint te knipperen.",
+            "da": "Tryk og hold nulstillingsknappen i 5 sekunder, indtil LED'en begynder at blinke.",
+            "de": "Halten Sie die Reset-Taste 5 Sekunden lang gedrückt, bis die LED zu blinken beginnt.",
+            "es": "Mantenga presionado el botón de reinicio durante 5 segundos hasta que el LED comience a parpadear.",
+            "fr": "Appuyez et maintenez le bouton de réinitialisation pendant 5 secondes jusqu'à ce que la LED commence à clignoter.",
+            "it": "Tenere premuto il pulsante di reset per 5 secondi fino a quando il LED inizia a lampeggiare.",
+            "no": "Trykk og hold tilbakestillingsknappen i 5 sekunder til LED-en begynner å blinke.",
+            "pl": "Naciśnij i przytrzymaj przycisk resetowania przez 5 sekund, aż dioda LED zacznie migać.",
+            "ru": "Нажмите и удерживайте кнопку сброса 5 секунд, пока светодиод не начнёт мигать.",
+            "ko": "LED가 깜박이기 시작할 때까지 리셋 버튼을 5초 동안 길게 누르세요."
+          }
+        }
+      }
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
         "large": "/drivers/SNZB-01/assets/images/large.png",
         "small": "/drivers/SNZB-01/assets/images/small.png"
       },
@@ -1966,6 +2108,288 @@
         "zigbee"
       ],
       "images": {
+        "large": "/drivers/SNZB-02WD/assets/images/large.png",
+        "small": "/drivers/SNZB-02WD/assets/images/small.png"
+      },
+      "id": "SNZB-02WD",
+      "name": {
+        "en": "Thermometer SNZB-02WD",
+        "sv": "Termometer SNZB-02WD",
+        "nl": "Thermometer SNZB-02WD",
+        "da": "Termometer SNZB-02WD",
+        "de": "Thermometer SNZB-02WD",
+        "es": "Termómetro SNZB-02WD",
+        "fr": "Thermomètre SNZB-02WD",
+        "it": "Termometro SNZB-02WD",
+        "no": "Termometer SNZB-02WD",
+        "pl": "Termometr SNZB-02WD",
+        "ru": "Термометр SNZB-02WD",
+        "ko": "온도계 SNZB-02WD"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_temperature",
+        "measure_humidity",
+        "measure_battery"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2477"
+        ]
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "SONOFF"
+        ],
+        "productId": [
+          "SNZB-02WD"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              1026,
+              1029
+            ],
+            "bindings": [
+              0,
+              1,
+              1026,
+              1029
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/SNZB-02WD/assets/learn.svg",
+          "instruction": {
+            "en": "Press button on back side for approx. 10 seconds until the red LED blinks rapidly.",
+            "sv": "Tryck på knappen på baksidan i cirka 10 sekunder tills den röda lysdioden blinkar snabbt.",
+            "nl": "Druk op de knop aan de achterkant gedurende ca. 10 seconden totdat de rode LED snel knippert.",
+            "da": "Tryk på knappen på bagsiden i ca. 10 sekunder, indtil den røde LED blinker hurtigt.",
+            "de": "Drücken Sie die Taste auf der Rückseite ca. 10 Sekunden lang, bis die rote LED schnell blinkt.",
+            "es": "Presione el botón en la parte posterior durante aprox. 10 segundos hasta que el LED rojo parpadee rápidamente.",
+            "fr": "Appuyez sur le bouton à l'arrière pendant environ 10 secondes jusqu'à ce que la LED rouge clignote rapidement.",
+            "it": "Premere il pulsante sul retro per circa 10 secondi fino a quando il LED rosso lampeggia rapidamente.",
+            "no": "Trykk på knappen på baksiden i ca. 10 sekunder til den røde LED-en blinker raskt.",
+            "pl": "Naciśnij przycisk z tyłu przez ok. 10 sekund, aż czerwona dioda LED zacznie szybko migać.",
+            "ru": "Нажмите кнопку на задней стороне примерно на 10 секунд, пока красный светодиод не начнет быстро мигать.",
+            "ko": "빨간 LED가 빠르게 깜박일 때까지 후면의 버튼을 약 10초 동안 누르세요."
+          }
+        }
+      },
+      "settings": [
+        {
+          "id": "temperature_offset",
+          "type": "number",
+          "label": {
+            "en": "Temperature offset (°C)",
+            "nl": "Temperatuurcorrectie (°C)",
+            "da": "Temperaturforskydning (°C)",
+            "de": "Temperaturkorrektur (°C)",
+            "es": "Compensación de temperatura (°C)",
+            "fr": "Décalage de température (°C)",
+            "it": "Offset di temperatura (°C)",
+            "no": "Temperaturforskyvning (°C)",
+            "sv": "Temperaturförskjutning (°C)",
+            "pl": "Offset temperatury (°C)",
+            "ru": "Смещение температуры (°C)",
+            "ko": "온도 편차 (°C)"
+          },
+          "hint": {
+            "en": "Set a value to compensate a temperature offset.\nRange: -10 - 10, step size 0.1, \ndefault: 0 [°C]",
+            "nl": "Stel een waarde in om een temperatuurafwijking te compenseren.\nBereik: -10 - 10, stapgrootte 0.1,\nstandaard: 0 [°C]",
+            "da": "Indstil en værdi for at kompensere for en temperaturforskydning.\nOmråde: -10 - 10, trinstørrelse 0,1,\nstandard: 0 [°C]",
+            "de": "Legen Sie einen Wert fest, um eine Temperaturabweichung zu kompensieren.\nBereich: -10 - 10, Schrittweite 0,1,\nStandard: 0 [°C]",
+            "es": "Establezca un valor para compensar una desviación de temperatura.\nRango: -10 - 10, tamaño del paso 0,1,\npredeterminado: 0 [°C]",
+            "fr": "Définir une valeur pour compenser un décalage de température.\nPlage : -10 - 10, taille du pas 0,1,\ndéfaut : 0 [°C]",
+            "it": "Impostare un valore per compensare un offset di temperatura.\nGamma: -10 - 10, dimensione del passo 0,1,\npredefinito: 0 [°C]",
+            "no": "Sett en verdi for å kompensere for en temperaturforskyvning.\nOmråde: -10 - 10, trinnstørrelse 0,1,\nstandard: 0 [°C]",
+            "sv": "Ställ in ett värde för att kompensera för en temperaturskiftning.\nOmråde: -10 - 10, stegstorlek 0,1,\nstandard: 0 [°C]",
+            "pl": "Ustaw wartość, aby skompensować odstępstwo temperatury.\nZakres: -10 - 10, krok 0,1,\ndomyślnie: 0 [°C]",
+            "ru": "Установите значение для компенсации смещения температуры.\nДиапазон: -10 - 10, шаг 0,1,\nпо умолчанию: 0 [°C]",
+            "ko": "온도 편차를 보상하기 위해 값을 설정하십시오.\n범위: -10 - 10, 단계 크기 0.1,\n기본값: 0 [°C]"
+          },
+          "value": 0,
+          "attr": {
+            "min": -10,
+            "max": 10,
+            "step": 0.1
+          }
+        },
+        {
+          "id": "temperature_decimals",
+          "type": "radio",
+          "label": {
+            "en": "Temperature reporting decimals",
+            "nl": "Decimalen in temperatuurrapportage",
+            "da": "Decimaler i temperaturrapportering",
+            "de": "Dezimalstellen in Temperaturberichten",
+            "es": "Decimales en el reporte de temperatura",
+            "fr": "Décimales dans le rapport de température",
+            "it": "Decimali nel reporting della temperatura",
+            "no": "Desimaler i temperaturrapportering",
+            "sv": "Decimaler i temperaturrapporteringen",
+            "pl": "Miejsca dziesiętne w raportowaniu temperatury",
+            "ru": "Десятичные знаки в отчёте о температуре",
+            "ko": "온도 보고서의 소수점 자리"
+          },
+          "value": "1",
+          "values": [
+            {
+              "id": "1",
+              "label": {
+                "en": "Report temperature value with 1 decimal (21.4 °C)",
+                "nl": "Rapporteer temperatuurwaarde met 1 decimaal (21,4 °C)",
+                "da": "Rapporter temperaturværdi med 1 decimal (21,4 °C)",
+                "de": "Temperaturwert mit 1 Dezimalstelle berichten (21,4 °C)",
+                "es": "Informe el valor de temperatura con 1 decimal (21,4 °C)",
+                "fr": "Rapporter la valeur de température avec 1 décimale (21,4 °C)",
+                "it": "Riporta il valore della temperatura con 1 decimale (21,4 °C)",
+                "no": "Rapporter temperaturverdi med 1 desimal (21,4 °C)",
+                "sv": "Rapportera temperaturvärde med 1 decimal (21,4 °C)",
+                "pl": "Zgłoś wartość temperatury z 1 miejscem dziesiętnym (21,4 °C)",
+                "ru": "Сообщите значение температуры с 1 десятичным знаком (21,4 °C)",
+                "ko": "온도 값을 소수점 한 자리로 보고하십시오 (21.4 °C)"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Report temperature value with 2 decimals (21.37 °C)",
+                "nl": "Rapporteer temperatuurwaarde met 2 decimalen (21,37 °C)",
+                "da": "Rapporter temperaturværdi med 2 decimaler (21,37 °C)",
+                "de": "Temperaturwert mit 2 Dezimalstellen berichten (21,37 °C)",
+                "es": "Informe el valor de temperatura con 2 decimales (21,37 °C)",
+                "fr": "Rapporter la valeur de température avec 2 décimales (21,37 °C)",
+                "it": "Riporta il valore della temperatura con 2 decimali (21,37 °C)",
+                "no": "Rapporter temperaturverdi med 2 desimaler (21,37 °C)",
+                "sv": "Rapportera temperaturvärde med 2 decimaler (21,37 °C)",
+                "pl": "Zgłoś wartość temperatury z 2 miejscami dziesiętnymi (21,37 °C)",
+                "ru": "Сообщите значение температуры с 2 десятичными знаками (21,37 °C)",
+                "ko": "온도 값을 소수점 두 자리로 보고하십시오 (21.37 °C)"
+              }
+            }
+          ]
+        },
+        {
+          "id": "humidity_offset",
+          "type": "number",
+          "label": {
+            "en": "Humidity offset (%)",
+            "nl": "Luchtvochtigheids compensatie (%)",
+            "da": "Fugtighedsforskydning (%)",
+            "de": "Feuchtigkeitskorrektur (%)",
+            "es": "Compensación de humedad (%)",
+            "fr": "Décalage d'humidité (%)",
+            "it": "Offset di umidità (%)",
+            "no": "Fuktighetsforskyvning (%)",
+            "sv": "Fuktighetsförskjutning (%)",
+            "pl": "Offset wilgotności (%)",
+            "ru": "Смещение влажности (%)",
+            "ko": "습도 편차 (%)"
+          },
+          "hint": {
+            "en": "Set a correction to compensate a humidity offset.\nRange: -10 - 10, step size 1, \ndefault: 0 [%]",
+            "nl": "Stel een correctiewaarde in om een Luchtvochtigheids verschil te compenseren.\nBereik: -10 - 10, stap grootte 1, \nstandaard: 0 [%]",
+            "da": "Indstil en korrektion for at kompensere for en fugtighedsforskydning.\nOmråde: -10 - 10, trinstørrelse 1,\nstandard: 0 [%]",
+            "de": "Legen Sie eine Korrektur fest, um eine Feuchtigkeitsabweichung zu kompensieren.\nBereich: -10 - 10, Schrittweite 1,\nStandard: 0 [%]",
+            "es": "Establezca una corrección para compensar una desviación de humedad.\nRango: -10 - 10, tamaño del paso 1,\npredeterminado: 0 [%]",
+            "fr": "Définir une correction pour compenser un décalage d'humidité.\nPlage : -10 - 10, taille du pas 1,\ndéfaut : 0 [%]",
+            "it": "Impostare una correzione per compensare un offset di umidità.\nGamma: -10 - 10, dimensione del passo 1,\npredefinito: 0 [%]",
+            "no": "Sett en korreksjon for å kompensere for en fuktighetsforskyvning.\nOmråde: -10 - 10, trinnstørrelse 1,\nstandard: 0 [%]",
+            "sv": "Ställ in en korrektion för att kompensera för en fuktförskjutning.\nOmråde: -10 - 10, stegstorlek 1,\nstandard: 0 [%]",
+            "pl": "Ustaw korektę, aby skompensować odstępstwo wilgotności.\nZakres: -10 - 10, krok 1,\ndomyślnie: 0 [%]",
+            "ru": "Установите коррекцию для компенсации смещения влажности.\nДиапазон: -10 - 10, шаг 1,\nпо умолчанию: 0 [%]",
+            "ko": "습도 편차를 보상하기 위해 보정을 설정하십시오.\n범위: -10 - 10, 단계 크기 1,\n기본값: 0 [%]"
+          },
+          "value": 0,
+          "attr": {
+            "min": -10,
+            "max": 10,
+            "step": 1
+          },
+          "units": {
+            "en": "%",
+            "nl": "%",
+            "da": "%",
+            "de": "%",
+            "es": "%",
+            "fr": "%",
+            "it": "%",
+            "no": "%",
+            "sv": "%",
+            "pl": "%",
+            "ru": "%",
+            "ko": "%"
+          }
+        },
+        {
+          "id": "humidity_decimals",
+          "type": "radio",
+          "label": {
+            "en": "Humidity reporting",
+            "nl": "Rapportage luchtvochtigheid",
+            "da": "Fugtighedsrapportering",
+            "de": "Feuchtigkeitsbericht",
+            "es": "Informe de humedad",
+            "fr": "Rapport d'humidité",
+            "it": "Reporting dell'umidità",
+            "no": "Fuktighetsrapportering",
+            "sv": "Rapportering av luftfuktighet",
+            "pl": "Raportowanie wilgotności",
+            "ru": "Отчет о влажности",
+            "ko": "습도 보고서"
+          },
+          "value": "1",
+          "values": [
+            {
+              "id": "1",
+              "label": {
+                "en": "Report humidity value with 1 decimal (35.2 %)",
+                "nl": "Rapporteer luchtvochtigheidswaarde met 1 decimaal (35,2 %)",
+                "da": "Rapporter fugtighedsværdi med 1 decimal (35,2 %)",
+                "de": "Berichten Sie den Feuchtigkeitswert mit 1 Dezimalstelle (35,2 %)",
+                "es": "Informe el valor de humedad con 1 decimal (35,2 %)",
+                "fr": "Rapporter la valeur d'humidité avec 1 décimale (35,2 %)",
+                "it": "Riporta il valore di umidità con 1 decimale (35,2 %)",
+                "no": "Rapporter fuktighetsverdien med 1 desimal (35,2 %)",
+                "sv": "Rapportera fuktvärde med 1 decimal (35,2 %)",
+                "pl": "Zgłoś wartość wilgotności z 1 miejscem dziesiętnym (35,2 %)",
+                "ru": "Сообщите значение влажности с 1 десятичным знаком (35,2 %)",
+                "ko": "습도 값을 소수점 한 자리로 보고하십시오 (35.2 %)"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Report humidity value with 2 decimals (35.19 %)",
+                "nl": "Rapporteer luchtvochtigheidswaarde met 2 decimalen (35,19 %)",
+                "da": "Rapporter fugtighedsværdi med 2 decimaler (35,19 %)",
+                "de": "Berichten Sie den Feuchtigkeitswert mit 2 Dezimalstellen (35,19 %)",
+                "es": "Informe el valor de humedad con 2 decimales (35,19 %)",
+                "fr": "Rapporter la valeur d'humidité avec 2 décimales (35,19 %)",
+                "it": "Riporta il valore di umidità con 2 decimali (35,19 %)",
+                "no": "Rapporter fuktighetsverdien med 2 desimaler (35,19 %)",
+                "sv": "Rapportera fuktvärde med 2 decimaler (35,19 %)",
+                "pl": "Zgłoś wartość wilgotności z 2 miejscami dziesiętnymi (35,19 %)",
+                "ru": "Сообщите значение влажности с 2 десятичными знаками (35,19 %)",
+                "ko": "습도 값을 소수점 두 자리로 보고하십시오 (35.19 %)"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
         "large": "/drivers/SNZB-03/assets/images/large.png",
         "small": "/drivers/SNZB-03/assets/images/small.png"
       },
@@ -2349,6 +2773,152 @@
         },
         "learnmode": {
           "image": "/drivers/SNZB-04P/assets/learn.svg",
+          "instruction": {
+            "en": "Press button for approx. 10 seconds until the red LED starts blinking.",
+            "sv": "Tryck på knappen i cirka 10 sekunder tills den röda lysdioden börjar blinka.",
+            "nl": "Druk op de knop gedurende ca. 10 seconden totdat de rode LED begint te knipperen.",
+            "da": "Tryk på knappen i ca. 10 sekunder, indtil den røde LED begynder at blinke.",
+            "de": "Drücken Sie die Taste ca. 10 Sekunden lang, bis die rote LED zu blinken beginnt.",
+            "es": "Presione el botón durante aprox. 10 segundos hasta que el LED rojo comience a parpadear.",
+            "fr": "Appuyez sur le bouton pendant environ 10 secondes jusqu'à ce que la LED rouge commence à clignoter.",
+            "it": "Premere il pulsante per circa 10 secondi fino a quando il LED rosso inizia a lampeggiare.",
+            "no": "Trykk på knappen i ca. 10 sekunder til den røde LED-en begynner å blinke.",
+            "pl": "Naciśnij przycisk przez ok. 10 sekund, aż czerwona dioda LED zacznie migać.",
+            "ru": "Нажмите кнопку примерно на 10 секунд, пока красный светодиод не начнет мигать.",
+            "ko": "빨간색 LED가 깜박이기 시작할 때까지 약 10초 동안 버튼을 누르세요."
+          }
+        }
+      }
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "large": "/drivers/SNZB-04PR2/assets/images/large.png",
+        "small": "/drivers/SNZB-04PR2/assets/images/small.png"
+      },
+      "id": "SNZB-04PR2",
+      "name": {
+        "en": "Door/Window Sensor SNZB-04PR2",
+        "sv": "Dörr-/fönstergivare SNZB-04PR2",
+        "nl": "Deur-/raamsensor SNZB-04PR2",
+        "da": "Dør-/vinduesensor SNZB-04PR2",
+        "de": "Tür-/Fenstersensor SNZB-04PR2",
+        "es": "Sensor de puerta/ventana SNZB-04PR2",
+        "fr": "Capteur de porte/fenêtre SNZB-04PR2",
+        "it": "Sensore porta/finestra SNZB-04PR2",
+        "no": "Dør-/vindussensor SNZB-04PR2",
+        "pl": "Czujnik drzwi/okien SNZB-04PR2",
+        "ru": "Датчик двери/окна SNZB-04PR2",
+        "ko": "문/창문 센서 SNZB-04PR2"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_contact",
+        "alarm_tamper",
+        "measure_battery"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2477"
+        ]
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "SONOFF"
+        ],
+        "productId": [
+          "SNZB-04PR2"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              1,
+              1280,
+              64529
+            ],
+            "bindings": []
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/SNZB-04PR2/assets/learn.svg",
+          "instruction": {
+            "en": "Press button for approx. 10 seconds until the red LED starts blinking.",
+            "sv": "Tryck på knappen i cirka 10 sekunder tills den röda lysdioden börjar blinka.",
+            "nl": "Druk op de knop gedurende ca. 10 seconden totdat de rode LED begint te knipperen.",
+            "da": "Tryk på knappen i ca. 10 sekunder, indtil den røde LED begynder at blinke.",
+            "de": "Drücken Sie die Taste ca. 10 Sekunden lang, bis die rote LED zu blinken beginnt.",
+            "es": "Presione el botón durante aprox. 10 segundos hasta que el LED rojo comience a parpadear.",
+            "fr": "Appuyez sur le bouton pendant environ 10 secondes jusqu'à ce que la LED rouge commence à clignoter.",
+            "it": "Premere il pulsante per circa 10 secondi fino a quando il LED rosso inizia a lampeggiare.",
+            "no": "Trykk på knappen i ca. 10 sekunder til den røde LED-en begynner å blinke.",
+            "pl": "Naciśnij przycisk przez ok. 10 sekund, aż czerwona dioda LED zacznie migać.",
+            "ru": "Нажмите кнопку примерно на 10 секунд, пока красный светодиод не начнет мигать.",
+            "ko": "빨간색 LED가 깜박이기 시작할 때까지 약 10초 동안 버튼을 누르세요."
+          }
+        }
+      }
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "large": "/drivers/SNZB-05/assets/images/large.png",
+        "small": "/drivers/SNZB-05/assets/images/small.png"
+      },
+      "id": "SNZB-05",
+      "name": {
+        "en": "Water Leak Sensor SNZB-05",
+        "sv": "Vattenläckagesensor SNZB-05",
+        "nl": "Waterlekkagesensor SNZB-05",
+        "da": "Vandlækagesensor SNZB-05",
+        "de": "Wassermelder SNZB-05",
+        "es": "Sensor de fuga de agua SNZB-05",
+        "fr": "Détecteur de fuite d'eau SNZB-05",
+        "it": "Sensore di perdite d'acqua SNZB-05",
+        "no": "Vannlekkasjesensor SNZB-05",
+        "pl": "Czujnik wycieku wody SNZB-05",
+        "ru": "Датчик утечки воды SNZB-05",
+        "ko": "누수 감지 센서 SNZB-05"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_water",
+        "measure_battery"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "eWeLink"
+        ],
+        "productId": [
+          "SNZB-05"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              1,
+              1280
+            ],
+            "bindings": []
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/SNZB-05/assets/learn.svg",
           "instruction": {
             "en": "Press button for approx. 10 seconds until the red LED starts blinking.",
             "sv": "Tryck på knappen i cirka 10 sekunder tills den röda lysdioden börjar blinka.",
@@ -3731,6 +4301,400 @@
               "min": 0.5,
               "max": 3599.5,
               "step": 0.5
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Inching",
+            "sv": "Inching",
+            "nl": "Inching",
+            "da": "Inching",
+            "de": "Inching",
+            "es": "Inching",
+            "fr": "Inching",
+            "it": "Inching",
+            "no": "Inching",
+            "pl": "Inching",
+            "ru": "Инчинг",
+            "ko": "인칭"
+          },
+          "children": [
+            {
+              "id": "inching_enabled",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Enable Inching",
+                "sv": "Aktivera inching",
+                "nl": "Inching inschakelen",
+                "da": "Aktivér inching",
+                "de": "Inching aktivieren",
+                "es": "Activar inching",
+                "fr": "Activer l'inching",
+                "it": "Attiva inching",
+                "no": "Aktiver inching",
+                "pl": "Włącz inching",
+                "ru": "Включить инчинг",
+                "ko": "인칭 활성화"
+              },
+              "hint": {
+                "en": "Auto-switch relay after set time.",
+                "sv": "Växla reläet automatiskt efter inställd tid.",
+                "nl": "Relais automatisch schakelen na ingestelde tijd.",
+                "da": "Skift relæ automatisk efter indstillet tid.",
+                "de": "Relais nach eingestellter Zeit automatisch umschalten.",
+                "es": "Conmutar el relé automáticamente después del tiempo establecido.",
+                "fr": "Commutation automatique du relais après le temps défini.",
+                "it": "Commutazione automatica del relè dopo il tempo impostato.",
+                "no": "Automatisk veksling av relé etter innstilt tid.",
+                "pl": "Automatyczne przełączenie przekaźnika po ustawionym czasie.",
+                "ru": "Автоматическое переключение реле через заданное время.",
+                "ko": "설정된 시간 후 릴레이를 자동 전환합니다."
+              }
+            },
+            {
+              "id": "inching_time",
+              "type": "number",
+              "label": {
+                "en": "Duration (s)",
+                "sv": "Varaktighet (s)",
+                "nl": "Duur (s)",
+                "da": "Varighed (s)",
+                "de": "Dauer (s)",
+                "es": "Duración (s)",
+                "fr": "Durée (s)",
+                "it": "Durata (s)",
+                "no": "Varighet (s)",
+                "pl": "Czas trwania (s)",
+                "ru": "Длительность (с)",
+                "ko": "지속 시간 (초)"
+              },
+              "hint": {
+                "en": "Time before auto-switch (0.5-3599.5s).",
+                "sv": "Tid innan automatisk växling (0,5-3599,5s).",
+                "nl": "Tijd voor automatisch schakelen (0,5-3599,5s).",
+                "da": "Tid før automatisk skift (0,5-3599,5s).",
+                "de": "Zeit bis zur automatischen Umschaltung (0,5-3599,5s).",
+                "es": "Tiempo antes de la conmutación automática (0,5-3599,5s).",
+                "fr": "Temps avant commutation automatique (0,5-3599,5s).",
+                "it": "Tempo prima della commutazione automatica (0,5-3599,5s).",
+                "no": "Tid før automatisk veksling (0,5-3599,5s).",
+                "pl": "Czas przed automatycznym przełączeniem (0,5-3599,5s).",
+                "ru": "Время до автоматического переключения (0,5-3599,5 с).",
+                "ko": "자동 전환 전 시간 (0.5-3599.5초)."
+              },
+              "value": 1,
+              "min": 0.5,
+              "max": 3599.5,
+              "step": 0.5
+            },
+            {
+              "id": "inching_mode",
+              "type": "dropdown",
+              "label": {
+                "en": "Inching Mode",
+                "sv": "Inching-läge",
+                "nl": "Inching-modus",
+                "da": "Inching-tilstand",
+                "de": "Inching-Modus",
+                "es": "Modo inching",
+                "fr": "Mode inching",
+                "it": "Modalità inching",
+                "no": "Inching-modus",
+                "pl": "Tryb inching",
+                "ru": "Режим инчинга",
+                "ko": "인칭 모드"
+              },
+              "hint": {
+                "en": "Auto switch order.",
+                "sv": "Automatisk växlingsordning.",
+                "nl": "Automatische schakelrichting.",
+                "da": "Automatisk skifterækkefølge.",
+                "de": "Automatische Schaltreihenfolge.",
+                "es": "Orden de conmutación automática.",
+                "fr": "Ordre de commutation automatique.",
+                "it": "Ordine di commutazione automatica.",
+                "no": "Automatisk vekslingsrekkefølge.",
+                "pl": "Kolejność automatycznego przełączania.",
+                "ru": "Порядок автоматического переключения.",
+                "ko": "자동 전환 순서."
+              },
+              "value": "on",
+              "values": [
+                {
+                  "id": "on",
+                  "label": {
+                    "en": "On → Off"
+                  }
+                },
+                {
+                  "id": "off",
+                  "label": {
+                    "en": "Off → On"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "large": "/drivers/ZBMicro/assets/images/large.png",
+        "small": "/drivers/ZBMicro/assets/images/small.png"
+      },
+      "id": "ZBMicro",
+      "name": {
+        "en": "ZBMicro USB Plug",
+        "sv": "ZBMicro USB-kontakt",
+        "nl": "ZBMicro USB-stekker",
+        "da": "ZBMicro USB-stik",
+        "de": "ZBMicro USB-Stecker",
+        "es": "ZBMicro Enchufe USB",
+        "fr": "ZBMicro Prise USB",
+        "it": "ZBMicro Spina USB",
+        "no": "ZBMicro USB-plugg",
+        "pl": "ZBMicro Wtyczka USB",
+        "ru": "ZBMicro USB-штекер",
+        "ko": "ZBMicro USB 플러그"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "zigbee": {
+        "manufacturerName": [
+          "SONOFF"
+        ],
+        "productId": [
+          "ZBMicro"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              6,
+              64529
+            ],
+            "bindings": [
+              6
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/ZBMicro/assets/learn.svg",
+          "instruction": {
+            "en": "Press and hold the button for 5 seconds until the green LED flashes slowly.",
+            "sv": "Tryck och håll knappen i 5 sekunder tills den gröna lysdioden blinkar långsamt.",
+            "nl": "Houd de knop 5 seconden ingedrukt totdat de groene LED langzaam knippert.",
+            "da": "Tryk og hold knappen i 5 sekunder, indtil den grønne LED blinker langsomt.",
+            "de": "Halten Sie die Taste 5 Sekunden lang gedrückt, bis die grüne LED langsam blinkt.",
+            "es": "Mantenga presionado el botón durante 5 segundos hasta que el LED verde parpadee lentamente.",
+            "fr": "Appuyez et maintenez le bouton pendant 5 secondes jusqu'à ce que la LED verte clignote lentement.",
+            "it": "Tenere premuto il pulsante per 5 secondi fino a quando il LED verde lampeggia lentamente.",
+            "no": "Trykk og hold knappen i 5 sekunder til den grønne LED-en blinker sakte.",
+            "pl": "Naciśnij i przytrzymaj przycisk przez 5 sekund, aż zielona dioda LED zacznie powoli migać.",
+            "ru": "Нажмите и удерживайте кнопку 5 секунд, пока зелёный светодиод не начнёт медленно мигать.",
+            "ko": "녹색 LED가 천천히 깜박일 때까지 버튼을 5초 동안 길게 누르세요."
+          }
+        }
+      },
+      "settings": [
+        {
+          "id": "turbo_mode",
+          "type": "checkbox",
+          "value": false,
+          "label": {
+            "en": "Turbo Mode",
+            "sv": "Turboläge",
+            "nl": "Turbomodus",
+            "da": "Turbotilstand",
+            "de": "Turbomodus",
+            "es": "Modo turbo",
+            "fr": "Mode turbo",
+            "it": "Modalità turbo",
+            "no": "Turbomodus",
+            "pl": "Tryb turbo",
+            "ru": "Турборежим",
+            "ko": "터보 모드"
+          },
+          "hint": {
+            "en": "Improves Zigbee range for distant devices.",
+            "sv": "Förbättrar Zigbee-räckvidden för avlägsna enheter.",
+            "nl": "Verbetert het Zigbee-bereik voor apparaten op afstand.",
+            "da": "Forbedrer Zigbee-rækkevidden for fjerne enheder.",
+            "de": "Verbessert die Zigbee-Reichweite für entfernte Geräte.",
+            "es": "Mejora el alcance Zigbee para dispositivos distantes.",
+            "fr": "Améliore la portée Zigbee pour les appareils distants.",
+            "it": "Migliora la portata Zigbee per dispositivi distanti.",
+            "no": "Forbedrer Zigbee-rekkevidden for fjerne enheter.",
+            "pl": "Poprawia zasięg Zigbee dla odległych urządzeń.",
+            "ru": "Улучшает радиус действия Zigbee для удалённых устройств.",
+            "ko": "원거리 기기의 Zigbee 범위를 개선합니다."
+          }
+        },
+        {
+          "id": "network_led",
+          "type": "checkbox",
+          "value": true,
+          "label": {
+            "en": "Network LED",
+            "sv": "Nätverks-LED",
+            "nl": "Netwerk-LED",
+            "da": "Netværks-LED",
+            "de": "Netzwerk-LED",
+            "es": "LED de red",
+            "fr": "LED réseau",
+            "it": "LED di rete",
+            "no": "Nettverks-LED",
+            "pl": "Dioda sieciowa",
+            "ru": "Сетевой светодиод",
+            "ko": "네트워크 LED"
+          },
+          "hint": {
+            "en": "Show network status LED.",
+            "sv": "Visa nätverksstatuslysdiod.",
+            "nl": "Toon netwerk-LED.",
+            "da": "Vis netværksstatus-LED.",
+            "de": "Netzwerkstatus-LED anzeigen.",
+            "es": "Mostrar LED de estado de red.",
+            "fr": "Afficher la LED d'état du réseau.",
+            "it": "Mostra il LED di stato della rete.",
+            "no": "Vis nettverksstatus-LED.",
+            "pl": "Pokaż diodę stanu sieci.",
+            "ru": "Показать светодиод состояния сети.",
+            "ko": "네트워크 상태 LED를 표시합니다."
+          }
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Power-on Behavior",
+            "sv": "Beteende vid strömåterkomst",
+            "nl": "Gedrag bij inschakelen",
+            "da": "Opførsel ved tænding",
+            "de": "Einschaltverhalten",
+            "es": "Comportamiento al encender",
+            "fr": "Comportement à la mise sous tension",
+            "it": "Comportamento all'accensione",
+            "no": "Oppførsel ved strømtilkobling",
+            "pl": "Zachowanie po włączeniu",
+            "ru": "Поведение при включении",
+            "ko": "전원 켜기 동작"
+          },
+          "children": [
+            {
+              "id": "power_on_behavior",
+              "type": "dropdown",
+              "label": {
+                "en": "Power-on State",
+                "sv": "Tillstånd vid strömåterkomst",
+                "nl": "Status bij inschakelen",
+                "da": "Tilstand ved tænding",
+                "de": "Zustand beim Einschalten",
+                "es": "Estado al encender",
+                "fr": "État à la mise sous tension",
+                "it": "Stato all'accensione",
+                "no": "Tilstand ved strømtilkobling",
+                "pl": "Stan po włączeniu",
+                "ru": "Состояние при включении",
+                "ko": "전원 켜기 상태"
+              },
+              "hint": {
+                "en": "Relay state after power restore.",
+                "sv": "Relätillstånd efter strömåterkomst.",
+                "nl": "Relaisstatus na stroomherstel.",
+                "da": "Relætilstand efter strømgendannelse.",
+                "de": "Relaiszustand nach Stromwiederkehr.",
+                "es": "Estado del relé después de restaurar la energía.",
+                "fr": "État du relais après rétablissement de l'alimentation.",
+                "it": "Stato del relè dopo il ripristino dell'alimentazione.",
+                "no": "Relétilstand etter strømgjenoppretting.",
+                "pl": "Stan przekaźnika po przywróceniu zasilania.",
+                "ru": "Состояние реле после восстановления питания.",
+                "ko": "전원 복구 후 릴레이 상태."
+              },
+              "value": "off",
+              "values": [
+                {
+                  "id": "on",
+                  "label": {
+                    "en": "Turn On",
+                    "sv": "Slå på",
+                    "nl": "Inschakelen",
+                    "da": "Tænd",
+                    "de": "Einschalten",
+                    "es": "Encender",
+                    "fr": "Allumer",
+                    "it": "Accendi",
+                    "no": "Slå på",
+                    "pl": "Włącz",
+                    "ru": "Включить",
+                    "ko": "켜기"
+                  }
+                },
+                {
+                  "id": "off",
+                  "label": {
+                    "en": "Turn Off",
+                    "sv": "Stäng av",
+                    "nl": "Uitschakelen",
+                    "da": "Sluk",
+                    "de": "Ausschalten",
+                    "es": "Apagar",
+                    "fr": "Éteindre",
+                    "it": "Spegni",
+                    "no": "Slå av",
+                    "pl": "Wyłącz",
+                    "ru": "Выключить",
+                    "ko": "끄기"
+                  }
+                },
+                {
+                  "id": "toggle",
+                  "label": {
+                    "en": "Toggle",
+                    "sv": "Växla",
+                    "nl": "Schakelen",
+                    "da": "Skift",
+                    "de": "Umschalten",
+                    "es": "Conmutar",
+                    "fr": "Basculer",
+                    "it": "Commuta",
+                    "no": "Veksle",
+                    "pl": "Przełącz",
+                    "ru": "Переключить",
+                    "ko": "토글"
+                  }
+                },
+                {
+                  "id": "last_state",
+                  "label": {
+                    "en": "Last State",
+                    "sv": "Senaste tillstånd",
+                    "nl": "Laatste status",
+                    "da": "Sidste tilstand",
+                    "de": "Letzter Zustand",
+                    "es": "Último estado",
+                    "fr": "Dernier état",
+                    "it": "Ultimo stato",
+                    "no": "Siste tilstand",
+                    "pl": "Ostatni stan",
+                    "ru": "Последнее состояние",
+                    "ko": "마지막 상태"
+                  }
+                }
+              ]
             }
           ]
         },

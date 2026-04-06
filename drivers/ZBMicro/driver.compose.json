@@ -1,0 +1,59 @@
+{
+  "id": "SonoffZBMicro",
+  "name": {
+    "en": "ZBMicro USB Plug",
+    "sv": "ZBMicro USB-kontakt",
+    "nl": "ZBMicro USB-stekker",
+    "da": "ZBMicro USB-stik",
+    "de": "ZBMicro USB-Stecker",
+    "es": "ZBMicro Enchufe USB",
+    "fr": "ZBMicro Prise USB",
+    "it": "ZBMicro Spina USB",
+    "no": "ZBMicro USB-plugg",
+    "pl": "ZBMicro Wtyczka USB",
+    "ru": "ZBMicro USB-штекер",
+    "ko": "ZBMicro USB 플러그"
+  },
+  "class": "socket",
+  "capabilities": [
+    "onoff"
+  ],
+  "zigbee": {
+    "manufacturerName": [
+      "SONOFF"
+    ],
+    "productId": [
+      "ZBMicro"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0,
+          6,
+          64529
+        ],
+        "bindings": [
+          6
+        ]
+      }
+    },
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learn.svg",
+      "instruction": {
+        "en": "Press and hold the button for 5 seconds until the green LED flashes slowly.",
+        "sv": "Tryck och håll knappen i 5 sekunder tills den gröna lysdioden blinkar långsamt.",
+        "nl": "Houd de knop 5 seconden ingedrukt totdat de groene LED langzaam knippert.",
+        "da": "Tryk og hold knappen i 5 sekunder, indtil den grønne LED blinker langsomt.",
+        "de": "Halten Sie die Taste 5 Sekunden lang gedrückt, bis die grüne LED langsam blinkt.",
+        "es": "Mantenga presionado el botón durante 5 segundos hasta que el LED verde parpadee lentamente.",
+        "fr": "Appuyez et maintenez le bouton pendant 5 secondes jusqu'à ce que la LED verte clignote lentement.",
+        "it": "Tenere premuto il pulsante per 5 secondi fino a quando il LED verde lampeggia lentamente.",
+        "no": "Trykk og hold knappen i 5 sekunder til den grønne LED-en blinker sakte.",
+        "pl": "Naciśnij i przytrzymaj przycisk przez 5 sekund, aż zielona dioda LED zacznie powoli migać.",
+        "ru": "Нажмите и удерживайте кнопку 5 секунд, пока зелёный светодиод не начнёт медленно мигать.",
+        "ko": "녹색 LED가 천천히 깜박일 때까지 버튼을 5초 동안 길게 누르세요."
+      }
+    }
+  },
+  "$extends": ["defaults"]
+}

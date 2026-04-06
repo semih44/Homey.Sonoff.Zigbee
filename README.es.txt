@@ -9,21 +9,27 @@ Sensores y botones:
 - Sonoff SNZB-01P (Botón redondo)
 - Sonoff SNZB-02  (Sensor de temperatura y humedad cuadrado)
 - Sonoff SNZB-02D (Sensor de temperatura y humedad con pantalla)
-- Sonoff SNZB-02P (Sensor de temperatura y humedad redondo)
-- Sonoff SNZB-03  (Detector de movimiento)
+- Sonoff SNZB-02P  (Sensor de temperatura y humedad redondo)
+- Sonoff SNZB-02WD (Sensor de temperatura y humedad resistente al agua con pantalla)
+- Sonoff SNZB-03   (Detector de movimiento)
 - Sonoff SNZB-03P (Detector de movimiento con sensor de luz)
 - Sonoff SNZB-04  (Sensor de puerta/ventana)
-- Sonoff SNZB-04P (Sensor de puerta/ventana)
-- Sonoff SNZB-05P (Detector de fuga de agua)
+- Sonoff SNZB-04P   (Sensor de puerta/ventana con tamper)
+- Sonoff SNZB-04PR2 (Sensor de puerta/ventana con tamper)
+- Sonoff SNZB-05    (Detector de fuga de agua)
+- Sonoff SNZB-05P   (Detector de fuga de agua)
 - Sonoff SNZB-06P (Detector de presencia)
 - Sonoff TRVZB   (Válvula termostática)
 
-Interruptores:
+Interruptores y enchufes:
 - Sonoff ZBMINI    (Módulo de interruptor empotrado)
 - Sonoff ZBMINI-L  (Módulo de interruptor empotrado, sin neutro)
 - Sonoff ZBMINI-L2 (Módulo de interruptor empotrado, sin neutro)
 - Sonoff ZBMINI-R2 (Módulo de interruptor empotrado con funciones avanzadas)
+- Sonoff ZBMicro   (Enchufe repetidor USB con interruptor)
 - Sonoff BASICZBR3 (Interruptor inteligente)
+- Sonoff S31ZB     (Enchufe inteligente, US)
+- Sonoff S40ZBTPB  (Enchufe inteligente 15A)
 
 Persianas y cortinas:
 - Sonoff ZBCurtain  (Controlador de motor para cortinas/persianas)

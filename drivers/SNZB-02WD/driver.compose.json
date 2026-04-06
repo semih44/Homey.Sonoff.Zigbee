@@ -1,0 +1,70 @@
+{
+  "id": "SonoffSNZB02WD",
+  "name": {
+    "en": "Thermometer SNZB-02WD",
+    "sv": "Termometer SNZB-02WD",
+    "nl": "Thermometer SNZB-02WD",
+    "da": "Termometer SNZB-02WD",
+    "de": "Thermometer SNZB-02WD",
+    "es": "Termómetro SNZB-02WD",
+    "fr": "Thermomètre SNZB-02WD",
+    "it": "Termometro SNZB-02WD",
+    "no": "Termometer SNZB-02WD",
+    "pl": "Termometr SNZB-02WD",
+    "ru": "Термометр SNZB-02WD",
+    "ko": "온도계 SNZB-02WD"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "measure_temperature",
+    "measure_humidity",
+    "measure_battery"
+  ],
+  "energy": {
+    "batteries": [
+      "CR2477"
+    ]
+  },
+  "zigbee": {
+    "manufacturerName": [
+      "SONOFF"
+    ],
+    "productId": [
+      "SNZB-02WD"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0,
+          1,
+          1026,
+          1029
+        ],
+        "bindings": [
+          0,
+          1,
+          1026,
+          1029
+        ]
+      }
+    },
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learn.svg",
+      "instruction": {
+        "en": "Press button on back side for approx. 10 seconds until the red LED blinks rapidly.",
+        "sv": "Tryck på knappen på baksidan i cirka 10 sekunder tills den röda lysdioden blinkar snabbt.",
+        "nl": "Druk op de knop aan de achterkant gedurende ca. 10 seconden totdat de rode LED snel knippert.",
+        "da": "Tryk på knappen på bagsiden i ca. 10 sekunder, indtil den røde LED blinker hurtigt.",
+        "de": "Drücken Sie die Taste auf der Rückseite ca. 10 Sekunden lang, bis die rote LED schnell blinkt.",
+        "es": "Presione el botón en la parte posterior durante aprox. 10 segundos hasta que el LED rojo parpadee rápidamente.",
+        "fr": "Appuyez sur le bouton à l'arrière pendant environ 10 secondes jusqu'à ce que la LED rouge clignote rapidement.",
+        "it": "Premere il pulsante sul retro per circa 10 secondi fino a quando il LED rosso lampeggia rapidamente.",
+        "no": "Trykk på knappen på baksiden i ca. 10 sekunder til den røde LED-en blinker raskt.",
+        "pl": "Naciśnij przycisk z tyłu przez ok. 10 sekund, aż czerwona dioda LED zacznie szybko migać.",
+        "ru": "Нажмите кнопку на задней стороне примерно на 10 секунд, пока красный светодиод не начнет быстро мигать.",
+        "ko": "빨간 LED가 빠르게 깜박일 때까지 후면의 버튼을 약 10초 동안 누르세요."
+      }
+    }
+  },
+  "$extends": ["defaults"]
+}
