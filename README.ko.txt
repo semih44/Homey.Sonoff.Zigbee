@@ -6,10 +6,12 @@ Homey 앱이 Sonoff Zigbee 기기들을 지원합니다.
 
 센서 및 버튼:
 - Sonoff SNZB-01  (정사각형 버튼)
+- Sonoff SNZB-01M  (4버튼 리모컨)
 - Sonoff SNZB-01P (원형 버튼)
 - Sonoff SNZB-02  (정사각형 온습도 센서)
 - Sonoff SNZB-02D (디스플레이가 있는 온습도 센서)
 - Sonoff SNZB-02P  (원형 온습도 센서)
+- Sonoff SNZB-02LD  (프로브 온도 센서 (디스플레이 포함))
 - Sonoff SNZB-02WD (디스플레이가 있는 방수 온습도 센서)
 - Sonoff SNZB-03   (모션 센서)
 - Sonoff SNZB-03P (조도 감지 기능이 있는 모션 센서)
@@ -22,6 +24,7 @@ Homey 앱이 Sonoff Zigbee 기기들을 지원합니다.
 - Sonoff TRVZB   (온도 조절 밸브)
 
 스위치 및 플러그:
+- Sonoff MINI-ZBDIM (스마트 미니 디머)
 - Sonoff ZBMINI    (벽내 스위치 모듈)
 - Sonoff ZBMINI-L  (벽내 스위치 모듈, 중성선 불필요)
 - Sonoff ZBMINI-L2 (벽내 스위치 모듈, 중성선 불필요)

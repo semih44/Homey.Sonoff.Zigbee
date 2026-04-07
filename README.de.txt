@@ -6,10 +6,12 @@ Unterstützte Geräte:
 
 Sensoren & Taster:
 - Sonoff SNZB-01    (Quadratischer Taster)
+- Sonoff SNZB-01M   (4-Tasten-Fernbedienung)
 - Sonoff SNZB-01P   (Runder Taster)
 - Sonoff SNZB-02    (Quadratischer Temperatur- & Luftfeuchtigkeitssensor)
 - Sonoff SNZB-02D   (Temperatur- & Luftfeuchtigkeitssensor mit Display)
 - Sonoff SNZB-02P   (Runder Temperatur- & Luftfeuchtigkeitssensor)
+- Sonoff SNZB-02LD  (Sonden-Temperatursensor mit Display)
 - Sonoff SNZB-02WD  (Wasserdichter Temperatur- & Luftfeuchtigkeitssensor mit Display)
 - Sonoff SNZB-03    (Bewegungsmelder)
 - Sonoff SNZB-03P   (Bewegungsmelder mit Helligkeitserkennung)
@@ -22,6 +24,7 @@ Sensoren & Taster:
 - Sonoff TRVZB      (Heizkörperthermostat)
 
 Schalter & Steckdosen:
+- Sonoff MINI-ZBDIM (Smarter Mini-Dimmer)
 - Sonoff ZBMINI    (Unterputz-Schaltmodul)
 - Sonoff ZBMINI-L  (Unterputz-Schaltmodul, ohne Nullleiter)
 - Sonoff ZBMINI-L2 (Unterputz-Schaltmodul, ohne Nullleiter)

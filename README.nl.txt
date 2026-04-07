@@ -6,10 +6,12 @@ Ondersteunde apparaten:
 
 Sensoren & Knoppen:
 - Sonoff SNZB-01  (Vierkante knop)
+- Sonoff SNZB-01M  (4-knops afstandsbediening)
 - Sonoff SNZB-01P (Ronde knop)
 - Sonoff SNZB-02  (Vierkante temperatuur- & vochtigheidssensor)
 - Sonoff SNZB-02D (Temperatuur- & vochtigheidssensor met display)
 - Sonoff SNZB-02P  (Ronde temperatuur- & vochtigheidssensor)
+- Sonoff SNZB-02LD  (Sonde temperatuursensor met display)
 - Sonoff SNZB-02WD (Waterdichte temperatuur- & vochtigheidssensor met display)
 - Sonoff SNZB-03   (Bewegingssensor)
 - Sonoff SNZB-03P (Bewegingssensor met lichtsensor)
@@ -22,6 +24,7 @@ Sensoren & Knoppen:
 - Sonoff TRVZB   (Thermostaatventiel)
 
 Schakelaars & Stekkers:
+- Sonoff MINI-ZBDIM (Slimme mini dimmer)
 - Sonoff ZBMINI    (Inbouw schakelmodule)
 - Sonoff ZBMINI-L  (Inbouw schakelmodule, zonder nuldraad)
 - Sonoff ZBMINI-L2 (Inbouw schakelmodule, zonder nuldraad)

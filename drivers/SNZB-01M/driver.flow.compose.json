@@ -1,0 +1,276 @@
+{
+  "triggers": [
+    {
+      "id": "{{driverId}}:single_button_1",
+      "title": {
+        "en": "Button 1 — Single click",
+        "sv": "Knapp 1 — Enstaka klick",
+        "nl": "Knop 1 — Enkele klik",
+        "da": "Knap 1 — Enkelt klik",
+        "de": "Taste 1 — Einzelklick",
+        "es": "Botón 1 — Clic único",
+        "fr": "Bouton 1 — Clic unique",
+        "it": "Pulsante 1 — Clic singolo",
+        "no": "Knapp 1 — Enkel klikk",
+        "pl": "Przycisk 1 — Pojedyncze kliknięcie",
+        "ru": "Кнопка 1 — Одиночный клик",
+        "ko": "버튼 1 — 단일 클릭"
+      }
+    },
+    {
+      "id": "{{driverId}}:double_button_1",
+      "title": {
+        "en": "Button 1 — Double click",
+        "sv": "Knapp 1 — Dubbelklick",
+        "nl": "Knop 1 — Dubbele klik",
+        "da": "Knap 1 — Dobbelt klik",
+        "de": "Taste 1 — Doppelklick",
+        "es": "Botón 1 — Doble clic",
+        "fr": "Bouton 1 — Double clic",
+        "it": "Pulsante 1 — Doppio clic",
+        "no": "Knapp 1 — Dobbeltklikk",
+        "pl": "Przycisk 1 — Podwójne kliknięcie",
+        "ru": "Кнопка 1 — Двойной клик",
+        "ko": "버튼 1 — 더블 클릭"
+      }
+    },
+    {
+      "id": "{{driverId}}:long_button_1",
+      "title": {
+        "en": "Button 1 — Long press",
+        "sv": "Knapp 1 — Långt tryck",
+        "nl": "Knop 1 — Lange druk",
+        "da": "Knap 1 — Langt tryk",
+        "de": "Taste 1 — Langer Druck",
+        "es": "Botón 1 — Pulsación larga",
+        "fr": "Bouton 1 — Appui long",
+        "it": "Pulsante 1 — Pressione lunga",
+        "no": "Knapp 1 — Langt trykk",
+        "pl": "Przycisk 1 — Długie naciśnięcie",
+        "ru": "Кнопка 1 — Долгое нажатие",
+        "ko": "버튼 1 — 길게 누르기"
+      }
+    },
+    {
+      "id": "{{driverId}}:triple_button_1",
+      "title": {
+        "en": "Button 1 — Triple click",
+        "sv": "Knapp 1 — Trippelklick",
+        "nl": "Knop 1 — Drievoudige klik",
+        "da": "Knap 1 — Tredobbelt klik",
+        "de": "Taste 1 — Dreifachklick",
+        "es": "Botón 1 — Triple clic",
+        "fr": "Bouton 1 — Triple clic",
+        "it": "Pulsante 1 — Triplo clic",
+        "no": "Knapp 1 — Trippelklikk",
+        "pl": "Przycisk 1 — Potrójne kliknięcie",
+        "ru": "Кнопка 1 — Тройной клик",
+        "ko": "버튼 1 — 트리플 클릭"
+      }
+    },
+    {
+      "id": "{{driverId}}:single_button_2",
+      "title": {
+        "en": "Button 2 — Single click",
+        "sv": "Knapp 2 — Enstaka klick",
+        "nl": "Knop 2 — Enkele klik",
+        "da": "Knap 2 — Enkelt klik",
+        "de": "Taste 2 — Einzelklick",
+        "es": "Botón 2 — Clic único",
+        "fr": "Bouton 2 — Clic unique",
+        "it": "Pulsante 2 — Clic singolo",
+        "no": "Knapp 2 — Enkel klikk",
+        "pl": "Przycisk 2 — Pojedyncze kliknięcie",
+        "ru": "Кнопка 2 — Одиночный клик",
+        "ko": "버튼 2 — 단일 클릭"
+      }
+    },
+    {
+      "id": "{{driverId}}:double_button_2",
+      "title": {
+        "en": "Button 2 — Double click",
+        "sv": "Knapp 2 — Dubbelklick",
+        "nl": "Knop 2 — Dubbele klik",
+        "da": "Knap 2 — Dobbelt klik",
+        "de": "Taste 2 — Doppelklick",
+        "es": "Botón 2 — Doble clic",
+        "fr": "Bouton 2 — Double clic",
+        "it": "Pulsante 2 — Doppio clic",
+        "no": "Knapp 2 — Dobbeltklikk",
+        "pl": "Przycisk 2 — Podwójne kliknięcie",
+        "ru": "Кнопка 2 — Двойной клик",
+        "ko": "버튼 2 — 더블 클릭"
+      }
+    },
+    {
+      "id": "{{driverId}}:long_button_2",
+      "title": {
+        "en": "Button 2 — Long press",
+        "sv": "Knapp 2 — Långt tryck",
+        "nl": "Knop 2 — Lange druk",
+        "da": "Knap 2 — Langt tryk",
+        "de": "Taste 2 — Langer Druck",
+        "es": "Botón 2 — Pulsación larga",
+        "fr": "Bouton 2 — Appui long",
+        "it": "Pulsante 2 — Pressione lunga",
+        "no": "Knapp 2 — Langt trykk",
+        "pl": "Przycisk 2 — Długie naciśnięcie",
+        "ru": "Кнопка 2 — Долгое нажатие",
+        "ko": "버튼 2 — 길게 누르기"
+      }
+    },
+    {
+      "id": "{{driverId}}:triple_button_2",
+      "title": {
+        "en": "Button 2 — Triple click",
+        "sv": "Knapp 2 — Trippelklick",
+        "nl": "Knop 2 — Drievoudige klik",
+        "da": "Knap 2 — Tredobbelt klik",
+        "de": "Taste 2 — Dreifachklick",
+        "es": "Botón 2 — Triple clic",
+        "fr": "Bouton 2 — Triple clic",
+        "it": "Pulsante 2 — Triplo clic",
+        "no": "Knapp 2 — Trippelklikk",
+        "pl": "Przycisk 2 — Potrójne kliknięcie",
+        "ru": "Кнопка 2 — Тройной клик",
+        "ko": "버튼 2 — 트리플 클릭"
+      }
+    },
+    {
+      "id": "{{driverId}}:single_button_3",
+      "title": {
+        "en": "Button 3 — Single click",
+        "sv": "Knapp 3 — Enstaka klick",
+        "nl": "Knop 3 — Enkele klik",
+        "da": "Knap 3 — Enkelt klik",
+        "de": "Taste 3 — Einzelklick",
+        "es": "Botón 3 — Clic único",
+        "fr": "Bouton 3 — Clic unique",
+        "it": "Pulsante 3 — Clic singolo",
+        "no": "Knapp 3 — Enkel klikk",
+        "pl": "Przycisk 3 — Pojedyncze kliknięcie",
+        "ru": "Кнопка 3 — Одиночный клик",
+        "ko": "버튼 3 — 단일 클릭"
+      }
+    },
+    {
+      "id": "{{driverId}}:double_button_3",
+      "title": {
+        "en": "Button 3 — Double click",
+        "sv": "Knapp 3 — Dubbelklick",
+        "nl": "Knop 3 — Dubbele klik",
+        "da": "Knap 3 — Dobbelt klik",
+        "de": "Taste 3 — Doppelklick",
+        "es": "Botón 3 — Doble clic",
+        "fr": "Bouton 3 — Double clic",
+        "it": "Pulsante 3 — Doppio clic",
+        "no": "Knapp 3 — Dobbeltklikk",
+        "pl": "Przycisk 3 — Podwójne kliknięcie",
+        "ru": "Кнопка 3 — Двойной клик",
+        "ko": "버튼 3 — 더블 클릭"
+      }
+    },
+    {
+      "id": "{{driverId}}:long_button_3",
+      "title": {
+        "en": "Button 3 — Long press",
+        "sv": "Knapp 3 — Långt tryck",
+        "nl": "Knop 3 — Lange druk",
+        "da": "Knap 3 — Langt tryk",
+        "de": "Taste 3 — Langer Druck",
+        "es": "Botón 3 — Pulsación larga",
+        "fr": "Bouton 3 — Appui long",
+        "it": "Pulsante 3 — Pressione lunga",
+        "no": "Knapp 3 — Langt trykk",
+        "pl": "Przycisk 3 — Długie naciśnięcie",
+        "ru": "Кнопка 3 — Долгое нажатие",
+        "ko": "버튼 3 — 길게 누르기"
+      }
+    },
+    {
+      "id": "{{driverId}}:triple_button_3",
+      "title": {
+        "en": "Button 3 — Triple click",
+        "sv": "Knapp 3 — Trippelklick",
+        "nl": "Knop 3 — Drievoudige klik",
+        "da": "Knap 3 — Tredobbelt klik",
+        "de": "Taste 3 — Dreifachklick",
+        "es": "Botón 3 — Triple clic",
+        "fr": "Bouton 3 — Triple clic",
+        "it": "Pulsante 3 — Triplo clic",
+        "no": "Knapp 3 — Trippelklikk",
+        "pl": "Przycisk 3 — Potrójne kliknięcie",
+        "ru": "Кнопка 3 — Тройной клик",
+        "ko": "버튼 3 — 트리플 클릭"
+      }
+    },
+    {
+      "id": "{{driverId}}:single_button_4",
+      "title": {
+        "en": "Button 4 — Single click",
+        "sv": "Knapp 4 — Enstaka klick",
+        "nl": "Knop 4 — Enkele klik",
+        "da": "Knap 4 — Enkelt klik",
+        "de": "Taste 4 — Einzelklick",
+        "es": "Botón 4 — Clic único",
+        "fr": "Bouton 4 — Clic unique",
+        "it": "Pulsante 4 — Clic singolo",
+        "no": "Knapp 4 — Enkel klikk",
+        "pl": "Przycisk 4 — Pojedyncze kliknięcie",
+        "ru": "Кнопка 4 — Одиночный клик",
+        "ko": "버튼 4 — 단일 클릭"
+      }
+    },
+    {
+      "id": "{{driverId}}:double_button_4",
+      "title": {
+        "en": "Button 4 — Double click",
+        "sv": "Knapp 4 — Dubbelklick",
+        "nl": "Knop 4 — Dubbele klik",
+        "da": "Knap 4 — Dobbelt klik",
+        "de": "Taste 4 — Doppelklick",
+        "es": "Botón 4 — Doble clic",
+        "fr": "Bouton 4 — Double clic",
+        "it": "Pulsante 4 — Doppio clic",
+        "no": "Knapp 4 — Dobbeltklikk",
+        "pl": "Przycisk 4 — Podwójne kliknięcie",
+        "ru": "Кнопка 4 — Двойной клик",
+        "ko": "버튼 4 — 더블 클릭"
+      }
+    },
+    {
+      "id": "{{driverId}}:long_button_4",
+      "title": {
+        "en": "Button 4 — Long press",
+        "sv": "Knapp 4 — Långt tryck",
+        "nl": "Knop 4 — Lange druk",
+        "da": "Knap 4 — Langt tryk",
+        "de": "Taste 4 — Langer Druck",
+        "es": "Botón 4 — Pulsación larga",
+        "fr": "Bouton 4 — Appui long",
+        "it": "Pulsante 4 — Pressione lunga",
+        "no": "Knapp 4 — Langt trykk",
+        "pl": "Przycisk 4 — Długie naciśnięcie",
+        "ru": "Кнопка 4 — Долгое нажатие",
+        "ko": "버튼 4 — 길게 누르기"
+      }
+    },
+    {
+      "id": "{{driverId}}:triple_button_4",
+      "title": {
+        "en": "Button 4 — Triple click",
+        "sv": "Knapp 4 — Trippelklick",
+        "nl": "Knop 4 — Drievoudige klik",
+        "da": "Knap 4 — Tredobbelt klik",
+        "de": "Taste 4 — Dreifachklick",
+        "es": "Botón 4 — Triple clic",
+        "fr": "Bouton 4 — Triple clic",
+        "it": "Pulsante 4 — Triplo clic",
+        "no": "Knapp 4 — Trippelklikk",
+        "pl": "Przycisk 4 — Potrójne kliknięcie",
+        "ru": "Кнопка 4 — Тройной клик",
+        "ko": "버튼 4 — 트리플 클릭"
+      }
+    }
+  ]
+}

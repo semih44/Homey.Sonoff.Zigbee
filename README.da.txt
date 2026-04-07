@@ -6,10 +6,12 @@ Understøttede enheder:
 
 Sensorer og knapper:
 - Sonoff SNZB-01  (Firkantet knap)
+- Sonoff SNZB-01M  (4-knaps fjernbetjening)
 - Sonoff SNZB-01P (Rund knap)
 - Sonoff SNZB-02  (Firkantet temperatur- og fugtighedssensor)
 - Sonoff SNZB-02D (Temperatur- og fugtighedssensor med display)
 - Sonoff SNZB-02P  (Rund temperatur- og fugtighedssensor)
+- Sonoff SNZB-02LD  (Sonde temperatursensor med display)
 - Sonoff SNZB-02WD (Vandtæt temperatur- og fugtighedssensor med display)
 - Sonoff SNZB-03   (Bevægelsesdetektor)
 - Sonoff SNZB-03P (Bevægelsesdetektor med lysregistrering)
@@ -22,6 +24,7 @@ Sensorer og knapper:
 - Sonoff TRVZB   (Termostatventil)
 
 Kontakter og stik:
+- Sonoff MINI-ZBDIM (Smart mini lysdæmper)
 - Sonoff ZBMINI    (Indbygnings-kontaktmodul)
 - Sonoff ZBMINI-L  (Indbygnings-kontaktmodul, uden neutral)
 - Sonoff ZBMINI-L2 (Indbygnings-kontaktmodul, uden neutral)

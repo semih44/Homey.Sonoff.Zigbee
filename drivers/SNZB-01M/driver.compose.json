@@ -1,0 +1,82 @@
+{
+  "id": "SonoffSNZB01M",
+  "name": {
+    "en": "4-Button Remote SNZB-01M",
+    "sv": "4-knapps fjärrkontroll SNZB-01M",
+    "nl": "4-knops afstandsbediening SNZB-01M",
+    "da": "4-knaps fjernbetjening SNZB-01M",
+    "de": "4-Tasten-Fernbedienung SNZB-01M",
+    "es": "Control remoto de 4 botones SNZB-01M",
+    "fr": "Télécommande 4 boutons SNZB-01M",
+    "it": "Telecomando 4 pulsanti SNZB-01M",
+    "no": "4-knapps fjernkontroll SNZB-01M",
+    "pl": "Pilot 4-przyciskowy SNZB-01M",
+    "ru": "Пульт с 4 кнопками SNZB-01M",
+    "ko": "4버튼 리모컨 SNZB-01M"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "measure_battery"
+  ],
+  "energy": {
+    "batteries": [
+      "CR2477"
+    ]
+  },
+  "zigbee": {
+    "manufacturerName": [
+      "SONOFF"
+    ],
+    "productId": [
+      "SNZB-01M"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0,
+          1,
+          64530
+        ],
+        "bindings": [
+          1
+        ]
+      },
+      "2": {
+        "clusters": [
+          64530
+        ],
+        "bindings": []
+      },
+      "3": {
+        "clusters": [
+          64530
+        ],
+        "bindings": []
+      },
+      "4": {
+        "clusters": [
+          64530
+        ],
+        "bindings": []
+      }
+    },
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learn.svg",
+      "instruction": {
+        "en": "Press and hold any button for approx. 10 seconds until the LED blinks rapidly.",
+        "sv": "Tryck och håll ned valfri knapp i cirka 10 sekunder tills lysdioden blinkar snabbt.",
+        "nl": "Houd een willekeurige knop ca. 10 seconden ingedrukt totdat de LED snel knippert.",
+        "da": "Tryk og hold en vilkårlig knap i ca. 10 sekunder, indtil LED'en blinker hurtigt.",
+        "de": "Halten Sie eine beliebige Taste ca. 10 Sekunden gedrückt, bis die LED schnell blinkt.",
+        "es": "Mantenga presionado cualquier botón durante aprox. 10 segundos hasta que el LED parpadee rápidamente.",
+        "fr": "Maintenez n'importe quel bouton enfoncé pendant environ 10 secondes jusqu'à ce que la LED clignote rapidement.",
+        "it": "Tenere premuto un pulsante qualsiasi per circa 10 secondi fino a quando il LED lampeggia rapidamente.",
+        "no": "Trykk og hold en vilkårlig knapp i ca. 10 sekunder til LED-en blinker raskt.",
+        "pl": "Naciśnij i przytrzymaj dowolny przycisk przez ok. 10 sekund, aż dioda LED zacznie szybko migać.",
+        "ru": "Нажмите и удерживайте любую кнопку примерно 10 секунд, пока светодиод не начнет быстро мигать.",
+        "ko": "LED가 빠르게 깜박일 때까지 아무 버튼이나 약 10초 동안 길게 누르세요."
+      }
+    }
+  },
+  "$extends": ["defaults"]
+}

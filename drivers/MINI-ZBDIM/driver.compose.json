@@ -1,0 +1,76 @@
+{
+  "id": "SonoffMINIZBDIM",
+  "name": {
+    "en": "MINI-ZBDIM Dimmer",
+    "sv": "MINI-ZBDIM Dimmer",
+    "nl": "MINI-ZBDIM Dimmer",
+    "da": "MINI-ZBDIM Lysdæmper",
+    "de": "MINI-ZBDIM Dimmer",
+    "es": "MINI-ZBDIM Regulador",
+    "fr": "MINI-ZBDIM Variateur",
+    "it": "MINI-ZBDIM Dimmer",
+    "no": "MINI-ZBDIM Dimmer",
+    "pl": "MINI-ZBDIM Ściemniacz",
+    "ru": "MINI-ZBDIM Диммер",
+    "ko": "MINI-ZBDIM 디머"
+  },
+  "class": "light",
+  "capabilities": [
+    "onoff",
+    "dim",
+    "measure_power",
+    "measure_voltage",
+    "measure_current"
+  ],
+  "capabilitiesOptions": {
+    "measure_power": {
+      "approximated": true
+    },
+    "measure_voltage": {
+      "approximated": true
+    },
+    "measure_current": {
+      "approximated": true
+    }
+  },
+  "zigbee": {
+    "manufacturerName": [
+      "SONOFF"
+    ],
+    "productId": [
+      "MINI-ZBDIM"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0,
+          6,
+          8,
+          64529
+        ],
+        "bindings": [
+          6,
+          8
+        ]
+      }
+    },
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learn.svg",
+      "instruction": {
+        "en": "Press the button on the device for approx. 10 seconds until the LED blinks rapidly.",
+        "sv": "Tryck på knappen på enheten i cirka 10 sekunder tills lysdioden blinkar snabbt.",
+        "nl": "Druk op de knop op het apparaat gedurende ca. 10 seconden totdat de LED snel knippert.",
+        "da": "Tryk på knappen på enheden i ca. 10 sekunder, indtil LED'en blinker hurtigt.",
+        "de": "Drücken Sie die Taste am Gerät ca. 10 Sekunden lang, bis die LED schnell blinkt.",
+        "es": "Presione el botón del dispositivo durante aprox. 10 segundos hasta que el LED parpadee rápidamente.",
+        "fr": "Appuyez sur le bouton de l'appareil pendant environ 10 secondes jusqu'à ce que la LED clignote rapidement.",
+        "it": "Premere il pulsante sul dispositivo per circa 10 secondi fino a quando il LED lampeggia rapidamente.",
+        "no": "Trykk på knappen på enheten i ca. 10 sekunder til LED-en blinker raskt.",
+        "pl": "Naciśnij przycisk na urządzeniu przez ok. 10 sekund, aż dioda LED zacznie szybko migać.",
+        "ru": "Нажмите кнопку на устройстве примерно на 10 секунд, пока светодиод не начнет быстро мигать.",
+        "ko": "LED가 빠르게 깜박일 때까지 장치의 버튼을 약 10초 동안 누르세요."
+      }
+    }
+  },
+  "$extends": ["defaults"]
+}

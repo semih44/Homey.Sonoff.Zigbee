@@ -1,0 +1,221 @@
+[
+  {
+    "id": "temperature_offset",
+    "type": "number",
+    "label": {
+      "en": "Temperature offset (°C)",
+      "nl": "Temperatuurcorrectie (°C)",
+      "da": "Temperaturforskydning (°C)",
+      "de": "Temperaturkorrektur (°C)",
+      "es": "Compensación de temperatura (°C)",
+      "fr": "Décalage de température (°C)",
+      "it": "Offset di temperatura (°C)",
+      "no": "Temperaturforskyvning (°C)",
+      "sv": "Temperaturförskjutning (°C)",
+      "pl": "Offset temperatury (°C)",
+      "ru": "Смещение температуры (°C)",
+      "ko": "온도 편차 (°C)"
+    },
+    "hint": {
+      "en": "Set a value to compensate a temperature offset.\nRange: -10 - 10, step size 0.1, \ndefault: 0 [°C]",
+      "nl": "Stel een waarde in om een temperatuurafwijking te compenseren.\nBereik: -10 - 10, stapgrootte 0.1,\nstandaard: 0 [°C]",
+      "da": "Indstil en værdi for at kompensere for en temperaturforskydning.\nOmråde: -10 - 10, trinstørrelse 0,1,\nstandard: 0 [°C]",
+      "de": "Legen Sie einen Wert fest, um eine Temperaturabweichung zu kompensieren.\nBereich: -10 - 10, Schrittweite 0,1,\nStandard: 0 [°C]",
+      "es": "Establezca un valor para compensar una desviación de temperatura.\nRango: -10 - 10, tamaño del paso 0,1,\npredeterminado: 0 [°C]",
+      "fr": "Définir une valeur pour compenser un décalage de température.\nPlage : -10 - 10, taille du pas 0,1,\ndéfaut : 0 [°C]",
+      "it": "Impostare un valore per compensare un offset di temperatura.\nGamma: -10 - 10, dimensione del passo 0,1,\npredefinito: 0 [°C]",
+      "no": "Sett en verdi for å kompensere for en temperaturforskyvning.\nOmråde: -10 - 10, trinnstørrelse 0,1,\nstandard: 0 [°C]",
+      "sv": "Ställ in ett värde för att kompensera för en temperaturskiftning.\nOmråde: -10 - 10, stegstorlek 0,1,\nstandard: 0 [°C]",
+      "pl": "Ustaw wartość, aby skompensować odstępstwo temperatury.\nZakres: -10 - 10, krok 0,1,\ndomyślnie: 0 [°C]",
+      "ru": "Установите значение для компенсации смещения температуры.\nДиапазон: -10 - 10, шаг 0,1,\nпо умолчанию: 0 [°C]",
+      "ko": "온도 편차를 보상하기 위해 값을 설정하십시오.\n범위: -10 - 10, 단계 크기 0.1,\n기본값: 0 [°C]"
+    },
+    "value": 0,
+    "attr": {
+      "min": -10,
+      "max": 10,
+      "step": 0.1
+    }
+  },
+  {
+    "id": "temperature_decimals",
+    "type": "radio",
+    "label": {
+      "en": "Temperature reporting decimals",
+      "nl": "Decimalen in temperatuurrapportage",
+      "da": "Decimaler i temperaturrapportering",
+      "de": "Dezimalstellen in Temperaturberichten",
+      "es": "Decimales en el reporte de temperatura",
+      "fr": "Décimales dans le rapport de température",
+      "it": "Decimali nel reporting della temperatura",
+      "no": "Desimaler i temperaturrapportering",
+      "sv": "Decimaler i temperaturrapporteringen",
+      "pl": "Miejsca dziesiętne w raportowaniu temperatury",
+      "ru": "Десятичные знаки в отчёте о температуре",
+      "ko": "온도 보고서의 소수점 자리"
+    },
+    "value": "1",
+    "values": [
+      {
+        "id": "1",
+        "label": {
+          "en": "Report temperature value with 1 decimal (21.4 °C)",
+          "nl": "Rapporteer temperatuurwaarde met 1 decimaal (21,4 °C)",
+          "da": "Rapporter temperaturværdi med 1 decimal (21,4 °C)",
+          "de": "Temperaturwert mit 1 Dezimalstelle berichten (21,4 °C)",
+          "es": "Informe el valor de temperatura con 1 decimal (21,4 °C)",
+          "fr": "Rapporter la valeur de température avec 1 décimale (21,4 °C)",
+          "it": "Riporta il valore della temperatura con 1 decimale (21,4 °C)",
+          "no": "Rapporter temperaturverdi med 1 desimal (21,4 °C)",
+          "sv": "Rapportera temperaturvärde med 1 decimal (21,4 °C)",
+          "pl": "Zgłoś wartość temperatury z 1 miejscem dziesiętnym (21,4 °C)",
+          "ru": "Сообщите значение температуры с 1 десятичным знаком (21,4 °C)",
+          "ko": "온도 값을 소수점 한 자리로 보고하십시오 (21.4 °C)"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "Report temperature value with 2 decimals (21.37 °C)",
+          "nl": "Rapporteer temperatuurwaarde met 2 decimalen (21,37 °C)",
+          "da": "Rapporter temperaturværdi med 2 decimaler (21,37 °C)",
+          "de": "Temperaturwert mit 2 Dezimalstellen berichten (21,37 °C)",
+          "es": "Informe el valor de temperatura con 2 decimales (21,37 °C)",
+          "fr": "Rapporter la valeur de température avec 2 décimales (21,37 °C)",
+          "it": "Riporta il valore della temperatura con 2 decimali (21,37 °C)",
+          "no": "Rapporter temperaturverdi med 2 desimaler (21,37 °C)",
+          "sv": "Rapportera temperaturvärde med 2 decimaler (21,37 °C)",
+          "pl": "Zgłoś wartość temperatury z 2 miejscami dziesiętnymi (21,37 °C)",
+          "ru": "Сообщите значение температуры с 2 десятичными знаками (21,37 °C)",
+          "ko": "온도 값을 소수점 두 자리로 보고하십시오 (21.37 °C)"
+        }
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Device Calibration",
+      "nl": "Apparaatkalibratie",
+      "da": "Enhedskalibrering",
+      "de": "Gerätekalibrierung",
+      "es": "Calibración del dispositivo",
+      "fr": "Calibrage de l'appareil",
+      "it": "Calibrazione dispositivo",
+      "no": "Enhetskalibrering",
+      "sv": "Enhetskalibrering",
+      "pl": "Kalibracja urządzenia",
+      "ru": "Калибровка устройства",
+      "ko": "장치 보정"
+    },
+    "children": [
+      {
+        "id": "temperature_units",
+        "type": "dropdown",
+        "label": {
+          "en": "Display Units",
+          "nl": "Weergave-eenheid",
+          "da": "Displayenhed",
+          "de": "Anzeigeeinheit",
+          "es": "Unidad de pantalla",
+          "fr": "Unité d'affichage",
+          "it": "Unità display",
+          "no": "Visningsenhet",
+          "sv": "Visningsenhet",
+          "pl": "Jednostka wyświetlania",
+          "ru": "Единица отображения",
+          "ko": "표시 단위"
+        },
+        "hint": {
+          "en": "Temperature unit on the device display. Wake up the device first by pressing the back button.",
+          "nl": "Temperatuureenheid op het apparaatdisplay. Maak het apparaat eerst wakker door op de knop aan de achterkant te drukken.",
+          "da": "Temperaturenhed på enhedens display. Væk enheden først ved at trykke på knappen på bagsiden.",
+          "de": "Temperatureinheit auf dem Gerätedisplay. Wecken Sie das Gerät zuerst auf, indem Sie die Taste auf der Rückseite drücken.",
+          "es": "Unidad de temperatura en la pantalla del dispositivo. Primero despierte el dispositivo presionando el botón trasero.",
+          "fr": "Unité de température sur l'écran de l'appareil. Réveillez d'abord l'appareil en appuyant sur le bouton arrière.",
+          "it": "Unità di temperatura sul display del dispositivo. Risveglia prima il dispositivo premendo il pulsante posteriore.",
+          "no": "Temperaturenhet på enhetens skjerm. Vekk enheten først ved å trykke på knappen på baksiden.",
+          "sv": "Temperaturenhet på enhetens display. Väck enheten först genom att trycka på knappen på baksidan.",
+          "pl": "Jednostka temperatury na wyświetlaczu urządzenia. Najpierw obudź urządzenie, naciskając przycisk z tyłu.",
+          "ru": "Единица температуры на дисплее устройства. Сначала разбудите устройство, нажав кнопку на задней стороне.",
+          "ko": "장치 디스플레이의 온도 단위. 먼저 후면 버튼을 눌러 장치를 깨우세요."
+        },
+        "value": "celsius",
+        "values": [
+          {
+            "id": "celsius",
+            "label": {
+              "en": "Celsius (°C)",
+              "nl": "Celsius (°C)",
+              "da": "Celsius (°C)",
+              "de": "Celsius (°C)",
+              "es": "Celsius (°C)",
+              "fr": "Celsius (°C)",
+              "it": "Celsius (°C)",
+              "no": "Celsius (°C)",
+              "sv": "Celsius (°C)",
+              "pl": "Celsius (°C)",
+              "ru": "Цельсий (°C)",
+              "ko": "섭씨 (°C)"
+            }
+          },
+          {
+            "id": "fahrenheit",
+            "label": {
+              "en": "Fahrenheit (°F)",
+              "nl": "Fahrenheit (°F)",
+              "da": "Fahrenheit (°F)",
+              "de": "Fahrenheit (°F)",
+              "es": "Fahrenheit (°F)",
+              "fr": "Fahrenheit (°F)",
+              "it": "Fahrenheit (°F)",
+              "no": "Fahrenheit (°F)",
+              "sv": "Fahrenheit (°F)",
+              "pl": "Fahrenheit (°F)",
+              "ru": "Фаренгейт (°F)",
+              "ko": "화씨 (°F)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "temperature_calibration",
+        "type": "number",
+        "label": {
+          "en": "Device Temperature Calibration (°C)",
+          "nl": "Apparaat temperatuurkalibratie (°C)",
+          "da": "Enhedens temperaturkalibrering (°C)",
+          "de": "Geräte-Temperaturkalibrierung (°C)",
+          "es": "Calibración de temperatura del dispositivo (°C)",
+          "fr": "Calibrage de température de l'appareil (°C)",
+          "it": "Calibrazione temperatura dispositivo (°C)",
+          "no": "Enhetens temperaturkalibrering (°C)",
+          "sv": "Enhetens temperaturkalibrering (°C)",
+          "pl": "Kalibracja temperatury urządzenia (°C)",
+          "ru": "Калибровка температуры устройства (°C)",
+          "ko": "장치 온도 보정 (°C)"
+        },
+        "hint": {
+          "en": "Offset written to the device to calibrate temperature.\nRange: -50 - 50, step size 0.1, default: 0 [°C]",
+          "nl": "Offset geschreven naar het apparaat om de temperatuur te kalibreren.\nBereik: -50 - 50, stapgrootte 0,1, standaard: 0 [°C]",
+          "da": "Offset skrevet til enheden for at kalibrere temperaturen.\nOmråde: -50 - 50, trinstørrelse 0,1, standard: 0 [°C]",
+          "de": "Offset, der auf das Gerät geschrieben wird, um die Temperatur zu kalibrieren.\nBereich: -50 - 50, Schrittweite 0,1, Standard: 0 [°C]",
+          "es": "Offset escrito en el dispositivo para calibrar la temperatura.\nRango: -50 - 50, tamaño del paso 0,1, predeterminado: 0 [°C]",
+          "fr": "Offset écrit sur l'appareil pour calibrer la température.\nPlage : -50 - 50, taille du pas 0,1, défaut : 0 [°C]",
+          "it": "Offset scritto sul dispositivo per calibrare la temperatura.\nGamma: -50 - 50, dimensione del passo 0,1, predefinito: 0 [°C]",
+          "no": "Offset skrevet til enheten for å kalibrere temperaturen.\nOmråde: -50 - 50, trinnstørrelse 0,1, standard: 0 [°C]",
+          "sv": "Offset skrivet till enheten för att kalibrera temperaturen.\nOmråde: -50 - 50, stegstorlek 0,1, standard: 0 [°C]",
+          "pl": "Offset zapisany na urządzeniu w celu kalibracji temperatury.\nZakres: -50 - 50, krok 0,1, domyślnie: 0 [°C]",
+          "ru": "Смещение, записанное на устройство для калибровки температуры.\nДиапазон: -50 - 50, шаг 0,1, по умолчанию: 0 [°C]",
+          "ko": "온도를 보정하기 위해 장치에 기록되는 오프셋.\n범위: -50 - 50, 단계 크기 0.1, 기본값: 0 [°C]"
+        },
+        "value": 0,
+        "attr": {
+          "min": -50,
+          "max": 50,
+          "step": 0.1
+        }
+      }
+    ]
+  }
+]

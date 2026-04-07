@@ -1,0 +1,566 @@
+[
+  {
+    "type": "group",
+    "label": {
+      "en": "Power-on Behavior",
+      "sv": "Beteende vid strömåterkomst",
+      "nl": "Gedrag bij inschakelen",
+      "da": "Opførsel ved tænding",
+      "de": "Einschaltverhalten",
+      "es": "Comportamiento al encender",
+      "fr": "Comportement à la mise sous tension",
+      "it": "Comportamento all'accensione",
+      "no": "Oppførsel ved strømtilkobling",
+      "pl": "Zachowanie po włączeniu",
+      "ru": "Поведение при включении",
+      "ko": "전원 켜기 동작"
+    },
+    "children": [
+      {
+        "id": "power_on_behavior",
+        "type": "dropdown",
+        "label": {
+          "en": "Power-on State",
+          "sv": "Tillstånd vid strömåterkomst",
+          "nl": "Status bij inschakelen",
+          "da": "Tilstand ved tænding",
+          "de": "Zustand beim Einschalten",
+          "es": "Estado al encender",
+          "fr": "État à la mise sous tension",
+          "it": "Stato all'accensione",
+          "no": "Tilstand ved strømtilkobling",
+          "pl": "Stan po włączeniu",
+          "ru": "Состояние при включении",
+          "ko": "전원 켜기 상태"
+        },
+        "hint": {
+          "en": "Light state after power restore.",
+          "sv": "Lampans tillstånd efter strömåterkomst.",
+          "nl": "Lichtstatus na stroomherstel.",
+          "da": "Lysstatus efter strømgendannelse.",
+          "de": "Lichtzustand nach Stromwiederkehr.",
+          "es": "Estado de la luz después de restaurar la energía.",
+          "fr": "État de la lumière après rétablissement de l'alimentation.",
+          "it": "Stato della luce dopo il ripristino dell'alimentazione.",
+          "no": "Lystilstand etter strømgjenoppretting.",
+          "pl": "Stan oświetlenia po przywróceniu zasilania.",
+          "ru": "Состояние света после восстановления питания.",
+          "ko": "전원 복구 후 조명 상태."
+        },
+        "value": "off",
+        "values": [
+          {
+            "id": "on",
+            "label": {
+              "en": "Turn On", "sv": "Slå på", "nl": "Inschakelen", "da": "Tænd",
+              "de": "Einschalten", "es": "Encender", "fr": "Allumer", "it": "Accendi",
+              "no": "Slå på", "pl": "Włącz", "ru": "Включить", "ko": "켜기"
+            }
+          },
+          {
+            "id": "off",
+            "label": {
+              "en": "Turn Off", "sv": "Stäng av", "nl": "Uitschakelen", "da": "Sluk",
+              "de": "Ausschalten", "es": "Apagar", "fr": "Éteindre", "it": "Spegni",
+              "no": "Slå av", "pl": "Wyłącz", "ru": "Выключить", "ko": "끄기"
+            }
+          },
+          {
+            "id": "toggle",
+            "label": {
+              "en": "Toggle", "sv": "Växla", "nl": "Schakelen", "da": "Skift",
+              "de": "Umschalten", "es": "Conmutar", "fr": "Basculer", "it": "Commuta",
+              "no": "Veksle", "pl": "Przełącz", "ru": "Переключить", "ko": "토글"
+            }
+          },
+          {
+            "id": "last_state",
+            "label": {
+              "en": "Last State", "sv": "Senaste tillstånd", "nl": "Laatste status", "da": "Sidste tilstand",
+              "de": "Letzter Zustand", "es": "Último estado", "fr": "Dernier état", "it": "Ultimo stato",
+              "no": "Siste tilstand", "pl": "Ostatni stan", "ru": "Последнее состояние", "ko": "마지막 상태"
+            }
+          }
+        ]
+      },
+      {
+        "id": "delayed_power_on_state",
+        "type": "checkbox",
+        "value": false,
+        "label": {
+          "en": "Delayed Power-on",
+          "sv": "Fördröjd strömåterkomst",
+          "nl": "Vertraagd inschakelen",
+          "da": "Forsinket tænding",
+          "de": "Verzögertes Einschalten",
+          "es": "Encendido retardado",
+          "fr": "Mise sous tension retardée",
+          "it": "Accensione ritardata",
+          "no": "Forsinket strømtilkobling",
+          "pl": "Opóźnione włączenie",
+          "ru": "Отложенное включение",
+          "ko": "지연 전원 켜기"
+        },
+        "hint": {
+          "en": "Delay light after power restore.",
+          "sv": "Fördröj lampan efter strömåterkomst.",
+          "nl": "Vertraag het licht na stroomherstel.",
+          "da": "Forsink lyset efter strømgendannelse.",
+          "de": "Licht nach Stromwiederkehr verzögern.",
+          "es": "Retrasar la luz después de restaurar la energía.",
+          "fr": "Retarder la lumière après rétablissement de l'alimentation.",
+          "it": "Ritarda la luce dopo il ripristino dell'alimentazione.",
+          "no": "Forsink lyset etter strømgjenoppretting.",
+          "pl": "Opóźnij oświetlenie po przywróceniu zasilania.",
+          "ru": "Задержка света после восстановления питания.",
+          "ko": "전원 복구 후 조명을 지연합니다."
+        }
+      },
+      {
+        "id": "delayed_power_on_time",
+        "type": "number",
+        "label": {
+          "en": "Delay (s)", "sv": "Fördröjning (s)", "nl": "Vertraging (s)", "da": "Forsinkelse (s)",
+          "de": "Verzögerung (s)", "es": "Retardo (s)", "fr": "Délai (s)", "it": "Ritardo (s)",
+          "no": "Forsinkelse (s)", "pl": "Opóźnienie (s)", "ru": "Задержка (с)", "ko": "지연 (초)"
+        },
+        "hint": {
+          "en": "Wait time before light switches (0.5-3599.5s).",
+          "sv": "Väntetid innan lampan tänds (0,5-3599,5s).",
+          "nl": "Wachttijd voordat het licht schakelt (0,5-3599,5s).",
+          "da": "Ventetid før lyset tænder (0,5-3599,5s).",
+          "de": "Wartezeit bis das Licht schaltet (0,5-3599,5s).",
+          "es": "Tiempo de espera antes de que la luz cambie (0,5-3599,5s).",
+          "fr": "Temps d'attente avant commutation de la lumière (0,5-3599,5s).",
+          "it": "Tempo di attesa prima della commutazione della luce (0,5-3599,5s).",
+          "no": "Ventetid før lyset kobler (0,5-3599,5s).",
+          "pl": "Czas oczekiwania przed przełączeniem oświetlenia (0,5-3599,5s).",
+          "ru": "Время ожидания перед переключением света (0,5-3599,5 с).",
+          "ko": "조명이 전환되기 전 대기 시간 (0.5-3599.5초)."
+        },
+        "value": 2,
+        "attr": {
+          "min": 0.5,
+          "max": 3599.5,
+          "step": 0.5
+        }
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Dimmer Configuration",
+      "sv": "Dimmerkonfiguration",
+      "nl": "Dimmerconfiguratie",
+      "da": "Dæmperkonfiguration",
+      "de": "Dimmer-Konfiguration",
+      "es": "Configuración del regulador",
+      "fr": "Configuration du variateur",
+      "it": "Configurazione dimmer",
+      "no": "Dimmerkonfigurasjon",
+      "pl": "Konfiguracja ściemniacza",
+      "ru": "Настройка диммера",
+      "ko": "디머 구성"
+    },
+    "children": [
+      {
+        "id": "external_trigger_mode",
+        "type": "dropdown",
+        "label": {
+          "en": "External Trigger Mode",
+          "sv": "Externt triggerläge",
+          "nl": "Externe triggermodus",
+          "da": "Ekstern udløsertilstand",
+          "de": "Externer Auslösemodus",
+          "es": "Modo de activación externo",
+          "fr": "Mode de déclenchement externe",
+          "it": "Modalità trigger esterno",
+          "no": "Ekstern utløsermodus",
+          "pl": "Tryb wyzwalania zewnętrznego",
+          "ru": "Режим внешнего триггера",
+          "ko": "외부 트리거 모드"
+        },
+        "hint": {
+          "en": "Select the trigger mode matching your external switch type.",
+          "sv": "Välj triggerläge som matchar din externa brytartyp.",
+          "nl": "Selecteer de triggermodus die past bij uw externe schakelaar.",
+          "da": "Vælg den udløsertilstand, der matcher din eksterne kontakttype.",
+          "de": "Wählen Sie den Auslösemodus passend zum externen Schaltertyp.",
+          "es": "Seleccione el modo de activación que coincida con su tipo de interruptor externo.",
+          "fr": "Sélectionnez le mode de déclenchement correspondant à votre type d'interrupteur externe.",
+          "it": "Selezionare la modalità trigger corrispondente al tipo di interruttore esterno.",
+          "no": "Velg utløsermodus som passer din eksterne brytertype.",
+          "pl": "Wybierz tryb wyzwalania odpowiadający typowi zewnętrznego przełącznika.",
+          "ru": "Выберите режим триггера, соответствующий типу внешнего выключателя.",
+          "ko": "외부 스위치 유형에 맞는 트리거 모드를 선택하세요."
+        },
+        "value": "0",
+        "values": [
+          {
+            "id": "0",
+            "label": {
+              "en": "Edge", "sv": "Kant", "nl": "Flank", "da": "Kant",
+              "de": "Flanke", "es": "Flanco", "fr": "Bord", "it": "Fronte",
+              "no": "Kant", "pl": "Zbocze", "ru": "Фронт", "ko": "에지"
+            }
+          },
+          {
+            "id": "1",
+            "label": {
+              "en": "Pulse", "sv": "Puls", "nl": "Puls", "da": "Puls",
+              "de": "Puls", "es": "Pulso", "fr": "Impulsion", "it": "Impulso",
+              "no": "Puls", "pl": "Impuls", "ru": "Импульс", "ko": "펄스"
+            }
+          },
+          {
+            "id": "3",
+            "label": {
+              "en": "Double Pulse", "sv": "Dubbelpuls", "nl": "Dubbele puls", "da": "Dobbelt puls",
+              "de": "Doppelpuls", "es": "Pulso doble", "fr": "Double impulsion", "it": "Doppio impulso",
+              "no": "Dobbelpuls", "pl": "Podwójny impuls", "ru": "Двойной импульс", "ko": "더블 펄스"
+            }
+          },
+          {
+            "id": "4",
+            "label": {
+              "en": "Triple Pulse", "sv": "Trippelpuls", "nl": "Drievoudige puls", "da": "Tredobbelt puls",
+              "de": "Dreifachpuls", "es": "Pulso triple", "fr": "Triple impulsion", "it": "Triplo impulso",
+              "no": "Trippelpuls", "pl": "Potrójny impuls", "ru": "Тройной импульс", "ko": "트리플 펄스"
+            }
+          }
+        ]
+      },
+      {
+        "id": "min_brightness",
+        "type": "number",
+        "label": {
+          "en": "Minimum Brightness (%)",
+          "sv": "Minsta ljusstyrka (%)",
+          "nl": "Minimale helderheid (%)",
+          "da": "Minimum lysstyrke (%)",
+          "de": "Minimale Helligkeit (%)",
+          "es": "Brillo mínimo (%)",
+          "fr": "Luminosité minimale (%)",
+          "it": "Luminosità minima (%)",
+          "no": "Minimum lysstyrke (%)",
+          "pl": "Minimalna jasność (%)",
+          "ru": "Минимальная яркость (%)",
+          "ko": "최소 밝기 (%)"
+        },
+        "hint": {
+          "en": "Lowest brightness level mapped to 1% on the slider.",
+          "sv": "Lägsta ljusstyrka som mappas till 1% på reglaget.",
+          "nl": "Laagste helderheidsniveau dat overeenkomt met 1% op de schuifbalk.",
+          "da": "Laveste lysstyrke knyttet til 1% på skyderen.",
+          "de": "Niedrigster Helligkeitswert, der auf 1% des Schiebereglers abgebildet wird.",
+          "es": "Nivel de brillo más bajo asignado al 1% en el control deslizante.",
+          "fr": "Niveau de luminosité le plus bas correspondant à 1% sur le curseur.",
+          "it": "Livello di luminosità più basso mappato all'1% sul cursore.",
+          "no": "Laveste lysstyrke knyttet til 1% på glidebryteren.",
+          "pl": "Najniższy poziom jasności odpowiadający 1% na suwaku.",
+          "ru": "Минимальный уровень яркости, соответствующий 1% на ползунке.",
+          "ko": "슬라이더에서 1%에 매핑되는 최저 밝기 수준."
+        },
+        "value": 1,
+        "attr": {
+          "min": 1,
+          "max": 50,
+          "step": 1
+        }
+      },
+      {
+        "id": "transition_time",
+        "type": "number",
+        "label": {
+          "en": "Transition Time (s)",
+          "sv": "Övergångstid (s)",
+          "nl": "Overgangstijd (s)",
+          "da": "Overgangstid (s)",
+          "de": "Übergangszeit (s)",
+          "es": "Tiempo de transición (s)",
+          "fr": "Temps de transition (s)",
+          "it": "Tempo di transizione (s)",
+          "no": "Overgangstid (s)",
+          "pl": "Czas przejścia (s)",
+          "ru": "Время перехода (с)",
+          "ko": "전환 시간 (초)"
+        },
+        "hint": {
+          "en": "Duration for brightness changes (0-5s).",
+          "sv": "Tid för ljusstyrkeändringar (0-5s).",
+          "nl": "Duur voor helderheidswijzigingen (0-5s).",
+          "da": "Varighed for ændringer i lysstyrke (0-5s).",
+          "de": "Dauer für Helligkeitsänderungen (0-5s).",
+          "es": "Duración para cambios de brillo (0-5s).",
+          "fr": "Durée des changements de luminosité (0-5s).",
+          "it": "Durata dei cambiamenti di luminosità (0-5s).",
+          "no": "Varighet for lysstyrkeendringer (0-5s).",
+          "pl": "Czas trwania zmian jasności (0-5s).",
+          "ru": "Длительность изменения яркости (0-5 с).",
+          "ko": "밝기 변경 지속 시간 (0-5초)."
+        },
+        "value": 0,
+        "attr": {
+          "min": 0,
+          "max": 5,
+          "step": 0.1
+        }
+      },
+      {
+        "id": "dimming_rate",
+        "type": "dropdown",
+        "label": {
+          "en": "Dimming Rate",
+          "sv": "Dimmningshastighet",
+          "nl": "Dimsnelheid",
+          "da": "Dæmpningshastighed",
+          "de": "Dimmgeschwindigkeit",
+          "es": "Velocidad de regulación",
+          "fr": "Vitesse de variation",
+          "it": "Velocità dimmerazione",
+          "no": "Dimmehastighet",
+          "pl": "Szybkość ściemniania",
+          "ru": "Скорость диммирования",
+          "ko": "디밍 속도"
+        },
+        "hint": {
+          "en": "Speed of brightness change via external switch.",
+          "sv": "Hastighet för ljusstyrkeändring via extern brytare.",
+          "nl": "Snelheid van helderheidswijziging via externe schakelaar.",
+          "da": "Hastighed for ændring af lysstyrke via ekstern kontakt.",
+          "de": "Geschwindigkeit der Helligkeitsänderung über externen Schalter.",
+          "es": "Velocidad del cambio de brillo mediante interruptor externo.",
+          "fr": "Vitesse de changement de luminosité via l'interrupteur externe.",
+          "it": "Velocità del cambio di luminosità tramite interruttore esterno.",
+          "no": "Hastighet for lysstyrkeendring via ekstern bryter.",
+          "pl": "Szybkość zmiany jasności przez zewnętrzny przełącznik.",
+          "ru": "Скорость изменения яркости через внешний выключатель.",
+          "ko": "외부 스위치를 통한 밝기 변경 속도."
+        },
+        "value": "1",
+        "values": [
+          { "id": "1", "label": { "en": "1x" } },
+          { "id": "2", "label": { "en": "2x" } },
+          { "id": "3", "label": { "en": "3x" } },
+          { "id": "4", "label": { "en": "4x" } },
+          { "id": "5", "label": { "en": "5x" } }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Calibration",
+      "sv": "Kalibrering",
+      "nl": "Kalibratie",
+      "da": "Kalibrering",
+      "de": "Kalibrierung",
+      "es": "Calibración",
+      "fr": "Calibrage",
+      "it": "Calibrazione",
+      "no": "Kalibrering",
+      "pl": "Kalibracja",
+      "ru": "Калибровка",
+      "ko": "보정"
+    },
+    "children": [
+      {
+        "id": "calibration_action",
+        "type": "dropdown",
+        "label": {
+          "en": "Calibration Action",
+          "sv": "Kalibreringsåtgärd",
+          "nl": "Kalibratieactie",
+          "da": "Kalibreringshandling",
+          "de": "Kalibrierungsaktion",
+          "es": "Acción de calibración",
+          "fr": "Action de calibrage",
+          "it": "Azione di calibrazione",
+          "no": "Kalibreringshandling",
+          "pl": "Akcja kalibracji",
+          "ru": "Действие калибровки",
+          "ko": "보정 작업"
+        },
+        "hint": {
+          "en": "Start, stop, or clear calibration. Takes ~2 min; device unavailable during calibration.",
+          "sv": "Starta, stoppa eller rensa kalibrering. Tar ~2 min; enheten otillgänglig under kalibrering.",
+          "nl": "Start, stop of wis kalibratie. Duurt ~2 min; apparaat niet beschikbaar tijdens kalibratie.",
+          "da": "Start, stop eller ryd kalibrering. Tager ~2 min; enheden utilgængelig under kalibrering.",
+          "de": "Kalibrierung starten, stoppen oder löschen. Dauert ~2 Min; Gerät während Kalibrierung nicht verfügbar.",
+          "es": "Iniciar, detener o borrar calibración. Dura ~2 min; dispositivo no disponible durante la calibración.",
+          "fr": "Démarrer, arrêter ou effacer le calibrage. Dure ~2 min ; appareil indisponible pendant le calibrage.",
+          "it": "Avvia, ferma o cancella la calibrazione. Richiede ~2 min; dispositivo non disponibile durante la calibrazione.",
+          "no": "Start, stopp eller nullstill kalibrering. Tar ~2 min; enheten utilgjengelig under kalibrering.",
+          "pl": "Rozpocznij, zatrzymaj lub wyczyść kalibrację. Trwa ~2 min; urządzenie niedostępne podczas kalibracji.",
+          "ru": "Запустить, остановить или сбросить калибровку. Занимает ~2 мин; устройство недоступно во время калибровки.",
+          "ko": "보정 시작, 중지 또는 초기화. 약 2분 소요; 보정 중 장치 사용 불가."
+        },
+        "value": "none",
+        "values": [
+          {
+            "id": "none",
+            "label": {
+              "en": "— No action —", "sv": "— Ingen åtgärd —", "nl": "— Geen actie —", "da": "— Ingen handling —",
+              "de": "— Keine Aktion —", "es": "— Sin acción —", "fr": "— Aucune action —", "it": "— Nessuna azione —",
+              "no": "— Ingen handling —", "pl": "— Brak akcji —", "ru": "— Нет действия —", "ko": "— 작업 없음 —"
+            }
+          },
+          {
+            "id": "start",
+            "label": {
+              "en": "Start Calibration", "sv": "Starta kalibrering", "nl": "Kalibratie starten", "da": "Start kalibrering",
+              "de": "Kalibrierung starten", "es": "Iniciar calibración", "fr": "Démarrer le calibrage", "it": "Avvia calibrazione",
+              "no": "Start kalibrering", "pl": "Rozpocznij kalibrację", "ru": "Начать калибровку", "ko": "보정 시작"
+            }
+          },
+          {
+            "id": "stop",
+            "label": {
+              "en": "Stop Calibration", "sv": "Stoppa kalibrering", "nl": "Kalibratie stoppen", "da": "Stop kalibrering",
+              "de": "Kalibrierung stoppen", "es": "Detener calibración", "fr": "Arrêter le calibrage", "it": "Ferma calibrazione",
+              "no": "Stopp kalibrering", "pl": "Zatrzymaj kalibrację", "ru": "Остановить калибровку", "ko": "보정 중지"
+            }
+          },
+          {
+            "id": "clear",
+            "label": {
+              "en": "Clear Calibration", "sv": "Rensa kalibrering", "nl": "Kalibratie wissen", "da": "Ryd kalibrering",
+              "de": "Kalibrierung löschen", "es": "Borrar calibración", "fr": "Effacer le calibrage", "it": "Cancella calibrazione",
+              "no": "Nullstill kalibrering", "pl": "Wyczyść kalibrację", "ru": "Сбросить калибровку", "ko": "보정 초기화"
+            }
+          }
+        ]
+      },
+      {
+        "id": "calibration_status",
+        "type": "label",
+        "label": {
+          "en": "Calibration Status",
+          "sv": "Kalibreringsstatus",
+          "nl": "Kalibratiestatus",
+          "da": "Kalibreringsstatus",
+          "de": "Kalibrierungsstatus",
+          "es": "Estado de calibración",
+          "fr": "État du calibrage",
+          "it": "Stato calibrazione",
+          "no": "Kalibreringsstatus",
+          "pl": "Status kalibracji",
+          "ru": "Статус калибровки",
+          "ko": "보정 상태"
+        },
+        "value": "—"
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Inching",
+      "sv": "Inching",
+      "nl": "Inching",
+      "da": "Inching",
+      "de": "Inching",
+      "es": "Inching",
+      "fr": "Inching",
+      "it": "Inching",
+      "no": "Inching",
+      "pl": "Inching",
+      "ru": "Инчинг",
+      "ko": "인칭"
+    },
+    "children": [
+      {
+        "id": "inching_enabled",
+        "type": "checkbox",
+        "value": false,
+        "label": {
+          "en": "Enable Inching",
+          "sv": "Aktivera inching",
+          "nl": "Inching inschakelen",
+          "da": "Aktivér inching",
+          "de": "Inching aktivieren",
+          "es": "Activar inching",
+          "fr": "Activer l'inching",
+          "it": "Attiva inching",
+          "no": "Aktiver inching",
+          "pl": "Włącz inching",
+          "ru": "Включить инчинг",
+          "ko": "인칭 활성화"
+        },
+        "hint": {
+          "en": "Auto-switch light after set time.",
+          "sv": "Växla ljuset automatiskt efter inställd tid.",
+          "nl": "Schakel het licht automatisch na ingestelde tijd.",
+          "da": "Skift lys automatisk efter indstillet tid.",
+          "de": "Licht nach eingestellter Zeit automatisch umschalten.",
+          "es": "Cambiar la luz automáticamente después del tiempo establecido.",
+          "fr": "Commutation automatique de la lumière après le temps défini.",
+          "it": "Commutazione automatica della luce dopo il tempo impostato.",
+          "no": "Automatisk veksling av lys etter innstilt tid.",
+          "pl": "Automatyczne przełączenie oświetlenia po ustawionym czasie.",
+          "ru": "Автоматическое переключение света через заданное время.",
+          "ko": "설정된 시간 후 조명을 자동 전환합니다."
+        }
+      },
+      {
+        "id": "inching_time",
+        "type": "number",
+        "label": {
+          "en": "Duration (s)", "sv": "Varaktighet (s)", "nl": "Duur (s)", "da": "Varighed (s)",
+          "de": "Dauer (s)", "es": "Duración (s)", "fr": "Durée (s)", "it": "Durata (s)",
+          "no": "Varighet (s)", "pl": "Czas trwania (s)", "ru": "Длительность (с)", "ko": "지속 시간 (초)"
+        },
+        "hint": {
+          "en": "Time before auto-switch (0.5-86399.5s).",
+          "sv": "Tid innan automatisk växling (0,5-86399,5s).",
+          "nl": "Tijd voor automatisch schakelen (0,5-86399,5s).",
+          "da": "Tid før automatisk skift (0,5-86399,5s).",
+          "de": "Zeit bis zur automatischen Umschaltung (0,5-86399,5s).",
+          "es": "Tiempo antes de la conmutación automática (0,5-86399,5s).",
+          "fr": "Temps avant commutation automatique (0,5-86399,5s).",
+          "it": "Tempo prima della commutazione automatica (0,5-86399,5s).",
+          "no": "Tid før automatisk veksling (0,5-86399,5s).",
+          "pl": "Czas przed automatycznym przełączeniem (0,5-86399,5s).",
+          "ru": "Время до автоматического переключения (0,5-86399,5 с).",
+          "ko": "자동 전환 전 시간 (0.5-86399.5초)."
+        },
+        "value": 1,
+        "attr": {
+          "min": 0.5,
+          "max": 86399.5,
+          "step": 0.5
+        }
+      },
+      {
+        "id": "inching_mode",
+        "type": "dropdown",
+        "label": {
+          "en": "Inching Mode", "sv": "Inching-läge", "nl": "Inching-modus", "da": "Inching-tilstand",
+          "de": "Inching-Modus", "es": "Modo inching", "fr": "Mode inching", "it": "Modalità inching",
+          "no": "Inching-modus", "pl": "Tryb inching", "ru": "Режим инчинга", "ko": "인칭 모드"
+        },
+        "hint": {
+          "en": "Auto switch order.",
+          "sv": "Automatisk växlingsordning.",
+          "nl": "Automatische schakelrichting.",
+          "da": "Automatisk skifterækkefølge.",
+          "de": "Automatische Schaltreihenfolge.",
+          "es": "Orden de conmutación automática.",
+          "fr": "Ordre de commutation automatique.",
+          "it": "Ordine di commutazione automatica.",
+          "no": "Automatisk vekslingsrekkefølge.",
+          "pl": "Kolejność automatycznego przełączania.",
+          "ru": "Порядок автоматического переключения.",
+          "ko": "자동 전환 순서."
+        },
+        "value": "on",
+        "values": [
+          { "id": "on", "label": { "en": "On → Off" } },
+          { "id": "off", "label": { "en": "Off → On" } }
+        ]
+      }
+    ]
+  }
+]

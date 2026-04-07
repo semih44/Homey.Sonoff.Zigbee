@@ -6,10 +6,12 @@ Støttede enheter:
 
 Sensorer og knapper:
 - Sonoff SNZB-01  (Firkantet knapp)
+- Sonoff SNZB-01M  (4-knapps fjernkontroll)
 - Sonoff SNZB-01P (Rund knapp)
 - Sonoff SNZB-02  (Firkantet temperatur- og fuktighetssensor)
 - Sonoff SNZB-02D (Temperatur- og fuktighetssensor med display)
 - Sonoff SNZB-02P  (Rund temperatur- og fuktighetssensor)
+- Sonoff SNZB-02LD  (Sonde temperatursensor med display)
 - Sonoff SNZB-02WD (Vanntett temperatur- og fuktighetssensor med display)
 - Sonoff SNZB-03   (Bevegelsesdetektor)
 - Sonoff SNZB-03P (Bevegelsesdetektor med lysregistrering)
@@ -22,6 +24,7 @@ Sensorer og knapper:
 - Sonoff TRVZB   (Termostatventil)
 
 Brytere og plugger:
+- Sonoff MINI-ZBDIM (Smart mini dimmer)
 - Sonoff ZBMINI    (Innbygget brytermodul)
 - Sonoff ZBMINI-L  (Innbygget brytermodul, uten nøytral)
 - Sonoff ZBMINI-L2 (Innbygget brytermodul, uten nøytral)

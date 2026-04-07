@@ -6,10 +6,12 @@ Dispositivi supportati:
 
 Sensori e pulsanti:
 - Sonoff SNZB-01  (Pulsante quadrato)
+- Sonoff SNZB-01M  (Telecomando 4 pulsanti)
 - Sonoff SNZB-01P (Pulsante rotondo)
 - Sonoff SNZB-02  (Sensore temperatura e umidità quadrato)
 - Sonoff SNZB-02D (Sensore temperatura e umidità con display)
 - Sonoff SNZB-02P  (Sensore temperatura e umidità rotondo)
+- Sonoff SNZB-02LD  (Sensore di temperatura a sonda con display)
 - Sonoff SNZB-02WD (Sensore temperatura e umidità impermeabile con display)
 - Sonoff SNZB-03   (Rilevatore di movimento)
 - Sonoff SNZB-03P (Rilevatore di movimento con sensore di luminosità)
@@ -22,6 +24,7 @@ Sensori e pulsanti:
 - Sonoff TRVZB   (Valvola termostatica)
 
 Interruttori e prese:
+- Sonoff MINI-ZBDIM (Mini dimmer intelligente)
 - Sonoff ZBMINI    (Modulo interruttore da incasso)
 - Sonoff ZBMINI-L  (Modulo interruttore da incasso, senza neutro)
 - Sonoff ZBMINI-L2 (Modulo interruttore da incasso, senza neutro)

@@ -6,10 +6,12 @@ Obsługiwane urządzenia:
 
 Czujniki i przyciski:
 - Sonoff SNZB-01  (Kwadratowy przycisk)
+- Sonoff SNZB-01M  (Pilot 4-przyciskowy)
 - Sonoff SNZB-01P (Okrągły przycisk)
 - Sonoff SNZB-02  (Kwadratowy czujnik temperatury i wilgotności)
 - Sonoff SNZB-02D (Czujnik temperatury i wilgotności z wyświetlaczem)
 - Sonoff SNZB-02P  (Okrągły czujnik temperatury i wilgotności)
+- Sonoff SNZB-02LD  (Sondowy czujnik temperatury z wyświetlaczem)
 - Sonoff SNZB-02WD (Wodoodporny czujnik temperatury i wilgotności z wyświetlaczem)
 - Sonoff SNZB-03   (Czujnik ruchu)
 - Sonoff SNZB-03P (Czujnik ruchu z pomiarem oświetlenia)
@@ -22,6 +24,7 @@ Czujniki i przyciski:
 - Sonoff TRVZB   (Zawór termostatyczny)
 
 Przełączniki i gniazdka:
+- Sonoff MINI-ZBDIM (Inteligentny mini ściemniacz)
 - Sonoff ZBMINI    (Moduł przełącznika podtynkowego)
 - Sonoff ZBMINI-L  (Moduł przełącznika podtynkowego, bez przewodu neutralnego)
 - Sonoff ZBMINI-L2 (Moduł przełącznika podtynkowego, bez przewodu neutralnego)

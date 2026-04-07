@@ -6,10 +6,12 @@ Supported devices:
 
 Sensors & Buttons:
 - Sonoff SNZB-01    (Square button)
+- Sonoff SNZB-01M   (4-button remote)
 - Sonoff SNZB-01P   (Round button)
 - Sonoff SNZB-02    (Square temperature & humidity sensor)
 - Sonoff SNZB-02D   (Temperature & humidity sensor with display)
 - Sonoff SNZB-02P   (Round temperature & humidity sensor)
+- Sonoff SNZB-02LD  (Probe temperature sensor with display)
 - Sonoff SNZB-02WD  (Waterproof temperature & humidity sensor with display)
 - Sonoff SNZB-03    (Motion sensor)
 - Sonoff SNZB-03P   (Motion sensor with illuminance)
@@ -22,6 +24,7 @@ Sensors & Buttons:
 - Sonoff TRVZB      (Thermostatic radiator valve)
 
 Switches & Plugs:
+- Sonoff MINI-ZBDIM (Smart mini dimmer switch)
 - Sonoff ZBMINI    (In-wall switch module)
 - Sonoff ZBMINI-L  (In-wall switch module, no neutral)
 - Sonoff ZBMINI-L2 (In-wall switch module, no neutral)

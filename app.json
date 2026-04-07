@@ -195,6 +195,390 @@
         ]
       },
       {
+        "id": "SNZB-01M:single_button_1",
+        "title": {
+          "en": "Button 1 — Single click",
+          "sv": "Knapp 1 — Enstaka klick",
+          "nl": "Knop 1 — Enkele klik",
+          "da": "Knap 1 — Enkelt klik",
+          "de": "Taste 1 — Einzelklick",
+          "es": "Botón 1 — Clic único",
+          "fr": "Bouton 1 — Clic unique",
+          "it": "Pulsante 1 — Clic singolo",
+          "no": "Knapp 1 — Enkel klikk",
+          "pl": "Przycisk 1 — Pojedyncze kliknięcie",
+          "ru": "Кнопка 1 — Одиночный клик",
+          "ko": "버튼 1 — 단일 클릭"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=SNZB-01M"
+          }
+        ]
+      },
+      {
+        "id": "SNZB-01M:double_button_1",
+        "title": {
+          "en": "Button 1 — Double click",
+          "sv": "Knapp 1 — Dubbelklick",
+          "nl": "Knop 1 — Dubbele klik",
+          "da": "Knap 1 — Dobbelt klik",
+          "de": "Taste 1 — Doppelklick",
+          "es": "Botón 1 — Doble clic",
+          "fr": "Bouton 1 — Double clic",
+          "it": "Pulsante 1 — Doppio clic",
+          "no": "Knapp 1 — Dobbeltklikk",
+          "pl": "Przycisk 1 — Podwójne kliknięcie",
+          "ru": "Кнопка 1 — Двойной клик",
+          "ko": "버튼 1 — 더블 클릭"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=SNZB-01M"
+          }
+        ]
+      },
+      {
+        "id": "SNZB-01M:long_button_1",
+        "title": {
+          "en": "Button 1 — Long press",
+          "sv": "Knapp 1 — Långt tryck",
+          "nl": "Knop 1 — Lange druk",
+          "da": "Knap 1 — Langt tryk",
+          "de": "Taste 1 — Langer Druck",
+          "es": "Botón 1 — Pulsación larga",
+          "fr": "Bouton 1 — Appui long",
+          "it": "Pulsante 1 — Pressione lunga",
+          "no": "Knapp 1 — Langt trykk",
+          "pl": "Przycisk 1 — Długie naciśnięcie",
+          "ru": "Кнопка 1 — Долгое нажатие",
+          "ko": "버튼 1 — 길게 누르기"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=SNZB-01M"
+          }
+        ]
+      },
+      {
+        "id": "SNZB-01M:triple_button_1",
+        "title": {
+          "en": "Button 1 — Triple click",
+          "sv": "Knapp 1 — Trippelklick",
+          "nl": "Knop 1 — Drievoudige klik",
+          "da": "Knap 1 — Tredobbelt klik",
+          "de": "Taste 1 — Dreifachklick",
+          "es": "Botón 1 — Triple clic",
+          "fr": "Bouton 1 — Triple clic",
+          "it": "Pulsante 1 — Triplo clic",
+          "no": "Knapp 1 — Trippelklikk",
+          "pl": "Przycisk 1 — Potrójne kliknięcie",
+          "ru": "Кнопка 1 — Тройной клик",
+          "ko": "버튼 1 — 트리플 클릭"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=SNZB-01M"
+          }
+        ]
+      },
+      {
+        "id": "SNZB-01M:single_button_2",
+        "title": {
+          "en": "Button 2 — Single click",
+          "sv": "Knapp 2 — Enstaka klick",
+          "nl": "Knop 2 — Enkele klik",
+          "da": "Knap 2 — Enkelt klik",
+          "de": "Taste 2 — Einzelklick",
+          "es": "Botón 2 — Clic único",
+          "fr": "Bouton 2 — Clic unique",
+          "it": "Pulsante 2 — Clic singolo",
+          "no": "Knapp 2 — Enkel klikk",
+          "pl": "Przycisk 2 — Pojedyncze kliknięcie",
+          "ru": "Кнопка 2 — Одиночный клик",
+          "ko": "버튼 2 — 단일 클릭"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=SNZB-01M"
+          }
+        ]
+      },
+      {
+        "id": "SNZB-01M:double_button_2",
+        "title": {
+          "en": "Button 2 — Double click",
+          "sv": "Knapp 2 — Dubbelklick",
+          "nl": "Knop 2 — Dubbele klik",
+          "da": "Knap 2 — Dobbelt klik",
+          "de": "Taste 2 — Doppelklick",
+          "es": "Botón 2 — Doble clic",
+          "fr": "Bouton 2 — Double clic",
+          "it": "Pulsante 2 — Doppio clic",
+          "no": "Knapp 2 — Dobbeltklikk",
+          "pl": "Przycisk 2 — Podwójne kliknięcie",
+          "ru": "Кнопка 2 — Двойной клик",
+          "ko": "버튼 2 — 더블 클릭"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=SNZB-01M"
+          }
+        ]
+      },
+      {
+        "id": "SNZB-01M:long_button_2",
+        "title": {
+          "en": "Button 2 — Long press",
+          "sv": "Knapp 2 — Långt tryck",
+          "nl": "Knop 2 — Lange druk",
+          "da": "Knap 2 — Langt tryk",
+          "de": "Taste 2 — Langer Druck",
+          "es": "Botón 2 — Pulsación larga",
+          "fr": "Bouton 2 — Appui long",
+          "it": "Pulsante 2 — Pressione lunga",
+          "no": "Knapp 2 — Langt trykk",
+          "pl": "Przycisk 2 — Długie naciśnięcie",
+          "ru": "Кнопка 2 — Долгое нажатие",
+          "ko": "버튼 2 — 길게 누르기"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=SNZB-01M"
+          }
+        ]
+      },
+      {
+        "id": "SNZB-01M:triple_button_2",
+        "title": {
+          "en": "Button 2 — Triple click",
+          "sv": "Knapp 2 — Trippelklick",
+          "nl": "Knop 2 — Drievoudige klik",
+          "da": "Knap 2 — Tredobbelt klik",
+          "de": "Taste 2 — Dreifachklick",
+          "es": "Botón 2 — Triple clic",
+          "fr": "Bouton 2 — Triple clic",
+          "it": "Pulsante 2 — Triplo clic",
+          "no": "Knapp 2 — Trippelklikk",
+          "pl": "Przycisk 2 — Potrójne kliknięcie",
+          "ru": "Кнопка 2 — Тройной клик",
+          "ko": "버튼 2 — 트리플 클릭"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=SNZB-01M"
+          }
+        ]
+      },
+      {
+        "id": "SNZB-01M:single_button_3",
+        "title": {
+          "en": "Button 3 — Single click",
+          "sv": "Knapp 3 — Enstaka klick",
+          "nl": "Knop 3 — Enkele klik",
+          "da": "Knap 3 — Enkelt klik",
+          "de": "Taste 3 — Einzelklick",
+          "es": "Botón 3 — Clic único",
+          "fr": "Bouton 3 — Clic unique",
+          "it": "Pulsante 3 — Clic singolo",
+          "no": "Knapp 3 — Enkel klikk",
+          "pl": "Przycisk 3 — Pojedyncze kliknięcie",
+          "ru": "Кнопка 3 — Одиночный клик",
+          "ko": "버튼 3 — 단일 클릭"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=SNZB-01M"
+          }
+        ]
+      },
+      {
+        "id": "SNZB-01M:double_button_3",
+        "title": {
+          "en": "Button 3 — Double click",
+          "sv": "Knapp 3 — Dubbelklick",
+          "nl": "Knop 3 — Dubbele klik",
+          "da": "Knap 3 — Dobbelt klik",
+          "de": "Taste 3 — Doppelklick",
+          "es": "Botón 3 — Doble clic",
+          "fr": "Bouton 3 — Double clic",
+          "it": "Pulsante 3 — Doppio clic",
+          "no": "Knapp 3 — Dobbeltklikk",
+          "pl": "Przycisk 3 — Podwójne kliknięcie",
+          "ru": "Кнопка 3 — Двойной клик",
+          "ko": "버튼 3 — 더블 클릭"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=SNZB-01M"
+          }
+        ]
+      },
+      {
+        "id": "SNZB-01M:long_button_3",
+        "title": {
+          "en": "Button 3 — Long press",
+          "sv": "Knapp 3 — Långt tryck",
+          "nl": "Knop 3 — Lange druk",
+          "da": "Knap 3 — Langt tryk",
+          "de": "Taste 3 — Langer Druck",
+          "es": "Botón 3 — Pulsación larga",
+          "fr": "Bouton 3 — Appui long",
+          "it": "Pulsante 3 — Pressione lunga",
+          "no": "Knapp 3 — Langt trykk",
+          "pl": "Przycisk 3 — Długie naciśnięcie",
+          "ru": "Кнопка 3 — Долгое нажатие",
+          "ko": "버튼 3 — 길게 누르기"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=SNZB-01M"
+          }
+        ]
+      },
+      {
+        "id": "SNZB-01M:triple_button_3",
+        "title": {
+          "en": "Button 3 — Triple click",
+          "sv": "Knapp 3 — Trippelklick",
+          "nl": "Knop 3 — Drievoudige klik",
+          "da": "Knap 3 — Tredobbelt klik",
+          "de": "Taste 3 — Dreifachklick",
+          "es": "Botón 3 — Triple clic",
+          "fr": "Bouton 3 — Triple clic",
+          "it": "Pulsante 3 — Triplo clic",
+          "no": "Knapp 3 — Trippelklikk",
+          "pl": "Przycisk 3 — Potrójne kliknięcie",
+          "ru": "Кнопка 3 — Тройной клик",
+          "ko": "버튼 3 — 트리플 클릭"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=SNZB-01M"
+          }
+        ]
+      },
+      {
+        "id": "SNZB-01M:single_button_4",
+        "title": {
+          "en": "Button 4 — Single click",
+          "sv": "Knapp 4 — Enstaka klick",
+          "nl": "Knop 4 — Enkele klik",
+          "da": "Knap 4 — Enkelt klik",
+          "de": "Taste 4 — Einzelklick",
+          "es": "Botón 4 — Clic único",
+          "fr": "Bouton 4 — Clic unique",
+          "it": "Pulsante 4 — Clic singolo",
+          "no": "Knapp 4 — Enkel klikk",
+          "pl": "Przycisk 4 — Pojedyncze kliknięcie",
+          "ru": "Кнопка 4 — Одиночный клик",
+          "ko": "버튼 4 — 단일 클릭"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=SNZB-01M"
+          }
+        ]
+      },
+      {
+        "id": "SNZB-01M:double_button_4",
+        "title": {
+          "en": "Button 4 — Double click",
+          "sv": "Knapp 4 — Dubbelklick",
+          "nl": "Knop 4 — Dubbele klik",
+          "da": "Knap 4 — Dobbelt klik",
+          "de": "Taste 4 — Doppelklick",
+          "es": "Botón 4 — Doble clic",
+          "fr": "Bouton 4 — Double clic",
+          "it": "Pulsante 4 — Doppio clic",
+          "no": "Knapp 4 — Dobbeltklikk",
+          "pl": "Przycisk 4 — Podwójne kliknięcie",
+          "ru": "Кнопка 4 — Двойной клик",
+          "ko": "버튼 4 — 더블 클릭"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=SNZB-01M"
+          }
+        ]
+      },
+      {
+        "id": "SNZB-01M:long_button_4",
+        "title": {
+          "en": "Button 4 — Long press",
+          "sv": "Knapp 4 — Långt tryck",
+          "nl": "Knop 4 — Lange druk",
+          "da": "Knap 4 — Langt tryk",
+          "de": "Taste 4 — Langer Druck",
+          "es": "Botón 4 — Pulsación larga",
+          "fr": "Bouton 4 — Appui long",
+          "it": "Pulsante 4 — Pressione lunga",
+          "no": "Knapp 4 — Langt trykk",
+          "pl": "Przycisk 4 — Długie naciśnięcie",
+          "ru": "Кнопка 4 — Долгое нажатие",
+          "ko": "버튼 4 — 길게 누르기"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=SNZB-01M"
+          }
+        ]
+      },
+      {
+        "id": "SNZB-01M:triple_button_4",
+        "title": {
+          "en": "Button 4 — Triple click",
+          "sv": "Knapp 4 — Trippelklick",
+          "nl": "Knop 4 — Drievoudige klik",
+          "da": "Knap 4 — Tredobbelt klik",
+          "de": "Taste 4 — Dreifachklick",
+          "es": "Botón 4 — Triple clic",
+          "fr": "Bouton 4 — Triple clic",
+          "it": "Pulsante 4 — Triplo clic",
+          "no": "Knapp 4 — Trippelklikk",
+          "pl": "Przycisk 4 — Potrójne kliknięcie",
+          "ru": "Кнопка 4 — Тройной клик",
+          "ko": "버튼 4 — 트리플 클릭"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=SNZB-01M"
+          }
+        ]
+      },
+      {
         "id": "SNZB-01P:single_click",
         "title": {
           "en": "Single click",
@@ -395,6 +779,828 @@
       },
       "id": "BASICZBR3",
       "settings": []
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "large": "/drivers/MINI-ZBDIM/assets/images/large.png",
+        "small": "/drivers/MINI-ZBDIM/assets/images/small.png"
+      },
+      "id": "MINI-ZBDIM",
+      "name": {
+        "en": "MINI-ZBDIM Dimmer",
+        "sv": "MINI-ZBDIM Dimmer",
+        "nl": "MINI-ZBDIM Dimmer",
+        "da": "MINI-ZBDIM Lysdæmper",
+        "de": "MINI-ZBDIM Dimmer",
+        "es": "MINI-ZBDIM Regulador",
+        "fr": "MINI-ZBDIM Variateur",
+        "it": "MINI-ZBDIM Dimmer",
+        "no": "MINI-ZBDIM Dimmer",
+        "pl": "MINI-ZBDIM Ściemniacz",
+        "ru": "MINI-ZBDIM Диммер",
+        "ko": "MINI-ZBDIM 디머"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim",
+        "measure_power",
+        "measure_voltage",
+        "measure_current"
+      ],
+      "capabilitiesOptions": {
+        "measure_power": {
+          "approximated": true
+        },
+        "measure_voltage": {
+          "approximated": true
+        },
+        "measure_current": {
+          "approximated": true
+        }
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "SONOFF"
+        ],
+        "productId": [
+          "MINI-ZBDIM"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              6,
+              8,
+              64529
+            ],
+            "bindings": [
+              6,
+              8
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/MINI-ZBDIM/assets/learn.svg",
+          "instruction": {
+            "en": "Press the button on the device for approx. 10 seconds until the LED blinks rapidly.",
+            "sv": "Tryck på knappen på enheten i cirka 10 sekunder tills lysdioden blinkar snabbt.",
+            "nl": "Druk op de knop op het apparaat gedurende ca. 10 seconden totdat de LED snel knippert.",
+            "da": "Tryk på knappen på enheden i ca. 10 sekunder, indtil LED'en blinker hurtigt.",
+            "de": "Drücken Sie die Taste am Gerät ca. 10 Sekunden lang, bis die LED schnell blinkt.",
+            "es": "Presione el botón del dispositivo durante aprox. 10 segundos hasta que el LED parpadee rápidamente.",
+            "fr": "Appuyez sur le bouton de l'appareil pendant environ 10 secondes jusqu'à ce que la LED clignote rapidement.",
+            "it": "Premere il pulsante sul dispositivo per circa 10 secondi fino a quando il LED lampeggia rapidamente.",
+            "no": "Trykk på knappen på enheten i ca. 10 sekunder til LED-en blinker raskt.",
+            "pl": "Naciśnij przycisk na urządzeniu przez ok. 10 sekund, aż dioda LED zacznie szybko migać.",
+            "ru": "Нажмите кнопку на устройстве примерно на 10 секунд, пока светодиод не начнет быстро мигать.",
+            "ko": "LED가 빠르게 깜박일 때까지 장치의 버튼을 약 10초 동안 누르세요."
+          }
+        }
+      },
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Power-on Behavior",
+            "sv": "Beteende vid strömåterkomst",
+            "nl": "Gedrag bij inschakelen",
+            "da": "Opførsel ved tænding",
+            "de": "Einschaltverhalten",
+            "es": "Comportamiento al encender",
+            "fr": "Comportement à la mise sous tension",
+            "it": "Comportamento all'accensione",
+            "no": "Oppførsel ved strømtilkobling",
+            "pl": "Zachowanie po włączeniu",
+            "ru": "Поведение при включении",
+            "ko": "전원 켜기 동작"
+          },
+          "children": [
+            {
+              "id": "power_on_behavior",
+              "type": "dropdown",
+              "label": {
+                "en": "Power-on State",
+                "sv": "Tillstånd vid strömåterkomst",
+                "nl": "Status bij inschakelen",
+                "da": "Tilstand ved tænding",
+                "de": "Zustand beim Einschalten",
+                "es": "Estado al encender",
+                "fr": "État à la mise sous tension",
+                "it": "Stato all'accensione",
+                "no": "Tilstand ved strømtilkobling",
+                "pl": "Stan po włączeniu",
+                "ru": "Состояние при включении",
+                "ko": "전원 켜기 상태"
+              },
+              "hint": {
+                "en": "Light state after power restore.",
+                "sv": "Lampans tillstånd efter strömåterkomst.",
+                "nl": "Lichtstatus na stroomherstel.",
+                "da": "Lysstatus efter strømgendannelse.",
+                "de": "Lichtzustand nach Stromwiederkehr.",
+                "es": "Estado de la luz después de restaurar la energía.",
+                "fr": "État de la lumière après rétablissement de l'alimentation.",
+                "it": "Stato della luce dopo il ripristino dell'alimentazione.",
+                "no": "Lystilstand etter strømgjenoppretting.",
+                "pl": "Stan oświetlenia po przywróceniu zasilania.",
+                "ru": "Состояние света после восстановления питания.",
+                "ko": "전원 복구 후 조명 상태."
+              },
+              "value": "off",
+              "values": [
+                {
+                  "id": "on",
+                  "label": {
+                    "en": "Turn On",
+                    "sv": "Slå på",
+                    "nl": "Inschakelen",
+                    "da": "Tænd",
+                    "de": "Einschalten",
+                    "es": "Encender",
+                    "fr": "Allumer",
+                    "it": "Accendi",
+                    "no": "Slå på",
+                    "pl": "Włącz",
+                    "ru": "Включить",
+                    "ko": "켜기"
+                  }
+                },
+                {
+                  "id": "off",
+                  "label": {
+                    "en": "Turn Off",
+                    "sv": "Stäng av",
+                    "nl": "Uitschakelen",
+                    "da": "Sluk",
+                    "de": "Ausschalten",
+                    "es": "Apagar",
+                    "fr": "Éteindre",
+                    "it": "Spegni",
+                    "no": "Slå av",
+                    "pl": "Wyłącz",
+                    "ru": "Выключить",
+                    "ko": "끄기"
+                  }
+                },
+                {
+                  "id": "toggle",
+                  "label": {
+                    "en": "Toggle",
+                    "sv": "Växla",
+                    "nl": "Schakelen",
+                    "da": "Skift",
+                    "de": "Umschalten",
+                    "es": "Conmutar",
+                    "fr": "Basculer",
+                    "it": "Commuta",
+                    "no": "Veksle",
+                    "pl": "Przełącz",
+                    "ru": "Переключить",
+                    "ko": "토글"
+                  }
+                },
+                {
+                  "id": "last_state",
+                  "label": {
+                    "en": "Last State",
+                    "sv": "Senaste tillstånd",
+                    "nl": "Laatste status",
+                    "da": "Sidste tilstand",
+                    "de": "Letzter Zustand",
+                    "es": "Último estado",
+                    "fr": "Dernier état",
+                    "it": "Ultimo stato",
+                    "no": "Siste tilstand",
+                    "pl": "Ostatni stan",
+                    "ru": "Последнее состояние",
+                    "ko": "마지막 상태"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "delayed_power_on_state",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Delayed Power-on",
+                "sv": "Fördröjd strömåterkomst",
+                "nl": "Vertraagd inschakelen",
+                "da": "Forsinket tænding",
+                "de": "Verzögertes Einschalten",
+                "es": "Encendido retardado",
+                "fr": "Mise sous tension retardée",
+                "it": "Accensione ritardata",
+                "no": "Forsinket strømtilkobling",
+                "pl": "Opóźnione włączenie",
+                "ru": "Отложенное включение",
+                "ko": "지연 전원 켜기"
+              },
+              "hint": {
+                "en": "Delay light after power restore.",
+                "sv": "Fördröj lampan efter strömåterkomst.",
+                "nl": "Vertraag het licht na stroomherstel.",
+                "da": "Forsink lyset efter strømgendannelse.",
+                "de": "Licht nach Stromwiederkehr verzögern.",
+                "es": "Retrasar la luz después de restaurar la energía.",
+                "fr": "Retarder la lumière après rétablissement de l'alimentation.",
+                "it": "Ritarda la luce dopo il ripristino dell'alimentazione.",
+                "no": "Forsink lyset etter strømgjenoppretting.",
+                "pl": "Opóźnij oświetlenie po przywróceniu zasilania.",
+                "ru": "Задержка света после восстановления питания.",
+                "ko": "전원 복구 후 조명을 지연합니다."
+              }
+            },
+            {
+              "id": "delayed_power_on_time",
+              "type": "number",
+              "label": {
+                "en": "Delay (s)",
+                "sv": "Fördröjning (s)",
+                "nl": "Vertraging (s)",
+                "da": "Forsinkelse (s)",
+                "de": "Verzögerung (s)",
+                "es": "Retardo (s)",
+                "fr": "Délai (s)",
+                "it": "Ritardo (s)",
+                "no": "Forsinkelse (s)",
+                "pl": "Opóźnienie (s)",
+                "ru": "Задержка (с)",
+                "ko": "지연 (초)"
+              },
+              "hint": {
+                "en": "Wait time before light switches (0.5-3599.5s).",
+                "sv": "Väntetid innan lampan tänds (0,5-3599,5s).",
+                "nl": "Wachttijd voordat het licht schakelt (0,5-3599,5s).",
+                "da": "Ventetid før lyset tænder (0,5-3599,5s).",
+                "de": "Wartezeit bis das Licht schaltet (0,5-3599,5s).",
+                "es": "Tiempo de espera antes de que la luz cambie (0,5-3599,5s).",
+                "fr": "Temps d'attente avant commutation de la lumière (0,5-3599,5s).",
+                "it": "Tempo di attesa prima della commutazione della luce (0,5-3599,5s).",
+                "no": "Ventetid før lyset kobler (0,5-3599,5s).",
+                "pl": "Czas oczekiwania przed przełączeniem oświetlenia (0,5-3599,5s).",
+                "ru": "Время ожидания перед переключением света (0,5-3599,5 с).",
+                "ko": "조명이 전환되기 전 대기 시간 (0.5-3599.5초)."
+              },
+              "value": 2,
+              "attr": {
+                "min": 0.5,
+                "max": 3599.5,
+                "step": 0.5
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Dimmer Configuration",
+            "sv": "Dimmerkonfiguration",
+            "nl": "Dimmerconfiguratie",
+            "da": "Dæmperkonfiguration",
+            "de": "Dimmer-Konfiguration",
+            "es": "Configuración del regulador",
+            "fr": "Configuration du variateur",
+            "it": "Configurazione dimmer",
+            "no": "Dimmerkonfigurasjon",
+            "pl": "Konfiguracja ściemniacza",
+            "ru": "Настройка диммера",
+            "ko": "디머 구성"
+          },
+          "children": [
+            {
+              "id": "external_trigger_mode",
+              "type": "dropdown",
+              "label": {
+                "en": "External Trigger Mode",
+                "sv": "Externt triggerläge",
+                "nl": "Externe triggermodus",
+                "da": "Ekstern udløsertilstand",
+                "de": "Externer Auslösemodus",
+                "es": "Modo de activación externo",
+                "fr": "Mode de déclenchement externe",
+                "it": "Modalità trigger esterno",
+                "no": "Ekstern utløsermodus",
+                "pl": "Tryb wyzwalania zewnętrznego",
+                "ru": "Режим внешнего триггера",
+                "ko": "외부 트리거 모드"
+              },
+              "hint": {
+                "en": "Select the trigger mode matching your external switch type.",
+                "sv": "Välj triggerläge som matchar din externa brytartyp.",
+                "nl": "Selecteer de triggermodus die past bij uw externe schakelaar.",
+                "da": "Vælg den udløsertilstand, der matcher din eksterne kontakttype.",
+                "de": "Wählen Sie den Auslösemodus passend zum externen Schaltertyp.",
+                "es": "Seleccione el modo de activación que coincida con su tipo de interruptor externo.",
+                "fr": "Sélectionnez le mode de déclenchement correspondant à votre type d'interrupteur externe.",
+                "it": "Selezionare la modalità trigger corrispondente al tipo di interruttore esterno.",
+                "no": "Velg utløsermodus som passer din eksterne brytertype.",
+                "pl": "Wybierz tryb wyzwalania odpowiadający typowi zewnętrznego przełącznika.",
+                "ru": "Выберите режим триггера, соответствующий типу внешнего выключателя.",
+                "ko": "외부 스위치 유형에 맞는 트리거 모드를 선택하세요."
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Edge",
+                    "sv": "Kant",
+                    "nl": "Flank",
+                    "da": "Kant",
+                    "de": "Flanke",
+                    "es": "Flanco",
+                    "fr": "Bord",
+                    "it": "Fronte",
+                    "no": "Kant",
+                    "pl": "Zbocze",
+                    "ru": "Фронт",
+                    "ko": "에지"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Pulse",
+                    "sv": "Puls",
+                    "nl": "Puls",
+                    "da": "Puls",
+                    "de": "Puls",
+                    "es": "Pulso",
+                    "fr": "Impulsion",
+                    "it": "Impulso",
+                    "no": "Puls",
+                    "pl": "Impuls",
+                    "ru": "Импульс",
+                    "ko": "펄스"
+                  }
+                },
+                {
+                  "id": "3",
+                  "label": {
+                    "en": "Double Pulse",
+                    "sv": "Dubbelpuls",
+                    "nl": "Dubbele puls",
+                    "da": "Dobbelt puls",
+                    "de": "Doppelpuls",
+                    "es": "Pulso doble",
+                    "fr": "Double impulsion",
+                    "it": "Doppio impulso",
+                    "no": "Dobbelpuls",
+                    "pl": "Podwójny impuls",
+                    "ru": "Двойной импульс",
+                    "ko": "더블 펄스"
+                  }
+                },
+                {
+                  "id": "4",
+                  "label": {
+                    "en": "Triple Pulse",
+                    "sv": "Trippelpuls",
+                    "nl": "Drievoudige puls",
+                    "da": "Tredobbelt puls",
+                    "de": "Dreifachpuls",
+                    "es": "Pulso triple",
+                    "fr": "Triple impulsion",
+                    "it": "Triplo impulso",
+                    "no": "Trippelpuls",
+                    "pl": "Potrójny impuls",
+                    "ru": "Тройной импульс",
+                    "ko": "트리플 펄스"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "min_brightness",
+              "type": "number",
+              "label": {
+                "en": "Minimum Brightness (%)",
+                "sv": "Minsta ljusstyrka (%)",
+                "nl": "Minimale helderheid (%)",
+                "da": "Minimum lysstyrke (%)",
+                "de": "Minimale Helligkeit (%)",
+                "es": "Brillo mínimo (%)",
+                "fr": "Luminosité minimale (%)",
+                "it": "Luminosità minima (%)",
+                "no": "Minimum lysstyrke (%)",
+                "pl": "Minimalna jasność (%)",
+                "ru": "Минимальная яркость (%)",
+                "ko": "최소 밝기 (%)"
+              },
+              "hint": {
+                "en": "Lowest brightness level mapped to 1% on the slider.",
+                "sv": "Lägsta ljusstyrka som mappas till 1% på reglaget.",
+                "nl": "Laagste helderheidsniveau dat overeenkomt met 1% op de schuifbalk.",
+                "da": "Laveste lysstyrke knyttet til 1% på skyderen.",
+                "de": "Niedrigster Helligkeitswert, der auf 1% des Schiebereglers abgebildet wird.",
+                "es": "Nivel de brillo más bajo asignado al 1% en el control deslizante.",
+                "fr": "Niveau de luminosité le plus bas correspondant à 1% sur le curseur.",
+                "it": "Livello di luminosità più basso mappato all'1% sul cursore.",
+                "no": "Laveste lysstyrke knyttet til 1% på glidebryteren.",
+                "pl": "Najniższy poziom jasności odpowiadający 1% na suwaku.",
+                "ru": "Минимальный уровень яркости, соответствующий 1% на ползунке.",
+                "ko": "슬라이더에서 1%에 매핑되는 최저 밝기 수준."
+              },
+              "value": 1,
+              "attr": {
+                "min": 1,
+                "max": 50,
+                "step": 1
+              }
+            },
+            {
+              "id": "transition_time",
+              "type": "number",
+              "label": {
+                "en": "Transition Time (s)",
+                "sv": "Övergångstid (s)",
+                "nl": "Overgangstijd (s)",
+                "da": "Overgangstid (s)",
+                "de": "Übergangszeit (s)",
+                "es": "Tiempo de transición (s)",
+                "fr": "Temps de transition (s)",
+                "it": "Tempo di transizione (s)",
+                "no": "Overgangstid (s)",
+                "pl": "Czas przejścia (s)",
+                "ru": "Время перехода (с)",
+                "ko": "전환 시간 (초)"
+              },
+              "hint": {
+                "en": "Duration for brightness changes (0-5s).",
+                "sv": "Tid för ljusstyrkeändringar (0-5s).",
+                "nl": "Duur voor helderheidswijzigingen (0-5s).",
+                "da": "Varighed for ændringer i lysstyrke (0-5s).",
+                "de": "Dauer für Helligkeitsänderungen (0-5s).",
+                "es": "Duración para cambios de brillo (0-5s).",
+                "fr": "Durée des changements de luminosité (0-5s).",
+                "it": "Durata dei cambiamenti di luminosità (0-5s).",
+                "no": "Varighet for lysstyrkeendringer (0-5s).",
+                "pl": "Czas trwania zmian jasności (0-5s).",
+                "ru": "Длительность изменения яркости (0-5 с).",
+                "ko": "밝기 변경 지속 시간 (0-5초)."
+              },
+              "value": 0,
+              "attr": {
+                "min": 0,
+                "max": 5,
+                "step": 0.1
+              }
+            },
+            {
+              "id": "dimming_rate",
+              "type": "dropdown",
+              "label": {
+                "en": "Dimming Rate",
+                "sv": "Dimmningshastighet",
+                "nl": "Dimsnelheid",
+                "da": "Dæmpningshastighed",
+                "de": "Dimmgeschwindigkeit",
+                "es": "Velocidad de regulación",
+                "fr": "Vitesse de variation",
+                "it": "Velocità dimmerazione",
+                "no": "Dimmehastighet",
+                "pl": "Szybkość ściemniania",
+                "ru": "Скорость диммирования",
+                "ko": "디밍 속도"
+              },
+              "hint": {
+                "en": "Speed of brightness change via external switch.",
+                "sv": "Hastighet för ljusstyrkeändring via extern brytare.",
+                "nl": "Snelheid van helderheidswijziging via externe schakelaar.",
+                "da": "Hastighed for ændring af lysstyrke via ekstern kontakt.",
+                "de": "Geschwindigkeit der Helligkeitsänderung über externen Schalter.",
+                "es": "Velocidad del cambio de brillo mediante interruptor externo.",
+                "fr": "Vitesse de changement de luminosité via l'interrupteur externe.",
+                "it": "Velocità del cambio di luminosità tramite interruttore esterno.",
+                "no": "Hastighet for lysstyrkeendring via ekstern bryter.",
+                "pl": "Szybkość zmiany jasności przez zewnętrzny przełącznik.",
+                "ru": "Скорость изменения яркости через внешний выключатель.",
+                "ko": "외부 스위치를 통한 밝기 변경 속도."
+              },
+              "value": "1",
+              "values": [
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "1x"
+                  }
+                },
+                {
+                  "id": "2",
+                  "label": {
+                    "en": "2x"
+                  }
+                },
+                {
+                  "id": "3",
+                  "label": {
+                    "en": "3x"
+                  }
+                },
+                {
+                  "id": "4",
+                  "label": {
+                    "en": "4x"
+                  }
+                },
+                {
+                  "id": "5",
+                  "label": {
+                    "en": "5x"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Calibration",
+            "sv": "Kalibrering",
+            "nl": "Kalibratie",
+            "da": "Kalibrering",
+            "de": "Kalibrierung",
+            "es": "Calibración",
+            "fr": "Calibrage",
+            "it": "Calibrazione",
+            "no": "Kalibrering",
+            "pl": "Kalibracja",
+            "ru": "Калибровка",
+            "ko": "보정"
+          },
+          "children": [
+            {
+              "id": "calibration_action",
+              "type": "dropdown",
+              "label": {
+                "en": "Calibration Action",
+                "sv": "Kalibreringsåtgärd",
+                "nl": "Kalibratieactie",
+                "da": "Kalibreringshandling",
+                "de": "Kalibrierungsaktion",
+                "es": "Acción de calibración",
+                "fr": "Action de calibrage",
+                "it": "Azione di calibrazione",
+                "no": "Kalibreringshandling",
+                "pl": "Akcja kalibracji",
+                "ru": "Действие калибровки",
+                "ko": "보정 작업"
+              },
+              "hint": {
+                "en": "Start, stop, or clear calibration. Takes ~2 min; device unavailable during calibration.",
+                "sv": "Starta, stoppa eller rensa kalibrering. Tar ~2 min; enheten otillgänglig under kalibrering.",
+                "nl": "Start, stop of wis kalibratie. Duurt ~2 min; apparaat niet beschikbaar tijdens kalibratie.",
+                "da": "Start, stop eller ryd kalibrering. Tager ~2 min; enheden utilgængelig under kalibrering.",
+                "de": "Kalibrierung starten, stoppen oder löschen. Dauert ~2 Min; Gerät während Kalibrierung nicht verfügbar.",
+                "es": "Iniciar, detener o borrar calibración. Dura ~2 min; dispositivo no disponible durante la calibración.",
+                "fr": "Démarrer, arrêter ou effacer le calibrage. Dure ~2 min ; appareil indisponible pendant le calibrage.",
+                "it": "Avvia, ferma o cancella la calibrazione. Richiede ~2 min; dispositivo non disponibile durante la calibrazione.",
+                "no": "Start, stopp eller nullstill kalibrering. Tar ~2 min; enheten utilgjengelig under kalibrering.",
+                "pl": "Rozpocznij, zatrzymaj lub wyczyść kalibrację. Trwa ~2 min; urządzenie niedostępne podczas kalibracji.",
+                "ru": "Запустить, остановить или сбросить калибровку. Занимает ~2 мин; устройство недоступно во время калибровки.",
+                "ko": "보정 시작, 중지 또는 초기화. 약 2분 소요; 보정 중 장치 사용 불가."
+              },
+              "value": "none",
+              "values": [
+                {
+                  "id": "none",
+                  "label": {
+                    "en": "— No action —",
+                    "sv": "— Ingen åtgärd —",
+                    "nl": "— Geen actie —",
+                    "da": "— Ingen handling —",
+                    "de": "— Keine Aktion —",
+                    "es": "— Sin acción —",
+                    "fr": "— Aucune action —",
+                    "it": "— Nessuna azione —",
+                    "no": "— Ingen handling —",
+                    "pl": "— Brak akcji —",
+                    "ru": "— Нет действия —",
+                    "ko": "— 작업 없음 —"
+                  }
+                },
+                {
+                  "id": "start",
+                  "label": {
+                    "en": "Start Calibration",
+                    "sv": "Starta kalibrering",
+                    "nl": "Kalibratie starten",
+                    "da": "Start kalibrering",
+                    "de": "Kalibrierung starten",
+                    "es": "Iniciar calibración",
+                    "fr": "Démarrer le calibrage",
+                    "it": "Avvia calibrazione",
+                    "no": "Start kalibrering",
+                    "pl": "Rozpocznij kalibrację",
+                    "ru": "Начать калибровку",
+                    "ko": "보정 시작"
+                  }
+                },
+                {
+                  "id": "stop",
+                  "label": {
+                    "en": "Stop Calibration",
+                    "sv": "Stoppa kalibrering",
+                    "nl": "Kalibratie stoppen",
+                    "da": "Stop kalibrering",
+                    "de": "Kalibrierung stoppen",
+                    "es": "Detener calibración",
+                    "fr": "Arrêter le calibrage",
+                    "it": "Ferma calibrazione",
+                    "no": "Stopp kalibrering",
+                    "pl": "Zatrzymaj kalibrację",
+                    "ru": "Остановить калибровку",
+                    "ko": "보정 중지"
+                  }
+                },
+                {
+                  "id": "clear",
+                  "label": {
+                    "en": "Clear Calibration",
+                    "sv": "Rensa kalibrering",
+                    "nl": "Kalibratie wissen",
+                    "da": "Ryd kalibrering",
+                    "de": "Kalibrierung löschen",
+                    "es": "Borrar calibración",
+                    "fr": "Effacer le calibrage",
+                    "it": "Cancella calibrazione",
+                    "no": "Nullstill kalibrering",
+                    "pl": "Wyczyść kalibrację",
+                    "ru": "Сбросить калибровку",
+                    "ko": "보정 초기화"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "calibration_status",
+              "type": "label",
+              "label": {
+                "en": "Calibration Status",
+                "sv": "Kalibreringsstatus",
+                "nl": "Kalibratiestatus",
+                "da": "Kalibreringsstatus",
+                "de": "Kalibrierungsstatus",
+                "es": "Estado de calibración",
+                "fr": "État du calibrage",
+                "it": "Stato calibrazione",
+                "no": "Kalibreringsstatus",
+                "pl": "Status kalibracji",
+                "ru": "Статус калибровки",
+                "ko": "보정 상태"
+              },
+              "value": "—"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Inching",
+            "sv": "Inching",
+            "nl": "Inching",
+            "da": "Inching",
+            "de": "Inching",
+            "es": "Inching",
+            "fr": "Inching",
+            "it": "Inching",
+            "no": "Inching",
+            "pl": "Inching",
+            "ru": "Инчинг",
+            "ko": "인칭"
+          },
+          "children": [
+            {
+              "id": "inching_enabled",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Enable Inching",
+                "sv": "Aktivera inching",
+                "nl": "Inching inschakelen",
+                "da": "Aktivér inching",
+                "de": "Inching aktivieren",
+                "es": "Activar inching",
+                "fr": "Activer l'inching",
+                "it": "Attiva inching",
+                "no": "Aktiver inching",
+                "pl": "Włącz inching",
+                "ru": "Включить инчинг",
+                "ko": "인칭 활성화"
+              },
+              "hint": {
+                "en": "Auto-switch light after set time.",
+                "sv": "Växla ljuset automatiskt efter inställd tid.",
+                "nl": "Schakel het licht automatisch na ingestelde tijd.",
+                "da": "Skift lys automatisk efter indstillet tid.",
+                "de": "Licht nach eingestellter Zeit automatisch umschalten.",
+                "es": "Cambiar la luz automáticamente después del tiempo establecido.",
+                "fr": "Commutation automatique de la lumière après le temps défini.",
+                "it": "Commutazione automatica della luce dopo il tempo impostato.",
+                "no": "Automatisk veksling av lys etter innstilt tid.",
+                "pl": "Automatyczne przełączenie oświetlenia po ustawionym czasie.",
+                "ru": "Автоматическое переключение света через заданное время.",
+                "ko": "설정된 시간 후 조명을 자동 전환합니다."
+              }
+            },
+            {
+              "id": "inching_time",
+              "type": "number",
+              "label": {
+                "en": "Duration (s)",
+                "sv": "Varaktighet (s)",
+                "nl": "Duur (s)",
+                "da": "Varighed (s)",
+                "de": "Dauer (s)",
+                "es": "Duración (s)",
+                "fr": "Durée (s)",
+                "it": "Durata (s)",
+                "no": "Varighet (s)",
+                "pl": "Czas trwania (s)",
+                "ru": "Длительность (с)",
+                "ko": "지속 시간 (초)"
+              },
+              "hint": {
+                "en": "Time before auto-switch (0.5-86399.5s).",
+                "sv": "Tid innan automatisk växling (0,5-86399,5s).",
+                "nl": "Tijd voor automatisch schakelen (0,5-86399,5s).",
+                "da": "Tid før automatisk skift (0,5-86399,5s).",
+                "de": "Zeit bis zur automatischen Umschaltung (0,5-86399,5s).",
+                "es": "Tiempo antes de la conmutación automática (0,5-86399,5s).",
+                "fr": "Temps avant commutation automatique (0,5-86399,5s).",
+                "it": "Tempo prima della commutazione automatica (0,5-86399,5s).",
+                "no": "Tid før automatisk veksling (0,5-86399,5s).",
+                "pl": "Czas przed automatycznym przełączeniem (0,5-86399,5s).",
+                "ru": "Время до автоматического переключения (0,5-86399,5 с).",
+                "ko": "자동 전환 전 시간 (0.5-86399.5초)."
+              },
+              "value": 1,
+              "attr": {
+                "min": 0.5,
+                "max": 86399.5,
+                "step": 0.5
+              }
+            },
+            {
+              "id": "inching_mode",
+              "type": "dropdown",
+              "label": {
+                "en": "Inching Mode",
+                "sv": "Inching-läge",
+                "nl": "Inching-modus",
+                "da": "Inching-tilstand",
+                "de": "Inching-Modus",
+                "es": "Modo inching",
+                "fr": "Mode inching",
+                "it": "Modalità inching",
+                "no": "Inching-modus",
+                "pl": "Tryb inching",
+                "ru": "Режим инчинга",
+                "ko": "인칭 모드"
+              },
+              "hint": {
+                "en": "Auto switch order.",
+                "sv": "Automatisk växlingsordning.",
+                "nl": "Automatische schakelrichting.",
+                "da": "Automatisk skifterækkefølge.",
+                "de": "Automatische Schaltreihenfolge.",
+                "es": "Orden de conmutación automática.",
+                "fr": "Ordre de commutation automatique.",
+                "it": "Ordine di commutazione automatica.",
+                "no": "Automatisk vekslingsrekkefølge.",
+                "pl": "Kolejność automatycznego przełączania.",
+                "ru": "Порядок автоматического переключения.",
+                "ko": "자동 전환 순서."
+              },
+              "value": "on",
+              "values": [
+                {
+                  "id": "on",
+                  "label": {
+                    "en": "On → Off"
+                  }
+                },
+                {
+                  "id": "off",
+                  "label": {
+                    "en": "Off → On"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "platforms": [
@@ -1204,6 +2410,98 @@
         "zigbee"
       ],
       "images": {
+        "large": "/drivers/SNZB-01M/assets/images/large.png",
+        "small": "/drivers/SNZB-01M/assets/images/small.png"
+      },
+      "id": "SNZB-01M",
+      "name": {
+        "en": "4-Button Remote SNZB-01M",
+        "sv": "4-knapps fjärrkontroll SNZB-01M",
+        "nl": "4-knops afstandsbediening SNZB-01M",
+        "da": "4-knaps fjernbetjening SNZB-01M",
+        "de": "4-Tasten-Fernbedienung SNZB-01M",
+        "es": "Control remoto de 4 botones SNZB-01M",
+        "fr": "Télécommande 4 boutons SNZB-01M",
+        "it": "Telecomando 4 pulsanti SNZB-01M",
+        "no": "4-knapps fjernkontroll SNZB-01M",
+        "pl": "Pilot 4-przyciskowy SNZB-01M",
+        "ru": "Пульт с 4 кнопками SNZB-01M",
+        "ko": "4버튼 리모컨 SNZB-01M"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_battery"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2477"
+        ]
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "SONOFF"
+        ],
+        "productId": [
+          "SNZB-01M"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              64530
+            ],
+            "bindings": [
+              1
+            ]
+          },
+          "2": {
+            "clusters": [
+              64530
+            ],
+            "bindings": []
+          },
+          "3": {
+            "clusters": [
+              64530
+            ],
+            "bindings": []
+          },
+          "4": {
+            "clusters": [
+              64530
+            ],
+            "bindings": []
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/SNZB-01M/assets/learn.svg",
+          "instruction": {
+            "en": "Press and hold any button for approx. 10 seconds until the LED blinks rapidly.",
+            "sv": "Tryck och håll ned valfri knapp i cirka 10 sekunder tills lysdioden blinkar snabbt.",
+            "nl": "Houd een willekeurige knop ca. 10 seconden ingedrukt totdat de LED snel knippert.",
+            "da": "Tryk og hold en vilkårlig knap i ca. 10 sekunder, indtil LED'en blinker hurtigt.",
+            "de": "Halten Sie eine beliebige Taste ca. 10 Sekunden gedrückt, bis die LED schnell blinkt.",
+            "es": "Mantenga presionado cualquier botón durante aprox. 10 segundos hasta que el LED parpadee rápidamente.",
+            "fr": "Maintenez n'importe quel bouton enfoncé pendant environ 10 secondes jusqu'à ce que la LED clignote rapidement.",
+            "it": "Tenere premuto un pulsante qualsiasi per circa 10 secondi fino a quando il LED lampeggia rapidamente.",
+            "no": "Trykk og hold en vilkårlig knapp i ca. 10 sekunder til LED-en blinker raskt.",
+            "pl": "Naciśnij i przytrzymaj dowolny przycisk przez ok. 10 sekund, aż dioda LED zacznie szybko migać.",
+            "ru": "Нажмите и удерживайте любую кнопку примерно 10 секунд, пока светодиод не начнет быстро мигать.",
+            "ko": "LED가 빠르게 깜박일 때까지 아무 버튼이나 약 10초 동안 길게 누르세요."
+          }
+        }
+      }
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
         "large": "/drivers/SNZB-01P/assets/images/large.png",
         "small": "/drivers/SNZB-01P/assets/images/small.png"
       },
@@ -1817,6 +3115,305 @@
                 "pl": "Zgłoś wartość wilgotności z 2 miejscami dziesiętnymi (35,19 %)",
                 "ru": "Сообщите значение влажности с 2 десятичными знаками (35,19 %)",
                 "ko": "습도 값을 소수점 두 자리로 보고하십시오 (35.19 %)"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "large": "/drivers/SNZB-02LD/assets/images/large.png",
+        "small": "/drivers/SNZB-02LD/assets/images/small.png"
+      },
+      "id": "SNZB-02LD",
+      "name": {
+        "en": "Probe Thermometer SNZB-02LD",
+        "sv": "Sondtermometer SNZB-02LD",
+        "nl": "Sondethermometer SNZB-02LD",
+        "da": "Sondetermometer SNZB-02LD",
+        "de": "Sonden-Thermometer SNZB-02LD",
+        "es": "Termómetro de sonda SNZB-02LD",
+        "fr": "Thermomètre à sonde SNZB-02LD",
+        "it": "Termometro a sonda SNZB-02LD",
+        "no": "Sondetermometer SNZB-02LD",
+        "pl": "Termometr sondowy SNZB-02LD",
+        "ru": "Зонд-термометр SNZB-02LD",
+        "ko": "프로브 온도계 SNZB-02LD"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_temperature",
+        "measure_battery"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2477"
+        ]
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "SONOFF"
+        ],
+        "productId": [
+          "SNZB-02LD"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              1026,
+              64529
+            ],
+            "bindings": [
+              0,
+              1,
+              1026
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/SNZB-02LD/assets/learn.svg",
+          "instruction": {
+            "en": "Press button on back side for approx. 10 seconds until the red LED blinks rapidly.",
+            "sv": "Tryck på knappen på baksidan i cirka 10 sekunder tills den röda lysdioden blinkar snabbt.",
+            "nl": "Druk op de knop aan de achterkant gedurende ca. 10 seconden totdat de rode LED snel knippert.",
+            "da": "Tryk på knappen på bagsiden i ca. 10 sekunder, indtil den røde LED blinker hurtigt.",
+            "de": "Drücken Sie die Taste auf der Rückseite ca. 10 Sekunden lang, bis die rote LED schnell blinkt.",
+            "es": "Presione el botón en la parte posterior durante aprox. 10 segundos hasta que el LED rojo parpadee rápidamente.",
+            "fr": "Appuyez sur le bouton à l'arrière pendant environ 10 secondes jusqu'à ce que la LED rouge clignote rapidement.",
+            "it": "Premere il pulsante sul retro per circa 10 secondi fino a quando il LED rosso lampeggia rapidamente.",
+            "no": "Trykk på knappen på baksiden i ca. 10 sekunder til den røde LED-en blinker raskt.",
+            "pl": "Naciśnij przycisk z tyłu przez ok. 10 sekund, aż czerwona dioda LED zacznie szybko migać.",
+            "ru": "Нажмите кнопку на задней стороне примерно на 10 секунд, пока красный светодиод не начнет быстро мигать.",
+            "ko": "빨간 LED가 빠르게 깜박일 때까지 후면의 버튼을 약 10초 동안 누르세요."
+          }
+        }
+      },
+      "settings": [
+        {
+          "id": "temperature_offset",
+          "type": "number",
+          "label": {
+            "en": "Temperature offset (°C)",
+            "nl": "Temperatuurcorrectie (°C)",
+            "da": "Temperaturforskydning (°C)",
+            "de": "Temperaturkorrektur (°C)",
+            "es": "Compensación de temperatura (°C)",
+            "fr": "Décalage de température (°C)",
+            "it": "Offset di temperatura (°C)",
+            "no": "Temperaturforskyvning (°C)",
+            "sv": "Temperaturförskjutning (°C)",
+            "pl": "Offset temperatury (°C)",
+            "ru": "Смещение температуры (°C)",
+            "ko": "온도 편차 (°C)"
+          },
+          "hint": {
+            "en": "Set a value to compensate a temperature offset.\nRange: -10 - 10, step size 0.1, \ndefault: 0 [°C]",
+            "nl": "Stel een waarde in om een temperatuurafwijking te compenseren.\nBereik: -10 - 10, stapgrootte 0.1,\nstandaard: 0 [°C]",
+            "da": "Indstil en værdi for at kompensere for en temperaturforskydning.\nOmråde: -10 - 10, trinstørrelse 0,1,\nstandard: 0 [°C]",
+            "de": "Legen Sie einen Wert fest, um eine Temperaturabweichung zu kompensieren.\nBereich: -10 - 10, Schrittweite 0,1,\nStandard: 0 [°C]",
+            "es": "Establezca un valor para compensar una desviación de temperatura.\nRango: -10 - 10, tamaño del paso 0,1,\npredeterminado: 0 [°C]",
+            "fr": "Définir une valeur pour compenser un décalage de température.\nPlage : -10 - 10, taille du pas 0,1,\ndéfaut : 0 [°C]",
+            "it": "Impostare un valore per compensare un offset di temperatura.\nGamma: -10 - 10, dimensione del passo 0,1,\npredefinito: 0 [°C]",
+            "no": "Sett en verdi for å kompensere for en temperaturforskyvning.\nOmråde: -10 - 10, trinnstørrelse 0,1,\nstandard: 0 [°C]",
+            "sv": "Ställ in ett värde för att kompensera för en temperaturskiftning.\nOmråde: -10 - 10, stegstorlek 0,1,\nstandard: 0 [°C]",
+            "pl": "Ustaw wartość, aby skompensować odstępstwo temperatury.\nZakres: -10 - 10, krok 0,1,\ndomyślnie: 0 [°C]",
+            "ru": "Установите значение для компенсации смещения температуры.\nДиапазон: -10 - 10, шаг 0,1,\nпо умолчанию: 0 [°C]",
+            "ko": "온도 편차를 보상하기 위해 값을 설정하십시오.\n범위: -10 - 10, 단계 크기 0.1,\n기본값: 0 [°C]"
+          },
+          "value": 0,
+          "attr": {
+            "min": -10,
+            "max": 10,
+            "step": 0.1
+          }
+        },
+        {
+          "id": "temperature_decimals",
+          "type": "radio",
+          "label": {
+            "en": "Temperature reporting decimals",
+            "nl": "Decimalen in temperatuurrapportage",
+            "da": "Decimaler i temperaturrapportering",
+            "de": "Dezimalstellen in Temperaturberichten",
+            "es": "Decimales en el reporte de temperatura",
+            "fr": "Décimales dans le rapport de température",
+            "it": "Decimali nel reporting della temperatura",
+            "no": "Desimaler i temperaturrapportering",
+            "sv": "Decimaler i temperaturrapporteringen",
+            "pl": "Miejsca dziesiętne w raportowaniu temperatury",
+            "ru": "Десятичные знаки в отчёте о температуре",
+            "ko": "온도 보고서의 소수점 자리"
+          },
+          "value": "1",
+          "values": [
+            {
+              "id": "1",
+              "label": {
+                "en": "Report temperature value with 1 decimal (21.4 °C)",
+                "nl": "Rapporteer temperatuurwaarde met 1 decimaal (21,4 °C)",
+                "da": "Rapporter temperaturværdi med 1 decimal (21,4 °C)",
+                "de": "Temperaturwert mit 1 Dezimalstelle berichten (21,4 °C)",
+                "es": "Informe el valor de temperatura con 1 decimal (21,4 °C)",
+                "fr": "Rapporter la valeur de température avec 1 décimale (21,4 °C)",
+                "it": "Riporta il valore della temperatura con 1 decimale (21,4 °C)",
+                "no": "Rapporter temperaturverdi med 1 desimal (21,4 °C)",
+                "sv": "Rapportera temperaturvärde med 1 decimal (21,4 °C)",
+                "pl": "Zgłoś wartość temperatury z 1 miejscem dziesiętnym (21,4 °C)",
+                "ru": "Сообщите значение температуры с 1 десятичным знаком (21,4 °C)",
+                "ko": "온도 값을 소수점 한 자리로 보고하십시오 (21.4 °C)"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Report temperature value with 2 decimals (21.37 °C)",
+                "nl": "Rapporteer temperatuurwaarde met 2 decimalen (21,37 °C)",
+                "da": "Rapporter temperaturværdi med 2 decimaler (21,37 °C)",
+                "de": "Temperaturwert mit 2 Dezimalstellen berichten (21,37 °C)",
+                "es": "Informe el valor de temperatura con 2 decimales (21,37 °C)",
+                "fr": "Rapporter la valeur de température avec 2 décimales (21,37 °C)",
+                "it": "Riporta il valore della temperatura con 2 decimali (21,37 °C)",
+                "no": "Rapporter temperaturverdi med 2 desimaler (21,37 °C)",
+                "sv": "Rapportera temperaturvärde med 2 decimaler (21,37 °C)",
+                "pl": "Zgłoś wartość temperatury z 2 miejscami dziesiętnymi (21,37 °C)",
+                "ru": "Сообщите значение температуры с 2 десятичными знаками (21,37 °C)",
+                "ko": "온도 값을 소수점 두 자리로 보고하십시오 (21.37 °C)"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Device Calibration",
+            "nl": "Apparaatkalibratie",
+            "da": "Enhedskalibrering",
+            "de": "Gerätekalibrierung",
+            "es": "Calibración del dispositivo",
+            "fr": "Calibrage de l'appareil",
+            "it": "Calibrazione dispositivo",
+            "no": "Enhetskalibrering",
+            "sv": "Enhetskalibrering",
+            "pl": "Kalibracja urządzenia",
+            "ru": "Калибровка устройства",
+            "ko": "장치 보정"
+          },
+          "children": [
+            {
+              "id": "temperature_units",
+              "type": "dropdown",
+              "label": {
+                "en": "Display Units",
+                "nl": "Weergave-eenheid",
+                "da": "Displayenhed",
+                "de": "Anzeigeeinheit",
+                "es": "Unidad de pantalla",
+                "fr": "Unité d'affichage",
+                "it": "Unità display",
+                "no": "Visningsenhet",
+                "sv": "Visningsenhet",
+                "pl": "Jednostka wyświetlania",
+                "ru": "Единица отображения",
+                "ko": "표시 단위"
+              },
+              "hint": {
+                "en": "Temperature unit on the device display. Wake up the device first by pressing the back button.",
+                "nl": "Temperatuureenheid op het apparaatdisplay. Maak het apparaat eerst wakker door op de knop aan de achterkant te drukken.",
+                "da": "Temperaturenhed på enhedens display. Væk enheden først ved at trykke på knappen på bagsiden.",
+                "de": "Temperatureinheit auf dem Gerätedisplay. Wecken Sie das Gerät zuerst auf, indem Sie die Taste auf der Rückseite drücken.",
+                "es": "Unidad de temperatura en la pantalla del dispositivo. Primero despierte el dispositivo presionando el botón trasero.",
+                "fr": "Unité de température sur l'écran de l'appareil. Réveillez d'abord l'appareil en appuyant sur le bouton arrière.",
+                "it": "Unità di temperatura sul display del dispositivo. Risveglia prima il dispositivo premendo il pulsante posteriore.",
+                "no": "Temperaturenhet på enhetens skjerm. Vekk enheten først ved å trykke på knappen på baksiden.",
+                "sv": "Temperaturenhet på enhetens display. Väck enheten först genom att trycka på knappen på baksidan.",
+                "pl": "Jednostka temperatury na wyświetlaczu urządzenia. Najpierw obudź urządzenie, naciskając przycisk z tyłu.",
+                "ru": "Единица температуры на дисплее устройства. Сначала разбудите устройство, нажав кнопку на задней стороне.",
+                "ko": "장치 디스플레이의 온도 단위. 먼저 후면 버튼을 눌러 장치를 깨우세요."
+              },
+              "value": "celsius",
+              "values": [
+                {
+                  "id": "celsius",
+                  "label": {
+                    "en": "Celsius (°C)",
+                    "nl": "Celsius (°C)",
+                    "da": "Celsius (°C)",
+                    "de": "Celsius (°C)",
+                    "es": "Celsius (°C)",
+                    "fr": "Celsius (°C)",
+                    "it": "Celsius (°C)",
+                    "no": "Celsius (°C)",
+                    "sv": "Celsius (°C)",
+                    "pl": "Celsius (°C)",
+                    "ru": "Цельсий (°C)",
+                    "ko": "섭씨 (°C)"
+                  }
+                },
+                {
+                  "id": "fahrenheit",
+                  "label": {
+                    "en": "Fahrenheit (°F)",
+                    "nl": "Fahrenheit (°F)",
+                    "da": "Fahrenheit (°F)",
+                    "de": "Fahrenheit (°F)",
+                    "es": "Fahrenheit (°F)",
+                    "fr": "Fahrenheit (°F)",
+                    "it": "Fahrenheit (°F)",
+                    "no": "Fahrenheit (°F)",
+                    "sv": "Fahrenheit (°F)",
+                    "pl": "Fahrenheit (°F)",
+                    "ru": "Фаренгейт (°F)",
+                    "ko": "화씨 (°F)"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "temperature_calibration",
+              "type": "number",
+              "label": {
+                "en": "Device Temperature Calibration (°C)",
+                "nl": "Apparaat temperatuurkalibratie (°C)",
+                "da": "Enhedens temperaturkalibrering (°C)",
+                "de": "Geräte-Temperaturkalibrierung (°C)",
+                "es": "Calibración de temperatura del dispositivo (°C)",
+                "fr": "Calibrage de température de l'appareil (°C)",
+                "it": "Calibrazione temperatura dispositivo (°C)",
+                "no": "Enhetens temperaturkalibrering (°C)",
+                "sv": "Enhetens temperaturkalibrering (°C)",
+                "pl": "Kalibracja temperatury urządzenia (°C)",
+                "ru": "Калибровка температуры устройства (°C)",
+                "ko": "장치 온도 보정 (°C)"
+              },
+              "hint": {
+                "en": "Offset written to the device to calibrate temperature.\nRange: -50 - 50, step size 0.1, default: 0 [°C]",
+                "nl": "Offset geschreven naar het apparaat om de temperatuur te kalibreren.\nBereik: -50 - 50, stapgrootte 0,1, standaard: 0 [°C]",
+                "da": "Offset skrevet til enheden for at kalibrere temperaturen.\nOmråde: -50 - 50, trinstørrelse 0,1, standard: 0 [°C]",
+                "de": "Offset, der auf das Gerät geschrieben wird, um die Temperatur zu kalibrieren.\nBereich: -50 - 50, Schrittweite 0,1, Standard: 0 [°C]",
+                "es": "Offset escrito en el dispositivo para calibrar la temperatura.\nRango: -50 - 50, tamaño del paso 0,1, predeterminado: 0 [°C]",
+                "fr": "Offset écrit sur l'appareil pour calibrer la température.\nPlage : -50 - 50, taille du pas 0,1, défaut : 0 [°C]",
+                "it": "Offset scritto sul dispositivo per calibrare la temperatura.\nGamma: -50 - 50, dimensione del passo 0,1, predefinito: 0 [°C]",
+                "no": "Offset skrevet til enheten for å kalibrere temperaturen.\nOmråde: -50 - 50, trinnstørrelse 0,1, standard: 0 [°C]",
+                "sv": "Offset skrivet till enheten för att kalibrera temperaturen.\nOmråde: -50 - 50, stegstorlek 0,1, standard: 0 [°C]",
+                "pl": "Offset zapisany na urządzeniu w celu kalibracji temperatury.\nZakres: -50 - 50, krok 0,1, domyślnie: 0 [°C]",
+                "ru": "Смещение, записанное на устройство для калибровки температуры.\nДиапазон: -50 - 50, шаг 0,1, по умолчанию: 0 [°C]",
+                "ko": "온도를 보정하기 위해 장치에 기록되는 오프셋.\n범위: -50 - 50, 단계 크기 0.1, 기본값: 0 [°C]"
+              },
+              "value": 0,
+              "attr": {
+                "min": -50,
+                "max": 50,
+                "step": 0.1
               }
             }
           ]
