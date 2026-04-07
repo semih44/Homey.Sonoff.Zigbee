@@ -25,6 +25,8 @@ Capteurs & Boutons :
 
 Interrupteurs & Prises :
 - Sonoff MINI-ZBDIM (Mini variateur intelligent)
+- Sonoff ZBM5-1C-80  (Interrupteur mural 1 canal, EU)
+- Sonoff ZBM5-1C-120 (Interrupteur mural 1 canal, US)
 - Sonoff ZBMINI    (Module interrupteur encastré)
 - Sonoff ZBMINI-L  (Module interrupteur encastré, sans neutre)
 - Sonoff ZBMINI-L2 (Module interrupteur encastré, sans neutre)

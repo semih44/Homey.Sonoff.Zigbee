@@ -25,6 +25,8 @@ Sensorer og knapper:
 
 Kontakter og stik:
 - Sonoff MINI-ZBDIM (Smart mini lysdæmper)
+- Sonoff ZBM5-1C-80  (1-kanals vægkontakt, EU)
+- Sonoff ZBM5-1C-120 (1-kanals vægkontakt, US)
 - Sonoff ZBMINI    (Indbygnings-kontaktmodul)
 - Sonoff ZBMINI-L  (Indbygnings-kontaktmodul, uden neutral)
 - Sonoff ZBMINI-L2 (Indbygnings-kontaktmodul, uden neutral)

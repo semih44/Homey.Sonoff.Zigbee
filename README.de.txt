@@ -24,8 +24,10 @@ Sensoren & Taster:
 - Sonoff TRVZB      (Heizkörperthermostat)
 
 Schalter & Steckdosen:
-- Sonoff MINI-ZBDIM (Smarter Mini-Dimmer)
-- Sonoff ZBMINI    (Unterputz-Schaltmodul)
+- Sonoff MINI-ZBDIM  (Smarter Mini-Dimmer)
+- Sonoff ZBM5-1C-80  (1-Kanal Wandschalter, EU)
+- Sonoff ZBM5-1C-120 (1-Kanal Wandschalter, US)
+- Sonoff ZBMINI      (Unterputz-Schaltmodul)
 - Sonoff ZBMINI-L  (Unterputz-Schaltmodul, ohne Nullleiter)
 - Sonoff ZBMINI-L2 (Unterputz-Schaltmodul, ohne Nullleiter)
 - Sonoff ZBMINI-R2 (Unterputz-Schaltmodul mit erweiterten Funktionen)

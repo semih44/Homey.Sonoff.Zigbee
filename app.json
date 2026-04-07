@@ -651,6 +651,54 @@
         ]
       },
       {
+        "id": "SonoffZBM51C120:click",
+        "title": {
+          "en": "Button pressed (detach mode)",
+          "sv": "Knapp nedtryckt (frikopplingsläge)",
+          "nl": "Knop ingedrukt (ontkoppelmodus)",
+          "da": "Knap trykket (frakoblingstilstand)",
+          "de": "Taste gedrückt (Entkopplungsmodus)",
+          "es": "Botón presionado (modo desacoplado)",
+          "fr": "Bouton pressé (mode détaché)",
+          "it": "Pulsante premuto (modalità scollegata)",
+          "no": "Knapp trykket (frakoblet modus)",
+          "pl": "Przycisk naciśnięty (tryb odłączenia)",
+          "ru": "Кнопка нажата (режим отключения)",
+          "ko": "버튼 누름 (분리 모드)"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=ZBM5-1C-120"
+          }
+        ]
+      },
+      {
+        "id": "SonoffZBM51C80:click",
+        "title": {
+          "en": "Button pressed (detach mode)",
+          "sv": "Knapp nedtryckt (frikopplingsläge)",
+          "nl": "Knop ingedrukt (ontkoppelmodus)",
+          "da": "Knap trykket (frakoblingstilstand)",
+          "de": "Taste gedrückt (Entkopplungsmodus)",
+          "es": "Botón presionado (modo desacoplado)",
+          "fr": "Bouton pressé (mode détaché)",
+          "it": "Pulsante premuto (modalità scollegata)",
+          "no": "Knapp trykket (frakoblet modus)",
+          "pl": "Przycisk naciśnięty (tryb odłączenia)",
+          "ru": "Кнопка нажата (режим отключения)",
+          "ko": "버튼 누름 (분리 모드)"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=ZBM5-1C-80"
+          }
+        ]
+      },
+      {
         "id": "ZBMINIR2:click",
         "title": {
           "en": "Single click",
@@ -5069,6 +5117,524 @@
         }
       },
       "settings": []
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "large": "/drivers/ZBM5-1C-120/assets/images/large.png",
+        "small": "/drivers/ZBM5-1C-120/assets/images/small.png"
+      },
+      "id": "ZBM5-1C-120",
+      "name": {
+        "en": "ZBM5-1C-120 Wall Switch",
+        "sv": "ZBM5-1C-120 Väggbrytare",
+        "nl": "ZBM5-1C-120 Wandschakelaar",
+        "da": "ZBM5-1C-120 Vægkontakt",
+        "de": "ZBM5-1C-120 Wandschalter",
+        "es": "ZBM5-1C-120 Interruptor de pared",
+        "fr": "ZBM5-1C-120 Interrupteur mural",
+        "it": "ZBM5-1C-120 Interruttore a muro",
+        "no": "ZBM5-1C-120 Veggbryter",
+        "pl": "ZBM5-1C-120 Przełącznik ścienny",
+        "ru": "ZBM5-1C-120 Настенный выключатель",
+        "ko": "ZBM5-1C-120 벽 스위치"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "zigbee": {
+        "manufacturerName": [
+          "SONOFF"
+        ],
+        "productId": [
+          "ZBM5-1C-120"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              6,
+              64529
+            ],
+            "bindings": [
+              6
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/ZBM5-1C-120/assets/learn.svg",
+          "instruction": {
+            "en": "Press and hold the button for approx. 5-10 seconds until the blue LED blinks rapidly.",
+            "sv": "Tryck och håll knappen i cirka 5-10 sekunder tills den blå lysdioden blinkar snabbt.",
+            "nl": "Houd de knop ca. 5-10 seconden ingedrukt totdat de blauwe LED snel knippert.",
+            "da": "Tryk og hold knappen i ca. 5-10 sekunder, indtil den blå LED blinker hurtigt.",
+            "de": "Halten Sie die Taste ca. 5-10 Sekunden gedrückt, bis die blaue LED schnell blinkt.",
+            "es": "Mantenga presionado el botón durante aprox. 5-10 segundos hasta que el LED azul parpadee rápidamente.",
+            "fr": "Maintenez le bouton enfoncé pendant environ 5-10 secondes jusqu'à ce que la LED bleue clignote rapidement.",
+            "it": "Tenere premuto il pulsante per circa 5-10 secondi fino a quando il LED blu lampeggia rapidamente.",
+            "no": "Trykk og hold knappen i ca. 5-10 sekunder til den blå LED-en blinker raskt.",
+            "pl": "Naciśnij i przytrzymaj przycisk przez ok. 5-10 sekund, aż niebieska dioda LED zacznie szybko migać.",
+            "ru": "Нажмите и удерживайте кнопку примерно 5-10 секунд, пока синий светодиод не начнет быстро мигать.",
+            "ko": "파란 LED가 빠르게 깜박일 때까지 버튼을 약 5-10초 동안 길게 누르세요."
+          }
+        }
+      },
+      "settings": [
+        {
+          "id": "network_led",
+          "type": "checkbox",
+          "value": true,
+          "label": {
+            "en": "Network LED",
+            "sv": "Nätverks-LED",
+            "nl": "Netwerk-LED",
+            "da": "Netværks-LED",
+            "de": "Netzwerk-LED",
+            "es": "LED de red",
+            "fr": "LED réseau",
+            "it": "LED di rete",
+            "no": "Nettverks-LED",
+            "pl": "Dioda sieci",
+            "ru": "Индикатор сети",
+            "ko": "네트워크 LED"
+          },
+          "hint": {
+            "en": "Show blue network status LED.",
+            "sv": "Visa blå nätverksstatus-LED.",
+            "nl": "Toon blauwe netwerk status-LED.",
+            "da": "Vis blå netværksstatus-LED.",
+            "de": "Blaue Netzwerkstatus-LED anzeigen.",
+            "es": "Mostrar LED azul de estado de red.",
+            "fr": "Afficher la LED bleue d'état du réseau.",
+            "it": "Mostra il LED blu di stato della rete.",
+            "no": "Vis blå nettverksstatus-LED.",
+            "pl": "Pokaż niebieską diodę stanu sieci.",
+            "ru": "Показывать синий индикатор состояния сети.",
+            "ko": "파란색 네트워크 상태 LED를 표시합니다."
+          }
+        },
+        {
+          "id": "detach_relay",
+          "type": "checkbox",
+          "value": false,
+          "label": {
+            "en": "Detach Relay",
+            "sv": "Koppla loss relä",
+            "nl": "Relais loskoppelen",
+            "da": "Frakobl relæ",
+            "de": "Relais entkoppeln",
+            "es": "Desacoplar relé",
+            "fr": "Détacher le relais",
+            "it": "Scollega relè",
+            "no": "Koble fra relé",
+            "pl": "Odłącz przekaźnik",
+            "ru": "Отключить реле",
+            "ko": "릴레이 분리"
+          },
+          "hint": {
+            "en": "Switch triggers scenes only. Useful for smart lights that should stay powered.",
+            "sv": "Brytaren utlöser bara scener. Användbart för smarta lampor som ska förbli strömsatta.",
+            "nl": "Schakelaar activeert alleen scenes. Handig voor slimme lampen die ingeschakeld moeten blijven.",
+            "da": "Kontakten udløser kun scener. Nyttigt til smarte lys, der skal forblive tændt.",
+            "de": "Schalter löst nur Szenen aus. Nützlich für smarte Lampen, die eingeschaltet bleiben sollen.",
+            "es": "El interruptor solo activa escenas. Útil para luces inteligentes que deben permanecer encendidas.",
+            "fr": "L'interrupteur déclenche uniquement des scènes. Utile pour les lumières connectées qui doivent rester alimentées.",
+            "it": "L'interruttore attiva solo scene. Utile per luci smart che devono rimanere alimentate.",
+            "no": "Bryteren utløser bare scener. Nyttig for smarte lys som skal holdes påslått.",
+            "pl": "Przełącznik uruchamia tylko sceny. Przydatne dla inteligentnych świateł, które powinny pozostać zasilane.",
+            "ru": "Выключатель запускает только сцены. Полезно для умных ламп, которые должны оставаться под питанием.",
+            "ko": "스위치는 씬만 실행합니다. 전원이 유지되어야 하는 스마트 조명에 유용합니다."
+          }
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Power-on Behavior",
+            "sv": "Beteende vid strömåterkomst",
+            "nl": "Gedrag bij inschakelen",
+            "da": "Opførsel ved tænding",
+            "de": "Einschaltverhalten",
+            "es": "Comportamiento al encender",
+            "fr": "Comportement à la mise sous tension",
+            "it": "Comportamento all'accensione",
+            "no": "Oppførsel ved strømtilkobling",
+            "pl": "Zachowanie po włączeniu",
+            "ru": "Поведение при включении",
+            "ko": "전원 켜기 동작"
+          },
+          "children": [
+            {
+              "id": "power_on_behavior",
+              "type": "dropdown",
+              "label": {
+                "en": "Power-on State",
+                "sv": "Tillstånd vid strömåterkomst",
+                "nl": "Status bij inschakelen",
+                "da": "Tilstand ved tænding",
+                "de": "Zustand beim Einschalten",
+                "es": "Estado al encender",
+                "fr": "État à la mise sous tension",
+                "it": "Stato all'accensione",
+                "no": "Tilstand ved strømtilkobling",
+                "pl": "Stan po włączeniu",
+                "ru": "Состояние при включении",
+                "ko": "전원 켜기 상태"
+              },
+              "hint": {
+                "en": "Relay state after power restore.",
+                "sv": "Relätillstånd efter strömåterkomst.",
+                "nl": "Relaisstatus na stroomherstel.",
+                "da": "Relætilstand efter strømgendannelse.",
+                "de": "Relaiszustand nach Stromwiederkehr.",
+                "es": "Estado del relé después de restaurar la energía.",
+                "fr": "État du relais après rétablissement de l'alimentation.",
+                "it": "Stato del relè dopo il ripristino dell'alimentazione.",
+                "no": "Relétilstand etter strømgjenoppretting.",
+                "pl": "Stan przekaźnika po przywróceniu zasilania.",
+                "ru": "Состояние реле после восстановления питания.",
+                "ko": "전원 복구 후 릴레이 상태."
+              },
+              "value": "off",
+              "values": [
+                {
+                  "id": "on",
+                  "label": {
+                    "en": "Turn On",
+                    "sv": "Slå på",
+                    "nl": "Inschakelen",
+                    "da": "Tænd",
+                    "de": "Einschalten",
+                    "es": "Encender",
+                    "fr": "Allumer",
+                    "it": "Accendi",
+                    "no": "Slå på",
+                    "pl": "Włącz",
+                    "ru": "Включить",
+                    "ko": "켜기"
+                  }
+                },
+                {
+                  "id": "off",
+                  "label": {
+                    "en": "Turn Off",
+                    "sv": "Stäng av",
+                    "nl": "Uitschakelen",
+                    "da": "Sluk",
+                    "de": "Ausschalten",
+                    "es": "Apagar",
+                    "fr": "Éteindre",
+                    "it": "Spegni",
+                    "no": "Slå av",
+                    "pl": "Wyłącz",
+                    "ru": "Выключить",
+                    "ko": "끄기"
+                  }
+                },
+                {
+                  "id": "toggle",
+                  "label": {
+                    "en": "Toggle",
+                    "sv": "Växla",
+                    "nl": "Schakelen",
+                    "da": "Skift",
+                    "de": "Umschalten",
+                    "es": "Conmutar",
+                    "fr": "Basculer",
+                    "it": "Commuta",
+                    "no": "Veksle",
+                    "pl": "Przełącz",
+                    "ru": "Переключить",
+                    "ko": "토글"
+                  }
+                },
+                {
+                  "id": "last_state",
+                  "label": {
+                    "en": "Last State",
+                    "sv": "Senaste tillstånd",
+                    "nl": "Laatste status",
+                    "da": "Sidste tilstand",
+                    "de": "Letzter Zustand",
+                    "es": "Último estado",
+                    "fr": "Dernier état",
+                    "it": "Ultimo stato",
+                    "no": "Siste tilstand",
+                    "pl": "Ostatni stan",
+                    "ru": "Последнее состояние",
+                    "ko": "마지막 상태"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "large": "/drivers/ZBM5-1C-80/assets/images/large.png",
+        "small": "/drivers/ZBM5-1C-80/assets/images/small.png"
+      },
+      "id": "ZBM5-1C-80",
+      "name": {
+        "en": "ZBM5-1C-80/86 Wall Switch",
+        "sv": "ZBM5-1C-80/86 Väggbrytare",
+        "nl": "ZBM5-1C-80/86 Wandschakelaar",
+        "da": "ZBM5-1C-80/86 Vægkontakt",
+        "de": "ZBM5-1C-80/86 Wandschalter",
+        "es": "ZBM5-1C-80/86 Interruptor de pared",
+        "fr": "ZBM5-1C-80/86 Interrupteur mural",
+        "it": "ZBM5-1C-80/86 Interruttore a muro",
+        "no": "ZBM5-1C-80/86 Veggbryter",
+        "pl": "ZBM5-1C-80/86 Przełącznik ścienny",
+        "ru": "ZBM5-1C-80/86 Настенный выключатель",
+        "ko": "ZBM5-1C-80/86 벽 스위치"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "zigbee": {
+        "manufacturerName": [
+          "SONOFF"
+        ],
+        "productId": [
+          "ZBM5-1C-80/86"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              6,
+              64529
+            ],
+            "bindings": [
+              6
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/ZBM5-1C-80/assets/learn.svg",
+          "instruction": {
+            "en": "Press and hold the button for approx. 5-10 seconds until the blue LED blinks rapidly.",
+            "sv": "Tryck och håll knappen i cirka 5-10 sekunder tills den blå lysdioden blinkar snabbt.",
+            "nl": "Houd de knop ca. 5-10 seconden ingedrukt totdat de blauwe LED snel knippert.",
+            "da": "Tryk og hold knappen i ca. 5-10 sekunder, indtil den blå LED blinker hurtigt.",
+            "de": "Halten Sie die Taste ca. 5-10 Sekunden gedrückt, bis die blaue LED schnell blinkt.",
+            "es": "Mantenga presionado el botón durante aprox. 5-10 segundos hasta que el LED azul parpadee rápidamente.",
+            "fr": "Maintenez le bouton enfoncé pendant environ 5-10 secondes jusqu'à ce que la LED bleue clignote rapidement.",
+            "it": "Tenere premuto il pulsante per circa 5-10 secondi fino a quando il LED blu lampeggia rapidamente.",
+            "no": "Trykk og hold knappen i ca. 5-10 sekunder til den blå LED-en blinker raskt.",
+            "pl": "Naciśnij i przytrzymaj przycisk przez ok. 5-10 sekund, aż niebieska dioda LED zacznie szybko migać.",
+            "ru": "Нажмите и удерживайте кнопку примерно 5-10 секунд, пока синий светодиод не начнет быстро мигать.",
+            "ko": "파란 LED가 빠르게 깜박일 때까지 버튼을 약 5-10초 동안 길게 누르세요."
+          }
+        }
+      },
+      "settings": [
+        {
+          "id": "network_led",
+          "type": "checkbox",
+          "value": true,
+          "label": {
+            "en": "Network LED",
+            "sv": "Nätverks-LED",
+            "nl": "Netwerk-LED",
+            "da": "Netværks-LED",
+            "de": "Netzwerk-LED",
+            "es": "LED de red",
+            "fr": "LED réseau",
+            "it": "LED di rete",
+            "no": "Nettverks-LED",
+            "pl": "Dioda sieci",
+            "ru": "Индикатор сети",
+            "ko": "네트워크 LED"
+          },
+          "hint": {
+            "en": "Show blue network status LED.",
+            "sv": "Visa blå nätverksstatus-LED.",
+            "nl": "Toon blauwe netwerk status-LED.",
+            "da": "Vis blå netværksstatus-LED.",
+            "de": "Blaue Netzwerkstatus-LED anzeigen.",
+            "es": "Mostrar LED azul de estado de red.",
+            "fr": "Afficher la LED bleue d'état du réseau.",
+            "it": "Mostra il LED blu di stato della rete.",
+            "no": "Vis blå nettverksstatus-LED.",
+            "pl": "Pokaż niebieską diodę stanu sieci.",
+            "ru": "Показывать синий индикатор состояния сети.",
+            "ko": "파란색 네트워크 상태 LED를 표시합니다."
+          }
+        },
+        {
+          "id": "detach_relay",
+          "type": "checkbox",
+          "value": false,
+          "label": {
+            "en": "Detach Relay",
+            "sv": "Koppla loss relä",
+            "nl": "Relais loskoppelen",
+            "da": "Frakobl relæ",
+            "de": "Relais entkoppeln",
+            "es": "Desacoplar relé",
+            "fr": "Détacher le relais",
+            "it": "Scollega relè",
+            "no": "Koble fra relé",
+            "pl": "Odłącz przekaźnik",
+            "ru": "Отключить реле",
+            "ko": "릴레이 분리"
+          },
+          "hint": {
+            "en": "Switch triggers scenes only. Useful for smart lights that should stay powered.",
+            "sv": "Brytaren utlöser bara scener. Användbart för smarta lampor som ska förbli strömsatta.",
+            "nl": "Schakelaar activeert alleen scenes. Handig voor slimme lampen die ingeschakeld moeten blijven.",
+            "da": "Kontakten udløser kun scener. Nyttigt til smarte lys, der skal forblive tændt.",
+            "de": "Schalter löst nur Szenen aus. Nützlich für smarte Lampen, die eingeschaltet bleiben sollen.",
+            "es": "El interruptor solo activa escenas. Útil para luces inteligentes que deben permanecer encendidas.",
+            "fr": "L'interrupteur déclenche uniquement des scènes. Utile pour les lumières connectées qui doivent rester alimentées.",
+            "it": "L'interruttore attiva solo scene. Utile per luci smart che devono rimanere alimentate.",
+            "no": "Bryteren utløser bare scener. Nyttig for smarte lys som skal holdes påslått.",
+            "pl": "Przełącznik uruchamia tylko sceny. Przydatne dla inteligentnych świateł, które powinny pozostać zasilane.",
+            "ru": "Выключатель запускает только сцены. Полезно для умных ламп, которые должны оставаться под питанием.",
+            "ko": "스위치는 씬만 실행합니다. 전원이 유지되어야 하는 스마트 조명에 유용합니다."
+          }
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Power-on Behavior",
+            "sv": "Beteende vid strömåterkomst",
+            "nl": "Gedrag bij inschakelen",
+            "da": "Opførsel ved tænding",
+            "de": "Einschaltverhalten",
+            "es": "Comportamiento al encender",
+            "fr": "Comportement à la mise sous tension",
+            "it": "Comportamento all'accensione",
+            "no": "Oppførsel ved strømtilkobling",
+            "pl": "Zachowanie po włączeniu",
+            "ru": "Поведение при включении",
+            "ko": "전원 켜기 동작"
+          },
+          "children": [
+            {
+              "id": "power_on_behavior",
+              "type": "dropdown",
+              "label": {
+                "en": "Power-on State",
+                "sv": "Tillstånd vid strömåterkomst",
+                "nl": "Status bij inschakelen",
+                "da": "Tilstand ved tænding",
+                "de": "Zustand beim Einschalten",
+                "es": "Estado al encender",
+                "fr": "État à la mise sous tension",
+                "it": "Stato all'accensione",
+                "no": "Tilstand ved strømtilkobling",
+                "pl": "Stan po włączeniu",
+                "ru": "Состояние при включении",
+                "ko": "전원 켜기 상태"
+              },
+              "hint": {
+                "en": "Relay state after power restore.",
+                "sv": "Relätillstånd efter strömåterkomst.",
+                "nl": "Relaisstatus na stroomherstel.",
+                "da": "Relætilstand efter strømgendannelse.",
+                "de": "Relaiszustand nach Stromwiederkehr.",
+                "es": "Estado del relé después de restaurar la energía.",
+                "fr": "État du relais après rétablissement de l'alimentation.",
+                "it": "Stato del relè dopo il ripristino dell'alimentazione.",
+                "no": "Relétilstand etter strømgjenoppretting.",
+                "pl": "Stan przekaźnika po przywróceniu zasilania.",
+                "ru": "Состояние реле после восстановления питания.",
+                "ko": "전원 복구 후 릴레이 상태."
+              },
+              "value": "off",
+              "values": [
+                {
+                  "id": "on",
+                  "label": {
+                    "en": "Turn On",
+                    "sv": "Slå på",
+                    "nl": "Inschakelen",
+                    "da": "Tænd",
+                    "de": "Einschalten",
+                    "es": "Encender",
+                    "fr": "Allumer",
+                    "it": "Accendi",
+                    "no": "Slå på",
+                    "pl": "Włącz",
+                    "ru": "Включить",
+                    "ko": "켜기"
+                  }
+                },
+                {
+                  "id": "off",
+                  "label": {
+                    "en": "Turn Off",
+                    "sv": "Stäng av",
+                    "nl": "Uitschakelen",
+                    "da": "Sluk",
+                    "de": "Ausschalten",
+                    "es": "Apagar",
+                    "fr": "Éteindre",
+                    "it": "Spegni",
+                    "no": "Slå av",
+                    "pl": "Wyłącz",
+                    "ru": "Выключить",
+                    "ko": "끄기"
+                  }
+                },
+                {
+                  "id": "toggle",
+                  "label": {
+                    "en": "Toggle",
+                    "sv": "Växla",
+                    "nl": "Schakelen",
+                    "da": "Skift",
+                    "de": "Umschalten",
+                    "es": "Conmutar",
+                    "fr": "Basculer",
+                    "it": "Commuta",
+                    "no": "Veksle",
+                    "pl": "Przełącz",
+                    "ru": "Переключить",
+                    "ko": "토글"
+                  }
+                },
+                {
+                  "id": "last_state",
+                  "label": {
+                    "en": "Last State",
+                    "sv": "Senaste tillstånd",
+                    "nl": "Laatste status",
+                    "da": "Sidste tilstand",
+                    "de": "Letzter Zustand",
+                    "es": "Último estado",
+                    "fr": "Dernier état",
+                    "it": "Ultimo stato",
+                    "no": "Siste tilstand",
+                    "pl": "Ostatni stan",
+                    "ru": "Последнее состояние",
+                    "ko": "마지막 상태"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "platforms": [

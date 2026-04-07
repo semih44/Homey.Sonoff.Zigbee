@@ -1,0 +1,59 @@
+{
+  "id": "SonoffZBM51C80",
+  "name": {
+    "en": "ZBM5-1C-80/86 Wall Switch",
+    "sv": "ZBM5-1C-80/86 Väggbrytare",
+    "nl": "ZBM5-1C-80/86 Wandschakelaar",
+    "da": "ZBM5-1C-80/86 Vægkontakt",
+    "de": "ZBM5-1C-80/86 Wandschalter",
+    "es": "ZBM5-1C-80/86 Interruptor de pared",
+    "fr": "ZBM5-1C-80/86 Interrupteur mural",
+    "it": "ZBM5-1C-80/86 Interruttore a muro",
+    "no": "ZBM5-1C-80/86 Veggbryter",
+    "pl": "ZBM5-1C-80/86 Przełącznik ścienny",
+    "ru": "ZBM5-1C-80/86 Настенный выключатель",
+    "ko": "ZBM5-1C-80/86 벽 스위치"
+  },
+  "class": "socket",
+  "capabilities": [
+    "onoff"
+  ],
+  "zigbee": {
+    "manufacturerName": [
+      "SONOFF"
+    ],
+    "productId": [
+      "ZBM5-1C-80/86"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0,
+          6,
+          64529
+        ],
+        "bindings": [
+          6
+        ]
+      }
+    },
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learn.svg",
+      "instruction": {
+        "en": "Press and hold the button for approx. 5-10 seconds until the blue LED blinks rapidly.",
+        "sv": "Tryck och håll knappen i cirka 5-10 sekunder tills den blå lysdioden blinkar snabbt.",
+        "nl": "Houd de knop ca. 5-10 seconden ingedrukt totdat de blauwe LED snel knippert.",
+        "da": "Tryk og hold knappen i ca. 5-10 sekunder, indtil den blå LED blinker hurtigt.",
+        "de": "Halten Sie die Taste ca. 5-10 Sekunden gedrückt, bis die blaue LED schnell blinkt.",
+        "es": "Mantenga presionado el botón durante aprox. 5-10 segundos hasta que el LED azul parpadee rápidamente.",
+        "fr": "Maintenez le bouton enfoncé pendant environ 5-10 secondes jusqu'à ce que la LED bleue clignote rapidement.",
+        "it": "Tenere premuto il pulsante per circa 5-10 secondi fino a quando il LED blu lampeggia rapidamente.",
+        "no": "Trykk og hold knappen i ca. 5-10 sekunder til den blå LED-en blinker raskt.",
+        "pl": "Naciśnij i przytrzymaj przycisk przez ok. 5-10 sekund, aż niebieska dioda LED zacznie szybko migać.",
+        "ru": "Нажмите и удерживайте кнопку примерно 5-10 секунд, пока синий светодиод не начнет быстро мигать.",
+        "ko": "파란 LED가 빠르게 깜박일 때까지 버튼을 약 5-10초 동안 길게 누르세요."
+      }
+    }
+  },
+  "$extends": ["defaults"]
+}

@@ -24,8 +24,10 @@ Sensors & Buttons:
 - Sonoff TRVZB      (Thermostatic radiator valve)
 
 Switches & Plugs:
-- Sonoff MINI-ZBDIM (Smart mini dimmer switch)
-- Sonoff ZBMINI    (In-wall switch module)
+- Sonoff MINI-ZBDIM  (Smart mini dimmer switch)
+- Sonoff ZBM5-1C-80  (1-channel wall switch, EU)
+- Sonoff ZBM5-1C-120 (1-channel wall switch, US)
+- Sonoff ZBMINI      (In-wall switch module)
 - Sonoff ZBMINI-L  (In-wall switch module, no neutral)
 - Sonoff ZBMINI-L2 (In-wall switch module, no neutral)
 - Sonoff ZBMINI-R2 (In-wall switch module with advanced features)

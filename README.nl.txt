@@ -25,6 +25,8 @@ Sensoren & Knoppen:
 
 Schakelaars & Stekkers:
 - Sonoff MINI-ZBDIM (Slimme mini dimmer)
+- Sonoff ZBM5-1C-80  (1-kanaals wandschakelaar, EU)
+- Sonoff ZBM5-1C-120 (1-kanaals wandschakelaar, US)
 - Sonoff ZBMINI    (Inbouw schakelmodule)
 - Sonoff ZBMINI-L  (Inbouw schakelmodule, zonder nuldraad)
 - Sonoff ZBMINI-L2 (Inbouw schakelmodule, zonder nuldraad)

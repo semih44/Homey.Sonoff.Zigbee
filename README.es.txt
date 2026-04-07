@@ -25,6 +25,8 @@ Sensores y botones:
 
 Interruptores y enchufes:
 - Sonoff MINI-ZBDIM (Mini regulador inteligente)
+- Sonoff ZBM5-1C-80  (Interruptor de pared de 1 canal, EU)
+- Sonoff ZBM5-1C-120 (Interruptor de pared de 1 canal, US)
 - Sonoff ZBMINI    (Módulo de interruptor empotrado)
 - Sonoff ZBMINI-L  (Módulo de interruptor empotrado, sin neutro)
 - Sonoff ZBMINI-L2 (Módulo de interruptor empotrado, sin neutro)

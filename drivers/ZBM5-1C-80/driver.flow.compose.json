@@ -1,0 +1,21 @@
+{
+  "triggers": [
+    {
+      "id": "SonoffZBM51C80:click",
+      "title": {
+        "en": "Button pressed (detach mode)",
+        "sv": "Knapp nedtryckt (frikopplingsläge)",
+        "nl": "Knop ingedrukt (ontkoppelmodus)",
+        "da": "Knap trykket (frakoblingstilstand)",
+        "de": "Taste gedrückt (Entkopplungsmodus)",
+        "es": "Botón presionado (modo desacoplado)",
+        "fr": "Bouton pressé (mode détaché)",
+        "it": "Pulsante premuto (modalità scollegata)",
+        "no": "Knapp trykket (frakoblet modus)",
+        "pl": "Przycisk naciśnięty (tryb odłączenia)",
+        "ru": "Кнопка нажата (режим отключения)",
+        "ko": "버튼 누름 (분리 모드)"
+      }
+    }
+  ]
+}

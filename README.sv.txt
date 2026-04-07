@@ -25,6 +25,8 @@ Sensorer & Knappar:
 
 Strömbrytare & Kontakter:
 - Sonoff MINI-ZBDIM (Smart minidimmer)
+- Sonoff ZBM5-1C-80  (1-kanals väggbrytare, EU)
+- Sonoff ZBM5-1C-120 (1-kanals väggbrytare, US)
 - Sonoff ZBMINI    (Inbyggd strömbrytarmodul)
 - Sonoff ZBMINI-L  (Inbyggd strömbrytarmodul, utan nolla)
 - Sonoff ZBMINI-L2 (Inbyggd strömbrytarmodul, utan nolla)

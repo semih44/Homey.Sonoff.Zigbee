@@ -25,6 +25,8 @@ Czujniki i przyciski:
 
 Przełączniki i gniazdka:
 - Sonoff MINI-ZBDIM (Inteligentny mini ściemniacz)
+- Sonoff ZBM5-1C-80  (1-kanałowy przełącznik ścienny, EU)
+- Sonoff ZBM5-1C-120 (1-kanałowy przełącznik ścienny, US)
 - Sonoff ZBMINI    (Moduł przełącznika podtynkowego)
 - Sonoff ZBMINI-L  (Moduł przełącznika podtynkowego, bez przewodu neutralnego)
 - Sonoff ZBMINI-L2 (Moduł przełącznika podtynkowego, bez przewodu neutralnego)
