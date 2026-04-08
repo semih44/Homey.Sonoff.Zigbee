@@ -25,8 +25,14 @@ Sensoren & Taster:
 
 Schalter & Steckdosen:
 - Sonoff MINI-ZBDIM  (Smarter Mini-Dimmer)
+- Sonoff MINI-ZB2GS  (Zweifach-Unterputzschalter)
+- Sonoff MINI-ZB2GS-L (Zweifach-Unterputzschalter, ohne Nullleiter)
 - Sonoff ZBM5-1C-80  (1-Kanal Wandschalter, EU)
 - Sonoff ZBM5-1C-120 (1-Kanal Wandschalter, US)
+- Sonoff ZBM5-2C-80  (2-Kanal Wandschalter, EU)
+- Sonoff ZBM5-2C-120 (2-Kanal Wandschalter, US)
+- Sonoff ZBM5-3C-80  (3-Kanal Wandschalter, EU)
+- Sonoff ZBM5-3C-120 (3-Kanal Wandschalter, US)
 - Sonoff ZBMINI      (Unterputz-Schaltmodul)
 - Sonoff ZBMINI-L  (Unterputz-Schaltmodul, ohne Nullleiter)
 - Sonoff ZBMINI-L2 (Unterputz-Schaltmodul, ohne Nullleiter)

@@ -25,8 +25,14 @@ Homey 앱이 Sonoff Zigbee 기기들을 지원합니다.
 
 스위치 및 플러그:
 - Sonoff MINI-ZBDIM (스마트 미니 디머)
+- Sonoff MINI-ZB2GS  (듀얼 인라인 스위치)
+- Sonoff MINI-ZB2GS-L (듀얼 인라인 스위치, 중성선 불필요)
 - Sonoff ZBM5-1C-80  (1채널 벽 스위치, EU)
 - Sonoff ZBM5-1C-120 (1채널 벽 스위치, US)
+- Sonoff ZBM5-2C-80  (2채널 벽 스위치, EU)
+- Sonoff ZBM5-2C-120 (2채널 벽 스위치, US)
+- Sonoff ZBM5-3C-80  (3채널 벽 스위치, EU)
+- Sonoff ZBM5-3C-120 (3채널 벽 스위치, US)
 - Sonoff ZBMINI    (벽내 스위치 모듈)
 - Sonoff ZBMINI-L  (벽내 스위치 모듈, 중성선 불필요)
 - Sonoff ZBMINI-L2 (벽내 스위치 모듈, 중성선 불필요)

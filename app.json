@@ -99,6 +99,102 @@
         "id": "sonoff_rf"
       },
       {
+        "id": "SonoffMINIZB2GS:toggle_l1",
+        "title": {
+          "en": "Channel 1 toggled (detach mode)",
+          "sv": "Kanal 1 växlad (frikopplingsläge)",
+          "nl": "Kanaal 1 geschakeld (ontkoppelmodus)",
+          "da": "Kanal 1 skiftet (frakoblingstilstand)",
+          "de": "Kanal 1 umgeschaltet (Entkopplungsmodus)",
+          "es": "Canal 1 conmutado (modo desacoplado)",
+          "fr": "Canal 1 basculé (mode détaché)",
+          "it": "Canale 1 commutato (modalità scollegata)",
+          "no": "Kanal 1 vekslet (frakoblet modus)",
+          "pl": "Kanał 1 przełączony (tryb odłączenia)",
+          "ru": "Канал 1 переключен (режим отключения)",
+          "ko": "채널 1 전환됨 (분리 모드)"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=MINI-ZB2GS"
+          }
+        ]
+      },
+      {
+        "id": "SonoffMINIZB2GS:toggle_l2",
+        "title": {
+          "en": "Channel 2 toggled (detach mode)",
+          "sv": "Kanal 2 växlad (frikopplingsläge)",
+          "nl": "Kanaal 2 geschakeld (ontkoppelmodus)",
+          "da": "Kanal 2 skiftet (frakoblingstilstand)",
+          "de": "Kanal 2 umgeschaltet (Entkopplungsmodus)",
+          "es": "Canal 2 conmutado (modo desacoplado)",
+          "fr": "Canal 2 basculé (mode détaché)",
+          "it": "Canale 2 commutato (modalità scollegata)",
+          "no": "Kanal 2 vekslet (frakoblet modus)",
+          "pl": "Kanał 2 przełączony (tryb odłączenia)",
+          "ru": "Канал 2 переключен (режим отключения)",
+          "ko": "채널 2 전환됨 (분리 모드)"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=MINI-ZB2GS"
+          }
+        ]
+      },
+      {
+        "id": "SonoffMINIZB2GSL:toggle_l1",
+        "title": {
+          "en": "Channel 1 toggled (detach mode)",
+          "sv": "Kanal 1 växlad (frikopplingsläge)",
+          "nl": "Kanaal 1 geschakeld (ontkoppelmodus)",
+          "da": "Kanal 1 skiftet (frakoblingstilstand)",
+          "de": "Kanal 1 umgeschaltet (Entkopplungsmodus)",
+          "es": "Canal 1 conmutado (modo desacoplado)",
+          "fr": "Canal 1 basculé (mode détaché)",
+          "it": "Canale 1 commutato (modalità scollegata)",
+          "no": "Kanal 1 vekslet (frakoblet modus)",
+          "pl": "Kanał 1 przełączony (tryb odłączenia)",
+          "ru": "Канал 1 переключен (режим отключения)",
+          "ko": "채널 1 전환됨 (분리 모드)"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=MINI-ZB2GS-L"
+          }
+        ]
+      },
+      {
+        "id": "SonoffMINIZB2GSL:toggle_l2",
+        "title": {
+          "en": "Channel 2 toggled (detach mode)",
+          "sv": "Kanal 2 växlad (frikopplingsläge)",
+          "nl": "Kanaal 2 geschakeld (ontkoppelmodus)",
+          "da": "Kanal 2 skiftet (frakoblingstilstand)",
+          "de": "Kanal 2 umgeschaltet (Entkopplungsmodus)",
+          "es": "Canal 2 conmutado (modo desacoplado)",
+          "fr": "Canal 2 basculé (mode détaché)",
+          "it": "Canale 2 commutato (modalità scollegata)",
+          "no": "Kanal 2 vekslet (frakoblet modus)",
+          "pl": "Kanał 2 przełączony (tryb odłączenia)",
+          "ru": "Канал 2 переключен (режим отключения)",
+          "ko": "채널 2 전환됨 (분리 모드)"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=MINI-ZB2GS-L"
+          }
+        ]
+      },
+      {
         "id": "on_receive",
         "title": {
           "en": "Receive RF",
@@ -699,6 +795,246 @@
         ]
       },
       {
+        "id": "SonoffZBM52C120:toggle_l1",
+        "title": {
+          "en": "Channel 1 toggled (detach mode)",
+          "sv": "Kanal 1 växlad (frikopplingsläge)",
+          "nl": "Kanaal 1 geschakeld (ontkoppelmodus)",
+          "da": "Kanal 1 skiftet (frakoblingstilstand)",
+          "de": "Kanal 1 umgeschaltet (Entkopplungsmodus)",
+          "es": "Canal 1 conmutado (modo desacoplado)",
+          "fr": "Canal 1 basculé (mode détaché)",
+          "it": "Canale 1 commutato (modalità scollegata)",
+          "no": "Kanal 1 vekslet (frakoblet modus)",
+          "pl": "Kanał 1 przełączony (tryb odłączenia)",
+          "ru": "Канал 1 переключен (режим отключения)",
+          "ko": "채널 1 전환됨 (분리 모드)"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=ZBM5-2C-120"
+          }
+        ]
+      },
+      {
+        "id": "SonoffZBM52C120:toggle_l2",
+        "title": {
+          "en": "Channel 2 toggled (detach mode)",
+          "sv": "Kanal 2 växlad (frikopplingsläge)",
+          "nl": "Kanaal 2 geschakeld (ontkoppelmodus)",
+          "da": "Kanal 2 skiftet (frakoblingstilstand)",
+          "de": "Kanal 2 umgeschaltet (Entkopplungsmodus)",
+          "es": "Canal 2 conmutado (modo desacoplado)",
+          "fr": "Canal 2 basculé (mode détaché)",
+          "it": "Canale 2 commutato (modalità scollegata)",
+          "no": "Kanal 2 vekslet (frakoblet modus)",
+          "pl": "Kanał 2 przełączony (tryb odłączenia)",
+          "ru": "Канал 2 переключен (режим отключения)",
+          "ko": "채널 2 전환됨 (분리 모드)"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=ZBM5-2C-120"
+          }
+        ]
+      },
+      {
+        "id": "SonoffZBM52C80:toggle_l1",
+        "title": {
+          "en": "Channel 1 toggled (detach mode)",
+          "sv": "Kanal 1 växlad (frikopplingsläge)",
+          "nl": "Kanaal 1 geschakeld (ontkoppelmodus)",
+          "da": "Kanal 1 skiftet (frakoblingstilstand)",
+          "de": "Kanal 1 umgeschaltet (Entkopplungsmodus)",
+          "es": "Canal 1 conmutado (modo desacoplado)",
+          "fr": "Canal 1 basculé (mode détaché)",
+          "it": "Canale 1 commutato (modalità scollegata)",
+          "no": "Kanal 1 vekslet (frakoblet modus)",
+          "pl": "Kanał 1 przełączony (tryb odłączenia)",
+          "ru": "Канал 1 переключен (режим отключения)",
+          "ko": "채널 1 전환됨 (분리 모드)"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=ZBM5-2C-80"
+          }
+        ]
+      },
+      {
+        "id": "SonoffZBM52C80:toggle_l2",
+        "title": {
+          "en": "Channel 2 toggled (detach mode)",
+          "sv": "Kanal 2 växlad (frikopplingsläge)",
+          "nl": "Kanaal 2 geschakeld (ontkoppelmodus)",
+          "da": "Kanal 2 skiftet (frakoblingstilstand)",
+          "de": "Kanal 2 umgeschaltet (Entkopplungsmodus)",
+          "es": "Canal 2 conmutado (modo desacoplado)",
+          "fr": "Canal 2 basculé (mode détaché)",
+          "it": "Canale 2 commutato (modalità scollegata)",
+          "no": "Kanal 2 vekslet (frakoblet modus)",
+          "pl": "Kanał 2 przełączony (tryb odłączenia)",
+          "ru": "Канал 2 переключен (режим отключения)",
+          "ko": "채널 2 전환됨 (분리 모드)"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=ZBM5-2C-80"
+          }
+        ]
+      },
+      {
+        "id": "SonoffZBM53C120:toggle_l1",
+        "title": {
+          "en": "Channel 1 toggled (detach mode)",
+          "sv": "Kanal 1 växlad (frikopplingsläge)",
+          "nl": "Kanaal 1 geschakeld (ontkoppelmodus)",
+          "da": "Kanal 1 skiftet (frakoblingstilstand)",
+          "de": "Kanal 1 umgeschaltet (Entkopplungsmodus)",
+          "es": "Canal 1 conmutado (modo desacoplado)",
+          "fr": "Canal 1 basculé (mode détaché)",
+          "it": "Canale 1 commutato (modalità scollegata)",
+          "no": "Kanal 1 vekslet (frakoblet modus)",
+          "pl": "Kanał 1 przełączony (tryb odłączenia)",
+          "ru": "Канал 1 переключен (режим отключения)",
+          "ko": "채널 1 전환됨 (분리 모드)"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=ZBM5-3C-120"
+          }
+        ]
+      },
+      {
+        "id": "SonoffZBM53C120:toggle_l2",
+        "title": {
+          "en": "Channel 2 toggled (detach mode)",
+          "sv": "Kanal 2 växlad (frikopplingsläge)",
+          "nl": "Kanaal 2 geschakeld (ontkoppelmodus)",
+          "da": "Kanal 2 skiftet (frakoblingstilstand)",
+          "de": "Kanal 2 umgeschaltet (Entkopplungsmodus)",
+          "es": "Canal 2 conmutado (modo desacoplado)",
+          "fr": "Canal 2 basculé (mode détaché)",
+          "it": "Canale 2 commutato (modalità scollegata)",
+          "no": "Kanal 2 vekslet (frakoblet modus)",
+          "pl": "Kanał 2 przełączony (tryb odłączenia)",
+          "ru": "Канал 2 переключен (режим отключения)",
+          "ko": "채널 2 전환됨 (분리 모드)"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=ZBM5-3C-120"
+          }
+        ]
+      },
+      {
+        "id": "SonoffZBM53C120:toggle_l3",
+        "title": {
+          "en": "Channel 3 toggled (detach mode)",
+          "sv": "Kanal 3 växlad (frikopplingsläge)",
+          "nl": "Kanaal 3 geschakeld (ontkoppelmodus)",
+          "da": "Kanal 3 skiftet (frakoblingstilstand)",
+          "de": "Kanal 3 umgeschaltet (Entkopplungsmodus)",
+          "es": "Canal 3 conmutado (modo desacoplado)",
+          "fr": "Canal 3 basculé (mode détaché)",
+          "it": "Canale 3 commutato (modalità scollegata)",
+          "no": "Kanal 3 vekslet (frakoblet modus)",
+          "pl": "Kanał 3 przełączony (tryb odłączenia)",
+          "ru": "Канал 3 переключен (режим отключения)",
+          "ko": "채널 3 전환됨 (분리 모드)"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=ZBM5-3C-120"
+          }
+        ]
+      },
+      {
+        "id": "SonoffZBM53C80:toggle_l1",
+        "title": {
+          "en": "Channel 1 toggled (detach mode)",
+          "sv": "Kanal 1 växlad (frikopplingsläge)",
+          "nl": "Kanaal 1 geschakeld (ontkoppelmodus)",
+          "da": "Kanal 1 skiftet (frakoblingstilstand)",
+          "de": "Kanal 1 umgeschaltet (Entkopplungsmodus)",
+          "es": "Canal 1 conmutado (modo desacoplado)",
+          "fr": "Canal 1 basculé (mode détaché)",
+          "it": "Canale 1 commutato (modalità scollegata)",
+          "no": "Kanal 1 vekslet (frakoblet modus)",
+          "pl": "Kanał 1 przełączony (tryb odłączenia)",
+          "ru": "Канал 1 переключен (режим отключения)",
+          "ko": "채널 1 전환됨 (분리 모드)"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=ZBM5-3C-80"
+          }
+        ]
+      },
+      {
+        "id": "SonoffZBM53C80:toggle_l2",
+        "title": {
+          "en": "Channel 2 toggled (detach mode)",
+          "sv": "Kanal 2 växlad (frikopplingsläge)",
+          "nl": "Kanaal 2 geschakeld (ontkoppelmodus)",
+          "da": "Kanal 2 skiftet (frakoblingstilstand)",
+          "de": "Kanal 2 umgeschaltet (Entkopplungsmodus)",
+          "es": "Canal 2 conmutado (modo desacoplado)",
+          "fr": "Canal 2 basculé (mode détaché)",
+          "it": "Canale 2 commutato (modalità scollegata)",
+          "no": "Kanal 2 vekslet (frakoblet modus)",
+          "pl": "Kanał 2 przełączony (tryb odłączenia)",
+          "ru": "Канал 2 переключен (режим отключения)",
+          "ko": "채널 2 전환됨 (분리 모드)"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=ZBM5-3C-80"
+          }
+        ]
+      },
+      {
+        "id": "SonoffZBM53C80:toggle_l3",
+        "title": {
+          "en": "Channel 3 toggled (detach mode)",
+          "sv": "Kanal 3 växlad (frikopplingsläge)",
+          "nl": "Kanaal 3 geschakeld (ontkoppelmodus)",
+          "da": "Kanal 3 skiftet (frakoblingstilstand)",
+          "de": "Kanal 3 umgeschaltet (Entkopplungsmodus)",
+          "es": "Canal 3 conmutado (modo desacoplado)",
+          "fr": "Canal 3 basculé (mode détaché)",
+          "it": "Canale 3 commutato (modalità scollegata)",
+          "no": "Kanal 3 vekslet (frakoblet modus)",
+          "pl": "Kanał 3 przełączony (tryb odłączenia)",
+          "ru": "Канал 3 переключен (режим отключения)",
+          "ko": "채널 3 전환됨 (분리 모드)"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=ZBM5-3C-80"
+          }
+        ]
+      },
+      {
         "id": "ZBMINIR2:click",
         "title": {
           "en": "Single click",
@@ -827,6 +1163,1068 @@
       },
       "id": "BASICZBR3",
       "settings": []
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "large": "/drivers/MINI-ZB2GS/assets/images/large.png",
+        "small": "/drivers/MINI-ZB2GS/assets/images/small.png"
+      },
+      "id": "MINI-ZB2GS",
+      "name": {
+        "en": "MINI-ZB2GS Dual Switch",
+        "sv": "MINI-ZB2GS Dubbelbrytare",
+        "nl": "MINI-ZB2GS Dubbelschakelaar",
+        "da": "MINI-ZB2GS Dobbelt kontakt",
+        "de": "MINI-ZB2GS Doppelschalter",
+        "es": "MINI-ZB2GS Interruptor doble",
+        "fr": "MINI-ZB2GS Double interrupteur",
+        "it": "MINI-ZB2GS Doppio interruttore",
+        "no": "MINI-ZB2GS Dobbeltbryter",
+        "pl": "MINI-ZB2GS Podwójny przełącznik",
+        "ru": "MINI-ZB2GS Двойной выключатель",
+        "ko": "MINI-ZB2GS 듀얼 스위치"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "onoff.channel_2"
+      ],
+      "capabilitiesOptions": {
+        "onoff": {
+          "title": {
+            "en": "Channel 1",
+            "sv": "Kanal 1",
+            "nl": "Kanaal 1",
+            "da": "Kanal 1",
+            "de": "Kanal 1",
+            "es": "Canal 1",
+            "fr": "Canal 1",
+            "it": "Canale 1",
+            "no": "Kanal 1",
+            "pl": "Kanał 1",
+            "ru": "Канал 1",
+            "ko": "채널 1"
+          }
+        },
+        "onoff.channel_2": {
+          "title": {
+            "en": "Channel 2",
+            "sv": "Kanal 2",
+            "nl": "Kanaal 2",
+            "da": "Kanal 2",
+            "de": "Kanal 2",
+            "es": "Canal 2",
+            "fr": "Canal 2",
+            "it": "Canale 2",
+            "no": "Kanal 2",
+            "pl": "Kanał 2",
+            "ru": "Канал 2",
+            "ko": "채널 2"
+          }
+        }
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "SONOFF"
+        ],
+        "productId": [
+          "MINI-ZB2GS"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              6,
+              64529
+            ],
+            "bindings": [
+              6
+            ]
+          },
+          "2": {
+            "clusters": [
+              6,
+              64529
+            ],
+            "bindings": [
+              6
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/MINI-ZB2GS/assets/learn.svg",
+          "instruction": {
+            "en": "Press the button for approx. 10 seconds until the green LED blinks rapidly.",
+            "sv": "Tryck på knappen i cirka 10 sekunder tills den gröna lysdioden blinkar snabbt.",
+            "nl": "Druk op de knop gedurende ca. 10 seconden totdat de groene LED snel knippert.",
+            "da": "Tryk på knappen i ca. 10 sekunder, indtil den grønne LED blinker hurtigt.",
+            "de": "Drücken Sie die Taste ca. 10 Sekunden lang, bis die grüne LED schnell blinkt.",
+            "es": "Presione el botón durante aprox. 10 segundos hasta que el LED verde parpadee rápidamente.",
+            "fr": "Appuyez sur le bouton pendant environ 10 secondes jusqu'à ce que la LED verte clignote rapidement.",
+            "it": "Premere il pulsante per circa 10 secondi fino a quando il LED verde lampeggia rapidamente.",
+            "no": "Trykk på knappen i ca. 10 sekunder til den grønne LED-en blinker raskt.",
+            "pl": "Naciśnij przycisk przez ok. 10 sekund, aż zielona dioda LED zacznie szybko migać.",
+            "ru": "Нажмите кнопку примерно на 10 секунд, пока зеленый светодиод не начнет быстро мигать.",
+            "ko": "녹색 LED가 빠르게 깜박일 때까지 약 10초 동안 버튼을 누르세요."
+          }
+        }
+      },
+      "settings": [
+        {
+          "id": "turbo_mode",
+          "type": "checkbox",
+          "value": false,
+          "label": {
+            "en": "Turbo Mode",
+            "sv": "Turboläge",
+            "nl": "Turbomodus",
+            "da": "Turbotilstand",
+            "de": "Turbomodus",
+            "es": "Modo turbo",
+            "fr": "Mode turbo",
+            "it": "Modalità turbo",
+            "no": "Turbomodus",
+            "pl": "Tryb turbo",
+            "ru": "Турборежим",
+            "ko": "터보 모드"
+          },
+          "hint": {
+            "en": "Improves Zigbee range for distant devices.",
+            "sv": "Förbättrar Zigbee-räckvidd för avlägsna enheter.",
+            "nl": "Verbetert het Zigbee-bereik voor apparaten op afstand.",
+            "da": "Forbedrer Zigbee-rækkevidden for fjerne enheder.",
+            "de": "Verbessert die Zigbee-Reichweite für entfernte Geräte.",
+            "es": "Mejora el alcance Zigbee para dispositivos lejanos.",
+            "fr": "Améliore la portée Zigbee pour les appareils éloignés.",
+            "it": "Migliora la portata Zigbee per dispositivi distanti.",
+            "no": "Forbedrer Zigbee-rekkevidden for enheter langt unna.",
+            "pl": "Poprawia zasięg Zigbee dla odległych urządzeń.",
+            "ru": "Увеличивает радиус действия Zigbee для удалённых устройств.",
+            "ko": "먼 장치에 대한 Zigbee 범위를 개선합니다."
+          }
+        },
+        {
+          "id": "network_led",
+          "type": "checkbox",
+          "value": true,
+          "label": {
+            "en": "Network LED",
+            "sv": "Nätverks-LED",
+            "nl": "Netwerk-LED",
+            "da": "Netværks-LED",
+            "de": "Netzwerk-LED",
+            "es": "LED de red",
+            "fr": "LED réseau",
+            "it": "LED di rete",
+            "no": "Nettverks-LED",
+            "pl": "Dioda sieci",
+            "ru": "Индикатор сети",
+            "ko": "네트워크 LED"
+          },
+          "hint": {
+            "en": "Show network status LED.",
+            "sv": "Visa nätverksstatus-LED.",
+            "nl": "Toon netwerk status-LED.",
+            "da": "Vis netværksstatus-LED.",
+            "de": "Netzwerkstatus-LED anzeigen.",
+            "es": "Mostrar LED de estado de red.",
+            "fr": "Afficher la LED d'état du réseau.",
+            "it": "Mostra il LED di stato della rete.",
+            "no": "Vis nettverksstatus-LED.",
+            "pl": "Pokaż diodę stanu sieci.",
+            "ru": "Показывать индикатор состояния сети.",
+            "ko": "네트워크 상태 LED를 표시합니다."
+          }
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Detach Relay",
+            "sv": "Koppla loss relä",
+            "nl": "Relais loskoppelen",
+            "da": "Frakobl relæ",
+            "de": "Relais entkoppeln",
+            "es": "Desacoplar relé",
+            "fr": "Détacher le relais",
+            "it": "Scollega relè",
+            "no": "Koble fra relé",
+            "pl": "Odłącz przekaźnik",
+            "ru": "Отключить реле",
+            "ko": "릴레이 분리"
+          },
+          "children": [
+            {
+              "id": "detach_relay_1",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Detach Channel 1",
+                "de": "Kanal 1 entkoppeln",
+                "nl": "Kanaal 1 loskoppelen",
+                "fr": "Détacher canal 1",
+                "sv": "Koppla loss kanal 1",
+                "da": "Frakobl kanal 1",
+                "es": "Desacoplar canal 1",
+                "it": "Scollega canale 1",
+                "no": "Koble fra kanal 1",
+                "pl": "Odłącz kanał 1",
+                "ru": "Отключить канал 1",
+                "ko": "채널 1 분리"
+              }
+            },
+            {
+              "id": "detach_relay_2",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Detach Channel 2",
+                "de": "Kanal 2 entkoppeln",
+                "nl": "Kanaal 2 loskoppelen",
+                "fr": "Détacher canal 2",
+                "sv": "Koppla loss kanal 2",
+                "da": "Frakobl kanal 2",
+                "es": "Desacoplar canal 2",
+                "it": "Scollega canale 2",
+                "no": "Koble fra kanal 2",
+                "pl": "Odłącz kanał 2",
+                "ru": "Отключить канал 2",
+                "ko": "채널 2 분리"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Power-on Behavior",
+            "sv": "Beteende vid strömåterkomst",
+            "nl": "Gedrag bij inschakelen",
+            "da": "Opførsel ved tænding",
+            "de": "Einschaltverhalten",
+            "es": "Comportamiento al encender",
+            "fr": "Comportement à la mise sous tension",
+            "it": "Comportamento all'accensione",
+            "no": "Oppførsel ved strømtilkobling",
+            "pl": "Zachowanie po włączeniu",
+            "ru": "Поведение при включении",
+            "ko": "전원 켜기 동작"
+          },
+          "children": [
+            {
+              "id": "power_on_behavior_l1",
+              "type": "dropdown",
+              "label": {
+                "en": "Channel 1",
+                "de": "Kanal 1",
+                "nl": "Kanaal 1",
+                "fr": "Canal 1",
+                "sv": "Kanal 1",
+                "da": "Kanal 1",
+                "es": "Canal 1",
+                "it": "Canale 1",
+                "no": "Kanal 1",
+                "pl": "Kanał 1",
+                "ru": "Канал 1",
+                "ko": "채널 1"
+              },
+              "value": "off",
+              "values": [
+                {
+                  "id": "on",
+                  "label": {
+                    "en": "Turn On",
+                    "de": "Einschalten"
+                  }
+                },
+                {
+                  "id": "off",
+                  "label": {
+                    "en": "Turn Off",
+                    "de": "Ausschalten"
+                  }
+                },
+                {
+                  "id": "toggle",
+                  "label": {
+                    "en": "Toggle",
+                    "de": "Umschalten"
+                  }
+                },
+                {
+                  "id": "last_state",
+                  "label": {
+                    "en": "Last State",
+                    "de": "Letzter Zustand"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "power_on_behavior_l2",
+              "type": "dropdown",
+              "label": {
+                "en": "Channel 2",
+                "de": "Kanal 2",
+                "nl": "Kanaal 2",
+                "fr": "Canal 2",
+                "sv": "Kanal 2",
+                "da": "Kanal 2",
+                "es": "Canal 2",
+                "it": "Canale 2",
+                "no": "Kanal 2",
+                "pl": "Kanał 2",
+                "ru": "Канал 2",
+                "ko": "채널 2"
+              },
+              "value": "off",
+              "values": [
+                {
+                  "id": "on",
+                  "label": {
+                    "en": "Turn On",
+                    "de": "Einschalten"
+                  }
+                },
+                {
+                  "id": "off",
+                  "label": {
+                    "en": "Turn Off",
+                    "de": "Ausschalten"
+                  }
+                },
+                {
+                  "id": "toggle",
+                  "label": {
+                    "en": "Toggle",
+                    "de": "Umschalten"
+                  }
+                },
+                {
+                  "id": "last_state",
+                  "label": {
+                    "en": "Last State",
+                    "de": "Letzter Zustand"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "External Trigger Mode",
+            "sv": "Externt triggerläge",
+            "nl": "Externe triggermodus",
+            "da": "Ekstern udløsertilstand",
+            "de": "Externer Auslösemodus",
+            "es": "Modo de activación externo",
+            "fr": "Mode de déclenchement externe",
+            "it": "Modalità trigger esterno",
+            "no": "Ekstern utløsermodus",
+            "pl": "Tryb wyzwalania zewnętrznego",
+            "ru": "Режим внешнего триггера",
+            "ko": "외부 트리거 모드"
+          },
+          "children": [
+            {
+              "id": "external_trigger_mode_l1",
+              "type": "dropdown",
+              "label": {
+                "en": "Channel 1",
+                "de": "Kanal 1",
+                "nl": "Kanaal 1",
+                "fr": "Canal 1",
+                "sv": "Kanal 1",
+                "da": "Kanal 1",
+                "es": "Canal 1",
+                "it": "Canale 1",
+                "no": "Kanal 1",
+                "pl": "Kanał 1",
+                "ru": "Канал 1",
+                "ko": "채널 1"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Edge"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Pulse"
+                  }
+                },
+                {
+                  "id": "2",
+                  "label": {
+                    "en": "Following (off)"
+                  }
+                },
+                {
+                  "id": "130",
+                  "label": {
+                    "en": "Following (on)"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "external_trigger_mode_l2",
+              "type": "dropdown",
+              "label": {
+                "en": "Channel 2",
+                "de": "Kanal 2",
+                "nl": "Kanaal 2",
+                "fr": "Canal 2",
+                "sv": "Kanal 2",
+                "da": "Kanal 2",
+                "es": "Canal 2",
+                "it": "Canale 2",
+                "no": "Kanal 2",
+                "pl": "Kanał 2",
+                "ru": "Канал 2",
+                "ko": "채널 2"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Edge"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Pulse"
+                  }
+                },
+                {
+                  "id": "2",
+                  "label": {
+                    "en": "Following (off)"
+                  }
+                },
+                {
+                  "id": "130",
+                  "label": {
+                    "en": "Following (on)"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Inching",
+            "sv": "Inching",
+            "nl": "Inching",
+            "da": "Inching",
+            "de": "Inching",
+            "es": "Inching",
+            "fr": "Inching",
+            "it": "Inching",
+            "no": "Inching",
+            "pl": "Inching",
+            "ru": "Инчинг",
+            "ko": "인칭"
+          },
+          "children": [
+            {
+              "id": "inching_enabled",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Enable Inching",
+                "de": "Inching aktivieren",
+                "nl": "Inching inschakelen",
+                "fr": "Activer l'inching",
+                "sv": "Aktivera inching",
+                "da": "Aktivér inching",
+                "es": "Activar inching",
+                "it": "Attiva inching",
+                "no": "Aktiver inching",
+                "pl": "Włącz inching",
+                "ru": "Включить инчинг",
+                "ko": "인칭 활성화"
+              }
+            },
+            {
+              "id": "inching_time",
+              "type": "number",
+              "label": {
+                "en": "Duration (s)",
+                "de": "Dauer (s)",
+                "nl": "Duur (s)",
+                "fr": "Durée (s)",
+                "sv": "Varaktighet (s)",
+                "da": "Varighed (s)",
+                "es": "Duración (s)",
+                "it": "Durata (s)",
+                "no": "Varighet (s)",
+                "pl": "Czas trwania (s)",
+                "ru": "Длительность (с)",
+                "ko": "지속 시간 (초)"
+              },
+              "value": 1,
+              "attr": {
+                "min": 0.5,
+                "max": 3599.5,
+                "step": 0.5
+              }
+            },
+            {
+              "id": "inching_mode",
+              "type": "dropdown",
+              "label": {
+                "en": "Inching Mode",
+                "de": "Inching-Modus",
+                "nl": "Inching-modus",
+                "fr": "Mode inching",
+                "sv": "Inching-läge",
+                "da": "Inching-tilstand",
+                "es": "Modo inching",
+                "it": "Modalità inching",
+                "no": "Inching-modus",
+                "pl": "Tryb inching",
+                "ru": "Режим инчинга",
+                "ko": "인칭 모드"
+              },
+              "value": "on",
+              "values": [
+                {
+                  "id": "on",
+                  "label": {
+                    "en": "On → Off"
+                  }
+                },
+                {
+                  "id": "off",
+                  "label": {
+                    "en": "Off → On"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "large": "/drivers/MINI-ZB2GS-L/assets/images/large.png",
+        "small": "/drivers/MINI-ZB2GS-L/assets/images/small.png"
+      },
+      "id": "MINI-ZB2GS-L",
+      "name": {
+        "en": "MINI-ZB2GS-L Dual Switch (No Neutral)",
+        "sv": "MINI-ZB2GS-L Dubbelbrytare (utan nolla)",
+        "nl": "MINI-ZB2GS-L Dubbelschakelaar (zonder nuldraad)",
+        "da": "MINI-ZB2GS-L Dobbelt kontakt (uden nulleder)",
+        "de": "MINI-ZB2GS-L Doppelschalter (ohne Nullleiter)",
+        "es": "MINI-ZB2GS-L Interruptor doble (sin neutro)",
+        "fr": "MINI-ZB2GS-L Double interrupteur (sans neutre)",
+        "it": "MINI-ZB2GS-L Doppio interruttore (senza neutro)",
+        "no": "MINI-ZB2GS-L Dobbeltbryter (uten nulleder)",
+        "pl": "MINI-ZB2GS-L Podwójny przełącznik (bez przewodu neutralnego)",
+        "ru": "MINI-ZB2GS-L Двойной выключатель (без нейтрали)",
+        "ko": "MINI-ZB2GS-L 듀얼 스위치 (중성선 불필요)"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "onoff.channel_2"
+      ],
+      "capabilitiesOptions": {
+        "onoff": {
+          "title": {
+            "en": "Channel 1",
+            "sv": "Kanal 1",
+            "nl": "Kanaal 1",
+            "da": "Kanal 1",
+            "de": "Kanal 1",
+            "es": "Canal 1",
+            "fr": "Canal 1",
+            "it": "Canale 1",
+            "no": "Kanal 1",
+            "pl": "Kanał 1",
+            "ru": "Канал 1",
+            "ko": "채널 1"
+          }
+        },
+        "onoff.channel_2": {
+          "title": {
+            "en": "Channel 2",
+            "sv": "Kanal 2",
+            "nl": "Kanaal 2",
+            "da": "Kanal 2",
+            "de": "Kanal 2",
+            "es": "Canal 2",
+            "fr": "Canal 2",
+            "it": "Canale 2",
+            "no": "Kanal 2",
+            "pl": "Kanał 2",
+            "ru": "Канал 2",
+            "ko": "채널 2"
+          }
+        }
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "SONOFF"
+        ],
+        "productId": [
+          "MINI-ZB2GS-L"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              6,
+              64529
+            ],
+            "bindings": [
+              6
+            ]
+          },
+          "2": {
+            "clusters": [
+              6,
+              64529
+            ],
+            "bindings": [
+              6
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/MINI-ZB2GS-L/assets/learn.svg",
+          "instruction": {
+            "en": "Press the button for approx. 10 seconds until the green LED blinks rapidly.",
+            "sv": "Tryck på knappen i cirka 10 sekunder tills den gröna lysdioden blinkar snabbt.",
+            "nl": "Druk op de knop gedurende ca. 10 seconden totdat de groene LED snel knippert.",
+            "da": "Tryk på knappen i ca. 10 sekunder, indtil den grønne LED blinker hurtigt.",
+            "de": "Drücken Sie die Taste ca. 10 Sekunden lang, bis die grüne LED schnell blinkt.",
+            "es": "Presione el botón durante aprox. 10 segundos hasta que el LED verde parpadee rápidamente.",
+            "fr": "Appuyez sur le bouton pendant environ 10 secondes jusqu'à ce que la LED verte clignote rapidement.",
+            "it": "Premere il pulsante per circa 10 secondi fino a quando il LED verde lampeggia rapidamente.",
+            "no": "Trykk på knappen i ca. 10 sekunder til den grønne LED-en blinker raskt.",
+            "pl": "Naciśnij przycisk przez ok. 10 sekund, aż zielona dioda LED zacznie szybko migać.",
+            "ru": "Нажмите кнопку примерно на 10 секунд, пока зеленый светодиод не начнет быстро мигать.",
+            "ko": "녹색 LED가 빠르게 깜박일 때까지 약 10초 동안 버튼을 누르세요."
+          }
+        }
+      },
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Detach Relay",
+            "sv": "Koppla loss relä",
+            "nl": "Relais loskoppelen",
+            "da": "Frakobl relæ",
+            "de": "Relais entkoppeln",
+            "es": "Desacoplar relé",
+            "fr": "Détacher le relais",
+            "it": "Scollega relè",
+            "no": "Koble fra relé",
+            "pl": "Odłącz przekaźnik",
+            "ru": "Отключить реле",
+            "ko": "릴레이 분리"
+          },
+          "children": [
+            {
+              "id": "detach_relay_1",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Detach Channel 1",
+                "de": "Kanal 1 entkoppeln",
+                "nl": "Kanaal 1 loskoppelen",
+                "fr": "Détacher canal 1",
+                "sv": "Koppla loss kanal 1",
+                "da": "Frakobl kanal 1",
+                "es": "Desacoplar canal 1",
+                "it": "Scollega canale 1",
+                "no": "Koble fra kanal 1",
+                "pl": "Odłącz kanał 1",
+                "ru": "Отключить канал 1",
+                "ko": "채널 1 분리"
+              }
+            },
+            {
+              "id": "detach_relay_2",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Detach Channel 2",
+                "de": "Kanal 2 entkoppeln",
+                "nl": "Kanaal 2 loskoppelen",
+                "fr": "Détacher canal 2",
+                "sv": "Koppla loss kanal 2",
+                "da": "Frakobl kanal 2",
+                "es": "Desacoplar canal 2",
+                "it": "Scollega canale 2",
+                "no": "Koble fra kanal 2",
+                "pl": "Odłącz kanał 2",
+                "ru": "Отключить канал 2",
+                "ko": "채널 2 분리"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Power-on Behavior",
+            "sv": "Beteende vid strömåterkomst",
+            "nl": "Gedrag bij inschakelen",
+            "da": "Opførsel ved tænding",
+            "de": "Einschaltverhalten",
+            "es": "Comportamiento al encender",
+            "fr": "Comportement à la mise sous tension",
+            "it": "Comportamento all'accensione",
+            "no": "Oppførsel ved strømtilkobling",
+            "pl": "Zachowanie po włączeniu",
+            "ru": "Поведение при включении",
+            "ko": "전원 켜기 동작"
+          },
+          "children": [
+            {
+              "id": "power_on_behavior_l1",
+              "type": "dropdown",
+              "label": {
+                "en": "Channel 1",
+                "de": "Kanal 1",
+                "nl": "Kanaal 1",
+                "fr": "Canal 1",
+                "sv": "Kanal 1",
+                "da": "Kanal 1",
+                "es": "Canal 1",
+                "it": "Canale 1",
+                "no": "Kanal 1",
+                "pl": "Kanał 1",
+                "ru": "Канал 1",
+                "ko": "채널 1"
+              },
+              "value": "off",
+              "values": [
+                {
+                  "id": "on",
+                  "label": {
+                    "en": "Turn On",
+                    "de": "Einschalten"
+                  }
+                },
+                {
+                  "id": "off",
+                  "label": {
+                    "en": "Turn Off",
+                    "de": "Ausschalten"
+                  }
+                },
+                {
+                  "id": "toggle",
+                  "label": {
+                    "en": "Toggle",
+                    "de": "Umschalten"
+                  }
+                },
+                {
+                  "id": "last_state",
+                  "label": {
+                    "en": "Last State",
+                    "de": "Letzter Zustand"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "power_on_behavior_l2",
+              "type": "dropdown",
+              "label": {
+                "en": "Channel 2",
+                "de": "Kanal 2",
+                "nl": "Kanaal 2",
+                "fr": "Canal 2",
+                "sv": "Kanal 2",
+                "da": "Kanal 2",
+                "es": "Canal 2",
+                "it": "Canale 2",
+                "no": "Kanal 2",
+                "pl": "Kanał 2",
+                "ru": "Канал 2",
+                "ko": "채널 2"
+              },
+              "value": "off",
+              "values": [
+                {
+                  "id": "on",
+                  "label": {
+                    "en": "Turn On",
+                    "de": "Einschalten"
+                  }
+                },
+                {
+                  "id": "off",
+                  "label": {
+                    "en": "Turn Off",
+                    "de": "Ausschalten"
+                  }
+                },
+                {
+                  "id": "toggle",
+                  "label": {
+                    "en": "Toggle",
+                    "de": "Umschalten"
+                  }
+                },
+                {
+                  "id": "last_state",
+                  "label": {
+                    "en": "Last State",
+                    "de": "Letzter Zustand"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "External Trigger Mode",
+            "sv": "Externt triggerläge",
+            "nl": "Externe triggermodus",
+            "da": "Ekstern udløsertilstand",
+            "de": "Externer Auslösemodus",
+            "es": "Modo de activación externo",
+            "fr": "Mode de déclenchement externe",
+            "it": "Modalità trigger esterno",
+            "no": "Ekstern utløsermodus",
+            "pl": "Tryb wyzwalania zewnętrznego",
+            "ru": "Режим внешнего триггера",
+            "ko": "외부 트리거 모드"
+          },
+          "children": [
+            {
+              "id": "external_trigger_mode_l1",
+              "type": "dropdown",
+              "label": {
+                "en": "Channel 1",
+                "de": "Kanal 1",
+                "nl": "Kanaal 1",
+                "fr": "Canal 1",
+                "sv": "Kanal 1",
+                "da": "Kanal 1",
+                "es": "Canal 1",
+                "it": "Canale 1",
+                "no": "Kanal 1",
+                "pl": "Kanał 1",
+                "ru": "Канал 1",
+                "ko": "채널 1"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Edge"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Pulse"
+                  }
+                },
+                {
+                  "id": "2",
+                  "label": {
+                    "en": "Following (off)"
+                  }
+                },
+                {
+                  "id": "130",
+                  "label": {
+                    "en": "Following (on)"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "external_trigger_mode_l2",
+              "type": "dropdown",
+              "label": {
+                "en": "Channel 2",
+                "de": "Kanal 2",
+                "nl": "Kanaal 2",
+                "fr": "Canal 2",
+                "sv": "Kanal 2",
+                "da": "Kanal 2",
+                "es": "Canal 2",
+                "it": "Canale 2",
+                "no": "Kanal 2",
+                "pl": "Kanał 2",
+                "ru": "Канал 2",
+                "ko": "채널 2"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Edge"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Pulse"
+                  }
+                },
+                {
+                  "id": "2",
+                  "label": {
+                    "en": "Following (off)"
+                  }
+                },
+                {
+                  "id": "130",
+                  "label": {
+                    "en": "Following (on)"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Delayed Power-on",
+            "sv": "Fördröjd strömåterkomst",
+            "nl": "Vertraagd inschakelen",
+            "da": "Forsinket tænding",
+            "de": "Verzögertes Einschalten",
+            "es": "Encendido retrasado",
+            "fr": "Mise sous tension différée",
+            "it": "Accensione ritardata",
+            "no": "Forsinket strømtilkobling",
+            "pl": "Opóźnione włączenie",
+            "ru": "Отложенное включение",
+            "ko": "지연 전원 켜기"
+          },
+          "children": [
+            {
+              "id": "delayed_power_on_state_l1",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Enable Channel 1",
+                "de": "Kanal 1 aktivieren",
+                "nl": "Kanaal 1 inschakelen",
+                "fr": "Activer canal 1",
+                "sv": "Aktivera kanal 1",
+                "da": "Aktivér kanal 1",
+                "es": "Activar canal 1",
+                "it": "Attiva canale 1",
+                "no": "Aktiver kanal 1",
+                "pl": "Włącz kanał 1",
+                "ru": "Включить канал 1",
+                "ko": "채널 1 활성화"
+              }
+            },
+            {
+              "id": "delayed_power_on_time_l1",
+              "type": "number",
+              "label": {
+                "en": "Delay Channel 1 (s)",
+                "de": "Verzögerung Kanal 1 (s)",
+                "nl": "Vertraging kanaal 1 (s)",
+                "fr": "Délai canal 1 (s)",
+                "sv": "Fördröjning kanal 1 (s)",
+                "da": "Forsinkelse kanal 1 (s)",
+                "es": "Retardo canal 1 (s)",
+                "it": "Ritardo canale 1 (s)",
+                "no": "Forsinkelse kanal 1 (s)",
+                "pl": "Opóźnienie kanał 1 (s)",
+                "ru": "Задержка канал 1 (с)",
+                "ko": "지연 채널 1 (초)"
+              },
+              "value": 2,
+              "attr": {
+                "min": 2,
+                "max": 60,
+                "step": 1
+              }
+            },
+            {
+              "id": "delayed_power_on_state_l2",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Enable Channel 2",
+                "de": "Kanal 2 aktivieren",
+                "nl": "Kanaal 2 inschakelen",
+                "fr": "Activer canal 2",
+                "sv": "Aktivera kanal 2",
+                "da": "Aktivér kanal 2",
+                "es": "Activar canal 2",
+                "it": "Attiva canale 2",
+                "no": "Aktiver kanal 2",
+                "pl": "Włącz kanał 2",
+                "ru": "Включить канал 2",
+                "ko": "채널 2 활성화"
+              }
+            },
+            {
+              "id": "delayed_power_on_time_l2",
+              "type": "number",
+              "label": {
+                "en": "Delay Channel 2 (s)",
+                "de": "Verzögerung Kanal 2 (s)",
+                "nl": "Vertraging kanaal 2 (s)",
+                "fr": "Délai canal 2 (s)",
+                "sv": "Fördröjning kanal 2 (s)",
+                "da": "Forsinkelse kanal 2 (s)",
+                "es": "Retardo canal 2 (s)",
+                "it": "Ritardo canale 2 (s)",
+                "no": "Forsinkelse kanal 2 (s)",
+                "pl": "Opóźnienie kanał 2 (s)",
+                "ru": "Задержка канал 2 (с)",
+                "ko": "지연 채널 2 (초)"
+              },
+              "value": 2,
+              "attr": {
+                "min": 2,
+                "max": 60,
+                "step": 1
+              }
+            }
+          ]
+        }
+      ]
     },
     {
       "platforms": [
@@ -5628,6 +7026,1482 @@
                     "pl": "Ostatni stan",
                     "ru": "Последнее состояние",
                     "ko": "마지막 상태"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "large": "/drivers/ZBM5-2C-120/assets/images/large.png",
+        "small": "/drivers/ZBM5-2C-120/assets/images/small.png"
+      },
+      "id": "ZBM5-2C-120",
+      "name": {
+        "en": "ZBM5-2C-120 Dual Wall Switch",
+        "sv": "ZBM5-2C-120 Dubbel väggbrytare",
+        "nl": "ZBM5-2C-120 Dubbele wandschakelaar",
+        "da": "ZBM5-2C-120 Dobbelt vægkontakt",
+        "de": "ZBM5-2C-120 Doppel-Wandschalter",
+        "es": "ZBM5-2C-120 Interruptor de pared doble",
+        "fr": "ZBM5-2C-120 Double interrupteur mural",
+        "it": "ZBM5-2C-120 Doppio interruttore a muro",
+        "no": "ZBM5-2C-120 Dobbel veggbryter",
+        "pl": "ZBM5-2C-120 Podwójny przełącznik ścienny",
+        "ru": "ZBM5-2C-120 Двойной настенный выключатель",
+        "ko": "ZBM5-2C-120 듀얼 벽 스위치"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "onoff.channel_2"
+      ],
+      "capabilitiesOptions": {
+        "onoff": {
+          "title": {
+            "en": "Channel 1",
+            "sv": "Kanal 1",
+            "nl": "Kanaal 1",
+            "da": "Kanal 1",
+            "de": "Kanal 1",
+            "es": "Canal 1",
+            "fr": "Canal 1",
+            "it": "Canale 1",
+            "no": "Kanal 1",
+            "pl": "Kanał 1",
+            "ru": "Канал 1",
+            "ko": "채널 1"
+          }
+        },
+        "onoff.channel_2": {
+          "title": {
+            "en": "Channel 2",
+            "sv": "Kanal 2",
+            "nl": "Kanaal 2",
+            "da": "Kanal 2",
+            "de": "Kanal 2",
+            "es": "Canal 2",
+            "fr": "Canal 2",
+            "it": "Canale 2",
+            "no": "Kanal 2",
+            "pl": "Kanał 2",
+            "ru": "Канал 2",
+            "ko": "채널 2"
+          }
+        }
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "SONOFF"
+        ],
+        "productId": [
+          "ZBM5-2C-120"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              6,
+              64529
+            ],
+            "bindings": [
+              6
+            ]
+          },
+          "2": {
+            "clusters": [
+              6,
+              64529
+            ],
+            "bindings": [
+              6
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/ZBM5-2C-120/assets/learn.svg",
+          "instruction": {
+            "en": "Press and hold button 1 for approx. 5-10 seconds until the blue LED blinks rapidly.",
+            "sv": "Tryck och håll knapp 1 i cirka 5-10 sekunder tills den blå lysdioden blinkar snabbt.",
+            "nl": "Houd knop 1 ca. 5-10 seconden ingedrukt totdat de blauwe LED snel knippert.",
+            "da": "Tryk og hold knap 1 i ca. 5-10 sekunder, indtil den blå LED blinker hurtigt.",
+            "de": "Halten Sie Taste 1 ca. 5-10 Sekunden gedrückt, bis die blaue LED schnell blinkt.",
+            "es": "Mantenga presionado el botón 1 durante aprox. 5-10 segundos hasta que el LED azul parpadee rápidamente.",
+            "fr": "Maintenez le bouton 1 enfoncé pendant environ 5-10 secondes jusqu'à ce que la LED bleue clignote rapidement.",
+            "it": "Tenere premuto il pulsante 1 per circa 5-10 secondi fino a quando il LED blu lampeggia rapidamente.",
+            "no": "Trykk og hold knapp 1 i ca. 5-10 sekunder til den blå LED-en blinker raskt.",
+            "pl": "Naciśnij i przytrzymaj przycisk 1 przez ok. 5-10 sekund, aż niebieska dioda LED zacznie szybko migać.",
+            "ru": "Нажмите и удерживайте кнопку 1 примерно 5-10 секунд, пока синий светодиод не начнет быстро мигать.",
+            "ko": "파란 LED가 빠르게 깜박일 때까지 버튼 1을 약 5-10초 동안 길게 누르세요."
+          }
+        }
+      },
+      "settings": [
+        {
+          "id": "network_led",
+          "type": "checkbox",
+          "value": true,
+          "label": {
+            "en": "Network LED",
+            "sv": "Nätverks-LED",
+            "nl": "Netwerk-LED",
+            "da": "Netværks-LED",
+            "de": "Netzwerk-LED",
+            "es": "LED de red",
+            "fr": "LED réseau",
+            "it": "LED di rete",
+            "no": "Nettverks-LED",
+            "pl": "Dioda sieci",
+            "ru": "Индикатор сети",
+            "ko": "네트워크 LED"
+          },
+          "hint": {
+            "en": "Show blue network status LED.",
+            "sv": "Visa blå nätverksstatus-LED.",
+            "nl": "Toon blauwe netwerk status-LED.",
+            "da": "Vis blå netværksstatus-LED.",
+            "de": "Blaue Netzwerkstatus-LED anzeigen.",
+            "es": "Mostrar LED azul de estado de red.",
+            "fr": "Afficher la LED bleue d'état du réseau.",
+            "it": "Mostra il LED blu di stato della rete.",
+            "no": "Vis blå nettverksstatus-LED.",
+            "pl": "Pokaż niebieską diodę stanu sieci.",
+            "ru": "Показывать синий индикатор состояния сети.",
+            "ko": "파란색 네트워크 상태 LED를 표시합니다."
+          }
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Detach Relay",
+            "sv": "Koppla loss relä",
+            "nl": "Relais loskoppelen",
+            "da": "Frakobl relæ",
+            "de": "Relais entkoppeln",
+            "es": "Desacoplar relé",
+            "fr": "Détacher le relais",
+            "it": "Scollega relè",
+            "no": "Koble fra relé",
+            "pl": "Odłącz przekaźnik",
+            "ru": "Отключить реле",
+            "ko": "릴레이 분리"
+          },
+          "children": [
+            {
+              "id": "detach_relay_1",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Detach Channel 1",
+                "de": "Kanal 1 entkoppeln",
+                "nl": "Kanaal 1 loskoppelen",
+                "fr": "Détacher canal 1",
+                "sv": "Koppla loss kanal 1",
+                "da": "Frakobl kanal 1",
+                "es": "Desacoplar canal 1",
+                "it": "Scollega canale 1",
+                "no": "Koble fra kanal 1",
+                "pl": "Odłącz kanał 1",
+                "ru": "Отключить канал 1",
+                "ko": "채널 1 분리"
+              }
+            },
+            {
+              "id": "detach_relay_2",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Detach Channel 2",
+                "de": "Kanal 2 entkoppeln",
+                "nl": "Kanaal 2 loskoppelen",
+                "fr": "Détacher canal 2",
+                "sv": "Koppla loss kanal 2",
+                "da": "Frakobl kanal 2",
+                "es": "Desacoplar canal 2",
+                "it": "Scollega canale 2",
+                "no": "Koble fra kanal 2",
+                "pl": "Odłącz kanał 2",
+                "ru": "Отключить канал 2",
+                "ko": "채널 2 분리"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Power-on Behavior",
+            "sv": "Beteende vid strömåterkomst",
+            "nl": "Gedrag bij inschakelen",
+            "da": "Opførsel ved tænding",
+            "de": "Einschaltverhalten",
+            "es": "Comportamiento al encender",
+            "fr": "Comportement à la mise sous tension",
+            "it": "Comportamento all'accensione",
+            "no": "Oppførsel ved strømtilkobling",
+            "pl": "Zachowanie po włączeniu",
+            "ru": "Поведение при включении",
+            "ko": "전원 켜기 동작"
+          },
+          "children": [
+            {
+              "id": "power_on_behavior_l1",
+              "type": "dropdown",
+              "label": {
+                "en": "Channel 1",
+                "de": "Kanal 1",
+                "nl": "Kanaal 1",
+                "fr": "Canal 1",
+                "sv": "Kanal 1",
+                "da": "Kanal 1",
+                "es": "Canal 1",
+                "it": "Canale 1",
+                "no": "Kanal 1",
+                "pl": "Kanał 1",
+                "ru": "Канал 1",
+                "ko": "채널 1"
+              },
+              "value": "off",
+              "values": [
+                {
+                  "id": "on",
+                  "label": {
+                    "en": "Turn On",
+                    "de": "Einschalten"
+                  }
+                },
+                {
+                  "id": "off",
+                  "label": {
+                    "en": "Turn Off",
+                    "de": "Ausschalten"
+                  }
+                },
+                {
+                  "id": "toggle",
+                  "label": {
+                    "en": "Toggle",
+                    "de": "Umschalten"
+                  }
+                },
+                {
+                  "id": "last_state",
+                  "label": {
+                    "en": "Last State",
+                    "de": "Letzter Zustand"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "power_on_behavior_l2",
+              "type": "dropdown",
+              "label": {
+                "en": "Channel 2",
+                "de": "Kanal 2",
+                "nl": "Kanaal 2",
+                "fr": "Canal 2",
+                "sv": "Kanal 2",
+                "da": "Kanal 2",
+                "es": "Canal 2",
+                "it": "Canale 2",
+                "no": "Kanal 2",
+                "pl": "Kanał 2",
+                "ru": "Канал 2",
+                "ko": "채널 2"
+              },
+              "value": "off",
+              "values": [
+                {
+                  "id": "on",
+                  "label": {
+                    "en": "Turn On",
+                    "de": "Einschalten"
+                  }
+                },
+                {
+                  "id": "off",
+                  "label": {
+                    "en": "Turn Off",
+                    "de": "Ausschalten"
+                  }
+                },
+                {
+                  "id": "toggle",
+                  "label": {
+                    "en": "Toggle",
+                    "de": "Umschalten"
+                  }
+                },
+                {
+                  "id": "last_state",
+                  "label": {
+                    "en": "Last State",
+                    "de": "Letzter Zustand"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "large": "/drivers/ZBM5-2C-80/assets/images/large.png",
+        "small": "/drivers/ZBM5-2C-80/assets/images/small.png"
+      },
+      "id": "ZBM5-2C-80",
+      "name": {
+        "en": "ZBM5-2C-80/86 Dual Wall Switch",
+        "sv": "ZBM5-2C-80/86 Dubbel väggbrytare",
+        "nl": "ZBM5-2C-80/86 Dubbele wandschakelaar",
+        "da": "ZBM5-2C-80/86 Dobbelt vægkontakt",
+        "de": "ZBM5-2C-80/86 Doppel-Wandschalter",
+        "es": "ZBM5-2C-80/86 Interruptor de pared doble",
+        "fr": "ZBM5-2C-80/86 Double interrupteur mural",
+        "it": "ZBM5-2C-80/86 Doppio interruttore a muro",
+        "no": "ZBM5-2C-80/86 Dobbel veggbryter",
+        "pl": "ZBM5-2C-80/86 Podwójny przełącznik ścienny",
+        "ru": "ZBM5-2C-80/86 Двойной настенный выключатель",
+        "ko": "ZBM5-2C-80/86 듀얼 벽 스위치"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "onoff.channel_2"
+      ],
+      "capabilitiesOptions": {
+        "onoff": {
+          "title": {
+            "en": "Channel 1",
+            "sv": "Kanal 1",
+            "nl": "Kanaal 1",
+            "da": "Kanal 1",
+            "de": "Kanal 1",
+            "es": "Canal 1",
+            "fr": "Canal 1",
+            "it": "Canale 1",
+            "no": "Kanal 1",
+            "pl": "Kanał 1",
+            "ru": "Канал 1",
+            "ko": "채널 1"
+          }
+        },
+        "onoff.channel_2": {
+          "title": {
+            "en": "Channel 2",
+            "sv": "Kanal 2",
+            "nl": "Kanaal 2",
+            "da": "Kanal 2",
+            "de": "Kanal 2",
+            "es": "Canal 2",
+            "fr": "Canal 2",
+            "it": "Canale 2",
+            "no": "Kanal 2",
+            "pl": "Kanał 2",
+            "ru": "Канал 2",
+            "ko": "채널 2"
+          }
+        }
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "SONOFF"
+        ],
+        "productId": [
+          "ZBM5-2C-80/86"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              6,
+              64529
+            ],
+            "bindings": [
+              6
+            ]
+          },
+          "2": {
+            "clusters": [
+              6,
+              64529
+            ],
+            "bindings": [
+              6
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/ZBM5-2C-80/assets/learn.svg",
+          "instruction": {
+            "en": "Press and hold button 1 for approx. 5-10 seconds until the blue LED blinks rapidly.",
+            "sv": "Tryck och håll knapp 1 i cirka 5-10 sekunder tills den blå lysdioden blinkar snabbt.",
+            "nl": "Houd knop 1 ca. 5-10 seconden ingedrukt totdat de blauwe LED snel knippert.",
+            "da": "Tryk og hold knap 1 i ca. 5-10 sekunder, indtil den blå LED blinker hurtigt.",
+            "de": "Halten Sie Taste 1 ca. 5-10 Sekunden gedrückt, bis die blaue LED schnell blinkt.",
+            "es": "Mantenga presionado el botón 1 durante aprox. 5-10 segundos hasta que el LED azul parpadee rápidamente.",
+            "fr": "Maintenez le bouton 1 enfoncé pendant environ 5-10 secondes jusqu'à ce que la LED bleue clignote rapidement.",
+            "it": "Tenere premuto il pulsante 1 per circa 5-10 secondi fino a quando il LED blu lampeggia rapidamente.",
+            "no": "Trykk og hold knapp 1 i ca. 5-10 sekunder til den blå LED-en blinker raskt.",
+            "pl": "Naciśnij i przytrzymaj przycisk 1 przez ok. 5-10 sekund, aż niebieska dioda LED zacznie szybko migać.",
+            "ru": "Нажмите и удерживайте кнопку 1 примерно 5-10 секунд, пока синий светодиод не начнет быстро мигать.",
+            "ko": "파란 LED가 빠르게 깜박일 때까지 버튼 1을 약 5-10초 동안 길게 누르세요."
+          }
+        }
+      },
+      "settings": [
+        {
+          "id": "network_led",
+          "type": "checkbox",
+          "value": true,
+          "label": {
+            "en": "Network LED",
+            "sv": "Nätverks-LED",
+            "nl": "Netwerk-LED",
+            "da": "Netværks-LED",
+            "de": "Netzwerk-LED",
+            "es": "LED de red",
+            "fr": "LED réseau",
+            "it": "LED di rete",
+            "no": "Nettverks-LED",
+            "pl": "Dioda sieci",
+            "ru": "Индикатор сети",
+            "ko": "네트워크 LED"
+          },
+          "hint": {
+            "en": "Show blue network status LED.",
+            "sv": "Visa blå nätverksstatus-LED.",
+            "nl": "Toon blauwe netwerk status-LED.",
+            "da": "Vis blå netværksstatus-LED.",
+            "de": "Blaue Netzwerkstatus-LED anzeigen.",
+            "es": "Mostrar LED azul de estado de red.",
+            "fr": "Afficher la LED bleue d'état du réseau.",
+            "it": "Mostra il LED blu di stato della rete.",
+            "no": "Vis blå nettverksstatus-LED.",
+            "pl": "Pokaż niebieską diodę stanu sieci.",
+            "ru": "Показывать синий индикатор состояния сети.",
+            "ko": "파란색 네트워크 상태 LED를 표시합니다."
+          }
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Detach Relay",
+            "sv": "Koppla loss relä",
+            "nl": "Relais loskoppelen",
+            "da": "Frakobl relæ",
+            "de": "Relais entkoppeln",
+            "es": "Desacoplar relé",
+            "fr": "Détacher le relais",
+            "it": "Scollega relè",
+            "no": "Koble fra relé",
+            "pl": "Odłącz przekaźnik",
+            "ru": "Отключить реле",
+            "ko": "릴레이 분리"
+          },
+          "children": [
+            {
+              "id": "detach_relay_1",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Detach Channel 1",
+                "de": "Kanal 1 entkoppeln",
+                "nl": "Kanaal 1 loskoppelen",
+                "fr": "Détacher canal 1",
+                "sv": "Koppla loss kanal 1",
+                "da": "Frakobl kanal 1",
+                "es": "Desacoplar canal 1",
+                "it": "Scollega canale 1",
+                "no": "Koble fra kanal 1",
+                "pl": "Odłącz kanał 1",
+                "ru": "Отключить канал 1",
+                "ko": "채널 1 분리"
+              }
+            },
+            {
+              "id": "detach_relay_2",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Detach Channel 2",
+                "de": "Kanal 2 entkoppeln",
+                "nl": "Kanaal 2 loskoppelen",
+                "fr": "Détacher canal 2",
+                "sv": "Koppla loss kanal 2",
+                "da": "Frakobl kanal 2",
+                "es": "Desacoplar canal 2",
+                "it": "Scollega canale 2",
+                "no": "Koble fra kanal 2",
+                "pl": "Odłącz kanał 2",
+                "ru": "Отключить канал 2",
+                "ko": "채널 2 분리"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Power-on Behavior",
+            "sv": "Beteende vid strömåterkomst",
+            "nl": "Gedrag bij inschakelen",
+            "da": "Opførsel ved tænding",
+            "de": "Einschaltverhalten",
+            "es": "Comportamiento al encender",
+            "fr": "Comportement à la mise sous tension",
+            "it": "Comportamento all'accensione",
+            "no": "Oppførsel ved strømtilkobling",
+            "pl": "Zachowanie po włączeniu",
+            "ru": "Поведение при включении",
+            "ko": "전원 켜기 동작"
+          },
+          "children": [
+            {
+              "id": "power_on_behavior_l1",
+              "type": "dropdown",
+              "label": {
+                "en": "Channel 1",
+                "de": "Kanal 1",
+                "nl": "Kanaal 1",
+                "fr": "Canal 1",
+                "sv": "Kanal 1",
+                "da": "Kanal 1",
+                "es": "Canal 1",
+                "it": "Canale 1",
+                "no": "Kanal 1",
+                "pl": "Kanał 1",
+                "ru": "Канал 1",
+                "ko": "채널 1"
+              },
+              "value": "off",
+              "values": [
+                {
+                  "id": "on",
+                  "label": {
+                    "en": "Turn On",
+                    "de": "Einschalten"
+                  }
+                },
+                {
+                  "id": "off",
+                  "label": {
+                    "en": "Turn Off",
+                    "de": "Ausschalten"
+                  }
+                },
+                {
+                  "id": "toggle",
+                  "label": {
+                    "en": "Toggle",
+                    "de": "Umschalten"
+                  }
+                },
+                {
+                  "id": "last_state",
+                  "label": {
+                    "en": "Last State",
+                    "de": "Letzter Zustand"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "power_on_behavior_l2",
+              "type": "dropdown",
+              "label": {
+                "en": "Channel 2",
+                "de": "Kanal 2",
+                "nl": "Kanaal 2",
+                "fr": "Canal 2",
+                "sv": "Kanal 2",
+                "da": "Kanal 2",
+                "es": "Canal 2",
+                "it": "Canale 2",
+                "no": "Kanal 2",
+                "pl": "Kanał 2",
+                "ru": "Канал 2",
+                "ko": "채널 2"
+              },
+              "value": "off",
+              "values": [
+                {
+                  "id": "on",
+                  "label": {
+                    "en": "Turn On",
+                    "de": "Einschalten"
+                  }
+                },
+                {
+                  "id": "off",
+                  "label": {
+                    "en": "Turn Off",
+                    "de": "Ausschalten"
+                  }
+                },
+                {
+                  "id": "toggle",
+                  "label": {
+                    "en": "Toggle",
+                    "de": "Umschalten"
+                  }
+                },
+                {
+                  "id": "last_state",
+                  "label": {
+                    "en": "Last State",
+                    "de": "Letzter Zustand"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "large": "/drivers/ZBM5-3C-120/assets/images/large.png",
+        "small": "/drivers/ZBM5-3C-120/assets/images/small.png"
+      },
+      "id": "ZBM5-3C-120",
+      "name": {
+        "en": "ZBM5-3C-120 Triple Wall Switch",
+        "sv": "ZBM5-3C-120 Trippel väggbrytare",
+        "nl": "ZBM5-3C-120 Drievoudige wandschakelaar",
+        "da": "ZBM5-3C-120 Tredobbelt vægkontakt",
+        "de": "ZBM5-3C-120 Dreifach-Wandschalter",
+        "es": "ZBM5-3C-120 Interruptor de pared triple",
+        "fr": "ZBM5-3C-120 Triple interrupteur mural",
+        "it": "ZBM5-3C-120 Triplo interruttore a muro",
+        "no": "ZBM5-3C-120 Trippel veggbryter",
+        "pl": "ZBM5-3C-120 Potrójny przełącznik ścienny",
+        "ru": "ZBM5-3C-120 Тройной настенный выключатель",
+        "ko": "ZBM5-3C-120 트리플 벽 스위치"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "onoff.channel_2",
+        "onoff.channel_3"
+      ],
+      "capabilitiesOptions": {
+        "onoff": {
+          "title": {
+            "en": "Channel 1",
+            "sv": "Kanal 1",
+            "nl": "Kanaal 1",
+            "da": "Kanal 1",
+            "de": "Kanal 1",
+            "es": "Canal 1",
+            "fr": "Canal 1",
+            "it": "Canale 1",
+            "no": "Kanal 1",
+            "pl": "Kanał 1",
+            "ru": "Канал 1",
+            "ko": "채널 1"
+          }
+        },
+        "onoff.channel_2": {
+          "title": {
+            "en": "Channel 2",
+            "sv": "Kanal 2",
+            "nl": "Kanaal 2",
+            "da": "Kanal 2",
+            "de": "Kanal 2",
+            "es": "Canal 2",
+            "fr": "Canal 2",
+            "it": "Canale 2",
+            "no": "Kanal 2",
+            "pl": "Kanał 2",
+            "ru": "Канал 2",
+            "ko": "채널 2"
+          }
+        },
+        "onoff.channel_3": {
+          "title": {
+            "en": "Channel 3",
+            "sv": "Kanal 3",
+            "nl": "Kanaal 3",
+            "da": "Kanal 3",
+            "de": "Kanal 3",
+            "es": "Canal 3",
+            "fr": "Canal 3",
+            "it": "Canale 3",
+            "no": "Kanal 3",
+            "pl": "Kanał 3",
+            "ru": "Канал 3",
+            "ko": "채널 3"
+          }
+        }
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "SONOFF"
+        ],
+        "productId": [
+          "ZBM5-3C-120"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              6,
+              64529
+            ],
+            "bindings": [
+              6
+            ]
+          },
+          "2": {
+            "clusters": [
+              6,
+              64529
+            ],
+            "bindings": [
+              6
+            ]
+          },
+          "3": {
+            "clusters": [
+              6,
+              64529
+            ],
+            "bindings": [
+              6
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/ZBM5-3C-120/assets/learn.svg",
+          "instruction": {
+            "en": "Press and hold button 1 for approx. 5-10 seconds until the blue LED blinks rapidly.",
+            "sv": "Tryck och håll knapp 1 i cirka 5-10 sekunder tills den blå lysdioden blinkar snabbt.",
+            "nl": "Houd knop 1 ca. 5-10 seconden ingedrukt totdat de blauwe LED snel knippert.",
+            "da": "Tryk og hold knap 1 i ca. 5-10 sekunder, indtil den blå LED blinker hurtigt.",
+            "de": "Halten Sie Taste 1 ca. 5-10 Sekunden gedrückt, bis die blaue LED schnell blinkt.",
+            "es": "Mantenga presionado el botón 1 durante aprox. 5-10 segundos hasta que el LED azul parpadee rápidamente.",
+            "fr": "Maintenez le bouton 1 enfoncé pendant environ 5-10 secondes jusqu'à ce que la LED bleue clignote rapidement.",
+            "it": "Tenere premuto il pulsante 1 per circa 5-10 secondi fino a quando il LED blu lampeggia rapidamente.",
+            "no": "Trykk og hold knapp 1 i ca. 5-10 sekunder til den blå LED-en blinker raskt.",
+            "pl": "Naciśnij i przytrzymaj przycisk 1 przez ok. 5-10 sekund, aż niebieska dioda LED zacznie szybko migać.",
+            "ru": "Нажмите и удерживайте кнопку 1 примерно 5-10 секунд, пока синий светодиод не начнет быстро мигать.",
+            "ko": "파란 LED가 빠르게 깜박일 때까지 버튼 1을 약 5-10초 동안 길게 누르세요."
+          }
+        }
+      },
+      "settings": [
+        {
+          "id": "network_led",
+          "type": "checkbox",
+          "value": true,
+          "label": {
+            "en": "Network LED",
+            "sv": "Nätverks-LED",
+            "nl": "Netwerk-LED",
+            "da": "Netværks-LED",
+            "de": "Netzwerk-LED",
+            "es": "LED de red",
+            "fr": "LED réseau",
+            "it": "LED di rete",
+            "no": "Nettverks-LED",
+            "pl": "Dioda sieci",
+            "ru": "Индикатор сети",
+            "ko": "네트워크 LED"
+          },
+          "hint": {
+            "en": "Show blue network status LED.",
+            "sv": "Visa blå nätverksstatus-LED.",
+            "nl": "Toon blauwe netwerk status-LED.",
+            "da": "Vis blå netværksstatus-LED.",
+            "de": "Blaue Netzwerkstatus-LED anzeigen.",
+            "es": "Mostrar LED azul de estado de red.",
+            "fr": "Afficher la LED bleue d'état du réseau.",
+            "it": "Mostra il LED blu di stato della rete.",
+            "no": "Vis blå nettverksstatus-LED.",
+            "pl": "Pokaż niebieską diodę stanu sieci.",
+            "ru": "Показывать синий индикатор состояния сети.",
+            "ko": "파란색 네트워크 상태 LED를 표시합니다."
+          }
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Detach Relay",
+            "sv": "Koppla loss relä",
+            "nl": "Relais loskoppelen",
+            "da": "Frakobl relæ",
+            "de": "Relais entkoppeln",
+            "es": "Desacoplar relé",
+            "fr": "Détacher le relais",
+            "it": "Scollega relè",
+            "no": "Koble fra relé",
+            "pl": "Odłącz przekaźnik",
+            "ru": "Отключить реле",
+            "ko": "릴레이 분리"
+          },
+          "children": [
+            {
+              "id": "detach_relay_1",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Detach Channel 1",
+                "de": "Kanal 1 entkoppeln",
+                "nl": "Kanaal 1 loskoppelen",
+                "fr": "Détacher canal 1",
+                "sv": "Koppla loss kanal 1",
+                "da": "Frakobl kanal 1",
+                "es": "Desacoplar canal 1",
+                "it": "Scollega canale 1",
+                "no": "Koble fra kanal 1",
+                "pl": "Odłącz kanał 1",
+                "ru": "Отключить канал 1",
+                "ko": "채널 1 분리"
+              }
+            },
+            {
+              "id": "detach_relay_2",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Detach Channel 2",
+                "de": "Kanal 2 entkoppeln",
+                "nl": "Kanaal 2 loskoppelen",
+                "fr": "Détacher canal 2",
+                "sv": "Koppla loss kanal 2",
+                "da": "Frakobl kanal 2",
+                "es": "Desacoplar canal 2",
+                "it": "Scollega canale 2",
+                "no": "Koble fra kanal 2",
+                "pl": "Odłącz kanał 2",
+                "ru": "Отключить канал 2",
+                "ko": "채널 2 분리"
+              }
+            },
+            {
+              "id": "detach_relay_3",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Detach Channel 3",
+                "de": "Kanal 3 entkoppeln",
+                "nl": "Kanaal 3 loskoppelen",
+                "fr": "Détacher canal 3",
+                "sv": "Koppla loss kanal 3",
+                "da": "Frakobl kanal 3",
+                "es": "Desacoplar canal 3",
+                "it": "Scollega canale 3",
+                "no": "Koble fra kanal 3",
+                "pl": "Odłącz kanał 3",
+                "ru": "Отключить канал 3",
+                "ko": "채널 3 분리"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Power-on Behavior",
+            "sv": "Beteende vid strömåterkomst",
+            "nl": "Gedrag bij inschakelen",
+            "da": "Opførsel ved tænding",
+            "de": "Einschaltverhalten",
+            "es": "Comportamiento al encender",
+            "fr": "Comportement à la mise sous tension",
+            "it": "Comportamento all'accensione",
+            "no": "Oppførsel ved strømtilkobling",
+            "pl": "Zachowanie po włączeniu",
+            "ru": "Поведение при включении",
+            "ko": "전원 켜기 동작"
+          },
+          "children": [
+            {
+              "id": "power_on_behavior_l1",
+              "type": "dropdown",
+              "label": {
+                "en": "Channel 1",
+                "de": "Kanal 1",
+                "nl": "Kanaal 1",
+                "fr": "Canal 1",
+                "sv": "Kanal 1",
+                "da": "Kanal 1",
+                "es": "Canal 1",
+                "it": "Canale 1",
+                "no": "Kanal 1",
+                "pl": "Kanał 1",
+                "ru": "Канал 1",
+                "ko": "채널 1"
+              },
+              "value": "off",
+              "values": [
+                {
+                  "id": "on",
+                  "label": {
+                    "en": "Turn On",
+                    "de": "Einschalten"
+                  }
+                },
+                {
+                  "id": "off",
+                  "label": {
+                    "en": "Turn Off",
+                    "de": "Ausschalten"
+                  }
+                },
+                {
+                  "id": "toggle",
+                  "label": {
+                    "en": "Toggle",
+                    "de": "Umschalten"
+                  }
+                },
+                {
+                  "id": "last_state",
+                  "label": {
+                    "en": "Last State",
+                    "de": "Letzter Zustand"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "power_on_behavior_l2",
+              "type": "dropdown",
+              "label": {
+                "en": "Channel 2",
+                "de": "Kanal 2",
+                "nl": "Kanaal 2",
+                "fr": "Canal 2",
+                "sv": "Kanal 2",
+                "da": "Kanal 2",
+                "es": "Canal 2",
+                "it": "Canale 2",
+                "no": "Kanal 2",
+                "pl": "Kanał 2",
+                "ru": "Канал 2",
+                "ko": "채널 2"
+              },
+              "value": "off",
+              "values": [
+                {
+                  "id": "on",
+                  "label": {
+                    "en": "Turn On",
+                    "de": "Einschalten"
+                  }
+                },
+                {
+                  "id": "off",
+                  "label": {
+                    "en": "Turn Off",
+                    "de": "Ausschalten"
+                  }
+                },
+                {
+                  "id": "toggle",
+                  "label": {
+                    "en": "Toggle",
+                    "de": "Umschalten"
+                  }
+                },
+                {
+                  "id": "last_state",
+                  "label": {
+                    "en": "Last State",
+                    "de": "Letzter Zustand"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "power_on_behavior_l3",
+              "type": "dropdown",
+              "label": {
+                "en": "Channel 3",
+                "de": "Kanal 3",
+                "nl": "Kanaal 3",
+                "fr": "Canal 3",
+                "sv": "Kanal 3",
+                "da": "Kanal 3",
+                "es": "Canal 3",
+                "it": "Canale 3",
+                "no": "Kanal 3",
+                "pl": "Kanał 3",
+                "ru": "Канал 3",
+                "ko": "채널 3"
+              },
+              "value": "off",
+              "values": [
+                {
+                  "id": "on",
+                  "label": {
+                    "en": "Turn On",
+                    "de": "Einschalten"
+                  }
+                },
+                {
+                  "id": "off",
+                  "label": {
+                    "en": "Turn Off",
+                    "de": "Ausschalten"
+                  }
+                },
+                {
+                  "id": "toggle",
+                  "label": {
+                    "en": "Toggle",
+                    "de": "Umschalten"
+                  }
+                },
+                {
+                  "id": "last_state",
+                  "label": {
+                    "en": "Last State",
+                    "de": "Letzter Zustand"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "large": "/drivers/ZBM5-3C-80/assets/images/large.png",
+        "small": "/drivers/ZBM5-3C-80/assets/images/small.png"
+      },
+      "id": "ZBM5-3C-80",
+      "name": {
+        "en": "ZBM5-3C-80/86 Triple Wall Switch",
+        "sv": "ZBM5-3C-80/86 Trippel väggbrytare",
+        "nl": "ZBM5-3C-80/86 Drievoudige wandschakelaar",
+        "da": "ZBM5-3C-80/86 Tredobbelt vægkontakt",
+        "de": "ZBM5-3C-80/86 Dreifach-Wandschalter",
+        "es": "ZBM5-3C-80/86 Interruptor de pared triple",
+        "fr": "ZBM5-3C-80/86 Triple interrupteur mural",
+        "it": "ZBM5-3C-80/86 Triplo interruttore a muro",
+        "no": "ZBM5-3C-80/86 Trippel veggbryter",
+        "pl": "ZBM5-3C-80/86 Potrójny przełącznik ścienny",
+        "ru": "ZBM5-3C-80/86 Тройной настенный выключатель",
+        "ko": "ZBM5-3C-80/86 트리플 벽 스위치"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "onoff.channel_2",
+        "onoff.channel_3"
+      ],
+      "capabilitiesOptions": {
+        "onoff": {
+          "title": {
+            "en": "Channel 1",
+            "sv": "Kanal 1",
+            "nl": "Kanaal 1",
+            "da": "Kanal 1",
+            "de": "Kanal 1",
+            "es": "Canal 1",
+            "fr": "Canal 1",
+            "it": "Canale 1",
+            "no": "Kanal 1",
+            "pl": "Kanał 1",
+            "ru": "Канал 1",
+            "ko": "채널 1"
+          }
+        },
+        "onoff.channel_2": {
+          "title": {
+            "en": "Channel 2",
+            "sv": "Kanal 2",
+            "nl": "Kanaal 2",
+            "da": "Kanal 2",
+            "de": "Kanal 2",
+            "es": "Canal 2",
+            "fr": "Canal 2",
+            "it": "Canale 2",
+            "no": "Kanal 2",
+            "pl": "Kanał 2",
+            "ru": "Канал 2",
+            "ko": "채널 2"
+          }
+        },
+        "onoff.channel_3": {
+          "title": {
+            "en": "Channel 3",
+            "sv": "Kanal 3",
+            "nl": "Kanaal 3",
+            "da": "Kanal 3",
+            "de": "Kanal 3",
+            "es": "Canal 3",
+            "fr": "Canal 3",
+            "it": "Canale 3",
+            "no": "Kanal 3",
+            "pl": "Kanał 3",
+            "ru": "Канал 3",
+            "ko": "채널 3"
+          }
+        }
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "SONOFF"
+        ],
+        "productId": [
+          "ZBM5-3C-80/86"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              6,
+              64529
+            ],
+            "bindings": [
+              6
+            ]
+          },
+          "2": {
+            "clusters": [
+              6,
+              64529
+            ],
+            "bindings": [
+              6
+            ]
+          },
+          "3": {
+            "clusters": [
+              6,
+              64529
+            ],
+            "bindings": [
+              6
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/ZBM5-3C-80/assets/learn.svg",
+          "instruction": {
+            "en": "Press and hold button 1 for approx. 5-10 seconds until the blue LED blinks rapidly.",
+            "sv": "Tryck och håll knapp 1 i cirka 5-10 sekunder tills den blå lysdioden blinkar snabbt.",
+            "nl": "Houd knop 1 ca. 5-10 seconden ingedrukt totdat de blauwe LED snel knippert.",
+            "da": "Tryk og hold knap 1 i ca. 5-10 sekunder, indtil den blå LED blinker hurtigt.",
+            "de": "Halten Sie Taste 1 ca. 5-10 Sekunden gedrückt, bis die blaue LED schnell blinkt.",
+            "es": "Mantenga presionado el botón 1 durante aprox. 5-10 segundos hasta que el LED azul parpadee rápidamente.",
+            "fr": "Maintenez le bouton 1 enfoncé pendant environ 5-10 secondes jusqu'à ce que la LED bleue clignote rapidement.",
+            "it": "Tenere premuto il pulsante 1 per circa 5-10 secondi fino a quando il LED blu lampeggia rapidamente.",
+            "no": "Trykk og hold knapp 1 i ca. 5-10 sekunder til den blå LED-en blinker raskt.",
+            "pl": "Naciśnij i przytrzymaj przycisk 1 przez ok. 5-10 sekund, aż niebieska dioda LED zacznie szybko migać.",
+            "ru": "Нажмите и удерживайте кнопку 1 примерно 5-10 секунд, пока синий светодиод не начнет быстро мигать.",
+            "ko": "파란 LED가 빠르게 깜박일 때까지 버튼 1을 약 5-10초 동안 길게 누르세요."
+          }
+        }
+      },
+      "settings": [
+        {
+          "id": "network_led",
+          "type": "checkbox",
+          "value": true,
+          "label": {
+            "en": "Network LED",
+            "sv": "Nätverks-LED",
+            "nl": "Netwerk-LED",
+            "da": "Netværks-LED",
+            "de": "Netzwerk-LED",
+            "es": "LED de red",
+            "fr": "LED réseau",
+            "it": "LED di rete",
+            "no": "Nettverks-LED",
+            "pl": "Dioda sieci",
+            "ru": "Индикатор сети",
+            "ko": "네트워크 LED"
+          },
+          "hint": {
+            "en": "Show blue network status LED.",
+            "sv": "Visa blå nätverksstatus-LED.",
+            "nl": "Toon blauwe netwerk status-LED.",
+            "da": "Vis blå netværksstatus-LED.",
+            "de": "Blaue Netzwerkstatus-LED anzeigen.",
+            "es": "Mostrar LED azul de estado de red.",
+            "fr": "Afficher la LED bleue d'état du réseau.",
+            "it": "Mostra il LED blu di stato della rete.",
+            "no": "Vis blå nettverksstatus-LED.",
+            "pl": "Pokaż niebieską diodę stanu sieci.",
+            "ru": "Показывать синий индикатор состояния сети.",
+            "ko": "파란색 네트워크 상태 LED를 표시합니다."
+          }
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Detach Relay",
+            "sv": "Koppla loss relä",
+            "nl": "Relais loskoppelen",
+            "da": "Frakobl relæ",
+            "de": "Relais entkoppeln",
+            "es": "Desacoplar relé",
+            "fr": "Détacher le relais",
+            "it": "Scollega relè",
+            "no": "Koble fra relé",
+            "pl": "Odłącz przekaźnik",
+            "ru": "Отключить реле",
+            "ko": "릴레이 분리"
+          },
+          "children": [
+            {
+              "id": "detach_relay_1",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Detach Channel 1",
+                "de": "Kanal 1 entkoppeln",
+                "nl": "Kanaal 1 loskoppelen",
+                "fr": "Détacher canal 1",
+                "sv": "Koppla loss kanal 1",
+                "da": "Frakobl kanal 1",
+                "es": "Desacoplar canal 1",
+                "it": "Scollega canale 1",
+                "no": "Koble fra kanal 1",
+                "pl": "Odłącz kanał 1",
+                "ru": "Отключить канал 1",
+                "ko": "채널 1 분리"
+              }
+            },
+            {
+              "id": "detach_relay_2",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Detach Channel 2",
+                "de": "Kanal 2 entkoppeln",
+                "nl": "Kanaal 2 loskoppelen",
+                "fr": "Détacher canal 2",
+                "sv": "Koppla loss kanal 2",
+                "da": "Frakobl kanal 2",
+                "es": "Desacoplar canal 2",
+                "it": "Scollega canale 2",
+                "no": "Koble fra kanal 2",
+                "pl": "Odłącz kanał 2",
+                "ru": "Отключить канал 2",
+                "ko": "채널 2 분리"
+              }
+            },
+            {
+              "id": "detach_relay_3",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Detach Channel 3",
+                "de": "Kanal 3 entkoppeln",
+                "nl": "Kanaal 3 loskoppelen",
+                "fr": "Détacher canal 3",
+                "sv": "Koppla loss kanal 3",
+                "da": "Frakobl kanal 3",
+                "es": "Desacoplar canal 3",
+                "it": "Scollega canale 3",
+                "no": "Koble fra kanal 3",
+                "pl": "Odłącz kanał 3",
+                "ru": "Отключить канал 3",
+                "ko": "채널 3 분리"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Power-on Behavior",
+            "sv": "Beteende vid strömåterkomst",
+            "nl": "Gedrag bij inschakelen",
+            "da": "Opførsel ved tænding",
+            "de": "Einschaltverhalten",
+            "es": "Comportamiento al encender",
+            "fr": "Comportement à la mise sous tension",
+            "it": "Comportamento all'accensione",
+            "no": "Oppførsel ved strømtilkobling",
+            "pl": "Zachowanie po włączeniu",
+            "ru": "Поведение при включении",
+            "ko": "전원 켜기 동작"
+          },
+          "children": [
+            {
+              "id": "power_on_behavior_l1",
+              "type": "dropdown",
+              "label": {
+                "en": "Channel 1",
+                "de": "Kanal 1",
+                "nl": "Kanaal 1",
+                "fr": "Canal 1",
+                "sv": "Kanal 1",
+                "da": "Kanal 1",
+                "es": "Canal 1",
+                "it": "Canale 1",
+                "no": "Kanal 1",
+                "pl": "Kanał 1",
+                "ru": "Канал 1",
+                "ko": "채널 1"
+              },
+              "value": "off",
+              "values": [
+                {
+                  "id": "on",
+                  "label": {
+                    "en": "Turn On",
+                    "de": "Einschalten"
+                  }
+                },
+                {
+                  "id": "off",
+                  "label": {
+                    "en": "Turn Off",
+                    "de": "Ausschalten"
+                  }
+                },
+                {
+                  "id": "toggle",
+                  "label": {
+                    "en": "Toggle",
+                    "de": "Umschalten"
+                  }
+                },
+                {
+                  "id": "last_state",
+                  "label": {
+                    "en": "Last State",
+                    "de": "Letzter Zustand"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "power_on_behavior_l2",
+              "type": "dropdown",
+              "label": {
+                "en": "Channel 2",
+                "de": "Kanal 2",
+                "nl": "Kanaal 2",
+                "fr": "Canal 2",
+                "sv": "Kanal 2",
+                "da": "Kanal 2",
+                "es": "Canal 2",
+                "it": "Canale 2",
+                "no": "Kanal 2",
+                "pl": "Kanał 2",
+                "ru": "Канал 2",
+                "ko": "채널 2"
+              },
+              "value": "off",
+              "values": [
+                {
+                  "id": "on",
+                  "label": {
+                    "en": "Turn On",
+                    "de": "Einschalten"
+                  }
+                },
+                {
+                  "id": "off",
+                  "label": {
+                    "en": "Turn Off",
+                    "de": "Ausschalten"
+                  }
+                },
+                {
+                  "id": "toggle",
+                  "label": {
+                    "en": "Toggle",
+                    "de": "Umschalten"
+                  }
+                },
+                {
+                  "id": "last_state",
+                  "label": {
+                    "en": "Last State",
+                    "de": "Letzter Zustand"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "power_on_behavior_l3",
+              "type": "dropdown",
+              "label": {
+                "en": "Channel 3",
+                "de": "Kanal 3",
+                "nl": "Kanaal 3",
+                "fr": "Canal 3",
+                "sv": "Kanal 3",
+                "da": "Kanal 3",
+                "es": "Canal 3",
+                "it": "Canale 3",
+                "no": "Kanal 3",
+                "pl": "Kanał 3",
+                "ru": "Канал 3",
+                "ko": "채널 3"
+              },
+              "value": "off",
+              "values": [
+                {
+                  "id": "on",
+                  "label": {
+                    "en": "Turn On",
+                    "de": "Einschalten"
+                  }
+                },
+                {
+                  "id": "off",
+                  "label": {
+                    "en": "Turn Off",
+                    "de": "Ausschalten"
+                  }
+                },
+                {
+                  "id": "toggle",
+                  "label": {
+                    "en": "Toggle",
+                    "de": "Umschalten"
+                  }
+                },
+                {
+                  "id": "last_state",
+                  "label": {
+                    "en": "Last State",
+                    "de": "Letzter Zustand"
                   }
                 }
               ]

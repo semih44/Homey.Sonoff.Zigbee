@@ -1,0 +1,103 @@
+{
+  "id": "SonoffMINIZB2GS",
+  "name": {
+    "en": "MINI-ZB2GS Dual Switch",
+    "sv": "MINI-ZB2GS Dubbelbrytare",
+    "nl": "MINI-ZB2GS Dubbelschakelaar",
+    "da": "MINI-ZB2GS Dobbelt kontakt",
+    "de": "MINI-ZB2GS Doppelschalter",
+    "es": "MINI-ZB2GS Interruptor doble",
+    "fr": "MINI-ZB2GS Double interrupteur",
+    "it": "MINI-ZB2GS Doppio interruttore",
+    "no": "MINI-ZB2GS Dobbeltbryter",
+    "pl": "MINI-ZB2GS Podwójny przełącznik",
+    "ru": "MINI-ZB2GS Двойной выключатель",
+    "ko": "MINI-ZB2GS 듀얼 스위치"
+  },
+  "class": "socket",
+  "capabilities": [
+    "onoff",
+    "onoff.channel_2"
+  ],
+  "capabilitiesOptions": {
+    "onoff": {
+      "title": {
+        "en": "Channel 1",
+        "sv": "Kanal 1",
+        "nl": "Kanaal 1",
+        "da": "Kanal 1",
+        "de": "Kanal 1",
+        "es": "Canal 1",
+        "fr": "Canal 1",
+        "it": "Canale 1",
+        "no": "Kanal 1",
+        "pl": "Kanał 1",
+        "ru": "Канал 1",
+        "ko": "채널 1"
+      }
+    },
+    "onoff.channel_2": {
+      "title": {
+        "en": "Channel 2",
+        "sv": "Kanal 2",
+        "nl": "Kanaal 2",
+        "da": "Kanal 2",
+        "de": "Kanal 2",
+        "es": "Canal 2",
+        "fr": "Canal 2",
+        "it": "Canale 2",
+        "no": "Kanal 2",
+        "pl": "Kanał 2",
+        "ru": "Канал 2",
+        "ko": "채널 2"
+      }
+    }
+  },
+  "zigbee": {
+    "manufacturerName": [
+      "SONOFF"
+    ],
+    "productId": [
+      "MINI-ZB2GS"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0,
+          6,
+          64529
+        ],
+        "bindings": [
+          6
+        ]
+      },
+      "2": {
+        "clusters": [
+          6,
+          64529
+        ],
+        "bindings": [
+          6
+        ]
+      }
+    },
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learn.svg",
+      "instruction": {
+        "en": "Press the button for approx. 10 seconds until the green LED blinks rapidly.",
+        "sv": "Tryck på knappen i cirka 10 sekunder tills den gröna lysdioden blinkar snabbt.",
+        "nl": "Druk op de knop gedurende ca. 10 seconden totdat de groene LED snel knippert.",
+        "da": "Tryk på knappen i ca. 10 sekunder, indtil den grønne LED blinker hurtigt.",
+        "de": "Drücken Sie die Taste ca. 10 Sekunden lang, bis die grüne LED schnell blinkt.",
+        "es": "Presione el botón durante aprox. 10 segundos hasta que el LED verde parpadee rápidamente.",
+        "fr": "Appuyez sur le bouton pendant environ 10 secondes jusqu'à ce que la LED verte clignote rapidement.",
+        "it": "Premere il pulsante per circa 10 secondi fino a quando il LED verde lampeggia rapidamente.",
+        "no": "Trykk på knappen i ca. 10 sekunder til den grønne LED-en blinker raskt.",
+        "pl": "Naciśnij przycisk przez ok. 10 sekund, aż zielona dioda LED zacznie szybko migać.",
+        "ru": "Нажмите кнопку примерно на 10 секунд, пока зеленый светодиод не начнет быстро мигать.",
+        "ko": "녹색 LED가 빠르게 깜박일 때까지 약 10초 동안 버튼을 누르세요."
+      }
+    }
+  },
+  "$extends": ["defaults"]
+}

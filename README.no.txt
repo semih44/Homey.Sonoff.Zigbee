@@ -25,8 +25,14 @@ Sensorer og knapper:
 
 Brytere og plugger:
 - Sonoff MINI-ZBDIM (Smart mini dimmer)
+- Sonoff MINI-ZB2GS  (Dobbel innfelt bryter)
+- Sonoff MINI-ZB2GS-L (Dobbel innfelt bryter, uten nøytral)
 - Sonoff ZBM5-1C-80  (1-kanals veggbryter, EU)
 - Sonoff ZBM5-1C-120 (1-kanals veggbryter, US)
+- Sonoff ZBM5-2C-80  (2-kanals veggbryter, EU)
+- Sonoff ZBM5-2C-120 (2-kanals veggbryter, US)
+- Sonoff ZBM5-3C-80  (3-kanals veggbryter, EU)
+- Sonoff ZBM5-3C-120 (3-kanals veggbryter, US)
 - Sonoff ZBMINI    (Innbygget brytermodul)
 - Sonoff ZBMINI-L  (Innbygget brytermodul, uten nøytral)
 - Sonoff ZBMINI-L2 (Innbygget brytermodul, uten nøytral)

@@ -1,0 +1,55 @@
+{
+  "triggers": [
+    {
+      "id": "SonoffZBM53C80:toggle_l1",
+      "title": {
+        "en": "Channel 1 toggled (detach mode)",
+        "sv": "Kanal 1 växlad (frikopplingsläge)",
+        "nl": "Kanaal 1 geschakeld (ontkoppelmodus)",
+        "da": "Kanal 1 skiftet (frakoblingstilstand)",
+        "de": "Kanal 1 umgeschaltet (Entkopplungsmodus)",
+        "es": "Canal 1 conmutado (modo desacoplado)",
+        "fr": "Canal 1 basculé (mode détaché)",
+        "it": "Canale 1 commutato (modalità scollegata)",
+        "no": "Kanal 1 vekslet (frakoblet modus)",
+        "pl": "Kanał 1 przełączony (tryb odłączenia)",
+        "ru": "Канал 1 переключен (режим отключения)",
+        "ko": "채널 1 전환됨 (분리 모드)"
+      }
+    },
+    {
+      "id": "SonoffZBM53C80:toggle_l2",
+      "title": {
+        "en": "Channel 2 toggled (detach mode)",
+        "sv": "Kanal 2 växlad (frikopplingsläge)",
+        "nl": "Kanaal 2 geschakeld (ontkoppelmodus)",
+        "da": "Kanal 2 skiftet (frakoblingstilstand)",
+        "de": "Kanal 2 umgeschaltet (Entkopplungsmodus)",
+        "es": "Canal 2 conmutado (modo desacoplado)",
+        "fr": "Canal 2 basculé (mode détaché)",
+        "it": "Canale 2 commutato (modalità scollegata)",
+        "no": "Kanal 2 vekslet (frakoblet modus)",
+        "pl": "Kanał 2 przełączony (tryb odłączenia)",
+        "ru": "Канал 2 переключен (режим отключения)",
+        "ko": "채널 2 전환됨 (분리 모드)"
+      }
+    },
+    {
+      "id": "SonoffZBM53C80:toggle_l3",
+      "title": {
+        "en": "Channel 3 toggled (detach mode)",
+        "sv": "Kanal 3 växlad (frikopplingsläge)",
+        "nl": "Kanaal 3 geschakeld (ontkoppelmodus)",
+        "da": "Kanal 3 skiftet (frakoblingstilstand)",
+        "de": "Kanal 3 umgeschaltet (Entkopplungsmodus)",
+        "es": "Canal 3 conmutado (modo desacoplado)",
+        "fr": "Canal 3 basculé (mode détaché)",
+        "it": "Canale 3 commutato (modalità scollegata)",
+        "no": "Kanal 3 vekslet (frakoblet modus)",
+        "pl": "Kanał 3 przełączony (tryb odłączenia)",
+        "ru": "Канал 3 переключен (режим отключения)",
+        "ko": "채널 3 전환됨 (분리 모드)"
+      }
+    }
+  ]
+}

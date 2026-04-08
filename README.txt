@@ -25,8 +25,14 @@ Sensors & Buttons:
 
 Switches & Plugs:
 - Sonoff MINI-ZBDIM  (Smart mini dimmer switch)
+- Sonoff MINI-ZB2GS  (Dual inline switch)
+- Sonoff MINI-ZB2GS-L (Dual inline switch, no neutral)
 - Sonoff ZBM5-1C-80  (1-channel wall switch, EU)
 - Sonoff ZBM5-1C-120 (1-channel wall switch, US)
+- Sonoff ZBM5-2C-80  (2-channel wall switch, EU)
+- Sonoff ZBM5-2C-120 (2-channel wall switch, US)
+- Sonoff ZBM5-3C-80  (3-channel wall switch, EU)
+- Sonoff ZBM5-3C-120 (3-channel wall switch, US)
 - Sonoff ZBMINI      (In-wall switch module)
 - Sonoff ZBMINI-L  (In-wall switch module, no neutral)
 - Sonoff ZBMINI-L2 (In-wall switch module, no neutral)

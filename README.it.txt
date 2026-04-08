@@ -25,8 +25,14 @@ Sensori e pulsanti:
 
 Interruttori e prese:
 - Sonoff MINI-ZBDIM (Mini dimmer intelligente)
+- Sonoff MINI-ZB2GS  (Doppio interruttore da incasso)
+- Sonoff MINI-ZB2GS-L (Doppio interruttore da incasso, senza neutro)
 - Sonoff ZBM5-1C-80  (Interruttore a muro 1 canale, EU)
 - Sonoff ZBM5-1C-120 (Interruttore a muro 1 canale, US)
+- Sonoff ZBM5-2C-80  (Interruttore a muro 2 canali, EU)
+- Sonoff ZBM5-2C-120 (Interruttore a muro 2 canali, US)
+- Sonoff ZBM5-3C-80  (Interruttore a muro 3 canali, EU)
+- Sonoff ZBM5-3C-120 (Interruttore a muro 3 canali, US)
 - Sonoff ZBMINI    (Modulo interruttore da incasso)
 - Sonoff ZBMINI-L  (Modulo interruttore da incasso, senza neutro)
 - Sonoff ZBMINI-L2 (Modulo interruttore da incasso, senza neutro)

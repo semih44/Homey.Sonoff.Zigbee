@@ -1,0 +1,102 @@
+{
+  "id": "SonoffZBM53C120",
+  "name": {
+    "en": "ZBM5-3C-120 Triple Wall Switch",
+    "sv": "ZBM5-3C-120 Trippel väggbrytare",
+    "nl": "ZBM5-3C-120 Drievoudige wandschakelaar",
+    "da": "ZBM5-3C-120 Tredobbelt vægkontakt",
+    "de": "ZBM5-3C-120 Dreifach-Wandschalter",
+    "es": "ZBM5-3C-120 Interruptor de pared triple",
+    "fr": "ZBM5-3C-120 Triple interrupteur mural",
+    "it": "ZBM5-3C-120 Triplo interruttore a muro",
+    "no": "ZBM5-3C-120 Trippel veggbryter",
+    "pl": "ZBM5-3C-120 Potrójny przełącznik ścienny",
+    "ru": "ZBM5-3C-120 Тройной настенный выключатель",
+    "ko": "ZBM5-3C-120 트리플 벽 스위치"
+  },
+  "class": "socket",
+  "capabilities": [
+    "onoff",
+    "onoff.channel_2",
+    "onoff.channel_3"
+  ],
+  "capabilitiesOptions": {
+    "onoff": {
+      "title": {
+        "en": "Channel 1", "sv": "Kanal 1", "nl": "Kanaal 1", "da": "Kanal 1",
+        "de": "Kanal 1", "es": "Canal 1", "fr": "Canal 1", "it": "Canale 1",
+        "no": "Kanal 1", "pl": "Kanał 1", "ru": "Канал 1", "ko": "채널 1"
+      }
+    },
+    "onoff.channel_2": {
+      "title": {
+        "en": "Channel 2", "sv": "Kanal 2", "nl": "Kanaal 2", "da": "Kanal 2",
+        "de": "Kanal 2", "es": "Canal 2", "fr": "Canal 2", "it": "Canale 2",
+        "no": "Kanal 2", "pl": "Kanał 2", "ru": "Канал 2", "ko": "채널 2"
+      }
+    },
+    "onoff.channel_3": {
+      "title": {
+        "en": "Channel 3", "sv": "Kanal 3", "nl": "Kanaal 3", "da": "Kanal 3",
+        "de": "Kanal 3", "es": "Canal 3", "fr": "Canal 3", "it": "Canale 3",
+        "no": "Kanal 3", "pl": "Kanał 3", "ru": "Канал 3", "ko": "채널 3"
+      }
+    }
+  },
+  "zigbee": {
+    "manufacturerName": [
+      "SONOFF"
+    ],
+    "productId": [
+      "ZBM5-3C-120"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0,
+          6,
+          64529
+        ],
+        "bindings": [
+          6
+        ]
+      },
+      "2": {
+        "clusters": [
+          6,
+          64529
+        ],
+        "bindings": [
+          6
+        ]
+      },
+      "3": {
+        "clusters": [
+          6,
+          64529
+        ],
+        "bindings": [
+          6
+        ]
+      }
+    },
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learn.svg",
+      "instruction": {
+        "en": "Press and hold button 1 for approx. 5-10 seconds until the blue LED blinks rapidly.",
+        "sv": "Tryck och håll knapp 1 i cirka 5-10 sekunder tills den blå lysdioden blinkar snabbt.",
+        "nl": "Houd knop 1 ca. 5-10 seconden ingedrukt totdat de blauwe LED snel knippert.",
+        "da": "Tryk og hold knap 1 i ca. 5-10 sekunder, indtil den blå LED blinker hurtigt.",
+        "de": "Halten Sie Taste 1 ca. 5-10 Sekunden gedrückt, bis die blaue LED schnell blinkt.",
+        "es": "Mantenga presionado el botón 1 durante aprox. 5-10 segundos hasta que el LED azul parpadee rápidamente.",
+        "fr": "Maintenez le bouton 1 enfoncé pendant environ 5-10 secondes jusqu'à ce que la LED bleue clignote rapidement.",
+        "it": "Tenere premuto il pulsante 1 per circa 5-10 secondi fino a quando il LED blu lampeggia rapidamente.",
+        "no": "Trykk og hold knapp 1 i ca. 5-10 sekunder til den blå LED-en blinker raskt.",
+        "pl": "Naciśnij i przytrzymaj przycisk 1 przez ok. 5-10 sekund, aż niebieska dioda LED zacznie szybko migać.",
+        "ru": "Нажмите и удерживайте кнопку 1 примерно 5-10 секунд, пока синий светодиод не начнет быстро мигать.",
+        "ko": "파란 LED가 빠르게 깜박일 때까지 버튼 1을 약 5-10초 동안 길게 누르세요."
+      }
+    }
+  },
+  "$extends": ["defaults"]
+}

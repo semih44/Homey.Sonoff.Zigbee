@@ -1,0 +1,170 @@
+[
+  {
+    "id": "turbo_mode",
+    "type": "checkbox",
+    "value": false,
+    "label": {
+      "en": "Turbo Mode", "sv": "Turboläge", "nl": "Turbomodus", "da": "Turbotilstand",
+      "de": "Turbomodus", "es": "Modo turbo", "fr": "Mode turbo", "it": "Modalità turbo",
+      "no": "Turbomodus", "pl": "Tryb turbo", "ru": "Турборежим", "ko": "터보 모드"
+    },
+    "hint": {
+      "en": "Improves Zigbee range for distant devices.",
+      "sv": "Förbättrar Zigbee-räckvidd för avlägsna enheter.",
+      "nl": "Verbetert het Zigbee-bereik voor apparaten op afstand.",
+      "da": "Forbedrer Zigbee-rækkevidden for fjerne enheder.",
+      "de": "Verbessert die Zigbee-Reichweite für entfernte Geräte.",
+      "es": "Mejora el alcance Zigbee para dispositivos lejanos.",
+      "fr": "Améliore la portée Zigbee pour les appareils éloignés.",
+      "it": "Migliora la portata Zigbee per dispositivi distanti.",
+      "no": "Forbedrer Zigbee-rekkevidden for enheter langt unna.",
+      "pl": "Poprawia zasięg Zigbee dla odległych urządzeń.",
+      "ru": "Увеличивает радиус действия Zigbee для удалённых устройств.",
+      "ko": "먼 장치에 대한 Zigbee 범위를 개선합니다."
+    }
+  },
+  {
+    "id": "network_led",
+    "type": "checkbox",
+    "value": true,
+    "label": {
+      "en": "Network LED", "sv": "Nätverks-LED", "nl": "Netwerk-LED", "da": "Netværks-LED",
+      "de": "Netzwerk-LED", "es": "LED de red", "fr": "LED réseau", "it": "LED di rete",
+      "no": "Nettverks-LED", "pl": "Dioda sieci", "ru": "Индикатор сети", "ko": "네트워크 LED"
+    },
+    "hint": {
+      "en": "Show network status LED.", "sv": "Visa nätverksstatus-LED.", "nl": "Toon netwerk status-LED.",
+      "da": "Vis netværksstatus-LED.", "de": "Netzwerkstatus-LED anzeigen.", "es": "Mostrar LED de estado de red.",
+      "fr": "Afficher la LED d'état du réseau.", "it": "Mostra il LED di stato della rete.",
+      "no": "Vis nettverksstatus-LED.", "pl": "Pokaż diodę stanu sieci.",
+      "ru": "Показывать индикатор состояния сети.", "ko": "네트워크 상태 LED를 표시합니다."
+    }
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Detach Relay", "sv": "Koppla loss relä", "nl": "Relais loskoppelen", "da": "Frakobl relæ",
+      "de": "Relais entkoppeln", "es": "Desacoplar relé", "fr": "Détacher le relais", "it": "Scollega relè",
+      "no": "Koble fra relé", "pl": "Odłącz przekaźnik", "ru": "Отключить реле", "ko": "릴레이 분리"
+    },
+    "children": [
+      {
+        "id": "detach_relay_1",
+        "type": "checkbox",
+        "value": false,
+        "label": { "en": "Detach Channel 1", "de": "Kanal 1 entkoppeln", "nl": "Kanaal 1 loskoppelen", "fr": "Détacher canal 1", "sv": "Koppla loss kanal 1", "da": "Frakobl kanal 1", "es": "Desacoplar canal 1", "it": "Scollega canale 1", "no": "Koble fra kanal 1", "pl": "Odłącz kanał 1", "ru": "Отключить канал 1", "ko": "채널 1 분리" }
+      },
+      {
+        "id": "detach_relay_2",
+        "type": "checkbox",
+        "value": false,
+        "label": { "en": "Detach Channel 2", "de": "Kanal 2 entkoppeln", "nl": "Kanaal 2 loskoppelen", "fr": "Détacher canal 2", "sv": "Koppla loss kanal 2", "da": "Frakobl kanal 2", "es": "Desacoplar canal 2", "it": "Scollega canale 2", "no": "Koble fra kanal 2", "pl": "Odłącz kanał 2", "ru": "Отключить канал 2", "ko": "채널 2 분리" }
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Power-on Behavior", "sv": "Beteende vid strömåterkomst", "nl": "Gedrag bij inschakelen",
+      "da": "Opførsel ved tænding", "de": "Einschaltverhalten", "es": "Comportamiento al encender",
+      "fr": "Comportement à la mise sous tension", "it": "Comportamento all'accensione",
+      "no": "Oppførsel ved strømtilkobling", "pl": "Zachowanie po włączeniu",
+      "ru": "Поведение при включении", "ko": "전원 켜기 동작"
+    },
+    "children": [
+      {
+        "id": "power_on_behavior_l1",
+        "type": "dropdown",
+        "label": { "en": "Channel 1", "de": "Kanal 1", "nl": "Kanaal 1", "fr": "Canal 1", "sv": "Kanal 1", "da": "Kanal 1", "es": "Canal 1", "it": "Canale 1", "no": "Kanal 1", "pl": "Kanał 1", "ru": "Канал 1", "ko": "채널 1" },
+        "value": "off",
+        "values": [
+          { "id": "on", "label": { "en": "Turn On", "de": "Einschalten" } },
+          { "id": "off", "label": { "en": "Turn Off", "de": "Ausschalten" } },
+          { "id": "toggle", "label": { "en": "Toggle", "de": "Umschalten" } },
+          { "id": "last_state", "label": { "en": "Last State", "de": "Letzter Zustand" } }
+        ]
+      },
+      {
+        "id": "power_on_behavior_l2",
+        "type": "dropdown",
+        "label": { "en": "Channel 2", "de": "Kanal 2", "nl": "Kanaal 2", "fr": "Canal 2", "sv": "Kanal 2", "da": "Kanal 2", "es": "Canal 2", "it": "Canale 2", "no": "Kanal 2", "pl": "Kanał 2", "ru": "Канал 2", "ko": "채널 2" },
+        "value": "off",
+        "values": [
+          { "id": "on", "label": { "en": "Turn On", "de": "Einschalten" } },
+          { "id": "off", "label": { "en": "Turn Off", "de": "Ausschalten" } },
+          { "id": "toggle", "label": { "en": "Toggle", "de": "Umschalten" } },
+          { "id": "last_state", "label": { "en": "Last State", "de": "Letzter Zustand" } }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "External Trigger Mode", "sv": "Externt triggerläge", "nl": "Externe triggermodus",
+      "da": "Ekstern udløsertilstand", "de": "Externer Auslösemodus", "es": "Modo de activación externo",
+      "fr": "Mode de déclenchement externe", "it": "Modalità trigger esterno",
+      "no": "Ekstern utløsermodus", "pl": "Tryb wyzwalania zewnętrznego",
+      "ru": "Режим внешнего триггера", "ko": "외부 트리거 모드"
+    },
+    "children": [
+      {
+        "id": "external_trigger_mode_l1",
+        "type": "dropdown",
+        "label": { "en": "Channel 1", "de": "Kanal 1", "nl": "Kanaal 1", "fr": "Canal 1", "sv": "Kanal 1", "da": "Kanal 1", "es": "Canal 1", "it": "Canale 1", "no": "Kanal 1", "pl": "Kanał 1", "ru": "Канал 1", "ko": "채널 1" },
+        "value": "0",
+        "values": [
+          { "id": "0", "label": { "en": "Edge" } },
+          { "id": "1", "label": { "en": "Pulse" } },
+          { "id": "2", "label": { "en": "Following (off)" } },
+          { "id": "130", "label": { "en": "Following (on)" } }
+        ]
+      },
+      {
+        "id": "external_trigger_mode_l2",
+        "type": "dropdown",
+        "label": { "en": "Channel 2", "de": "Kanal 2", "nl": "Kanaal 2", "fr": "Canal 2", "sv": "Kanal 2", "da": "Kanal 2", "es": "Canal 2", "it": "Canale 2", "no": "Kanal 2", "pl": "Kanał 2", "ru": "Канал 2", "ko": "채널 2" },
+        "value": "0",
+        "values": [
+          { "id": "0", "label": { "en": "Edge" } },
+          { "id": "1", "label": { "en": "Pulse" } },
+          { "id": "2", "label": { "en": "Following (off)" } },
+          { "id": "130", "label": { "en": "Following (on)" } }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Inching", "sv": "Inching", "nl": "Inching", "da": "Inching",
+      "de": "Inching", "es": "Inching", "fr": "Inching", "it": "Inching",
+      "no": "Inching", "pl": "Inching", "ru": "Инчинг", "ko": "인칭"
+    },
+    "children": [
+      {
+        "id": "inching_enabled",
+        "type": "checkbox",
+        "value": false,
+        "label": { "en": "Enable Inching", "de": "Inching aktivieren", "nl": "Inching inschakelen", "fr": "Activer l'inching", "sv": "Aktivera inching", "da": "Aktivér inching", "es": "Activar inching", "it": "Attiva inching", "no": "Aktiver inching", "pl": "Włącz inching", "ru": "Включить инчинг", "ko": "인칭 활성화" }
+      },
+      {
+        "id": "inching_time",
+        "type": "number",
+        "label": { "en": "Duration (s)", "de": "Dauer (s)", "nl": "Duur (s)", "fr": "Durée (s)", "sv": "Varaktighet (s)", "da": "Varighed (s)", "es": "Duración (s)", "it": "Durata (s)", "no": "Varighet (s)", "pl": "Czas trwania (s)", "ru": "Длительность (с)", "ko": "지속 시간 (초)" },
+        "value": 1,
+        "attr": { "min": 0.5, "max": 3599.5, "step": 0.5 }
+      },
+      {
+        "id": "inching_mode",
+        "type": "dropdown",
+        "label": { "en": "Inching Mode", "de": "Inching-Modus", "nl": "Inching-modus", "fr": "Mode inching", "sv": "Inching-läge", "da": "Inching-tilstand", "es": "Modo inching", "it": "Modalità inching", "no": "Inching-modus", "pl": "Tryb inching", "ru": "Режим инчинга", "ko": "인칭 모드" },
+        "value": "on",
+        "values": [
+          { "id": "on", "label": { "en": "On → Off" } },
+          { "id": "off", "label": { "en": "Off → On" } }
+        ]
+      }
+    ]
+  }
+]

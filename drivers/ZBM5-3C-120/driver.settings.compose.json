@@ -1,0 +1,96 @@
+[
+  {
+    "id": "network_led",
+    "type": "checkbox",
+    "value": true,
+    "label": {
+      "en": "Network LED", "sv": "Nätverks-LED", "nl": "Netwerk-LED", "da": "Netværks-LED",
+      "de": "Netzwerk-LED", "es": "LED de red", "fr": "LED réseau", "it": "LED di rete",
+      "no": "Nettverks-LED", "pl": "Dioda sieci", "ru": "Индикатор сети", "ko": "네트워크 LED"
+    },
+    "hint": {
+      "en": "Show blue network status LED.", "sv": "Visa blå nätverksstatus-LED.",
+      "nl": "Toon blauwe netwerk status-LED.", "da": "Vis blå netværksstatus-LED.",
+      "de": "Blaue Netzwerkstatus-LED anzeigen.", "es": "Mostrar LED azul de estado de red.",
+      "fr": "Afficher la LED bleue d'état du réseau.", "it": "Mostra il LED blu di stato della rete.",
+      "no": "Vis blå nettverksstatus-LED.", "pl": "Pokaż niebieską diodę stanu sieci.",
+      "ru": "Показывать синий индикатор состояния сети.", "ko": "파란색 네트워크 상태 LED를 표시합니다."
+    }
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Detach Relay", "sv": "Koppla loss relä", "nl": "Relais loskoppelen", "da": "Frakobl relæ",
+      "de": "Relais entkoppeln", "es": "Desacoplar relé", "fr": "Détacher le relais", "it": "Scollega relè",
+      "no": "Koble fra relé", "pl": "Odłącz przekaźnik", "ru": "Отключить реле", "ko": "릴레이 분리"
+    },
+    "children": [
+      {
+        "id": "detach_relay_1",
+        "type": "checkbox",
+        "value": false,
+        "label": { "en": "Detach Channel 1", "de": "Kanal 1 entkoppeln", "nl": "Kanaal 1 loskoppelen", "fr": "Détacher canal 1", "sv": "Koppla loss kanal 1", "da": "Frakobl kanal 1", "es": "Desacoplar canal 1", "it": "Scollega canale 1", "no": "Koble fra kanal 1", "pl": "Odłącz kanał 1", "ru": "Отключить канал 1", "ko": "채널 1 분리" }
+      },
+      {
+        "id": "detach_relay_2",
+        "type": "checkbox",
+        "value": false,
+        "label": { "en": "Detach Channel 2", "de": "Kanal 2 entkoppeln", "nl": "Kanaal 2 loskoppelen", "fr": "Détacher canal 2", "sv": "Koppla loss kanal 2", "da": "Frakobl kanal 2", "es": "Desacoplar canal 2", "it": "Scollega canale 2", "no": "Koble fra kanal 2", "pl": "Odłącz kanał 2", "ru": "Отключить канал 2", "ko": "채널 2 분리" }
+      },
+      {
+        "id": "detach_relay_3",
+        "type": "checkbox",
+        "value": false,
+        "label": { "en": "Detach Channel 3", "de": "Kanal 3 entkoppeln", "nl": "Kanaal 3 loskoppelen", "fr": "Détacher canal 3", "sv": "Koppla loss kanal 3", "da": "Frakobl kanal 3", "es": "Desacoplar canal 3", "it": "Scollega canale 3", "no": "Koble fra kanal 3", "pl": "Odłącz kanał 3", "ru": "Отключить канал 3", "ko": "채널 3 분리" }
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Power-on Behavior", "sv": "Beteende vid strömåterkomst", "nl": "Gedrag bij inschakelen",
+      "da": "Opførsel ved tænding", "de": "Einschaltverhalten", "es": "Comportamiento al encender",
+      "fr": "Comportement à la mise sous tension", "it": "Comportamento all'accensione",
+      "no": "Oppførsel ved strømtilkobling", "pl": "Zachowanie po włączeniu",
+      "ru": "Поведение при включении", "ko": "전원 켜기 동작"
+    },
+    "children": [
+      {
+        "id": "power_on_behavior_l1",
+        "type": "dropdown",
+        "label": { "en": "Channel 1", "de": "Kanal 1", "nl": "Kanaal 1", "fr": "Canal 1", "sv": "Kanal 1", "da": "Kanal 1", "es": "Canal 1", "it": "Canale 1", "no": "Kanal 1", "pl": "Kanał 1", "ru": "Канал 1", "ko": "채널 1" },
+        "value": "off",
+        "values": [
+          { "id": "on", "label": { "en": "Turn On", "de": "Einschalten" } },
+          { "id": "off", "label": { "en": "Turn Off", "de": "Ausschalten" } },
+          { "id": "toggle", "label": { "en": "Toggle", "de": "Umschalten" } },
+          { "id": "last_state", "label": { "en": "Last State", "de": "Letzter Zustand" } }
+        ]
+      },
+      {
+        "id": "power_on_behavior_l2",
+        "type": "dropdown",
+        "label": { "en": "Channel 2", "de": "Kanal 2", "nl": "Kanaal 2", "fr": "Canal 2", "sv": "Kanal 2", "da": "Kanal 2", "es": "Canal 2", "it": "Canale 2", "no": "Kanal 2", "pl": "Kanał 2", "ru": "Канал 2", "ko": "채널 2" },
+        "value": "off",
+        "values": [
+          { "id": "on", "label": { "en": "Turn On", "de": "Einschalten" } },
+          { "id": "off", "label": { "en": "Turn Off", "de": "Ausschalten" } },
+          { "id": "toggle", "label": { "en": "Toggle", "de": "Umschalten" } },
+          { "id": "last_state", "label": { "en": "Last State", "de": "Letzter Zustand" } }
+        ]
+      },
+      {
+        "id": "power_on_behavior_l3",
+        "type": "dropdown",
+        "label": { "en": "Channel 3", "de": "Kanal 3", "nl": "Kanaal 3", "fr": "Canal 3", "sv": "Kanal 3", "da": "Kanal 3", "es": "Canal 3", "it": "Canale 3", "no": "Kanal 3", "pl": "Kanał 3", "ru": "Канал 3", "ko": "채널 3" },
+        "value": "off",
+        "values": [
+          { "id": "on", "label": { "en": "Turn On", "de": "Einschalten" } },
+          { "id": "off", "label": { "en": "Turn Off", "de": "Ausschalten" } },
+          { "id": "toggle", "label": { "en": "Toggle", "de": "Umschalten" } },
+          { "id": "last_state", "label": { "en": "Last State", "de": "Letzter Zustand" } }
+        ]
+      }
+    ]
+  }
+]
