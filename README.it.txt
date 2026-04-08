@@ -46,5 +46,11 @@ Tapparelle e tende:
 - Sonoff ZBCurtain  (Controllo motore per tende/veneziane)
 - Sonoff MINI-ZBRBS (Modulo tapparella con calibrazione motore)
 
+Valvole dell'acqua:
+- Sonoff SWV      (Valvola dell'acqua intelligente)
+- Sonoff SWV-ZNE  (Valvola dell'acqua intelligente, avanzata)
+- Sonoff SWV-ZFE  (Valvola dell'acqua intelligente, avanzata)
+- Sonoff SWV-ZFU  (Valvola dell'acqua intelligente, avanzata)
+
 RF:
 - Dispositivi Sonoff RF/TX (trasmissione e ricezione a 433 MHz)

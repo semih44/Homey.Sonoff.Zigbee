@@ -46,5 +46,11 @@ Rolety i zasłony:
 - Sonoff ZBCurtain  (Sterownik silnika do zasłon/rolet)
 - Sonoff MINI-ZBRBS (Moduł rolety z kalibracją silnika)
 
+Zawory wodne:
+- Sonoff SWV      (Inteligentny zawór wodny)
+- Sonoff SWV-ZNE  (Inteligentny zawór wodny, zaawansowany)
+- Sonoff SWV-ZFE  (Inteligentny zawór wodny, zaawansowany)
+- Sonoff SWV-ZFU  (Inteligentny zawór wodny, zaawansowany)
+
 RF:
 - Urządzenia Sonoff RF/TX (nadawanie i odbieranie na 433 MHz)

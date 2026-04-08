@@ -46,5 +46,11 @@ Volets & Rideaux :
 - Sonoff ZBCurtain  (Contrôleur moteur pour rideaux/volets)
 - Sonoff MINI-ZBRBS (Module volet roulant avec calibration moteur)
 
+Vannes d'eau :
+- Sonoff SWV      (Vanne d'eau intelligente)
+- Sonoff SWV-ZNE  (Vanne d'eau intelligente, avancée)
+- Sonoff SWV-ZFE  (Vanne d'eau intelligente, avancée)
+- Sonoff SWV-ZFU  (Vanne d'eau intelligente, avancée)
+
 RF :
 - Appareils Sonoff RF/TX (émission et réception 433 MHz)

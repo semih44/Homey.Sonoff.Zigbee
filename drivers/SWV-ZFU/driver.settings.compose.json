@@ -1,0 +1,26 @@
+[
+  {
+    "id": "child_lock",
+    "type": "checkbox",
+    "value": false,
+    "label": {
+      "en": "Child Lock", "sv": "Barnlås", "nl": "Kinderslot", "da": "Børnesikring",
+      "de": "Kindersicherung", "es": "Bloqueo infantil", "fr": "Verrouillage enfant", "it": "Blocco bambini",
+      "no": "Barnesikring", "pl": "Blokada rodzicielska", "ru": "Защита от детей", "ko": "어린이 잠금"
+    },
+    "hint": {
+      "en": "Lock physical button to prevent accidental operation.",
+      "sv": "Lås den fysiska knappen för att förhindra oavsiktlig användning.",
+      "nl": "Vergrendel de fysieke knop om onbedoelde bediening te voorkomen.",
+      "da": "Lås den fysiske knap for at forhindre utilsigtet betjening.",
+      "de": "Physische Taste sperren, um versehentliche Bedienung zu verhindern.",
+      "es": "Bloquear el botón físico para evitar operación accidental.",
+      "fr": "Verrouiller le bouton physique pour éviter une utilisation accidentelle.",
+      "it": "Bloccare il pulsante fisico per prevenire operazioni accidentali.",
+      "no": "Lås den fysiske knappen for å forhindre utilsiktet bruk.",
+      "pl": "Zablokuj fizyczny przycisk, aby zapobiec przypadkowemu uruchomieniu.",
+      "ru": "Заблокировать физическую кнопку для предотвращения случайного нажатия.",
+      "ko": "실수로 작동하지 않도록 물리적 버튼을 잠급니다."
+    }
+  }
+]

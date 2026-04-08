@@ -46,5 +46,11 @@ Persienner & Rullgardiner:
 - Sonoff ZBCurtain  (Motorstyrning för gardiner/persienner)
 - Sonoff MINI-ZBRBS (Rullgardinmodul med motorkalibrering)
 
+Vattenventiler:
+- Sonoff SWV      (Smart vattenventil)
+- Sonoff SWV-ZNE  (Smart vattenventil, avancerad)
+- Sonoff SWV-ZFE  (Smart vattenventil, avancerad)
+- Sonoff SWV-ZFU  (Smart vattenventil, avancerad)
+
 RF:
 - Sonoff RF/TX-enheter (433 MHz sändning och mottagning)

@@ -6247,6 +6247,640 @@
         "zigbee"
       ],
       "images": {
+        "large": "/drivers/SWV/assets/images/large.png",
+        "small": "/drivers/SWV/assets/images/small.png"
+      },
+      "id": "SWV",
+      "name": {
+        "en": "SWV Smart Water Valve",
+        "sv": "SWV Smart vattenventil",
+        "nl": "SWV Slimme waterklep",
+        "da": "SWV Smart vandventil",
+        "de": "SWV Smartes Wasserventil",
+        "es": "SWV Válvula de agua inteligente",
+        "fr": "SWV Vanne d'eau intelligente",
+        "it": "SWV Valvola dell'acqua intelligente",
+        "no": "SWV Smart vannventil",
+        "pl": "SWV Inteligentny zawór wodny",
+        "ru": "SWV Умный водяной клапан",
+        "ko": "SWV 스마트 수도 밸브"
+      },
+      "class": "other",
+      "capabilities": [
+        "onoff",
+        "measure_battery",
+        "alarm_water"
+      ],
+      "capabilitiesOptions": {
+        "onoff": {
+          "title": {
+            "en": "Valve",
+            "de": "Ventil",
+            "nl": "Klep",
+            "fr": "Vanne",
+            "sv": "Ventil",
+            "da": "Ventil",
+            "es": "Válvula",
+            "it": "Valvola",
+            "no": "Ventil",
+            "pl": "Zawór",
+            "ru": "Клапан",
+            "ko": "밸브"
+          }
+        },
+        "alarm_water": {
+          "title": {
+            "en": "Water Leak",
+            "de": "Wasserleck",
+            "nl": "Waterlek",
+            "fr": "Fuite d'eau",
+            "sv": "Vattenläcka",
+            "da": "Vandlækage",
+            "es": "Fuga de agua",
+            "it": "Perdita d'acqua",
+            "no": "Vannlekkasje",
+            "pl": "Wyciek wody",
+            "ru": "Утечка воды",
+            "ko": "누수"
+          }
+        }
+      },
+      "energy": {
+        "batteries": [
+          "AA",
+          "AA",
+          "AA",
+          "AA"
+        ]
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "SONOFF"
+        ],
+        "productId": [
+          "SWV"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              6,
+              1028,
+              64529
+            ],
+            "bindings": [
+              1,
+              6
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/SWV/assets/learn.svg",
+          "instruction": {
+            "en": "Press and hold the button for approx. 5 seconds until the LED blinks rapidly.",
+            "sv": "Tryck och håll knappen i cirka 5 sekunder tills lysdioden blinkar snabbt.",
+            "nl": "Houd de knop ca. 5 seconden ingedrukt totdat de LED snel knippert.",
+            "da": "Tryk og hold knappen i ca. 5 sekunder, indtil LED'en blinker hurtigt.",
+            "de": "Halten Sie die Taste ca. 5 Sekunden gedrückt, bis die LED schnell blinkt.",
+            "es": "Mantenga presionado el botón durante aprox. 5 segundos hasta que el LED parpadee rápidamente.",
+            "fr": "Maintenez le bouton enfoncé pendant environ 5 secondes jusqu'à ce que la LED clignote rapidement.",
+            "it": "Tenere premuto il pulsante per circa 5 secondi fino a quando il LED lampeggia rapidamente.",
+            "no": "Trykk og hold knappen i ca. 5 sekunder til LED-en blinker raskt.",
+            "pl": "Naciśnij i przytrzymaj przycisk przez ok. 5 sekund, aż dioda LED zacznie szybko migać.",
+            "ru": "Нажмите и удерживайте кнопку примерно 5 секунд, пока светодиод не начнет быстро мигать.",
+            "ko": "LED가 빠르게 깜박일 때까지 약 5초 동안 버튼을 길게 누르세요."
+          }
+        }
+      },
+      "settings": [
+        {
+          "id": "lack_water_close_valve_timeout",
+          "type": "dropdown",
+          "label": {
+            "en": "Auto-close on Water Shortage",
+            "sv": "Stäng automatiskt vid vattenbrist",
+            "nl": "Automatisch sluiten bij watertekort",
+            "da": "Luk automatisk ved vandmangel",
+            "de": "Auto-Schließung bei Wassermangel",
+            "es": "Cierre automático por escasez de agua",
+            "fr": "Fermeture auto en cas de manque d'eau",
+            "it": "Chiusura automatica per mancanza d'acqua",
+            "no": "Automatisk lukking ved vannmangel",
+            "pl": "Automatyczne zamknięcie przy braku wody",
+            "ru": "Авто-закрытие при нехватке воды",
+            "ko": "수압 부족 시 자동 닫기"
+          },
+          "hint": {
+            "en": "Automatically close valve when water shortage is detected.",
+            "sv": "Stäng ventilen automatiskt vid upptäckt vattenbrist.",
+            "nl": "Klep automatisch sluiten wanneer watertekort gedetecteerd.",
+            "da": "Luk ventilen automatisk ved registreret vandmangel.",
+            "de": "Ventil automatisch schließen bei erkanntem Wassermangel.",
+            "es": "Cerrar la válvula automáticamente cuando se detecte escasez de agua.",
+            "fr": "Fermer automatiquement la vanne en cas de manque d'eau détecté.",
+            "it": "Chiudere automaticamente la valvola quando viene rilevata mancanza d'acqua.",
+            "no": "Lukk ventilen automatisk ved registrert vannmangel.",
+            "pl": "Automatycznie zamknij zawór po wykryciu braku wody.",
+            "ru": "Автоматически закрывать клапан при обнаружении нехватки воды.",
+            "ko": "수압 부족 감지 시 밸브를 자동으로 닫습니다."
+          },
+          "value": "0",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Disabled",
+                "de": "Deaktiviert",
+                "nl": "Uitgeschakeld",
+                "fr": "Désactivé",
+                "sv": "Inaktiverad",
+                "da": "Deaktiveret",
+                "es": "Desactivado",
+                "it": "Disattivato",
+                "no": "Deaktivert",
+                "pl": "Wyłączony",
+                "ru": "Отключено",
+                "ko": "비활성화"
+              }
+            },
+            {
+              "id": "30",
+              "label": {
+                "en": "After 30 minutes",
+                "de": "Nach 30 Minuten",
+                "nl": "Na 30 minuten",
+                "fr": "Après 30 minutes",
+                "sv": "Efter 30 minuter",
+                "da": "Efter 30 minutter",
+                "es": "Después de 30 minutos",
+                "it": "Dopo 30 minuti",
+                "no": "Etter 30 minutter",
+                "pl": "Po 30 minutach",
+                "ru": "Через 30 минут",
+                "ko": "30분 후"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "large": "/drivers/SWV-ZFE/assets/images/large.png",
+        "small": "/drivers/SWV-ZFE/assets/images/small.png"
+      },
+      "id": "SWV-ZFE",
+      "name": {
+        "en": "SWV-ZFE Smart Water Valve",
+        "sv": "SWV-ZFE Smart vattenventil",
+        "nl": "SWV-ZFE Slimme waterklep",
+        "da": "SWV-ZFE Smart vandventil",
+        "de": "SWV-ZFE Smartes Wasserventil",
+        "es": "SWV-ZFE Válvula de agua inteligente",
+        "fr": "SWV-ZFE Vanne d'eau intelligente",
+        "it": "SWV-ZFE Valvola dell'acqua intelligente",
+        "no": "SWV-ZFE Smart vannventil",
+        "pl": "SWV-ZFE Inteligentny zawór wodny",
+        "ru": "SWV-ZFE Умный водяной клапан",
+        "ko": "SWV-ZFE 스마트 수도 밸브"
+      },
+      "class": "other",
+      "capabilities": [
+        "onoff",
+        "measure_battery",
+        "alarm_water"
+      ],
+      "capabilitiesOptions": {
+        "onoff": {
+          "title": {
+            "en": "Valve",
+            "de": "Ventil",
+            "nl": "Klep",
+            "fr": "Vanne",
+            "sv": "Ventil",
+            "da": "Ventil",
+            "es": "Válvula",
+            "it": "Valvola",
+            "no": "Ventil",
+            "pl": "Zawór",
+            "ru": "Клапан",
+            "ko": "밸브"
+          }
+        },
+        "alarm_water": {
+          "title": {
+            "en": "Water Leak",
+            "de": "Wasserleck",
+            "nl": "Waterlek",
+            "fr": "Fuite d'eau",
+            "sv": "Vattenläcka",
+            "da": "Vandlækage",
+            "es": "Fuga de agua",
+            "it": "Perdita d'acqua",
+            "no": "Vannlekkasje",
+            "pl": "Wyciek wody",
+            "ru": "Утечка воды",
+            "ko": "누수"
+          }
+        }
+      },
+      "energy": {
+        "batteries": [
+          "AA",
+          "AA",
+          "AA",
+          "AA"
+        ]
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "SONOFF"
+        ],
+        "productId": [
+          "SWV-ZFE"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              6,
+              64529
+            ],
+            "bindings": [
+              6
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/SWV-ZFE/assets/learn.svg",
+          "instruction": {
+            "en": "Press and hold the button for approx. 5 seconds until the LED blinks rapidly.",
+            "sv": "Tryck och håll knappen i cirka 5 sekunder tills lysdioden blinkar snabbt.",
+            "nl": "Houd de knop ca. 5 seconden ingedrukt totdat de LED snel knippert.",
+            "da": "Tryk og hold knappen i ca. 5 sekunder, indtil LED'en blinker hurtigt.",
+            "de": "Halten Sie die Taste ca. 5 Sekunden gedrückt, bis die LED schnell blinkt.",
+            "es": "Mantenga presionado el botón durante aprox. 5 segundos hasta que el LED parpadee rápidamente.",
+            "fr": "Maintenez le bouton enfoncé pendant environ 5 secondes jusqu'à ce que la LED clignote rapidement.",
+            "it": "Tenere premuto il pulsante per circa 5 secondi fino a quando il LED lampeggia rapidamente.",
+            "no": "Trykk og hold knappen i ca. 5 sekunder til LED-en blinker raskt.",
+            "pl": "Naciśnij i przytrzymaj przycisk przez ok. 5 sekund, aż dioda LED zacznie szybko migać.",
+            "ru": "Нажмите и удерживайте кнопку примерно 5 секунд, пока светодиод не начнет быстро мигать.",
+            "ko": "LED가 빠르게 깜박일 때까지 약 5초 동안 버튼을 길게 누르세요."
+          }
+        }
+      },
+      "settings": [
+        {
+          "id": "child_lock",
+          "type": "checkbox",
+          "value": false,
+          "label": {
+            "en": "Child Lock",
+            "sv": "Barnlås",
+            "nl": "Kinderslot",
+            "da": "Børnesikring",
+            "de": "Kindersicherung",
+            "es": "Bloqueo infantil",
+            "fr": "Verrouillage enfant",
+            "it": "Blocco bambini",
+            "no": "Barnesikring",
+            "pl": "Blokada rodzicielska",
+            "ru": "Защита от детей",
+            "ko": "어린이 잠금"
+          },
+          "hint": {
+            "en": "Lock physical button to prevent accidental operation.",
+            "sv": "Lås den fysiska knappen för att förhindra oavsiktlig användning.",
+            "nl": "Vergrendel de fysieke knop om onbedoelde bediening te voorkomen.",
+            "da": "Lås den fysiske knap for at forhindre utilsigtet betjening.",
+            "de": "Physische Taste sperren, um versehentliche Bedienung zu verhindern.",
+            "es": "Bloquear el botón físico para evitar operación accidental.",
+            "fr": "Verrouiller le bouton physique pour éviter une utilisation accidentelle.",
+            "it": "Bloccare il pulsante fisico per prevenire operazioni accidentali.",
+            "no": "Lås den fysiske knappen for å forhindre utilsiktet bruk.",
+            "pl": "Zablokuj fizyczny przycisk, aby zapobiec przypadkowemu uruchomieniu.",
+            "ru": "Заблокировать физическую кнопку для предотвращения случайного нажатия.",
+            "ko": "실수로 작동하지 않도록 물리적 버튼을 잠급니다."
+          }
+        }
+      ]
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "large": "/drivers/SWV-ZFU/assets/images/large.png",
+        "small": "/drivers/SWV-ZFU/assets/images/small.png"
+      },
+      "id": "SWV-ZFU",
+      "name": {
+        "en": "SWV-ZFU Smart Water Valve",
+        "sv": "SWV-ZFU Smart vattenventil",
+        "nl": "SWV-ZFU Slimme waterklep",
+        "da": "SWV-ZFU Smart vandventil",
+        "de": "SWV-ZFU Smartes Wasserventil",
+        "es": "SWV-ZFU Válvula de agua inteligente",
+        "fr": "SWV-ZFU Vanne d'eau intelligente",
+        "it": "SWV-ZFU Valvola dell'acqua intelligente",
+        "no": "SWV-ZFU Smart vannventil",
+        "pl": "SWV-ZFU Inteligentny zawór wodny",
+        "ru": "SWV-ZFU Умный водяной клапан",
+        "ko": "SWV-ZFU 스마트 수도 밸브"
+      },
+      "class": "other",
+      "capabilities": [
+        "onoff",
+        "measure_battery",
+        "alarm_water"
+      ],
+      "capabilitiesOptions": {
+        "onoff": {
+          "title": {
+            "en": "Valve",
+            "de": "Ventil",
+            "nl": "Klep",
+            "fr": "Vanne",
+            "sv": "Ventil",
+            "da": "Ventil",
+            "es": "Válvula",
+            "it": "Valvola",
+            "no": "Ventil",
+            "pl": "Zawór",
+            "ru": "Клапан",
+            "ko": "밸브"
+          }
+        },
+        "alarm_water": {
+          "title": {
+            "en": "Water Leak",
+            "de": "Wasserleck",
+            "nl": "Waterlek",
+            "fr": "Fuite d'eau",
+            "sv": "Vattenläcka",
+            "da": "Vandlækage",
+            "es": "Fuga de agua",
+            "it": "Perdita d'acqua",
+            "no": "Vannlekkasje",
+            "pl": "Wyciek wody",
+            "ru": "Утечка воды",
+            "ko": "누수"
+          }
+        }
+      },
+      "energy": {
+        "batteries": [
+          "AA",
+          "AA",
+          "AA",
+          "AA"
+        ]
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "SONOFF"
+        ],
+        "productId": [
+          "SWV-ZFU"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              6,
+              64529
+            ],
+            "bindings": [
+              6
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/SWV-ZFU/assets/learn.svg",
+          "instruction": {
+            "en": "Press and hold the button for approx. 5 seconds until the LED blinks rapidly.",
+            "sv": "Tryck och håll knappen i cirka 5 sekunder tills lysdioden blinkar snabbt.",
+            "nl": "Houd de knop ca. 5 seconden ingedrukt totdat de LED snel knippert.",
+            "da": "Tryk og hold knappen i ca. 5 sekunder, indtil LED'en blinker hurtigt.",
+            "de": "Halten Sie die Taste ca. 5 Sekunden gedrückt, bis die LED schnell blinkt.",
+            "es": "Mantenga presionado el botón durante aprox. 5 segundos hasta que el LED parpadee rápidamente.",
+            "fr": "Maintenez le bouton enfoncé pendant environ 5 secondes jusqu'à ce que la LED clignote rapidement.",
+            "it": "Tenere premuto il pulsante per circa 5 secondi fino a quando il LED lampeggia rapidamente.",
+            "no": "Trykk og hold knappen i ca. 5 sekunder til LED-en blinker raskt.",
+            "pl": "Naciśnij i przytrzymaj przycisk przez ok. 5 sekund, aż dioda LED zacznie szybko migać.",
+            "ru": "Нажмите и удерживайте кнопку примерно 5 секунд, пока светодиод не начнет быстро мигать.",
+            "ko": "LED가 빠르게 깜박일 때까지 약 5초 동안 버튼을 길게 누르세요."
+          }
+        }
+      },
+      "settings": [
+        {
+          "id": "child_lock",
+          "type": "checkbox",
+          "value": false,
+          "label": {
+            "en": "Child Lock",
+            "sv": "Barnlås",
+            "nl": "Kinderslot",
+            "da": "Børnesikring",
+            "de": "Kindersicherung",
+            "es": "Bloqueo infantil",
+            "fr": "Verrouillage enfant",
+            "it": "Blocco bambini",
+            "no": "Barnesikring",
+            "pl": "Blokada rodzicielska",
+            "ru": "Защита от детей",
+            "ko": "어린이 잠금"
+          },
+          "hint": {
+            "en": "Lock physical button to prevent accidental operation.",
+            "sv": "Lås den fysiska knappen för att förhindra oavsiktlig användning.",
+            "nl": "Vergrendel de fysieke knop om onbedoelde bediening te voorkomen.",
+            "da": "Lås den fysiske knap for at forhindre utilsigtet betjening.",
+            "de": "Physische Taste sperren, um versehentliche Bedienung zu verhindern.",
+            "es": "Bloquear el botón físico para evitar operación accidental.",
+            "fr": "Verrouiller le bouton physique pour éviter une utilisation accidentelle.",
+            "it": "Bloccare il pulsante fisico per prevenire operazioni accidentali.",
+            "no": "Lås den fysiske knappen for å forhindre utilsiktet bruk.",
+            "pl": "Zablokuj fizyczny przycisk, aby zapobiec przypadkowemu uruchomieniu.",
+            "ru": "Заблокировать физическую кнопку для предотвращения случайного нажатия.",
+            "ko": "실수로 작동하지 않도록 물리적 버튼을 잠급니다."
+          }
+        }
+      ]
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "large": "/drivers/SWV-ZNE/assets/images/large.png",
+        "small": "/drivers/SWV-ZNE/assets/images/small.png"
+      },
+      "id": "SWV-ZNE",
+      "name": {
+        "en": "SWV-ZNE Smart Water Valve",
+        "sv": "SWV-ZNE Smart vattenventil",
+        "nl": "SWV-ZNE Slimme waterklep",
+        "da": "SWV-ZNE Smart vandventil",
+        "de": "SWV-ZNE Smartes Wasserventil",
+        "es": "SWV-ZNE Válvula de agua inteligente",
+        "fr": "SWV-ZNE Vanne d'eau intelligente",
+        "it": "SWV-ZNE Valvola dell'acqua intelligente",
+        "no": "SWV-ZNE Smart vannventil",
+        "pl": "SWV-ZNE Inteligentny zawór wodny",
+        "ru": "SWV-ZNE Умный водяной клапан",
+        "ko": "SWV-ZNE 스마트 수도 밸브"
+      },
+      "class": "other",
+      "capabilities": [
+        "onoff",
+        "measure_battery",
+        "alarm_water"
+      ],
+      "capabilitiesOptions": {
+        "onoff": {
+          "title": {
+            "en": "Valve",
+            "de": "Ventil",
+            "nl": "Klep",
+            "fr": "Vanne",
+            "sv": "Ventil",
+            "da": "Ventil",
+            "es": "Válvula",
+            "it": "Valvola",
+            "no": "Ventil",
+            "pl": "Zawór",
+            "ru": "Клапан",
+            "ko": "밸브"
+          }
+        },
+        "alarm_water": {
+          "title": {
+            "en": "Water Leak",
+            "de": "Wasserleck",
+            "nl": "Waterlek",
+            "fr": "Fuite d'eau",
+            "sv": "Vattenläcka",
+            "da": "Vandlækage",
+            "es": "Fuga de agua",
+            "it": "Perdita d'acqua",
+            "no": "Vannlekkasje",
+            "pl": "Wyciek wody",
+            "ru": "Утечка воды",
+            "ko": "누수"
+          }
+        }
+      },
+      "energy": {
+        "batteries": [
+          "AA",
+          "AA",
+          "AA",
+          "AA"
+        ]
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "SONOFF"
+        ],
+        "productId": [
+          "SWV-ZNE"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              6,
+              64529
+            ],
+            "bindings": [
+              6
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/SWV-ZNE/assets/learn.svg",
+          "instruction": {
+            "en": "Press and hold the button for approx. 5 seconds until the LED blinks rapidly.",
+            "sv": "Tryck och håll knappen i cirka 5 sekunder tills lysdioden blinkar snabbt.",
+            "nl": "Houd de knop ca. 5 seconden ingedrukt totdat de LED snel knippert.",
+            "da": "Tryk og hold knappen i ca. 5 sekunder, indtil LED'en blinker hurtigt.",
+            "de": "Halten Sie die Taste ca. 5 Sekunden gedrückt, bis die LED schnell blinkt.",
+            "es": "Mantenga presionado el botón durante aprox. 5 segundos hasta que el LED parpadee rápidamente.",
+            "fr": "Maintenez le bouton enfoncé pendant environ 5 secondes jusqu'à ce que la LED clignote rapidement.",
+            "it": "Tenere premuto il pulsante per circa 5 secondi fino a quando il LED lampeggia rapidamente.",
+            "no": "Trykk og hold knappen i ca. 5 sekunder til LED-en blinker raskt.",
+            "pl": "Naciśnij i przytrzymaj przycisk przez ok. 5 sekund, aż dioda LED zacznie szybko migać.",
+            "ru": "Нажмите и удерживайте кнопку примерно 5 секунд, пока светодиод не начнет быстро мигать.",
+            "ko": "LED가 빠르게 깜박일 때까지 약 5초 동안 버튼을 길게 누르세요."
+          }
+        }
+      },
+      "settings": [
+        {
+          "id": "child_lock",
+          "type": "checkbox",
+          "value": false,
+          "label": {
+            "en": "Child Lock",
+            "sv": "Barnlås",
+            "nl": "Kinderslot",
+            "da": "Børnesikring",
+            "de": "Kindersicherung",
+            "es": "Bloqueo infantil",
+            "fr": "Verrouillage enfant",
+            "it": "Blocco bambini",
+            "no": "Barnesikring",
+            "pl": "Blokada rodzicielska",
+            "ru": "Защита от детей",
+            "ko": "어린이 잠금"
+          },
+          "hint": {
+            "en": "Lock physical button to prevent accidental operation.",
+            "sv": "Lås den fysiska knappen för att förhindra oavsiktlig användning.",
+            "nl": "Vergrendel de fysieke knop om onbedoelde bediening te voorkomen.",
+            "da": "Lås den fysiske knap for at forhindre utilsigtet betjening.",
+            "de": "Physische Taste sperren, um versehentliche Bedienung zu verhindern.",
+            "es": "Bloquear el botón físico para evitar operación accidental.",
+            "fr": "Verrouiller le bouton physique pour éviter une utilisation accidentelle.",
+            "it": "Bloccare il pulsante fisico per prevenire operazioni accidentali.",
+            "no": "Lås den fysiske knappen for å forhindre utilsiktet bruk.",
+            "pl": "Zablokuj fizyczny przycisk, aby zapobiec przypadkowemu uruchomieniu.",
+            "ru": "Заблокировать физическую кнопку для предотвращения случайного нажатия.",
+            "ko": "실수로 작동하지 않도록 물리적 버튼을 잠급니다."
+          }
+        }
+      ]
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
         "large": "/drivers/TRVZB/assets/images/large.png",
         "small": "/drivers/TRVZB/assets/images/small.png"
       },

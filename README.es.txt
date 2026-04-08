@@ -46,5 +46,11 @@ Persianas y cortinas:
 - Sonoff ZBCurtain  (Controlador de motor para cortinas/persianas)
 - Sonoff MINI-ZBRBS (Módulo de persiana con calibración de motor)
 
+Válvulas de agua:
+- Sonoff SWV      (Válvula de agua inteligente)
+- Sonoff SWV-ZNE  (Válvula de agua inteligente, avanzada)
+- Sonoff SWV-ZFE  (Válvula de agua inteligente, avanzada)
+- Sonoff SWV-ZFU  (Válvula de agua inteligente, avanzada)
+
 RF:
 - Dispositivos Sonoff RF/TX (envío y recepción en 433 MHz)

@@ -46,5 +46,11 @@ Covers:
 - Sonoff ZBCurtain   (Curtain/blind motor controller)
 - Sonoff MINI-ZBRBS  (Roller shutter switch with motor calibration)
 
+Water Valves:
+- Sonoff SWV      (Smart water valve)
+- Sonoff SWV-ZNE  (Smart water valve, advanced)
+- Sonoff SWV-ZFE  (Smart water valve, advanced)
+- Sonoff SWV-ZFU  (Smart water valve, advanced)
+
 RF:
 - Sonoff RF/TX devices (433 MHz send and receive)

@@ -46,5 +46,11 @@ Rolluiken & Gordijnen:
 - Sonoff ZBCurtain  (Motorbediening voor gordijnen/jaloezieen)
 - Sonoff MINI-ZBRBS (Rolluikmodule met motorkalibratie)
 
+Waterkleppen:
+- Sonoff SWV      (Slimme waterklep)
+- Sonoff SWV-ZNE  (Slimme waterklep, geavanceerd)
+- Sonoff SWV-ZFE  (Slimme waterklep, geavanceerd)
+- Sonoff SWV-ZFU  (Slimme waterklep, geavanceerd)
+
 RF:
 - Sonoff RF/TX-apparaten (433 MHz zenden en ontvangen)

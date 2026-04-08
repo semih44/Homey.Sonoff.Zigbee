@@ -46,5 +46,11 @@ Rollladen & Jalousien:
 - Sonoff ZBCurtain  (Motor-Controller für Vorhänge/Jalousien)
 - Sonoff MINI-ZBRBS (Rollladenmodul mit Motor-Kalibrierung)
 
+Wasserventile:
+- Sonoff SWV      (Smartes Wasserventil)
+- Sonoff SWV-ZNE  (Smartes Wasserventil, erweitert)
+- Sonoff SWV-ZFE  (Smartes Wasserventil, erweitert)
+- Sonoff SWV-ZFU  (Smartes Wasserventil, erweitert)
+
 RF:
 - Sonoff RF/TX Geräte (433 MHz Senden und Empfangen)

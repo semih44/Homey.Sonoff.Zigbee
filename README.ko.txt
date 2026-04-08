@@ -46,5 +46,11 @@ Homey 앱이 Sonoff Zigbee 기기들을 지원합니다.
 - Sonoff ZBCurtain  (커튼/블라인드 모터 컨트롤러)
 - Sonoff MINI-ZBRBS (모터 캘리브레이션 기능이 있는 롤러 셔터 모듈)
 
+수도 밸브:
+- Sonoff SWV      (스마트 수도 밸브)
+- Sonoff SWV-ZNE  (스마트 수도 밸브, 고급)
+- Sonoff SWV-ZFE  (스마트 수도 밸브, 고급)
+- Sonoff SWV-ZFU  (스마트 수도 밸브, 고급)
+
 RF:
 - Sonoff RF/TX 기기 (433 MHz 송수신)

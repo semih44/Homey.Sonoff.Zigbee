@@ -1,0 +1,53 @@
+[
+  {
+    "id": "lack_water_close_valve_timeout",
+    "type": "dropdown",
+    "label": {
+      "en": "Auto-close on Water Shortage",
+      "sv": "Stäng automatiskt vid vattenbrist",
+      "nl": "Automatisch sluiten bij watertekort",
+      "da": "Luk automatisk ved vandmangel",
+      "de": "Auto-Schließung bei Wassermangel",
+      "es": "Cierre automático por escasez de agua",
+      "fr": "Fermeture auto en cas de manque d'eau",
+      "it": "Chiusura automatica per mancanza d'acqua",
+      "no": "Automatisk lukking ved vannmangel",
+      "pl": "Automatyczne zamknięcie przy braku wody",
+      "ru": "Авто-закрытие при нехватке воды",
+      "ko": "수압 부족 시 자동 닫기"
+    },
+    "hint": {
+      "en": "Automatically close valve when water shortage is detected.",
+      "sv": "Stäng ventilen automatiskt vid upptäckt vattenbrist.",
+      "nl": "Klep automatisch sluiten wanneer watertekort gedetecteerd.",
+      "da": "Luk ventilen automatisk ved registreret vandmangel.",
+      "de": "Ventil automatisch schließen bei erkanntem Wassermangel.",
+      "es": "Cerrar la válvula automáticamente cuando se detecte escasez de agua.",
+      "fr": "Fermer automatiquement la vanne en cas de manque d'eau détecté.",
+      "it": "Chiudere automaticamente la valvola quando viene rilevata mancanza d'acqua.",
+      "no": "Lukk ventilen automatisk ved registrert vannmangel.",
+      "pl": "Automatycznie zamknij zawór po wykryciu braku wody.",
+      "ru": "Автоматически закрывать клапан при обнаружении нехватки воды.",
+      "ko": "수압 부족 감지 시 밸브를 자동으로 닫습니다."
+    },
+    "value": "0",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Disabled", "de": "Deaktiviert", "nl": "Uitgeschakeld", "fr": "Désactivé",
+          "sv": "Inaktiverad", "da": "Deaktiveret", "es": "Desactivado", "it": "Disattivato",
+          "no": "Deaktivert", "pl": "Wyłączony", "ru": "Отключено", "ko": "비활성화"
+        }
+      },
+      {
+        "id": "30",
+        "label": {
+          "en": "After 30 minutes", "de": "Nach 30 Minuten", "nl": "Na 30 minuten", "fr": "Après 30 minutes",
+          "sv": "Efter 30 minuter", "da": "Efter 30 minutter", "es": "Después de 30 minutos", "it": "Dopo 30 minuti",
+          "no": "Etter 30 minutter", "pl": "Po 30 minutach", "ru": "Через 30 минут", "ko": "30분 후"
+        }
+      }
+    ]
+  }
+]
