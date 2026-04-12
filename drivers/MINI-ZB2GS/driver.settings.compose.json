@@ -166,5 +166,43 @@
         ]
       }
     ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Delayed Power-on", "sv": "Fördröjd strömåterkomst", "nl": "Vertraagd inschakelen",
+      "da": "Forsinket tænding", "de": "Verzögertes Einschalten", "es": "Encendido retrasado",
+      "fr": "Mise sous tension différée", "it": "Accensione ritardata",
+      "no": "Forsinket strømtilkobling", "pl": "Opóźnione włączenie",
+      "ru": "Отложенное включение", "ko": "지연 전원 켜기"
+    },
+    "children": [
+      {
+        "id": "delayed_power_on_state_l1",
+        "type": "checkbox",
+        "value": false,
+        "label": { "en": "Enable Channel 1", "de": "Kanal 1 aktivieren", "nl": "Kanaal 1 inschakelen", "fr": "Activer canal 1", "sv": "Aktivera kanal 1", "da": "Aktivér kanal 1", "es": "Activar canal 1", "it": "Attiva canale 1", "no": "Aktiver kanal 1", "pl": "Włącz kanał 1", "ru": "Включить канал 1", "ko": "채널 1 활성화" }
+      },
+      {
+        "id": "delayed_power_on_time_l1",
+        "type": "number",
+        "label": { "en": "Delay Channel 1 (s)", "de": "Verzögerung Kanal 1 (s)", "nl": "Vertraging kanaal 1 (s)", "fr": "Délai canal 1 (s)", "sv": "Fördröjning kanal 1 (s)", "da": "Forsinkelse kanal 1 (s)", "es": "Retardo canal 1 (s)", "it": "Ritardo canale 1 (s)", "no": "Forsinkelse kanal 1 (s)", "pl": "Opóźnienie kanał 1 (s)", "ru": "Задержка канал 1 (с)", "ko": "지연 채널 1 (초)" },
+        "value": 2,
+        "attr": { "min": 2, "max": 60, "step": 1 }
+      },
+      {
+        "id": "delayed_power_on_state_l2",
+        "type": "checkbox",
+        "value": false,
+        "label": { "en": "Enable Channel 2", "de": "Kanal 2 aktivieren", "nl": "Kanaal 2 inschakelen", "fr": "Activer canal 2", "sv": "Aktivera kanal 2", "da": "Aktivér kanal 2", "es": "Activar canal 2", "it": "Attiva canale 2", "no": "Aktiver kanal 2", "pl": "Włącz kanał 2", "ru": "Включить канал 2", "ko": "채널 2 활성화" }
+      },
+      {
+        "id": "delayed_power_on_time_l2",
+        "type": "number",
+        "label": { "en": "Delay Channel 2 (s)", "de": "Verzögerung Kanal 2 (s)", "nl": "Vertraging kanaal 2 (s)", "fr": "Délai canal 2 (s)", "sv": "Fördröjning kanal 2 (s)", "da": "Forsinkelse kanal 2 (s)", "es": "Retardo canal 2 (s)", "it": "Ritardo canale 2 (s)", "no": "Forsinkelse kanal 2 (s)", "pl": "Opóźnienie kanał 2 (s)", "ru": "Задержка канал 2 (с)", "ko": "지연 채널 2 (초)" },
+        "value": 2,
+        "attr": { "min": 2, "max": 60, "step": 1 }
+      }
+    ]
   }
 ]

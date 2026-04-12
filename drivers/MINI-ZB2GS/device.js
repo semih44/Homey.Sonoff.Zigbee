@@ -158,6 +158,40 @@ class SonoffMINIZB2GS extends SonoffBase {
             }
         }
 
+        // Delayed power-on state per channel
+        for (const [key, ep] of [['delayed_power_on_state_l1', 1], ['delayed_power_on_state_l2', 2]]) {
+            if (changedKeys.includes(key)) {
+                try {
+                    const cluster = this.zclNode.endpoints[ep].clusters.SonoffCluster;
+                    if (cluster) {
+                        cluster.manufacturerId = 0x1286;
+                        await cluster.writeAttributes({ delayed_power_on_state: newSettings[key] });
+                    }
+                    this.log(`${key} updated`);
+                } catch (error) {
+                    this.error(`Error updating ${key}:`, error);
+                    throw new Error(`Failed to update ${key}: ${error.message}`);
+                }
+            }
+        }
+
+        // Delayed power-on time per channel
+        for (const [key, ep] of [['delayed_power_on_time_l1', 1], ['delayed_power_on_time_l2', 2]]) {
+            if (changedKeys.includes(key)) {
+                try {
+                    const cluster = this.zclNode.endpoints[ep].clusters.SonoffCluster;
+                    if (cluster) {
+                        cluster.manufacturerId = 0x1286;
+                        await cluster.writeAttributes({ delayed_power_on_time: newSettings[key] });
+                    }
+                    this.log(`${key} updated`);
+                } catch (error) {
+                    this.error(`Error updating ${key}:`, error);
+                    throw new Error(`Failed to update ${key}: ${error.message}`);
+                }
+            }
+        }
+
         // Inching
         const inchingKeys = ['inching_enabled', 'inching_mode', 'inching_time'];
         if (changedKeys.some(key => inchingKeys.includes(key))) {

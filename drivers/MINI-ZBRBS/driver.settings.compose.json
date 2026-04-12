@@ -373,6 +373,25 @@
           "ko": "캘리브레이션 상태"
         },
         "value": "Unknown"
+      },
+      {
+        "id": "motor_run_status",
+        "type": "label",
+        "label": {
+          "en": "Motor Status",
+          "sv": "Motorstatus",
+          "nl": "Motorstatus",
+          "da": "Motorstatus",
+          "de": "Motorstatus",
+          "es": "Estado del motor",
+          "fr": "État du moteur",
+          "it": "Stato del motore",
+          "no": "Motorstatus",
+          "pl": "Status silnika",
+          "ru": "Статус мотора",
+          "ko": "모터 상태"
+        },
+        "value": "Unknown"
       }
     ]
   }

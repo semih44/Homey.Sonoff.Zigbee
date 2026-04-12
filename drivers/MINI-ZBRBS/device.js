@@ -86,7 +86,9 @@ class SonoffMINIZBRBS extends SonoffBase {
             }
             if (data.motor_run_status !== undefined) {
                 const runLabels = { 0: 'Stop', 1: 'Forward', 2: 'Reverse' };
-                this.log(`Motor run status: ${runLabels[data.motor_run_status] || data.motor_run_status}`);
+                const statusText = runLabels[data.motor_run_status] || String(data.motor_run_status);
+                this.log(`Motor run status: ${statusText}`);
+                this.setSettings({ motor_run_status: statusText }).catch(this.error);
             }
         });
     }
