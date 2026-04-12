@@ -192,5 +192,73 @@
         }
       }
     ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Device Calibration", "de": "Gerätekalibrierung", "nl": "Apparaatkalibratie",
+      "fr": "Calibration de l'appareil", "sv": "Enhetskalibrering", "da": "Enhedskalibrering",
+      "es": "Calibración del dispositivo", "it": "Calibrazione dispositivo",
+      "no": "Enhetskalibrering", "pl": "Kalibracja urządzenia",
+      "ru": "Калибровка устройства", "ko": "기기 캘리브레이션"
+    },
+    "children": [
+      {
+        "id": "temperature_calibration",
+        "type": "number",
+        "label": {
+          "en": "Temperature calibration (°C)", "de": "Temperaturkalibrierung (°C)",
+          "nl": "Temperatuurkalibratie (°C)", "fr": "Calibration de température (°C)",
+          "sv": "Temperaturkalibrering (°C)", "da": "Temperaturkalibrering (°C)",
+          "es": "Calibración de temperatura (°C)", "it": "Calibrazione temperatura (°C)",
+          "no": "Temperaturkalibrering (°C)", "pl": "Kalibracja temperatury (°C)",
+          "ru": "Калибровка температуры (°C)", "ko": "온도 캘리브레이션 (°C)"
+        },
+        "hint": {
+          "en": "Calibration offset written directly to the device.",
+          "de": "Kalibrierungswert wird direkt auf das Gerät geschrieben.",
+          "nl": "Kalibratiewaarde wordt rechtstreeks naar het apparaat geschreven.",
+          "fr": "Valeur de calibration écrite directement sur l'appareil.",
+          "sv": "Kalibreringsvärde skrivs direkt till enheten.",
+          "da": "Kalibreringsværdi skrives direkte til enheden.",
+          "es": "Valor de calibración escrito directamente en el dispositivo.",
+          "it": "Valore di calibrazione scritto direttamente sul dispositivo.",
+          "no": "Kalibreringsverdi skrives direkte til enheten.",
+          "pl": "Wartość kalibracji zapisywana bezpośrednio na urządzeniu.",
+          "ru": "Значение калибровки записывается непосредственно на устройство.",
+          "ko": "캘리브레이션 값이 장치에 직접 기록됩니다."
+        },
+        "value": 0,
+        "attr": { "min": -50, "max": 50, "step": 0.1 }
+      },
+      {
+        "id": "humidity_calibration",
+        "type": "number",
+        "label": {
+          "en": "Humidity calibration (%)", "de": "Feuchtigkeitskalibrierung (%)",
+          "nl": "Vochtigheidskalibratie (%)", "fr": "Calibration d'humidité (%)",
+          "sv": "Fuktighetskalibrering (%)", "da": "Fugtighedskalibrering (%)",
+          "es": "Calibración de humedad (%)", "it": "Calibrazione umidità (%)",
+          "no": "Fuktighetskalibrering (%)", "pl": "Kalibracja wilgotności (%)",
+          "ru": "Калибровка влажности (%)", "ko": "습도 캘리브레이션 (%)"
+        },
+        "hint": {
+          "en": "Calibration offset written directly to the device.",
+          "de": "Kalibrierungswert wird direkt auf das Gerät geschrieben.",
+          "nl": "Kalibratiewaarde wordt rechtstreeks naar het apparaat geschreven.",
+          "fr": "Valeur de calibration écrite directement sur l'appareil.",
+          "sv": "Kalibreringsvärde skrivs direkt till enheten.",
+          "da": "Kalibreringsværdi skrives direkte til enheden.",
+          "es": "Valor de calibración escrito directamente en el dispositivo.",
+          "it": "Valore di calibrazione scritto direttamente sul dispositivo.",
+          "no": "Kalibreringsverdi skrives direkte til enheten.",
+          "pl": "Wartość kalibracji zapisywana bezpośrednio na urządzeniu.",
+          "ru": "Значение калибровки записывается непосредственно на устройство.",
+          "ko": "캘리브레이션 값이 장치에 직접 기록됩니다."
+        },
+        "value": 0,
+        "attr": { "min": -50, "max": 50, "step": 0.1 }
+      }
+    ]
   }
 ]
