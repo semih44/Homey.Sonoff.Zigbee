@@ -1,0 +1,59 @@
+{
+  "id": "SonoffSA028",
+  "name": {
+    "en": "SA-028 Smart Plug",
+    "sv": "SA-028 Smartkontakt",
+    "nl": "SA-028 Slimme stekker",
+    "da": "SA-028 Smart stik",
+    "de": "SA-028 Smarte Steckdose",
+    "es": "SA-028 Enchufe inteligente",
+    "fr": "SA-028 Prise intelligente",
+    "it": "SA-028 Presa intelligente",
+    "no": "SA-028 Smartkontakt",
+    "pl": "SA-028 Inteligentna wtyczka",
+    "ru": "SA-028 Умная розетка",
+    "ko": "SA-028 스마트 플러그"
+  },
+  "class": "socket",
+  "capabilities": [
+    "onoff"
+  ],
+  "zigbee": {
+    "manufacturerName": ["eWeLink", "SONOFF"],
+    "productId": [
+      "SA-028-1"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0,
+          3,
+          4,
+          5,
+          6
+        ],
+        "bindings": [
+          6
+        ]
+      }
+    },
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learn.svg",
+      "instruction": {
+        "en": "Press and hold the reset button for 5 seconds until the LED starts flashing.",
+        "sv": "Tryck och håll återställningsknappen i 5 sekunder tills lysdioden börjar blinka.",
+        "nl": "Houd de resetknop 5 seconden ingedrukt totdat de LED begint te knipperen.",
+        "da": "Tryk og hold nulstillingsknappen i 5 sekunder, indtil LED'en begynder at blinke.",
+        "de": "Halten Sie die Reset-Taste 5 Sekunden lang gedrückt, bis die LED zu blinken beginnt.",
+        "es": "Mantenga presionado el botón de reinicio durante 5 segundos hasta que el LED comience a parpadear.",
+        "fr": "Appuyez et maintenez le bouton de réinitialisation pendant 5 secondes jusqu'à ce que la LED commence à clignoter.",
+        "it": "Tenere premuto il pulsante di reset per 5 secondi fino a quando il LED inizia a lampeggiare.",
+        "no": "Trykk og hold tilbakestillingsknappen i 5 sekunder til LED-en begynner å blinke.",
+        "pl": "Naciśnij i przytrzymaj przycisk resetowania przez 5 sekund, aż dioda LED zacznie migać.",
+        "ru": "Нажмите и удерживайте кнопку сброса 5 секунд, пока светодиод не начнёт мигать.",
+        "ko": "LED가 깜박이기 시작할 때까지 리셋 버튼을 5초 동안 길게 누르세요."
+      }
+    }
+  },
+  "$extends": ["defaults"]
+}
