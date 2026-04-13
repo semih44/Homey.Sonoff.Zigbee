@@ -1,0 +1,81 @@
+{
+  "id": "SonoffSWVZNU",
+  "name": {
+    "en": "SWV-ZNU Smart Water Valve",
+    "sv": "SWV-ZNU Smart vattenventil",
+    "nl": "SWV-ZNU Slimme waterklep",
+    "da": "SWV-ZNU Smart vandventil",
+    "de": "SWV-ZNU Smartes Wasserventil",
+    "es": "SWV-ZNU Válvula de agua inteligente",
+    "fr": "SWV-ZNU Vanne d'eau intelligente",
+    "it": "SWV-ZNU Valvola dell'acqua intelligente",
+    "no": "SWV-ZNU Smart vannventil",
+    "pl": "SWV-ZNU Inteligentny zawór wodny",
+    "ru": "SWV-ZNU Умный водяной клапан",
+    "ko": "SWV-ZNU 스마트 수도 밸브"
+  },
+  "class": "other",
+  "capabilities": [
+    "onoff",
+    "measure_battery",
+    "alarm_water"
+  ],
+  "capabilitiesOptions": {
+    "onoff": {
+      "title": {
+        "en": "Valve", "de": "Ventil", "nl": "Klep", "fr": "Vanne",
+        "sv": "Ventil", "da": "Ventil", "es": "Válvula", "it": "Valvola",
+        "no": "Ventil", "pl": "Zawór", "ru": "Клапан", "ko": "밸브"
+      }
+    },
+    "alarm_water": {
+      "title": {
+        "en": "Water Leak", "de": "Wasserleck", "nl": "Waterlek", "fr": "Fuite d'eau",
+        "sv": "Vattenläcka", "da": "Vandlækage", "es": "Fuga de agua", "it": "Perdita d'acqua",
+        "no": "Vannlekkasje", "pl": "Wyciek wody", "ru": "Утечка воды", "ko": "누수"
+      }
+    }
+  },
+  "energy": {
+    "batteries": ["AA", "AA", "AA", "AA"]
+  },
+  "zigbee": {
+    "manufacturerName": [
+      "SONOFF"
+    ],
+    "productId": [
+      "SWV-ZNU"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0,
+          1,
+          6,
+          64529
+        ],
+        "bindings": [
+          6
+        ]
+      }
+    },
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learn.svg",
+      "instruction": {
+        "en": "Press and hold the button for approx. 5 seconds until the LED blinks rapidly.",
+        "sv": "Tryck och håll knappen i cirka 5 sekunder tills lysdioden blinkar snabbt.",
+        "nl": "Houd de knop ca. 5 seconden ingedrukt totdat de LED snel knippert.",
+        "da": "Tryk og hold knappen i ca. 5 sekunder, indtil LED'en blinker hurtigt.",
+        "de": "Halten Sie die Taste ca. 5 Sekunden gedrückt, bis die LED schnell blinkt.",
+        "es": "Mantenga presionado el botón durante aprox. 5 segundos hasta que el LED parpadee rápidamente.",
+        "fr": "Maintenez le bouton enfoncé pendant environ 5 secondes jusqu'à ce que la LED clignote rapidement.",
+        "it": "Tenere premuto il pulsante per circa 5 secondi fino a quando il LED lampeggia rapidamente.",
+        "no": "Trykk og hold knappen i ca. 5 sekunder til LED-en blinker raskt.",
+        "pl": "Naciśnij i przytrzymaj przycisk przez ok. 5 sekund, aż dioda LED zacznie szybko migać.",
+        "ru": "Нажмите и удерживайте кнопку примерно 5 секунд, пока светодиод не начнет быстро мигать.",
+        "ko": "LED가 빠르게 깜박일 때까지 약 5초 동안 버튼을 길게 누르세요."
+      }
+    }
+  },
+  "$extends": ["defaults"]
+}
