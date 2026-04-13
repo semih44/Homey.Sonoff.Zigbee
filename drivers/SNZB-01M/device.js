@@ -3,7 +3,6 @@
 const SonoffBase = require('../sonoffbase');
 const SonoffButtonCluster = require('../../lib/SonoffButtonCluster');
 
-// keyActionEvent values from zigbee2mqtt
 const ACTION_MAP = {
     1: 'single',
     2: 'double',

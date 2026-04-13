@@ -319,7 +319,7 @@ class SonoffZBMINIR2 extends SonoffBase {
             const rawTimeUnits = Math.round(msTime / 500);
             const tmpTime = Math.min(Math.max(rawTimeUnits, 1), 0xffff);
             
-            // Build payload according to Zigbee2MQTT format
+            // Build inching protocol payload
             const payloadValue = [];
             payloadValue[0] = INCHING_PROTOCOL.CMD;
             payloadValue[1] = INCHING_PROTOCOL.SUBCMD_INCHING;
