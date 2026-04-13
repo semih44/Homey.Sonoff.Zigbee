@@ -12,6 +12,21 @@ const Settings_Attributes = [
 	'frost_protection_temperature'
 ];
 
+// TRVZB extended settings: map setting id -> { attr, scale, type }
+// scale: multiplier applied when writing to device (device_value = setting_value * scale)
+// type: 'number' | 'enum' | 'checkbox'
+const Extended_Settings = {
+	temperature_sensor_select:  { attr: 'temperature_sensor_select',  scale: 1,   type: 'enum'     },
+	external_temperature_input: { attr: 'external_temperature_input', scale: 100, type: 'number'   },
+	temporary_mode:             { attr: 'temporary_mode',             scale: 1,   type: 'enum'     },
+	temporary_mode_time:        { attr: 'temporary_mode_time',        scale: 60,  type: 'number'   }, // minutes -> seconds
+	temporary_mode_temp:        { attr: 'temporary_mode_temp',        scale: 100, type: 'number'   },
+	valve_opening_degree:       { attr: 'valve_opening_degree',       scale: 1,   type: 'number'   },
+	valve_closing_degree:       { attr: 'valve_closing_degree',       scale: 1,   type: 'number'   },
+	temp_accuracy:              { attr: 'temp_accuracy',              scale: 100, type: 'number'   },
+	smart_temperature_control:  { attr: 'smart_temperature_control',  scale: 1,   type: 'checkbox' }
+};
+
 /*
 const TB_ATTRIBUTES = {
 
@@ -214,7 +229,7 @@ class SonoffTRVZB extends SonoffBase {
 				this.setSettings({ localTemperatureCalibration: value }).catch(this.error);
 		});
 
-		Settings_Attributes.forEach( (attr) => {
+		[...Settings_Attributes, ...Object.keys(Extended_Settings)].forEach( (attr) => {
 			zclNode.endpoints[1].clusters[SonoffCluster.NAME]
             .on('attr.' + attr, (value) => {
 				const o = {};
@@ -233,31 +248,58 @@ class SonoffTRVZB extends SonoffBase {
 		Object.entries(settings).forEach(([key, value]) => {
 			if (key === "localTemperatureCalibration") {
 				settings[key] = value / 100;
+			} else if (Extended_Settings[key]) {
+				const cfg = Extended_Settings[key];
+				if (cfg.type === 'number') {
+					settings[key] = value / cfg.scale;
+				} else if (cfg.type === 'enum') {
+					settings[key] = String(value);
+				} else if (cfg.type === 'checkbox') {
+					settings[key] = value === 0x02;
+				}
 			} else if (key.includes("temperature")) {  //Accept t/Temperature
 				settings[key] = value / 100;
 			}
-		});	
+		});
 		await super.setSettings(settings);
 	}
-	
+
 	async onSettings({ oldSettings, newSettings, changedKeys }) {
 		const changedAttributes = Settings_Attributes.reduce((acc, key) => {
-			if (newSettings.hasOwnProperty(key)) {
+			if (changedKeys.includes(key)) {
 				acc[key] = newSettings[key];
-				if (key.includes("temperature"))  
+				if (key.includes("temperature"))
 					acc[key] = acc[key] * 100;
 			}
 			return acc;
 		}, {});
 
-		await this.writeAttributes(SonoffCluster, changedAttributes);
+		for (const key of Object.keys(Extended_Settings)) {
+			if (!changedKeys.includes(key)) continue;
+			const cfg = Extended_Settings[key];
+			let value = newSettings[key];
+			if (cfg.type === 'number') {
+				value = Math.round(value * cfg.scale);
+			} else if (cfg.type === 'enum') {
+				value = parseInt(value, 10);
+			} else if (cfg.type === 'checkbox') {
+				value = value ? 0x02 : 0x00;
+			}
+			changedAttributes[cfg.attr] = value;
+		}
 
-		await this.writeAttributes(CLUSTER.THERMOSTAT, {localTemperatureCalibration: newSettings.localTemperatureCalibration * 10});
-		//this.checkAttributes();
+		if (Object.keys(changedAttributes).length > 0) {
+			await this.writeAttributes(SonoffCluster, changedAttributes);
+		}
+
+		if (changedKeys.includes('localTemperatureCalibration')) {
+			await this.writeAttributes(CLUSTER.THERMOSTAT, {localTemperatureCalibration: newSettings.localTemperatureCalibration * 10});
+		}
 	}
 
 	async checkAttributes() {
-		this.readAttribute(SonoffCluster, Settings_Attributes, (data) => {
+		const allAttrs = [...Settings_Attributes, ...Object.keys(Extended_Settings)];
+		this.readAttribute(SonoffCluster, allAttrs, (data) => {
 			this.setSettings(data).catch(this.error);
 		});
 		this.readAttribute(CLUSTER.THERMOSTAT, ['localTemperatureCalibration'], (data) => {

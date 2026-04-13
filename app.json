@@ -7921,6 +7921,454 @@
               }
             }
           ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Temperature Sensor",
+            "sv": "Temperatursensor",
+            "nl": "Temperatuursensor",
+            "da": "Temperatursensor",
+            "de": "Temperatursensor",
+            "es": "Sensor de temperatura",
+            "fr": "Capteur de température",
+            "it": "Sensore di temperatura",
+            "no": "Temperatursensor",
+            "pl": "Czujnik temperatury",
+            "ru": "Датчик температуры",
+            "ko": "온도 센서"
+          },
+          "children": [
+            {
+              "id": "temperature_sensor_select",
+              "type": "dropdown",
+              "label": {
+                "en": "Temperature sensor source",
+                "sv": "Källa för temperatursensor",
+                "nl": "Bron temperatuursensor",
+                "da": "Kilde til temperatursensor",
+                "de": "Quelle des Temperatursensors",
+                "es": "Fuente del sensor de temperatura",
+                "fr": "Source du capteur de température",
+                "it": "Origine del sensore di temperatura",
+                "no": "Kilde for temperatursensor",
+                "pl": "Źródło czujnika temperatury",
+                "ru": "Источник датчика температуры",
+                "ko": "온도 센서 소스"
+              },
+              "hint": {
+                "en": "Whether to use the internal sensor or an external temperature input for the perceived local temperature.",
+                "sv": "Om du vill använda den interna sensorn eller en extern temperaturingång för den upplevda lokala temperaturen.",
+                "nl": "Gebruik de interne sensor of een externe temperatuuringang voor de lokaal waargenomen temperatuur.",
+                "da": "Om den interne sensor eller en ekstern temperaturindgang skal bruges til den opfattede lokale temperatur.",
+                "de": "Ob der interne Sensor oder ein externer Temperatureingang für die wahrgenommene lokale Temperatur verwendet wird.",
+                "es": "Si usar el sensor interno o una entrada de temperatura externa como temperatura local percibida.",
+                "fr": "Utiliser le capteur interne ou une entrée de température externe comme température locale perçue.",
+                "it": "Se utilizzare il sensore interno o un ingresso di temperatura esterno per la temperatura locale percepita.",
+                "no": "Om den interne sensoren eller en ekstern temperaturinngang skal brukes for den opplevde lokale temperaturen.",
+                "pl": "Czy używać czujnika wewnętrznego lub zewnętrznego wejścia temperatury jako odczuwalnej temperatury lokalnej.",
+                "ru": "Использовать внутренний датчик или внешний вход температуры в качестве локальной температуры.",
+                "ko": "내부 센서 또는 외부 온도 입력을 로컬 온도로 사용할지 여부입니다."
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Internal",
+                    "sv": "Intern",
+                    "nl": "Intern",
+                    "da": "Intern",
+                    "de": "Intern",
+                    "es": "Interno",
+                    "fr": "Interne",
+                    "it": "Interno",
+                    "no": "Intern",
+                    "pl": "Wewnętrzny",
+                    "ru": "Внутренний",
+                    "ko": "내부"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "External",
+                    "sv": "Extern",
+                    "nl": "Extern",
+                    "da": "Ekstern",
+                    "de": "Extern",
+                    "es": "Externo",
+                    "fr": "Externe",
+                    "it": "Esterno",
+                    "no": "Ekstern",
+                    "pl": "Zewnętrzny",
+                    "ru": "Внешний",
+                    "ko": "외부"
+                  }
+                },
+                {
+                  "id": "2",
+                  "label": {
+                    "en": "External 2",
+                    "sv": "Extern 2",
+                    "nl": "Extern 2",
+                    "da": "Ekstern 2",
+                    "de": "Extern 2",
+                    "es": "Externo 2",
+                    "fr": "Externe 2",
+                    "it": "Esterno 2",
+                    "no": "Ekstern 2",
+                    "pl": "Zewnętrzny 2",
+                    "ru": "Внешний 2",
+                    "ko": "외부 2"
+                  }
+                },
+                {
+                  "id": "3",
+                  "label": {
+                    "en": "External 3",
+                    "sv": "Extern 3",
+                    "nl": "Extern 3",
+                    "da": "Ekstern 3",
+                    "de": "Extern 3",
+                    "es": "Externo 3",
+                    "fr": "Externe 3",
+                    "it": "Esterno 3",
+                    "no": "Ekstern 3",
+                    "pl": "Zewnętrzny 3",
+                    "ru": "Внешний 3",
+                    "ko": "외부 3"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "external_temperature_input",
+              "type": "number",
+              "label": {
+                "en": "External temperature value",
+                "sv": "Externt temperaturvärde",
+                "nl": "Externe temperatuurwaarde",
+                "da": "Ekstern temperaturværdi",
+                "de": "Externer Temperaturwert",
+                "es": "Valor de temperatura externa",
+                "fr": "Valeur de température externe",
+                "it": "Valore temperatura esterna",
+                "no": "Ekstern temperaturverdi",
+                "pl": "Wartość temperatury zewnętrznej",
+                "ru": "Значение внешней температуры",
+                "ko": "외부 온도 값"
+              },
+              "hint": {
+                "en": "Value supplied to the TRV when an external sensor is selected. Sync has to be performed outside of Homey.",
+                "sv": "Värde som skickas till TRV när en extern sensor är vald. Synkronisering måste göras utanför Homey.",
+                "nl": "Waarde die naar de TRV wordt gestuurd wanneer een externe sensor is gekozen. Synchronisatie gebeurt buiten Homey.",
+                "da": "Værdi der sendes til TRV, når en ekstern sensor er valgt. Synkronisering sker uden for Homey.",
+                "de": "Wert, der an das Ventil übermittelt wird, wenn ein externer Sensor gewählt ist. Synchronisation erfolgt außerhalb von Homey.",
+                "es": "Valor proporcionado al TRV cuando se elige un sensor externo. La sincronización se realiza fuera de Homey.",
+                "fr": "Valeur envoyée au TRV quand un capteur externe est sélectionné. La synchronisation se fait hors de Homey.",
+                "it": "Valore fornito al TRV quando è selezionato un sensore esterno. La sincronizzazione avviene fuori Homey.",
+                "no": "Verdi som sendes til TRV når en ekstern sensor er valgt. Synkronisering skjer utenfor Homey.",
+                "pl": "Wartość przekazywana do TRV gdy wybrano zewnętrzny czujnik. Synchronizacja poza Homey.",
+                "ru": "Значение, передаваемое ТРВ при выборе внешнего датчика. Синхронизация выполняется вне Homey.",
+                "ko": "외부 센서가 선택된 경우 TRV에 전달되는 값입니다. 동기화는 Homey 외부에서 수행됩니다."
+              },
+              "attr": {
+                "min": 0,
+                "max": 99.9,
+                "step": 0.1
+              },
+              "value": 0
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Temporary / Timer Mode",
+            "sv": "Tillfälligt/Timer-läge",
+            "nl": "Tijdelijke modus / Timer",
+            "da": "Midlertidig/Timer-tilstand",
+            "de": "Temporär / Timer-Modus",
+            "es": "Modo temporal / temporizador",
+            "fr": "Mode temporaire / minuterie",
+            "it": "Modalità temporanea / timer",
+            "no": "Midlertidig/tidsurmodus",
+            "pl": "Tryb tymczasowy / timer",
+            "ru": "Временный / таймер режим",
+            "ko": "임시/타이머 모드"
+          },
+          "children": [
+            {
+              "id": "temporary_mode",
+              "type": "dropdown",
+              "label": {
+                "en": "Temporary mode",
+                "sv": "Tillfälligt läge",
+                "nl": "Tijdelijke modus",
+                "da": "Midlertidig tilstand",
+                "de": "Temporärmodus",
+                "es": "Modo temporal",
+                "fr": "Mode temporaire",
+                "it": "Modalità temporanea",
+                "no": "Midlertidig modus",
+                "pl": "Tryb tymczasowy",
+                "ru": "Временный режим",
+                "ko": "임시 모드"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Boost",
+                    "sv": "Boost",
+                    "nl": "Boost",
+                    "da": "Boost",
+                    "de": "Boost",
+                    "es": "Refuerzo",
+                    "fr": "Boost",
+                    "it": "Boost",
+                    "no": "Boost",
+                    "pl": "Boost",
+                    "ru": "Буст",
+                    "ko": "부스트"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Timer",
+                    "sv": "Timer",
+                    "nl": "Timer",
+                    "da": "Timer",
+                    "de": "Timer",
+                    "es": "Temporizador",
+                    "fr": "Minuterie",
+                    "it": "Timer",
+                    "no": "Tidsur",
+                    "pl": "Timer",
+                    "ru": "Таймер",
+                    "ko": "타이머"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "temporary_mode_temp",
+              "type": "number",
+              "label": {
+                "en": "Timer mode target temperature",
+                "sv": "Måltemperatur i timer-läge",
+                "nl": "Doeltemperatuur timer-modus",
+                "da": "Måltemperatur i timertilstand",
+                "de": "Timer-Modus Zieltemperatur",
+                "es": "Temperatura objetivo modo temporizador",
+                "fr": "Température cible mode minuterie",
+                "it": "Temperatura obiettivo modalità timer",
+                "no": "Måltemperatur i tidsur-modus",
+                "pl": "Docelowa temperatura trybu timera",
+                "ru": "Целевая температура режима таймера",
+                "ko": "타이머 모드 목표 온도"
+              },
+              "attr": {
+                "min": 4,
+                "max": 35,
+                "step": 0.5
+              },
+              "value": 20
+            },
+            {
+              "id": "temporary_mode_time",
+              "type": "number",
+              "label": {
+                "en": "Temporary mode duration (min)",
+                "sv": "Varaktighet tillfälligt läge (min)",
+                "nl": "Duur tijdelijke modus (min)",
+                "da": "Varighed midlertidig tilstand (min)",
+                "de": "Dauer Temporärmodus (Min)",
+                "es": "Duración modo temporal (min)",
+                "fr": "Durée mode temporaire (min)",
+                "it": "Durata modalità temporanea (min)",
+                "no": "Varighet midlertidig modus (min)",
+                "pl": "Czas trwania trybu tymczasowego (min)",
+                "ru": "Длительность временного режима (мин)",
+                "ko": "임시 모드 기간 (분)"
+              },
+              "hint": {
+                "en": "Boost: up to 180 minutes. Timer: up to 1440 minutes (24h).",
+                "sv": "Boost: upp till 180 minuter. Timer: upp till 1440 minuter (24h).",
+                "nl": "Boost: tot 180 minuten. Timer: tot 1440 minuten (24u).",
+                "da": "Boost: op til 180 minutter. Timer: op til 1440 minutter (24 t).",
+                "de": "Boost: bis zu 180 Minuten. Timer: bis zu 1440 Minuten (24h).",
+                "es": "Boost: hasta 180 minutos. Temporizador: hasta 1440 minutos (24h).",
+                "fr": "Boost : jusqu'à 180 min. Minuterie : jusqu'à 1440 min (24h).",
+                "it": "Boost: fino a 180 minuti. Timer: fino a 1440 minuti (24h).",
+                "no": "Boost: opptil 180 minutter. Tidsur: opptil 1440 minutter (24t).",
+                "pl": "Boost: do 180 minut. Timer: do 1440 minut (24h).",
+                "ru": "Буст: до 180 минут. Таймер: до 1440 минут (24ч).",
+                "ko": "부스트: 최대 180분. 타이머: 최대 1440분(24시간)."
+              },
+              "attr": {
+                "min": 0,
+                "max": 1440,
+                "step": 1
+              },
+              "value": 60
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Advanced Valve",
+            "sv": "Avancerad ventil",
+            "nl": "Geavanceerde klep",
+            "da": "Avanceret ventil",
+            "de": "Erweiterte Ventilsteuerung",
+            "es": "Válvula avanzada",
+            "fr": "Vanne avancée",
+            "it": "Valvola avanzata",
+            "no": "Avansert ventil",
+            "pl": "Zawór zaawansowany",
+            "ru": "Расширенные настройки клапана",
+            "ko": "고급 밸브"
+          },
+          "children": [
+            {
+              "id": "valve_opening_degree",
+              "type": "number",
+              "label": {
+                "en": "Valve opening degree (%)",
+                "sv": "Ventilöppningsgrad (%)",
+                "nl": "Klep openingsgraad (%)",
+                "da": "Ventilåbningsgrad (%)",
+                "de": "Ventil-Öffnungsgrad (%)",
+                "es": "Grado de apertura de válvula (%)",
+                "fr": "Degré d'ouverture vanne (%)",
+                "it": "Grado di apertura valvola (%)",
+                "no": "Ventilåpningsgrad (%)",
+                "pl": "Stopień otwarcia zaworu (%)",
+                "ru": "Степень открытия клапана (%)",
+                "ko": "밸브 개방도 (%)"
+              },
+              "hint": {
+                "en": "Percentage the valve opens when active. Firmware v1.1.4 or higher.",
+                "sv": "Procent som ventilen öppnar när den är aktiv. Firmware v1.1.4 eller senare.",
+                "nl": "Percentage waarop de klep opent wanneer actief. Firmware v1.1.4 of hoger.",
+                "da": "Procent som ventilen åbner, når den er aktiv. Firmware v1.1.4 eller nyere.",
+                "de": "Prozentsatz, den das Ventil im aktiven Zustand öffnet. Firmware v1.1.4 oder höher.",
+                "es": "Porcentaje de apertura de la válvula cuando está activa. Firmware v1.1.4 o superior.",
+                "fr": "Pourcentage d'ouverture de la vanne lorsqu'active. Firmware v1.1.4 ou supérieur.",
+                "it": "Percentuale di apertura della valvola quando attiva. Firmware v1.1.4 o successivo.",
+                "no": "Prosent ventilen åpner når den er aktiv. Fastvare v1.1.4 eller nyere.",
+                "pl": "Procent otwarcia zaworu gdy aktywny. Firmware v1.1.4 lub wyższy.",
+                "ru": "Процент открытия клапана в активном состоянии. Прошивка v1.1.4 или выше.",
+                "ko": "활성 시 밸브 개방 비율. 펌웨어 v1.1.4 이상."
+              },
+              "attr": {
+                "min": 0,
+                "max": 100,
+                "step": 1
+              },
+              "value": 100
+            },
+            {
+              "id": "valve_closing_degree",
+              "type": "number",
+              "label": {
+                "en": "Valve closing degree (%)",
+                "sv": "Ventilstängningsgrad (%)",
+                "nl": "Klep sluitgraad (%)",
+                "da": "Ventilklukningsgrad (%)",
+                "de": "Ventil-Schließgrad (%)",
+                "es": "Grado de cierre de válvula (%)",
+                "fr": "Degré de fermeture vanne (%)",
+                "it": "Grado di chiusura valvola (%)",
+                "no": "Ventillukkingsgrad (%)",
+                "pl": "Stopień zamknięcia zaworu (%)",
+                "ru": "Степень закрытия клапана (%)",
+                "ko": "밸브 폐쇄도 (%)"
+              },
+              "attr": {
+                "min": 0,
+                "max": 100,
+                "step": 1
+              },
+              "value": 100
+            },
+            {
+              "id": "temp_accuracy",
+              "type": "number",
+              "label": {
+                "en": "Temperature control accuracy (°C)",
+                "sv": "Noggrannhet temperaturreglering (°C)",
+                "nl": "Nauwkeurigheid temperatuurregeling (°C)",
+                "da": "Temperaturstyrings-nøjagtighed (°C)",
+                "de": "Regelgenauigkeit Temperatur (°C)",
+                "es": "Precisión del control de temperatura (°C)",
+                "fr": "Précision de régulation (°C)",
+                "it": "Precisione controllo temperatura (°C)",
+                "no": "Nøyaktighet temperaturkontroll (°C)",
+                "pl": "Dokładność regulacji temperatury (°C)",
+                "ru": "Точность регулирования температуры (°C)",
+                "ko": "온도 제어 정확도 (°C)"
+              },
+              "hint": {
+                "en": "Range -1.0 .. -0.2 °C in 0.2 steps. Firmware v1.3.0 or higher.",
+                "sv": "Intervall -1.0 .. -0.2 °C i steg om 0.2. Firmware v1.3.0 eller senare.",
+                "nl": "Bereik -1.0 .. -0.2 °C in stappen van 0.2. Firmware v1.3.0 of hoger.",
+                "da": "Interval -1.0 .. -0.2 °C i trin på 0.2. Firmware v1.3.0 eller nyere.",
+                "de": "Bereich -1,0 .. -0,2 °C in 0,2-Schritten. Firmware v1.3.0 oder höher.",
+                "es": "Rango -1.0 .. -0.2 °C en pasos de 0.2. Firmware v1.3.0 o superior.",
+                "fr": "Plage -1.0 .. -0.2 °C par pas de 0.2. Firmware v1.3.0 ou supérieur.",
+                "it": "Intervallo -1.0 .. -0.2 °C a passi di 0.2. Firmware v1.3.0 o successivo.",
+                "no": "Område -1.0 .. -0.2 °C i steg på 0.2. Fastvare v1.3.0 eller nyere.",
+                "pl": "Zakres -1.0 .. -0.2 °C z krokiem 0.2. Firmware v1.3.0 lub wyższy.",
+                "ru": "Диапазон -1.0 .. -0.2 °C с шагом 0.2. Прошивка v1.3.0 или выше.",
+                "ko": "범위 -1.0 .. -0.2 °C, 0.2 단위. 펌웨어 v1.3.0 이상."
+              },
+              "attr": {
+                "min": -1,
+                "max": -0.2,
+                "step": 0.2
+              },
+              "value": -1
+            },
+            {
+              "id": "smart_temperature_control",
+              "type": "checkbox",
+              "label": {
+                "en": "Smart temperature control (PID)",
+                "sv": "Smart temperaturreglering (PID)",
+                "nl": "Slimme temperatuurregeling (PID)",
+                "da": "Smart temperaturstyring (PID)",
+                "de": "Smarte Temperaturregelung (PID)",
+                "es": "Control inteligente de temperatura (PID)",
+                "fr": "Régulation intelligente (PID)",
+                "it": "Controllo temperatura intelligente (PID)",
+                "no": "Smart temperaturstyring (PID)",
+                "pl": "Inteligentna regulacja temperatury (PID)",
+                "ru": "Умное управление температурой (PID)",
+                "ko": "스마트 온도 제어 (PID)"
+              },
+              "hint": {
+                "en": "Enables adaptive PID control. When on, valve opening/closing degree and temperature accuracy are not applied.",
+                "sv": "Aktiverar adaptiv PID-reglering. När på gäller inte ventilöppning/-stängning och noggrannhet.",
+                "nl": "Schakelt adaptieve PID-regeling in. Bij 'aan' worden open-/sluitgraad en nauwkeurigheid niet toegepast.",
+                "da": "Aktiverer adaptiv PID-styring. Når aktiveret, bruges åbnings-/lukkegrad og nøjagtighed ikke.",
+                "de": "Aktiviert adaptive PID-Regelung. Wenn aktiv, werden Öffnungs-/Schließgrad und Genauigkeit nicht angewendet.",
+                "es": "Activa control PID adaptativo. Cuando está activado, no se aplican grados de apertura/cierre ni precisión.",
+                "fr": "Active la régulation PID adaptative. Lorsque activée, les degrés d'ouverture/fermeture et la précision ne s'appliquent pas.",
+                "it": "Attiva il controllo PID adattivo. Quando attivo, i gradi di apertura/chiusura e la precisione non sono applicati.",
+                "no": "Aktiverer adaptiv PID-styring. Når på brukes ikke åpnings-/lukkegrad og nøyaktighet.",
+                "pl": "Włącza adaptacyjne sterowanie PID. Gdy aktywne, stopnie otwarcia/zamknięcia i dokładność nie są stosowane.",
+                "ru": "Включает адаптивное ПИД-регулирование. Если включено, степени открытия/закрытия и точность не применяются.",
+                "ko": "적응형 PID 제어를 활성화합니다. 켜져 있으면 개방/폐쇄도와 정확도는 적용되지 않습니다."
+              },
+              "value": false
+            }
+          ]
         }
       ]
     },

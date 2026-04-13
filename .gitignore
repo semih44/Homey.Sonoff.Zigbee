@@ -70,3 +70,10 @@ typings
 
 /.vscode/
 *.code-workspace
+
+z2m-feature-audit.md
+
+# AI assistant working directories
+.agents/
+.claude/
+.kilo/
