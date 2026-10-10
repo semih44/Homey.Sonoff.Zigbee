@@ -82,7 +82,19 @@ class SonoffBase extends ZigBeeDevice {
 
         this._configuringReporting = true;
         try {
-            await this.configureAttributeReporting(configurations);
+            // One request per cluster, and all of them settled: homey-zigbeedriver retries each
+            // cluster on its own and gives up on the first failure while others are still retrying
+            const clusters = new Map();
+            for (const configuration of configurations) {
+                const key = `${configuration.endpointId || 1}:${configuration.cluster.NAME}`;
+                clusters.set(key, [...(clusters.get(key) || []), configuration]);
+            }
+            const results = await Promise.allSettled(
+                [...clusters.values()].map(clusterConfigurations => this.configureAttributeReporting(clusterConfigurations))
+            );
+            const failure = results.find(result => result.status === 'rejected');
+            if (failure) throw failure.reason;
+
             await this.setStoreValue(REPORTING_STORE_KEY, wanted);
         } catch (error) {
             this.error(`Could not configure attribute reporting, trying again after the next report`, error);
