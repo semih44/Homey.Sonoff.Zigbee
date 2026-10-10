@@ -1,1 +1,8 @@
-{}
+{
+  "calibration_status": {
+    "0": "Inte kalibrerad",
+    "1": "Kalibrerar",
+    "2": "Kalibreringen misslyckades",
+    "3": "Kalibrerad"
+  }
+}

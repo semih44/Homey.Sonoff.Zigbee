@@ -65,10 +65,8 @@ class SonoffMINIZBDIM extends SonoffBase {
 
             // Listen for calibration status/progress updates
             sonoffCluster.on('attr.calibration_status', (value) => {
-                const statusMap = { 0: 'uncalibrated', 1: 'calibrating', 2: 'failed', 3: 'calibrated' };
-                const status = statusMap[value] || 'unknown';
-                this.log('Calibration status:', status);
-                this.setSettings({ calibration_status: String(value) })
+                this.log('Calibration status:', value);
+                this.setSettings({ calibration_status: this._calibrationStatusText(value) })
                     .catch(err => this.error('Failed to update calibration_status:', err));
             });
 
@@ -218,6 +216,11 @@ class SonoffMINIZBDIM extends SonoffBase {
         }
     }
 
+    // zigbee-herdsman-converters: 0 uncalibrated, 1 calibrating, 2 calibration failed, 3 calibrated
+    _calibrationStatusText(value) {
+        return [0, 1, 2, 3].includes(value) ? this.homey.__(`calibration_status.${value}`) : String(value);
+    }
+
     async checkAttributes() {
         // Read power-on behavior
         this.readPowerOnBehavior('power_on_behavior');
@@ -254,7 +257,7 @@ class SonoffMINIZBDIM extends SonoffBase {
                 settings.dimming_rate = String(data.dimming_rate);
             }
             if (data.calibration_status !== undefined) {
-                settings.calibration_status = String(data.calibration_status);
+                settings.calibration_status = this._calibrationStatusText(data.calibration_status);
             }
 
             if (Object.keys(settings).length > 0) {

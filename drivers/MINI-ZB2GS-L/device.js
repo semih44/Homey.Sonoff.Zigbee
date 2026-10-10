@@ -155,6 +155,11 @@ class SonoffMINIZB2GSL extends SonoffBase {
             this.readPowerOnDelay(ep, `delayed_power_on_state_${channel}`, `delayed_power_on_time_${channel}`);
         }
 
+        // Read the external trigger mode per endpoint
+        for (const [key, ep] of [['external_trigger_mode_l1', 1], ['external_trigger_mode_l2', 2]]) {
+            this.readSwitchMode(ep, key);
+        }
+
         // Read SonoffCluster attributes from endpoint 1
         this.readAttribute(SonoffCluster, ['detach_relay_mode2'], (data) => {
             this.log('Read SonoffCluster attributes:', data);

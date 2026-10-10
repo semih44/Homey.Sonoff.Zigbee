@@ -250,6 +250,22 @@ class SonoffBase extends ZigBeeDevice {
     }
 
     /**
+     * Read the external switch trigger mode (0x0016) of one endpoint into a dropdown setting
+     * @param {number} endpointId
+     * @param {string} settingKey
+     */
+    async readSwitchMode(endpointId, settingKey) {
+        try {
+            const data = await this.zclNode.endpoints[endpointId].clusters.SonoffCluster.readAttributes('switch_mode');
+            if (data.switch_mode !== undefined) {
+                await this.setSettings({ [settingKey]: String(data.switch_mode) });
+            }
+        } catch (error) {
+            this.error(`Could not read the trigger mode of endpoint ${endpointId}:`, error);
+        }
+    }
+
+    /**
      * Configure inching (auto-off/auto-on) via the eWeLink protocolData command
      * @param {boolean} enabled
      * @param {number} time - seconds (0-32767.5, sent in 0.5 s units)

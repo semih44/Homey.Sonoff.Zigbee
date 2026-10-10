@@ -1,1 +1,8 @@
-{}
+{
+  "calibration_status": {
+    "0": "Niet gekalibreerd",
+    "1": "Bezig met kalibreren",
+    "2": "Kalibratie mislukt",
+    "3": "Gekalibreerd"
+  }
+}

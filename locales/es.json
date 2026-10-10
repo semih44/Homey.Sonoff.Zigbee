@@ -1,1 +1,8 @@
-{}
+{
+  "calibration_status": {
+    "0": "Sin calibrar",
+    "1": "Calibrando",
+    "2": "Calibración fallida",
+    "3": "Calibrado"
+  }
+}

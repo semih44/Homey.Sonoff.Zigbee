@@ -1,1 +1,8 @@
-{}
+{
+  "calibration_status": {
+    "0": "Non calibrato",
+    "1": "Calibrazione in corso",
+    "2": "Calibrazione non riuscita",
+    "3": "Calibrato"
+  }
+}

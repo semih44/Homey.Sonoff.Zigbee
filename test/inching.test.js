@@ -67,3 +67,23 @@ for (const driver of ['ZBMINIR2', 'ZBMicro', 'MINI-ZB2GS', 'MINI-ZBDIM']) {
     assert.deepEqual([...frame.data], [0x01, 0x17, 0x07, 0x80, 0x81, 0x00, 0x0A, 0x00, 0x00, 0x00, 0x1A]);
   });
 }
+
+// The time travels in two bytes of 0.5 s units. zigbee-herdsman-converters offers up to 86399.5 s
+// for the MINI-ZBDIM but also only sends two bytes, so anything above 32767.5 s arrives truncated.
+test('no driver offers an inching time beyond what the protocol carries', () => {
+  const { zigbeeDrivers } = require('./helpers/compose');
+  const fs = require('fs');
+  const path = require('path');
+  const tooLong = [];
+  for (const { id } of zigbeeDrivers()) {
+    const file = path.join(__dirname, '..', 'drivers', id, 'driver.settings.compose.json');
+    if (!fs.existsSync(file)) continue;
+    const walk = settings => settings.flatMap(setting => (setting.children ? walk(setting.children) : [setting]));
+    for (const setting of walk(JSON.parse(fs.readFileSync(file, 'utf8')))) {
+      if (/^inching_time/.test(setting.id) && !(setting.attr && setting.attr.max <= 32767.5)) {
+        tooLong.push(`${id}: ${setting.id} max ${setting.attr && setting.attr.max}`);
+      }
+    }
+  }
+  assert.deepEqual(tooLong, []);
+});
