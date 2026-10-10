@@ -7,12 +7,6 @@ const SonoffBase = require('../sonoffbase');
 // TurboMode constants
 const TURBO_MODE_VALUES = { OFF: 9, ON: 20 };
 
-// Inching protocol constants
-const INCHING_PROTOCOL = {
-    CMD: 0x01, SUBCMD_INCHING: 0x17, PAYLOAD_LENGTH: 0x07,
-    SEQ_NUM: 0x80, FLAG_ENABLE: 0x80, FLAG_MODE_ON: 0x01
-};
-
 /**
  * Bound OnOff cluster for detach relay toggle events
  */
@@ -92,15 +86,7 @@ class SonoffMINIZB2GS extends SonoffBase {
         // Power-on behavior per channel
         for (const [key, ep] of [['power_on_behavior_l1', 1], ['power_on_behavior_l2', 2]]) {
             if (changedKeys.includes(key)) {
-                try {
-                    await this.zclNode.endpoints[ep].clusters.onOff.writeAttributes({
-                        powerOnBehavior: newSettings[key]
-                    });
-                    this.log(`${key} updated`);
-                } catch (error) {
-                    this.error(`Error updating ${key}:`, error);
-                    throw new Error(`Failed to update ${key}: ${error.message}`);
-                }
+                await this.writePowerOnBehavior(newSettings[key], ep);
             }
         }
 
@@ -111,7 +97,7 @@ class SonoffMINIZB2GS extends SonoffBase {
                     const cluster = this.zclNode.endpoints[ep].clusters.SonoffCluster;
                     if (cluster) {
                         cluster.manufacturerId = 0x1286;
-                        await cluster.writeAttributes({ external_trigger_mode: parseInt(newSettings[key], 10) });
+                        await cluster.writeAttributes({ switch_mode: parseInt(newSettings[key], 10) });
                     }
                     this.log(`${key} updated`);
                 } catch (error) {
@@ -165,7 +151,7 @@ class SonoffMINIZB2GS extends SonoffBase {
                     const cluster = this.zclNode.endpoints[ep].clusters.SonoffCluster;
                     if (cluster) {
                         cluster.manufacturerId = 0x1286;
-                        await cluster.writeAttributes({ delayed_power_on_state: newSettings[key] });
+                        await cluster.writeAttributes({ power_on_delay_state: newSettings[key] });
                     }
                     this.log(`${key} updated`);
                 } catch (error) {
@@ -182,7 +168,7 @@ class SonoffMINIZB2GS extends SonoffBase {
                     const cluster = this.zclNode.endpoints[ep].clusters.SonoffCluster;
                     if (cluster) {
                         cluster.manufacturerId = 0x1286;
-                        await cluster.writeAttributes({ delayed_power_on_time: newSettings[key] });
+                        await cluster.writeAttributes({ power_on_delay_time: SonoffCluster.secondsToPowerOnDelay(newSettings[key]) });
                     }
                     this.log(`${key} updated`);
                 } catch (error) {
@@ -209,47 +195,15 @@ class SonoffMINIZB2GS extends SonoffBase {
         }
     }
 
-    async setInching(enabled = false, time = 1, mode = 'on') {
-        const msTime = Math.round(time * 1000);
-        const rawTimeUnits = Math.round(msTime / 500);
-        const tmpTime = Math.min(Math.max(rawTimeUnits, 1), 0xffff);
-
-        const payloadValue = [];
-        payloadValue[0] = INCHING_PROTOCOL.CMD;
-        payloadValue[1] = INCHING_PROTOCOL.SUBCMD_INCHING;
-        payloadValue[2] = INCHING_PROTOCOL.PAYLOAD_LENGTH;
-        payloadValue[3] = INCHING_PROTOCOL.SEQ_NUM;
-        payloadValue[4] = 0x00;
-        if (enabled) payloadValue[4] |= INCHING_PROTOCOL.FLAG_ENABLE;
-        if (mode === 'on') payloadValue[4] |= INCHING_PROTOCOL.FLAG_MODE_ON;
-        payloadValue[5] = 0x00;
-        payloadValue[6] = tmpTime & 0xff;
-        payloadValue[7] = (tmpTime >> 8) & 0xff;
-        payloadValue[8] = 0x00;
-        payloadValue[9] = 0x00;
-
-        const checksumLength = payloadValue[2] + 3;
-        let checksum = 0x00;
-        for (let i = 0; i < checksumLength; i++) checksum ^= payloadValue[i];
-        payloadValue[10] = checksum;
-
-        const cluster = this.zclNode.endpoints[1].clusters['SonoffCluster'];
-        if (!cluster) throw new Error('SonoffCluster not available');
-
-        await cluster.protocolData(
-            { data: Buffer.from(payloadValue) },
-            { disableDefaultResponse: true, waitForResponse: false, manufacturerSpecific: true, manufacturerId: 0x1286 }
-        );
-    }
-
     async checkAttributes() {
         // Read power-on behavior per endpoint
         for (const [key, ep] of [['power_on_behavior_l1', 1], ['power_on_behavior_l2', 2]]) {
-            this.readAttribute({ NAME: 'onOff' }, ['powerOnBehavior'], (data) => {
-                if (data && data.powerOnBehavior !== undefined) {
-                    this.setSettings({ [key]: data.powerOnBehavior }).catch(this.error);
-                }
-            });
+            this.readPowerOnBehavior(key, ep);
+        }
+
+        // Read delayed power-on per endpoint
+        for (const [channel, ep] of [['l1', 1], ['l2', 2]]) {
+            this.readPowerOnDelay(ep, `delayed_power_on_state_${channel}`, `delayed_power_on_time_${channel}`);
         }
 
         // Read SonoffCluster attributes from endpoint 1

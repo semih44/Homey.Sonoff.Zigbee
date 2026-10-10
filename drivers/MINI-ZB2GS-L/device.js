@@ -74,15 +74,7 @@ class SonoffMINIZB2GSL extends SonoffBase {
         // Power-on behavior per channel
         for (const [key, ep] of [['power_on_behavior_l1', 1], ['power_on_behavior_l2', 2]]) {
             if (changedKeys.includes(key)) {
-                try {
-                    await this.zclNode.endpoints[ep].clusters.onOff.writeAttributes({
-                        powerOnBehavior: newSettings[key]
-                    });
-                    this.log(`${key} updated`);
-                } catch (error) {
-                    this.error(`Error updating ${key}:`, error);
-                    throw new Error(`Failed to update ${key}: ${error.message}`);
-                }
+                await this.writePowerOnBehavior(newSettings[key], ep);
             }
         }
 
@@ -93,7 +85,7 @@ class SonoffMINIZB2GSL extends SonoffBase {
                     const cluster = this.zclNode.endpoints[ep].clusters.SonoffCluster;
                     if (cluster) {
                         cluster.manufacturerId = 0x1286;
-                        await cluster.writeAttributes({ external_trigger_mode: parseInt(newSettings[key], 10) });
+                        await cluster.writeAttributes({ switch_mode: parseInt(newSettings[key], 10) });
                     }
                     this.log(`${key} updated`);
                 } catch (error) {
@@ -124,7 +116,7 @@ class SonoffMINIZB2GSL extends SonoffBase {
                     const cluster = this.zclNode.endpoints[ep].clusters.SonoffCluster;
                     if (cluster) {
                         cluster.manufacturerId = 0x1286;
-                        await cluster.writeAttributes({ delayed_power_on_state: newSettings[key] });
+                        await cluster.writeAttributes({ power_on_delay_state: newSettings[key] });
                     }
                     this.log(`${key} updated`);
                 } catch (error) {
@@ -141,7 +133,7 @@ class SonoffMINIZB2GSL extends SonoffBase {
                     const cluster = this.zclNode.endpoints[ep].clusters.SonoffCluster;
                     if (cluster) {
                         cluster.manufacturerId = 0x1286;
-                        await cluster.writeAttributes({ delayed_power_on_time: newSettings[key] });
+                        await cluster.writeAttributes({ power_on_delay_time: SonoffCluster.secondsToPowerOnDelay(newSettings[key]) });
                     }
                     this.log(`${key} updated`);
                 } catch (error) {
@@ -155,11 +147,12 @@ class SonoffMINIZB2GSL extends SonoffBase {
     async checkAttributes() {
         // Read power-on behavior per endpoint
         for (const [key, ep] of [['power_on_behavior_l1', 1], ['power_on_behavior_l2', 2]]) {
-            this.readAttribute({ NAME: 'onOff' }, ['powerOnBehavior'], (data) => {
-                if (data && data.powerOnBehavior !== undefined) {
-                    this.setSettings({ [key]: data.powerOnBehavior }).catch(this.error);
-                }
-            });
+            this.readPowerOnBehavior(key, ep);
+        }
+
+        // Read delayed power-on per endpoint
+        for (const [channel, ep] of [['l1', 1], ['l2', 2]]) {
+            this.readPowerOnDelay(ep, `delayed_power_on_state_${channel}`, `delayed_power_on_time_${channel}`);
         }
 
         // Read SonoffCluster attributes from endpoint 1

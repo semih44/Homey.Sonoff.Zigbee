@@ -3,6 +3,12 @@
 const { ZigBeeDevice } = require('homey-zigbeedriver');
 const { debug, CLUSTER } = require('zigbee-clusters');
 
+// Registers the OnOff cluster with the StartUpOnOff (powerOnBehavior) attribute. It must be
+// loaded before any device creates its ZCLNode, which is why the shared base class requires it.
+require('../lib/SonoffOnOffCluster');
+const SonoffCluster = require('../lib/SonoffCluster');
+const { buildInchingPayload } = require('../lib/SonoffInching');
+
 if (process.env.DEBUG === "1") {
     debug(true);
 }
@@ -140,6 +146,87 @@ class SonoffBase extends ZigBeeDevice {
         } catch (error) {
             this.error(`Error reading attributes`, attr, error);
         }
+    }
+
+    /**
+     * Write the power-on behavior (StartUpOnOff) of one endpoint.
+     * Failures propagate, so Homey rejects the settings change instead of storing a value
+     * the device never received.
+     * @param {string} value - 'off', 'on', 'toggle' or 'last_state'
+     * @param {number} [endpointId=1]
+     */
+    async writePowerOnBehavior(value, endpointId = 1) {
+        try {
+            await this.zclNode.endpoints[endpointId].clusters.onOff.writeAttributes({ powerOnBehavior: value });
+        } catch (error) {
+            this.error(`Error updating power-on behavior of endpoint ${endpointId}:`, error);
+            throw new Error(`Failed to update power-on behavior: ${error.message}`);
+        }
+    }
+
+    /**
+     * Read the power-on behavior of one endpoint into the given setting
+     * @param {string} settingKey
+     * @param {number} [endpointId=1]
+     */
+    async readPowerOnBehavior(settingKey, endpointId = 1) {
+        try {
+            const { powerOnBehavior } = await this.zclNode.endpoints[endpointId].clusters.onOff
+                .readAttributes('powerOnBehavior');
+            if (powerOnBehavior !== undefined) {
+                await this.setSettings({ [settingKey]: powerOnBehavior });
+            }
+        } catch (error) {
+            this.error(`Could not read power-on behavior of endpoint ${endpointId}:`, error);
+        }
+    }
+
+    /**
+     * Read delayed power-on state and time of one endpoint into the given settings
+     * @param {number} endpointId
+     * @param {string} stateKey - checkbox setting for 0x0014
+     * @param {string} timeKey - seconds setting for 0x0015
+     */
+    async readPowerOnDelay(endpointId, stateKey, timeKey) {
+        try {
+            const data = await this.zclNode.endpoints[endpointId].clusters.SonoffCluster
+                .readAttributes('power_on_delay_state', 'power_on_delay_time');
+            const settings = {};
+            if (data.power_on_delay_state !== undefined) {
+                settings[stateKey] = data.power_on_delay_state;
+            }
+            if (data.power_on_delay_time !== undefined) {
+                settings[timeKey] = SonoffCluster.powerOnDelayToSeconds(data.power_on_delay_time);
+            }
+            if (Object.keys(settings).length > 0) {
+                await this.setSettings(settings);
+            }
+        } catch (error) {
+            this.error(`Could not read delayed power-on of endpoint ${endpointId}:`, error);
+        }
+    }
+
+    /**
+     * Configure inching (auto-off/auto-on) via the eWeLink protocolData command
+     * @param {boolean} enabled
+     * @param {number} time - seconds (0-32767.5, sent in 0.5 s units)
+     * @param {'on'|'off'} mode - 'on': ON -> OFF after time, 'off': OFF -> ON after time
+     */
+    async setInching(enabled = false, time = 1, mode = 'on') {
+        const payload = buildInchingPayload({ enabled, mode, seconds: time });
+
+        const cluster = this.zclNode.endpoints[1].clusters.SonoffCluster;
+        if (!cluster) {
+            throw new Error('SonoffCluster not available - cannot set inching');
+        }
+
+        this.log('Sending inching command:', {
+            enabled, mode, time_seconds: time, payload_hex: payload.toString('hex'),
+        });
+        await cluster.protocolData(
+            { data: payload },
+            { disableDefaultResponse: true, waitForResponse: false, manufacturerSpecific: true, manufacturerId: 0x1286 }
+        );
     }
 
     async writeAttribute(cluster, attr, value) {

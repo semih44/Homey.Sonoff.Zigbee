@@ -10,16 +10,6 @@ const TURBO_MODE_VALUES = {
     ON: 20
 };
 
-// Inching protocol constants
-const INCHING_PROTOCOL = {
-    CMD: 0x01,
-    SUBCMD_INCHING: 0x17,
-    PAYLOAD_LENGTH: 0x07,
-    SEQ_NUM: 0x80,
-    FLAG_ENABLE: 0x80,
-    FLAG_MODE_ON: 0x01
-};
-
 class SonoffZBMicro extends SonoffBase {
 
     async onNodeInit({ zclNode }) {
@@ -82,10 +72,8 @@ class SonoffZBMicro extends SonoffBase {
     async onSettings({ oldSettings, newSettings, changedKeys }) {
         this.log('Settings changed:', changedKeys);
 
-        const onOffCluster = this.zclNode.endpoints[1].clusters.onOff;
-
         if (changedKeys.includes('power_on_behavior')) {
-            await onOffCluster.writeAttributes({ powerOnBehavior: newSettings.power_on_behavior });
+            await this.writePowerOnBehavior(newSettings.power_on_behavior);
         }
 
         if (changedKeys.includes('turbo_mode')) {
@@ -110,47 +98,8 @@ class SonoffZBMicro extends SonoffBase {
         }
     }
 
-    async setInching(enabled = false, time = 1, mode = 'on') {
-        const msTime = Math.round(time * 1000);
-        const rawTimeUnits = Math.round(msTime / 500);
-        const tmpTime = Math.min(Math.max(rawTimeUnits, 1), 0xffff);
-
-        const payloadValue = [];
-        payloadValue[0] = INCHING_PROTOCOL.CMD;
-        payloadValue[1] = INCHING_PROTOCOL.SUBCMD_INCHING;
-        payloadValue[2] = INCHING_PROTOCOL.PAYLOAD_LENGTH;
-        payloadValue[3] = INCHING_PROTOCOL.SEQ_NUM;
-        payloadValue[4] = 0x00;
-        if (enabled) payloadValue[4] |= INCHING_PROTOCOL.FLAG_ENABLE;
-        if (mode === 'on') payloadValue[4] |= INCHING_PROTOCOL.FLAG_MODE_ON;
-        payloadValue[5] = 0x00;
-        payloadValue[6] = tmpTime & 0xff;
-        payloadValue[7] = (tmpTime >> 8) & 0xff;
-        payloadValue[8] = 0x00;
-        payloadValue[9] = 0x00;
-
-        const checksumLength = payloadValue[2] + 3;
-        let checksum = 0x00;
-        for (let i = 0; i < checksumLength; i++) checksum ^= payloadValue[i];
-        payloadValue[10] = checksum;
-
-        this.log('Sending inching command:', { enabled, mode, time_seconds: time });
-
-        const cluster = this.zclNode.endpoints[1].clusters['SonoffCluster'];
-        if (!cluster) throw new Error('SonoffCluster not available');
-
-        await cluster.protocolData(
-            { data: Buffer.from(payloadValue) },
-            { disableDefaultResponse: true, waitForResponse: false, manufacturerSpecific: true, manufacturerId: 0x1286 }
-        );
-    }
-
     async checkAttributes() {
-        this.readAttribute(CLUSTER.ON_OFF, ['powerOnBehavior'], (data) => {
-            if (data && data.powerOnBehavior !== undefined) {
-                this.setSettings({ power_on_behavior: data.powerOnBehavior }).catch(this.error);
-            }
-        });
+        this.readPowerOnBehavior('power_on_behavior');
 
         this.readAttribute(SonoffCluster, ['turbo_mode', 'network_led'], (data) => {
             const settingsData = { ...data };

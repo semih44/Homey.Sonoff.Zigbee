@@ -74,15 +74,7 @@ class SonoffZBM52C120 extends SonoffBase {
         // Power-on behavior per channel
         for (const [key, ep] of [['power_on_behavior_l1', 1], ['power_on_behavior_l2', 2]]) {
             if (changedKeys.includes(key)) {
-                try {
-                    await this.zclNode.endpoints[ep].clusters.onOff.writeAttributes({
-                        powerOnBehavior: newSettings[key]
-                    });
-                    this.log(`${key} updated`);
-                } catch (error) {
-                    this.error(`Error updating ${key}:`, error);
-                    throw new Error(`Failed to update ${key}: ${error.message}`);
-                }
+                await this.writePowerOnBehavior(newSettings[key], ep);
             }
         }
 
@@ -115,11 +107,7 @@ class SonoffZBM52C120 extends SonoffBase {
     async checkAttributes() {
         // Read power-on behavior per endpoint
         for (const [key, ep] of [['power_on_behavior_l1', 1], ['power_on_behavior_l2', 2]]) {
-            this.readAttribute({ NAME: 'onOff' }, ['powerOnBehavior'], (data) => {
-                if (data && data.powerOnBehavior !== undefined) {
-                    this.setSettings({ [key]: data.powerOnBehavior }).catch(this.error);
-                }
-            });
+            this.readPowerOnBehavior(key, ep);
         }
 
         // Read SonoffCluster attributes from endpoint 1

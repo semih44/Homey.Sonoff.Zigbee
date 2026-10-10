@@ -1,7 +1,8 @@
 {
   "scripts": {
     "lint": "eslint drivers/ lib/ app.js",
-    "lint:fix": "eslint --fix drivers/ lib/ app.js"
+    "lint:fix": "eslint --fix drivers/ lib/ app.js",
+    "test": "node --test \"test/**/*.test.js\""
   },
   "devDependencies": {
     "eslint": "^8.57.1"

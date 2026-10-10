@@ -1,0 +1,2 @@
+# Development-only files that should not be uploaded to Homey
+test/

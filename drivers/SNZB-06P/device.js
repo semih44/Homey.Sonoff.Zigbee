@@ -12,12 +12,6 @@ class SonoffSNZB06P extends OccupancySensor {
         }
 
         await super.onNodeInit({ zclNode });
-
-        const brightCondition = this.homey.flow.getConditionCard('is_bright');
-        brightCondition.registerRunListener(async (args, state) => {
-            const illuminance = await this.getCapabilityValue('sonoff_illuminance');
-            return illuminance === 'bright';
-        });
     }
 
 }

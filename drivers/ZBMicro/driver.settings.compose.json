@@ -170,9 +170,11 @@
           "en": "Time before auto-switch (0.5-3599.5s).", "sv": "Tid innan automatisk växling (0,5-3599,5s).", "nl": "Tijd voor automatisch schakelen (0,5-3599,5s).", "da": "Tid før automatisk skift (0,5-3599,5s).", "de": "Zeit bis zur automatischen Umschaltung (0,5-3599,5s).", "es": "Tiempo antes de la conmutación automática (0,5-3599,5s).", "fr": "Temps avant commutation automatique (0,5-3599,5s).", "it": "Tempo prima della commutazione automatica (0,5-3599,5s).", "no": "Tid før automatisk veksling (0,5-3599,5s).", "pl": "Czas przed automatycznym przełączeniem (0,5-3599,5s).", "ru": "Время до автоматического переключения (0,5-3599,5 с).", "ko": "자동 전환 전 시간 (0.5-3599.5초)."
         },
         "value": 1,
-        "min": 0.5,
-        "max": 3599.5,
-        "step": 0.5
+        "attr": {
+          "min": 0.5,
+          "max": 3599.5,
+          "step": 0.5
+        }
       },
       {
         "id": "inching_mode",

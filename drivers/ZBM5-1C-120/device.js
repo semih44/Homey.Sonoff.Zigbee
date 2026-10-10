@@ -53,18 +53,8 @@ class SonoffZBM51C120 extends SonoffBase {
     async onSettings({ oldSettings, newSettings, changedKeys }) {
         this.log('Settings changed:', changedKeys);
 
-        const onOffCluster = this.zclNode.endpoints[1].clusters.onOff;
-
         if (changedKeys.includes('power_on_behavior')) {
-            try {
-                await onOffCluster.writeAttributes({
-                    powerOnBehavior: newSettings.power_on_behavior
-                });
-                this.log('Power-on behavior updated');
-            } catch (error) {
-                this.error('Error updating power_on_behavior:', error);
-                throw new Error(`Failed to update power-on behavior: ${error.message}`);
-            }
+            await this.writePowerOnBehavior(newSettings.power_on_behavior);
         }
 
         if (changedKeys.includes('network_led')) {
@@ -90,12 +80,7 @@ class SonoffZBM51C120 extends SonoffBase {
     }
 
     async checkAttributes() {
-        this.readAttribute(CLUSTER.ON_OFF, ['powerOnBehavior'], (data) => {
-            if (data && data.powerOnBehavior !== undefined) {
-                this.setSettings({ power_on_behavior: data.powerOnBehavior })
-                    .catch(err => this.error('Failed to set powerOnBehavior:', err));
-            }
-        });
+        this.readPowerOnBehavior('power_on_behavior');
 
         this.readAttribute(SonoffCluster, ['network_led', 'detach_relay_mode2', 'device_work_mode'], (data) => {
             this.log('Read SonoffCluster attributes:', data);

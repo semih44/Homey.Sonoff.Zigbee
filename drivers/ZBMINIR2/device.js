@@ -32,26 +32,13 @@ class MyOnOffBoundCluster extends BoundCluster {
     }
 }
 
-
 // TurboMode constants 
 const TURBO_MODE_VALUES = {
     OFF: 9,   // 0x09 - normal radio power
     ON: 20    // 0x14 - turbo radio power (extended range)
 };
 
-// Inching protocol constants
-const INCHING_PROTOCOL = {
-    CMD: 0x01,              // Command identifier
-    SUBCMD_INCHING: 0x17,   // Inching sub-command
-    PAYLOAD_LENGTH: 0x07,   // Length of payload data
-    SEQ_NUM: 0x80,          // Sequence number
-    FLAG_ENABLE: 0x80,      // Bit 7: Enable inching
-    FLAG_MODE_ON: 0x01      // Bit 0: Mode (1=ON→OFF, 0=OFF→ON)
-};
-
 class SonoffZBMINIR2 extends SonoffBase {
-
-    _verifyTimeout = null;
 
     /**
      * onNodeInit is called when the device is initialized.
@@ -194,31 +181,10 @@ class SonoffZBMINIR2 extends SonoffBase {
     async onSettings({ oldSettings, newSettings, changedKeys }) {
         this.log(`Settings changed:`, changedKeys);
 
-        // Cache cluster references
-        const onOffCluster = this.zclNode.endpoints[1].clusters.onOff;
-
-        // Handle power-on behavior (OnOff cluster - standard Zigbee, no manufacturer code needed)
+        // Handle power-on behavior (OnOff cluster - standard Zigbee, no manufacturer code needed).
+        // The write only completes once the device has acknowledged it.
         if (changedKeys.includes("power_on_behavior")) {
-            try {
-                await onOffCluster.writeAttributes({
-                    powerOnBehavior: newSettings.power_on_behavior
-                });
-                this.log(`Power-on behavior updated successfully`);
-                
-                // Verify the value was written correctly
-                this._verifyTimeout = setTimeout(async () => {
-                    this._verifyTimeout = null;
-                    try {
-                        const result = await onOffCluster.readAttributes('powerOnBehavior');
-                        this.log(`Power-on behavior verified:`, result.powerOnBehavior);
-                    } catch (err) {
-                        this.error(`Failed to verify power-on behavior:`, err);
-                    }
-                }, 1000);
-            } catch (error) {
-                this.error(`Error updating power_on_behavior:`, error);
-                throw new Error(`Failed to update power-on behavior: ${error.message}`);
-            }
+            await this.writePowerOnBehavior(newSettings.power_on_behavior);
         }
 
         // Handle TurboMode separately - convert boolean to int16 before writing
@@ -261,7 +227,11 @@ class SonoffZBMINIR2 extends SonoffBase {
         if (otherSonoffKeys.length > 0) {
             try {
                 this.log(`Updating other SonoffCluster attributes:`, otherSonoffKeys);
-                await this.writeAttributes(SonoffCluster, newSettings, otherSonoffKeys);
+                const attributes = Object.fromEntries(otherSonoffKeys.map(key => [key, newSettings[key]]));
+                if (attributes.power_on_delay_time !== undefined) {
+                    attributes.power_on_delay_time = SonoffCluster.secondsToPowerOnDelay(attributes.power_on_delay_time);
+                }
+                await this.writeAttributes(SonoffCluster, attributes);
                 this.log(`SonoffCluster attributes updated successfully`);
             } catch (error) {
                 this.error(`Error updating SonoffCluster attributes:`, error);
@@ -289,123 +259,12 @@ class SonoffZBMINIR2 extends SonoffBase {
     }
 
     /**
-     * Set inching (auto-off/on) configuration
-     * 
-     * Inching mode automatically toggles the relay after a specified time.
-     * Useful for momentary control (e.g., door opener, garage door).
-     * 
-     * @param {boolean} enabled - Enable/disable inching mode
-     * @param {number} time - Time in seconds (0.5-32767.5, converted to 0.5s units)
-     * @param {'on'|'off'} mode - 'on': ON→OFF after time, 'off': OFF→ON after time
-     * @throws {Error} If SonoffCluster is not available
-     * @throws {TypeError} If parameters are invalid
-     * @returns {Promise<void>}
-     */
-    async setInching(enabled = false, time = 1, mode = 'on') {
-        // Validate inputs
-        if (typeof enabled !== 'boolean') {
-            throw new TypeError(`enabled must be boolean, got ${typeof enabled}`);
-        }
-        if (typeof time !== 'number' || time < 0 || time > 32767.5) {
-            throw new RangeError(`time must be between 0 and 32767.5 seconds, got ${time}`);
-        }
-        if (!['on', 'off'].includes(mode)) {
-            throw new TypeError(`mode must be "on" or "off", got "${mode}"`);
-        }
-        
-        try {
-            // Convert time from seconds to 0.5 second units
-            const msTime = Math.round(time * 1000);
-            const rawTimeUnits = Math.round(msTime / 500);
-            const tmpTime = Math.min(Math.max(rawTimeUnits, 1), 0xffff);
-            
-            // Build inching protocol payload
-            const payloadValue = [];
-            payloadValue[0] = INCHING_PROTOCOL.CMD;
-            payloadValue[1] = INCHING_PROTOCOL.SUBCMD_INCHING;
-            payloadValue[2] = INCHING_PROTOCOL.PAYLOAD_LENGTH;
-            payloadValue[3] = INCHING_PROTOCOL.SEQ_NUM;
-            
-            // Byte 4: Mode flags
-            payloadValue[4] = 0x00;
-            if (enabled) {
-                payloadValue[4] |= INCHING_PROTOCOL.FLAG_ENABLE;
-            }
-            if (mode === 'on') {
-                payloadValue[4] |= INCHING_PROTOCOL.FLAG_MODE_ON;
-            }
-            
-            payloadValue[5] = 0x00;                      // Channel
-            payloadValue[6] = tmpTime & 0xff;            // Time low byte
-            payloadValue[7] = (tmpTime >> 8) & 0xff;     // Time high byte
-            payloadValue[8] = 0x00;                      // Reserve
-            payloadValue[9] = 0x00;                      // Reserve
-            
-            // XOR checksum
-            const checksumLength = payloadValue[2] + 3;
-            payloadValue[10] = this._calculateChecksum(payloadValue, checksumLength);
-            
-            this.log(`Sending inching command:`, {
-                enabled,
-                mode,
-                time_seconds: time,
-                payload_hex: Buffer.from(payloadValue).toString('hex')
-            });
-            
-            const cluster = this.zclNode.endpoints[1].clusters['SonoffCluster'];
-            if (!cluster) {
-                throw new Error(`SonoffCluster not available - cannot set inching`);
-            }
-            
-            const payloadBuffer = Buffer.from(payloadValue);
-
-            await cluster.protocolData(
-                { data: payloadBuffer },
-                { 
-                    disableDefaultResponse: true, 
-                    waitForResponse: false,
-                    manufacturerSpecific: true,
-                    manufacturerId: 0x1286
-                }
-            );
-            
-            this.log(`Inching command sent successfully`);
-            
-        } catch (error) {
-            this.error(`Failed to set inching:`, error);
-            throw error;
-        }
-    }
-
-    /**
-     * Calculate XOR checksum for protocol data payload
-     * @param {number[]} payload - Payload array
-     * @param {number} length - Number of bytes to checksum
-     * @returns {number} XOR checksum value
-     */
-    _calculateChecksum(payload, length) {
-        let checksum = 0x00;
-        for (let i = 0; i < length; i++) {
-            checksum ^= payload[i];
-        }
-        return checksum;
-    }
-
-    /**
      * Read and initialize device attributes
      */
     async checkAttributes() {
         
         // Read power-on behavior from OnOff cluster
-        this.readAttribute(CLUSTER.ON_OFF, ['powerOnBehavior'], (data) => {
-            if (data && data.powerOnBehavior !== undefined) {
-                this.log(`Read powerOnBehavior:`, data.powerOnBehavior);
-                this.setSettings({ power_on_behavior: data.powerOnBehavior })
-                    .catch(err => this.error(`Failed to set powerOnBehavior setting:`, err));
-            } else {
-                this.log(`powerOnBehavior not available in response`);
-            }
-        });
+        this.readPowerOnBehavior('power_on_behavior');
         
         // Read SonoffCluster attributes
         this.readAttribute(SonoffCluster, SonoffCluster.ZBMINIR2_ATTRIBUTES, (data) => {
@@ -421,6 +280,11 @@ class SonoffZBMINIR2 extends SonoffBase {
                 
                 this.log(`TurboMode from device: raw=0x${rawValue.toString(16)} (${rawValue}) → boolean=${boolValue}`);
                 settingsData.turbo_mode = boolValue;
+            }
+
+            // Delayed power-on time arrives in 0.5 s units, the setting is in seconds
+            if (settingsData.power_on_delay_time !== undefined) {
+                settingsData.power_on_delay_time = SonoffCluster.powerOnDelayToSeconds(settingsData.power_on_delay_time);
             }
 
             // Convert switch_mode from uint8 to string
@@ -450,13 +314,7 @@ class SonoffZBMINIR2 extends SonoffBase {
         if (sonoffCluster) {
             sonoffCluster.removeAllListeners('protocolDataResponse');
         }
-        
-        // Clean up timeouts
-        if (this._verifyTimeout) {
-            clearTimeout(this._verifyTimeout);
-            this._verifyTimeout = null;
-        }
-        
+
         // Call parent cleanup
         await super.onDeleted();
     }

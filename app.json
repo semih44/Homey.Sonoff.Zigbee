@@ -1363,7 +1363,6 @@
       "class": "sensor",
       "capabilities": [
         "alarm_motion",
-        "alarm_contact",
         "sonoff_illuminance"
       ],
       "zigbee": {
@@ -8958,7 +8957,6 @@
       "class": "sensor",
       "capabilities": [
         "alarm_motion",
-        "alarm_contact",
         "sonoff_illuminance"
       ],
       "zigbee": {
@@ -13517,9 +13515,11 @@
                 "ko": "릴레이가 전환되기 전 대기 시간 (0.5-3599.5초)."
               },
               "value": 2,
-              "min": 0.5,
-              "max": 3599.5,
-              "step": 0.5
+              "attr": {
+                "min": 0.5,
+                "max": 3599.5,
+                "step": 0.5
+              }
             }
           ]
         },
@@ -13605,9 +13605,11 @@
                 "ko": "자동 전환 전 시간 (0.5-3599.5초)."
               },
               "value": 1,
-              "min": 0.5,
-              "max": 3599.5,
-              "step": 0.5
+              "attr": {
+                "min": 0.5,
+                "max": 3599.5,
+                "step": 0.5
+              }
             },
             {
               "id": "inching_mode",
@@ -13999,9 +14001,11 @@
                 "ko": "자동 전환 전 시간 (0.5-3599.5초)."
               },
               "value": 1,
-              "min": 0.5,
-              "max": 3599.5,
-              "step": 0.5
+              "attr": {
+                "min": 0.5,
+                "max": 3599.5,
+                "step": 0.5
+              }
             },
             {
               "id": "inching_mode",

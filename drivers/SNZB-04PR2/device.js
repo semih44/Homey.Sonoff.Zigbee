@@ -7,7 +7,7 @@ const SonoffCluster = require('../../lib/SonoffCluster');
 class SonoffSNZB04PR2 extends SonoffBase {
 
     async onNodeInit({ zclNode }) {
-        super.onNodeInit({ zclNode });
+        await super.onNodeInit({ zclNode });
 
         this.registerCapability('alarm_tamper', SonoffCluster, {
             report: 'tamper',
@@ -27,7 +27,9 @@ class SonoffSNZB04PR2 extends SonoffBase {
             this.setCapabilityValue('alarm_contact', data.zoneStatus.alarm1).catch(this.error);
         });
         await this.readAttribute(SonoffCluster, ['tamper'], (data) => {
-            this.setCapabilityValue('alarm_tamper', data).catch(this.error);
+            if (data.tamper !== undefined) {
+                this.setCapabilityValue('alarm_tamper', Boolean(data.tamper)).catch(this.error);
+            }
         });
     }
 }

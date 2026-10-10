@@ -4,16 +4,6 @@ const { CLUSTER } = require('zigbee-clusters');
 const SonoffCluster = require('../../lib/SonoffCluster');
 const SonoffBase = require('../sonoffbase');
 
-// Inching protocol constants (same as ZBMINIR2)
-const INCHING_PROTOCOL = {
-    CMD: 0x01,
-    SUBCMD_INCHING: 0x17,
-    PAYLOAD_LENGTH: 0x07,
-    SEQ_NUM: 0x80,
-    FLAG_ENABLE: 0x80,
-    FLAG_MODE_ON: 0x01
-};
-
 class SonoffMINIZBDIM extends SonoffBase {
 
     _verifyTimeout = null;
@@ -119,19 +109,9 @@ class SonoffMINIZBDIM extends SonoffBase {
     async onSettings({ oldSettings, newSettings, changedKeys }) {
         this.log('Settings changed:', changedKeys);
 
-        const onOffCluster = this.zclNode.endpoints[1].clusters.onOff;
-
         // Power-on behavior (standard OnOff cluster attribute)
         if (changedKeys.includes('power_on_behavior')) {
-            try {
-                await onOffCluster.writeAttributes({
-                    powerOnBehavior: newSettings.power_on_behavior
-                });
-                this.log('Power-on behavior updated');
-            } catch (error) {
-                this.error('Error updating power_on_behavior:', error);
-                throw new Error(`Failed to update power-on behavior: ${error.message}`);
-            }
+            await this.writePowerOnBehavior(newSettings.power_on_behavior);
         }
 
         // Delayed power-on state/time
@@ -139,11 +119,10 @@ class SonoffMINIZBDIM extends SonoffBase {
             try {
                 const attrs = {};
                 if (changedKeys.includes('delayed_power_on_state')) {
-                    attrs.delayed_power_on_state = newSettings.delayed_power_on_state;
+                    attrs.power_on_delay_state = newSettings.delayed_power_on_state;
                 }
                 if (changedKeys.includes('delayed_power_on_time')) {
-                    // Scale: multiply by 2 (0.5s units)
-                    attrs.delayed_power_on_time = Math.round(newSettings.delayed_power_on_time * 2);
+                    attrs.power_on_delay_time = SonoffCluster.secondsToPowerOnDelay(newSettings.delayed_power_on_time);
                 }
                 await this.writeAttributes(SonoffCluster, attrs);
                 this.log('Delayed power-on updated');
@@ -156,7 +135,7 @@ class SonoffMINIZBDIM extends SonoffBase {
         // External trigger mode
         if (changedKeys.includes('external_trigger_mode')) {
             try {
-                await this.writeAttribute(SonoffCluster, 'external_trigger_mode', parseInt(newSettings.external_trigger_mode, 10));
+                await this.writeAttribute(SonoffCluster, 'switch_mode', parseInt(newSettings.external_trigger_mode, 10));
                 this.log('External trigger mode updated');
             } catch (error) {
                 this.error('Error updating external_trigger_mode:', error);
@@ -204,14 +183,16 @@ class SonoffMINIZBDIM extends SonoffBase {
         // Calibration action
         if (changedKeys.includes('calibration_action')) {
             try {
-                const actionMap = {
-                    'start': Buffer.from([0x03, 0x01, 0x01, 0x01]),
-                    'stop': Buffer.from([0x03, 0x01, 0x01, 0x02]),
-                    'clear': Buffer.from([0x03, 0x01, 0x01, 0x03])
+                // Character data only: the CHAR_STR type adds the length byte (0x03) itself.
+                // All bytes are below 0x80, so they survive the library's utf8 encoding unchanged.
+                const actionBytes = {
+                    'start': [0x01, 0x01, 0x01],
+                    'stop': [0x01, 0x01, 0x02],
+                    'clear': [0x01, 0x01, 0x03]
                 };
-                const payload = actionMap[newSettings.calibration_action];
-                if (payload) {
-                    await this.writeAttribute(SonoffCluster, 'set_calibration_action', payload.toString());
+                const bytes = actionBytes[newSettings.calibration_action];
+                if (bytes) {
+                    await this.writeAttribute(SonoffCluster, 'set_calibration_action', String.fromCharCode(...bytes));
                     this.log('Calibration action sent:', newSettings.calibration_action);
                 }
             } catch (error) {
@@ -237,68 +218,15 @@ class SonoffMINIZBDIM extends SonoffBase {
         }
     }
 
-    /**
-     * Set inching (auto-off/on) configuration via protocolData command
-     */
-    async setInching(enabled = false, time = 1, mode = 'on') {
-        const msTime = Math.round(time * 1000);
-        const rawTimeUnits = Math.round(msTime / 500);
-        const tmpTime = Math.min(Math.max(rawTimeUnits, 1), 0xffff);
-
-        const payloadValue = [];
-        payloadValue[0] = INCHING_PROTOCOL.CMD;
-        payloadValue[1] = INCHING_PROTOCOL.SUBCMD_INCHING;
-        payloadValue[2] = INCHING_PROTOCOL.PAYLOAD_LENGTH;
-        payloadValue[3] = INCHING_PROTOCOL.SEQ_NUM;
-
-        payloadValue[4] = 0x00;
-        if (enabled) payloadValue[4] |= INCHING_PROTOCOL.FLAG_ENABLE;
-        if (mode === 'on') payloadValue[4] |= INCHING_PROTOCOL.FLAG_MODE_ON;
-
-        payloadValue[5] = 0x00;
-        payloadValue[6] = tmpTime & 0xff;
-        payloadValue[7] = (tmpTime >> 8) & 0xff;
-        payloadValue[8] = 0x00;
-        payloadValue[9] = 0x00;
-
-        // XOR checksum
-        const checksumLength = payloadValue[2] + 3;
-        let checksum = 0x00;
-        for (let i = 0; i < checksumLength; i++) {
-            checksum ^= payloadValue[i];
-        }
-        payloadValue[10] = checksum;
-
-        this.log('Sending inching command:', { enabled, mode, time });
-
-        const cluster = this.zclNode.endpoints[1].clusters['SonoffCluster'];
-        if (!cluster) throw new Error('SonoffCluster not available');
-
-        await cluster.protocolData(
-            { data: Buffer.from(payloadValue) },
-            {
-                disableDefaultResponse: true,
-                waitForResponse: false,
-                manufacturerSpecific: true,
-                manufacturerId: 0x1286
-            }
-        );
-    }
-
     async checkAttributes() {
         // Read power-on behavior
-        this.readAttribute(CLUSTER.ON_OFF, ['powerOnBehavior'], (data) => {
-            if (data && data.powerOnBehavior !== undefined) {
-                this.setSettings({ power_on_behavior: data.powerOnBehavior })
-                    .catch(err => this.error('Failed to set powerOnBehavior:', err));
-            }
-        });
+        this.readPowerOnBehavior('power_on_behavior');
 
         // Read SonoffCluster attributes
         this.readAttribute(SonoffCluster, [
-            'delayed_power_on_state',
-            'delayed_power_on_time',
-            'external_trigger_mode',
+            'power_on_delay_state',
+            'power_on_delay_time',
+            'switch_mode',
             'min_brightness',
             'transition_time',
             'dimming_rate',
@@ -307,14 +235,14 @@ class SonoffMINIZBDIM extends SonoffBase {
             this.log('Read SonoffCluster attributes:', data);
             const settings = {};
 
-            if (data.delayed_power_on_state !== undefined) {
-                settings.delayed_power_on_state = data.delayed_power_on_state;
+            if (data.power_on_delay_state !== undefined) {
+                settings.delayed_power_on_state = data.power_on_delay_state;
             }
-            if (data.delayed_power_on_time !== undefined) {
-                settings.delayed_power_on_time = data.delayed_power_on_time / 2;
+            if (data.power_on_delay_time !== undefined) {
+                settings.delayed_power_on_time = SonoffCluster.powerOnDelayToSeconds(data.power_on_delay_time);
             }
-            if (data.external_trigger_mode !== undefined) {
-                settings.external_trigger_mode = String(data.external_trigger_mode);
+            if (data.switch_mode !== undefined) {
+                settings.external_trigger_mode = String(data.switch_mode);
             }
             if (data.min_brightness !== undefined) {
                 settings.min_brightness = Math.round(data.min_brightness / 2.55);
