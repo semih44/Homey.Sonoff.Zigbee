@@ -4,9 +4,6 @@ const { CLUSTER, BoundCluster } = require('zigbee-clusters');
 const SonoffCluster = require('../../lib/SonoffCluster');
 const SonoffBase = require('../sonoffbase');
 
-// TurboMode constants
-const TURBO_MODE_VALUES = { OFF: 9, ON: 20 };
-
 /**
  * Bound OnOff cluster for detach relay toggle events
  */
@@ -110,7 +107,7 @@ class SonoffMINIZB2GS extends SonoffBase {
         // TurboMode
         if (changedKeys.includes('turbo_mode')) {
             try {
-                const rawValue = newSettings.turbo_mode ? TURBO_MODE_VALUES.ON : TURBO_MODE_VALUES.OFF;
+                const rawValue = SonoffCluster.turboModeToRadioPower(newSettings.turbo_mode);
                 await this.writeAttribute(SonoffCluster, 'turbo_mode', rawValue);
                 this.log('TurboMode updated');
             } catch (error) {
@@ -211,7 +208,7 @@ class SonoffMINIZB2GS extends SonoffBase {
             this.log('Read SonoffCluster attributes:', data);
             const settings = {};
             if (data.turbo_mode !== undefined) {
-                settings.turbo_mode = data.turbo_mode === TURBO_MODE_VALUES.ON;
+                settings.turbo_mode = SonoffCluster.radioPowerToTurboMode(data.turbo_mode);
             }
             if (data.network_led !== undefined) settings.network_led = data.network_led;
             if (data.detach_relay_mode2 !== undefined) {

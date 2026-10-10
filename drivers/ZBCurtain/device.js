@@ -12,14 +12,15 @@ class SonoffZBCurtain extends SonoffBase {
 
         this.registerCapability('windowcoverings_state', CLUSTER.WINDOW_COVERING);
 
+        // Zigbee lift percentage: 0 = open, 100 = closed; Homey: 1 = open, 0 = closed
         this.registerCapability('windowcoverings_set', CLUSTER.WINDOW_COVERING, {
             set: 'goToLiftPercentage',
             report: 'currentPositionLiftPercentage',
             setParser(value) {
-                return { percentageLiftValue: Math.round(value * 100) };
+                return { percentageLiftValue: Math.round((1 - value) * 100) };
             },
             reportParser(value) {
-                return value / 100;
+                return 1 - value / 100;
             }
         });
     }

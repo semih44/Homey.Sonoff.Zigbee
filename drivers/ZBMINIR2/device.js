@@ -32,12 +32,6 @@ class MyOnOffBoundCluster extends BoundCluster {
     }
 }
 
-// TurboMode constants 
-const TURBO_MODE_VALUES = {
-    OFF: 9,   // 0x09 - normal radio power
-    ON: 20    // 0x14 - turbo radio power (extended range)
-};
-
 class SonoffZBMINIR2 extends SonoffBase {
 
     /**
@@ -145,23 +139,6 @@ class SonoffZBMINIR2 extends SonoffBase {
     }
 
     /**
-     * Convert TurboMode raw value (radioPower) to boolean
-     */
-    _parseTurboMode(rawValue) {
-        if (rawValue === TURBO_MODE_VALUES.ON || rawValue === true || rawValue === 1) {
-            return true;
-        }
-        return false;
-    }
-
-    /**
-     * Convert boolean to TurboMode raw value (radioPower)
-     */
-    _formatTurboMode(enabled) {
-        return enabled ? TURBO_MODE_VALUES.ON : TURBO_MODE_VALUES.OFF;
-    }
-
-    /**
      * Convert switch_mode string to number (for writing to device)
      */
     _formatSwitchMode(mode) {
@@ -190,7 +167,7 @@ class SonoffZBMINIR2 extends SonoffBase {
         // Handle TurboMode separately - convert boolean to int16 before writing
         if (changedKeys.includes('turbo_mode')) {
             try {
-                const rawValue = this._formatTurboMode(newSettings.turbo_mode);
+                const rawValue = SonoffCluster.turboModeToRadioPower(newSettings.turbo_mode);
                 this.log(`Writing TurboMode: ${newSettings.turbo_mode} → raw value: 0x${rawValue.toString(16)} (${rawValue})`);
                 
                 await this.writeAttribute(SonoffCluster, 'turbo_mode', rawValue);
@@ -276,7 +253,7 @@ class SonoffZBMINIR2 extends SonoffBase {
             // Convert TurboMode from int16 to boolean
             if (settingsData.turbo_mode !== undefined) {
                 const rawValue = settingsData.turbo_mode;
-                const boolValue = this._parseTurboMode(rawValue);
+                const boolValue = SonoffCluster.radioPowerToTurboMode(rawValue);
                 
                 this.log(`TurboMode from device: raw=0x${rawValue.toString(16)} (${rawValue}) → boolean=${boolValue}`);
                 settingsData.turbo_mode = boolValue;

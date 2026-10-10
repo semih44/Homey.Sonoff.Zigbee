@@ -12,16 +12,20 @@ class SonoffMINIZBRBS extends SonoffBase {
 
         this.registerCapability('windowcoverings_state', CLUSTER.WINDOW_COVERING);
 
+        await this._migrateCoverDirection();
+
+        // Zigbee lift percentage: 0 = open, 100 = closed; Homey: 1 = open, 0 = closed.
+        // "Invert cover" reverses this for motors wired the other way round.
         this.registerCapability('windowcoverings_set', CLUSTER.WINDOW_COVERING, {
             set: 'goToLiftPercentage',
             report: 'currentPositionLiftPercentage',
             setParser: (value) => {
-                const pct = this.getSetting('invert_cover') ? (1 - value) : value;
-                return { percentageLiftValue: Math.round(pct * 100) };
+                const closed = this.getSetting('invert_cover') ? value : (1 - value);
+                return { percentageLiftValue: Math.round(closed * 100) };
             },
             reportParser: (value) => {
-                const pct = value / 100;
-                return this.getSetting('invert_cover') ? (1 - pct) : pct;
+                const closed = value / 100;
+                return this.getSetting('invert_cover') ? closed : (1 - closed);
             }
         });
 
@@ -46,12 +50,30 @@ class SonoffMINIZBRBS extends SonoffBase {
             }
         }
 
-        // Handle remaining SonoffCluster attributes (turbo_mode, network_led)
-        const skipKeys = ['switch_mode', 'motor_calibration_action', 'motor_calibration_status'];
+        // Turbo mode is the radio power attribute, not a boolean
+        if (changedKeys.includes('turbo_mode')) {
+            await this.writeAttribute(SonoffCluster, 'turbo_mode', SonoffCluster.turboModeToRadioPower(newSettings.turbo_mode));
+        }
+
+        // Handle remaining SonoffCluster attributes (network_led)
+        const skipKeys = ['switch_mode', 'turbo_mode', 'motor_calibration_action', 'motor_calibration_status'];
         const otherKeys = changedKeys.filter(key => !skipKeys.includes(key));
         if (otherKeys.length > 0) {
             await this.writeAttributes(SonoffCluster, newSettings, otherKeys);
         }
+    }
+
+    /**
+     * Up to 1.7.x the mapping without "invert cover" was the reverse of the Zigbee standard.
+     * Existing modules get the setting flipped once, so they keep moving exactly as before;
+     * newly paired modules start with the standard direction.
+     */
+    async _migrateCoverDirection() {
+        if (this.getStoreValue('coverDirection') === 'zigbee-standard') return;
+        if (!this.isFirstInit()) {
+            await this.setSettings({ invert_cover: !this.getSetting('invert_cover') });
+        }
+        await this.setStoreValue('coverDirection', 'zigbee-standard');
     }
 
     async _sendCalibrationAction(action) {
@@ -102,6 +124,9 @@ class SonoffMINIZBRBS extends SonoffBase {
         this.readAttribute(SonoffCluster, ['network_led', 'turbo_mode', 'switch_mode'], (data) => {
             if (data.switch_mode !== undefined) {
                 data.switch_mode = String(data.switch_mode);
+            }
+            if (data.turbo_mode !== undefined) {
+                data.turbo_mode = SonoffCluster.radioPowerToTurboMode(data.turbo_mode);
             }
             this.setSettings(data).catch(this.error);
         });

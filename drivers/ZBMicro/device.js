@@ -4,12 +4,6 @@ const { CLUSTER } = require('zigbee-clusters');
 const SonoffCluster = require('../../lib/SonoffCluster');
 const SonoffBase = require('../sonoffbase');
 
-// TurboMode constants
-const TURBO_MODE_VALUES = {
-    OFF: 9,
-    ON: 20
-};
-
 class SonoffZBMicro extends SonoffBase {
 
     async onNodeInit({ zclNode }) {
@@ -61,14 +55,6 @@ class SonoffZBMicro extends SonoffBase {
         }
     }
 
-    _parseTurboMode(rawValue) {
-        return rawValue === TURBO_MODE_VALUES.ON || rawValue === true || rawValue === 1;
-    }
-
-    _formatTurboMode(enabled) {
-        return enabled ? TURBO_MODE_VALUES.ON : TURBO_MODE_VALUES.OFF;
-    }
-
     async onSettings({ oldSettings, newSettings, changedKeys }) {
         this.log('Settings changed:', changedKeys);
 
@@ -77,8 +63,10 @@ class SonoffZBMicro extends SonoffBase {
         }
 
         if (changedKeys.includes('turbo_mode')) {
-            const rawValue = this._formatTurboMode(newSettings.turbo_mode);
-            await this.writeAttribute(SonoffCluster, 'turbo_mode', rawValue);
+            // ZBMicro takes the radio power only as a manufacturer-specific attribute
+            const radioPower = SonoffCluster.turboModeToRadioPower(newSettings.turbo_mode);
+            await this.zclNode.endpoints[1].clusters.SonoffCluster
+                .withManufacturerCode(cluster => cluster.writeAttributes({ turbo_mode: radioPower }));
         }
 
         const otherKeys = changedKeys.filter(key =>
@@ -101,13 +89,23 @@ class SonoffZBMicro extends SonoffBase {
     async checkAttributes() {
         this.readPowerOnBehavior('power_on_behavior');
 
-        this.readAttribute(SonoffCluster, ['turbo_mode', 'network_led'], (data) => {
-            const settingsData = { ...data };
-            if (settingsData.turbo_mode !== undefined) {
-                settingsData.turbo_mode = this._parseTurboMode(settingsData.turbo_mode);
-            }
-            this.setSettings(settingsData).catch(this.error);
+        this._readTurboMode();
+
+        this.readAttribute(SonoffCluster, ['network_led'], (data) => {
+            this.setSettings(data).catch(this.error);
         });
+    }
+
+    async _readTurboMode() {
+        try {
+            const { turbo_mode: radioPower } = await this.zclNode.endpoints[1].clusters.SonoffCluster
+                .withManufacturerCode(cluster => cluster.readAttributes('turbo_mode'));
+            if (radioPower !== undefined) {
+                await this.setSettings({ turbo_mode: SonoffCluster.radioPowerToTurboMode(radioPower) });
+            }
+        } catch (error) {
+            this.error('Could not read turbo mode:', error);
+        }
     }
 
     async onDeleted() {

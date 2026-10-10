@@ -4,11 +4,14 @@
  * Creates a driver instance without the Homey runtime. Only the SDK methods the driver code
  * calls are provided, and their effects are recorded for assertions.
  */
-function createDevice(DeviceClass, { zclNode, settings = {}, capabilities = {} } = {}) {
+function createDevice(DeviceClass, {
+  zclNode, settings = {}, capabilities = {}, store = {}, firstInit = false,
+} = {}) {
   const device = Object.create(DeviceClass.prototype);
   const recorded = { settings: [], capabilityValues: [], errors: [] };
   const currentSettings = { ...settings };
   const capabilityValues = { ...capabilities };
+  const storeValues = { ...store };
 
   Object.assign(device, {
     zclNode,
@@ -20,6 +23,9 @@ function createDevice(DeviceClass, { zclNode, settings = {}, capabilities = {} }
       recorded.settings.push(values);
       Object.assign(currentSettings, values);
     },
+    getStoreValue: key => storeValues[key],
+    async setStoreValue(key, value) { storeValues[key] = value; },
+    isFirstInit: () => firstInit,
     hasCapability: id => id in capabilityValues,
     getCapabilityValue: id => capabilityValues[id],
     async setCapabilityValue(id, value) {
