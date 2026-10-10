@@ -8,7 +8,7 @@ module.exports = class MyRFDevice extends RFDevice {
     this._receiveTrigger = this.homey.flow.getDeviceTriggerCard("on_receive");
     this.registerCapabilityListener('button', async () => {
       const data = await this.getData();      
-      this.driver.tx({code:data.code}, {device:this});
+      await this.driver.tx({code:data.code}, {device:this});
     });
 
     this.log("Init")
@@ -16,7 +16,7 @@ module.exports = class MyRFDevice extends RFDevice {
 
   async onCommandFirst(command, { ...flags } = {}) {
     this._receiveTrigger.trigger(this)
-      .then(this.log("Receive trigged"))
+      .then(() => this.log("Receive trigged"))
       .catch(this.error);
   }
 

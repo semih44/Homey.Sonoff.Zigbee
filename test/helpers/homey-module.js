@@ -8,6 +8,10 @@ class SimpleClass {}
 
 class Device extends SimpleClass {
 
+  getData() {
+    return { ...this.__fake.data };
+  }
+
   getSettings() {
     return { ...this.__fake.settings };
   }

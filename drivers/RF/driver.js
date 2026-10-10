@@ -19,7 +19,7 @@ module.exports = class MyRFDriver extends RFDriver {
 
   async receive (command, { isFirst }) {
     if (isFirst) {
-      this._rfTrigger.trigger({code:command.hex},{code:command.hex}).then(this.log("Sent global trigger")).catch(this.error);
+      this._rfTrigger.trigger({code:command.hex},{code:command.hex}).then(() => this.log("Sent global trigger")).catch(this.error);
     }
     this.log("RF receive " + command.bits + " " + command.hex);
   }
