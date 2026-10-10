@@ -7,6 +7,12 @@ const SonoffBase = require('../sonoffbase');
 class SonoffSWVZNU extends SonoffBase {
 
     async onNodeInit({ zclNode }) {
+        // Migration: older versions offered a water alarm; without a flow meter the valve
+        // detects neither leaks nor water shortage (zigbee-herdsman-converters)
+        if (this.hasCapability('alarm_water') === true) {
+            await this.removeCapability('alarm_water');
+        }
+
         await super.onNodeInit({ zclNode });
 
         // Valve on/off control
@@ -26,26 +32,7 @@ class SonoffSWVZNU extends SonoffBase {
             }
         ]).catch(err => this.error('Failed to configure attribute reporting:', err));
 
-        // Listen for valve abnormal state changes on SonoffCluster
-        const sonoffCluster = zclNode.endpoints[1].clusters.SonoffCluster;
-        if (sonoffCluster) {
-            sonoffCluster.manufacturerId = 0x1286;
-
-            sonoffCluster.on('attr.valve_abnormal_state', (value) => {
-                this.log('Valve abnormal state changed:', value);
-                this._updateAlarmState(value);
-            });
-        }
-
         this.checkAttributes();
-    }
-
-    _updateAlarmState(value) {
-        // SWV-ZNU: bit0=water_shortage, bit1=water_leakage, bit2=frost, bit3=fail_safe
-        const hasLeak = (value & 0x02) !== 0;
-        if (this.hasCapability('alarm_water')) {
-            this.setCapabilityValue('alarm_water', hasLeak).catch(this.error);
-        }
     }
 
     async onSettings({ oldSettings, newSettings, changedKeys }) {
@@ -64,24 +51,14 @@ class SonoffSWVZNU extends SonoffBase {
     }
 
     async checkAttributes() {
-        // Read valve abnormal state and child lock
-        this.readAttribute(SonoffCluster, ['valve_abnormal_state', 'child_lock'], (data) => {
+        this.readAttribute(SonoffCluster, ['child_lock'], (data) => {
             this.log('Read SonoffCluster attributes:', data);
-            if (data.valve_abnormal_state !== undefined) {
-                this._updateAlarmState(data.valve_abnormal_state);
-            }
             if (data.child_lock !== undefined) {
                 this.setSettings({ child_lock: data.child_lock }).catch(this.error);
             }
         });
     }
 
-    async onDeleted() {
-        this.log('SWV-ZNU removed');
-        const sonoffCluster = this.zclNode?.endpoints?.[1]?.clusters?.SonoffCluster;
-        if (sonoffCluster) sonoffCluster.removeAllListeners('attr.valve_abnormal_state');
-        await super.onDeleted();
-    }
 }
 
 module.exports = SonoffSWVZNU;

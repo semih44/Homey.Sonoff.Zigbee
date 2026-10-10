@@ -9204,8 +9204,7 @@
       "class": "other",
       "capabilities": [
         "onoff",
-        "measure_battery",
-        "alarm_water"
+        "measure_battery"
       ],
       "capabilitiesOptions": {
         "onoff": {
@@ -9222,22 +9221,6 @@
             "pl": "Zawór",
             "ru": "Клапан",
             "ko": "밸브"
-          }
-        },
-        "alarm_water": {
-          "title": {
-            "en": "Water Leak",
-            "de": "Wasserleck",
-            "nl": "Waterlek",
-            "fr": "Fuite d'eau",
-            "sv": "Vattenläcka",
-            "da": "Vandlækage",
-            "es": "Fuga de agua",
-            "it": "Perdita d'acqua",
-            "no": "Vannlekkasje",
-            "pl": "Wyciek wody",
-            "ru": "Утечка воды",
-            "ko": "누수"
           }
         }
       },
@@ -9353,8 +9336,7 @@
       "class": "other",
       "capabilities": [
         "onoff",
-        "measure_battery",
-        "alarm_water"
+        "measure_battery"
       ],
       "capabilitiesOptions": {
         "onoff": {
@@ -9371,22 +9353,6 @@
             "pl": "Zawór",
             "ru": "Клапан",
             "ko": "밸브"
-          }
-        },
-        "alarm_water": {
-          "title": {
-            "en": "Water Leak",
-            "de": "Wasserleck",
-            "nl": "Waterlek",
-            "fr": "Fuite d'eau",
-            "sv": "Vattenläcka",
-            "da": "Vandlækage",
-            "es": "Fuga de agua",
-            "it": "Perdita d'acqua",
-            "no": "Vannlekkasje",
-            "pl": "Wyciek wody",
-            "ru": "Утечка воды",
-            "ko": "누수"
           }
         }
       },
