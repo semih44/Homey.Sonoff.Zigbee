@@ -49,10 +49,9 @@ class SonoffBase extends ZigBeeDevice {
      * Called on every Zigbee frame received
      */
     _onHandleFrame(...args) {
-        if (this._originalHandleFrame) {
-            this._originalHandleFrame.apply(this, args);
-        }
-        
+        // Homey gets the result of the frame handling, including a failure
+        const handled = this._originalHandleFrame ? this._originalHandleFrame(...args) : undefined;
+
         const now = Date.now();
         const dt = (now - this._lastPollAttributes) / 1000;
         
@@ -61,6 +60,8 @@ class SonoffBase extends ZigBeeDevice {
             this.checkBattery();
             this.checkAttributes();
         }
+
+        return handled;
     }
 
     async checkAttributes() {
@@ -104,6 +105,9 @@ class SonoffBase extends ZigBeeDevice {
     }
 
     async checkBattery() {
+        // ZBMINIL/ZBMINIL2 are mains powered but list the power configuration cluster
+        if (!this.hasCapability('measure_battery')) return;
+
         this.log(`Check battery`);
         
         try {
@@ -112,7 +116,10 @@ class SonoffBase extends ZigBeeDevice {
                 .readAttributes("batteryPercentageRemaining");
             
             this.log(`BATTERY`, value);
-            await this.setCapabilityValue('measure_battery', value.batteryPercentageRemaining / 2);
+            // 0xFF: the device does not know its battery level (ZCL)
+            const remaining = value.batteryPercentageRemaining;
+            if (remaining === undefined || remaining === 0xFF) return;
+            await this.setCapabilityValue('measure_battery', remaining / 2);
         } catch (error) {
             this.error(`Could not get battery status:`, error);
         }
@@ -350,6 +357,9 @@ class SonoffBase extends ZigBeeDevice {
             this._originalHandleFrame = null;
             this._handleFrameWrapper = null;
         }
+
+        // Removes the listeners on the node and its clusters, stops polling
+        super.onDeleted();
     }
 
 }

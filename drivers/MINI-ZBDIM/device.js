@@ -91,7 +91,8 @@ class SonoffMINIZBDIM extends SonoffBase {
 
         // Apply initial inching settings
         const settings = this.getSettings();
-        if (settings && settings.inching_enabled !== undefined) {
+        // Only after pairing: the device keeps its inching configuration, later changes come from onSettings
+        if (this.isFirstInit() && settings && settings.inching_enabled !== undefined) {
             try {
                 await this.setInching(
                     settings.inching_enabled,
