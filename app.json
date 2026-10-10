@@ -315,54 +315,6 @@
         ]
       },
       {
-        "id": "SNZB-01-KF:double_click",
-        "title": {
-          "en": "Double click",
-          "nl": "Dubbele klik",
-          "da": "Dobbelt klik",
-          "de": "Doppelklick",
-          "es": "Doble clic",
-          "fr": "Double-clic",
-          "it": "Doppio clic",
-          "no": "Dobbelt klikk",
-          "sv": "Dubbelt klick",
-          "pl": "Podwójne kliknięcie",
-          "ru": "Двойной щелчок",
-          "ko": "더블 클릭"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=SNZB-01-KF"
-          }
-        ]
-      },
-      {
-        "id": "SNZB-01-KF:long_click",
-        "title": {
-          "en": "Long click",
-          "nl": "Lange klik",
-          "da": "Langt klik",
-          "de": "Langer Klick",
-          "es": "Clic largo",
-          "fr": "Clic long",
-          "it": "Clic lungo",
-          "no": "Langt klikk",
-          "sv": "Långt klick",
-          "pl": "Długie kliknięcie",
-          "ru": "Длительный щелчок",
-          "ko": "롱 클릭"
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=SNZB-01-KF"
-          }
-        ]
-      },
-      {
         "id": "SNZB-01M:single_button_1",
         "title": {
           "en": "Button 1 — Single click",
@@ -4949,10 +4901,10 @@
             "clusters": [
               0,
               1,
-              6
+              1280
             ],
             "bindings": [
-              6
+              1280
             ]
           }
         },

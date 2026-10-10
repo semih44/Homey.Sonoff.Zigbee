@@ -124,6 +124,16 @@ function deliverAttributeReport(node, { endpointId, clusterId, attributeId, data
   return node.handleFrame(endpointId, clusterId, frame, {});
 }
 
+/** A cluster-specific command sent by the device's server cluster, e.g. an IAS zone status change */
+function deliverClusterCommand(node, { endpointId, clusterId, cmdId, data }) {
+  const frame = buildFrame({
+    frameControl: ['clusterSpecific', 'directionToClient', 'disableDefaultResponse'],
+    cmdId,
+    data,
+  });
+  return node.handleFrame(endpointId, clusterId, frame, {});
+}
+
 function withTimeout(promise, ms, label) {
   let timer;
   const timeout = new Promise((resolve, reject) => {
@@ -136,6 +146,7 @@ module.exports = {
   createZigbeeNode,
   writtenAttribute,
   deliverAttributeReport,
+  deliverClusterCommand,
   withTimeout,
   CMD_WRITE_ATTRIBUTES,
 };
