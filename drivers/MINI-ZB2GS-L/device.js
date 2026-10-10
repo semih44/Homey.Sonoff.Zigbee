@@ -2,6 +2,7 @@
 
 const { CLUSTER, BoundCluster } = require('zigbee-clusters');
 const SonoffCluster = require('../../lib/SonoffCluster');
+const { channelOnOff, triggerChannelChanges } = require('../../lib/Channels');
 const SonoffBase = require('../sonoffbase');
 
 /**
@@ -32,8 +33,11 @@ class SonoffMINIZB2GSL extends SonoffBase {
 
         // Channel 2 — onoff.channel_2 on endpoint 2
         if (this.hasCapability('onoff.channel_2')) {
-            this.registerCapability('onoff.channel_2', CLUSTER.ON_OFF, { endpoint: 2 });
+            this.registerCapability('onoff.channel_2', CLUSTER.ON_OFF, channelOnOff(2));
         }
+
+        // Flow cards per channel, which Homey does not create for sub-capabilities
+        triggerChannelChanges(this, zclNode, 2);
 
         // Configure attribute reporting for both endpoints
         this.configureAttributeReporting([

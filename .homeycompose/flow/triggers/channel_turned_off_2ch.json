@@ -1,0 +1,91 @@
+{
+  "title": {
+    "en": "Channel turned off",
+    "nl": "Kanaal uitgeschakeld",
+    "da": "Kanal slukket",
+    "de": "Kanal ausgeschaltet",
+    "es": "Canal apagado",
+    "fr": "Canal éteint",
+    "it": "Canale spento",
+    "no": "Kanal slått av",
+    "sv": "Kanal avslagen",
+    "pl": "Kanał wyłączony",
+    "ru": "Канал выключен",
+    "ko": "채널 꺼짐"
+  },
+  "titleFormatted": {
+    "en": "Channel [[channel]] turned off",
+    "nl": "Kanaal [[channel]] uitgeschakeld",
+    "da": "Kanal [[channel]] slukket",
+    "de": "Kanal [[channel]] ausgeschaltet",
+    "es": "Canal [[channel]] apagado",
+    "fr": "Canal [[channel]] éteint",
+    "it": "Canale [[channel]] spento",
+    "no": "Kanal [[channel]] slått av",
+    "sv": "Kanal [[channel]] avslagen",
+    "pl": "Kanał [[channel]] wyłączony",
+    "ru": "Канал [[channel]] выключен",
+    "ko": "채널 [[channel]] 꺼짐"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=MINI-ZB2GS|MINI-ZB2GS-L|ZBM5-2C-80|ZBM5-2C-120"
+    },
+    {
+      "type": "dropdown",
+      "name": "channel",
+      "title": {
+        "en": "Channel",
+        "nl": "Kanaal",
+        "da": "Kanal",
+        "de": "Kanal",
+        "es": "Canal",
+        "fr": "Canal",
+        "it": "Canale",
+        "no": "Kanal",
+        "sv": "Kanal",
+        "pl": "Kanał",
+        "ru": "Канал",
+        "ko": "채널"
+      },
+      "values": [
+        {
+          "id": "1",
+          "label": {
+            "en": "1",
+            "nl": "1",
+            "da": "1",
+            "de": "1",
+            "es": "1",
+            "fr": "1",
+            "it": "1",
+            "no": "1",
+            "sv": "1",
+            "pl": "1",
+            "ru": "1",
+            "ko": "1"
+          }
+        },
+        {
+          "id": "2",
+          "label": {
+            "en": "2",
+            "nl": "2",
+            "da": "2",
+            "de": "2",
+            "es": "2",
+            "fr": "2",
+            "it": "2",
+            "no": "2",
+            "sv": "2",
+            "pl": "2",
+            "ru": "2",
+            "ko": "2"
+          }
+        }
+      ]
+    }
+  ]
+}

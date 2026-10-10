@@ -1,0 +1,108 @@
+{
+  "title": {
+    "en": "Turn channel off",
+    "nl": "Kanaal uitschakelen",
+    "da": "Sluk kanal",
+    "de": "Kanal ausschalten",
+    "es": "Apagar canal",
+    "fr": "Éteindre le canal",
+    "it": "Spegni canale",
+    "no": "Slå av kanal",
+    "sv": "Slå av kanal",
+    "pl": "Wyłącz kanał",
+    "ru": "Выключить канал",
+    "ko": "채널 끄기"
+  },
+  "titleFormatted": {
+    "en": "Turn channel [[channel]] off",
+    "nl": "Kanaal [[channel]] uitschakelen",
+    "da": "Sluk kanal [[channel]]",
+    "de": "Kanal [[channel]] ausschalten",
+    "es": "Apagar canal [[channel]]",
+    "fr": "Éteindre le canal [[channel]]",
+    "it": "Spegni canale [[channel]]",
+    "no": "Slå av kanal [[channel]]",
+    "sv": "Slå av kanal [[channel]]",
+    "pl": "Wyłącz kanał [[channel]]",
+    "ru": "Выключить канал [[channel]]",
+    "ko": "채널 [[channel]] 끄기"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=ZBM5-3C-80|ZBM5-3C-120"
+    },
+    {
+      "type": "dropdown",
+      "name": "channel",
+      "title": {
+        "en": "Channel",
+        "nl": "Kanaal",
+        "da": "Kanal",
+        "de": "Kanal",
+        "es": "Canal",
+        "fr": "Canal",
+        "it": "Canale",
+        "no": "Kanal",
+        "sv": "Kanal",
+        "pl": "Kanał",
+        "ru": "Канал",
+        "ko": "채널"
+      },
+      "values": [
+        {
+          "id": "1",
+          "label": {
+            "en": "1",
+            "nl": "1",
+            "da": "1",
+            "de": "1",
+            "es": "1",
+            "fr": "1",
+            "it": "1",
+            "no": "1",
+            "sv": "1",
+            "pl": "1",
+            "ru": "1",
+            "ko": "1"
+          }
+        },
+        {
+          "id": "2",
+          "label": {
+            "en": "2",
+            "nl": "2",
+            "da": "2",
+            "de": "2",
+            "es": "2",
+            "fr": "2",
+            "it": "2",
+            "no": "2",
+            "sv": "2",
+            "pl": "2",
+            "ru": "2",
+            "ko": "2"
+          }
+        },
+        {
+          "id": "3",
+          "label": {
+            "en": "3",
+            "nl": "3",
+            "da": "3",
+            "de": "3",
+            "es": "3",
+            "fr": "3",
+            "it": "3",
+            "no": "3",
+            "sv": "3",
+            "pl": "3",
+            "ru": "3",
+            "ko": "3"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -14,6 +14,7 @@ const CMD_WRITE_ATTRIBUTES_RESPONSE = 0x04;
 const CMD_CONFIGURE_REPORTING = 0x06;
 const CMD_CONFIGURE_REPORTING_RESPONSE = 0x07;
 const CMD_REPORT_ATTRIBUTES = 0x0A;
+const CMD_DEFAULT_RESPONSE = 0x0B;
 const FRAME_CONTROL_MANUFACTURER_SPECIFIC = 0x04;
 const STATUS_SUCCESS = 0x00;
 const STATUS_UNSUPPORTED_ATTRIBUTE = 0x86;
@@ -90,7 +91,13 @@ function createZigbeeNode({ endpoints, attributeValues = {}, rejectedWrites = {}
       if (node.failSend) throw new Error('device unreachable');
       const frame = parseFrame(buffer);
       sent.push({ endpointId, clusterId, frame });
-      if (frame.frameControl.clusterSpecific) return;
+      if (frame.frameControl.clusterSpecific) {
+        // A device confirms a command (e.g. On/Off) with a default response unless told not to
+        if (!frame.frameControl.disableDefaultResponse) {
+          reply(endpointId, clusterId, frame, CMD_DEFAULT_RESPONSE, Buffer.from([frame.cmdId, STATUS_SUCCESS]));
+        }
+        return;
+      }
 
       // A device answers global read/write requests with a response carrying the same trx number
       if (frame.cmdId === CMD_WRITE_ATTRIBUTES) {

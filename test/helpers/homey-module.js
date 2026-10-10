@@ -42,6 +42,14 @@ class Device extends SimpleClass {
     this.__fake.capabilityListeners[id] = listener;
   }
 
+  // As in Homey: runs the listener (like a change in the app) and stores the value once it succeeded
+  async triggerCapabilityListener(id, value, opts = {}) {
+    const listener = this.__fake.capabilityListeners[id];
+    if (!listener) throw new Error(`No listener registered for ${id}`);
+    await listener(value, opts);
+    this.__fake.capabilities[id] = value;
+  }
+
   async addCapability(id) {
     if (!(id in this.__fake.capabilities)) this.__fake.capabilities[id] = null;
   }
