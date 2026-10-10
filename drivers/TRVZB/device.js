@@ -72,16 +72,13 @@ class SonoffTimeBoundCluster extends BoundCluster {
 			}
 		};
 	}
+	// The TRVZB expects Unix time instead of the ZCL epoch (2000), as zigbee-herdsman-converters
+	// answers it with customTimeResponse("1970_UTC"); local time adds the time zone offset
 	get time() {
-		return this.time_since_2000(new Date());
+		return Math.round(Date.now() / 1000);
 	}
 	get local_time() {
-		return this.time_since_2000(new Date());
-	}
-	time_since_2000(date) {
-		const year2000 = new Date('2000-01-01T00:00:00Z');
-		const timeSince2000 = date.getTime() - year2000.getTime();
-		return Math.floor(timeSince2000 / 1000) >>> 0;
+		return this.time - new Date().getTimezoneOffset() * 60;
 	}
 	async handleFrame(frame, meta, rawFrame) {
 		this.frame = frame;
@@ -190,7 +187,9 @@ class SonoffTRVZB extends SonoffBase {
 		}
 
 		//zclNode.endpoints[1].bind('time', new SonoffTimeBoundCluster(this));
-		zclNode.endpoints[1].bind('time', zclNode.endpoints[1].clusters.time);
+		// Answer the valve's time requests; fall back to a server instance if Homey did not create the cluster
+		const timeServer = zclNode.endpoints[1].clusters.time || new SonoffTimeBoundCluster(zclNode.endpoints[1]);
+		zclNode.endpoints[1].bind('time', timeServer);
 		/*
 		const oldHandleFrame = zclNode.endpoints[1].handleFrame.bind(zclNode.endpoints[1]);
 		zclNode.endpoints[1].handleFrame = async (clusterId, frame, meta) => {
@@ -219,8 +218,8 @@ class SonoffTRVZB extends SonoffBase {
 
 		//When change in Homey
 		this.registerCapabilityListener("target_temperature", async (value) => {
-			this.writeAttributes(CLUSTER.THERMOSTAT, {
-				occupiedHeatingSetpoint: value * 100
+			await this.writeAttributes(CLUSTER.THERMOSTAT, {
+				occupiedHeatingSetpoint: Math.round(value * 100)
 			});
 		});
 
@@ -247,13 +246,14 @@ class SonoffTRVZB extends SonoffBase {
 	async setSettings(settings) {
 		Object.entries(settings).forEach(([key, value]) => {
 			if (key === "localTemperatureCalibration") {
-				settings[key] = value / 100;
+				settings[key] = value / 10;
 			} else if (Extended_Settings[key]) {
 				const cfg = Extended_Settings[key];
 				if (cfg.type === 'number') {
 					settings[key] = value / cfg.scale;
 				} else if (cfg.type === 'enum') {
-					settings[key] = String(value);
+					// temperature_sensor_select 2 = remote source offline: the external sensor stays selected
+					settings[key] = key === 'temperature_sensor_select' && value === 2 ? '1' : String(value);
 				} else if (cfg.type === 'checkbox') {
 					settings[key] = value === 0x02;
 				}
@@ -269,7 +269,7 @@ class SonoffTRVZB extends SonoffBase {
 			if (changedKeys.includes(key)) {
 				acc[key] = newSettings[key];
 				if (key.includes("temperature"))
-					acc[key] = acc[key] * 100;
+					acc[key] = Math.round(acc[key] * 100);
 			}
 			return acc;
 		}, {});

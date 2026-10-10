@@ -47,9 +47,12 @@
           "ru": "Настройте локальную калибровку температуры.",
           "ko": "로컬 온도 보정을 조정하세요."
         },
-        "min": -7,
-        "max": 7,
-        "step": 0.1,
+        "value": 0,
+        "attr": {
+          "min": -12.7,
+          "max": 12.7,
+          "step": 0.2
+        },
         "default": 0
       },
       {
@@ -164,9 +167,7 @@
         "value": "0",
         "values": [
           { "id": "0", "label": { "en": "Internal", "sv": "Intern", "nl": "Intern", "da": "Intern", "de": "Intern", "es": "Interno", "fr": "Interne", "it": "Interno", "no": "Intern", "pl": "Wewnętrzny", "ru": "Внутренний", "ko": "내부" } },
-          { "id": "1", "label": { "en": "External", "sv": "Extern", "nl": "Extern", "da": "Ekstern", "de": "Extern", "es": "Externo", "fr": "Externe", "it": "Esterno", "no": "Ekstern", "pl": "Zewnętrzny", "ru": "Внешний", "ko": "외부" } },
-          { "id": "2", "label": { "en": "External 2", "sv": "Extern 2", "nl": "Extern 2", "da": "Ekstern 2", "de": "Extern 2", "es": "Externo 2", "fr": "Externe 2", "it": "Esterno 2", "no": "Ekstern 2", "pl": "Zewnętrzny 2", "ru": "Внешний 2", "ko": "외부 2" } },
-          { "id": "3", "label": { "en": "External 3", "sv": "Extern 3", "nl": "Extern 3", "da": "Ekstern 3", "de": "Extern 3", "es": "Externo 3", "fr": "Externe 3", "it": "Esterno 3", "no": "Ekstern 3", "pl": "Zewnętrzny 3", "ru": "Внешний 3", "ko": "외부 3" } }
+          { "id": "1", "label": { "en": "External", "sv": "Extern", "nl": "Extern", "da": "Ekstern", "de": "Extern", "es": "Externo", "fr": "Externe", "it": "Esterno", "no": "Ekstern", "pl": "Zewnętrzny", "ru": "Внешний", "ko": "외부" } }
         ]
       },
       {
