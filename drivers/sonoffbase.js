@@ -1,5 +1,6 @@
 'use strict';
 
+const { isDeepStrictEqual } = require('util');
 const { ZigBeeDevice } = require('homey-zigbeedriver');
 const { debug, CLUSTER } = require('zigbee-clusters');
 
@@ -13,6 +14,10 @@ const { assertWriteSucceeded } = require('../lib/writeStatus');
 if (process.env.DEBUG === "1") {
     debug(true);
 }
+
+// Attribute reporting configured by ensureAttributeReporting. homey-zigbeedriver keeps its own
+// record keyed by attribute name only, where e.g. both measuredValue attributes overwrite each other.
+const REPORTING_STORE_KEY = 'attributeReporting';
 
 class SonoffBase extends ZigBeeDevice {
 
@@ -59,6 +64,31 @@ class SonoffBase extends ZigBeeDevice {
     }
 
     async checkAttributes() {
+    }
+
+    /**
+     * Configures attribute reporting unless the device already got this configuration earlier.
+     * A sleeping device misses the request; call this again when it reports, as it is awake then.
+     * @param {object[]} configurations - as for configureAttributeReporting
+     */
+    async ensureAttributeReporting(configurations) {
+        // As stored by Homey (JSON), so that it compares equal after a restart
+        const wanted = JSON.parse(JSON.stringify(configurations.map(({
+            endpointId = 1, cluster, attributeName, minInterval, maxInterval, minChange,
+        }) => ({ endpointId, cluster: cluster.NAME, attributeName, minInterval, maxInterval, minChange }))));
+        if (this._configuringReporting || isDeepStrictEqual(this.getStoreValue(REPORTING_STORE_KEY), wanted)) {
+            return;
+        }
+
+        this._configuringReporting = true;
+        try {
+            await this.configureAttributeReporting(configurations);
+            await this.setStoreValue(REPORTING_STORE_KEY, wanted);
+        } catch (error) {
+            this.error(`Could not configure attribute reporting, trying again after the next report`, error);
+        } finally {
+            this._configuringReporting = false;
+        }
     }
 
     async checkBattery() {

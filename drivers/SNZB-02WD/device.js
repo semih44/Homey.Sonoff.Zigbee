@@ -5,6 +5,14 @@ const SonoffCluster = require('../../lib/SonoffCluster');
 
 class SonoffSNZB02WD extends TempHumiditySensor {
 
+    // zigbee-herdsman-converters SNZB-02WD: on a change of 0.2 °C / 1 %RH, at most every 5 s
+    get measurementReporting() {
+        return {
+            temperature: { minInterval: 5, maxInterval: 3600, minChange: 20 },
+            humidity: { minInterval: 5, maxInterval: 3600, minChange: 100 },
+        };
+    }
+
     async onNodeInit({ zclNode }) {
         await super.onNodeInit({ zclNode });
         this.checkAttributes();

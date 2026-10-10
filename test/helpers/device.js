@@ -34,4 +34,13 @@ async function flushAsync(rounds = 10) {
   }
 }
 
-module.exports = { createDevice, flushAsync };
+// Waits until a condition holds, e.g. for work behind timers that flushAsync does not cover
+async function waitFor(condition, { timeoutMs = 2000, label = 'condition' } = {}) {
+  const deadline = Date.now() + timeoutMs;
+  while (!condition()) {
+    if (Date.now() > deadline) throw new Error(`${label} not met within ${timeoutMs} ms`);
+    await new Promise(resolve => setTimeout(resolve, 1));
+  }
+}
+
+module.exports = { createDevice, flushAsync, waitFor };

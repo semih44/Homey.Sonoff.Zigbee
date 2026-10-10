@@ -4,34 +4,36 @@ const SonoffBase = require('../sonoffbase');
 const { CLUSTER } = require('zigbee-clusters');
 const SonoffCluster = require('../../lib/SonoffCluster');
 
+// zigbee-herdsman-converters SNZB-02LD: on a change of 0.2 °C, at most every 5 s, at least hourly
+const TEMPERATURE_REPORTING = { minInterval: 5, maxInterval: 3600, minChange: 20 };
+
 class SonoffSNZB02LD extends SonoffBase {
 
 	async onNodeInit({ zclNode }) {
 		await super.onNodeInit(...arguments);
 
-		if (this.isFirstInit()) {
-			await this.configureAttributeReporting([
-				{
-					endpointId: 1,
-					cluster: CLUSTER.TEMPERATURE_MEASUREMENT,
-					attributeName: 'measuredValue',
-					minInterval: 0,
-					maxInterval: 90,
-					minChange: 1
-				}
-			]).then(() => {
-				this.log('registered attr report listener');
-			}).catch(err => {
-				this.error('failed to register attr report listener', err);
-			});
-		}
+		this.configureMeasurementReporting();
 
 		// measure_temperature
 		zclNode.endpoints[1].clusters[CLUSTER.TEMPERATURE_MEASUREMENT.NAME]
 			.on('attr.measuredValue', this.onTemperatureMeasuredAttributeReport.bind(this));
 	}
 
+	configureMeasurementReporting() {
+		return this.ensureAttributeReporting([
+			{
+				endpointId: 1,
+				cluster: CLUSTER.TEMPERATURE_MEASUREMENT,
+				attributeName: 'measuredValue',
+				...TEMPERATURE_REPORTING
+			}
+		]);
+	}
+
 	onTemperatureMeasuredAttributeReport(measuredValue) {
+		// The sensor is awake now, so this is when a configuration it missed gets through
+		this.configureMeasurementReporting();
+
 		const temperatureOffset = this.getSetting('temperature_offset') || 0;
 		const parsedValue = this.getSetting('temperature_decimals') === '2'
 			? Math.round((measuredValue / 100) * 100) / 100

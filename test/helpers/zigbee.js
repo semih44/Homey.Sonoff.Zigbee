@@ -3,12 +3,16 @@
 // Real zigbee-clusters ZCLNode on top of a fake Homey ZigBeeNode: frames are encoded and decoded
 // by the library itself, only the radio is replaced.
 const { ZCLNode } = require('zigbee-clusters');
-const { ZCLStandardHeader, ZCLMfgSpecificHeader } = require('zigbee-clusters/lib/zclFrames');
+const {
+  ZCLStandardHeader, ZCLMfgSpecificHeader, ZCLConfigureReportingRecords,
+} = require('zigbee-clusters/lib/zclFrames');
 
 const CMD_READ_ATTRIBUTES = 0x00;
 const CMD_READ_ATTRIBUTES_RESPONSE = 0x01;
 const CMD_WRITE_ATTRIBUTES = 0x02;
 const CMD_WRITE_ATTRIBUTES_RESPONSE = 0x04;
+const CMD_CONFIGURE_REPORTING = 0x06;
+const CMD_CONFIGURE_REPORTING_RESPONSE = 0x07;
 const CMD_REPORT_ATTRIBUTES = 0x0A;
 const FRAME_CONTROL_MANUFACTURER_SPECIFIC = 0x04;
 const STATUS_SUCCESS = 0x00;
@@ -58,7 +62,8 @@ function writeResponseData(requestData, rejectedById) {
  * @param {Object<number, number[]>} options.endpoints - Input cluster ids per endpoint id
  * @param {object} [options.attributeValues] - endpointId -> clusterId -> attributeId -> Buffer [dataTypeId, ...value]
  * @param {object} [options.rejectedWrites] - endpointId -> clusterId -> attributeId -> ZCL status byte
- * @param {boolean} [options.failSend] - Simulate an unreachable device
+ * @param {boolean} [options.failSend] - Simulate an unreachable (e.g. sleeping) device; can be
+ *   changed later through node.failSend
  * @returns {{ zclNode: ZCLNode, node: object, sent: object[] }}
  */
 function createZigbeeNode({ endpoints, attributeValues = {}, rejectedWrites = {}, failSend = false }) {
@@ -80,8 +85,9 @@ function createZigbeeNode({ endpoints, attributeValues = {}, rejectedWrites = {}
       inputClusters,
       outputClusters: [],
     })),
+    failSend,
     async sendFrame(endpointId, clusterId, buffer) {
-      if (failSend) throw new Error('device unreachable');
+      if (node.failSend) throw new Error('device unreachable');
       const frame = parseFrame(buffer);
       sent.push({ endpointId, clusterId, frame });
       if (frame.frameControl.clusterSpecific) return;
@@ -93,6 +99,9 @@ function createZigbeeNode({ endpoints, attributeValues = {}, rejectedWrites = {}
       } else if (frame.cmdId === CMD_READ_ATTRIBUTES) {
         const valuesById = (attributeValues[endpointId] || {})[clusterId] || {};
         reply(endpointId, clusterId, frame, CMD_READ_ATTRIBUTES_RESPONSE, readResponseData(frame.data, valuesById));
+      } else if (frame.cmdId === CMD_CONFIGURE_REPORTING) {
+        // ZCL: a single success status when every record was accepted
+        reply(endpointId, clusterId, frame, CMD_CONFIGURE_REPORTING_RESPONSE, Buffer.from([STATUS_SUCCESS]));
       }
     },
   };
@@ -124,6 +133,19 @@ function deliverAttributeReport(node, { endpointId, clusterId, attributeId, data
   return node.handleFrame(endpointId, clusterId, frame, {});
 }
 
+/**
+ * Decodes all captured configureReporting frames with the library's own record parser.
+ * @returns {{ clusterId: number, attributeId: number, minInterval: number, maxInterval: number,
+ *   minChange: number }[]}
+ */
+function configuredReporting(sent) {
+  return sent.filter(s => !s.frame.frameControl.clusterSpecific && s.frame.cmdId === CMD_CONFIGURE_REPORTING)
+    .flatMap(s => ZCLConfigureReportingRecords().fromBuffer(s.frame.data, 0)
+      .map(({ attributeId, minInterval, maxInterval, minChange }) => ({
+        clusterId: s.clusterId, attributeId, minInterval, maxInterval, minChange,
+      })));
+}
+
 /** A cluster-specific command sent by the device's server cluster, e.g. an IAS zone status change */
 function deliverClusterCommand(node, { endpointId, clusterId, cmdId, data }) {
   const frame = buildFrame({
@@ -147,6 +169,7 @@ module.exports = {
   writtenAttribute,
   deliverAttributeReport,
   deliverClusterCommand,
+  configuredReporting,
   withTimeout,
   CMD_WRITE_ATTRIBUTES,
 };
