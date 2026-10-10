@@ -194,6 +194,23 @@ class SonoffMINIZB2GS extends SonoffBase {
                 throw new Error(`Failed to update inching: ${error.message}`);
             }
         }
+
+        // Inching channel 2 (zigbee-herdsman-converters: endpoint 2, channel byte 1)
+        const inchingKeysL2 = ['inching_enabled_l2', 'inching_mode_l2', 'inching_time_l2'];
+        if (changedKeys.some(key => inchingKeysL2.includes(key))) {
+            try {
+                await this.setInching(
+                    newSettings.inching_enabled_l2,
+                    newSettings.inching_time_l2,
+                    newSettings.inching_mode_l2,
+                    2
+                );
+                this.log('Inching channel 2 updated');
+            } catch (error) {
+                this.error('Error updating inching channel 2:', error);
+                throw new Error(`Failed to update inching of channel 2: ${error.message}`);
+            }
+        }
     }
 
     async checkAttributes() {

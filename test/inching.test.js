@@ -87,3 +87,32 @@ test('no driver offers an inching time beyond what the protocol carries', () => 
   }
   assert.deepEqual(tooLong, []);
 });
+
+// zigbee-herdsman-converters MINI-ZB2GS: inchingControlSet({endpointNames: ['l1', 'l2']}) sends the
+// command to the channel's endpoint, with byte 5 = 0x00 for l1 and 0x01 for l2
+test('MINI-ZB2GS: inching for channel 2 goes to endpoint 2 with channel byte 1', async () => {
+  const DeviceClass = require('../drivers/MINI-ZB2GS/device.js');
+  const { zclNode, sent } = createZigbeeNode({ endpoints: { 1: [0x0006, SONOFF], 2: [0x0006, SONOFF] } });
+  const { device } = createDevice(DeviceClass, { zclNode });
+
+  await device.onSettings({
+    oldSettings: {},
+    newSettings: { inching_enabled_l2: true, inching_time_l2: 5, inching_mode_l2: 'on' },
+    changedKeys: ['inching_enabled_l2', 'inching_time_l2'],
+  });
+
+  const commands = sent.filter(s => s.clusterId === SONOFF && s.frame.frameControl.clusterSpecific);
+  assert.deepEqual(commands.map(({ endpointId, frame }) => [endpointId, [...frame.data]]), [
+    [2, [0x01, 0x17, 0x07, 0x80, 0x81, 0x01, 0x0A, 0x00, 0x00, 0x00, 0x1B]],
+  ]);
+});
+
+test('MINI-ZB2GS: inching can be set for both channels', () => {
+  const settings = require('../drivers/MINI-ZB2GS/driver.settings.compose.json');
+  const ids = settings.flatMap(setting => (setting.children ? setting.children : [setting])).map(setting => setting.id);
+
+  for (const id of ['inching_enabled', 'inching_time', 'inching_mode']) {
+    assert.ok(ids.includes(id), id);
+    assert.ok(ids.includes(`${id}_l2`), `${id}_l2`);
+  }
+});

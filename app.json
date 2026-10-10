@@ -3046,18 +3046,18 @@
         {
           "type": "group",
           "label": {
-            "en": "Inching",
-            "sv": "Inching",
-            "nl": "Inching",
-            "da": "Inching",
-            "de": "Inching",
-            "es": "Inching",
-            "fr": "Inching",
-            "it": "Inching",
-            "no": "Inching",
-            "pl": "Inching",
-            "ru": "Инчинг",
-            "ko": "인칭"
+            "en": "Inching (Channel 1)",
+            "sv": "Inching (Kanal 1)",
+            "nl": "Inching (Kanaal 1)",
+            "da": "Inching (Kanal 1)",
+            "de": "Inching (Kanal 1)",
+            "es": "Inching (Canal 1)",
+            "fr": "Inching (Canal 1)",
+            "it": "Inching (Canale 1)",
+            "no": "Inching (Kanal 1)",
+            "pl": "Inching (Kanał 1)",
+            "ru": "Инчинг (Канал 1)",
+            "ko": "인칭 (채널 1)"
           },
           "children": [
             {
@@ -3105,6 +3105,101 @@
             },
             {
               "id": "inching_mode",
+              "type": "dropdown",
+              "label": {
+                "en": "Inching Mode",
+                "de": "Inching-Modus",
+                "nl": "Inching-modus",
+                "fr": "Mode inching",
+                "sv": "Inching-läge",
+                "da": "Inching-tilstand",
+                "es": "Modo inching",
+                "it": "Modalità inching",
+                "no": "Inching-modus",
+                "pl": "Tryb inching",
+                "ru": "Режим инчинга",
+                "ko": "인칭 모드"
+              },
+              "value": "on",
+              "values": [
+                {
+                  "id": "on",
+                  "label": {
+                    "en": "On → Off"
+                  }
+                },
+                {
+                  "id": "off",
+                  "label": {
+                    "en": "Off → On"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Inching (Channel 2)",
+            "sv": "Inching (Kanal 2)",
+            "nl": "Inching (Kanaal 2)",
+            "da": "Inching (Kanal 2)",
+            "de": "Inching (Kanal 2)",
+            "es": "Inching (Canal 2)",
+            "fr": "Inching (Canal 2)",
+            "it": "Inching (Canale 2)",
+            "no": "Inching (Kanal 2)",
+            "pl": "Inching (Kanał 2)",
+            "ru": "Инчинг (Канал 2)",
+            "ko": "인칭 (채널 2)"
+          },
+          "children": [
+            {
+              "id": "inching_enabled_l2",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Enable Inching",
+                "de": "Inching aktivieren",
+                "nl": "Inching inschakelen",
+                "fr": "Activer l'inching",
+                "sv": "Aktivera inching",
+                "da": "Aktivér inching",
+                "es": "Activar inching",
+                "it": "Attiva inching",
+                "no": "Aktiver inching",
+                "pl": "Włącz inching",
+                "ru": "Включить инчинг",
+                "ko": "인칭 활성화"
+              }
+            },
+            {
+              "id": "inching_time_l2",
+              "type": "number",
+              "label": {
+                "en": "Duration (s)",
+                "de": "Dauer (s)",
+                "nl": "Duur (s)",
+                "fr": "Durée (s)",
+                "sv": "Varaktighet (s)",
+                "da": "Varighed (s)",
+                "es": "Duración (s)",
+                "it": "Durata (s)",
+                "no": "Varighet (s)",
+                "pl": "Czas trwania (s)",
+                "ru": "Длительность (с)",
+                "ko": "지속 시간 (초)"
+              },
+              "value": 1,
+              "attr": {
+                "min": 0.5,
+                "max": 3599.5,
+                "step": 0.5
+              }
+            },
+            {
+              "id": "inching_mode_l2",
               "type": "dropdown",
               "label": {
                 "en": "Inching Mode",

@@ -277,17 +277,19 @@ class SonoffBase extends ZigBeeDevice {
      * @param {boolean} enabled
      * @param {number} time - seconds (0-32767.5, sent in 0.5 s units)
      * @param {'on'|'off'} mode - 'on': ON -> OFF after time, 'off': OFF -> ON after time
+     * @param {number} [channel=1] - sent to the channel's endpoint; the payload counts channels from 0
      */
-    async setInching(enabled = false, time = 1, mode = 'on') {
-        const payload = buildInchingPayload({ enabled, mode, seconds: time });
+    async setInching(enabled = false, time = 1, mode = 'on', channel = 1) {
+        const payload = buildInchingPayload({ enabled, mode, seconds: time, channel: channel - 1 });
 
-        const cluster = this.zclNode.endpoints[1].clusters.SonoffCluster;
+        const endpoint = this.zclNode.endpoints[channel];
+        const cluster = endpoint && endpoint.clusters.SonoffCluster;
         if (!cluster) {
             throw new Error('SonoffCluster not available - cannot set inching');
         }
 
         this.log('Sending inching command:', {
-            enabled, mode, time_seconds: time, payload_hex: payload.toString('hex'),
+            channel, enabled, mode, time_seconds: time, payload_hex: payload.toString('hex'),
         });
         await cluster.protocolData(
             { data: payload },
