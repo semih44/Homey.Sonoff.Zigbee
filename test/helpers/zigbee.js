@@ -42,14 +42,26 @@ function readResponseData(requestData, valuesById) {
   return Buffer.concat(records);
 }
 
+// Write response as a device sends it: a single SUCCESS byte when everything was written,
+// otherwise one [status, attribute id] record per rejected attribute (ZCL spec 2.5.5)
+function writeResponseData(requestData, rejectedById) {
+  // The drivers write one attribute per frame, so the first record identifies it
+  const attributeId = requestData.readUInt16LE(0);
+  const status = rejectedById[attributeId];
+  return status === undefined
+    ? Buffer.from([STATUS_SUCCESS])
+    : Buffer.from([status, attributeId & 0xff, attributeId >> 8]);
+}
+
 /**
  * @param {object} options
  * @param {Object<number, number[]>} options.endpoints - Input cluster ids per endpoint id
  * @param {object} [options.attributeValues] - endpointId -> clusterId -> attributeId -> Buffer [dataTypeId, ...value]
+ * @param {object} [options.rejectedWrites] - endpointId -> clusterId -> attributeId -> ZCL status byte
  * @param {boolean} [options.failSend] - Simulate an unreachable device
  * @returns {{ zclNode: ZCLNode, node: object, sent: object[] }}
  */
-function createZigbeeNode({ endpoints, attributeValues = {}, failSend = false }) {
+function createZigbeeNode({ endpoints, attributeValues = {}, rejectedWrites = {}, failSend = false }) {
   const sent = [];
   const reply = (endpointId, clusterId, request, cmdId, data) => {
     const response = buildFrame({
@@ -76,8 +88,8 @@ function createZigbeeNode({ endpoints, attributeValues = {}, failSend = false })
 
       // A device answers global read/write requests with a response carrying the same trx number
       if (frame.cmdId === CMD_WRITE_ATTRIBUTES) {
-        reply(endpointId, clusterId, frame, CMD_WRITE_ATTRIBUTES_RESPONSE,
-          Buffer.from([STATUS_SUCCESS, frame.data[0], frame.data[1]]));
+        const rejectedById = (rejectedWrites[endpointId] || {})[clusterId] || {};
+        reply(endpointId, clusterId, frame, CMD_WRITE_ATTRIBUTES_RESPONSE, writeResponseData(frame.data, rejectedById));
       } else if (frame.cmdId === CMD_READ_ATTRIBUTES) {
         const valuesById = (attributeValues[endpointId] || {})[clusterId] || {};
         reply(endpointId, clusterId, frame, CMD_READ_ATTRIBUTES_RESPONSE, readResponseData(frame.data, valuesById));

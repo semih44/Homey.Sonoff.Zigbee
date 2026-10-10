@@ -3,6 +3,7 @@
 const SonoffBase = require('../sonoffbase');
 const { CLUSTER } = require('zigbee-clusters');
 const SonoffCluster = require('../../lib/SonoffCluster');
+const { WRITE_REJECTED } = require('../../lib/writeStatus');
 
 class SonoffMINIZBRBS extends SonoffBase {
 
@@ -33,13 +34,15 @@ class SonoffMINIZBRBS extends SonoffBase {
             await this.writeAttribute(SonoffCluster, 'switch_mode', parseInt(newSettings.switch_mode, 10));
         }
 
-        // Handle calibration action: fire-and-forget (device won't respond in time)
+        // Handle calibration action
         if (changedKeys.includes('motor_calibration_action')) {
             const action = parseInt(newSettings.motor_calibration_action, 10);
             if (action !== 0) {
-                this._sendCalibrationAction(action);
-                // Reset dropdown immediately
-                this.setSettings({ motor_calibration_action: '0' }).catch(this.error);
+                await this._sendCalibrationAction(action);
+                // Homey stores newSettings after onSettings returns, so reset the dropdown afterwards
+                this.homey.setTimeout(() => {
+                    this.setSettings({ motor_calibration_action: '0' }).catch(this.error);
+                }, 1000);
             }
         }
 
@@ -65,7 +68,9 @@ class SonoffMINIZBRBS extends SonoffBase {
             await cluster.writeAttributes({ motor_calibration_action: action });
             this.log(`Motor calibration action sent successfully`);
         } catch (error) {
-            // Timeout is expected — device starts calibrating immediately
+            // A rejected command never starts a calibration, so there is nothing to poll for
+            if (error.code === WRITE_REJECTED) throw error;
+            // The device may start moving before it acknowledges; a timeout is not a failure
             this.log(`Motor calibration write returned: ${error.message} (expected during calibration)`);
         }
 
@@ -73,7 +78,7 @@ class SonoffMINIZBRBS extends SonoffBase {
         // Automatic calibration can take 30-90 seconds (full open + full close)
         const pollDelays = [10000, 30000, 60000, 90000, 120000];
         for (const delay of pollDelays) {
-            setTimeout(() => this._readCalibrationStatus(), delay);
+            this.homey.setTimeout(() => this._readCalibrationStatus(), delay);
         }
     }
 

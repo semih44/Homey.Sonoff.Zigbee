@@ -8,6 +8,7 @@ const { debug, CLUSTER } = require('zigbee-clusters');
 require('../lib/SonoffOnOffCluster');
 const SonoffCluster = require('../lib/SonoffCluster');
 const { buildInchingPayload } = require('../lib/SonoffInching');
+const { assertWriteSucceeded } = require('../lib/writeStatus');
 
 if (process.env.DEBUG === "1") {
     debug(true);
@@ -269,11 +270,14 @@ class SonoffBase extends ZigBeeDevice {
         const manufacturerId = cluster === 'SonoffCluster' ? 0x1286 : null;
         
         try {
-            return await this._withManufacturerId(
+            const response = await this._withManufacturerId(
                 cluster,
                 manufacturerId,
                 (clusterObj) => clusterObj.writeAttributes(items)
             );
+            // Covers standard clusters too, not only the Sonoff cluster classes that check themselves
+            assertWriteSucceeded(response);
+            return response;
         } catch (error) {
             this.error(`Error write attr`, items, error);
             throw error;
