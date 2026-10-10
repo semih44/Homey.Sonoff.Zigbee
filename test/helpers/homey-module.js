@@ -34,6 +34,14 @@ class Device extends SimpleClass {
     this.__fake.capabilities[id] = value;
   }
 
+  async addCapability(id) {
+    if (!(id in this.__fake.capabilities)) this.__fake.capabilities[id] = null;
+  }
+
+  async removeCapability(id) {
+    delete this.__fake.capabilities[id];
+  }
+
   getStoreValue(key) {
     return this.__fake.store[key];
   }

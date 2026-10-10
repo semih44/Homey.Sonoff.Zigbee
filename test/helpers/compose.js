@@ -35,4 +35,12 @@ function endpointsFromCompose(driverId) {
     .map(([endpointId, endpoint]) => [endpointId, endpoint.clusters || []]));
 }
 
-module.exports = { zigbeeDrivers, matchingDrivers, endpointsFromCompose, asArray };
+/** Capabilities a newly paired device gets from the driver manifest, with no value yet */
+function capabilitiesFromCompose(driverId) {
+  const manifest = JSON.parse(fs.readFileSync(path.join(DRIVERS_DIR, driverId, 'driver.compose.json'), 'utf8'));
+  return Object.fromEntries((manifest.capabilities || []).map(capability => [capability, null]));
+}
+
+module.exports = {
+  zigbeeDrivers, matchingDrivers, endpointsFromCompose, capabilitiesFromCompose, asArray,
+};

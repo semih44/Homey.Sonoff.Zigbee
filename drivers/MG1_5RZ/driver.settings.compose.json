@@ -35,7 +35,7 @@
         },
         "value": 60,
         "attr": {
-          "min": 15,
+          "min": 60,
           "max": 65535,
           "step": 1
         }
@@ -95,7 +95,7 @@
           {
             "id": "3",
             "label": {
-              "en": "Hight",
+              "en": "High",
               "nl": "Hoog",
               "da": "Høj",
               "de": "Hoch",

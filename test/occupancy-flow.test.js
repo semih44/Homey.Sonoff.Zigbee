@@ -8,9 +8,9 @@ const { createDevice } = require('./helpers/device');
 
 const OccupancySensor = require('../drivers/occupancysensor');
 
+// The MG1_5RZ radar has no illuminance and therefore no such condition
 const CASES = [
   { driver: 'SNZB-06P', cardId: 'is_bright' },
-  { driver: 'MG1_5RZ', cardId: 'mg15rz_is_bright' },
 ];
 
 function fakeFlow() {

@@ -1133,30 +1133,6 @@
     ],
     "conditions": [
       {
-        "id": "mg15rz_is_bright",
-        "title": {
-          "en": "Illuminance is !{{bright|dim}}",
-          "sv": "Ljusnivån är !{{ljus|mörk}}",
-          "nl": "De verlichting is !{{fel|dim}}",
-          "da": "Belysningen er !{{lys|dæmpet}}",
-          "de": "Die Beleuchtung ist !{{hell|dunkel}}",
-          "es": "La iluminación es !{{brillante|tenue}}",
-          "fr": "L'éclairage est !{{lumineux|faible}}",
-          "it": "L'illuminazione è !{{luminosa|scarsa}}",
-          "no": "Belysningen er !{{lys|dempet}}",
-          "pl": "Oświetlenie jest !{{jasne|przyciemnione}}",
-          "ru": "Освещенность !{{яркая|тусклая}}",
-          "ko": "조명이 !{{밝음|어두움}} 입니다."
-        },
-        "args": [
-          {
-            "type": "device",
-            "name": "device",
-            "filter": "driver_id=MG1_5RZ"
-          }
-        ]
-      },
-      {
         "id": "is_bright",
         "title": {
           "en": "Illuminance is !{{bright|dim}}",
@@ -1289,8 +1265,7 @@
       },
       "class": "sensor",
       "capabilities": [
-        "alarm_motion",
-        "sonoff_illuminance"
+        "alarm_motion"
       ],
       "zigbee": {
         "manufacturerName": [
@@ -1366,7 +1341,7 @@
               },
               "value": 60,
               "attr": {
-                "min": 15,
+                "min": 60,
                 "max": 65535,
                 "step": 1
               }
@@ -1426,7 +1401,7 @@
                 {
                   "id": "3",
                   "label": {
-                    "en": "Hight",
+                    "en": "High",
                     "nl": "Hoog",
                     "da": "Høj",
                     "de": "Hoch",
@@ -8201,81 +8176,10 @@
               },
               "value": 60,
               "attr": {
-                "min": 15,
+                "min": 5,
                 "max": 60,
                 "step": 1
               }
-            },
-            {
-              "id": "occupied_threshold",
-              "type": "dropdown",
-              "label": {
-                "en": "Sensitivity",
-                "nl": "Gevoeligheid",
-                "da": "Følsomhed",
-                "de": "Empfindlichkeit",
-                "es": "Sensibilidad",
-                "fr": "Sensibilité",
-                "it": "Sensibilità",
-                "no": "Følsomhet",
-                "sv": "Känslighet",
-                "pl": "Czułość",
-                "ru": "Чувствительность",
-                "ko": "민감도"
-              },
-              "values": [
-                {
-                  "id": "1",
-                  "label": {
-                    "en": "Low",
-                    "nl": "Laag",
-                    "da": "Lav",
-                    "de": "Niedrig",
-                    "es": "Bajo",
-                    "fr": "Bas",
-                    "it": "Basso",
-                    "no": "Lav",
-                    "sv": "Låg",
-                    "pl": "Niski",
-                    "ru": "Низкий",
-                    "ko": "낮은"
-                  }
-                },
-                {
-                  "id": "2",
-                  "label": {
-                    "en": "Medium",
-                    "nl": "Middel",
-                    "da": "Mellem",
-                    "de": "Mittel",
-                    "es": "Medio",
-                    "fr": "Moyen",
-                    "it": "Medio",
-                    "no": "Medium",
-                    "sv": "Medium",
-                    "pl": "Średni",
-                    "ru": "Средний",
-                    "ko": "중간"
-                  }
-                },
-                {
-                  "id": "3",
-                  "label": {
-                    "en": "High",
-                    "nl": "Hoog",
-                    "da": "Høj",
-                    "de": "Hoch",
-                    "es": "Alto",
-                    "fr": "Haut",
-                    "it": "Alto",
-                    "no": "Høy",
-                    "sv": "Hög",
-                    "pl": "Wysoki",
-                    "ru": "Высокий",
-                    "ko": "높은"
-                  }
-                }
-              ]
             }
           ]
         }
@@ -8813,7 +8717,7 @@
                 {
                   "id": "3",
                   "label": {
-                    "en": "Hight",
+                    "en": "High",
                     "nl": "Hoog",
                     "da": "Høj",
                     "de": "Hoch",
