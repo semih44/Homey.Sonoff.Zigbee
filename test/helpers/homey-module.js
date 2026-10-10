@@ -38,6 +38,10 @@ class Device extends SimpleClass {
     this.__fake.capabilities[id] = value;
   }
 
+  registerCapabilityListener(id, listener) {
+    this.__fake.capabilityListeners[id] = listener;
+  }
+
   async addCapability(id) {
     if (!(id in this.__fake.capabilities)) this.__fake.capabilities[id] = null;
   }

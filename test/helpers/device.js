@@ -8,7 +8,7 @@ const FIRST_INIT_STORE_KEY = 'zb_first_init';
  * Homey stand-in (test/helpers/homey-module.js) and record their effects for assertions.
  */
 function createDevice(DeviceClass, {
-  zclNode, data = {}, settings = {}, capabilities = {}, store = {}, firstInit = false,
+  zclNode, node, data = {}, settings = {}, capabilities = {}, store = {}, firstInit = false,
 } = {}) {
   const device = Object.create(DeviceClass.prototype);
   const recorded = { settings: [], capabilityValues: [], errors: [] };
@@ -18,9 +18,16 @@ function createDevice(DeviceClass, {
     settings: { ...settings },
     capabilities: { ...capabilities },
     store: { ...store, ...(firstInit ? {} : { [FIRST_INIT_STORE_KEY]: false }) },
+    capabilityListeners: {},
     recorded,
   };
   device.zclNode = zclNode;
+  device.node = node;
+  // State homey-zigbeedriver's ZigBeeDevice.onInit sets up before calling onNodeInit
+  device._debugEnabled = false;
+  device._pollIntervals = {};
+  device._clusterCapabilityConfigurations = new Map();
+  device._flowTriggers = {};
   device.log = () => {};
   device.error = (...args) => recorded.errors.push(args);
 
