@@ -8,24 +8,7 @@ class SonoffSNZB04P extends SonoffBase {
 
     async onNodeInit({zclNode}) {
 
-		super.onNodeInit({zclNode}); //, {noAttribCheck:true});
-
-		/*
-		if (this.isFirstInit()) {
-
-			await this.configureAttributeReporting([
-				{
-					endpointId: 1,
-					cluster: SonoffCluster,
-					attributeName: 'tamper'
-				},
-			]).then(() => {
-                this.log('registered attr report listener');
-            })
-            .catch(err => {
-                this.error('failed to register attr report listener', err);
-            });
-		}*/
+		await super.onNodeInit({zclNode});
 
 		this.registerCapability("alarm_tamper", SonoffCluster, {
 			report: 'tamper',
@@ -36,7 +19,7 @@ class SonoffSNZB04P extends SonoffBase {
 		});
 
 		zclNode.endpoints[1].clusters.iasZone.onZoneStatusChangeNotification = data => {
-			this.setCapabilityValue('alarm_contact', data.zoneStatus.alarm1).catch(this.error);			
+			this.setCapabilityValue('alarm_contact', data.zoneStatus.alarm1).catch(this.error);
 		};
 
 	}
@@ -46,7 +29,9 @@ class SonoffSNZB04P extends SonoffBase {
 			this.setCapabilityValue('alarm_contact', data.zoneStatus.alarm1).catch(this.error);
 		});
 		await this.readAttribute(SonoffCluster, ['tamper'], (data) => {
-			this.setCapabilityValue('alarm_tamper', data).catch(this.error);
+			if (data.tamper !== undefined) {
+				this.setCapabilityValue('alarm_tamper', Boolean(data.tamper)).catch(this.error);
+			}
 		});
 	}
 
