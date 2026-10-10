@@ -11,18 +11,6 @@ class SonoffS40ZBTPB extends SonoffBase {
         if (this.hasCapability('onoff')) {
             this.registerCapability('onoff', CLUSTER.ON_OFF);
         }
-
-        this.checkAttributes();
-    }
-
-    async onSettings({ oldSettings, newSettings, changedKeys }) {
-        if (changedKeys.includes('power_on_behavior')) {
-            await this.writePowerOnBehavior(newSettings.power_on_behavior);
-        }
-    }
-
-    async checkAttributes() {
-        this.readPowerOnBehavior('power_on_behavior');
     }
 
     async onDeleted() {

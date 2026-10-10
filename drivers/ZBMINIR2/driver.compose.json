@@ -23,7 +23,8 @@
       "SONOFF"
     ],
     "productId": [
-      "ZBMINIR2"
+      "ZBMINIR2",
+      "MINI-ZBD"
     ],
     "endpoints": {
       "1": {

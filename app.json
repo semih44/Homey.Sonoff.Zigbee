@@ -1258,80 +1258,7 @@
         }
       },
       "id": "BASICZBR3",
-      "settings": [
-        {
-          "id": "power_on_behavior",
-          "type": "dropdown",
-          "label": {
-            "en": "Power-on behavior",
-            "sv": "Beteende vid strömåterkomst",
-            "nl": "Gedrag bij inschakelen",
-            "da": "Opførsel ved tænding",
-            "de": "Einschaltverhalten",
-            "es": "Comportamiento al encender",
-            "fr": "Comportement à la mise sous tension",
-            "it": "Comportamento all'accensione",
-            "no": "Oppførsel ved strømtilkobling",
-            "pl": "Zachowanie po włączeniu",
-            "ru": "Поведение при включении",
-            "ko": "전원 켜기 동작"
-          },
-          "value": "off",
-          "values": [
-            {
-              "id": "off",
-              "label": {
-                "en": "Off",
-                "sv": "Av",
-                "nl": "Uit",
-                "da": "Fra",
-                "de": "Aus",
-                "es": "Apagado",
-                "fr": "Éteint",
-                "it": "Spento",
-                "no": "Av",
-                "pl": "Wyłączony",
-                "ru": "Выкл.",
-                "ko": "끄기"
-              }
-            },
-            {
-              "id": "on",
-              "label": {
-                "en": "On",
-                "sv": "På",
-                "nl": "Aan",
-                "da": "Til",
-                "de": "Ein",
-                "es": "Encendido",
-                "fr": "Allumé",
-                "it": "Acceso",
-                "no": "På",
-                "pl": "Włączony",
-                "ru": "Вкл.",
-                "ko": "켜기"
-              }
-            },
-            {
-              "id": "last_state",
-              "label": {
-                "en": "Last state",
-                "sv": "Senaste tillstånd",
-                "nl": "Laatste status",
-                "da": "Sidste tilstand",
-                "de": "Letzter Zustand",
-                "es": "Último estado",
-                "fr": "Dernier état",
-                "it": "Ultimo stato",
-                "no": "Siste tilstand",
-                "pl": "Ostatni stan",
-                "ru": "Последнее состояние",
-                "ko": "마지막 상태"
-              }
-            }
-          ]
-        }
-      ]
+      "settings": []
     },
     {
       "platforms": [
@@ -4179,81 +4106,7 @@
             "ko": "LED가 깜박이기 시작할 때까지 리셋 버튼을 5초 동안 길게 누르세요."
           }
         }
-      },
-      "settings": [
-        {
-          "id": "power_on_behavior",
-          "type": "dropdown",
-          "label": {
-            "en": "Power-on behavior",
-            "sv": "Beteende vid strömåterkomst",
-            "nl": "Gedrag bij inschakelen",
-            "da": "Opførsel ved tænding",
-            "de": "Einschaltverhalten",
-            "es": "Comportamiento al encender",
-            "fr": "Comportement à la mise sous tension",
-            "it": "Comportamento all'accensione",
-            "no": "Oppførsel ved strømtilkobling",
-            "pl": "Zachowanie po włączeniu",
-            "ru": "Поведение при включении",
-            "ko": "전원 켜기 동작"
-          },
-          "value": "off",
-          "values": [
-            {
-              "id": "off",
-              "label": {
-                "en": "Off",
-                "sv": "Av",
-                "nl": "Uit",
-                "da": "Fra",
-                "de": "Aus",
-                "es": "Apagado",
-                "fr": "Éteint",
-                "it": "Spento",
-                "no": "Av",
-                "pl": "Wyłączony",
-                "ru": "Выкл.",
-                "ko": "끄기"
-              }
-            },
-            {
-              "id": "on",
-              "label": {
-                "en": "On",
-                "sv": "På",
-                "nl": "Aan",
-                "da": "Til",
-                "de": "Ein",
-                "es": "Encendido",
-                "fr": "Allumé",
-                "it": "Acceso",
-                "no": "På",
-                "pl": "Włączony",
-                "ru": "Вкл.",
-                "ko": "켜기"
-              }
-            },
-            {
-              "id": "last_state",
-              "label": {
-                "en": "Last state",
-                "sv": "Senaste tillstånd",
-                "nl": "Laatste status",
-                "da": "Sidste tilstand",
-                "de": "Letzter Zustand",
-                "es": "Último estado",
-                "fr": "Dernier état",
-                "it": "Ultimo stato",
-                "no": "Siste tilstand",
-                "pl": "Ostatni stan",
-                "ru": "Последнее состояние",
-                "ko": "마지막 상태"
-              }
-            }
-          ]
-        }
-      ]
+      }
     },
     {
       "platforms": [
@@ -4291,7 +4144,7 @@
           "SONOFF"
         ],
         "productId": [
-          "S31ZB"
+          "S31 Lite zb"
         ],
         "endpoints": {
           "1": {
@@ -4324,81 +4177,7 @@
             "ko": "LED가 깜박이기 시작할 때까지 리셋 버튼을 5초 동안 길게 누르세요."
           }
         }
-      },
-      "settings": [
-        {
-          "id": "power_on_behavior",
-          "type": "dropdown",
-          "label": {
-            "en": "Power-on behavior",
-            "sv": "Beteende vid strömåterkomst",
-            "nl": "Gedrag bij inschakelen",
-            "da": "Opførsel ved tænding",
-            "de": "Einschaltverhalten",
-            "es": "Comportamiento al encender",
-            "fr": "Comportement à la mise sous tension",
-            "it": "Comportamento all'accensione",
-            "no": "Oppførsel ved strømtilkobling",
-            "pl": "Zachowanie po włączeniu",
-            "ru": "Поведение при включении",
-            "ko": "전원 켜기 동작"
-          },
-          "value": "off",
-          "values": [
-            {
-              "id": "off",
-              "label": {
-                "en": "Off",
-                "sv": "Av",
-                "nl": "Uit",
-                "da": "Fra",
-                "de": "Aus",
-                "es": "Apagado",
-                "fr": "Éteint",
-                "it": "Spento",
-                "no": "Av",
-                "pl": "Wyłączony",
-                "ru": "Выкл.",
-                "ko": "끄기"
-              }
-            },
-            {
-              "id": "on",
-              "label": {
-                "en": "On",
-                "sv": "På",
-                "nl": "Aan",
-                "da": "Til",
-                "de": "Ein",
-                "es": "Encendido",
-                "fr": "Allumé",
-                "it": "Acceso",
-                "no": "På",
-                "pl": "Włączony",
-                "ru": "Вкл.",
-                "ko": "켜기"
-              }
-            },
-            {
-              "id": "last_state",
-              "label": {
-                "en": "Last state",
-                "sv": "Senaste tillstånd",
-                "nl": "Laatste status",
-                "da": "Sidste tilstand",
-                "de": "Letzter Zustand",
-                "es": "Último estado",
-                "fr": "Dernier état",
-                "it": "Ultimo stato",
-                "no": "Siste tilstand",
-                "pl": "Ostatni stan",
-                "ru": "Последнее состояние",
-                "ko": "마지막 상태"
-              }
-            }
-          ]
-        }
-      ]
+      }
     },
     {
       "platforms": [
@@ -4436,7 +4215,7 @@
           "SONOFF"
         ],
         "productId": [
-          "S40ZBTPB"
+          "S40LITE"
         ],
         "endpoints": {
           "1": {
@@ -4469,81 +4248,7 @@
             "ko": "LED가 깜박이기 시작할 때까지 리셋 버튼을 5초 동안 길게 누르세요."
           }
         }
-      },
-      "settings": [
-        {
-          "id": "power_on_behavior",
-          "type": "dropdown",
-          "label": {
-            "en": "Power-on behavior",
-            "sv": "Beteende vid strömåterkomst",
-            "nl": "Gedrag bij inschakelen",
-            "da": "Opførsel ved tænding",
-            "de": "Einschaltverhalten",
-            "es": "Comportamiento al encender",
-            "fr": "Comportement à la mise sous tension",
-            "it": "Comportamento all'accensione",
-            "no": "Oppførsel ved strømtilkobling",
-            "pl": "Zachowanie po włączeniu",
-            "ru": "Поведение при включении",
-            "ko": "전원 켜기 동작"
-          },
-          "value": "off",
-          "values": [
-            {
-              "id": "off",
-              "label": {
-                "en": "Off",
-                "sv": "Av",
-                "nl": "Uit",
-                "da": "Fra",
-                "de": "Aus",
-                "es": "Apagado",
-                "fr": "Éteint",
-                "it": "Spento",
-                "no": "Av",
-                "pl": "Wyłączony",
-                "ru": "Выкл.",
-                "ko": "끄기"
-              }
-            },
-            {
-              "id": "on",
-              "label": {
-                "en": "On",
-                "sv": "På",
-                "nl": "Aan",
-                "da": "Til",
-                "de": "Ein",
-                "es": "Encendido",
-                "fr": "Allumé",
-                "it": "Acceso",
-                "no": "På",
-                "pl": "Włączony",
-                "ru": "Вкл.",
-                "ko": "켜기"
-              }
-            },
-            {
-              "id": "last_state",
-              "label": {
-                "en": "Last state",
-                "sv": "Senaste tillstånd",
-                "nl": "Laatste status",
-                "da": "Sidste tilstand",
-                "de": "Letzter Zustand",
-                "es": "Último estado",
-                "fr": "Dernier état",
-                "it": "Ultimo stato",
-                "no": "Siste tilstand",
-                "pl": "Ostatni stan",
-                "ru": "Последнее состояние",
-                "ko": "마지막 상태"
-              }
-            }
-          ]
-        }
-      ]
+      }
     },
     {
       "platforms": [
@@ -5184,7 +4889,10 @@
           "eWeLink"
         ],
         "productId": [
-          "WB01"
+          "WB01",
+          "WB-01",
+          "SNZB-01",
+          "CK-TLSR8656-SS5-01(7000)"
         ],
         "endpoints": {
           "1": {
@@ -5501,7 +5209,9 @@
           "eWeLink"
         ],
         "productId": [
-          "TH01"
+          "TH01",
+          "SNZB-02",
+          "CK-TLSR8656-SS5-01(7014)"
         ],
         "endpoints": {
           "1": {
@@ -5781,7 +5491,8 @@
               0,
               1,
               1026,
-              1029
+              1029,
+              64529
             ],
             "bindings": [
               0,
@@ -6152,7 +5863,8 @@
               0,
               1,
               1026,
-              1029
+              1029,
+              64529
             ],
             "bindings": [
               0,
@@ -6701,7 +6413,8 @@
               1,
               6,
               1026,
-              1029
+              1029,
+              64529
             ],
             "bindings": [
               0,
@@ -7548,7 +7261,8 @@
               0,
               1,
               1026,
-              1029
+              1029,
+              64529
             ],
             "bindings": [
               0,
@@ -7919,7 +7633,8 @@
               0,
               1,
               1026,
-              1029
+              1029,
+              64529
             ],
             "bindings": [
               0,
@@ -8342,7 +8057,10 @@
           "eWeLink"
         ],
         "productId": [
-          "MS01"
+          "MS01",
+          "MSO1",
+          "SNZB-03",
+          "CK-TLSR8656-SS5-01(7002)"
         ],
         "endpoints": {
           "1": {
@@ -8605,7 +8323,9 @@
           "eWeLink"
         ],
         "productId": [
-          "DS01"
+          "DS01",
+          "SNZB-04",
+          "CK-TLSR8656-SS5-01(7003)"
         ],
         "endpoints": {
           "1": {
@@ -12680,81 +12400,7 @@
             "ko": "녹색 LED가 빠르게 깜박일 때까지 상단의 버튼을 약 10초 동안 누르세요."
           }
         }
-      },
-      "settings": [
-        {
-          "id": "power_on_behavior",
-          "type": "dropdown",
-          "label": {
-            "en": "Power-on behavior",
-            "sv": "Beteende vid strömåterkomst",
-            "nl": "Gedrag bij inschakelen",
-            "da": "Opførsel ved tænding",
-            "de": "Einschaltverhalten",
-            "es": "Comportamiento al encender",
-            "fr": "Comportement à la mise sous tension",
-            "it": "Comportamento all'accensione",
-            "no": "Oppførsel ved strømtilkobling",
-            "pl": "Zachowanie po włączeniu",
-            "ru": "Поведение при включении",
-            "ko": "전원 켜기 동작"
-          },
-          "value": "off",
-          "values": [
-            {
-              "id": "off",
-              "label": {
-                "en": "Off",
-                "sv": "Av",
-                "nl": "Uit",
-                "da": "Fra",
-                "de": "Aus",
-                "es": "Apagado",
-                "fr": "Éteint",
-                "it": "Spento",
-                "no": "Av",
-                "pl": "Wyłączony",
-                "ru": "Выкл.",
-                "ko": "끄기"
-              }
-            },
-            {
-              "id": "on",
-              "label": {
-                "en": "On",
-                "sv": "På",
-                "nl": "Aan",
-                "da": "Til",
-                "de": "Ein",
-                "es": "Encendido",
-                "fr": "Allumé",
-                "it": "Acceso",
-                "no": "På",
-                "pl": "Włączony",
-                "ru": "Вкл.",
-                "ko": "켜기"
-              }
-            },
-            {
-              "id": "last_state",
-              "label": {
-                "en": "Last state",
-                "sv": "Senaste tillstånd",
-                "nl": "Laatste status",
-                "da": "Sidste tilstand",
-                "de": "Letzter Zustand",
-                "es": "Último estado",
-                "fr": "Dernier état",
-                "it": "Ultimo stato",
-                "no": "Siste tilstand",
-                "pl": "Ostatni stan",
-                "ru": "Последнее состояние",
-                "ko": "마지막 상태"
-              }
-            }
-          ]
-        }
-      ]
+      }
     },
     {
       "platforms": [
@@ -13076,7 +12722,8 @@
           "SONOFF"
         ],
         "productId": [
-          "ZBMINIR2"
+          "ZBMINIR2",
+          "MINI-ZBD"
         ],
         "endpoints": {
           "1": {

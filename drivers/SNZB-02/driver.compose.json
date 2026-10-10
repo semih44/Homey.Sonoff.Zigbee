@@ -30,7 +30,9 @@
       "eWeLink"
     ],
     "productId": [
-      "TH01"
+      "TH01",
+      "SNZB-02",
+      "CK-TLSR8656-SS5-01(7014)"
     ],
     "endpoints": {
       "1": {

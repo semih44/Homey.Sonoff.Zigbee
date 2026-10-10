@@ -14,9 +14,11 @@ const ALL_CLUSTERS = [0x0000, 0x0006, 0x0008, 0x0702, 0x0B04, 0xFC11];
 const START_UP_ON_OFF = 0x4003;
 const ENUM8 = 0x30;
 
+// BASICZBR3, S26R2ZB, S31ZB, S40ZBTPB and ZBMINI do not support StartUpOnOff
+// (zigbee-herdsman-converters: m.onOff({powerOnBehavior: false})) and do not offer the setting
 const SINGLE_ENDPOINT_DRIVERS = [
-  'BASICZBR3', 'ZBMINI', 'ZBMINIL', 'ZBMINIL2', 'S26R2ZB', 'S31ZB', 'SA-028', 'SA-029', 'S40ZBTPB',
-  'S60ZBTPF', 'S60ZBTPG', 'ZBMicro', 'ZBMINIR2', 'MINI-ZBDIM', 'ZBM5-1C-80', 'ZBM5-1C-120',
+  'ZBMINIL', 'ZBMINIL2', 'SA-028', 'SA-029', 'S60ZBTPF', 'S60ZBTPG', 'ZBMicro', 'ZBMINIR2',
+  'MINI-ZBDIM', 'ZBM5-1C-80', 'ZBM5-1C-120',
 ];
 
 const CHANNELS_PER_DRIVER = {
