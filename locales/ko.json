@@ -8,6 +8,7 @@
   "errors": {
     "settings_failed": "저장할 수 없습니다: __settings__ – __reason__",
     "rejected": "기기가 값을 거부했습니다 (__details__)",
-    "no_response": "기기가 응답하지 않았습니다"
+    "no_response": "기기가 응답하지 않았습니다",
+    "external_temperature_range": "외부 온도는 0~99.9 °C 사이여야 합니다"
   }
 }

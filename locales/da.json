@@ -8,6 +8,7 @@
   "errors": {
     "settings_failed": "Kunne ikke gemmes: __settings__ – __reason__",
     "rejected": "Enheden afviste værdien (__details__)",
-    "no_response": "Enheden svarede ikke"
+    "no_response": "Enheden svarede ikke",
+    "external_temperature_range": "Den eksterne temperatur skal være mellem 0 og 99,9 °C"
   }
 }

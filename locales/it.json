@@ -8,6 +8,7 @@
   "errors": {
     "settings_failed": "Impossibile salvare: __settings__ – __reason__",
     "rejected": "Il dispositivo ha rifiutato il valore (__details__)",
-    "no_response": "Il dispositivo non ha risposto"
+    "no_response": "Il dispositivo non ha risposto",
+    "external_temperature_range": "La temperatura esterna deve essere compresa tra 0 e 99,9 °C"
   }
 }

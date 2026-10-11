@@ -8,6 +8,7 @@
   "errors": {
     "settings_failed": "Nie można zapisać: __settings__ – __reason__",
     "rejected": "Urządzenie odrzuciło wartość (__details__)",
-    "no_response": "Urządzenie nie odpowiedziało"
+    "no_response": "Urządzenie nie odpowiedziało",
+    "external_temperature_range": "Temperatura zewnętrzna musi wynosić od 0 do 99,9 °C"
   }
 }

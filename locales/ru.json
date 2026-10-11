@@ -8,6 +8,7 @@
   "errors": {
     "settings_failed": "Не удалось сохранить: __settings__ – __reason__",
     "rejected": "Устройство отклонило значение (__details__)",
-    "no_response": "Устройство не ответило"
+    "no_response": "Устройство не ответило",
+    "external_temperature_range": "Внешняя температура должна быть от 0 до 99,9 °C"
   }
 }

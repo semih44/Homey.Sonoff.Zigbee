@@ -8,6 +8,7 @@
   "errors": {
     "settings_failed": "Kunde inte sparas: __settings__ – __reason__",
     "rejected": "Enheten avvisade värdet (__details__)",
-    "no_response": "Enheten svarade inte"
+    "no_response": "Enheten svarade inte",
+    "external_temperature_range": "Den externa temperaturen måste vara mellan 0 och 99,9 °C"
   }
 }

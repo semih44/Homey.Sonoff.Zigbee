@@ -2370,6 +2370,79 @@
           }
         ],
         "id": "channel_turn_on_3ch"
+      },
+      {
+        "id": "set_external_temperature",
+        "title": {
+          "en": "Set external temperature",
+          "nl": "Externe temperatuur instellen",
+          "da": "Indstil ekstern temperatur",
+          "de": "Externe Temperatur setzen",
+          "es": "Establecer temperatura externa",
+          "fr": "Définir la température externe",
+          "it": "Imposta temperatura esterna",
+          "no": "Angi ekstern temperatur",
+          "sv": "Ange extern temperatur",
+          "pl": "Ustaw temperaturę zewnętrzną",
+          "ru": "Задать внешнюю температуру",
+          "ko": "외부 온도 설정"
+        },
+        "titleFormatted": {
+          "en": "Set external temperature to [[temperature]] °C",
+          "nl": "Externe temperatuur instellen op [[temperature]] °C",
+          "da": "Indstil ekstern temperatur til [[temperature]] °C",
+          "de": "Externe Temperatur auf [[temperature]] °C setzen",
+          "es": "Establecer temperatura externa en [[temperature]] °C",
+          "fr": "Définir la température externe à [[temperature]] °C",
+          "it": "Imposta temperatura esterna a [[temperature]] °C",
+          "no": "Angi ekstern temperatur til [[temperature]] °C",
+          "sv": "Ange extern temperatur till [[temperature]] °C",
+          "pl": "Ustaw temperaturę zewnętrzną na [[temperature]] °C",
+          "ru": "Задать внешнюю температуру [[temperature]] °C",
+          "ko": "외부 온도를 [[temperature]] °C로 설정"
+        },
+        "hint": {
+          "en": "The valve regulates on this temperature when the external temperature sensor is selected in its settings.",
+          "nl": "De klep regelt op deze temperatuur als in de instellingen de externe temperatuursensor is gekozen.",
+          "da": "Ventilen regulerer efter denne temperatur, når den eksterne temperatursensor er valgt i indstillingerne.",
+          "de": "Das Ventil regelt auf diese Temperatur, wenn in seinen Einstellungen der externe Temperatursensor gewählt ist.",
+          "es": "La válvula regula según esta temperatura cuando en sus ajustes está seleccionado el sensor de temperatura externo.",
+          "fr": "La vanne régule sur cette température lorsque le capteur de température externe est sélectionné dans ses réglages.",
+          "it": "La valvola regola su questa temperatura quando nelle impostazioni è selezionato il sensore di temperatura esterno.",
+          "no": "Ventilen regulerer etter denne temperaturen når den eksterne temperatursensoren er valgt i innstillingene.",
+          "sv": "Ventilen reglerar efter denna temperatur när den externa temperatursensorn är vald i inställningarna.",
+          "pl": "Zawór reguluje według tej temperatury, gdy w ustawieniach wybrano zewnętrzny czujnik temperatury.",
+          "ru": "Клапан регулирует по этой температуре, если в настройках выбран внешний датчик температуры.",
+          "ko": "설정에서 외부 온도 센서를 선택하면 밸브가 이 온도를 기준으로 조절합니다."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=TRVZB"
+          },
+          {
+            "type": "number",
+            "name": "temperature",
+            "min": 0,
+            "max": 99.9,
+            "step": 0.1,
+            "placeholder": {
+              "en": "Temperature",
+              "nl": "Temperatuur",
+              "da": "Temperatur",
+              "de": "Temperatur",
+              "es": "Temperatura",
+              "fr": "Température",
+              "it": "Temperatura",
+              "no": "Temperatur",
+              "sv": "Temperatur",
+              "pl": "Temperatura",
+              "ru": "Температура",
+              "ko": "온도"
+            }
+          }
+        ]
       }
     ]
   },

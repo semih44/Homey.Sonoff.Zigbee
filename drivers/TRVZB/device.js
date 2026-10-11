@@ -243,6 +243,21 @@ class SonoffTRVZB extends SonoffBase {
 		this.log('Sonoff TRVZB device initialized');
 	}
 
+	/**
+	 * Hands the valve the temperature of another sensor. It regulates on it when the external sensor is
+	 * selected (zigbee-herdsman-converters external_temperature_input: 0x600D, 0.01 °C, 0 to 99.9 °C).
+	 * @param {number} celsius
+	 */
+	async setExternalTemperature(celsius) {
+		if (!(celsius >= 0 && celsius <= 99.9)) {
+			throw new Error(this.homey.__('errors.external_temperature_range'));
+		}
+		const raw = Math.round(celsius * 100);
+		await this.writeAttributes(SonoffCluster, { external_temperature_input: raw });
+		// setSettings takes the value as the valve reports it
+		await this.setSettings({ external_temperature_input: raw });
+	}
+
 	async setSettings(settings) {
 		Object.entries(settings).forEach(([key, value]) => {
 			if (key === "localTemperatureCalibration") {

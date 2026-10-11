@@ -8,6 +8,7 @@
   "errors": {
     "settings_failed": "Kunne ikke lagres: __settings__ – __reason__",
     "rejected": "Enheten avviste verdien (__details__)",
-    "no_response": "Enheten svarte ikke"
+    "no_response": "Enheten svarte ikke",
+    "external_temperature_range": "Den eksterne temperaturen må være mellom 0 og 99,9 °C"
   }
 }

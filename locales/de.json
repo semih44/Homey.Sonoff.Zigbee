@@ -8,6 +8,7 @@
   "errors": {
     "settings_failed": "Speichern nicht möglich: __settings__ – __reason__",
     "rejected": "Das Gerät hat den Wert abgelehnt (__details__)",
-    "no_response": "Das Gerät hat nicht geantwortet"
+    "no_response": "Das Gerät hat nicht geantwortet",
+    "external_temperature_range": "Die externe Temperatur muss zwischen 0 und 99,9 °C liegen"
   }
 }
