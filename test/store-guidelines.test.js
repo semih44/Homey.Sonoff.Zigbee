@@ -64,6 +64,12 @@ test('English texts spell "approx." correctly', () => {
   assert.deepEqual(typos, []);
 });
 
+test('Flow titles contain no parentheses ("Do not use parantheses in Flow titles")', () => {
+  const titled = flowCards().flatMap(card => [card.title, card.titleFormatted].filter(Boolean)
+    .flatMap(title => Object.entries(title).filter(([, text]) => /[()]/.test(text)).map(([language, text]) => `${card.id} ${language}: ${text}`)));
+  assert.deepEqual(titled, []);
+});
+
 test('the measured values of the MINI-ZBDIM are not marked as estimated', () => {
   const options = require('../drivers/MINI-ZBDIM/driver.compose.json').capabilitiesOptions || {};
   const approximated = Object.entries(options).filter(([, option]) => option.approximated).map(([id]) => id);

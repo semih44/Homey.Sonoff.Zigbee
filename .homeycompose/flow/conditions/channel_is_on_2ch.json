@@ -11,7 +11,7 @@
     "sv": "Kanal är !{{på|av}}",
     "pl": "Kanał jest !{{włączony|wyłączony}}",
     "ru": "Канал !{{включен|выключен}}",
-    "ko": "채널이 !{{켜져|꺼져}} 있음"
+    "ko": "채널 상태가 !{{켜짐|꺼짐}}"
   },
   "titleFormatted": {
     "en": "Channel [[channel]] is !{{on|off}}",
@@ -25,7 +25,7 @@
     "sv": "Kanal [[channel]] är !{{på|av}}",
     "pl": "Kanał [[channel]] jest !{{włączony|wyłączony}}",
     "ru": "Канал [[channel]] !{{включен|выключен}}",
-    "ko": "채널 [[channel]]이(가) !{{켜져|꺼져}} 있음"
+    "ko": "채널 [[channel]]의 상태가 !{{켜짐|꺼짐}}"
   },
   "args": [
     {

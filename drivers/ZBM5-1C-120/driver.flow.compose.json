@@ -3,18 +3,18 @@
     {
       "id": "SonoffZBM51C120:click",
       "title": {
-        "en": "Button pressed (detach mode)",
-        "sv": "Knapp nedtryckt (frikopplingsläge)",
-        "nl": "Knop ingedrukt (ontkoppelmodus)",
-        "da": "Knap trykket (frakoblingstilstand)",
-        "de": "Taste gedrückt (Entkopplungsmodus)",
-        "es": "Botón presionado (modo desacoplado)",
-        "fr": "Bouton pressé (mode détaché)",
-        "it": "Pulsante premuto (modalità scollegata)",
-        "no": "Knapp trykket (frakoblet modus)",
-        "pl": "Przycisk naciśnięty (tryb odłączenia)",
-        "ru": "Кнопка нажата (режим отключения)",
-        "ko": "버튼 누름 (분리 모드)"
+        "en": "Button pressed in detach mode",
+        "sv": "Knapp nedtryckt i frikopplingsläge",
+        "nl": "Knop ingedrukt in ontkoppelmodus",
+        "da": "Knap trykket i frakoblingstilstand",
+        "de": "Taste im Entkopplungsmodus gedrückt",
+        "es": "Botón presionado en modo desacoplado",
+        "fr": "Bouton pressé en mode détaché",
+        "it": "Pulsante premuto in modalità scollegata",
+        "no": "Knapp trykket i frakoblet modus",
+        "pl": "Przycisk naciśnięty w trybie odłączenia",
+        "ru": "Кнопка нажата в режиме отключения",
+        "ko": "분리 모드에서 버튼 누름"
       }
     }
   ]
