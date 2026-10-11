@@ -5,6 +5,11 @@
     "2": "Ошибка калибровки",
     "3": "Откалиброван"
   },
+  "spatial_learning": {
+    "learning": "Идёт обучение",
+    "completed": "Завершено",
+    "failed": "Не удалось"
+  },
   "errors": {
     "settings_failed": "Не удалось сохранить: __settings__ – __reason__",
     "rejected": "Устройство отклонило значение (__details__)",

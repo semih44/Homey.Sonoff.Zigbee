@@ -1,0 +1,95 @@
+{
+  "name": {
+    "en": "Presence Sensor SNZB-06P24",
+    "sv": "Närvarosensor SNZB-06P24",
+    "nl": "Aanwezigheidssensor SNZB-06P24",
+    "da": "Tilstedeværelsessensor SNZB-06P24",
+    "de": "Präsenzsensor SNZB-06P24",
+    "es": "Sensor de Presencia SNZB-06P24",
+    "fr": "Capteur de Présence SNZB-06P24",
+    "it": "Sensore di Presenza SNZB-06P24",
+    "no": "Nærværsensor SNZB-06P24",
+    "pl": "Czujnik Obecności SNZB-06P24",
+    "ru": "Датчик присутствия SNZB-06P24",
+    "ko": "존재 센서 SNZB-06P24"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "alarm_motion",
+    "measure_luminance",
+    "button.spatial_learning"
+  ],
+  "capabilitiesOptions": {
+    "button.spatial_learning": {
+      "maintenanceAction": true,
+      "title": {
+        "en": "Start spatial learning",
+        "sv": "Starta rumsinlärning",
+        "nl": "Ruimtelijk leren starten",
+        "da": "Start rumindlæring",
+        "de": "Raum-Einlernen starten",
+        "es": "Iniciar aprendizaje espacial",
+        "fr": "Démarrer l'apprentissage spatial",
+        "it": "Avvia apprendimento spaziale",
+        "no": "Start rominnlæring",
+        "pl": "Rozpocznij uczenie przestrzeni",
+        "ru": "Начать обучение пространству",
+        "ko": "공간 학습 시작"
+      },
+      "desc": {
+        "en": "Teaches the radar to ignore moving appliances such as fans. Leave the detection area until the learning is completed.",
+        "sv": "Lär radarn att ignorera rörliga apparater som fläktar. Lämna detekteringsområdet tills inlärningen är slutförd.",
+        "nl": "Leert de radar bewegende apparaten zoals ventilatoren te negeren. Verlaat het detectiegebied totdat het leren is voltooid.",
+        "da": "Lærer radaren at ignorere apparater i bevægelse som ventilatorer. Forlad registreringsområdet, indtil indlæringen er fuldført.",
+        "de": "Bringt dem Radar bei, bewegte Geräte wie Ventilatoren zu ignorieren. Verlassen Sie den Erfassungsbereich, bis das Einlernen abgeschlossen ist.",
+        "es": "Enseña al radar a ignorar aparatos en movimiento como ventiladores. Salga del área de detección hasta que termine el aprendizaje.",
+        "fr": "Apprend au radar à ignorer les appareils en mouvement comme les ventilateurs. Quittez la zone de détection jusqu'à la fin de l'apprentissage.",
+        "it": "Insegna al radar a ignorare apparecchi in movimento come i ventilatori. Lascia l'area di rilevamento finché l'apprendimento non è completato.",
+        "no": "Lærer radaren å ignorere apparater i bevegelse som vifter. Forlat deteksjonsområdet til innlæringen er fullført.",
+        "pl": "Uczy radar ignorować poruszające się urządzenia, takie jak wentylatory. Opuść obszar wykrywania do zakończenia uczenia.",
+        "ru": "Учит радар игнорировать движущиеся приборы, например вентиляторы. Покиньте зону обнаружения до завершения обучения.",
+        "ko": "선풍기처럼 움직이는 기기를 무시하도록 레이더를 학습시킵니다. 학습이 완료될 때까지 감지 영역을 벗어나 있으세요."
+      }
+    }
+  },
+  "zigbee": {
+    "manufacturerName": [
+      "SONOFF"
+    ],
+    "productId": [
+      "SNZB-06P24"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0,
+          3,
+          1024,
+          1030,
+          64529
+        ],
+        "bindings": []
+      }
+    },
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learn.svg",
+      "instruction": {
+        "en": "Press and hold the pairing button for about 5 seconds until the LED flashes.",
+        "sv": "Håll parkopplingsknappen intryckt i cirka 5 sekunder tills lysdioden blinkar.",
+        "nl": "Houd de koppelknop ongeveer 5 seconden ingedrukt totdat de LED knippert.",
+        "da": "Hold parringsknappen inde i ca. 5 sekunder, indtil LED'en blinker.",
+        "de": "Halten Sie die Kopplungstaste etwa 5 Sekunden gedrückt, bis die LED blinkt.",
+        "es": "Mantenga pulsado el botón de emparejamiento unos 5 segundos hasta que el LED parpadee.",
+        "fr": "Maintenez le bouton d'appairage enfoncé environ 5 secondes jusqu'à ce que la LED clignote.",
+        "it": "Tieni premuto il pulsante di associazione per circa 5 secondi finché il LED lampeggia.",
+        "no": "Hold paringsknappen inne i ca. 5 sekunder til LED-en blinker.",
+        "pl": "Przytrzymaj przycisk parowania przez około 5 sekund, aż dioda LED zacznie migać.",
+        "ru": "Удерживайте кнопку сопряжения около 5 секунд, пока светодиод не начнёт мигать.",
+        "ko": "LED가 깜박일 때까지 페어링 버튼을 약 5초간 누르고 있으세요."
+      }
+    }
+  },
+  "$extends": [
+    "defaults"
+  ]
+}

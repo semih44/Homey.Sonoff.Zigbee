@@ -5,6 +5,11 @@
     "2": "Kalibratie mislukt",
     "3": "Gekalibreerd"
   },
+  "spatial_learning": {
+    "learning": "Bezig met leren",
+    "completed": "Voltooid",
+    "failed": "Mislukt"
+  },
   "errors": {
     "settings_failed": "Opslaan niet mogelijk: __settings__ – __reason__",
     "rejected": "Het apparaat weigerde de waarde (__details__)",

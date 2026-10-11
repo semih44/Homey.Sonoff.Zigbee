@@ -5,6 +5,11 @@
     "2": "Calibration failed",
     "3": "Calibrated"
   },
+  "spatial_learning": {
+    "learning": "Learning",
+    "completed": "Completed",
+    "failed": "Failed"
+  },
   "errors": {
     "settings_failed": "Could not save: __settings__ – __reason__",
     "rejected": "The device refused the value (__details__)",

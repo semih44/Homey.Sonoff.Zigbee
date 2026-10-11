@@ -5,6 +5,11 @@
     "2": "Kalibrering mislykkedes",
     "3": "Kalibreret"
   },
+  "spatial_learning": {
+    "learning": "Lærer",
+    "completed": "Fuldført",
+    "failed": "Mislykkedes"
+  },
   "errors": {
     "settings_failed": "Kunne ikke gemmes: __settings__ – __reason__",
     "rejected": "Enheden afviste værdien (__details__)",
