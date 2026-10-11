@@ -37,7 +37,9 @@
           1,
           1280
         ],
-        "bindings": []
+        "bindings": [
+          1
+        ]
       }
     },
     "learnmode": {

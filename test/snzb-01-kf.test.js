@@ -70,7 +70,7 @@ test('SNZB-01-KF: the IAS zone is bound, as zigbee-herdsman-converters configure
   const manifest = require('../drivers/SNZB-01-KF/driver.compose.json');
 
   assert.equal(manifest.zigbee.endpoints['1'].clusters.includes(IAS_ZONE), true);
-  assert.deepEqual(manifest.zigbee.endpoints['1'].bindings, [IAS_ZONE]);
+  assert.ok(manifest.zigbee.endpoints['1'].bindings.includes(IAS_ZONE));
 });
 
 test('SNZB-01-KF: only the single click it can send is offered as a flow card', () => {

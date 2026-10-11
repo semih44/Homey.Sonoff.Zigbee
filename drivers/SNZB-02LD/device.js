@@ -12,27 +12,26 @@ class SonoffSNZB02LD extends SonoffBase {
 	async onNodeInit({ zclNode }) {
 		await super.onNodeInit(...arguments);
 
-		this.configureMeasurementReporting();
-
 		// measure_temperature
 		zclNode.endpoints[1].clusters[CLUSTER.TEMPERATURE_MEASUREMENT.NAME]
 			.on('attr.measuredValue', this.onTemperatureMeasuredAttributeReport.bind(this));
 	}
 
-	configureMeasurementReporting() {
-		return this.ensureAttributeReporting([
+	reportingConfigurations() {
+		return [
+			...super.reportingConfigurations(),
 			{
 				endpointId: 1,
 				cluster: CLUSTER.TEMPERATURE_MEASUREMENT,
 				attributeName: 'measuredValue',
 				...TEMPERATURE_REPORTING
 			}
-		]);
+		];
 	}
 
 	onTemperatureMeasuredAttributeReport(measuredValue) {
 		// The sensor is awake now, so this is when a configuration it missed gets through
-		this.configureMeasurementReporting();
+		this.ensureReporting();
 
 		const temperatureOffset = this.getSetting('temperature_offset') || 0;
 		const parsedValue = this.getSetting('temperature_decimals') === '2'

@@ -202,3 +202,26 @@ for (const driver of ['S60ZBTPF', 'S60ZBTPG']) {
     assert.equal(device.getCapabilityValue('measure_current'), 0);
   });
 }
+
+// zigbee-herdsman-converters (S60ZBTPF/G): reporting.onOff {min 1, max 1800}; for the standard measurement
+// clusters reporting.activePower/rmsVoltage/rmsCurrent {5 s, 1 h, change 1} and
+// reporting.currentSummDelivered {5 s, 1 h, change 257}. Without them the plug may never report energy
+// (zigbee2mqtt-style finding in StyraHem issue #88: activePower min 0 / max 65535 on the plug).
+for (const driver of ['S60ZBTPF', 'S60ZBTPG']) {
+  test(`${driver}: switching, power, voltage, current and energy report as zigbee-herdsman-converters configures them`, async () => {
+    const { configuredReporting } = require('./helpers/zigbee');
+    const { startDevice } = require('./helpers/start');
+    const { sent } = await startDevice(driver, { firstInit: true });
+
+    const configured = configuredReporting(sent)
+      .map(({ clusterId, attributeId, minInterval, maxInterval, minChange }) => [clusterId, attributeId, minInterval, maxInterval, minChange === undefined ? null : minChange])
+      .sort((a, b) => a[0] - b[0] || a[1] - b[1]);
+    assert.deepEqual(configured, [
+      [ON_OFF, ON_OFF_ATTRIBUTE, 1, 1800, null],
+      [METERING, CURRENT_SUMMATION_DELIVERED, 5, 3600, 257],
+      [ELECTRICAL_MEASUREMENT, RMS_VOLTAGE, 5, 3600, 1],
+      [ELECTRICAL_MEASUREMENT, RMS_CURRENT, 5, 3600, 1],
+      [ELECTRICAL_MEASUREMENT, ACTIVE_POWER, 5, 3600, 1],
+    ]);
+  });
+}

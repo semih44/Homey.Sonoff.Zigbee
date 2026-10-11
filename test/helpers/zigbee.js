@@ -2,6 +2,7 @@
 
 // Real zigbee-clusters ZCLNode on top of a fake Homey ZigBeeNode: frames are encoded and decoded
 // by the library itself, only the radio is replaced.
+const EventEmitter = require('events');
 const { ZCLNode } = require('zigbee-clusters');
 const {
   ZCLStandardHeader, ZCLMfgSpecificHeader, ZCLConfigureReportingRecords,
@@ -80,7 +81,8 @@ function createZigbeeNode({ endpoints, attributeValues = {}, rejectedWrites = {}
     setImmediate(() => node.handleFrame(endpointId, clusterId, response, {}));
   };
 
-  const node = {
+  // Homey's ZigBeeNode is an EventEmitter (e.g. 'endDeviceAnnounce')
+  const node = Object.assign(new EventEmitter(), {
     endpointDescriptors: Object.entries(endpoints).map(([endpointId, inputClusters]) => ({
       endpointId: Number(endpointId),
       inputClusters,
@@ -111,7 +113,7 @@ function createZigbeeNode({ endpoints, attributeValues = {}, rejectedWrites = {}
         reply(endpointId, clusterId, frame, CMD_CONFIGURE_REPORTING_RESPONSE, Buffer.from([STATUS_SUCCESS]));
       }
     },
-  };
+  });
   // ZCLNode installs node.handleFrame, which is how incoming frames reach the clusters
   const zclNode = new ZCLNode(node);
   return { zclNode, node, sent };

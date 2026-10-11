@@ -73,6 +73,21 @@ class S60Plug extends SonoffBase {
         this.checkAttributes();
     }
 
+    // zigbee-herdsman-converters: reporting.onOff {1 s, 30 min}; reporting.activePower, rmsVoltage and
+    // rmsCurrent {5 s, 1 h, change 1}; reporting.currentSummDelivered {5 s, 1 h, change 257}
+    reportingConfigurations() {
+        return [
+            ...super.reportingConfigurations(),
+            { endpointId: 1, cluster: CLUSTER.ON_OFF, attributeName: 'onOff', minInterval: 1, maxInterval: 1800, minChange: 0 },
+            ...['activePower', 'rmsVoltage', 'rmsCurrent'].map(attributeName => ({
+                endpointId: 1, cluster: CLUSTER.ELECTRICAL_MEASUREMENT, attributeName, minInterval: 5, maxInterval: 3600, minChange: 1,
+            })),
+            {
+                endpointId: 1, cluster: CLUSTER.METERING, attributeName: 'currentSummationDelivered', minInterval: 5, maxInterval: 3600, minChange: 257,
+            },
+        ];
+    }
+
     _measuredWhileOn(value, scale) {
         if (value < 0) return null;
         return this.getCapabilityValue('onoff') === false ? 0 : value * scale;

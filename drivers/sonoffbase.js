@@ -10,6 +10,7 @@ require('../lib/SonoffOnOffCluster');
 const SonoffCluster = require('../lib/SonoffCluster');
 const { buildInchingPayload } = require('../lib/SonoffInching');
 const { assertWriteSucceeded, WRITE_REJECTED } = require('../lib/writeStatus');
+const { batteryReporting } = require('../lib/BatteryReporting');
 
 if (process.env.DEBUG === "1") {
     debug(true);
@@ -63,6 +64,39 @@ class SonoffBase extends ZigBeeDevice {
                 this.node.handleFrame = this._handleFrameWrapper;
             }
         }
+
+        // Battery levels the device reports itself (see reportingConfigurations)
+        const powerConfiguration = zclNode.endpoints[1].clusters[CLUSTER.POWER_CONFIGURATION.NAME];
+        if (powerConfiguration && this.hasCapability('measure_battery')) {
+            powerConfiguration.on('attr.batteryPercentageRemaining', (value) => {
+                // 0xFF: the device does not know its battery level (ZCL)
+                if (value !== 0xFF) this.setCapabilityValue('measure_battery', value / 2).catch(this.error);
+                // The device is awake now, so this is when a configuration it missed gets through
+                this.ensureReporting();
+            });
+        }
+
+        this.ensureReporting();
+    }
+
+    /**
+     * The attribute reporting the device should have: its battery as zigbee-herdsman-converters
+     * configures it. Drivers add their own (e.g. measurements) to these.
+     * @returns {object[]} as for configureAttributeReporting
+     */
+    reportingConfigurations() {
+        const clusters = this.zclNode.endpoints[1].clusters;
+        if (!this.hasCapability('measure_battery') || !(CLUSTER.POWER_CONFIGURATION.NAME in clusters)) return [];
+        return batteryReporting(this.driver && this.driver.id);
+    }
+
+    /**
+     * Configures the reporting of reportingConfigurations() unless the device already has it.
+     * Call it again when a sleeping device reports, see ensureAttributeReporting.
+     */
+    ensureReporting() {
+        const configurations = this.reportingConfigurations();
+        return configurations.length > 0 ? this.ensureAttributeReporting(configurations) : Promise.resolve();
     }
 
     /**

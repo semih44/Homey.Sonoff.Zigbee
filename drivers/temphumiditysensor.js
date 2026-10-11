@@ -20,8 +20,6 @@ class TempHumiditySensor extends SonoffBase {
 	async onNodeInit({zclNode}) {
 
 		await super.onNodeInit(...arguments);
-
-		this.configureMeasurementReporting();
 		
 		// measure_temperature
 		zclNode.endpoints[1].clusters[CLUSTER.TEMPERATURE_MEASUREMENT.NAME]
@@ -35,9 +33,10 @@ class TempHumiditySensor extends SonoffBase {
 		
 	}
 
-	configureMeasurementReporting() {
+	reportingConfigurations() {
 		const { temperature, humidity } = this.measurementReporting;
-		return this.ensureAttributeReporting([
+		return [
+			...super.reportingConfigurations(),
 			{
 				endpointId: 1,
 				cluster: CLUSTER.TEMPERATURE_MEASUREMENT,
@@ -50,12 +49,12 @@ class TempHumiditySensor extends SonoffBase {
 				attributeName: 'measuredValue',
 				...humidity
 			}
-		]);
+		];
 	}
 
 	onTemperatureMeasuredAttributeReport(measuredValue) {
 		// The sensor is awake now, so this is when a configuration it missed gets through
-		this.configureMeasurementReporting();
+		this.ensureReporting();
 
 		const temperatureOffset = this.getSetting('temperature_offset') || 0;
 		const parsedValue = this.getSetting('temperature_decimals') === '2' ? Math.round((measuredValue / 100) * 100) / 100 : Math.round((measuredValue / 100) * 10) / 10;
