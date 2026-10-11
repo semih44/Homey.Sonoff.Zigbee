@@ -5,6 +5,11 @@
     "2": "Calibración fallida",
     "3": "Calibrado"
   },
+  "spatial_learning": {
+    "learning": "Aprendiendo",
+    "completed": "Completado",
+    "failed": "Fallido"
+  },
   "errors": {
     "settings_failed": "No se pudo guardar: __settings__ – __reason__",
     "rejected": "El dispositivo rechazó el valor (__details__)",

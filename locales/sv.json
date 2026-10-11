@@ -5,6 +5,11 @@
     "2": "Kalibreringen misslyckades",
     "3": "Kalibrerad"
   },
+  "spatial_learning": {
+    "learning": "Lär sig",
+    "completed": "Slutförd",
+    "failed": "Misslyckades"
+  },
   "errors": {
     "settings_failed": "Kunde inte sparas: __settings__ – __reason__",
     "rejected": "Enheten avvisade värdet (__details__)",

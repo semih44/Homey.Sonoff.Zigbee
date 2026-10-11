@@ -11786,6 +11786,547 @@
         "zigbee"
       ],
       "images": {
+        "large": "/drivers/SNZB-06P24/assets/images/large.png",
+        "small": "/drivers/SNZB-06P24/assets/images/small.png"
+      },
+      "name": {
+        "en": "Presence Sensor SNZB-06P24",
+        "sv": "Närvarosensor SNZB-06P24",
+        "nl": "Aanwezigheidssensor SNZB-06P24",
+        "da": "Tilstedeværelsessensor SNZB-06P24",
+        "de": "Präsenzsensor SNZB-06P24",
+        "es": "Sensor de Presencia SNZB-06P24",
+        "fr": "Capteur de Présence SNZB-06P24",
+        "it": "Sensore di Presenza SNZB-06P24",
+        "no": "Nærværsensor SNZB-06P24",
+        "pl": "Czujnik Obecności SNZB-06P24",
+        "ru": "Датчик присутствия SNZB-06P24",
+        "ko": "존재 센서 SNZB-06P24"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_motion",
+        "measure_luminance",
+        "button.spatial_learning"
+      ],
+      "capabilitiesOptions": {
+        "button.spatial_learning": {
+          "maintenanceAction": true,
+          "title": {
+            "en": "Start spatial learning",
+            "sv": "Starta rumsinlärning",
+            "nl": "Ruimtelijk leren starten",
+            "da": "Start rumindlæring",
+            "de": "Raum-Einlernen starten",
+            "es": "Iniciar aprendizaje espacial",
+            "fr": "Démarrer l'apprentissage spatial",
+            "it": "Avvia apprendimento spaziale",
+            "no": "Start rominnlæring",
+            "pl": "Rozpocznij uczenie przestrzeni",
+            "ru": "Начать обучение пространству",
+            "ko": "공간 학습 시작"
+          },
+          "desc": {
+            "en": "Teaches the radar to ignore moving appliances such as fans. Leave the detection area until the learning is completed.",
+            "sv": "Lär radarn att ignorera rörliga apparater som fläktar. Lämna detekteringsområdet tills inlärningen är slutförd.",
+            "nl": "Leert de radar bewegende apparaten zoals ventilatoren te negeren. Verlaat het detectiegebied totdat het leren is voltooid.",
+            "da": "Lærer radaren at ignorere apparater i bevægelse som ventilatorer. Forlad registreringsområdet, indtil indlæringen er fuldført.",
+            "de": "Bringt dem Radar bei, bewegte Geräte wie Ventilatoren zu ignorieren. Verlassen Sie den Erfassungsbereich, bis das Einlernen abgeschlossen ist.",
+            "es": "Enseña al radar a ignorar aparatos en movimiento como ventiladores. Salga del área de detección hasta que termine el aprendizaje.",
+            "fr": "Apprend au radar à ignorer les appareils en mouvement comme les ventilateurs. Quittez la zone de détection jusqu'à la fin de l'apprentissage.",
+            "it": "Insegna al radar a ignorare apparecchi in movimento come i ventilatori. Lascia l'area di rilevamento finché l'apprendimento non è completato.",
+            "no": "Lærer radaren å ignorere apparater i bevegelse som vifter. Forlat deteksjonsområdet til innlæringen er fullført.",
+            "pl": "Uczy radar ignorować poruszające się urządzenia, takie jak wentylatory. Opuść obszar wykrywania do zakończenia uczenia.",
+            "ru": "Учит радар игнорировать движущиеся приборы, например вентиляторы. Покиньте зону обнаружения до завершения обучения.",
+            "ko": "선풍기처럼 움직이는 기기를 무시하도록 레이더를 학습시킵니다. 학습이 완료될 때까지 감지 영역을 벗어나 있으세요."
+          }
+        }
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "SONOFF"
+        ],
+        "productId": [
+          "SNZB-06P24"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              3,
+              1024,
+              1030,
+              64529
+            ],
+            "bindings": []
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/SNZB-06P24/assets/learn.svg",
+          "instruction": {
+            "en": "Press and hold the pairing button for about 5 seconds until the LED flashes.",
+            "sv": "Håll parkopplingsknappen intryckt i cirka 5 sekunder tills lysdioden blinkar.",
+            "nl": "Houd de koppelknop ongeveer 5 seconden ingedrukt totdat de LED knippert.",
+            "da": "Hold parringsknappen inde i ca. 5 sekunder, indtil LED'en blinker.",
+            "de": "Halten Sie die Kopplungstaste etwa 5 Sekunden gedrückt, bis die LED blinkt.",
+            "es": "Mantenga pulsado el botón de emparejamiento unos 5 segundos hasta que el LED parpadee.",
+            "fr": "Maintenez le bouton d'appairage enfoncé environ 5 secondes jusqu'à ce que la LED clignote.",
+            "it": "Tieni premuto il pulsante di associazione per circa 5 secondi finché il LED lampeggia.",
+            "no": "Hold paringsknappen inne i ca. 5 sekunder til LED-en blinker.",
+            "pl": "Przytrzymaj przycisk parowania przez około 5 sekund, aż dioda LED zacznie migać.",
+            "ru": "Удерживайте кнопку сопряжения около 5 секунд, пока светодиод не начнёт мигать.",
+            "ko": "LED가 깜박일 때까지 페어링 버튼을 약 5초간 누르고 있으세요."
+          }
+        }
+      },
+      "id": "SNZB-06P24",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Occupied",
+            "sv": "Upptagen",
+            "nl": "Bezette",
+            "da": "Optaget",
+            "de": "Besetzt",
+            "es": "Ocupado",
+            "fr": "Occupé",
+            "it": "Occupato",
+            "no": "Opptatt",
+            "pl": "Zajęty",
+            "ru": "Занятый",
+            "ko": "점유"
+          },
+          "children": [
+            {
+              "id": "occupied_to_unoccupied_delay",
+              "type": "number",
+              "label": {
+                "en": "Delay",
+                "sv": "Fördröjning",
+                "nl": "Vertraging",
+                "da": "Forsinkelse",
+                "de": "Verzögerung",
+                "es": "Retraso",
+                "fr": "Délai",
+                "it": "Ritardo",
+                "no": "Forsinkelse",
+                "pl": "Opóźnienie",
+                "ru": "Задержка",
+                "ko": "지연"
+              },
+              "hint": {
+                "en": "Time without motion before the motion alarm ends (15-65535 s).",
+                "sv": "Tid utan rörelse innan rörelselarmet upphör (15-65535 s).",
+                "nl": "Tijd zonder beweging voordat het bewegingsalarm stopt (15-65535 s).",
+                "da": "Tid uden bevægelse, før bevægelsesalarmen ophører (15-65535 s).",
+                "de": "Zeit ohne Bewegung, bis der Bewegungsalarm endet (15-65535 s).",
+                "es": "Tiempo sin movimiento antes de que finalice la alarma de movimiento (15-65535 s).",
+                "fr": "Durée sans mouvement avant la fin de l'alarme de mouvement (15-65535 s).",
+                "it": "Tempo senza movimento prima che l'allarme di movimento termini (15-65535 s).",
+                "no": "Tid uten bevegelse før bevegelsesalarmen opphører (15-65535 s).",
+                "pl": "Czas bez ruchu, po którym alarm ruchu się kończy (15-65535 s).",
+                "ru": "Время без движения до окончания сигнала движения (15-65535 с).",
+                "ko": "움직임 경보가 끝나기 전까지 움직임이 없는 시간 (15-65535초)."
+              },
+              "value": 30,
+              "attr": {
+                "min": 15,
+                "max": 65535,
+                "step": 1
+              }
+            },
+            {
+              "id": "illuminance_calibration",
+              "type": "number",
+              "label": {
+                "en": "Illuminance calibration (lx)",
+                "sv": "Ljusstyrkekalibrering (lx)",
+                "nl": "Lichtsterktekalibratie (lx)",
+                "da": "Lysstyrkekalibrering (lx)",
+                "de": "Helligkeitskalibrierung (lx)",
+                "es": "Calibración de iluminancia (lx)",
+                "fr": "Calibrage de la luminosité (lx)",
+                "it": "Calibrazione dell'illuminamento (lx)",
+                "no": "Lysstyrkekalibrering (lx)",
+                "pl": "Kalibracja natężenia światła (lx)",
+                "ru": "Калибровка освещённости (лк)",
+                "ko": "조도 보정 (lx)"
+              },
+              "hint": {
+                "en": "Added to the measured illuminance (-1000 to 1000 lx).",
+                "sv": "Läggs till den uppmätta ljusstyrkan (-1000 till 1000 lx).",
+                "nl": "Wordt opgeteld bij de gemeten lichtsterkte (-1000 tot 1000 lx).",
+                "da": "Lægges til den målte lysstyrke (-1000 til 1000 lx).",
+                "de": "Wird zur gemessenen Helligkeit addiert (-1000 bis 1000 lx).",
+                "es": "Se suma a la iluminancia medida (-1000 a 1000 lx).",
+                "fr": "S'ajoute à la luminosité mesurée (-1000 à 1000 lx).",
+                "it": "Viene aggiunto all'illuminamento misurato (da -1000 a 1000 lx).",
+                "no": "Legges til den målte lysstyrken (-1000 til 1000 lx).",
+                "pl": "Dodawane do zmierzonego natężenia światła (od -1000 do 1000 lx).",
+                "ru": "Прибавляется к измеренной освещённости (от -1000 до 1000 лк).",
+                "ko": "측정된 조도에 더해집니다 (-1000~1000 lx)."
+              },
+              "value": 0,
+              "attr": {
+                "min": -1000,
+                "max": 1000,
+                "step": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Radar",
+            "sv": "Radar",
+            "nl": "Radar",
+            "da": "Radar",
+            "de": "Radar",
+            "es": "Radar",
+            "fr": "Radar",
+            "it": "Radar",
+            "no": "Radar",
+            "pl": "Radar",
+            "ru": "Радар",
+            "ko": "레이더"
+          },
+          "children": [
+            {
+              "id": "radar_sensitivity",
+              "type": "number",
+              "label": {
+                "en": "Radar sensitivity",
+                "sv": "Radarkänslighet",
+                "nl": "Radargevoeligheid",
+                "da": "Radarfølsomhed",
+                "de": "Radar-Empfindlichkeit",
+                "es": "Sensibilidad del radar",
+                "fr": "Sensibilité du radar",
+                "it": "Sensibilità del radar",
+                "no": "Radarfølsomhet",
+                "pl": "Czułość radaru",
+                "ru": "Чувствительность радара",
+                "ko": "레이더 감도"
+              },
+              "hint": {
+                "en": "Higher values make the radar more sensitive (-6 to 6). Repeat the spatial learning afterwards.",
+                "sv": "Högre värden gör radarn känsligare (-6 till 6). Upprepa rumsinlärningen efteråt.",
+                "nl": "Hogere waarden maken de radar gevoeliger (-6 tot 6). Herhaal daarna het ruimtelijk leren.",
+                "da": "Højere værdier gør radaren mere følsom (-6 til 6). Gentag rumindlæringen bagefter.",
+                "de": "Höhere Werte machen das Radar empfindlicher (-6 bis 6). Wiederholen Sie danach das Raum-Einlernen.",
+                "es": "Los valores más altos hacen el radar más sensible (-6 a 6). Repita después el aprendizaje espacial.",
+                "fr": "Des valeurs plus élevées rendent le radar plus sensible (-6 à 6). Refaites ensuite l'apprentissage spatial.",
+                "it": "Valori più alti rendono il radar più sensibile (da -6 a 6). Ripeti poi l'apprendimento spaziale.",
+                "no": "Høyere verdier gjør radaren mer følsom (-6 til 6). Gjenta rominnlæringen etterpå.",
+                "pl": "Wyższe wartości zwiększają czułość radaru (od -6 do 6). Następnie powtórz uczenie przestrzeni.",
+                "ru": "Большие значения повышают чувствительность радара (от -6 до 6). После этого повторите обучение пространству.",
+                "ko": "값이 높을수록 레이더가 더 민감해집니다 (-6~6). 변경 후 공간 학습을 다시 실행하세요."
+              },
+              "value": 0,
+              "attr": {
+                "min": -6,
+                "max": 6,
+                "step": 1
+              }
+            },
+            {
+              "id": "spatial_learning_status",
+              "type": "label",
+              "label": {
+                "en": "Spatial learning",
+                "sv": "Rumsinlärning",
+                "nl": "Ruimtelijk leren",
+                "da": "Rumindlæring",
+                "de": "Raum-Einlernen",
+                "es": "Aprendizaje espacial",
+                "fr": "Apprentissage spatial",
+                "it": "Apprendimento spaziale",
+                "no": "Rominnlæring",
+                "pl": "Uczenie przestrzeni",
+                "ru": "Обучение пространству",
+                "ko": "공간 학습"
+              },
+              "hint": {
+                "en": "State of the last spatial learning.",
+                "sv": "Status för den senaste rumsinlärningen.",
+                "nl": "Status van het laatste ruimtelijk leren.",
+                "da": "Status for den seneste rumindlæring.",
+                "de": "Stand des letzten Raum-Einlernens.",
+                "es": "Estado del último aprendizaje espacial.",
+                "fr": "État du dernier apprentissage spatial.",
+                "it": "Stato dell'ultimo apprendimento spaziale.",
+                "no": "Status for siste rominnlæring.",
+                "pl": "Stan ostatniego uczenia przestrzeni.",
+                "ru": "Состояние последнего обучения пространству.",
+                "ko": "마지막 공간 학습 상태입니다."
+              },
+              "value": "—"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Detection zones",
+            "sv": "Detekteringszoner",
+            "nl": "Detectiezones",
+            "da": "Registreringszoner",
+            "de": "Erkennungszonen",
+            "es": "Zonas de detección",
+            "fr": "Zones de détection",
+            "it": "Zone di rilevamento",
+            "no": "Deteksjonssoner",
+            "pl": "Strefy wykrywania",
+            "ru": "Зоны обнаружения",
+            "ko": "감지 구역"
+          },
+          "children": [
+            {
+              "id": "occupancy_zone_1",
+              "type": "checkbox",
+              "value": true,
+              "label": {
+                "en": "Zone 1 (0–1 m)",
+                "sv": "Zon 1 (0–1 m)",
+                "nl": "Zone 1 (0–1 m)",
+                "da": "Zone 1 (0–1 m)",
+                "de": "Zone 1 (0–1 m)",
+                "es": "Zona 1 (0–1 m)",
+                "fr": "Zone 1 (0–1 m)",
+                "it": "Zona 1 (0–1 m)",
+                "no": "Sone 1 (0–1 m)",
+                "pl": "Strefa 1 (0–1 m)",
+                "ru": "Зона 1 (0–1 m)",
+                "ko": "구역 1 (0–1 m)"
+              },
+              "hint": {
+                "en": "Detects presence at this distance from the sensor.",
+                "sv": "Känner av närvaro på detta avstånd från sensorn.",
+                "nl": "Detecteert aanwezigheid op deze afstand van de sensor.",
+                "da": "Registrerer tilstedeværelse i denne afstand fra sensoren.",
+                "de": "Erkennt Anwesenheit in diesem Abstand zum Sensor.",
+                "es": "Detecta presencia a esta distancia del sensor.",
+                "fr": "Détecte la présence à cette distance du capteur.",
+                "it": "Rileva la presenza a questa distanza dal sensore.",
+                "no": "Registrerer tilstedeværelse i denne avstanden fra sensoren.",
+                "pl": "Wykrywa obecność w tej odległości od czujnika.",
+                "ru": "Обнаруживает присутствие на этом расстоянии от датчика.",
+                "ko": "센서로부터 이 거리에서 재실을 감지합니다."
+              }
+            },
+            {
+              "id": "occupancy_zone_2",
+              "type": "checkbox",
+              "value": true,
+              "label": {
+                "en": "Zone 2 (1–1.5 m)",
+                "sv": "Zon 2 (1–1,5 m)",
+                "nl": "Zone 2 (1–1,5 m)",
+                "da": "Zone 2 (1–1,5 m)",
+                "de": "Zone 2 (1–1,5 m)",
+                "es": "Zona 2 (1–1,5 m)",
+                "fr": "Zone 2 (1–1,5 m)",
+                "it": "Zona 2 (1–1,5 m)",
+                "no": "Sone 2 (1–1,5 m)",
+                "pl": "Strefa 2 (1–1,5 m)",
+                "ru": "Зона 2 (1–1,5 m)",
+                "ko": "구역 2 (1–1.5 m)"
+              },
+              "hint": {
+                "en": "Detects presence at this distance from the sensor.",
+                "sv": "Känner av närvaro på detta avstånd från sensorn.",
+                "nl": "Detecteert aanwezigheid op deze afstand van de sensor.",
+                "da": "Registrerer tilstedeværelse i denne afstand fra sensoren.",
+                "de": "Erkennt Anwesenheit in diesem Abstand zum Sensor.",
+                "es": "Detecta presencia a esta distancia del sensor.",
+                "fr": "Détecte la présence à cette distance du capteur.",
+                "it": "Rileva la presenza a questa distanza dal sensore.",
+                "no": "Registrerer tilstedeværelse i denne avstanden fra sensoren.",
+                "pl": "Wykrywa obecność w tej odległości od czujnika.",
+                "ru": "Обнаруживает присутствие на этом расстоянии от датчика.",
+                "ko": "센서로부터 이 거리에서 재실을 감지합니다."
+              }
+            },
+            {
+              "id": "occupancy_zone_3",
+              "type": "checkbox",
+              "value": true,
+              "label": {
+                "en": "Zone 3 (1.5–2 m)",
+                "sv": "Zon 3 (1,5–2 m)",
+                "nl": "Zone 3 (1,5–2 m)",
+                "da": "Zone 3 (1,5–2 m)",
+                "de": "Zone 3 (1,5–2 m)",
+                "es": "Zona 3 (1,5–2 m)",
+                "fr": "Zone 3 (1,5–2 m)",
+                "it": "Zona 3 (1,5–2 m)",
+                "no": "Sone 3 (1,5–2 m)",
+                "pl": "Strefa 3 (1,5–2 m)",
+                "ru": "Зона 3 (1,5–2 m)",
+                "ko": "구역 3 (1.5–2 m)"
+              },
+              "hint": {
+                "en": "Detects presence at this distance from the sensor.",
+                "sv": "Känner av närvaro på detta avstånd från sensorn.",
+                "nl": "Detecteert aanwezigheid op deze afstand van de sensor.",
+                "da": "Registrerer tilstedeværelse i denne afstand fra sensoren.",
+                "de": "Erkennt Anwesenheit in diesem Abstand zum Sensor.",
+                "es": "Detecta presencia a esta distancia del sensor.",
+                "fr": "Détecte la présence à cette distance du capteur.",
+                "it": "Rileva la presenza a questa distanza dal sensore.",
+                "no": "Registrerer tilstedeværelse i denne avstanden fra sensoren.",
+                "pl": "Wykrywa obecność w tej odległości od czujnika.",
+                "ru": "Обнаруживает присутствие на этом расстоянии от датчика.",
+                "ko": "센서로부터 이 거리에서 재실을 감지합니다."
+              }
+            },
+            {
+              "id": "occupancy_zone_4",
+              "type": "checkbox",
+              "value": true,
+              "label": {
+                "en": "Zone 4 (2–2.5 m)",
+                "sv": "Zon 4 (2–2,5 m)",
+                "nl": "Zone 4 (2–2,5 m)",
+                "da": "Zone 4 (2–2,5 m)",
+                "de": "Zone 4 (2–2,5 m)",
+                "es": "Zona 4 (2–2,5 m)",
+                "fr": "Zone 4 (2–2,5 m)",
+                "it": "Zona 4 (2–2,5 m)",
+                "no": "Sone 4 (2–2,5 m)",
+                "pl": "Strefa 4 (2–2,5 m)",
+                "ru": "Зона 4 (2–2,5 m)",
+                "ko": "구역 4 (2–2.5 m)"
+              },
+              "hint": {
+                "en": "Detects presence at this distance from the sensor.",
+                "sv": "Känner av närvaro på detta avstånd från sensorn.",
+                "nl": "Detecteert aanwezigheid op deze afstand van de sensor.",
+                "da": "Registrerer tilstedeværelse i denne afstand fra sensoren.",
+                "de": "Erkennt Anwesenheit in diesem Abstand zum Sensor.",
+                "es": "Detecta presencia a esta distancia del sensor.",
+                "fr": "Détecte la présence à cette distance du capteur.",
+                "it": "Rileva la presenza a questa distanza dal sensore.",
+                "no": "Registrerer tilstedeværelse i denne avstanden fra sensoren.",
+                "pl": "Wykrywa obecność w tej odległości od czujnika.",
+                "ru": "Обнаруживает присутствие на этом расстоянии от датчика.",
+                "ko": "센서로부터 이 거리에서 재실을 감지합니다."
+              }
+            },
+            {
+              "id": "occupancy_zone_5",
+              "type": "checkbox",
+              "value": true,
+              "label": {
+                "en": "Zone 5 (2.5–3 m)",
+                "sv": "Zon 5 (2,5–3 m)",
+                "nl": "Zone 5 (2,5–3 m)",
+                "da": "Zone 5 (2,5–3 m)",
+                "de": "Zone 5 (2,5–3 m)",
+                "es": "Zona 5 (2,5–3 m)",
+                "fr": "Zone 5 (2,5–3 m)",
+                "it": "Zona 5 (2,5–3 m)",
+                "no": "Sone 5 (2,5–3 m)",
+                "pl": "Strefa 5 (2,5–3 m)",
+                "ru": "Зона 5 (2,5–3 m)",
+                "ko": "구역 5 (2.5–3 m)"
+              },
+              "hint": {
+                "en": "Detects presence at this distance from the sensor.",
+                "sv": "Känner av närvaro på detta avstånd från sensorn.",
+                "nl": "Detecteert aanwezigheid op deze afstand van de sensor.",
+                "da": "Registrerer tilstedeværelse i denne afstand fra sensoren.",
+                "de": "Erkennt Anwesenheit in diesem Abstand zum Sensor.",
+                "es": "Detecta presencia a esta distancia del sensor.",
+                "fr": "Détecte la présence à cette distance du capteur.",
+                "it": "Rileva la presenza a questa distanza dal sensore.",
+                "no": "Registrerer tilstedeværelse i denne avstanden fra sensoren.",
+                "pl": "Wykrywa obecność w tej odległości od czujnika.",
+                "ru": "Обнаруживает присутствие на этом расстоянии от датчика.",
+                "ko": "센서로부터 이 거리에서 재실을 감지합니다."
+              }
+            },
+            {
+              "id": "occupancy_zone_6",
+              "type": "checkbox",
+              "value": true,
+              "label": {
+                "en": "Zone 6 (3–3.5 m)",
+                "sv": "Zon 6 (3–3,5 m)",
+                "nl": "Zone 6 (3–3,5 m)",
+                "da": "Zone 6 (3–3,5 m)",
+                "de": "Zone 6 (3–3,5 m)",
+                "es": "Zona 6 (3–3,5 m)",
+                "fr": "Zone 6 (3–3,5 m)",
+                "it": "Zona 6 (3–3,5 m)",
+                "no": "Sone 6 (3–3,5 m)",
+                "pl": "Strefa 6 (3–3,5 m)",
+                "ru": "Зона 6 (3–3,5 m)",
+                "ko": "구역 6 (3–3.5 m)"
+              },
+              "hint": {
+                "en": "Detects presence at this distance from the sensor.",
+                "sv": "Känner av närvaro på detta avstånd från sensorn.",
+                "nl": "Detecteert aanwezigheid op deze afstand van de sensor.",
+                "da": "Registrerer tilstedeværelse i denne afstand fra sensoren.",
+                "de": "Erkennt Anwesenheit in diesem Abstand zum Sensor.",
+                "es": "Detecta presencia a esta distancia del sensor.",
+                "fr": "Détecte la présence à cette distance du capteur.",
+                "it": "Rileva la presenza a questa distanza dal sensore.",
+                "no": "Registrerer tilstedeværelse i denne avstanden fra sensoren.",
+                "pl": "Wykrywa obecność w tej odległości od czujnika.",
+                "ru": "Обнаруживает присутствие на этом расстоянии от датчика.",
+                "ko": "센서로부터 이 거리에서 재실을 감지합니다."
+              }
+            },
+            {
+              "id": "occupancy_zone_7",
+              "type": "checkbox",
+              "value": true,
+              "label": {
+                "en": "Zone 7 (3.5–4 m)",
+                "sv": "Zon 7 (3,5–4 m)",
+                "nl": "Zone 7 (3,5–4 m)",
+                "da": "Zone 7 (3,5–4 m)",
+                "de": "Zone 7 (3,5–4 m)",
+                "es": "Zona 7 (3,5–4 m)",
+                "fr": "Zone 7 (3,5–4 m)",
+                "it": "Zona 7 (3,5–4 m)",
+                "no": "Sone 7 (3,5–4 m)",
+                "pl": "Strefa 7 (3,5–4 m)",
+                "ru": "Зона 7 (3,5–4 m)",
+                "ko": "구역 7 (3.5–4 m)"
+              },
+              "hint": {
+                "en": "Detects presence at this distance from the sensor.",
+                "sv": "Känner av närvaro på detta avstånd från sensorn.",
+                "nl": "Detecteert aanwezigheid op deze afstand van de sensor.",
+                "da": "Registrerer tilstedeværelse i denne afstand fra sensoren.",
+                "de": "Erkennt Anwesenheit in diesem Abstand zum Sensor.",
+                "es": "Detecta presencia a esta distancia del sensor.",
+                "fr": "Détecte la présence à cette distance du capteur.",
+                "it": "Rileva la presenza a questa distanza dal sensore.",
+                "no": "Registrerer tilstedeværelse i denne avstanden fra sensoren.",
+                "pl": "Wykrywa obecność w tej odległości od czujnika.",
+                "ru": "Обнаруживает присутствие на этом расстоянии от датчика.",
+                "ko": "센서로부터 이 거리에서 재실을 감지합니다."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
         "large": "/drivers/SWV/assets/images/large.png",
         "small": "/drivers/SWV/assets/images/small.png"
       },

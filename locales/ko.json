@@ -5,6 +5,11 @@
     "2": "보정 실패",
     "3": "보정 완료"
   },
+  "spatial_learning": {
+    "learning": "학습 중",
+    "completed": "완료",
+    "failed": "실패"
+  },
   "errors": {
     "settings_failed": "저장할 수 없습니다: __settings__ – __reason__",
     "rejected": "기기가 값을 거부했습니다 (__details__)",

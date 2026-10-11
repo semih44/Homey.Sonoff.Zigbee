@@ -5,6 +5,11 @@
     "2": "Kalibrierung fehlgeschlagen",
     "3": "Kalibriert"
   },
+  "spatial_learning": {
+    "learning": "Lernt",
+    "completed": "Abgeschlossen",
+    "failed": "Fehlgeschlagen"
+  },
   "errors": {
     "settings_failed": "Speichern nicht möglich: __settings__ – __reason__",
     "rejected": "Das Gerät hat den Wert abgelehnt (__details__)",

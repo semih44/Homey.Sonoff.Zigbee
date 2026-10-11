@@ -5,6 +5,11 @@
     "2": "Échec du calibrage",
     "3": "Calibré"
   },
+  "spatial_learning": {
+    "learning": "Apprentissage en cours",
+    "completed": "Terminé",
+    "failed": "Échec"
+  },
   "errors": {
     "settings_failed": "Enregistrement impossible : __settings__ – __reason__",
     "rejected": "L'appareil a refusé la valeur (__details__)",
