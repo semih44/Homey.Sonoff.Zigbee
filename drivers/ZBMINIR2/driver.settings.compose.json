@@ -537,13 +537,35 @@
           {
             "id": "on",
             "label": {
-              "en": "On → Off"
+              "en": "On → Off",
+              "nl": "Aan → Uit",
+              "da": "Til → Fra",
+              "de": "Ein → Aus",
+              "es": "Encendido → Apagado",
+              "fr": "Allumé → Éteint",
+              "it": "Acceso → Spento",
+              "no": "På → Av",
+              "sv": "På → Av",
+              "pl": "Włączony → Wyłączony",
+              "ru": "Вкл. → Выкл.",
+              "ko": "켜기 → 끄기"
             }
           },
           {
             "id": "off",
             "label": {
-              "en": "Off → On"
+              "en": "Off → On",
+              "nl": "Uit → Aan",
+              "da": "Fra → Til",
+              "de": "Aus → Ein",
+              "es": "Apagado → Encendido",
+              "fr": "Éteint → Allumé",
+              "it": "Spento → Acceso",
+              "no": "Av → På",
+              "sv": "Av → På",
+              "pl": "Wyłączony → Włączony",
+              "ru": "Выкл. → Вкл.",
+              "ko": "끄기 → 켜기"
             }
           }
         ]

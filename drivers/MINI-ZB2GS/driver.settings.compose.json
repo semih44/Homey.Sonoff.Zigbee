@@ -78,10 +78,10 @@
         "label": { "en": "Channel 1", "de": "Kanal 1", "nl": "Kanaal 1", "fr": "Canal 1", "sv": "Kanal 1", "da": "Kanal 1", "es": "Canal 1", "it": "Canale 1", "no": "Kanal 1", "pl": "Kanał 1", "ru": "Канал 1", "ko": "채널 1" },
         "value": "off",
         "values": [
-          { "id": "on", "label": { "en": "Turn On", "de": "Einschalten" } },
-          { "id": "off", "label": { "en": "Turn Off", "de": "Ausschalten" } },
-          { "id": "toggle", "label": { "en": "Toggle", "de": "Umschalten" } },
-          { "id": "last_state", "label": { "en": "Last State", "de": "Letzter Zustand" } }
+          { "id": "on", "label": { "en": "Turn On", "de": "Einschalten", "nl": "Inschakelen", "da": "Tænd", "es": "Encender", "fr": "Allumer", "it": "Accendi", "no": "Slå på", "sv": "Slå på", "pl": "Włącz", "ru": "Включить", "ko": "켜기" } },
+          { "id": "off", "label": { "en": "Turn Off", "de": "Ausschalten", "nl": "Uitschakelen", "da": "Sluk", "es": "Apagar", "fr": "Éteindre", "it": "Spegni", "no": "Slå av", "sv": "Stäng av", "pl": "Wyłącz", "ru": "Выключить", "ko": "끄기" } },
+          { "id": "toggle", "label": { "en": "Toggle", "de": "Umschalten", "nl": "Schakelen", "da": "Skift", "es": "Conmutar", "fr": "Basculer", "it": "Commuta", "no": "Veksle", "sv": "Växla", "pl": "Przełącz", "ru": "Переключить", "ko": "토글" } },
+          { "id": "last_state", "label": { "en": "Last State", "de": "Letzter Zustand", "nl": "Laatste status", "da": "Sidste tilstand", "es": "Último estado", "fr": "Dernier état", "it": "Ultimo stato", "no": "Siste tilstand", "sv": "Senaste tillstånd", "pl": "Ostatni stan", "ru": "Последнее состояние", "ko": "마지막 상태" } }
         ]
       },
       {
@@ -90,10 +90,10 @@
         "label": { "en": "Channel 2", "de": "Kanal 2", "nl": "Kanaal 2", "fr": "Canal 2", "sv": "Kanal 2", "da": "Kanal 2", "es": "Canal 2", "it": "Canale 2", "no": "Kanal 2", "pl": "Kanał 2", "ru": "Канал 2", "ko": "채널 2" },
         "value": "off",
         "values": [
-          { "id": "on", "label": { "en": "Turn On", "de": "Einschalten" } },
-          { "id": "off", "label": { "en": "Turn Off", "de": "Ausschalten" } },
-          { "id": "toggle", "label": { "en": "Toggle", "de": "Umschalten" } },
-          { "id": "last_state", "label": { "en": "Last State", "de": "Letzter Zustand" } }
+          { "id": "on", "label": { "en": "Turn On", "de": "Einschalten", "nl": "Inschakelen", "da": "Tænd", "es": "Encender", "fr": "Allumer", "it": "Accendi", "no": "Slå på", "sv": "Slå på", "pl": "Włącz", "ru": "Включить", "ko": "켜기" } },
+          { "id": "off", "label": { "en": "Turn Off", "de": "Ausschalten", "nl": "Uitschakelen", "da": "Sluk", "es": "Apagar", "fr": "Éteindre", "it": "Spegni", "no": "Slå av", "sv": "Stäng av", "pl": "Wyłącz", "ru": "Выключить", "ko": "끄기" } },
+          { "id": "toggle", "label": { "en": "Toggle", "de": "Umschalten", "nl": "Schakelen", "da": "Skift", "es": "Conmutar", "fr": "Basculer", "it": "Commuta", "no": "Veksle", "sv": "Växla", "pl": "Przełącz", "ru": "Переключить", "ko": "토글" } },
+          { "id": "last_state", "label": { "en": "Last State", "de": "Letzter Zustand", "nl": "Laatste status", "da": "Sidste tilstand", "es": "Último estado", "fr": "Dernier état", "it": "Ultimo stato", "no": "Siste tilstand", "sv": "Senaste tillstånd", "pl": "Ostatni stan", "ru": "Последнее состояние", "ko": "마지막 상태" } }
         ]
       }
     ]
@@ -114,10 +114,10 @@
         "label": { "en": "Channel 1", "de": "Kanal 1", "nl": "Kanaal 1", "fr": "Canal 1", "sv": "Kanal 1", "da": "Kanal 1", "es": "Canal 1", "it": "Canale 1", "no": "Kanal 1", "pl": "Kanał 1", "ru": "Канал 1", "ko": "채널 1" },
         "value": "0",
         "values": [
-          { "id": "0", "label": { "en": "Edge" } },
-          { "id": "1", "label": { "en": "Pulse" } },
-          { "id": "2", "label": { "en": "Following (off)" } },
-          { "id": "130", "label": { "en": "Following (on)" } }
+          { "id": "0", "label": { "en": "Edge", "nl": "Flank", "da": "Kant", "de": "Flanke", "es": "Flanco", "fr": "Bord", "it": "Fronte", "no": "Kant", "sv": "Kant", "pl": "Zbocze", "ru": "Фронт", "ko": "에지" } },
+          { "id": "1", "label": { "en": "Pulse", "nl": "Puls", "da": "Puls", "de": "Puls", "es": "Pulso", "fr": "Impulsion", "it": "Impulso", "no": "Puls", "sv": "Puls", "pl": "Impuls", "ru": "Импульс", "ko": "펄스" } },
+          { "id": "2", "label": { "en": "Following (off)", "nl": "Volgend (uit)", "da": "Følgende (fra)", "de": "Folgend (aus)", "es": "Seguimiento (apagado)", "fr": "Suivi (éteint)", "it": "Seguente (spento)", "no": "Følgende (av)", "sv": "Följande (av)", "pl": "Podążający (wył.)", "ru": "Следящий (выкл.)", "ko": "추종 (꺼짐)" } },
+          { "id": "130", "label": { "en": "Following (on)", "nl": "Volgend (aan)", "da": "Følgende (til)", "de": "Folgend (ein)", "es": "Seguimiento (encendido)", "fr": "Suivi (allumé)", "it": "Seguente (acceso)", "no": "Følgende (på)", "sv": "Följande (på)", "pl": "Podążający (wł.)", "ru": "Следящий (вкл.)", "ko": "추종 (켜짐)" } }
         ]
       },
       {
@@ -126,10 +126,10 @@
         "label": { "en": "Channel 2", "de": "Kanal 2", "nl": "Kanaal 2", "fr": "Canal 2", "sv": "Kanal 2", "da": "Kanal 2", "es": "Canal 2", "it": "Canale 2", "no": "Kanal 2", "pl": "Kanał 2", "ru": "Канал 2", "ko": "채널 2" },
         "value": "0",
         "values": [
-          { "id": "0", "label": { "en": "Edge" } },
-          { "id": "1", "label": { "en": "Pulse" } },
-          { "id": "2", "label": { "en": "Following (off)" } },
-          { "id": "130", "label": { "en": "Following (on)" } }
+          { "id": "0", "label": { "en": "Edge", "nl": "Flank", "da": "Kant", "de": "Flanke", "es": "Flanco", "fr": "Bord", "it": "Fronte", "no": "Kant", "sv": "Kant", "pl": "Zbocze", "ru": "Фронт", "ko": "에지" } },
+          { "id": "1", "label": { "en": "Pulse", "nl": "Puls", "da": "Puls", "de": "Puls", "es": "Pulso", "fr": "Impulsion", "it": "Impulso", "no": "Puls", "sv": "Puls", "pl": "Impuls", "ru": "Импульс", "ko": "펄스" } },
+          { "id": "2", "label": { "en": "Following (off)", "nl": "Volgend (uit)", "da": "Følgende (fra)", "de": "Folgend (aus)", "es": "Seguimiento (apagado)", "fr": "Suivi (éteint)", "it": "Seguente (spento)", "no": "Følgende (av)", "sv": "Följande (av)", "pl": "Podążający (wył.)", "ru": "Следящий (выкл.)", "ko": "추종 (꺼짐)" } },
+          { "id": "130", "label": { "en": "Following (on)", "nl": "Volgend (aan)", "da": "Følgende (til)", "de": "Folgend (ein)", "es": "Seguimiento (encendido)", "fr": "Suivi (allumé)", "it": "Seguente (acceso)", "no": "Følgende (på)", "sv": "Följande (på)", "pl": "Podążający (wł.)", "ru": "Следящий (вкл.)", "ko": "추종 (켜짐)" } }
         ]
       }
     ]
@@ -161,8 +161,8 @@
         "label": { "en": "Inching Mode", "de": "Inching-Modus", "nl": "Inching-modus", "fr": "Mode inching", "sv": "Inching-läge", "da": "Inching-tilstand", "es": "Modo inching", "it": "Modalità inching", "no": "Inching-modus", "pl": "Tryb inching", "ru": "Режим инчинга", "ko": "인칭 모드" },
         "value": "on",
         "values": [
-          { "id": "on", "label": { "en": "On → Off" } },
-          { "id": "off", "label": { "en": "Off → On" } }
+          { "id": "on", "label": { "en": "On → Off", "nl": "Aan → Uit", "da": "Til → Fra", "de": "Ein → Aus", "es": "Encendido → Apagado", "fr": "Allumé → Éteint", "it": "Acceso → Spento", "no": "På → Av", "sv": "På → Av", "pl": "Włączony → Wyłączony", "ru": "Вкл. → Выкл.", "ko": "켜기 → 끄기" } },
+          { "id": "off", "label": { "en": "Off → On", "nl": "Uit → Aan", "da": "Fra → Til", "de": "Aus → Ein", "es": "Apagado → Encendido", "fr": "Éteint → Allumé", "it": "Spento → Acceso", "no": "Av → På", "sv": "Av → På", "pl": "Wyłączony → Włączony", "ru": "Выкл. → Вкл.", "ko": "끄기 → 켜기" } }
         ]
       }
     ]
@@ -194,8 +194,8 @@
         "label": { "en": "Inching Mode", "de": "Inching-Modus", "nl": "Inching-modus", "fr": "Mode inching", "sv": "Inching-läge", "da": "Inching-tilstand", "es": "Modo inching", "it": "Modalità inching", "no": "Inching-modus", "pl": "Tryb inching", "ru": "Режим инчинга", "ko": "인칭 모드" },
         "value": "on",
         "values": [
-          { "id": "on", "label": { "en": "On → Off" } },
-          { "id": "off", "label": { "en": "Off → On" } }
+          { "id": "on", "label": { "en": "On → Off", "nl": "Aan → Uit", "da": "Til → Fra", "de": "Ein → Aus", "es": "Encendido → Apagado", "fr": "Allumé → Éteint", "it": "Acceso → Spento", "no": "På → Av", "sv": "På → Av", "pl": "Włączony → Wyłączony", "ru": "Вкл. → Выкл.", "ko": "켜기 → 끄기" } },
+          { "id": "off", "label": { "en": "Off → On", "nl": "Uit → Aan", "da": "Fra → Til", "de": "Aus → Ein", "es": "Apagado → Encendido", "fr": "Éteint → Allumé", "it": "Spento → Acceso", "no": "Av → På", "sv": "Av → På", "pl": "Wyłączony → Włączony", "ru": "Выкл. → Вкл.", "ko": "끄기 → 켜기" } }
         ]
       }
     ]

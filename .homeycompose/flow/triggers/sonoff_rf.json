@@ -1,22 +1,44 @@
 {       
     "title": { 
-        "en": "Receive RF" 
+        "en": "Receive RF",
+        "nl": "RF ontvangen",
+        "da": "Modtag RF",
+        "de": "RF empfangen",
+        "es": "Recibir RF",
+        "fr": "Recevoir RF",
+        "it": "Ricevi RF",
+        "no": "Motta RF",
+        "sv": "Ta emot RF",
+        "pl": "Odbierz RF",
+        "ru": "Получить RF",
+        "ko": "RF 수신" 
     },
     "titleFormatted": {
-        "en": "Receive RF [[code]]"
+        "en": "Receive RF [[code]]",
+        "nl": "RF ontvangen [[code]]",
+        "da": "Modtag RF [[code]]",
+        "de": "RF empfangen [[code]]",
+        "es": "Recibir RF [[code]]",
+        "fr": "Recevoir RF [[code]]",
+        "it": "Ricevi RF [[code]]",
+        "no": "Motta RF [[code]]",
+        "sv": "Ta emot RF [[code]]",
+        "pl": "Odbierz RF [[code]]",
+        "ru": "Получить RF [[code]]",
+        "ko": "RF 수신 [[code]]"
     },
     "tokens": [       
         {
         "name": "code",
         "type": "string",
-        "title": { "en": "Code" },
-        "example": { "en": "123ABC" }
+        "title": { "en": "Code", "nl": "Code", "da": "Kode", "de": "Code", "es": "Código", "fr": "Code", "it": "Codice", "no": "Kode", "sv": "Kod", "pl": "Kod", "ru": "Код", "ko": "코드" },
+        "example": { "en": "123ABC", "nl": "123ABC", "da": "123ABC", "de": "123ABC", "es": "123ABC", "fr": "123ABC", "it": "123ABC", "no": "123ABC", "sv": "123ABC", "pl": "123ABC", "ru": "123ABC", "ko": "123ABC" }
         }
     ],
     "args": [
         {
             "name": "code",
-            "title": { "en": "Code" },
+            "title": { "en": "Code", "nl": "Code", "da": "Kode", "de": "Code", "es": "Código", "fr": "Code", "it": "Codice", "no": "Kode", "sv": "Kod", "pl": "Kod", "ru": "Код", "ko": "코드" },
             "type": "text",
             "required": false
         }

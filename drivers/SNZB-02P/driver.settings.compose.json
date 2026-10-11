@@ -51,7 +51,8 @@
       "sv": "Temperaturrapportering decimaler",
       "pl": "Raportowanie temperatury z miejscami dziesiętnymi",
       "ru": "Десятичные знаки в отчете о температуре",
-      "ko": "온도 보고 소수점 자릿수"
+      "ko": "온도 보고 소수점 자릿수",
+      "nl": "Temperatuurrapportage met decimalen"
     },
     "value": "1",
     "values": [
@@ -68,7 +69,8 @@
           "sv": "Rapportera temperaturvärde med 1 decimal (21,4 °C)",
           "pl": "Raportowanie wartości temperatury z dokładnością do 1 miejsca po przecinku (21,4°C)",
           "ru": "Сообщить значение температуры с точностью до 1 десятичного знака (21,4 °C)",
-          "ko": "온도 값을 소수점 첫번째 자리까지 보고합니다 (21.4 °C)"
+          "ko": "온도 값을 소수점 첫번째 자리까지 보고합니다 (21.4 °C)",
+          "nl": "Rapporteer temperatuurwaarde met 1 decimaal (21,4 °C)"
         }
       },
       {
@@ -84,7 +86,8 @@
           "sv": "Rapportera temperaturvärde med 2 decimaler (21,37 °C)",
           "pl": "Raportowanie wartości temperatury z dokładnością do 2 miejsc po przecinku (21,37°C)",
           "ru": "Сообщить значение температуры с точностью до 2 десятичных знаков (21,37 °C)",
-          "ko": "온도 값을 소수점 두번째 자리까지 보고합니다 (21.37 °C)"
+          "ko": "온도 값을 소수점 두번째 자리까지 보고합니다 (21.37 °C)",
+          "nl": "Rapporteer temperatuurwaarde met 2 decimalen (21,37 °C)"
         }
       }
     ]
@@ -155,7 +158,8 @@
       "sv": "Fuktighetsrapportering",
       "pl": "Raportowanie wilgotności",
       "ru": "Отчет о влажности",
-      "ko": "습도 보고"
+      "ko": "습도 보고",
+      "nl": "Luchtvochtigheidsrapportage"
     },
     "value": "1",
     "values": [
@@ -172,7 +176,8 @@
           "sv": "Rapportera fuktvärde med 1 decimal (35,2 %)",
           "pl": "Raportowanie wartości wilgotności z dokładnością do 1 miejsca po przecinku (35,2%)",
           "ru": "Сообщить значение влажности с точностью до 1 десятичного знака (35,2 %)",
-          "ko": "습도 값을 소수점 첫번째 자리까지 보고합니다 (35.2 %)"
+          "ko": "습도 값을 소수점 첫번째 자리까지 보고합니다 (35.2 %)",
+          "nl": "Rapporteer luchtvochtigheidswaarde met 1 decimaal (35,2 %)"
         }
       },
       {
@@ -188,7 +193,8 @@
           "sv": "Rapportera fuktvärde med 2 decimaler (35,19 %)",
           "pl": "Raportowanie wartości wilgotności z dokładnością do 2 miejsc po przecinku (35,19%)",
           "ru": "Сообщить значение влажности с точностью до 2 десятичных знаков (35,19 %)",
-          "ko": "습도 값을 소수점 두번째 자리까지 보고합니다 (35.19 %)"
+          "ko": "습도 값을 소수점 두번째 자리까지 보고합니다 (35.19 %)",
+          "nl": "Rapporteer luchtvochtigheidswaarde met 2 decimalen (35,19 %)"
         }
       }
     ]

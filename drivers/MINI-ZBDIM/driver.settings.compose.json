@@ -340,11 +340,11 @@
         },
         "value": "1",
         "values": [
-          { "id": "1", "label": { "en": "1x" } },
-          { "id": "2", "label": { "en": "2x" } },
-          { "id": "3", "label": { "en": "3x" } },
-          { "id": "4", "label": { "en": "4x" } },
-          { "id": "5", "label": { "en": "5x" } }
+          { "id": "1", "label": { "en": "1x", "nl": "1x", "da": "1x", "de": "1x", "es": "1x", "fr": "1x", "it": "1x", "no": "1x", "sv": "1x", "pl": "1x", "ru": "1x", "ko": "1x" } },
+          { "id": "2", "label": { "en": "2x", "nl": "2x", "da": "2x", "de": "2x", "es": "2x", "fr": "2x", "it": "2x", "no": "2x", "sv": "2x", "pl": "2x", "ru": "2x", "ko": "2x" } },
+          { "id": "3", "label": { "en": "3x", "nl": "3x", "da": "3x", "de": "3x", "es": "3x", "fr": "3x", "it": "3x", "no": "3x", "sv": "3x", "pl": "3x", "ru": "3x", "ko": "3x" } },
+          { "id": "4", "label": { "en": "4x", "nl": "4x", "da": "4x", "de": "4x", "es": "4x", "fr": "4x", "it": "4x", "no": "4x", "sv": "4x", "pl": "4x", "ru": "4x", "ko": "4x" } },
+          { "id": "5", "label": { "en": "5x", "nl": "5x", "da": "5x", "de": "5x", "es": "5x", "fr": "5x", "it": "5x", "no": "5x", "sv": "5x", "pl": "5x", "ru": "5x", "ko": "5x" } }
         ]
       }
     ]
@@ -557,8 +557,8 @@
         },
         "value": "on",
         "values": [
-          { "id": "on", "label": { "en": "On → Off" } },
-          { "id": "off", "label": { "en": "Off → On" } }
+          { "id": "on", "label": { "en": "On → Off", "nl": "Aan → Uit", "da": "Til → Fra", "de": "Ein → Aus", "es": "Encendido → Apagado", "fr": "Allumé → Éteint", "it": "Acceso → Spento", "no": "På → Av", "sv": "På → Av", "pl": "Włączony → Wyłączony", "ru": "Вкл. → Выкл.", "ko": "켜기 → 끄기" } },
+          { "id": "off", "label": { "en": "Off → On", "nl": "Uit → Aan", "da": "Fra → Til", "de": "Aus → Ein", "es": "Apagado → Encendido", "fr": "Éteint → Allumé", "it": "Spento → Acceso", "no": "Av → På", "sv": "Av → På", "pl": "Wyłączony → Włączony", "ru": "Выкл. → Вкл.", "ko": "끄기 → 켜기" } }
         ]
       }
     ]
