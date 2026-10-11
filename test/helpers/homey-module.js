@@ -12,6 +12,15 @@ class Device extends SimpleClass {
     return { ...this.__fake.data };
   }
 
+  getClass() {
+    return this.__fake.deviceClass;
+  }
+
+  async setClass(deviceClass) {
+    this.__fake.recorded.classes.push(deviceClass);
+    this.__fake.deviceClass = deviceClass;
+  }
+
   getSettings() {
     return { ...this.__fake.settings };
   }

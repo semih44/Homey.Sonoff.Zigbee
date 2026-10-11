@@ -8,10 +8,10 @@ const FIRST_INIT_STORE_KEY = 'zb_first_init';
  * Homey stand-in (test/helpers/homey-module.js) and record their effects for assertions.
  */
 function createDevice(DeviceClass, {
-  zclNode, node, data = {}, settings = {}, capabilities = {}, store = {}, firstInit = false,
+  zclNode, node, data = {}, settings = {}, capabilities = {}, store = {}, firstInit = false, deviceClass = 'other',
 } = {}) {
   const device = Object.create(DeviceClass.prototype);
-  const recorded = { settings: [], capabilityValues: [], errors: [] };
+  const recorded = { settings: [], capabilityValues: [], errors: [], classes: [] };
 
   device.__fake = {
     data: { ...data },
@@ -19,6 +19,7 @@ function createDevice(DeviceClass, {
     capabilities: { ...capabilities },
     store: { ...store, ...(firstInit ? {} : { [FIRST_INIT_STORE_KEY]: false }) },
     capabilityListeners: {},
+    deviceClass,
     recorded,
   };
   device.zclNode = zclNode;

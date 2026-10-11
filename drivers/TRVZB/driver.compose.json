@@ -14,7 +14,7 @@
     "ru": "Термостат TRVZB",
     "ko": "온도조절기 TRVZB"
   },
-  "class": "sensor",
+  "class": "thermostat",
   "capabilities": [
     "measure_temperature",
     "target_temperature",

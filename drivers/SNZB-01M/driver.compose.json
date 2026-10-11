@@ -14,7 +14,7 @@
     "ru": "Пульт с 4 кнопками SNZB-01M",
     "ko": "4버튼 리모컨 SNZB-01M"
   },
-  "class": "sensor",
+  "class": "remote",
   "capabilities": [
     "measure_battery"
   ],

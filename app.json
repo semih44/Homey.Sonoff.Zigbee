@@ -6257,7 +6257,7 @@
         "ru": "Пульт с 4 кнопками SNZB-01M",
         "ko": "4버튼 리모컨 SNZB-01M"
       },
-      "class": "sensor",
+      "class": "remote",
       "capabilities": [
         "measure_battery"
       ],
@@ -10768,7 +10768,7 @@
         "ru": "Термостат TRVZB",
         "ko": "온도조절기 TRVZB"
       },
-      "class": "sensor",
+      "class": "thermostat",
       "capabilities": [
         "measure_temperature",
         "target_temperature",

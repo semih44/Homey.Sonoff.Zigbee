@@ -30,6 +30,13 @@ class SonoffBase extends ZigBeeDevice {
         options = options || {};
         this._lastPollAttributes = Date.now();
 
+        // Homey applies the class of the driver only when pairing, so a device paired before its
+        // driver changed class keeps the old one (e.g. ZBMINIL/L2/R2: light, then socket)
+        const driverClass = this.driver && this.driver.manifest && this.driver.manifest.class;
+        if (driverClass && this.getClass() !== driverClass) {
+            await this.setClass(driverClass).catch(this.error);
+        }
+
         if (process.env.DEBUG === "1") {
             this.enableDebug();
             this.printNode();
