@@ -50,7 +50,14 @@
   },
   "support": "mailto:info@styrahem.se",
   "contributors": {
-    "developers": []
+    "developers": [
+      {
+        "name": "Gabriel Pedrosa Machado"
+      },
+      {
+        "name": "Semih Yıldırım"
+      }
+    ]
   },
   "images": {
     "large": "assets/images/large.png",

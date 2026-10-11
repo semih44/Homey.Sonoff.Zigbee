@@ -51,7 +51,14 @@
   },
   "support": "mailto:info@styrahem.se",
   "contributors": {
-    "developers": []
+    "developers": [
+      {
+        "name": "Gabriel Pedrosa Machado"
+      },
+      {
+        "name": "Semih Yıldırım"
+      }
+    ]
   },
   "images": {
     "large": "assets/images/large.png",
@@ -2706,6 +2713,187 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "large": "/drivers/MINI-ZB1GP/assets/images/large.png",
+        "small": "/drivers/MINI-ZB1GP/assets/images/small.png"
+      },
+      "name": {
+        "en": "Power Meter MINI-ZB1GP",
+        "sv": "Energimätare MINI-ZB1GP",
+        "nl": "Energiemeter MINI-ZB1GP",
+        "da": "Energimåler MINI-ZB1GP",
+        "de": "Energiemesser MINI-ZB1GP",
+        "es": "Medidor de energía MINI-ZB1GP",
+        "fr": "Compteur d'énergie MINI-ZB1GP",
+        "it": "Misuratore di energia MINI-ZB1GP",
+        "no": "Energimåler MINI-ZB1GP",
+        "pl": "Miernik energii MINI-ZB1GP",
+        "ru": "Счётчик энергии MINI-ZB1GP",
+        "ko": "전력 측정기 MINI-ZB1GP"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_power",
+        "measure_current",
+        "measure_voltage",
+        "meter_power",
+        "meter_power.exported"
+      ],
+      "capabilitiesOptions": {
+        "meter_power": {
+          "title": {
+            "en": "Imported energy",
+            "sv": "Importerad energi",
+            "nl": "Afgenomen energie",
+            "da": "Importeret energi",
+            "de": "Bezogene Energie",
+            "es": "Energía importada",
+            "fr": "Énergie importée",
+            "it": "Energia prelevata",
+            "no": "Importert energi",
+            "pl": "Energia pobrana",
+            "ru": "Потреблённая энергия",
+            "ko": "가져온 에너지"
+          }
+        },
+        "meter_power.exported": {
+          "title": {
+            "en": "Exported energy",
+            "sv": "Exporterad energi",
+            "nl": "Teruggeleverde energie",
+            "da": "Eksporteret energi",
+            "de": "Eingespeiste Energie",
+            "es": "Energía exportada",
+            "fr": "Énergie exportée",
+            "it": "Energia immessa",
+            "no": "Eksportert energi",
+            "pl": "Energia oddana",
+            "ru": "Отданная энергия",
+            "ko": "내보낸 에너지"
+          }
+        }
+      },
+      "energy": {
+        "meterPowerImportedCapability": "meter_power",
+        "meterPowerExportedCapability": "meter_power.exported"
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "SONOFF"
+        ],
+        "productId": [
+          "MINI-ZB1GP"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              3,
+              6,
+              64529
+            ],
+            "bindings": [
+              6,
+              64529
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/MINI-ZB1GP/assets/learn.svg",
+          "instruction": {
+            "en": "Press and hold the button on the device for about 5 seconds until the LED flashes.",
+            "sv": "Håll knappen på enheten intryckt i cirka 5 sekunder tills lysdioden blinkar.",
+            "nl": "Houd de knop op het apparaat ongeveer 5 seconden ingedrukt totdat de LED knippert.",
+            "da": "Hold knappen på enheden inde i ca. 5 sekunder, indtil LED'en blinker.",
+            "de": "Halten Sie die Taste am Gerät etwa 5 Sekunden gedrückt, bis die LED blinkt.",
+            "es": "Mantenga pulsado el botón del dispositivo unos 5 segundos hasta que el LED parpadee.",
+            "fr": "Maintenez le bouton de l'appareil enfoncé environ 5 secondes jusqu'à ce que la LED clignote.",
+            "it": "Tieni premuto il pulsante del dispositivo per circa 5 secondi finché il LED lampeggia.",
+            "no": "Hold knappen på enheten inne i ca. 5 sekunder til LED-en blinker.",
+            "pl": "Przytrzymaj przycisk na urządzeniu przez około 5 sekund, aż dioda LED zacznie migać.",
+            "ru": "Удерживайте кнопку на устройстве около 5 секунд, пока светодиод не начнёт мигать.",
+            "ko": "LED가 깜박일 때까지 기기의 버튼을 약 5초간 누르고 있으세요."
+          }
+        }
+      },
+      "id": "MINI-ZB1GP",
+      "settings": [
+        {
+          "id": "network_led",
+          "type": "checkbox",
+          "value": true,
+          "label": {
+            "en": "Network LED",
+            "sv": "Nätverks-LED",
+            "nl": "Netwerk-LED",
+            "da": "Netværks-LED",
+            "de": "Netzwerk-LED",
+            "es": "LED de red",
+            "fr": "LED réseau",
+            "it": "LED di rete",
+            "no": "Nettverks-LED",
+            "pl": "Dioda sieci",
+            "ru": "Индикатор сети",
+            "ko": "네트워크 LED"
+          },
+          "hint": {
+            "en": "Show network status LED.",
+            "sv": "Visa nätverksstatus-LED.",
+            "nl": "Toon netwerk status-LED.",
+            "da": "Vis netværksstatus-LED.",
+            "de": "Netzwerkstatus-LED anzeigen.",
+            "es": "Mostrar LED de estado de red.",
+            "fr": "Afficher la LED d'état du réseau.",
+            "it": "Mostra il LED di stato della rete.",
+            "no": "Vis nettverksstatus-LED.",
+            "pl": "Pokaż diodę stanu sieci.",
+            "ru": "Показывать индикатор состояния сети.",
+            "ko": "네트워크 상태 LED를 표시합니다."
+          }
+        },
+        {
+          "id": "turbo_mode",
+          "type": "checkbox",
+          "value": false,
+          "label": {
+            "en": "Turbo Mode",
+            "sv": "Turboläge",
+            "nl": "Turbomodus",
+            "da": "Turbotilstand",
+            "de": "Turbomodus",
+            "es": "Modo turbo",
+            "fr": "Mode turbo",
+            "it": "Modalità turbo",
+            "no": "Turbomodus",
+            "pl": "Tryb turbo",
+            "ru": "Турборежим",
+            "ko": "터보 모드"
+          },
+          "hint": {
+            "en": "Improves Zigbee range for distant devices.",
+            "sv": "Förbättrar Zigbee-räckvidd för avlägsna enheter.",
+            "nl": "Verbetert het Zigbee-bereik voor apparaten op afstand.",
+            "da": "Forbedrer Zigbee-rækkevidden for fjerne enheder.",
+            "de": "Verbessert die Zigbee-Reichweite für entfernte Geräte.",
+            "es": "Mejora el alcance Zigbee para dispositivos lejanos.",
+            "fr": "Améliore la portée Zigbee pour les appareils éloignés.",
+            "it": "Migliora la portata Zigbee per dispositivi distanti.",
+            "no": "Forbedrer Zigbee-rekkevidden for enheter langt unna.",
+            "pl": "Poprawia zasięg Zigbee dla odległych urządzeń.",
+            "ru": "Увеличивает радиус действия Zigbee для удалённых устройств.",
+            "ko": "먼 장치에 대한 Zigbee 범위를 개선합니다."
+          }
         }
       ]
     },

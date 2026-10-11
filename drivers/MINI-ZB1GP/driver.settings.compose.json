@@ -1,0 +1,68 @@
+[
+  {
+    "id": "network_led",
+    "type": "checkbox",
+    "value": true,
+    "label": {
+      "en": "Network LED",
+      "sv": "Nätverks-LED",
+      "nl": "Netwerk-LED",
+      "da": "Netværks-LED",
+      "de": "Netzwerk-LED",
+      "es": "LED de red",
+      "fr": "LED réseau",
+      "it": "LED di rete",
+      "no": "Nettverks-LED",
+      "pl": "Dioda sieci",
+      "ru": "Индикатор сети",
+      "ko": "네트워크 LED"
+    },
+    "hint": {
+      "en": "Show network status LED.",
+      "sv": "Visa nätverksstatus-LED.",
+      "nl": "Toon netwerk status-LED.",
+      "da": "Vis netværksstatus-LED.",
+      "de": "Netzwerkstatus-LED anzeigen.",
+      "es": "Mostrar LED de estado de red.",
+      "fr": "Afficher la LED d'état du réseau.",
+      "it": "Mostra il LED di stato della rete.",
+      "no": "Vis nettverksstatus-LED.",
+      "pl": "Pokaż diodę stanu sieci.",
+      "ru": "Показывать индикатор состояния сети.",
+      "ko": "네트워크 상태 LED를 표시합니다."
+    }
+  },
+  {
+    "id": "turbo_mode",
+    "type": "checkbox",
+    "value": false,
+    "label": {
+      "en": "Turbo Mode",
+      "sv": "Turboläge",
+      "nl": "Turbomodus",
+      "da": "Turbotilstand",
+      "de": "Turbomodus",
+      "es": "Modo turbo",
+      "fr": "Mode turbo",
+      "it": "Modalità turbo",
+      "no": "Turbomodus",
+      "pl": "Tryb turbo",
+      "ru": "Турборежим",
+      "ko": "터보 모드"
+    },
+    "hint": {
+      "en": "Improves Zigbee range for distant devices.",
+      "sv": "Förbättrar Zigbee-räckvidd för avlägsna enheter.",
+      "nl": "Verbetert het Zigbee-bereik voor apparaten op afstand.",
+      "da": "Forbedrer Zigbee-rækkevidden for fjerne enheder.",
+      "de": "Verbessert die Zigbee-Reichweite für entfernte Geräte.",
+      "es": "Mejora el alcance Zigbee para dispositivos lejanos.",
+      "fr": "Améliore la portée Zigbee pour les appareils éloignés.",
+      "it": "Migliora la portata Zigbee per dispositivi distanti.",
+      "no": "Forbedrer Zigbee-rekkevidden for enheter langt unna.",
+      "pl": "Poprawia zasięg Zigbee dla odległych urządzeń.",
+      "ru": "Увеличивает радиус действия Zigbee для удалённых устройств.",
+      "ko": "먼 장치에 대한 Zigbee 범위를 개선합니다."
+    }
+  }
+]

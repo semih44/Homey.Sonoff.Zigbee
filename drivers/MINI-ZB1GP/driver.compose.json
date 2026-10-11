@@ -1,0 +1,104 @@
+{
+  "name": {
+    "en": "Power Meter MINI-ZB1GP",
+    "sv": "Energimätare MINI-ZB1GP",
+    "nl": "Energiemeter MINI-ZB1GP",
+    "da": "Energimåler MINI-ZB1GP",
+    "de": "Energiemesser MINI-ZB1GP",
+    "es": "Medidor de energía MINI-ZB1GP",
+    "fr": "Compteur d'énergie MINI-ZB1GP",
+    "it": "Misuratore di energia MINI-ZB1GP",
+    "no": "Energimåler MINI-ZB1GP",
+    "pl": "Miernik energii MINI-ZB1GP",
+    "ru": "Счётчик энергии MINI-ZB1GP",
+    "ko": "전력 측정기 MINI-ZB1GP"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "measure_power",
+    "measure_current",
+    "measure_voltage",
+    "meter_power",
+    "meter_power.exported"
+  ],
+  "capabilitiesOptions": {
+    "meter_power": {
+      "title": {
+        "en": "Imported energy",
+        "sv": "Importerad energi",
+        "nl": "Afgenomen energie",
+        "da": "Importeret energi",
+        "de": "Bezogene Energie",
+        "es": "Energía importada",
+        "fr": "Énergie importée",
+        "it": "Energia prelevata",
+        "no": "Importert energi",
+        "pl": "Energia pobrana",
+        "ru": "Потреблённая энергия",
+        "ko": "가져온 에너지"
+      }
+    },
+    "meter_power.exported": {
+      "title": {
+        "en": "Exported energy",
+        "sv": "Exporterad energi",
+        "nl": "Teruggeleverde energie",
+        "da": "Eksporteret energi",
+        "de": "Eingespeiste Energie",
+        "es": "Energía exportada",
+        "fr": "Énergie exportée",
+        "it": "Energia immessa",
+        "no": "Eksportert energi",
+        "pl": "Energia oddana",
+        "ru": "Отданная энергия",
+        "ko": "내보낸 에너지"
+      }
+    }
+  },
+  "energy": {
+    "meterPowerImportedCapability": "meter_power",
+    "meterPowerExportedCapability": "meter_power.exported"
+  },
+  "zigbee": {
+    "manufacturerName": [
+      "SONOFF"
+    ],
+    "productId": [
+      "MINI-ZB1GP"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0,
+          3,
+          6,
+          64529
+        ],
+        "bindings": [
+          6,
+          64529
+        ]
+      }
+    },
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learn.svg",
+      "instruction": {
+        "en": "Press and hold the button on the device for about 5 seconds until the LED flashes.",
+        "sv": "Håll knappen på enheten intryckt i cirka 5 sekunder tills lysdioden blinkar.",
+        "nl": "Houd de knop op het apparaat ongeveer 5 seconden ingedrukt totdat de LED knippert.",
+        "da": "Hold knappen på enheden inde i ca. 5 sekunder, indtil LED'en blinker.",
+        "de": "Halten Sie die Taste am Gerät etwa 5 Sekunden gedrückt, bis die LED blinkt.",
+        "es": "Mantenga pulsado el botón del dispositivo unos 5 segundos hasta que el LED parpadee.",
+        "fr": "Maintenez le bouton de l'appareil enfoncé environ 5 secondes jusqu'à ce que la LED clignote.",
+        "it": "Tieni premuto il pulsante del dispositivo per circa 5 secondi finché il LED lampeggia.",
+        "no": "Hold knappen på enheten inne i ca. 5 sekunder til LED-en blinker.",
+        "pl": "Przytrzymaj przycisk na urządzeniu przez około 5 sekund, aż dioda LED zacznie migać.",
+        "ru": "Удерживайте кнопку на устройстве около 5 секунд, пока светодиод не начнёт мигать.",
+        "ko": "LED가 깜박일 때까지 기기의 버튼을 약 5초간 누르고 있으세요."
+      }
+    }
+  },
+  "$extends": [
+    "defaults"
+  ]
+}
