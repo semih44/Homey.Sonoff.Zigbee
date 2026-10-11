@@ -46,6 +46,7 @@ class Device extends SimpleClass {
   }
 
   async setCapabilityValue(id, value) {
+    if (!this.hasCapability(id)) throw new Error(`Invalid Capability: ${id}`);
     this.__fake.recorded.capabilityValues.push([id, value]);
     this.__fake.capabilities[id] = value;
   }
