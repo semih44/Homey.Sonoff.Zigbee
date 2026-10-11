@@ -97,3 +97,22 @@ test('driver images have a white background, not a transparent one', () => {
     .map(file => path.relative(ROOT, file));
   assert.deepEqual(transparent, []);
 });
+
+test('the readme is a short plain-text summary in every language', () => {
+  for (const language of LANGUAGES) {
+    const file = path.join(ROOT, language === 'en' ? 'README.txt' : `README.${language}.txt`);
+    const text = fs.readFileSync(file, 'utf8').trim();
+    const paragraphs = text.split(/\n\s*\n/);
+    assert.ok(paragraphs.length <= 2, `${language}: ${paragraphs.length} paragraphs, "one to two paragraphs tops"`);
+    assert.doesNotMatch(text, /https?:\/\//, `${language}: no URLs`);
+    assert.doesNotMatch(text, /^\s*[-*#]/m, `${language}: plain text, no lists or headers`);
+  }
+});
+
+test('the description does not repeat the app name', () => {
+  const app = require('../.homeycompose/app.json');
+  for (const language of LANGUAGES) {
+    assert.ok(app.description[language], `${language}: description`);
+    assert.doesNotMatch(app.description[language], new RegExp(app.name.en, 'i'), language);
+  }
+});
