@@ -49,11 +49,14 @@ class SonoffBase extends ZigBeeDevice {
             this._settingsErrorsTranslated = true;
             const onSettings = this.onSettings;
             this.onSettings = async (event) => {
+                let result;
                 try {
-                    return await onSettings.call(this, event);
+                    result = await onSettings.call(this, event);
                 } catch (error) {
                     throw this.settingsError(event.changedKeys, error);
                 }
+                this.settingsApplied(event);
+                return result;
             };
         }
 
@@ -120,6 +123,13 @@ class SonoffBase extends ZigBeeDevice {
     }
 
     async checkAttributes() {
+    }
+
+    /**
+     * Called after a settings change succeeded, with the new settings (Homey stores them right after)
+     * @param {object} event - newSettings, oldSettings, changedKeys
+     */
+    settingsApplied(event) {
     }
 
     /**

@@ -2,6 +2,7 @@
 
 const SonoffBase = require('./sonoffbase');
 const { CLUSTER } = require('zigbee-clusters');
+const { shownMeasurement } = require('../lib/shownMeasurement');
 
 // zigbee-herdsman-converters m.temperature()/m.humidity(): at most every 10 s, at least hourly,
 // and on a change of 1 °C / 1 %RH (measuredValue is in 0.01 units)
@@ -56,17 +57,34 @@ class TempHumiditySensor extends SonoffBase {
 		// The sensor is awake now, so this is when a configuration it missed gets through
 		this.ensureReporting();
 
-		const temperatureOffset = this.getSetting('temperature_offset') || 0;
-		const parsedValue = this.getSetting('temperature_decimals') === '2' ? Math.round((measuredValue / 100) * 100) / 100 : Math.round((measuredValue / 100) * 10) / 10;
-		this.setCapabilityValue('measure_temperature', parsedValue + temperatureOffset).catch(this.error);
-		//this.checkBattery();
+		this._lastTemperature = measuredValue;
+		this._showTemperature(this.getSettings());
 	}
 
 	onRelativeHumidityMeasuredAttributeReport(measuredValue) {
-		const humidityOffset = this.getSetting('humidity_offset') || 0;
-		const parsedValue = this.getSetting('humidity_decimals') === '2' ? Math.round((measuredValue / 100) * 100) / 100 : Math.round((measuredValue / 100) * 10) / 10;
-		this.setCapabilityValue('measure_humidity', parsedValue + humidityOffset).catch(this.error);
-		//this.checkBattery();
+		this._lastHumidity = measuredValue;
+		this._showHumidity(this.getSettings());
+	}
+
+	_showTemperature(settings) {
+		if (this._lastTemperature === undefined) return;
+		const value = shownMeasurement(this._lastTemperature, settings.temperature_offset, settings.temperature_decimals);
+		this.setCapabilityValue('measure_temperature', value).catch(this.error);
+	}
+
+	_showHumidity(settings) {
+		if (this._lastHumidity === undefined) return;
+		const value = shownMeasurement(this._lastHumidity, settings.humidity_offset, settings.humidity_decimals);
+		this.setCapabilityValue('measure_humidity', value).catch(this.error);
+	}
+
+	// Offset and decimals only change how a measurement is shown, so the last one is shown again at once
+	// instead of with the next report, which may take up to an hour (StyraHem issue #87)
+	settingsApplied(event) {
+		super.settingsApplied(event);
+		const { newSettings, changedKeys } = event;
+		if (changedKeys.some(key => ['temperature_offset', 'temperature_decimals'].includes(key))) this._showTemperature(newSettings);
+		if (changedKeys.some(key => ['humidity_offset', 'humidity_decimals'].includes(key))) this._showHumidity(newSettings);
 	}
 
 }

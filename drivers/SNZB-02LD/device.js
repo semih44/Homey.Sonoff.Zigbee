@@ -3,6 +3,7 @@
 const SonoffBase = require('../sonoffbase');
 const { CLUSTER } = require('zigbee-clusters');
 const SonoffCluster = require('../../lib/SonoffCluster');
+const { shownMeasurement } = require('../../lib/shownMeasurement');
 
 // zigbee-herdsman-converters SNZB-02LD: on a change of 0.2 °C, at most every 5 s, at least hourly
 const TEMPERATURE_REPORTING = { minInterval: 5, maxInterval: 3600, minChange: 20 };
@@ -33,11 +34,22 @@ class SonoffSNZB02LD extends SonoffBase {
 		// The sensor is awake now, so this is when a configuration it missed gets through
 		this.ensureReporting();
 
-		const temperatureOffset = this.getSetting('temperature_offset') || 0;
-		const parsedValue = this.getSetting('temperature_decimals') === '2'
-			? Math.round((measuredValue / 100) * 100) / 100
-			: Math.round((measuredValue / 100) * 10) / 10;
-		this.setCapabilityValue('measure_temperature', parsedValue + temperatureOffset).catch(this.error);
+		this._lastTemperature = measuredValue;
+		this._showTemperature(this.getSettings());
+	}
+
+	_showTemperature(settings) {
+		if (this._lastTemperature === undefined) return;
+		const value = shownMeasurement(this._lastTemperature, settings.temperature_offset, settings.temperature_decimals);
+		this.setCapabilityValue('measure_temperature', value).catch(this.error);
+	}
+
+	// Offset and decimals only change how the measurement is shown, so the last one is shown again at once
+	settingsApplied(event) {
+		super.settingsApplied(event);
+		if (event.changedKeys.some(key => ['temperature_offset', 'temperature_decimals'].includes(key))) {
+			this._showTemperature(event.newSettings);
+		}
 	}
 
 	async onSettings({ oldSettings, newSettings, changedKeys }) {

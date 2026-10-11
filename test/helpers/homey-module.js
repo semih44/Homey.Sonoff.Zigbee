@@ -12,6 +12,9 @@ class Device extends SimpleClass {
     return { ...this.__fake.data };
   }
 
+  // Homey calls this on a settings change; drivers override it
+  async onSettings() {}
+
   getClass() {
     return this.__fake.deviceClass;
   }
