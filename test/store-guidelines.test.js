@@ -81,3 +81,19 @@ test('the child lock of the TRVZB starts off', () => {
   const walk = list => list.flatMap(setting => (setting.children ? walk(setting.children) : [setting]));
   assert.equal(walk(settings).find(setting => setting.id === 'child_lock').value, false);
 });
+
+test('icons use a 960 x 960 canvas ("The canvas size should be 960x960px")', () => {
+  const icons = [path.join(ROOT, 'assets', 'icon.svg'), ...DRIVERS.map(id => path.join(ROOT, 'drivers', id, 'assets', 'icon.svg'))]
+    .filter(file => fs.existsSync(file));
+  const otherCanvas = icons.filter(file => !/viewBox="0 0 960 960"/.test(fs.readFileSync(file, 'utf8')))
+    .map(file => path.relative(ROOT, file));
+  assert.deepEqual(otherCanvas, []);
+});
+
+test('driver images have a white background, not a transparent one', () => {
+  const transparent = DRIVERS.flatMap(id => ['small', 'large', 'xlarge']
+    .map(size => path.join(ROOT, 'drivers', id, 'assets', 'images', `${size}.png`)))
+    .filter(file => fs.existsSync(file) && hasTransparency(file))
+    .map(file => path.relative(ROOT, file));
+  assert.deepEqual(transparent, []);
+});
