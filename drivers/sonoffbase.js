@@ -32,8 +32,8 @@ class SonoffBase extends ZigBeeDevice {
 
         if (process.env.DEBUG === "1") {
             this.enableDebug();
+            this.printNode();
         }
-        this.printNode();
 
         if (options.noAttribCheck !== true) {
             if ("powerConfiguration" in zclNode.endpoints[1].clusters) {
