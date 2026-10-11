@@ -94,7 +94,7 @@ class SonoffMINIZB2GSL extends SonoffBase {
                     this.log(`${key} updated`);
                 } catch (error) {
                     this.error(`Error updating ${key}:`, error);
-                    throw new Error(`Failed to update ${key}: ${error.message}`);
+                    throw error;
                 }
             }
         }
@@ -109,7 +109,7 @@ class SonoffMINIZB2GSL extends SonoffBase {
                 this.log('Detach relay updated');
             } catch (error) {
                 this.error('Error updating detach relay:', error);
-                throw new Error(`Failed to update detach relay: ${error.message}`);
+                throw error;
             }
         }
 
@@ -125,7 +125,7 @@ class SonoffMINIZB2GSL extends SonoffBase {
                     this.log(`${key} updated`);
                 } catch (error) {
                     this.error(`Error updating ${key}:`, error);
-                    throw new Error(`Failed to update ${key}: ${error.message}`);
+                    throw error;
                 }
             }
         }
@@ -142,7 +142,7 @@ class SonoffMINIZB2GSL extends SonoffBase {
                     this.log(`${key} updated`);
                 } catch (error) {
                     this.error(`Error updating ${key}:`, error);
-                    throw new Error(`Failed to update ${key}: ${error.message}`);
+                    throw error;
                 }
             }
         }

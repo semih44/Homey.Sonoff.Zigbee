@@ -4,5 +4,10 @@
     "1": "Calibrazione in corso",
     "2": "Calibrazione non riuscita",
     "3": "Calibrato"
+  },
+  "errors": {
+    "settings_failed": "Impossibile salvare: __settings__ – __reason__",
+    "rejected": "Il dispositivo ha rifiutato il valore (__details__)",
+    "no_response": "Il dispositivo non ha risposto"
   }
 }

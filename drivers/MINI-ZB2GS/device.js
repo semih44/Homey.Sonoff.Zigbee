@@ -103,7 +103,7 @@ class SonoffMINIZB2GS extends SonoffBase {
                     this.log(`${key} updated`);
                 } catch (error) {
                     this.error(`Error updating ${key}:`, error);
-                    throw new Error(`Failed to update ${key}: ${error.message}`);
+                    throw error;
                 }
             }
         }
@@ -116,7 +116,7 @@ class SonoffMINIZB2GS extends SonoffBase {
                 this.log('TurboMode updated');
             } catch (error) {
                 this.error('Error updating turbo_mode:', error);
-                throw new Error(`Failed to update turbo mode: ${error.message}`);
+                throw error;
             }
         }
 
@@ -127,7 +127,7 @@ class SonoffMINIZB2GS extends SonoffBase {
                 this.log('Network LED updated');
             } catch (error) {
                 this.error('Error updating network_led:', error);
-                throw new Error(`Failed to update network LED: ${error.message}`);
+                throw error;
             }
         }
 
@@ -141,7 +141,7 @@ class SonoffMINIZB2GS extends SonoffBase {
                 this.log('Detach relay updated');
             } catch (error) {
                 this.error('Error updating detach relay:', error);
-                throw new Error(`Failed to update detach relay: ${error.message}`);
+                throw error;
             }
         }
 
@@ -157,7 +157,7 @@ class SonoffMINIZB2GS extends SonoffBase {
                     this.log(`${key} updated`);
                 } catch (error) {
                     this.error(`Error updating ${key}:`, error);
-                    throw new Error(`Failed to update ${key}: ${error.message}`);
+                    throw error;
                 }
             }
         }
@@ -174,7 +174,7 @@ class SonoffMINIZB2GS extends SonoffBase {
                     this.log(`${key} updated`);
                 } catch (error) {
                     this.error(`Error updating ${key}:`, error);
-                    throw new Error(`Failed to update ${key}: ${error.message}`);
+                    throw error;
                 }
             }
         }
@@ -191,7 +191,7 @@ class SonoffMINIZB2GS extends SonoffBase {
                 this.log('Inching updated');
             } catch (error) {
                 this.error('Error updating inching:', error);
-                throw new Error(`Failed to update inching: ${error.message}`);
+                throw error;
             }
         }
 
@@ -208,7 +208,7 @@ class SonoffMINIZB2GS extends SonoffBase {
                 this.log('Inching channel 2 updated');
             } catch (error) {
                 this.error('Error updating inching channel 2:', error);
-                throw new Error(`Failed to update inching of channel 2: ${error.message}`);
+                throw error;
             }
         }
     }

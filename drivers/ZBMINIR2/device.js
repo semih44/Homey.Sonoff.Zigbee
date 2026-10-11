@@ -176,7 +176,7 @@ class SonoffZBMINIR2 extends SonoffBase {
                 this.log(`TurboMode updated successfully to ${newSettings.turbo_mode}`);
             } catch (error) {
                 this.error(`Error updating TurboMode:`, error);
-                throw new Error(`Failed to update Turbo Mode: ${error.message}`);
+                throw error;
             }
         }
 
@@ -191,7 +191,7 @@ class SonoffZBMINIR2 extends SonoffBase {
                 this.log(`switch_mode updated successfully to ${newSettings.switch_mode}`);
             } catch (error) {
                 this.error(`Error updating switch_mode:`, error);
-                throw new Error(`Failed to update switch mode: ${error.message}`);
+                throw error;
             }
         }
 
@@ -213,7 +213,7 @@ class SonoffZBMINIR2 extends SonoffBase {
                 this.log(`SonoffCluster attributes updated successfully`);
             } catch (error) {
                 this.error(`Error updating SonoffCluster attributes:`, error);
-                throw new Error(`Failed to update device settings: ${error.message}`);
+                throw error;
             }
         }
 
@@ -231,7 +231,7 @@ class SonoffZBMINIR2 extends SonoffBase {
                 this.log(`Inching settings updated successfully`);
             } catch (error) {
                 this.error(`Error updating inching settings:`, error);
-                throw new Error(`Failed to update inching settings: ${error.message}`);
+                throw error;
             }
         }
     }

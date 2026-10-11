@@ -89,7 +89,7 @@ class SonoffZBM52C80 extends SonoffBase {
                 this.log('Network LED updated');
             } catch (error) {
                 this.error('Error updating network_led:', error);
-                throw new Error(`Failed to update network LED: ${error.message}`);
+                throw error;
             }
         }
 
@@ -103,7 +103,7 @@ class SonoffZBM52C80 extends SonoffBase {
                 this.log('Detach relay updated');
             } catch (error) {
                 this.error('Error updating detach relay:', error);
-                throw new Error(`Failed to update detach relay: ${error.message}`);
+                throw error;
             }
         }
     }

@@ -4,5 +4,10 @@
     "1": "Kalibrerar",
     "2": "Kalibreringen misslyckades",
     "3": "Kalibrerad"
+  },
+  "errors": {
+    "settings_failed": "Kunde inte sparas: __settings__ – __reason__",
+    "rejected": "Enheten avvisade värdet (__details__)",
+    "no_response": "Enheten svarade inte"
   }
 }

@@ -51,7 +51,7 @@ class SonoffSWVZFU extends SonoffBase {
                 this.log('Child lock updated');
             } catch (error) {
                 this.error('Error updating child_lock:', error);
-                throw new Error(`Failed to update child lock: ${error.message}`);
+                throw error;
             }
         }
     }

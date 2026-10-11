@@ -9,7 +9,7 @@ const { debug, CLUSTER } = require('zigbee-clusters');
 require('../lib/SonoffOnOffCluster');
 const SonoffCluster = require('../lib/SonoffCluster');
 const { buildInchingPayload } = require('../lib/SonoffInching');
-const { assertWriteSucceeded } = require('../lib/writeStatus');
+const { assertWriteSucceeded, WRITE_REJECTED } = require('../lib/writeStatus');
 
 if (process.env.DEBUG === "1") {
     debug(true);
@@ -42,6 +42,20 @@ class SonoffBase extends ZigBeeDevice {
             this.printNode();
         }
 
+        // Every error of a settings change reaches the user in their language. Homey shows it in the
+        // settings dialog and saves none of the changes, so all changed settings are named.
+        if (!this._settingsErrorsTranslated) {
+            this._settingsErrorsTranslated = true;
+            const onSettings = this.onSettings;
+            this.onSettings = async (event) => {
+                try {
+                    return await onSettings.call(this, event);
+                } catch (error) {
+                    throw this.settingsError(event.changedKeys, error);
+                }
+            };
+        }
+
         if (options.noAttribCheck !== true) {
             if ("powerConfiguration" in zclNode.endpoints[1].clusters) {
                 this._originalHandleFrame = this.node.handleFrame;
@@ -72,6 +86,40 @@ class SonoffBase extends ZigBeeDevice {
     }
 
     async checkAttributes() {
+    }
+
+    /**
+     * The error of a settings change in the user's language, naming the changed settings
+     * @param {string[]} changedKeys
+     * @param {Error} error
+     */
+    settingsError(changedKeys, error) {
+        const settings = (changedKeys || []).map(key => this._settingLabel(key)).join(', ');
+        const translated = new Error(this.homey.__('errors.settings_failed', { settings, reason: this._errorReason(error) }));
+        translated.cause = error;
+        return translated;
+    }
+
+    _errorReason(error) {
+        if (error && error.code === WRITE_REJECTED) return this.homey.__('errors.rejected', { details: error.details });
+        // zigbee-clusters gives up waiting for the answer of the device with this message
+        if (error && error.message === 'timeout') return this.homey.__('errors.no_response');
+        return (error && error.message) || String(error);
+    }
+
+    // Label of a setting in the user's language, after the label of its group
+    _settingLabel(key) {
+        const language = this.homey.i18n.getLanguage();
+        const text = label => (label && (label[language] || label.en)) || '';
+        const find = (settings, group) => {
+            for (const setting of settings || []) {
+                if (setting.id === key) return group ? `${text(group.label)} › ${text(setting.label)}` : text(setting.label);
+                const found = setting.children && find(setting.children, setting);
+                if (found) return found;
+            }
+            return null;
+        };
+        return find(this.driver && this.driver.manifest && this.driver.manifest.settings) || key;
     }
 
     /**
@@ -217,7 +265,7 @@ class SonoffBase extends ZigBeeDevice {
             await this.zclNode.endpoints[endpointId].clusters.onOff.writeAttributes({ powerOnBehavior: value });
         } catch (error) {
             this.error(`Error updating power-on behavior of endpoint ${endpointId}:`, error);
-            throw new Error(`Failed to update power-on behavior: ${error.message}`);
+            throw error;
         }
     }
 

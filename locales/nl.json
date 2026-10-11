@@ -4,5 +4,10 @@
     "1": "Bezig met kalibreren",
     "2": "Kalibratie mislukt",
     "3": "Gekalibreerd"
+  },
+  "errors": {
+    "settings_failed": "Opslaan niet mogelijk: __settings__ – __reason__",
+    "rejected": "Het apparaat weigerde de waarde (__details__)",
+    "no_response": "Het apparaat reageerde niet"
   }
 }

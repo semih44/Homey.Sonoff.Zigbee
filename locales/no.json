@@ -4,5 +4,10 @@
     "1": "Kalibrerer",
     "2": "Kalibrering mislyktes",
     "3": "Kalibrert"
+  },
+  "errors": {
+    "settings_failed": "Kunne ikke lagres: __settings__ – __reason__",
+    "rejected": "Enheten avviste verdien (__details__)",
+    "no_response": "Enheten svarte ikke"
   }
 }

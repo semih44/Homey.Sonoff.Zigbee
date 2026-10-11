@@ -4,5 +4,10 @@
     "1": "Kalibrerer",
     "2": "Kalibrering mislykkedes",
     "3": "Kalibreret"
+  },
+  "errors": {
+    "settings_failed": "Kunne ikke gemmes: __settings__ – __reason__",
+    "rejected": "Enheden afviste værdien (__details__)",
+    "no_response": "Enheden svarede ikke"
   }
 }

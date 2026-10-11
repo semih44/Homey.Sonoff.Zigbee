@@ -52,7 +52,7 @@ class SonoffSNZB02LD extends SonoffBase {
 				this.log('Temperature units updated to', newSettings.temperature_units);
 			} catch (error) {
 				this.error('Error updating temperature_units:', error);
-				throw new Error(`Failed to update temperature units: ${error.message}`);
+				throw error;
 			}
 		}
 
@@ -64,7 +64,7 @@ class SonoffSNZB02LD extends SonoffBase {
 				this.log('Temperature calibration updated to', newSettings.temperature_calibration);
 			} catch (error) {
 				this.error('Error updating temperature_calibration:', error);
-				throw new Error(`Failed to update temperature calibration: ${error.message}`);
+				throw error;
 			}
 		}
 	}

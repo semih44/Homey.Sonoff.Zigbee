@@ -4,5 +4,10 @@
     "1": "보정 중",
     "2": "보정 실패",
     "3": "보정 완료"
+  },
+  "errors": {
+    "settings_failed": "저장할 수 없습니다: __settings__ – __reason__",
+    "rejected": "기기가 값을 거부했습니다 (__details__)",
+    "no_response": "기기가 응답하지 않았습니다"
   }
 }

@@ -59,7 +59,7 @@ class SonoffSWV extends SonoffBase {
                 this.log('lack_water_close_valve_timeout updated to', value);
             } catch (error) {
                 this.error('Error updating lack_water_close_valve_timeout:', error);
-                throw new Error(`Failed to update auto-close timeout: ${error.message}`);
+                throw error;
             }
         }
     }

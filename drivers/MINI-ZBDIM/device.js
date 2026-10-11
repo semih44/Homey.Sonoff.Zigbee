@@ -127,7 +127,7 @@ class SonoffMINIZBDIM extends SonoffBase {
                 this.log('Delayed power-on updated');
             } catch (error) {
                 this.error('Error updating delayed power-on:', error);
-                throw new Error(`Failed to update delayed power-on: ${error.message}`);
+                throw error;
             }
         }
 
@@ -138,7 +138,7 @@ class SonoffMINIZBDIM extends SonoffBase {
                 this.log('External trigger mode updated');
             } catch (error) {
                 this.error('Error updating external_trigger_mode:', error);
-                throw new Error(`Failed to update external trigger mode: ${error.message}`);
+                throw error;
             }
         }
 
@@ -151,7 +151,7 @@ class SonoffMINIZBDIM extends SonoffBase {
                 this.log('Min brightness updated');
             } catch (error) {
                 this.error('Error updating min_brightness:', error);
-                throw new Error(`Failed to update min brightness: ${error.message}`);
+                throw error;
             }
         }
 
@@ -164,7 +164,7 @@ class SonoffMINIZBDIM extends SonoffBase {
                 this.log('Transition time updated');
             } catch (error) {
                 this.error('Error updating transition_time:', error);
-                throw new Error(`Failed to update transition time: ${error.message}`);
+                throw error;
             }
         }
 
@@ -175,7 +175,7 @@ class SonoffMINIZBDIM extends SonoffBase {
                 this.log('Dimming rate updated');
             } catch (error) {
                 this.error('Error updating dimming_rate:', error);
-                throw new Error(`Failed to update dimming rate: ${error.message}`);
+                throw error;
             }
         }
 
@@ -196,7 +196,7 @@ class SonoffMINIZBDIM extends SonoffBase {
                 }
             } catch (error) {
                 this.error('Error sending calibration action:', error);
-                throw new Error(`Failed to send calibration action: ${error.message}`);
+                throw error;
             }
         }
 
@@ -212,7 +212,7 @@ class SonoffMINIZBDIM extends SonoffBase {
                 this.log('Inching settings updated');
             } catch (error) {
                 this.error('Error updating inching settings:', error);
-                throw new Error(`Failed to update inching settings: ${error.message}`);
+                throw error;
             }
         }
     }

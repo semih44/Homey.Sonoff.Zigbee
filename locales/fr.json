@@ -4,5 +4,10 @@
     "1": "Calibrage en cours",
     "2": "Échec du calibrage",
     "3": "Calibré"
+  },
+  "errors": {
+    "settings_failed": "Enregistrement impossible : __settings__ – __reason__",
+    "rejected": "L'appareil a refusé la valeur (__details__)",
+    "no_response": "L'appareil n'a pas répondu"
   }
 }
