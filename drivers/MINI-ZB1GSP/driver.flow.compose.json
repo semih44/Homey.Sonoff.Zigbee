@@ -1,0 +1,89 @@
+{
+  "triggers": [
+    {
+      "id": "{{driverId}}:detach_single_click",
+      "title": {
+        "en": "Wall switch clicked once in detach mode",
+        "sv": "Väggbrytaren klickad en gång i frikopplingsläge",
+        "nl": "Wandschakelaar eenmaal ingedrukt in ontkoppelmodus",
+        "da": "Vægkontakten trykket én gang i frakoblingstilstand",
+        "de": "Wandschalter im Entkopplungsmodus einmal gedrückt",
+        "es": "Interruptor de pared pulsado una vez en modo desacoplado",
+        "fr": "Interrupteur mural appuyé une fois en mode détaché",
+        "it": "Interruttore a parete premuto una volta in modalità scollegata",
+        "no": "Veggbryteren trykket én gang i frakoblet modus",
+        "pl": "Włącznik ścienny naciśnięty raz w trybie odłączenia",
+        "ru": "Настенный выключатель нажат один раз в режиме отключения",
+        "ko": "분리 모드에서 벽 스위치 한 번 누름"
+      }
+    },
+    {
+      "id": "{{driverId}}:detach_double_click",
+      "title": {
+        "en": "Wall switch clicked twice in detach mode",
+        "sv": "Väggbrytaren klickad två gånger i frikopplingsläge",
+        "nl": "Wandschakelaar tweemaal ingedrukt in ontkoppelmodus",
+        "da": "Vægkontakten trykket to gange i frakoblingstilstand",
+        "de": "Wandschalter im Entkopplungsmodus zweimal gedrückt",
+        "es": "Interruptor de pared pulsado dos veces en modo desacoplado",
+        "fr": "Interrupteur mural appuyé deux fois en mode détaché",
+        "it": "Interruttore a parete premuto due volte in modalità scollegata",
+        "no": "Veggbryteren trykket to ganger i frakoblet modus",
+        "pl": "Włącznik ścienny naciśnięty dwa razy w trybie odłączenia",
+        "ru": "Настенный выключатель нажат дважды в режиме отключения",
+        "ko": "분리 모드에서 벽 스위치 두 번 누름"
+      }
+    },
+    {
+      "id": "{{driverId}}:detach_long_press",
+      "title": {
+        "en": "Wall switch held in detach mode",
+        "sv": "Väggbrytaren hålls nedtryckt i frikopplingsläge",
+        "nl": "Wandschakelaar lang ingedrukt in ontkoppelmodus",
+        "da": "Vægkontakten holdt nede i frakoblingstilstand",
+        "de": "Wandschalter im Entkopplungsmodus lange gedrückt",
+        "es": "Interruptor de pared mantenido pulsado en modo desacoplado",
+        "fr": "Interrupteur mural maintenu appuyé en mode détaché",
+        "it": "Interruttore a parete tenuto premuto in modalità scollegata",
+        "no": "Veggbryteren holdt inne i frakoblet modus",
+        "pl": "Włącznik ścienny przytrzymany w trybie odłączenia",
+        "ru": "Настенный выключатель удерживается в режиме отключения",
+        "ko": "분리 모드에서 벽 스위치 길게 누름"
+      }
+    },
+    {
+      "id": "{{driverId}}:detach_switch_on",
+      "title": {
+        "en": "Wall switch turned on in detach mode",
+        "sv": "Väggbrytaren påslagen i frikopplingsläge",
+        "nl": "Wandschakelaar ingeschakeld in ontkoppelmodus",
+        "da": "Vægkontakten tændt i frakoblingstilstand",
+        "de": "Wandschalter im Entkopplungsmodus eingeschaltet",
+        "es": "Interruptor de pared encendido en modo desacoplado",
+        "fr": "Interrupteur mural allumé en mode détaché",
+        "it": "Interruttore a parete acceso in modalità scollegata",
+        "no": "Veggbryteren slått på i frakoblet modus",
+        "pl": "Włącznik ścienny włączony w trybie odłączenia",
+        "ru": "Настенный выключатель включён в режиме отключения",
+        "ko": "분리 모드에서 벽 스위치 켜짐"
+      }
+    },
+    {
+      "id": "{{driverId}}:detach_switch_off",
+      "title": {
+        "en": "Wall switch turned off in detach mode",
+        "sv": "Väggbrytaren avslagen i frikopplingsläge",
+        "nl": "Wandschakelaar uitgeschakeld in ontkoppelmodus",
+        "da": "Vægkontakten slukket i frakoblingstilstand",
+        "de": "Wandschalter im Entkopplungsmodus ausgeschaltet",
+        "es": "Interruptor de pared apagado en modo desacoplado",
+        "fr": "Interrupteur mural éteint en mode détaché",
+        "it": "Interruttore a parete spento in modalità scollegata",
+        "no": "Veggbryteren slått av i frakoblet modus",
+        "pl": "Włącznik ścienny wyłączony w trybie odłączenia",
+        "ru": "Настенный выключатель выключен в режиме отключения",
+        "ko": "분리 모드에서 벽 스위치 꺼짐"
+      }
+    }
+  ]
+}
