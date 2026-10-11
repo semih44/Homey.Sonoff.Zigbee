@@ -22,17 +22,6 @@
     "measure_voltage",
     "measure_current"
   ],
-  "capabilitiesOptions": {
-    "measure_power": {
-      "approximated": true
-    },
-    "measure_voltage": {
-      "approximated": true
-    },
-    "measure_current": {
-      "approximated": true
-    }
-  },
   "zigbee": {
     "manufacturerName": [
       "SONOFF"

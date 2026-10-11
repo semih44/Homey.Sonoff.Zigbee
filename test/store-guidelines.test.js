@@ -63,3 +63,15 @@ test('English texts spell "approx." correctly', () => {
     .filter(text => /\baprox\b/.test(text.en)).map(text => text.en);
   assert.deepEqual(typos, []);
 });
+
+test('the measured values of the MINI-ZBDIM are not marked as estimated', () => {
+  const options = require('../drivers/MINI-ZBDIM/driver.compose.json').capabilitiesOptions || {};
+  const approximated = Object.entries(options).filter(([, option]) => option.approximated).map(([id]) => id);
+  assert.deepEqual(approximated, []);
+});
+
+test('the child lock of the TRVZB starts off', () => {
+  const settings = require('../drivers/TRVZB/driver.settings.compose.json');
+  const walk = list => list.flatMap(setting => (setting.children ? walk(setting.children) : [setting]));
+  assert.equal(walk(settings).find(setting => setting.id === 'child_lock').value, false);
+});

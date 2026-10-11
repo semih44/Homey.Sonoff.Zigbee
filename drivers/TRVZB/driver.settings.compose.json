@@ -58,6 +58,7 @@
       {
         "id": "child_lock",
         "type": "checkbox",
+        "value": false,
         "label": {
           "en": "Child lock",
           "sv": "Barnlås",

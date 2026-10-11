@@ -4313,17 +4313,6 @@
         "measure_voltage",
         "measure_current"
       ],
-      "capabilitiesOptions": {
-        "measure_power": {
-          "approximated": true
-        },
-        "measure_voltage": {
-          "approximated": true
-        },
-        "measure_current": {
-          "approximated": true
-        }
-      },
       "zigbee": {
         "manufacturerName": [
           "SONOFF"
@@ -11416,6 +11405,7 @@
             {
               "id": "child_lock",
               "type": "checkbox",
+              "value": false,
               "label": {
                 "en": "Child lock",
                 "sv": "Barnlås",
