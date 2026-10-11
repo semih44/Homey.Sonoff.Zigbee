@@ -1,0 +1,70 @@
+{
+  "name": {
+    "en": "Motion Sensor SNZB-03PR2",
+    "sv": "Rörelsesensor SNZB-03PR2",
+    "nl": "Bewegingssensor SNZB-03PR2",
+    "da": "Bevægelsessensor SNZB-03PR2",
+    "de": "Bewegungssensor SNZB-03PR2",
+    "es": "Sensor de movimiento SNZB-03PR2",
+    "fr": "Capteur de mouvement SNZB-03PR2",
+    "it": "Sensore di movimento SNZB-03PR2",
+    "no": "Bevegelsessensor SNZB-03PR2",
+    "pl": "Czujnik ruchu SNZB-03PR2",
+    "ru": "Датчик движения SNZB-03PR2",
+    "ko": "모션 센서 SNZB-03PR2"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "alarm_motion",
+    "measure_luminance",
+    "measure_battery"
+  ],
+  "energy": {
+    "batteries": [
+      "CR2477"
+    ]
+  },
+  "zigbee": {
+    "manufacturerName": [
+      "SONOFF"
+    ],
+    "productId": [
+      "SNZB-03PR2"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0,
+          1,
+          3,
+          1024,
+          1030,
+          64529
+        ],
+        "bindings": [
+          1
+        ]
+      }
+    },
+    "learnmode": {
+      "image": "{{driverAssetsPath}}/learn.svg",
+      "instruction": {
+        "en": "Press and hold the pairing button for about 5 seconds until the LED flashes.",
+        "sv": "Håll parkopplingsknappen intryckt i cirka 5 sekunder tills lysdioden blinkar.",
+        "nl": "Houd de koppelknop ongeveer 5 seconden ingedrukt totdat de LED knippert.",
+        "da": "Hold parringsknappen inde i ca. 5 sekunder, indtil LED'en blinker.",
+        "de": "Halten Sie die Kopplungstaste etwa 5 Sekunden gedrückt, bis die LED blinkt.",
+        "es": "Mantenga pulsado el botón de emparejamiento unos 5 segundos hasta que el LED parpadee.",
+        "fr": "Maintenez le bouton d'appairage enfoncé environ 5 secondes jusqu'à ce que la LED clignote.",
+        "it": "Tieni premuto il pulsante di associazione per circa 5 secondi finché il LED lampeggia.",
+        "no": "Hold paringsknappen inne i ca. 5 sekunder til LED-en blinker.",
+        "pl": "Przytrzymaj przycisk parowania przez około 5 sekund, aż dioda LED zacznie migać.",
+        "ru": "Удерживайте кнопку сопряжения около 5 секунд, пока светодиод не начнёт мигать.",
+        "ko": "LED가 깜박일 때까지 페어링 버튼을 약 5초간 누르고 있으세요."
+      }
+    }
+  },
+  "$extends": [
+    "defaults"
+  ]
+}

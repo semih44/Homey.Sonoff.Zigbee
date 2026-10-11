@@ -10052,6 +10052,182 @@
         "zigbee"
       ],
       "images": {
+        "large": "/drivers/SNZB-03PR2/assets/images/large.png",
+        "small": "/drivers/SNZB-03PR2/assets/images/small.png"
+      },
+      "name": {
+        "en": "Motion Sensor SNZB-03PR2",
+        "sv": "Rörelsesensor SNZB-03PR2",
+        "nl": "Bewegingssensor SNZB-03PR2",
+        "da": "Bevægelsessensor SNZB-03PR2",
+        "de": "Bewegungssensor SNZB-03PR2",
+        "es": "Sensor de movimiento SNZB-03PR2",
+        "fr": "Capteur de mouvement SNZB-03PR2",
+        "it": "Sensore di movimento SNZB-03PR2",
+        "no": "Bevegelsessensor SNZB-03PR2",
+        "pl": "Czujnik ruchu SNZB-03PR2",
+        "ru": "Датчик движения SNZB-03PR2",
+        "ko": "모션 센서 SNZB-03PR2"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_motion",
+        "measure_luminance",
+        "measure_battery"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2477"
+        ]
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "SONOFF"
+        ],
+        "productId": [
+          "SNZB-03PR2"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              3,
+              1024,
+              1030,
+              64529
+            ],
+            "bindings": [
+              1
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/SNZB-03PR2/assets/learn.svg",
+          "instruction": {
+            "en": "Press and hold the pairing button for about 5 seconds until the LED flashes.",
+            "sv": "Håll parkopplingsknappen intryckt i cirka 5 sekunder tills lysdioden blinkar.",
+            "nl": "Houd de koppelknop ongeveer 5 seconden ingedrukt totdat de LED knippert.",
+            "da": "Hold parringsknappen inde i ca. 5 sekunder, indtil LED'en blinker.",
+            "de": "Halten Sie die Kopplungstaste etwa 5 Sekunden gedrückt, bis die LED blinkt.",
+            "es": "Mantenga pulsado el botón de emparejamiento unos 5 segundos hasta que el LED parpadee.",
+            "fr": "Maintenez le bouton d'appairage enfoncé environ 5 secondes jusqu'à ce que la LED clignote.",
+            "it": "Tieni premuto il pulsante di associazione per circa 5 secondi finché il LED lampeggia.",
+            "no": "Hold paringsknappen inne i ca. 5 sekunder til LED-en blinker.",
+            "pl": "Przytrzymaj przycisk parowania przez około 5 sekund, aż dioda LED zacznie migać.",
+            "ru": "Удерживайте кнопку сопряжения около 5 секунд, пока светодиод не начнёт мигать.",
+            "ko": "LED가 깜박일 때까지 페어링 버튼을 약 5초간 누르고 있으세요."
+          }
+        }
+      },
+      "id": "SNZB-03PR2",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Occupied",
+            "sv": "Upptagen",
+            "nl": "Bezette",
+            "da": "Optaget",
+            "de": "Besetzt",
+            "es": "Ocupado",
+            "fr": "Occupé",
+            "it": "Occupato",
+            "no": "Opptatt",
+            "pl": "Zajęty",
+            "ru": "Занятый",
+            "ko": "점유"
+          },
+          "children": [
+            {
+              "id": "occupied_to_unoccupied_delay",
+              "type": "number",
+              "label": {
+                "en": "Delay",
+                "sv": "Fördröjning",
+                "nl": "Vertraging",
+                "da": "Forsinkelse",
+                "de": "Verzögerung",
+                "es": "Retraso",
+                "fr": "Délai",
+                "it": "Ritardo",
+                "no": "Forsinkelse",
+                "pl": "Opóźnienie",
+                "ru": "Задержка",
+                "ko": "지연"
+              },
+              "hint": {
+                "en": "Time without motion before the motion alarm ends (5-60 s).",
+                "sv": "Tid utan rörelse innan rörelselarmet upphör (5-60 s).",
+                "nl": "Tijd zonder beweging voordat het bewegingsalarm stopt (5-60 s).",
+                "da": "Tid uden bevægelse, før bevægelsesalarmen ophører (5-60 s).",
+                "de": "Zeit ohne Bewegung, bis der Bewegungsalarm endet (5-60 s).",
+                "es": "Tiempo sin movimiento antes de que finalice la alarma de movimiento (5-60 s).",
+                "fr": "Durée sans mouvement avant la fin de l'alarme de mouvement (5-60 s).",
+                "it": "Tempo senza movimento prima che l'allarme di movimento termini (5-60 s).",
+                "no": "Tid uten bevegelse før bevegelsesalarmen opphører (5-60 s).",
+                "pl": "Czas bez ruchu, po którym alarm ruchu się kończy (5-60 s).",
+                "ru": "Время без движения до окончания сигнала движения (5-60 с).",
+                "ko": "움직임 경보가 끝나기 전까지 움직임이 없는 시간 (5-60초)."
+              },
+              "value": 30,
+              "attr": {
+                "min": 5,
+                "max": 60,
+                "step": 1
+              }
+            },
+            {
+              "id": "illuminance_calibration",
+              "type": "number",
+              "label": {
+                "en": "Illuminance calibration (lx)",
+                "sv": "Ljusstyrkekalibrering (lx)",
+                "nl": "Lichtsterktekalibratie (lx)",
+                "da": "Lysstyrkekalibrering (lx)",
+                "de": "Helligkeitskalibrierung (lx)",
+                "es": "Calibración de iluminancia (lx)",
+                "fr": "Calibrage de la luminosité (lx)",
+                "it": "Calibrazione dell'illuminamento (lx)",
+                "no": "Lysstyrkekalibrering (lx)",
+                "pl": "Kalibracja natężenia światła (lx)",
+                "ru": "Калибровка освещённости (лк)",
+                "ko": "조도 보정 (lx)"
+              },
+              "hint": {
+                "en": "Added to the measured illuminance (-1000 to 1000 lx).",
+                "sv": "Läggs till den uppmätta ljusstyrkan (-1000 till 1000 lx).",
+                "nl": "Wordt opgeteld bij de gemeten lichtsterkte (-1000 tot 1000 lx).",
+                "da": "Lægges til den målte lysstyrke (-1000 til 1000 lx).",
+                "de": "Wird zur gemessenen Helligkeit addiert (-1000 bis 1000 lx).",
+                "es": "Se suma a la iluminancia medida (-1000 a 1000 lx).",
+                "fr": "S'ajoute à la luminosité mesurée (-1000 à 1000 lx).",
+                "it": "Viene aggiunto all'illuminamento misurato (da -1000 a 1000 lx).",
+                "no": "Legges til den målte lysstyrken (-1000 til 1000 lx).",
+                "pl": "Dodawane do zmierzonego natężenia światła (od -1000 do 1000 lx).",
+                "ru": "Прибавляется к измеренной освещённости (от -1000 до 1000 лк).",
+                "ko": "측정된 조도에 더해집니다 (-1000~1000 lx)."
+              },
+              "value": 0,
+              "attr": {
+                "min": -1000,
+                "max": 1000,
+                "step": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
         "large": "/drivers/SNZB-04/assets/images/large.png",
         "small": "/drivers/SNZB-04/assets/images/small.png"
       },

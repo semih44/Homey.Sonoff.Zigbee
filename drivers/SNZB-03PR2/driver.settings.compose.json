@@ -1,0 +1,97 @@
+[
+  {
+    "type": "group",
+    "label": {
+      "en": "Occupied",
+      "sv": "Upptagen",
+      "nl": "Bezette",
+      "da": "Optaget",
+      "de": "Besetzt",
+      "es": "Ocupado",
+      "fr": "Occupé",
+      "it": "Occupato",
+      "no": "Opptatt",
+      "pl": "Zajęty",
+      "ru": "Занятый",
+      "ko": "점유"
+    },
+    "children": [
+      {
+        "id": "occupied_to_unoccupied_delay",
+        "type": "number",
+        "label": {
+          "en": "Delay",
+          "sv": "Fördröjning",
+          "nl": "Vertraging",
+          "da": "Forsinkelse",
+          "de": "Verzögerung",
+          "es": "Retraso",
+          "fr": "Délai",
+          "it": "Ritardo",
+          "no": "Forsinkelse",
+          "pl": "Opóźnienie",
+          "ru": "Задержка",
+          "ko": "지연"
+        },
+        "hint": {
+          "en": "Time without motion before the motion alarm ends (5-60 s).",
+          "sv": "Tid utan rörelse innan rörelselarmet upphör (5-60 s).",
+          "nl": "Tijd zonder beweging voordat het bewegingsalarm stopt (5-60 s).",
+          "da": "Tid uden bevægelse, før bevægelsesalarmen ophører (5-60 s).",
+          "de": "Zeit ohne Bewegung, bis der Bewegungsalarm endet (5-60 s).",
+          "es": "Tiempo sin movimiento antes de que finalice la alarma de movimiento (5-60 s).",
+          "fr": "Durée sans mouvement avant la fin de l'alarme de mouvement (5-60 s).",
+          "it": "Tempo senza movimento prima che l'allarme di movimento termini (5-60 s).",
+          "no": "Tid uten bevegelse før bevegelsesalarmen opphører (5-60 s).",
+          "pl": "Czas bez ruchu, po którym alarm ruchu się kończy (5-60 s).",
+          "ru": "Время без движения до окончания сигнала движения (5-60 с).",
+          "ko": "움직임 경보가 끝나기 전까지 움직임이 없는 시간 (5-60초)."
+        },
+        "value": 30,
+        "attr": {
+          "min": 5,
+          "max": 60,
+          "step": 1
+        }
+      },
+      {
+        "id": "illuminance_calibration",
+        "type": "number",
+        "label": {
+          "en": "Illuminance calibration (lx)",
+          "sv": "Ljusstyrkekalibrering (lx)",
+          "nl": "Lichtsterktekalibratie (lx)",
+          "da": "Lysstyrkekalibrering (lx)",
+          "de": "Helligkeitskalibrierung (lx)",
+          "es": "Calibración de iluminancia (lx)",
+          "fr": "Calibrage de la luminosité (lx)",
+          "it": "Calibrazione dell'illuminamento (lx)",
+          "no": "Lysstyrkekalibrering (lx)",
+          "pl": "Kalibracja natężenia światła (lx)",
+          "ru": "Калибровка освещённости (лк)",
+          "ko": "조도 보정 (lx)"
+        },
+        "hint": {
+          "en": "Added to the measured illuminance (-1000 to 1000 lx).",
+          "sv": "Läggs till den uppmätta ljusstyrkan (-1000 till 1000 lx).",
+          "nl": "Wordt opgeteld bij de gemeten lichtsterkte (-1000 tot 1000 lx).",
+          "da": "Lægges til den målte lysstyrke (-1000 til 1000 lx).",
+          "de": "Wird zur gemessenen Helligkeit addiert (-1000 bis 1000 lx).",
+          "es": "Se suma a la iluminancia medida (-1000 a 1000 lx).",
+          "fr": "S'ajoute à la luminosité mesurée (-1000 à 1000 lx).",
+          "it": "Viene aggiunto all'illuminamento misurato (da -1000 a 1000 lx).",
+          "no": "Legges til den målte lysstyrken (-1000 til 1000 lx).",
+          "pl": "Dodawane do zmierzonego natężenia światła (od -1000 do 1000 lx).",
+          "ru": "Прибавляется к измеренной освещённости (от -1000 до 1000 лк).",
+          "ko": "측정된 조도에 더해집니다 (-1000~1000 lx)."
+        },
+        "value": 0,
+        "attr": {
+          "min": -1000,
+          "max": 1000,
+          "step": 1
+        }
+      }
+    ]
+  }
+]
